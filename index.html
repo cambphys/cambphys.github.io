@@ -1,4 +1,101 @@
 ---
-layout: home
-author_profile: true
+layout: default
+author_profile: false
 ---
+
+<html>
+<head>
+  <style>
+    /* Container with appropriate width and centered alignment */
+    .container {
+      max-width: 80%;
+      padding: 20px; /* Add padding for spacing */
+      margin: 0 auto; /* Center the container */
+    }
+
+    .row {
+      display: flex;
+      width: 100%; /* Ensure row uses full container width */
+      margin: 0;
+      align-items: flex-start; /* Center items vertically */
+    }
+
+    .column {
+      flex: 1; /* Ensure the column takes up the full width of the row */
+      padding: 0 20px; /* Add padding to the sides for spacing */
+    }
+
+    .image-container {
+    display: grid;
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      grid-area: 1/1;
+    }
+
+    /* Ensure text isn't touching the edges */
+    h2, p {
+      margin: 0;
+    }
+
+    /* Style for the highlighted text */
+    .gold {
+      color: #fccf00;
+    }
+    .silver {
+      color: #bebebe;
+    }
+    .bronze {
+      color: #CD7F32;
+    }
+    .hm {
+      color: #1e92ff;
+    }
+
+    .text-overlay {
+    grid-area: 1/1;
+      display: flex;
+      align-items: top;
+      justify-content: left;
+      color: white; /* Text color */
+      padding: 50px; /* Padding for the text */
+      border-radius: 5px; /* Optional: rounded corners */
+    }
+  </style>
+</head>
+<body>
+    <div class="row">
+        <div class="image-container">
+            <img src="pictures/dunster2.jpg" alt="Background Image">
+            <div class="text-overlay">
+                <h2 style="text-align: left; font-size: 3em; padding: 40px;">
+                    The <span class="gold">gold standard</span> for physics olympiad training.
+                </h2>
+                <p>Prepare for AP Physics, F=ma, and USAPhO exams with former International Physics Olympiad gold medalists from MIT and Harvard.</p>
+            </div>
+          </div>
+        </div>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <h2 style="text-align: left; font-size: 2em;">
+          In 2024, Cambridge Physics Academy students earned:
+        </h2>
+      </div>
+      <div class="column" style="padding-top: 60px;">
+        <h1 style="text-align: right; font-size: 2.5em;">
+            <span class="gold">1 Gold Medal</span><br>
+            <span class="silver">5 Silver Medals</span><br>
+            <span class="bronze">7 Bronze Medals</span><br>
+            <span class="hm">1 Honorable Mention</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
