@@ -1,0 +1,83 @@
+---
+layout: default
+title: USAPhO Course Series
+permalink: /usapho/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      max-width: 80%;
+      margin: 0 auto; /* Center the container */
+      display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row {
+  display: flex;
+  width: 100%;
+}
+
+.col-left {
+  flex: 7;
+  padding: 20px;
+}
+
+.col-right {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.col-right img {
+  max-width: 100%;
+  height: auto;
+  padding: 10px; /* Adjust padding around the image as needed */
+}
+    @media (max-width: 768px) {
+      .container {
+        max-width: 100%;
+        padding: 10px;
+      }
+    } 
+    h2 {
+            font-size: 3em; /* Default font size for larger screens */
+            line-height: 1.2; /* Adjust line height for better readability */
+        }
+
+        /* Responsive font size for smaller screens */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2em; /* Adjust font size for tablets and small screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.5em; /* Further adjust font size for very small screens */
+            }
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-left">
+        <h2>
+            USAPhO Course Series
+          </h2>
+          <p>Our beginner level endfor prepares students to earn 5's on the AP Physics 1 exam. Students are not expected to have any background in physics. </p>
+      </div>
+      <div class="col-right">
+        <img src="{{ site.baseurl }}/pictures/usaphoicon.png" alt="Description of image">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

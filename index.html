@@ -3,21 +3,24 @@ layout: default
 author_profile: false
 ---
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     /* Container with appropriate width and centered alignment */
     .container {
       max-width: 80%;
-      padding: 20px; /* Add padding for spacing */
       margin: 0 auto; /* Center the container */
     }
 
     .row {
       display: flex;
+      flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
       width: 100%; /* Ensure row uses full container width */
       margin: 0;
-      align-items: flex-start; /* Center items vertically */
+      align-items: flex-start; /* Align items at the top */
     }
 
     .column {
@@ -26,7 +29,7 @@ author_profile: false
     }
 
     .image-container {
-    display: grid;
+      display: grid;
       position: relative;
       width: 100%;
       max-width: 100%;
@@ -58,44 +61,234 @@ author_profile: false
     }
 
     .text-overlay {
-    grid-area: 1/1;
+      grid-area: 1/1;
       display: flex;
-      align-items: top;
-      justify-content: left;
+      flex-direction: column; /* Stack the header and description vertically */
+      align-items: flex-start; /* Align items to the left */
+      justify-content: flex-start; /* Align items to the top */
       color: white; /* Text color */
       padding: 50px; /* Padding for the text */
       border-radius: 5px; /* Optional: rounded corners */
     }
+
+    h2 {
+            font-size: 3em; /* Default font size for larger screens */
+            line-height: 1.2; /* Adjust line height for better readability */
+        }
+
+        /* Responsive font size for smaller screens */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2em; /* Adjust font size for tablets and small screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.5em; /* Further adjust font size for very small screens */
+            }
+        }
+
+        .custom-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px; /* Space between boxes */
+}
+
+.box {
+  background-color: #f0f0f0; /* Light gray color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+  flex: 1; /* Makes all boxes equal width */
+  max-width: 30%; /* Adjust as needed */
+  position: relative;
+}
+
+.box-content {
+    display: flex; /* Use Flexbox to align content */
+    justify-content: space-between; /* Space between left and right content */
+    align-items: center; /* Center items vertically */
+}
+.box-header {
+    text-align: center; /* Center align the footer content */
+}
+
+.box-left {
+    flex: 1; /* Take up available space */
+}
+
+.box-title {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em; /* Adjust font size as needed */
+}
+
+.box-description {
+    margin-top: 10px; /* Space between title and description */
+    font-size: 0.8em; /* Adjust font size as needed */
+}
+
+.box-right {
+    flex-shrink: 0; /* Prevent shrinking of image container */
+}
+
+.box-image {
+    max-width: 100%; /* Ensure image fits within container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.box-footer {
+    text-align: center; /* Center align the footer content */
+    margin-top: 20px; /* Space above the footer */
+}
+
+.learn-more {
+  display: block;
+  text-align: center;
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.learn-more:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.icon-container {
+    display: flex; /* Use Flexbox to center image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
+.full-width-divider {
+  width: 100%;
+  height: 2px; /* Thickness of the line */
+  background-color: #ccc; /* Color of the line */
+  border: none; /* Remove default border if using <hr> */
+  margin: 20px 0; /* Space above and below the divider */
+}
+
+.centered-heading {
+  text-align: center; /* Centers the text horizontally */
+  margin: 20px 0; /* Adjusts space above and below the heading */
+  font-size: 2em; /* Adjust font size as needed */
+}
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .container {
+        max-width: 100%;
+        padding: 10px;
+      }
+
+      .row {
+        flex-direction: column; /* Stack columns vertically on small screens */
+      }
+
+      .custom-row {
+        flex-direction: column; /* Stack columns vertically on small screens */
+      }
+
+      .column {
+        padding: 10px 0;
+      }
+      
+      .box {
+        max-width: 100%
+        }
+
+      .text-overlay h2 {
+        font-size: 2em; /* Reduce font size on smaller screens */
+      }
+
+      .text-overlay p {
+        font-size: 1em;
+      }
+    }
   </style>
 </head>
 <body>
-    <div class="row">
-        <div class="image-container">
-            <img src="pictures/dunster2.jpg" alt="Background Image">
-            <div class="text-overlay">
-                <h2 style="text-align: left; font-size: 3em; padding: 40px;">
-                    The <span class="gold">gold standard</span> for physics olympiad training.
-                </h2>
-                <p>Prepare for AP Physics, F=ma, and USAPhO exams with former International Physics Olympiad gold medalists from MIT and Harvard.</p>
-            </div>
-          </div>
-        </div>
-  <div class="container">
-    <div class="row">
-      <div class="column">
-        <h2 style="text-align: left; font-size: 2em;">
-          In 2024, Cambridge Physics Academy students earned:
+  <div class="row">
+    <div class="image-container">
+      <img src="pictures/dunster2.jpg" alt="Background Image">
+      <div class="text-overlay">
+        <div class="container">
+        <h2>
+          The <span class="gold">gold standard</span> for physics olympiad training.
         </h2>
-      </div>
-      <div class="column" style="padding-top: 60px;">
-        <h1 style="text-align: right; font-size: 2.5em;">
-            <span class="gold">1 Gold Medal</span><br>
-            <span class="silver">5 Silver Medals</span><br>
-            <span class="bronze">7 Bronze Medals</span><br>
-            <span class="hm">1 Honorable Mention</span>
-        </h1>
+        <p>Prepare for AP Physics, F=ma, and USAPhO exams with former International Physics Olympiad gold medalists from MIT and Harvard.</p>
+    </div>
       </div>
     </div>
   </div>
+
+  <div class="container">
+    
+    <div class="row">
+      <div class="column">
+        <h3>
+          In 2024, Cambridge Physics Academy students earned:
+        </h3>
+      </div>
+      <div class="column" style="padding-top: 60px;">
+        <h1 style="text-align: right; font-size: 2.5em;">
+          <span class="gold">1 Gold Medal</span><br>
+          <span class="silver">5 Silver Medals</span><br>
+          <span class="bronze">7 Bronze Medals</span><br>
+          <span class="hm">1 Honorable Mention</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="full-width-divider"></div>
+
+    <h2 class="centered-heading">
+        Course Offerings
+      </h2>
+
+    <div class="custom-row">
+        <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">AP Course Series</h3>
+              <div class="icon-container">
+              <img src="pictures/apicon.png" alt="Icon 2" class="box-icon">
+            </div>
+            </div>
+            <p class="box-description">Learn the basics of mechanics and prepare for the AP Physics 1 exam. Class suitable for beginners and physics enthusiasts. Sessions offered in Fall and Spring.</p>
+            <a href="/ap/" class="learn-more">Enroll Now</a>
+          </div>
+
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">F=ma Course Series</h3>
+              <div class="icon-container">
+              <img src="pictures/fmaicon.png" alt="Icon 2" class="box-icon">
+            </div>
+            </div>
+            <p class="box-description">Our flagship course, prepare for the F=ma exam and USAPhO mechanics section with hundreds of original problems and solutions. Sessions offered in Fall and Spring.</p>
+            <a href="page2.html" class="learn-more">Enroll Now</a>
+          </div>
+
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">USAPhO Course Series</h3>
+              <div class="icon-container">
+              <img src="pictures/usaphoicon.png" alt="Icon 2" class="box-icon", style="margin: 10px">
+            </div>
+            </div>
+            <p class="box-description">Earn a medal on the USAPhO exam with our high-intensity deep dive into electromagnetism, thermodynamics, optics, and more. Session offered in the Winter.</p>
+            <a href="page2.html" class="learn-more">Enroll Now</a>
+          </div>
+      
+  </div>
+
+
+
+  
+
 </body>
 </html>
