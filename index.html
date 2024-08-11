@@ -15,6 +15,17 @@ author_profile: false
       margin: 0 auto; /* Center the container */
     }
 
+    .centered-front {
+      text-align: center; /* Centers the text horizontally */
+    }
+
+    .container.centered-front > * {
+      margin-bottom: 16px; /* Adds space between all child elements */
+    }
+    .container.centered-front > *:last-child {
+        margin-bottom: 0; /* Removes margin from the last child */
+    }
+
     .row {
       display: flex;
       flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
@@ -32,13 +43,16 @@ author_profile: false
       display: grid;
       position: relative;
       width: 100%;
-      max-width: 100%;
+      height: 90vh;
+      overflow: hidden;
     }
-
+    
     .image-container img {
-      width: 100%;
-      height: auto;
-      grid-area: 1/1;
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+      object-position: center;
+      grid-area: 1 / 1;
     }
 
     /* Ensure text isn't touching the edges */
@@ -68,6 +82,7 @@ author_profile: false
       justify-content: flex-start; /* Align items to the top */
       color: white; /* Text color */
       padding: 50px; /* Padding for the text */
+      padding-top: 80px;
       border-radius: 5px; /* Optional: rounded corners */
     }
 
@@ -96,12 +111,17 @@ author_profile: false
 }
 
 .box {
-  background-color: #f0f0f0; /* Light gray color */
   border-radius: 8px; /* Rounded corners */
-  padding: 20px;
+  border:#bebebe80 1px solid;
+  padding: 20px 32px;
   flex: 1; /* Makes all boxes equal width */
   max-width: 30%; /* Adjust as needed */
   position: relative;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+  box-shadow: 0px 0px 14px rgba(0,0,0, 0.2);
 }
 
 .box-content {
@@ -163,7 +183,6 @@ author_profile: false
     padding-left: 50px;
 }
 
-
 .full-width-divider {
   width: 100%;
   height: 2px; /* Thickness of the line */
@@ -174,8 +193,61 @@ author_profile: false
 
 .centered-heading {
   text-align: center; /* Centers the text horizontally */
-  margin: 20px 0; /* Adjusts space above and below the heading */
+  margin: 50px 0; /* Adjusts space above and below the heading */
   font-size: 2em; /* Adjust font size as needed */
+}
+.scroll-button {
+  background-color: #fccf00;
+  border: none;
+  padding: 10px 20px;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.scroll-button:hover {
+  background-color: #e2b900;
+}
+.scroll-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.3);
+}
+.scroll-button:active {
+  transform: translateY(1px);
+}
+.scroll-button svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+.scroll-button:hover svg {
+  transform: translateX(3px);
+}
+
+.profile-card {
+  flex: 1;
+  display: flex;
+  border:#bebebe80 1px solid;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.profile-info {
+  flex: 2;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+.profile-image {
+  flex: 1;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
 }
 
 .box-icon {
@@ -223,6 +295,7 @@ author_profile: false
       .text-overlay p {
         font-size: 1em;
       }
+      
     }
   </style>
 </head>
@@ -231,12 +304,19 @@ author_profile: false
     <div class="image-container">
       <img src="pictures/dunster2.jpg" alt="Background Image">
       <div class="text-overlay">
-        <div class="container">
-        <h2>
-          The <span class="gold">gold standard</span> for physics olympiad training.
-        </h2>
-        <p>Prepare for AP Physics, F=ma, and USAPhO exams with former International Physics Olympiad gold medalists from MIT and Harvard.</p>
-    </div>
+        <div class="container centered-front">
+          <h2>
+            The <span class="gold">gold standard</span> for<br> physics olympiads.
+          </h2>
+          <p>Prepare with former International Physics Olympiad gold medalists from MIT and Harvard.</p>
+          <button class="scroll-button" onclick="scrollToBottom()">
+            Get Started
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
+            </svg>
+        </button>
+          </div>
+          
       </div>
     </div>
   </div>
@@ -244,22 +324,48 @@ author_profile: false
   <div class="container">
     
     <div class="row">
-      <div class="column">
-        <h3>
-          In 2024, Cambridge Physics Academy students earned:
+      <div class="row">
+        <h3 style="font-size:xx-large">
+          Here's how Cambridge Physics Academy students performed in 2024:
         </h3>
       </div>
-      <div class="column" style="padding-top: 60px;">
-        <h1 style="text-align: right; font-size: 2.5em;">
-          <span class="gold">1 Gold Medal</span><br>
-          <span class="silver">5 Silver Medals</span><br>
-          <span class="bronze">7 Bronze Medals</span><br>
+      <div class="row" style="justify-content: flex-end;">
+        <h2 style="text-align: right; font-size: 2.5em;">
+          <span>1 USA Physics Team Camper</span><br>
+          <span class="gold">1 Gold Medalist</span><br>
+          <span class="silver">5 Silver Medalists</span><br>
+          <span class="bronze">7 Bronze Medalists</span><br>
           <span class="hm">1 Honorable Mention</span>
         </h1>
       </div>
     </div>
 
     <div class="full-width-divider"></div>
+  
+    <h2 class="centered-heading">
+        Meet the Instructors
+      </h2>
+
+    <div class="custom-row">
+      <div class="profile-card">
+        <div class="profile-info">
+            <p style="font-size:xx-large"><strong>Collin Fan</strong></p>
+            <p>Harvard Physics</p>
+            <p><strong>Achievements:</strong> IPhO Gold Medalist, Experiment Winner</p>
+        </div>
+        <div class="profile-image" style="background-image: url('pictures/cropped_collin.jpg');"></div>
+    </div>
+    <div class="profile-card">
+      <div class="profile-info">
+        <p style="font-size:xx-large"><strong>Evan Kim</strong></p>
+          <p>MIT Physics</p>
+          <p><strong>Achievements:</strong> IPhO Gold Medalist, 2x IOAA Gold Medalist, Regeneron STS Finalist</p>
+      </div>
+      <div class="profile-image" style="background-image: url('pictures/cropped_main_headshot.jpg');"></div>
+  </div>
+
+    </div>
+
 
     <h2 class="centered-heading">
         Course Offerings
@@ -301,6 +407,14 @@ author_profile: false
       
   </div>
 
+  <script>
+    function scrollToBottom() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    }
+</script>
 
 
   
