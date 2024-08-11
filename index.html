@@ -178,6 +178,21 @@ author_profile: false
   font-size: 2em; /* Adjust font size as needed */
 }
 
+.box-icon {
+            width: 200px; /* Define the width of the box */
+            height: 200px; /* Define the height of the box */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Ensure content does not overflow */
+        }
+
+        .box-icon img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Ensures the image maintains its aspect ratio */
+        }
+
     /* Media Queries for Responsiveness */
     @media (max-width: 768px) {
       .container {
@@ -254,7 +269,7 @@ author_profile: false
         <div class="box">
             <div class="box-header">
               <h3 class="box-title">AP Course Series</h3>
-              <div class="icon-container">
+              <div class="box-icon">
               <img src="pictures/apicon.png" alt="Icon 2" class="box-icon">
             </div>
             </div>
@@ -265,7 +280,7 @@ author_profile: false
           <div class="box">
             <div class="box-header">
               <h3 class="box-title">F=ma Course Series</h3>
-              <div class="icon-container">
+              <div class="box-icon">
               <img src="pictures/fmaicon.png" alt="Icon 2" class="box-icon">
             </div>
             </div>
@@ -276,7 +291,7 @@ author_profile: false
           <div class="box">
             <div class="box-header">
               <h3 class="box-title">USAPhO Course Series</h3>
-              <div class="icon-container">
+              <div class="box-icon">
               <img src="pictures/usaphoicon.png" alt="Icon 2" class="box-icon", style="margin: 10px">
             </div>
             </div>
