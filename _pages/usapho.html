@@ -55,35 +55,8 @@ table {
   padding: 30px; /* Adjust padding around the image as needed */
 }
 
-.enroll-now-button:hover {
-  background-color: #333;
-  color: white;
-}
-
-.enroll-now-button:visited {
-  color: white; /* Ensure text color remains white for visited links */
-}
-
-.enroll-now-button:active {
-  background-color: #444; /* Slightly lighter background when button is clicked */
-  color: white; /* Ensure text color remains white when clicked */
-} 
-
-.button-row {
-  display: flex;
-  align-items: left; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
-  gap: 10px; /* Space between the text and the button */
-  margin-top: 20px; /* Spacing above the row */
-}
-
-.button-row h3 {
-  line-height: 50px; /* Match this to the button height for vertical alignment */
-  margin: 0; /* Remove default margin to fine-tune alignment */
-}
-
 .enroll-now-button {
-  background-color: black;
+  background-color: #808080;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -103,14 +76,41 @@ table {
   width: 100%; /* Ensure the span takes full width for centering text */
 }
 
+.enroll-now-button:hover {
+  background-color: #808080;
+  color: white;
+}
+
+.enroll-now-button:visited {
+  color: white; /* Ensure text color remains white for visited links */
+}
+
+.enroll-now-button:active {
+  background-color: #808080; /* Slightly lighter background when button is clicked */
+  color: white; /* Ensure text color remains white when clicked */
+} 
+
+.button-row {
+  display: flex;
+  align-items: left; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 10px; /* Space between the text and the button */
+  margin-top: 20px; /* Spacing above the row */
+}
+
+.button-row h3 {
+  line-height: 50px; /* Match this to the button height for vertical alignment */
+  margin: 0; /* Remove default margin to fine-tune alignment */
+}
+
 .more-info-button {
-  background-color: black;
+  background-color: #00AEEF;
   color: white;
   text-align: center;
   text-decoration: none;
   border: none;
   cursor: pointer;
-  width: 180px; /* Set the width */
+  width: 190px; /* Set the width */
   height: 50px; /* Set the height */
   font-size: 18px; /* Adjust font size as needed */
   border-radius: 10px; /* Rounded corners */
@@ -126,7 +126,7 @@ table {
 }
 
 .more-info-button:hover {
-  background-color: #333;
+  background-color: rgb(59, 205, 254);
   color: white;
 }
 
@@ -135,7 +135,7 @@ table {
 }
 
 .more-info-button:active {
-  background-color: #444; /* Slightly lighter background when button is clicked */
+  background-color: rgb(59, 205, 254); /* Slightly lighter background when button is clicked */
   color: white; /* Ensure text color remains white when clicked */
 } 
 
@@ -337,12 +337,12 @@ table {
         <h2>
             USAPhO Course Series
           </h2>
-          <p>Our beginner level course prepares students to earn 5s on the AP Physics 1 exam. Students are not expected to have any background in physics. The course serves as a foundation for our F=ma Course Series and beyond. </p>
+          <p>Our advanced course prepares students to earn gold medals in the US Physics Olympiad exam. This intensive course is designed for the most passionate physics students. One session is offered per year in the <span style="font-weight: bold">Winter</span>. </p>
         </div>
     </div>
     <div class="button-row">
-      <h3 style="padding-right: 20px;">Winter 2025 registration:  </h3> 
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6r9oyKSp16gfDriYDmnbxhGlOSUQfwRnFn1zpMxpCTJBziQ/viewform?usp=sf_link" class="enroll-now-button" target="_blank"><span>Enroll Now</span></a>
+      <h3 style="padding-right: 10px;">Winter 2025 registration:  </h3> 
+      <div class="enroll-now-button">Opens Oct 25</div>
     </div>
     <div class="full-width-divider" style="margin-top: 50px;"></div>
 
@@ -357,7 +357,7 @@ table {
           <img src="{{ site.baseurl }}/pictures/clock.png" alt="Icon 2" class="box-icon">
         </div>
         </div>
-        <p class="box-description">16 weeks (8/25/24 - 12/15/24)<br>Sundays, 3:30 - 4:30 pm EST<br>Lectures are recorded</p>
+        <p class="box-description">16 weeks (11/17/24 - 3/23/25)<br>Sundays, 3:30 - 5:00 pm EST<br>Lectures are recorded</p>
       </div>
 
         <div class="box">
@@ -366,16 +366,16 @@ table {
             <img src="{{ site.baseurl }}/pictures/hw.png" alt="Icon 2" class="box-icon">
           </div>
           </div>
-          <p class="box-description">400+ homework problems<br>Full practice AP Exam<br>Materials adapted to new AP rubric</p>
+          <p class="box-description">300+ USAPhO-level problems<br>Full practice USAPhO exam with original problems</p>
         </div>
 
         <div class="box">
           <div class="box-header">
             <div class="box-icon">
-            <img src="{{ site.baseurl }}/pictures/disc.png" alt="Icon 2">
+            <img src="{{ site.baseurl }}/pictures/electic.png" alt="Icon 2">
           </div>
           </div>
-          <p class="box-description">Access to Discord channel<br>Chat with Evan and Collin<br>Connect with our growing network</p>
+          <p class="box-description">Topics covered include electricity and magnetism, thermodynamics, special relativity, optics, waves, and quantum mechanics</p>
         </div>
     
       </div>
@@ -391,7 +391,7 @@ table {
               <img src="{{ site.baseurl }}/pictures/check.png" alt="Icon 2">
             </div>
           </div>
-          <a href="https://drive.google.com/file/d/1EvhQXACmH-QWVzr0tqUBSU9H9DhrxhaR/view?usp=sharing" class="more-info-button" target="_blank"><span>Fall 2024 Syllabus</span></a>
+          <a href="https://drive.google.com/file/d/17F7wYq6Fg0dEyx-VSmVAY-lZrH-jfYwN/view?usp=sharing" class="more-info-button" target="_blank"><span>Winter 2025 Syllabus</span></a>
         </div>
   
           <div class="box">
@@ -400,7 +400,7 @@ table {
                 <img src="{{ site.baseurl }}/pictures/pencil.png" alt="Icon 2">
               </div>
               </div>
-              <a href="https://drive.google.com/file/d/1Wm4Gn2tDP59dJKW5EmKXkcKZmHiwoBAW/view?usp=sharing" class="more-info-button" target="_blank"><span>Sample Homework</span></a>
+              <a href="https://drive.google.com/file/d/1PqjUTkh4UkcFBmmOMgTZYVnmcRz0eqUM/view?usp=sharing" class="more-info-button" target="_blank"><span>Sample Homework</span></a>
           </div>
   
           <div class="box">
@@ -409,13 +409,13 @@ table {
                 <img src="{{ site.baseurl }}/pictures/vid.png" alt="Icon 2">
               </div>
               </div>
-              <a href="https://youtu.be/O9RsuvDZbJk" class="more-info-button" target="_blank"><span>Sample Lecture</span></a>
+              <a href="https://youtu.be/yaPpx8bNfgc" class="more-info-button" target="_blank"><span>Sample Lecture</span></a>
           </div>
       
         </div>
 
         <h2 class="centered-heading" style="padding-top: 40px">
-          Course Schedule Fall 2024
+          Course Schedule Winter 2025
         </h2>  
         <div class="table-container">
     <table>
@@ -428,91 +428,91 @@ table {
       </thead>
       <tbody>
         <tr>
-          <td class="col-1">8/25</td>
-          <td class="col-2">1D Kinematics</td>
-          <td class="col-3">Distance, velocity, acceleration</td>
-        </tr>
-        <tr>
-          <td class="col-1">9/1</td>
-          <td class="col-2">2D Kinematics</td>
-          <td class="col-3">Projectile motion</td>
-        </tr>
-        <tr>
-          <td class="col-1">9/8</td>
-          <td class="col-2">Newton's Laws</td>
-          <td class="col-3">Basic forces, free body diagrams</td>
-        </tr>
-        <tr>
-          <td class="col-1">9/15</td>
-          <td class="col-2">Applications of Newton's Laws</td>
-          <td class="col-3">Friction, tension, complex systems</td>
-        </tr>
-        <tr>
-          <td class="col-1">9/22</td>
-          <td class="col-2">Circular Motion</td>
-          <td class="col-3">Centripetal acceleration and force</td>
-        </tr>
-        <tr>
-          <td class="col-1">9/29</td>
-          <td class="col-2">Graviation</td>
-          <td class="col-3">Weight, vector fields, Newton's law</td>
-        </tr>
-        <tr>
-          <td class="col-1">10/6</td>
-          <td class="col-2">Work and Kinetic Energy</td>
-          <td class="col-3">Work-energy theorem and derivations</td>
-        </tr>
-        <tr>
-          <td class="col-1">10/13</td>
-          <td class="col-2">Conservation of Energy</td>
-          <td class="col-3">Solving systems with potential energy</td>
-        </tr>
-        <tr>
-          <td class="col-1">10/20</td>
-          <td class="col-2">Impulse and Momentum</td>
-          <td class="col-3">Definitions, Newton's second law</td>
-        </tr>
-        <tr>
-          <td class="col-1">10/27</td>
-          <td class="col-2">Collisions</td>
-          <td class="col-3">Elastic and inelastic collisions, multibody problems</td>
-        </tr>
-        <tr>
-          <td class="col-1">11/3</td>
-          <td class="col-2">Simple Harmonic Motion</td>
-          <td class="col-3">Spring systems and pendulums</td>
-        </tr>
-        <tr>
-          <td class="col-1">11/10</td>
-          <td class="col-2">Rotational Kinematics</td>
-          <td class="col-3">Moment of inertia, derivations</td>
-        </tr>
-        <tr>
           <td class="col-1">11/17</td>
-          <td class="col-2">Rotational Dynamics</td>
-          <td class="col-3">Torque, conservation of energy</td>
+          <td class="col-2">Electrostatics</td>
+          <td class="col-3">Coulomb's law, Gauss's law, dipoles</td>
         </tr>
         <tr>
           <td class="col-1">12/1</td>
-          <td class="col-2">Angular Momentum</td>
-          <td class="col-3">Vector form of torque, collisions</td>
+          <td class="col-2">Conductors</td>
+          <td class="col-3">Potential, image charges, dielectrics</td>
         </tr>
         <tr>
           <td class="col-1">12/8</td>
-          <td class="col-2">Lab Techniques</td>
-          <td class="col-3">Measurements, lab writeups, FRQ practice</td>
+          <td class="col-2">DC Circuits</td>
+          <td class="col-3">Capacitors, resistors, olympiad tricks</td>
         </tr>
         <tr>
           <td class="col-1">12/15</td>
+          <td class="col-2">Magnetic Fields</td>
+          <td class="col-3">Biot-Savart, Ampere's law, dipoles</td>
+        </tr>
+        <tr>
+          <td class="col-1">1/5</td>
+          <td class="col-2">Induction</td>
+          <td class="col-3">Lenz's law, Faraday's law, inductance</td>
+        </tr>
+        <tr>
+          <td class="col-1">1/12</td>
+          <td class="col-2">AC Circuits</td>
+          <td class="col-3">Impedance, driven oscillators, phasors</td>
+        </tr>
+        <tr>
+          <td class="col-1">1/19</td>
+          <td class="col-2">EM Waves</td>
+          <td class="col-3">Nonlinear circuits, Ampere-Maxwell, Poynting vector</td>
+        </tr>
+        <tr>
+          <td class="col-1">1/26</td>
+          <td class="col-2">Thermo I</td>
+          <td class="col-3">Ideal gases, work, heat capacitance</td>
+        </tr>
+        <tr>
+          <td class="col-1">2/2</td>
+          <td class="col-2">Thermo II</td>
+          <td class="col-3">Fluid flows, kinetic theory, entropy</td>
+        </tr>
+        <tr>
+          <td class="col-1">2/9</td>
+          <td class="col-2">Thermo III</td>
+          <td class="col-3">Conduction, Stefan-Boltzmann, phase transitions</td>
+        </tr>
+        <tr>
+          <td class="col-1">2/16</td>
+          <td class="col-2">Relativistic Kinematics</td>
+          <td class="col-3">Elementary effects, velocity addition, Doppler effect</td>
+        </tr>
+        <tr>
+          <td class="col-1">2/23</td>
+          <td class="col-2">Relativistic Dynamics</td>
+          <td class="col-3">Energy, momentum, force, four vectors</td>
+        </tr>
+        <tr>
+          <td class="col-1">3/2</td>
+          <td class="col-2">Waves I</td>
+          <td class="col-3">Wave equation, standing waves, refraction</td>
+        </tr>
+        <tr>
+          <td class="col-1">3/9</td>
+          <td class="col-2">Waves II</td>
+          <td class="col-3">Mirrors and lenses, interference, diffraction</td>
+        </tr>
+        <tr>
+          <td class="col-1">3/16</td>
+          <td class="col-2">Modern Physics</td>
+          <td class="col-3">DeBroglie relations, uncertainty principle, nuclear</td>
+        </tr>
+        <tr>
+          <td class="col-1">3/23</td>
           <td class="col-2">Review</td>
-          <td class="col-3">Includes practice AP Physics 1 exam</td>
+          <td class="col-3">Run-through of practice USAPhO exam</td>
         </tr>
       </tbody>
     </table>
   </div>
   <div class="container">
     <h2 class="centered-heading" style="padding-top: 40px">
-      Questions? Email cambphys@gmail.com or join our <a href="your-mailing-list-link-here" style="color: rgb(0, 162, 216); text-decoration: none;">mailing list</a>.
+      Questions? Email cambphys@gmail.com or join our <a href="https://groups.google.com/forum/subscribe?token=AHZ7KVMG_1YBs2InPWQGU2ayLPS4o6Xm4YSqADKDf34Lf1h5IpU8hskEJHB7aESkJ6JhW5yJZGT0ljCYM7GxU1o58yNrd1gQrQ" style="color: rgb(0, 162, 216); text-decoration: underline;">mailing list</a>.
     </h2>  
     </div>
 

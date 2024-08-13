@@ -87,6 +87,8 @@ naver_site_verification:
 yandex_site_verification:
 baidu_site_verification:
 
+favicon: "/flavicon.png"
+
 # Social Sharing
 twitter:
   username:
@@ -155,7 +157,9 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/@CambridgePhysicsAcademy/featured"
 
 # Reading Files
 include:

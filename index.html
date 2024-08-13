@@ -73,6 +73,20 @@ author_profile: false
     .hm {
       color: #1e92ff;
     }
+    .red {
+      color: #e41515;
+    }
+    .white {
+      color: white;
+      text-shadow: 
+      -2px -2px 0 #000,  
+       2px -2px 0 #000,
+      -2px  2px 0 #000,
+       2px  2px 0 #000;
+    }
+    .blue {
+      color: #1e92ff;
+    }
 
     .text-overlay {
       grid-area: 1/1;
@@ -115,7 +129,7 @@ author_profile: false
   border:#bebebe80 1px solid;
   padding: 20px 32px;
   flex: 1; /* Makes all boxes equal width */
-  max-width: 30%; /* Adjust as needed */
+  max-width: 50%; /* Adjust as needed */
   position: relative;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
@@ -145,6 +159,7 @@ author_profile: false
 .box-description {
     margin-top: 10px; /* Space between title and description */
     font-size: 0.8em; /* Adjust font size as needed */
+    padding-bottom: 15px;
 }
 
 .box-right {
@@ -257,6 +272,7 @@ author_profile: false
             justify-content: center;
             align-items: center;
             overflow: hidden; /* Ensure content does not overflow */
+            margin: 0 auto
         }
 
         .box-icon img {
@@ -264,6 +280,47 @@ author_profile: false
             max-height: 100%;
             object-fit: contain; /* Ensures the image maintains its aspect ratio */
         }
+
+        .enroll-now-button {
+  background-color: rgb(0, 173, 230);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  width: 120px; /* Set the width */
+  height: 50px; /* Set the height */
+  font-size: 18px; /* Adjust font size as needed */
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.enroll-now-button span {
+  text-align: center;
+  width: 100%; /* Ensure the span takes full width for centering text */
+}
+
+.enroll-now-button:hover {
+  background-color: rgb(59, 205, 254);
+  color: white;
+}
+
+.enroll-now-button:visited {
+  color: white; /* Ensure text color remains white for visited links */
+}
+
+.enroll-now-button:active {
+  background-color: rgb(44, 202, 255); /* Slightly lighter background when button is clicked */
+  color: white; /* Ensure text color remains white when clicked */
+} 
+
+.centered-heading2 {
+  text-align: center; /* Centers the text horizontally */
+  margin: 20px 0; /* Adjusts space above and below the heading */
+  font-size: 1.5em; /* Adjust font size as needed */
+}
 
     /* Media Queries for Responsiveness */
     @media (max-width: 768px) {
@@ -331,11 +388,10 @@ author_profile: false
       </div>
       <div class="row" style="justify-content: flex-end;">
         <h2 style="text-align: right; font-size: 2.5em;">
-          <span>1 USA Physics Team Camper</span><br>
+          <span class="blue">1</span> <span class='red'>US</span> <span class='blue'>Physics</span> <span class="red">Team</span> <span class="blue">Member</span></span><br>
           <span class="gold">1 Gold Medalist</span><br>
           <span class="silver">5 Silver Medalists</span><br>
           <span class="bronze">7 Bronze Medalists</span><br>
-          <span class="hm">1 Honorable Mention</span>
         </h1>
       </div>
     </div>
@@ -366,6 +422,32 @@ author_profile: false
 
     </div>
 
+    <h2 class="centered-heading">
+      Why Cambridge Physics Academy?
+    </h2>
+
+    <div class="custom-row">
+      <div class="box">
+          <div class="box-header">
+            <h3 class="box-title">Experience</h3>
+            <div class="box-icon">
+            <img src="pictures/cap.png" alt="Icon 2" class="box-icon">
+          </div>
+          </div>
+          <p class="box-description" style="text-align: center;">We bring years of experience in olympiad physics to our lectures, problem sets, and solutions. Evan and Collin have also taught with multiple organizations in the past with years of teaching experience. In our classes, we emphasize the importance of experience: practice makes perfect.</p>
+        </div>
+
+        <div class="box">
+          <div class="box-header">
+            <h3 class="box-title">Excellence</h3>
+            <div class="box-icon">
+            <img src="pictures/star2.png" alt="Icon 2" class="box-icon">
+          </div>
+          </div>
+          <p class="box-description" style="text-align: center;">We aim to provide the best physics olympiad training materials possible. Exclusive olympiad tricks and strategies garnered from years of experience are embedded into our lectures and homework. Our students achieve excellence through our intensive and thorough preparation materials. </p>
+        </div>
+      </div>
+
 
     <h2 class="centered-heading">
         Course Offerings
@@ -379,8 +461,8 @@ author_profile: false
               <img src="pictures/apicon.png" alt="Icon 2" class="box-icon">
             </div>
             </div>
-            <p class="box-description">Learn the basics of mechanics and prepare for the AP Physics 1 exam. Class suitable for beginners and physics enthusiasts. Sessions offered in Fall and Spring.</p>
-            <a href="/ap/" class="learn-more">Enroll Now</a>
+            <p class="box-description" style="text-align: center;">Learn the basics of mechanics and prepare for the AP Physics 1 exam. Class suitable for beginners and physics enthusiasts. Sessions offered in Fall and Spring.</p>
+            <a href="/ap/" class="enroll-now-button" style="margin: 0 auto;"><span>Learn More</span></a>
           </div>
 
           <div class="box">
@@ -390,8 +472,8 @@ author_profile: false
               <img src="pictures/fmaicon.png" alt="Icon 2" class="box-icon">
             </div>
             </div>
-            <p class="box-description">Our flagship course, prepare for the F=ma exam and USAPhO mechanics section with hundreds of original problems and solutions. Sessions offered in Fall and Spring.</p>
-            <a href="page2.html" class="learn-more">Enroll Now</a>
+            <p class="box-description" style="text-align: center;">Our flagship course, prepare for the F=ma exam and USAPhO mechanics section with hundreds of original problems and solutions. Sessions offered in Fall and Spring.</p>
+            <a href="/fma/" class="enroll-now-button" style="margin: 0 auto;"><span>Learn More</span></a>
           </div>
 
           <div class="box">
@@ -401,10 +483,13 @@ author_profile: false
               <img src="pictures/usaphoicon.png" alt="Icon 2" class="box-icon", style="margin: 10px">
             </div>
             </div>
-            <p class="box-description">Earn a medal on the USAPhO exam with our high-intensity deep dive into electromagnetism, thermodynamics, optics, and more. Session offered in the Winter.</p>
-            <a href="page2.html" class="learn-more">Enroll Now</a>
+            <p class="box-description" style="text-align: center;">Earn a medal on the USAPhO exam with our high-intensity deep dive into electromagnetism, thermodynamics, optics, and more. Session offered in the Winter.</p>
+            <a href="/usapho/" class="enroll-now-button" style="margin: 0 auto;"><span>Learn More</span></a>
           </div>
-      
+      </div>
+      <h2 class="centered-heading2" style="padding-top: 40px;">
+        Questions? Email cambphys@gmail.com or join our <a href="https://groups.google.com/forum/subscribe?token=AHZ7KVMG_1YBs2InPWQGU2ayLPS4o6Xm4YSqADKDf34Lf1h5IpU8hskEJHB7aESkJ6JhW5yJZGT0ljCYM7GxU1o58yNrd1gQrQ" style="color: rgb(0, 162, 216); text-decoration: underline;">mailing list</a>.
+      </h2>  
   </div>
 
   <script>
