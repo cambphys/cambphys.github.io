@@ -3,521 +3,567 @@ layout: default
 title: F=ma Course Series
 permalink: /fma/
 ---
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .container {
-      max-width: 80%;
-      margin: 0 auto; /* Center the container */
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        max-width: 80%;
+        margin: 0 auto; /* Center the container */
         justify-content: center;
         align-items: center;
-    }
-
-    .table-box {
-  width: 100%; /* Adjust as needed */
-  margin: 0 auto; /* Center the table-box */
-  padding: 20px;
-  box-sizing: border-box; /* Ensures padding doesn't affect the width */
-  display: flex; /* Use flexbox to center the table */
-  justify-content: center; /* Center horizontally */
-}
-
-table {
-  width: 100%; /* Ensure the table takes full width of its container */
-  max-width: 100%; /* Prevent overflow beyond container */
-  border-collapse: collapse; /* Remove default spacing between cells */
-  table-layout: fixed; /* Fix table layout to prevent column width issues */
-}
-    .row {
-  display: flex;
-  width: 100%;
-}
-
-.col-left {
-  flex: 7;
-  padding-top: 0;
-}
-
-.col-right {
-  flex: 4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.col-right img {
-  max-width: 100%;
-  height: auto;
-  padding: 30px; /* Adjust padding around the image as needed */
-}
-
-.button-row {
-  display: flex;
-  align-items: left; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
-  gap: 10px; /* Space between the text and the button */
-  margin-top: 20px; /* Spacing above the row */
-}
-
-.button-row h3 {
-  line-height: 50px; /* Match this to the button height for vertical alignment */
-  margin: 0; /* Remove default margin to fine-tune alignment */
-}
-
-.enroll-now-button {
-  background-color: #808080;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  width: 130px; /* Set the width */
-  height: 50px; /* Set the height */
-  font-size: 18px; /* Adjust font size as needed */
-  border-radius: 10px; /* Rounded corners */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.enroll-now-button span {
-  text-align: center;
-  width: 100%; /* Ensure the span takes full width for centering text */
-}
-
-.enroll-now-button:hover {
-  background-color: #808080;
-  color: white;
-}
-
-.enroll-now-button:visited {
-  color: white; /* Ensure text color remains white for visited links */
-}
-
-.enroll-now-button:active {
-  background-color: #808080; /* Slightly lighter background when button is clicked */
-  color: white; /* Ensure text color remains white when clicked */
-} 
-
-.more-info-button {
-  background-color: #00AEEF;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  width: 180px; /* Set the width */
-  height: 50px; /* Set the height */
-  font-size: 18px; /* Adjust font size as needed */
-  border-radius: 10px; /* Rounded corners */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.more-info-button span {
-  text-align: center;
-  width: 100%; /* Ensure the span takes full width for centering text */
-}
-
-.more-info-button:hover {
-  background-color: rgb(59, 205, 254);
-  color: white;
-}
-
-.more-info-button:visited {
-  color: white; /* Ensure text color remains white for visited links */
-}
-
-.more-info-button:active {
-  background-color: rgb(59, 205, 254); /* Slightly lighter background when button is clicked */
-  color: white; /* Ensure text color remains white when clicked */
-} 
-
-.full-width-divider {
-  width: 100%;
-  height: 2px; /* Thickness of the line */
-  background-color: #ccc; /* Color of the line */
-  border: none; /* Remove default border if using <hr> */
-  margin: 20px 0; /* Space above and below the divider */
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.centered-heading {
-  text-align: center; /* Centers the text horizontally */
-  margin: 20px 0; /* Adjusts space above and below the heading */
-  font-size: 1.5em; /* Adjust font size as needed */
-}
-
-.box {
-  display:flex;
-  flex-direction: column;
-  border-radius: 8px; /* Rounded corners */
-  padding: 20px;
-  flex: 1; /* Makes all boxes equal width */
-  max-width: 30%; /* Adjust as needed */
-  position: relative;
-  justify-content: center;
-  align-items: center
-}
-
-.box-content {
-    display: flex; /* Use Flexbox to align content */
-    justify-content: space-between; /* Space between left and right content */
-    align-items: center; /* Center items vertically */
-}
-.box-header {
-    display: flex;
-    text-align: center; /* Center align the footer content */
-    align-items: center;
-    justify-content: center;
-}
-
-.box-left {
-    flex: 1; /* Take up available space */
-}
-
-.box-title {
-    margin: 0; /* Remove default margin */
-    font-size: 1.2em; /* Adjust font size as needed */
-}
-
-.box-description {
-    margin-top: 10px; /* Space between title and description */
-    font-size: 1em; /* Adjust font size as needed */
-    text-align: center;
-}
-
-.box-right {
-    flex-shrink: 0; /* Prevent shrinking of image container */
-}
-
-.box-image {
-    max-width: 100%; /* Ensure image fits within container */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.box-footer {
-    text-align: center; /* Center align the footer content */
-    margin-top: 20px; /* Space above the footer */
-}
-
-.box-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 14px; /* Space between boxes */
-}
-
-.box-icon {
-    width: 80px; /* Define the width of the box */
-    height: 80px; /* Define the height of the box */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Ensure content does not overflow */
-    margin: 0 auto;
-}
-
-.box-icon img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain; /* Ensures the image maintains its aspect ratio */
-    width: auto; /* Ensure the image width scales proportionally */
-    height: auto;
-    padding-bottom: 10px
-}
-
-.table-container {
-      width: 100%; /* Full width of the screen */
-      padding-left: 200px; /* Padding around the container */
-      padding-right: 200px;
-    }
-
-    table {
-      width: 100%; /* Table takes full width of its container */
-      border-collapse: collapse; /* Remove default spacing between cells */
-    }
-
-    th, td {
-      border: 1px solid #ddd; /* Light border color */
-      padding: 12px; /* Padding inside cells */
-      text-align: left; /* Align text to the left */
-    }
-
-    th {
-      background-color: #f2f2f2; /* Light gray background for header */
-      color: #333; /* Text color */
-    }
-    /* Column width distribution: 1:4:5 */
-    .col-1 {
-      width: 15%; /* 1 out of 10 units */
-    }
-    .col-2 {
-      width: 40%; /* 4 out of 10 units */
-    }
-    .col-3 {
-      width: 45%; /* 5 out of 10 units */
-    }
-    @media (max-width: 768px) {
-      .container {
-        max-width: 100%;
-        padding: 10px;
       }
 
-      .table-container {
-      width: 100%; /* Full width of the screen */
-      padding-left: 10px; /* Padding around the container */
-      padding-right: 10px;
-    }
-
-      .col-right img {
-  max-width: 70%;
-  height: auto;
-  padding: 0px; /* Adjust padding around the image as needed */
-}
-
-      .box {
-        max-width: 100%;
-        padding: 10px;
-        }
-
-        .box-row {
-        flex-direction: column; /* Stack columns vertically on small screens */
+      .table-box {
+        width: 100%; /* Adjust as needed */
+        margin: 0 auto; /* Center the table-box */
+        padding: 20px;
+        box-sizing: border-box; /* Ensures padding doesn't affect the width */
+        display: flex; /* Use flexbox to center the table */
+        justify-content: center; /* Center horizontally */
       }
 
-      .col-right {
-        padding: 10px;
-        flex: 2;
+      table {
+        width: 100%; /* Ensure the table takes full width of its container */
+        max-width: 100%; /* Prevent overflow beyond container */
+        border-collapse: collapse; /* Remove default spacing between cells */
+        table-layout: fixed; /* Fix table layout to prevent column width issues */
+      }
+      .row {
+        display: flex;
+        width: 100%;
       }
 
       .col-left {
-  flex: 8;
-}
-
-      .row {
-        flex-direction: column; /* Stack columns vertically on small screens */
+        flex: 7;
+        padding-top: 0;
       }
 
-      .table-box table tr:nth-child(n+3) {
-    display: none;
-  }
-    } 
-    h2 {
-            font-size: 3em; /* Default font size for larger screens */
-            line-height: 1.2; /* Adjust line height for better readability */
+      .col-right {
+        flex: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .col-right img {
+        max-width: 100%;
+        height: auto;
+        padding: 30px; /* Adjust padding around the image as needed */
+      }
+
+      .button-row {
+        display: flex;
+        align-items: left; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        gap: 10px; /* Space between the text and the button */
+        margin-top: 20px; /* Spacing above the row */
+      }
+
+      .button-row h3 {
+        line-height: 50px; /* Match this to the button height for vertical alignment */
+        margin: 0; /* Remove default margin to fine-tune alignment */
+      }
+
+      .enroll-now-button {
+        background-color: #808080;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        width: 130px; /* Set the width */
+        height: 50px; /* Set the height */
+        font-size: 18px; /* Adjust font size as needed */
+        border-radius: 10px; /* Rounded corners */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .enroll-now-button span {
+        text-align: center;
+        width: 100%; /* Ensure the span takes full width for centering text */
+      }
+
+      .enroll-now-button:hover {
+        background-color: #808080;
+        color: white;
+      }
+
+      .enroll-now-button:visited {
+        color: white; /* Ensure text color remains white for visited links */
+      }
+
+      .enroll-now-button:active {
+        background-color: #808080; /* Slightly lighter background when button is clicked */
+        color: white; /* Ensure text color remains white when clicked */
+      }
+
+      .more-info-button {
+        background-color: #00aeef;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        width: 180px; /* Set the width */
+        height: 50px; /* Set the height */
+        font-size: 18px; /* Adjust font size as needed */
+        border-radius: 10px; /* Rounded corners */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+      }
+
+      .more-info-button span {
+        text-align: center;
+        width: 100%; /* Ensure the span takes full width for centering text */
+      }
+
+      .more-info-button:hover {
+        background-color: rgb(59, 205, 254);
+        color: white;
+      }
+
+      .more-info-button:visited {
+        color: white; /* Ensure text color remains white for visited links */
+      }
+
+      .more-info-button:active {
+        background-color: rgb(
+          59,
+          205,
+          254
+        ); /* Slightly lighter background when button is clicked */
+        color: white; /* Ensure text color remains white when clicked */
+      }
+
+      .full-width-divider {
+        width: 100%;
+        height: 2px; /* Thickness of the line */
+        background-color: #ccc; /* Color of the line */
+        border: none; /* Remove default border if using <hr> */
+        margin: 20px 0; /* Space above and below the divider */
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .centered-heading {
+        text-align: center; /* Centers the text horizontally */
+        margin: 20px 0; /* Adjusts space above and below the heading */
+        font-size: 1.5em; /* Adjust font size as needed */
+      }
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px; /* Rounded corners */
+        padding: 20px;
+        flex: 1; /* Makes all boxes equal width */
+        max-width: 30%; /* Adjust as needed */
+        position: relative;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box-content {
+        display: flex; /* Use Flexbox to align content */
+        justify-content: space-between; /* Space between left and right content */
+        align-items: center; /* Center items vertically */
+      }
+      .box-header {
+        display: flex;
+        text-align: center; /* Center align the footer content */
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box-left {
+        flex: 1; /* Take up available space */
+      }
+
+      .box-title {
+        margin: 0; /* Remove default margin */
+        font-size: 1.2em; /* Adjust font size as needed */
+      }
+
+      .box-description {
+        margin-top: 10px; /* Space between title and description */
+        font-size: 1em; /* Adjust font size as needed */
+        text-align: center;
+      }
+
+      .box-right {
+        flex-shrink: 0; /* Prevent shrinking of image container */
+      }
+
+      .box-image {
+        max-width: 100%; /* Ensure image fits within container */
+        height: auto; /* Maintain aspect ratio */
+      }
+
+      .box-footer {
+        text-align: center; /* Center align the footer content */
+        margin-top: 20px; /* Space above the footer */
+      }
+
+      .box-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 14px; /* Space between boxes */
+      }
+
+      .box-icon {
+        width: 80px; /* Define the width of the box */
+        height: 80px; /* Define the height of the box */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Ensure content does not overflow */
+        margin: 0 auto;
+      }
+
+      .box-icon img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; /* Ensures the image maintains its aspect ratio */
+        width: auto; /* Ensure the image width scales proportionally */
+        height: auto;
+        padding-bottom: 10px;
+      }
+
+      .table-container {
+        width: 100%; /* Full width of the screen */
+        padding-left: 200px; /* Padding around the container */
+        padding-right: 200px;
+      }
+
+      table {
+        width: 100%; /* Table takes full width of its container */
+        border-collapse: collapse; /* Remove default spacing between cells */
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd; /* Light border color */
+        padding: 12px; /* Padding inside cells */
+        text-align: left; /* Align text to the left */
+      }
+
+      th {
+        background-color: #f2f2f2; /* Light gray background for header */
+        color: #333; /* Text color */
+      }
+      /* Column width distribution: 1:4:5 */
+      .col-1 {
+        width: 15%; /* 1 out of 10 units */
+      }
+      .col-2 {
+        width: 40%; /* 4 out of 10 units */
+      }
+      .col-3 {
+        width: 45%; /* 5 out of 10 units */
+      }
+      @media (max-width: 768px) {
+        .container {
+          max-width: 100%;
+          padding: 10px;
         }
 
-        /* Responsive font size for smaller screens */
-        @media (max-width: 768px) {
-            h2 {
-                font-size: 2em; /* Adjust font size for tablets and small screens */
-            }
+        .table-container {
+          width: 100%; /* Full width of the screen */
+          padding-left: 10px; /* Padding around the container */
+          padding-right: 10px;
         }
 
-        @media (max-width: 480px) {
-            h2 {
-                font-size: 1.5em; /* Further adjust font size for very small screens */
-            }
+        .col-right img {
+          max-width: 70%;
+          height: auto;
+          padding: 0px; /* Adjust padding around the image as needed */
         }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-right">
-        <img src="{{ site.baseurl }}/pictures/fmaicon.png" alt="Description of image">
+
+        .box {
+          max-width: 100%;
+          padding: 10px;
+        }
+
+        .box-row {
+          flex-direction: column; /* Stack columns vertically on small screens */
+        }
+
+        .col-right {
+          padding: 10px;
+          flex: 2;
+        }
+
+        .col-left {
+          flex: 8;
+        }
+
+        .row {
+          flex-direction: column; /* Stack columns vertically on small screens */
+        }
+
+        .table-box table tr:nth-child(n + 3) {
+          display: none;
+        }
+      }
+      h2 {
+        font-size: 3em; /* Default font size for larger screens */
+        line-height: 1.2; /* Adjust line height for better readability */
+      }
+
+      /* Responsive font size for smaller screens */
+      @media (max-width: 768px) {
+        h2 {
+          font-size: 2em; /* Adjust font size for tablets and small screens */
+        }
+      }
+
+      @media (max-width: 480px) {
+        h2 {
+          font-size: 1.5em; /* Further adjust font size for very small screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-right">
+          <img
+            src="{{ site.baseurl }}/pictures/fmaicon.png"
+            alt="Description of image"
+          />
+        </div>
+        <div class="col-left">
+          <h2>F=ma Course Series</h2>
+          <p>
+            Our rigorous F=ma preparation course helps students solidify their
+            foundations while simultaneously challenging them with USAPhO-level
+            mechanics problems. Sessions are offered in
+            <span style="font-weight: bold">Fall</span> and
+            <span style="font-weight: bold">Spring</span>.
+          </p>
+        </div>
       </div>
-      <div class="col-left">
-        <h2>
-            F=ma Course Series
-          </h2>
-          <p>Our rigorous F=ma preparation course helps students solidify their foundations while simultaneously challenging them with USAPhO-level mechanics problems. Sessions are offered in <span style="font-weight: bold">Fall</span> and <span style="font-weight: bold">Spring</span>.</p>
-        </div>
-    </div>
-    <div class="button-row">
-      <h3 style="padding-right: 10px;">Fall 2024 registration:  </h3> 
-      <div class="enroll-now-button">Opens Aug 17</div>
-    </div>
-    <div class="full-width-divider" style="margin-top: 50px;"></div>
-
-    <h2 class="centered-heading">
-      Course Information
-    </h2>
-
-    <div class="box-row">
-      <div class="box">
-        <div class="box-header">
-          <div class="box-icon">
-          <img src="{{ site.baseurl }}/pictures/clock.png" alt="Icon 2" class="box-icon">
-        </div>
-        </div>
-        <p class="box-description">16 weeks (9/15/24 - 1/19/25)<br>Sundays, 2:00 - 3:00 pm EST<br>Lectures are recorded</p>
+      <div class="button-row">
+        <h3 style="padding-right: 10px">Fall 2024 registration:</h3>
+        <a
+          href="https://forms.gle/2UGovTmY4wwib1KKA"
+          class="enroll-now-button"
+          target="_blank"
+          ><span>Enroll Now</span></a
+        >
       </div>
+      <div class="full-width-divider" style="margin-top: 50px"></div>
+
+      <h2 class="centered-heading">Course Information</h2>
+
+      <div class="box-row">
+        <div class="box">
+          <div class="box-header">
+            <div class="box-icon">
+              <img
+                src="{{ site.baseurl }}/pictures/clock.png"
+                alt="Icon 2"
+                class="box-icon"
+              />
+            </div>
+          </div>
+          <p class="box-description">
+            16 weeks (9/15/24 - 1/19/25)<br />Sundays, 2:00 - 3:00 pm EST<br />Lectures
+            are recorded
+          </p>
+        </div>
 
         <div class="box">
           <div class="box-header">
             <div class="box-icon">
-            <img src="{{ site.baseurl }}/pictures/hw.png" alt="Icon 2" class="box-icon">
+              <img
+                src="{{ site.baseurl }}/pictures/hw.png"
+                alt="Icon 2"
+                class="box-icon"
+              />
+            </div>
           </div>
-          </div>
-          <p class="box-description">500+ homework problems<br>Full practice F=ma exam with original problems<br>Includes preparation for USAPhO mechanics</p>
+          <p class="box-description">
+            500+ homework problems<br />Full practice F=ma exam with original
+            problems<br />Includes preparation for USAPhO mechanics
+          </p>
         </div>
 
         <div class="box">
           <div class="box-header">
             <div class="box-icon">
-            <img src="{{ site.baseurl }}/pictures/disc.png" alt="Icon 2">
+              <img src="{{ site.baseurl }}/pictures/disc.png" alt="Icon 2" />
+            </div>
           </div>
-          </div>
-          <p class="box-description">Access to Discord channel<br>Chat with Evan and Collin<br>Connect with growing network</p>
+          <p class="box-description">
+            Access to Discord channel<br />Chat with Evan and Collin<br />Connect
+            with growing network
+          </p>
         </div>
-    
       </div>
 
-      <h2 class="centered-heading">
-        Learn More
-      </h2>
-  
+      <h2 class="centered-heading">Learn More</h2>
+
       <div class="box-row">
         <div class="box">
           <div class="box-header" style="padding-bottom: 10px">
             <div class="box-icon">
-              <img src="{{ site.baseurl }}/pictures/check.png" alt="Icon 2">
+              <img src="{{ site.baseurl }}/pictures/check.png" alt="Icon 2" />
             </div>
           </div>
-          <a href="https://drive.google.com/file/d/1nknqdh0yhziAi37-lAvLKb0D_CdUSl5F/view?usp=sharing" class="more-info-button" target="_blank"><span>Fall 2024 Syllabus</span></a>
-        </div>
-  
-          <div class="box">
-            <div class="box-header"  style="padding-bottom: 10px">
-              <div class="box-icon">
-                <img src="{{ site.baseurl }}/pictures/pencil.png" alt="Icon 2">
-              </div>
-              </div>
-              <a href="https://drive.google.com/file/d/1jmvxGPvE-MQvjXd_SOUDwUPvY4quzH9P/view?usp=sharing" class="more-info-button" target="_blank"><span>Sample Homework</span></a>
-          </div>
-  
-          <div class="box">
-            <div class="box-header"  style="padding-bottom: 10px">
-              <div class="box-icon">
-                <img src="{{ site.baseurl }}/pictures/vid.png" alt="Icon 2">
-              </div>
-              </div>
-              <a href="https://youtu.be/KN_l71_JuKc?si=O3GVYqKTOZY1E6MK" class="more-info-button" target="_blank"><span>Sample Lecture</span></a>
-          </div>
-      
+          <a
+            href="https://drive.google.com/file/d/1nknqdh0yhziAi37-lAvLKb0D_CdUSl5F/view?usp=sharing"
+            class="more-info-button"
+            target="_blank"
+            ><span>Fall 2024 Syllabus</span></a
+          >
         </div>
 
+        <div class="box">
+          <div class="box-header" style="padding-bottom: 10px">
+            <div class="box-icon">
+              <img src="{{ site.baseurl }}/pictures/pencil.png" alt="Icon 2" />
+            </div>
+          </div>
+          <a
+            href="https://drive.google.com/file/d/1jmvxGPvE-MQvjXd_SOUDwUPvY4quzH9P/view?usp=sharing"
+            class="more-info-button"
+            target="_blank"
+            ><span>Sample Homework</span></a
+          >
+        </div>
+
+        <div class="box">
+          <div class="box-header" style="padding-bottom: 10px">
+            <div class="box-icon">
+              <img src="{{ site.baseurl }}/pictures/vid.png" alt="Icon 2" />
+            </div>
+          </div>
+          <a
+            href="https://youtu.be/KN_l71_JuKc?si=O3GVYqKTOZY1E6MK"
+            class="more-info-button"
+            target="_blank"
+            ><span>Sample Lecture</span></a
+          >
+        </div>
+      </div>
+
+      <h2 class="centered-heading" style="padding-top: 40px">
+        Course Schedule Fall 2024
+      </h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th class="col-1">Lecture Date</th>
+              <th class="col-2">Subject</th>
+              <th class="col-3">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-1">9/15</td>
+              <td class="col-2">Problem Solving</td>
+              <td class="col-3">Dimensional and uncertainty analysis</td>
+            </tr>
+            <tr>
+              <td class="col-1">9/22</td>
+              <td class="col-2">Kinematics I</td>
+              <td class="col-3">1D and 2D motion</td>
+            </tr>
+            <tr>
+              <td class="col-1">9/29</td>
+              <td class="col-2">Kinematics II</td>
+              <td class="col-3">Projectiles, constraints, apparatuses</td>
+            </tr>
+            <tr>
+              <td class="col-1">10/6</td>
+              <td class="col-2">Forces I</td>
+              <td class="col-3">Newton's laws and circular motion</td>
+            </tr>
+            <tr>
+              <td class="col-1">10/13</td>
+              <td class="col-2">Forces II</td>
+              <td class="col-3">Constraints, pulleys, apparatuses</td>
+            </tr>
+            <tr>
+              <td class="col-1">10/20</td>
+              <td class="col-2">Energy</td>
+              <td class="col-3">Work-energy thorem, conservation laws</td>
+            </tr>
+            <tr>
+              <td class="col-1">10/27</td>
+              <td class="col-2">Momentum</td>
+              <td class="col-3">Conservation laws, collisions</td>
+            </tr>
+            <tr>
+              <td class="col-1">11/3</td>
+              <td class="col-2">Rotation I</td>
+              <td class="col-3">Kinematics and moment of inertia</td>
+            </tr>
+            <tr>
+              <td class="col-1">11/10</td>
+              <td class="col-2">Rotation II</td>
+              <td class="col-3">Rotational energy and momentum</td>
+            </tr>
+            <tr>
+              <td class="col-1">11/17</td>
+              <td class="col-2">Complex Systems</td>
+              <td class="col-3">Olympiad tricks and rotational apparatuses</td>
+            </tr>
+            <tr>
+              <td class="col-1">12/1</td>
+              <td class="col-2">Statics</td>
+              <td class="col-3">Conditions of equilibrium</td>
+            </tr>
+            <tr>
+              <td class="col-1">12/8</td>
+              <td class="col-2">Fluids</td>
+              <td class="col-3">Static and dynamic fluids</td>
+            </tr>
+            <tr>
+              <td class="col-1">12/15</td>
+              <td class="col-2">Gravitation</td>
+              <td class="col-3">Newton's law and Kepler's laws</td>
+            </tr>
+            <tr>
+              <td class="col-1">1/5</td>
+              <td class="col-2">Fictitious Forces</td>
+              <td class="col-3">Centrifugal, coriolis, azimuthal forces</td>
+            </tr>
+            <tr>
+              <td class="col-1">1/12</td>
+              <td class="col-2">Oscillations</td>
+              <td class="col-3">Simple harmonic and coupled systems</td>
+            </tr>
+            <tr>
+              <td class="col-1">1/19</td>
+              <td class="col-2">Review</td>
+              <td class="col-3">Includes practice F=ma exam</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container">
         <h2 class="centered-heading" style="padding-top: 40px">
-          Course Schedule Fall 2024
-        </h2>  
-        <div class="table-container">
-    <table>
-      <thead>
-        <tr>
-          <th class="col-1">Lecture Date</th>
-          <th class="col-2">Subject</th>
-          <th class="col-3">Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="col-1">9/15</td>
-          <td class="col-2">Problem Solving</td>
-          <td class="col-3">Dimensional and uncertainty analysis</td>
-        </tr>
-        <tr>
-          <td class="col-1">9/22</td>
-          <td class="col-2">Kinematics I</td>
-          <td class="col-3">1D and 2D motion</td>
-        </tr>
-        <tr>
-          <td class="col-1">9/29</td>
-          <td class="col-2">Kinematics II</td>
-          <td class="col-3">Projectiles, constraints, apparatuses</td>
-        </tr>
-        <tr>
-          <td class="col-1">10/6</td>
-          <td class="col-2">Forces I</td>
-          <td class="col-3">Newton's laws and circular motion</td>
-        </tr>
-        <tr>
-          <td class="col-1">10/13</td>
-          <td class="col-2">Forces II</td>
-          <td class="col-3">Constraints, pulleys, apparatuses</td>
-        </tr>
-        <tr>
-          <td class="col-1">10/20</td>
-          <td class="col-2">Energy</td>
-          <td class="col-3">Work-energy thorem, conservation laws</td>
-        </tr>
-        <tr>
-          <td class="col-1">10/27</td>
-          <td class="col-2">Momentum</td>
-          <td class="col-3">Conservation laws, collisions</td>
-        </tr>
-        <tr>
-          <td class="col-1">11/3</td>
-          <td class="col-2">Rotation I</td>
-          <td class="col-3">Kinematics and moment of inertia</td>
-        </tr>
-        <tr>
-          <td class="col-1">11/10</td>
-          <td class="col-2">Rotation II</td>
-          <td class="col-3">Rotational energy and momentum</td>
-        </tr>
-        <tr>
-          <td class="col-1">11/17</td>
-          <td class="col-2">Complex Systems</td>
-          <td class="col-3">Olympiad tricks and rotational apparatuses</td>
-        </tr>
-        <tr>
-          <td class="col-1">12/1</td>
-          <td class="col-2">Statics</td>
-          <td class="col-3">Conditions of equilibrium</td>
-        </tr>
-        <tr>
-          <td class="col-1">12/8</td>
-          <td class="col-2">Fluids</td>
-          <td class="col-3">Static and dynamic fluids</td>
-        </tr>
-        <tr>
-          <td class="col-1">12/15</td>
-          <td class="col-2">Gravitation</td>
-          <td class="col-3">Newton's law and Kepler's laws</td>
-        </tr>
-        <tr>
-          <td class="col-1">1/5</td>
-          <td class="col-2">Fictitious Forces</td>
-          <td class="col-3">Centrifugal, coriolis, azimuthal forces</td>
-        </tr>
-        <tr>
-          <td class="col-1">1/12</td>
-          <td class="col-2">Oscillations</td>
-          <td class="col-3">Simple harmonic and coupled systems</td>
-        </tr>
-        <tr>
-          <td class="col-1">1/19</td>
-          <td class="col-2">Review</td>
-          <td class="col-3">Includes practice F=ma exam</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="container">
-    <h2 class="centered-heading" style="padding-top: 40px">
-      Questions? Email cambphys@gmail.com or join our <a href="https://groups.google.com/forum/subscribe?token=AHZ7KVMG_1YBs2InPWQGU2ayLPS4o6Xm4YSqADKDf34Lf1h5IpU8hskEJHB7aESkJ6JhW5yJZGT0ljCYM7GxU1o58yNrd1gQrQ" style="color: rgb(0, 162, 216); text-decoration: underline;">mailing list</a>.
-    </h2>  
+          Questions? Email cambphys@gmail.com or join our
+          <a
+            href="https://groups.google.com/forum/subscribe?token=AHZ7KVMG_1YBs2InPWQGU2ayLPS4o6Xm4YSqADKDf34Lf1h5IpU8hskEJHB7aESkJ6JhW5yJZGT0ljCYM7GxU1o58yNrd1gQrQ"
+            style="color: rgb(0, 162, 216); text-decoration: underline"
+            >mailing list</a
+          >.
+        </h2>
+      </div>
     </div>
-
-  </div>
-
-</body>
+  </body>
 </html>
-
