@@ -526,9 +526,9 @@ author_profile: false
       </div>
 
 
-    <h2 class="centered-heading">
+      <h2 id="course-offerings" class="centered-heading">
         Course Offerings
-      </h2>
+    </h2>
 
     <div class="custom-row">
         <div class="box">
@@ -571,7 +571,7 @@ author_profile: false
 
   <script>
     function scrollToCourseOfferings() {
-        const courseOfferings = document.querySelector('h2.centered-heading');
+        const courseOfferings = document.getElementById('course-offerings');
         if (courseOfferings) {
             courseOfferings.scrollIntoView({ behavior: 'smooth' });
         }
