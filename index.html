@@ -402,7 +402,7 @@ author_profile: false
             The <span class="gold">gold standard</span> for<br> physics olympiads.
           </h2>
           <p>Prepare with former International Physics Olympiad gold medalists from MIT and Harvard.</p>
-          <button class="scroll-button" onclick="scrollToBottom()">
+          <button class="scroll-button" onclick="scrollToCourseOfferings()">
             Get Started
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
@@ -445,7 +445,7 @@ author_profile: false
           <!-- Top row: name/school aligned with logo -->
           <div class="top-row">
             <div class="profile-info-text">
-              <p style="font-size:xx-large;"><strong>Collin Fan</strong></p>
+              <p style="font-size:x-large;"><strong>Collin Fan</strong></p>
               <p>Harvard Physics</p>
             </div>
             <div class="logo-container">
@@ -475,7 +475,7 @@ author_profile: false
           <!-- Top row: name/school aligned with logo -->
           <div class="top-row">
             <div class="profile-info-text">
-              <p style="font-size:xx-large;"><strong>Evan Kim</strong></p>
+              <p style="font-size:x-large;"><strong>Evan Kim</strong></p>
               <p>MIT Physics</p>
             </div>
             <div class="logo-container">
@@ -570,16 +570,13 @@ author_profile: false
   </div>
 
   <script>
-    function scrollToBottom() {
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: 'smooth'
-        });
+    function scrollToCourseOfferings() {
+        const courseOfferings = document.querySelector('h2.centered-heading');
+        if (courseOfferings) {
+            courseOfferings.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 </script>
-
-
-  
 
 </body>
 </html>
