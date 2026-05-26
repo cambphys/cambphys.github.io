@@ -1,0 +1,227 @@
+[
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A car is driven 225 km west and then 98 km southwest\n($45^\\circ$). What is the displacement of the car from the point\nof origin (magnitude and direction)? Draw a diagram.",
+    "problem_images": [],
+    "solution": "We can break it down into cartesian components, and we get\n    $$\\sqrt{(225 + 98/\\sqrt 2)^2 + (98/\\sqrt 2)^2} \\approx 302\\,\\unit{km}.$$\n    The direction is slightly south of west.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "The summit of a mountain, 2450 m above base camp, is measured on a map to be 4580 m horizontally from the camp in a direction $38.4^\\circ$ west of north. What are the components of the displacement vector from camp to summit? What is its magnitude? Choose the x axis east, y axis north, and z axis up.",
+    "problem_images": [],
+    "solution": "To find the components of the displacement vector, we calculate:\n    \\begin{align*}\n        d_x &= -4580 \\sin(38.4^\\circ) \\\\\n        d_y &= 4580 \\cos(38.4^\\circ) \\\\\n        d_z &= 2450\n    \\end{align*}\n    The magnitude of the displacement vector is:\n    \\[d = \\sqrt{(-4580 \\sin(38.4^\\circ))^2 + (4580 \\cos(38.4^\\circ))^2 + (2450)^2} \\approx 5194 \\, \\unit{m}.\\]",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A tiger leaps horizontally from a 7.5-m-high rock with a speed of 3.0 m/s. How far from the base of the rock will she land?",
+    "problem_images": [],
+    "solution": "The time of flight is given by:\n    \\[t = \\sqrt{\\frac{2 \\times 7.5}{9.8}}\\]\n    The distance from the base of the rock is:\n    \\[d = 3.0 \\times \\sqrt{\\frac{2 \\times 7.5}{9.8}}  = 3.7\\,\\unit{m}\\]",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A ball thrown horizontally from the roof of a building 7.5 m tall and lands 9.5 m from the base. What was the ball's initial speed?",
+    "problem_images": [],
+    "solution": "The time of flight is:\n    \\[t = \\sqrt{\\frac{2 \\times 7.5}{9.8}}\\]\n    The initial speed of the ball is:\n    \\[v = \\frac{9.5}{\\sqrt{\\frac{2 \\times 7.5}{9.8}}} = 7.7\\,\\unit{m/s}.\\]",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A football is kicked at ground level with a speed of 18.0 m/s at an angle $31.0^\\circ$ to the horizontal. How much later does it hit the ground?",
+    "problem_images": [],
+    "solution": "The vertical component of the initial velocity is:\n    \\[v_{y0} = 18.0 \\sin(31.0^\\circ)\\]\n    To find the time it hits the ground, we solve:\n    \\[0 = 18.0 \\sin(31.0^\\circ) t - \\frac{1}{2} \\cdot 9.8 \\cdot t^2\\]\n    This equation can be solved for \\(t\\) to find the time until the football hits the ground, giving $t = 1.4\\,\\unit s$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A fire hose held near the ground shoots water at a speed of 6.5 m/s. At what angle(s) should the nozzle point in order that the water land 2.5 m away? Why are there two different angles? Sketch the two trajectories.\n    \\begin{center}\n        \\includegraphics[width=4cm]{fire_hose.png}\n    \\end{center}",
+    "problem_images": [
+      "AP1_Kinematics2 Sols/fire_hose.png"
+    ],
+    "solution": "To find the angle(s) for which the water lands 2.5 m away, we use the equation:\n    \\[ \\theta = \\frac{1}{2}\\sin^{-1}\\left(\\frac{2.5 \\cdot 9.8}{6.5^2}\\right) \\]\n    There are two angles because the function \\(\\sin(2\\theta)\\) has two intersections with any given value in its domain, corresponding to a steep and a shallow trajectory. Calculating, the angles are $72.3^\\circ$ and $17.7^\\circ$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A grasshopper hops along a level road. On each hop, the grasshopper launches itself at angle $\\theta_0 = 45^\\circ$ and achieves a range $R = 0.80\\,\\unit m$. What is the average horizontal speed of the grasshopper as it hops along the road? Assume that the time spent on the ground between hops is negligible.",
+    "problem_images": [],
+    "solution": "Given \\(\\theta_0 = 45^\\circ\\) and \\(R = 0.80\\, \\text{m}\\), the average horizontal speed of the grasshopper is constant,\n    \\[ v_x = v_0/\\sqrt{2} = \\sqrt{Rg}/\\sqrt{2} = 2.0\\,\\unit{m/s}. \\]",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Show that the time required for a projectile to reach\nits highest point is equal to the time for it to return to its\noriginal height if air resistance is negligible.",
+    "problem_images": [],
+    "solution": "The time to reach the highest point is given by:\n    \\[ t_{up} = \\frac{v_0 \\sin(\\theta)}{g} \\]\n    Due to the symmetric nature of projectile motion under uniform gravity, the time to ascend is equal to the time to descend, thus showing \\(t_{up} = t_{down}\\) if air resistance is negligible.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Extreme-sports enthusiasts have been known to jump\noff the top of El Capitan, a sheer granite cliff of height 910 m in Yosemite National Park. Assume a jumper runs\nhorizontally off the top of El Capitan with speed\nand enjoys a free fall until she is 150 m above the valley\nfloor, at which time she opens her parachute.\n\\begin{center}\n    \\includegraphics[width=4cm]{el_capitan.png}\n\\end{center}\n\\begin{anum}\n    \\item How long is the jumper in free fall? Ignore air resistance.\n    \\item It is important to be as far away from the cliff as possible before opening the parachute. How far from the cliff is this jumper when she opens her chute?\n\\end{anum}",
+    "problem_images": [
+      "AP1_Kinematics2 Sols/el_capitan.png"
+    ],
+    "solution": "\\item It is in free fall for a vertical distance of $760\\,\\unit{m}$, so focusing on the $y$ component,\n    $$t= \\sqrt{\\frac{2 \\cdot 760}{g}} = 12.45\\,\\unit{m/s}.$$\n    \\item Multiplying by 4 m/s, we get around $50$ meters.",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A person in the passenger basket of a hot-air balloon\nthrows a ball horizontally outward from the basket with speed 10.0 m/s. What initial velocity (magnitude and direction) does the ball have relative to a person standing on the ground (a) if the hot-air balloon is rising\nat 3.0 m/s relative to the ground during this throw, (b) if the hot-air balloon is descending at 3.0 m/s relative to the\nground?\n\\begin{center}\n    \\includegraphics[width=4cm]{hot_air.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_Kinematics2 Sols/hot_air.png"
+    ],
+    "solution": "\\item Adding the velocity vectors, we see that the magnitude is\n    $$v=\\sqrt{10^2+3^2} = 10.4 \\, \\unit{m/s}.$$\n    And the angle is $\\arctan(3/10) \\approx 16.7^\\circ$ above the horizontal.\n    \\item Adding the velocity vectors, we see that the magnitude is\n    $$v=\\sqrt{10^2+3^2} = 10.4 \\, \\unit{m/s}.$$\n    And the angle is $\\arctan(3/10) \\approx 16.7^\\circ$ below the horizontal.",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A boat, whose speed in still water is $2.50 \\, \\unit{m/s}$ must\ncross a 285-m-wide river and arrive at a point 118 m\nupstream from where it starts. To do so, the\npilot must head the boat at a $45.0^\\circ$ upstream angle. What\nis the speed of the\nriver’s current?\n\\begin{center}\n    \\includegraphics[width=5cm]{boat_river.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_Kinematics2 Sols/boat_river.png"
+    ],
+    "solution": "The horizontal component is $2.50\\cos(45)$. So, to end up at 118 m upstream, the total vertical component upstream should be $$2.50\\cos(45) \\frac{118}{285} = 0.73\\,\\unit{m/s}.$$\n    So, the river speed is $2.5/\\sqrt 2 - 0.73 = 1.0 \\, \\unit{m/s}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "You buy a plastic dart gun, and being a clever physics\nstudent you decide to do a quick calculation to find its\nmaximum horizontal range. You shoot the gun straight up,\nand it takes 4.0 s for the dart to land back at the barrel.\nWhat is the maximum horizontal range of your gun?",
+    "problem_images": [],
+    "solution": "The total time for the bullet to fall is given by $$t = 2v_0/g,$$\n    so $v_0 = gt/2$. We learned that the maximum range was for launching at 45 degrees, giving us $$R=v_0^2/g = gt^2/4 = 39 \\, \\unit m.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A stunt driver wants to make his car jump over 8 cars\nparked side by side below a horizontal ramp as shown below.\n\\begin{center}\n    \\includegraphics[width=6cm]{car_stunt.png}\n\\end{center}\n\\begin{anum}\n    \\item With what minimum speed must he drive off the horizontal ramp? The vertical height of the ramp is 1.5 m above the cars and the horizontal distance he must clear is 22 m.\n    \\item If the ramp is now tilted upward, so that ``takeoff angle'' is $7.0^\\circ$ above the horizontal, what is the new minimum speed?\n\\end{anum}",
+    "problem_images": [
+      "AP1_Kinematics2 Sols/car_stunt.png"
+    ],
+    "solution": "\\item The time for the car to fall is $\\sqrt{2h/g}$, so the speed is $22\\sqrt{g/2h} = 39.8 \\,\\unit{m/s}$.\n    \\item",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A basketball is shot from an initial height of 2.40 m with an initial speed directed at an angle above the horizontal. (a) How far from the basket was the player if he made a basket? (b) At what\nangle to the horizontal did the ball enter the basket?\n\\begin{center}\n    \\includegraphics[width=5cm]{basketball_shot.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_Kinematics2 Sols/basketball_shot.png"
+    ],
+    "solution": "\\item Focusing on the $y$ direction the basketball has $y$ velocity\n    $$v_{yf}^2 = (v_0\\sin 35)^2 - 2g(3.05 - 2.40) \\implies v_{yf} = 5.89\\,\\unit{m/s},$$\n    So, the time travelled is $\\frac{v_{yf} + v_0\\sin 35}{g} = 1.30\\,\\unit s$, which means that it travels $$x = v_0\\cos (35^\\circ) t = \\boxed{12.8 \\, \\unit m}.$$\n    \\item We found the final velocity components, so the angle is $\\arctan (5.89/v_0\\cos 35^\\circ) = \\boxed{34.3^\\circ}$.",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A rock is kicked horizontally at $15\\, \\unit{m/s}$ from a hill with a $45^\\circ$ slope. How long does it take for the rock to hit the ground?",
+    "problem_images": [],
+    "solution": "This is a challenging problem. Here, we can use a trick where we tilt our view such that the hill is horizontal. Then, we have a horizontal gravitational acceleration of $g/\\sqrt 2$ and a vertical gravitational acceleration of $g/\\sqrt 2$. Isolating just the $y$ component, the time for the rock to fall is\n    $$t = \\frac{2v_{0,y}}{g/\\sqrt 2} = \\frac{2v_0/\\sqrt 2}{g/\\sqrt 2} = \\frac{2v_0}{g} = \\boxed{3.1\\,\\unit s}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Spymaster Chris, flying a constant 208 km/h horizontally\nin a low-flying helicopter, wants to drop secret documents\ninto her contact’s open car which is traveling $156$ km/h on a level highway 78.0 m below. At what angle (with the horizontal) should the car be in her sights when the packet is released?\n\\begin{center}\n    \\includegraphics[width=5cm]{ball_drop.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_Kinematics2 Sols/ball_drop.png"
+    ],
+    "solution": "The time it takes the for the package to fall is $t = \\sqrt{2h/g}$. So, after falling the package travels\n    $$x = vt = (208\\,\\unit{km/h})t.$$\n    This must be equal to the original difference along with the distance travelled by the car, so\n    $$(208\\,\\unit{km/h})t = (156\\,\\unit{km/h})t + \\Delta x.$$\n    So, plugging in our numbers, we calculate $\\Delta x = 57.6\\,\\unit{m}$. So, the angle should be $\\theta = \\arctan(78/57.6) = 53.6^\\circ$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "An airplane, whose air speed is 580 km/h is supposed\nto fly in a straight path $38.0^\\circ$ N of E. But a steady 82 km/h wind is blowing from the north. In what direction should the plane head?",
+    "problem_images": [],
+    "solution": "Thinking about the vector sum of the two, we want their components perpendicular to the $38^\\circ$ line to cancel. Thus, if the plane makes an angle $\\theta$ with the $38^\\circ$ line, then\n    $$580\\sin \\theta = 82\\sin (52) \\implies \\theta = 6.4^\\circ,$$\n    so the plane should head at $44.4^\\circ$ N of E.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "The classic monkey problem: An apple hangs from a tree, and a bow and arrow is aimed directly at the apple in the tree. Show that if the apple drops and the bow are fired at the exact same time, the arrow will always hit the apple.",
+    "problem_images": [],
+    "solution": "If we only look at the $y$ component of both objects, we see that if the line from the bow to the apple is $\\theta$, then\n    \\begin{align*}\n        y_{\\text{apple}} = -\\frac 12 gt^2 + y_0,\\\\\n        y_{\\text{arrow}} = v_0\\sin \\theta t - \\frac 12 gt^2.\n    \\end{align*}\n    And they collide when $v_0 \\cos \\theta t = \\frac{y_0}{\\tan \\theta}$. Plugging this into the first temr of the second equation, we see that\n    \\begin{align*}\n        y_{\\text{apple}} = -\\frac 12 gt^2 + y_0,\\\\\n        y_{\\text{arrow}} = y_0 - \\frac 12 gt^2.\n    \\end{align*}\n    which means that they will collide. Alternatively, one can view the problem in a frame that is accelerating down at $g$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics2 Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A ball starts at the bottom of a very narrow but very deep well. The well has a width $w$, and a depth $h\\gg w$. It is initially thrown at an angle of 30$^\\circ$ to the horizontal with speed $v$. What must $v$ be so that the ball escapes the well? All collisions with the walls of the well are elastic.\n    \\begin{center}\n        \\includegraphics[scale=0.1]{well}\n    \\end{center}",
+    "problem_images": [
+      "AP1_Kinematics2 Sols/well.png"
+    ],
+    "solution": "In lecture, we showed that the trajectory of the ball is just a repeated reflection of the trajectory it takes if the well was not there. Thus, since we want to find the case where the ball is able to rise up to the top of the well, the problem simply reduces to finding the minimal speed necessary for the ball to rise to a height $h$. Our vertical velocity is $v_y=v\\sin30=0.5v,$ and using $v_y^2=2gh$ we get $v=\\boxed{2\\sqrt{2gh}}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

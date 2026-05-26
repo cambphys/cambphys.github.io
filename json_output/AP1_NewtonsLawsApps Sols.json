@@ -1,0 +1,184 @@
+[
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "If the coefficient of kinetic friction between a 22-kg crate and the floor is 0.30, what horizontal force is required to move the crate at a steady speed across the floor? What horizontal force is required if $\\mu_k$ is zero?",
+    "problem_images": [],
+    "solution": "The normal force is $N=mg=215.6\\, \\unit N$. Then, the frictional force would be $f=N\\mu_k=64.7\\, \\unit N$. If the crate moves at a steady speed (no acceleration) then the net force must be 0, so the force needed to push on the crate is just $64.7\\, \\unit N$. If $\\mu_k$ is 0, then no force is needed.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A force of 35.0 N is required to start a 6.0-kg box moving across a horizontal concrete floor. (a) What is the coefficient of static friction between the box and the floor? (b) If the 35.0-N force continues, the box accelerates at 0.60 m/s$^2$. What is the coefficient of kinetic friction?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item It holds that $F=mg\\mu_s$ since we take the maximum possible value of the static friction force. Then, $\\mu_s=F/mg=0.59$.\n        \\item The net force on the block is $F=ma=3.6\\, \\unit N$. This means the frictional force is $35-3.6=31.4\\, \\unit N$. This equals $mg\\mu_k$, so $\\mu_k=31.4/mg=0.53.$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Suppose you are standing on a train accelerating at $0.20g$. What minimum coefficient of static friction must exist between your feet and the floor if you are not to slide?",
+    "problem_images": [],
+    "solution": "Let's say your mass is $m$. Then, the maximum static friction force on you is $mg\\mu_s$. This must provide a force $ma=0.2mg$, so $0.2mg=mg\\mu_s\\Rightarrow \\mu_s=0.2$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "The coefficient of static friction between hard rubber and normal street pavement is about 0.90. On how steep a hill (maximum angle) can you leave a car parked?",
+    "problem_images": [],
+    "solution": "The normal force on an incline, as we know, is $mg\\cos\\theta$, and the downward gravitational force along the incline is $mg\\sin\\theta$. We seek the $\\theta$ such that maximum static friction force $mg\\mu_s\\cos\\theta$ balances out $mg\\sin\\theta$: $$mg\\mu_s\\cos\\theta=mg\\sin\\theta\\Rightarrow \\tan\\theta=\\mu_s \\Rightarrow \\theta=\\tan^{-1}\\mu_s=42^\\circ$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A box is given a push so that it slides across the floor. How far will it go, given that the coefficient of kinetic friction is 0.15 and the push imparts an initial speed of 3.5 m/s?",
+    "problem_images": [],
+    "solution": "If the mass of the box is $m$, then the kinetic friction force is $mg\\mu_k$, which leads to acceleration $a=g\\mu_k$. Now, we will use $v^2=2a\\Delta x$, so $$\\Delta x=\\frac{v^2}{2a}=\\frac{v^2}{2g\\mu_k}=4.17\\, \\unit m$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Drag-race tires in contact with an asphalt surface have a very high coefficient of static friction. Assuming a constant acceleration and no slipping of tires, estimate the coefficient of static friction needed for a drag racer to cover 1.0 km in 12 s, starting from rest.",
+    "problem_images": [],
+    "solution": "The maximum frictional force is $mg\\mu_s$, which provides a maximum acceleration $g\\mu_s$. Then, by $\\Delta x=(1/2)at^2,$ (note that $v_0=0$ so we took that term out of the equation) we have $$\\Delta x=\\frac12g\\mu_st^2\\Rightarrow \\mu_s=\\frac{2\\Delta x}{gt^2}=1.42$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A child on a sled reaches the bottom of a hill with a velocity of 10.0 m/s and travels 25.0 m along a horizontal straightaway to a stop. If the child and sled together have a mass of 60.0 kg, what is the average retarding force on the sled on the horizontal straightaway?",
+    "problem_images": [],
+    "solution": "The acceleration can be found via $v^2=2a\\Delta x\\Rightarrow a=v^2/2\\Delta x=2\\, \\unit{m/s^2}$. The retarding force is then $F=ma=120\\, \\unit N$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A skateboarder, with an initial speed of 2.0 m/s, rolls virtually friction free down a straight incline of length 18 m in 3.3 s. At what angle $\\theta$ is the incline oriented above the horizontal?",
+    "problem_images": [],
+    "solution": "The acceleration down the plane is $a=g\\sin\\theta$. Then, we can use $$\\Delta x=v_0t+\\frac12g\\sin\\theta t^2\\Rightarrow \\sin\\theta=\\frac{2(\\Delta x-v_0t)}{gt^2}=0.214$$Then, $\\theta=\\sin^{-1}(0.214)=12.3^\\circ$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A block has mass $m = 7.0$ kg and lies on a fixed smooth frictionless plane tilted at an angle $\\theta = 22.0^\\circ$ to the horizontal. (a) Determine the acceleration of the block as it slides down the plane. (b) If the block starts from rest 12.0 m up the plane from its base, what will be the block’s speed when it reaches the bottom of the incline? (c) The block is given an initial speed of $4.5\\, \\unit{m/s}$ up the inclined plane. How far up will it go? (d) How long will it take for the block to return to its starting point?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item The acceleration is just $a=g\\sin\\theta=3.67\\, \\unit{m/s^2}.$\n        \\item We have $v=\\sqrt{2a\\Delta x}=9.39\\, \\unit{m/s}$.\n        \\item We have $\\Delta x=v^2/2a=2.79\\, \\unit m$.\n        \\item We have $\\Delta t=\\Delta v/a=2\\cdot 4.5/3.67=2.45\\, \\unit s$.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Solve all parts of the previous problem but in the case where there is friction of coefficient $\\mu=0.1$ between the crate and the incline.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item The friction points in the opposite direction as the  acceleration is just $a_1=g\\sin\\theta-g\\mu\\cos\\theta=2.76\\, \\unit{m/s^2}.$\n        \\item We have $v=\\sqrt{2a_1\\Delta x}=8.14\\, \\unit{m/s}$. \n        \\item In this part the friction points in the same direction as the acceleration downward, so $a_2=g\\sin\\theta+g\\mu\\cos\\theta=4.58\\, \\unit{m/s^2}$. Then we have $\\Delta x=v^2/2a_2=2.21\\, \\unit m$.\n        \\item In the motion of the block upward, $\\Delta t = v/a_2=0.98\\, \\unit s.$ When the block goes down, we use $\\Delta x$ from the previous part and use $\\Delta x = (1/2)a_1t^2\\Rightarrow t=\\sqrt{2(2.21)/2.76}=1.27\\, \\unit s$, since friction now points in the opposite direction as gravity again. The total time is thus $0.98+1.27=2.25\\, \\unit s$.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A car can decelerate at 3.80 m/s$^2$ without skidding when coming to rest on a level road. What would its deceleration be if the road is inclined at 9.3$^\\circ$ and the car moves uphill? Assume the same static friction coefficient.",
+    "problem_images": [],
+    "solution": "The maximal acceleration provided by static friction is thus $g\\mu_s=3.8\\,\\unit{m/s^2}$, which implies $\\mu_s=0.39$. If the car moves uphill, we can point gravity and static friction in the same direction, so the maximal acceleration is $$a=g\\sin\\theta+g\\mu_s\\cos\\theta=5.36\\, \\unit{m/s^2}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "On an icy day, you worry about parking your car in your driveway, which has an incline of 12$^\\circ$. Your neighbor’s driveway has an incline of 9.0°, and the driveway across the street is at 6.0$^\\circ$. The coefficient of static friction between tire rubber and ice is 0.15. Which driveway(s) will be safe to park in?",
+    "problem_images": [],
+    "solution": "From lecture, the static friction needed to keep the car in place is $\\mu_s=\\tan\\theta$, which implies a cutoff $\\theta=\\tan^{-1}\\mu_s=8.53^\\circ$. Any angle above this will result in the car slipping, so you can only park on the driveway across the street.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Two masses $m_A = 2.0$ kg and $m_B = 5.0$ kg are on inclines and are connected together by a string as shown in the figure. The coefficient of kinetic friction between each mass and its incline is $\\mu_k = 0.30$. If $m_A$ moves up, and $m_B$ moves down, determine their acceleration. \\begin{center}\n        \\includegraphics[scale=0.2]{halfincline}\n    \\end{center}",
+    "problem_images": [
+      "AP1_NewtonsLawsApps Sols/halfincline.png"
+    ],
+    "solution": "We are given that the boxes move to the right in the figure. Now we consider the two boxes as one big box, and consider the forces acting on them as a whole (so we can neglect the tension). We define the rightward direction as positive, so the net force is $$F=m_Bg\\sin(21)-m_Bg\\mu_k\\cos(21)-m_Ag\\sin(51)-m_Ag\\mu\\cos(51)=-15.09\\, \\unit N$$This means the boxes are slowing down. The acceleration is then $a=F/(m_A+m_B)=-2.16\\, \\unit{m/s^2}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A child slides down a slide with a 34$^\\circ$ incline, and at the bottom her speed is precisely half what it would have been if the slide had been frictionless. Calculate the coefficient of kinetic friction between the slide and the child.",
+    "problem_images": [],
+    "solution": "Suppose the distance down the slide is $d$. If the slide is frictionless her acceleration is $g\\sin\\theta$, so her speed at the bottom would be $v_1=\\sqrt{2ad}=\\sqrt{2g\\sin\\theta d}$. If there is kinetic friction, her speed would be $v_2=\\sqrt{2g(\\sin\\theta-\\mu_k\\cos\\theta)d}$. We are given that $2v_2=v_1$, so $$2\\sqrt{2g(\\sin\\theta-\\mu_k\\cos\\theta)d}=\\sqrt{2g\\sin\\theta d}\\Rightarrow 4(\\sin\\theta-\\mu_k\\cos\\theta)=\\sin\\theta\\Rightarrow \\mu_k=(3/4)\\tan\\theta=0.51$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "(a) Suppose the coefficient of kinetic friction between $m_A$ and the plane in the figure is $\\mu_k = 0.15$, and that $m_A = m_B = 2.7$ kg. As $m_B$ moves down, determine the magnitude of the acceleration of $m_A$ and $m_B$, given $\\theta = 34^\\circ$. (b) What smallest value of $\\mu_k$ will keep the system from accelerating?\n    \\begin{center}\n        \\includegraphics[scale=0.2]{bed}\n    \\end{center}",
+    "problem_images": [
+      "AP1_NewtonsLawsApps Sols/bed.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item We define the downward motion as positive, so the net force is $$F=m_Bg-m_Ag\\sin\\theta-m_Ag\\mu_k\\cos\\theta=8.37\\, \\unit N$$ so the net acceleration is $a=F/(m_A+m_B)=1.55\\, \\unit{m/s^2}.$\n        \\item We want the net force to equal 0 so it holds that $$\\mu_k=\\frac{m_Bg-m_Ag\\sin\\theta}{m_Ag\\cos\\theta}=0.53$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLawsApps Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "200 Puzzling Physics Problems",
+    "problem": "In Victor Hugo's novel les Misérables, the main character Jean Valjean, an escaped prisoner, was noted for his ability to climb up the corner formed by the intersection of two vertical perpendicular walls. Find the minimum force with which he had to push on the walls whilst climbing. What is the minimum coefficient of static friction required for him to be able to perform such a feat?",
+    "problem_images": [],
+    "solution": "Drawing a proper diagram is key here, especially because the setup is a bit confusing. Here is a top-down diagram:\n    \\begin{center}\n        \\includegraphics[width=6cm]{les_mis.png}\n    \\end{center}\n    Now, looking at this, we see that the horizontal components of friction exactly cancel out the normal forces. Using this, we can write that at saturation,\n    $$0 = F_y = 2F_{f_y} - mg = 2\\sqrt{(\\mu N)^2 - N^2} - mg.$$\n    We see that for this to be possible we must have $\\mu > 1$ and then pushing hard enough (large enough $N$) is sufficient. For computing the minimum force on each wall, we first have\n    $$N = \\frac{mg}{2} \\frac{1}{\\sqrt{\\mu^2 - 1}},$$ but for the total force we must sum the friction force and normal force which is bigger by $\\sqrt{1 + \\mu^2}$, so $$F_{min} = \\frac{mg}{2} \\sqrt{\\frac{\\mu^2 + 1}{\\mu^2 - 1}}.$$",
+    "solution_images": [
+      "AP1_NewtonsLawsApps Sols/les_mis.png"
+    ],
+    "solution_type": "sol"
+  }
+]

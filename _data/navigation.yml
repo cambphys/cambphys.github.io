@@ -6,6 +6,10 @@ main:
     url: /fma/
   - title: "USAPhO Course Series"
     url: /usapho/
+  - title: "My Courses"
+    url: /courses/
+  - title: "Log In"
+    url: /login/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

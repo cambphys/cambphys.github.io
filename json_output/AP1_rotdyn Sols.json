@@ -1,0 +1,190 @@
+[
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Calculate the net torque about the axle of the wheel shown in the figure. Assume that a friction torque of 0.60 $\\unit{m\\cdot N}$ opposes the motion.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{bowl}\n    \\end{center}",
+    "problem_images": [
+      "AP1_rotdyn Sols/bowl.png"
+    ],
+    "solution": "All the forces are fired perpendicular to their respective radii. Let us define the clockwise direction as positive. Then, $$18\\cdot 0.24+35\\cdot 0.12-28\\cdot 0.24=18\\, \\unit{m\\cdot N}$$So indeed the wheel will try to spin in the clockwise direction. Subtracting the friction, we have the net torque equal to $18-0.6=17.4\\, \\unit{m\\cdot N}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A person exerts a horizontal force of 42 N on the end of a door 96 cm wide. What is the magnitude of the torque if the force is exerted (a) perpendicular to the door and (b) at a 60.0$^\\circ$ angle to the face of the door?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Here the torque is $42\\cdot 0.96=40.32\\, \\unit{m\\cdot N}$.\n        \\item Here the torque is $42\\cdot 0.96\\cdot \\sin(60)=34.92\\, \\unit{m\\cdot N}.$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Determine the net torque on the 2.0-m-long uniform beam shown in the figure. All forces are shown. Calculate about (a) point $C$, the center of mass, and (b) point $P$ at one end.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{board}\n    \\end{center}",
+    "problem_images": [
+      "AP1_rotdyn Sols/board.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item About the point $C$ we can neglect the middle force, since it passes through $C$. Setting the clockwise direction as positive, we have $$56\\cdot 1\\cdot \\sin(32)-52\\cdot 1\\cdot \\sin(58)=-14.42\\, \\unit{m\\cdot  N}$$\n        \\item About the point $P$, we neglect the bottom force. Again taking clockwise as positive, the torque here is $$56\\cdot 2\\cdot \\sin(32)-65\\cdot 1\\cdot \\sin(45)=-13.39\\, \\unit{m\\cdot  N}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A merry-go-round accelerates from rest to 0.68 rad/s in 34 s. Assuming the merry-go-round is a uniform disk of radius 7.0 m and mass 31,000 kg, calculate the net torque required to accelerate it.",
+    "problem_images": [],
+    "solution": "First, the moment of inertia is $I=(1/2)mR^2=(1/2)\\cdot 31000\\cdot 7^2=759500\\, \\unit{kg \\cdot m^2}$. The acceleration of the merry-go-round is $\\alpha = \\omega/t=0.68/34=0.02\\, \\unit{rad/s^2}$. Then, the torque is $\\tau=I\\alpha=15190\\, \\unit{m\\cdot N}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A grinding wheel is a uniform cylinder with a radius of 8.50 cm and a mass of 0.380 kg. Calculate (a) its moment of inertia about its center, and (b) the applied torque needed to accelerate it from rest to 1750 rpm in 5.00 s. Take into account a frictional torque that has been measured to slow down the wheel from 1500 rpm to rest in 55.0 s.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item The moment of inertia of the grinding wheel about its center can be calculated using the formula for the moment of inertia of a cylinder about its central axis: $I = \\frac{1}{2} m r^2$. Substituting the given values, we have $I = \\frac{1}{2} \\times 0.380 \\times (0.085)^2 = 1.15 \\times 10^{-3} \\, \\text{kg} \\cdot \\text{m}^2$.\n    \\item To find the applied torque needed to accelerate the wheel, we first convert the final angular velocity to radians per second: $\\omega_{\\text{final}} = \\frac{1750 \\times 2\\pi}{60} = 183.33 \\, \\text{rad/s}$. The angular acceleration $\\alpha$ can be found using $\\alpha = \\frac{\\Delta \\omega}{\\Delta t}$. So, $\\alpha = \\frac{183.33}{5} = 36.67 \\, \\text{rad/s}^2$. The torque can then be calculated using $\\tau = I \\alpha$. Substituting the values, $\\tau = 1.15 \\times 10^{-3} \\times 36.67 = 4.22 \\times 10^{-2} \\, \\text{N} \\cdot \\text{m}$.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A softball player swings a bat, accelerating it from rest to 2.6 rev/s in a time of 0.20 s. Approximate the bat as a 0.90-kg uniform rod of length 0.95 m, and compute the torque the player applies to one end of it.",
+    "problem_images": [],
+    "solution": "To calculate the torque applied to one end of the bat, we first need to find the moment of inertia of the bat about its end. For a rod rotating about one end, $I = \\frac{1}{3} m L^2$. Substituting the given values, we have $I = \\frac{1}{3} \\times 0.90 \\times (0.95)^2 = 0.807 \\, \\text{kg} \\cdot \\text{m}^2$. Now, we can find the angular acceleration using $\\alpha = \\frac{\\Delta \\omega}{\\Delta t}$, where $\\Delta \\omega = \\frac{2.6 \\times 2\\pi}{60} = 0.273 \\pi \\, \\text{rad/s}$ (since $1 \\, \\text{rev/s} = 2\\pi \\, \\text{rad/s}$). So, $\\alpha = \\frac{0.273 \\pi}{0.20} = 1.36 \\pi \\, \\text{rad/s}^2$. The torque applied can then be calculated using $\\tau = I \\alpha$, giving $\\tau = 0.807 \\times 1.36 \\pi = 10.78 \\, \\text{N} \\cdot \\text{m}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A dad pushes tangentially on a small hand-driven merry-go-round and is able to accelerate it from rest to a frequency of 15 rpm in 10.0 s. Assume the merry-go-round is a uniform disk of radius 2.5 m and has a mass of 560 kg, and two children (each with a mass of 25 kg) sit opposite each other on the edge. Calculate the torque required to produce the acceleration, neglecting frictional torque. What force is required at the edge?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item First, let's find the moment of inertia of the merry-go-round. For a uniform disk rotating about its central axis, $I = \\frac{1}{2} m R^2$. Substituting the given values, we have $I = \\frac{1}{2} \\times 560 \\times (2.5)^2 = 1750 \\, \\text{kg} \\cdot \\text{m}^2$. Now, we can find the net torque required to produce the acceleration using $\\tau = I \\alpha$, where $\\alpha$ is the angular acceleration. From the given frequency and time, we can calculate the final angular velocity: $\\omega_{\\text{final}} = 15 \\times \\frac{2\\pi}{60} = \\frac{\\pi}{2} \\, \\text{rad/s}$. So, $\\alpha = \\frac{\\omega_{\\text{final}}}{t} = \\frac{\\pi/2}{10} = \\frac{\\pi}{20} \\, \\text{rad/s}^2$. Substituting into the torque formula, $\\tau = 1750 \\times \\frac{\\pi}{20} = 275 \\, \\text{N} \\cdot \\text{m}$.\n    \\item To find the force required at the edge, we can use the formula $\\tau = Fr$, where $F$ is the force applied at the edge and $r$ is the radius. Rearranging for $F$, we get $F = \\frac{\\tau}{r}$. Substituting the calculated torque and radius, we have $F = \\frac{175}{2} \\pi \\times \\frac{1}{2.5} = 55 \\, \\text{N}$.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "To get a flat, uniform cylindrical satellite spinning at the correct rate, engineers fire four tangential rockets as shown in the figure. Suppose that the satellite has a mass of 3600 kg and a radius of 4.0 m, and that the rockets each add a mass of 250 kg. What is the steady force required of each rocket if the satellite is to reach 32 rpm in 5.0 min, starting from rest?\n    \\begin{center}\n        \\includegraphics[scale=0.2]{rocket}\n    \\end{center}",
+    "problem_images": [
+      "AP1_rotdyn Sols/rocket.png"
+    ],
+    "solution": "First, let's find the moment of inertia of the satellite. Since it's a cylinder, $I = \\frac{1}{2} m R^2$. The mass of the satellite is given as 3600 kg and its radius is 4.0 m, so $I = \\frac{1}{2} \\times 3600 \\times (4.0)^2 = 28800 \\, \\text{kg} \\cdot \\text{m}^2$. Now, we can find the angular acceleration using the final angular velocity and time: $\\omega_{\\text{final}} = 32 \\times \\frac{2\\pi}{60} = \\frac{16}{15} \\pi \\, \\text{rad/s}$. So, $\\alpha = \\frac{\\omega_{\\text{final}}}{t} = \\frac{16}{15\\cdot 300} \\pi = \\frac{16\\pi}{4500} \\, \\text{rad/s}^2$. The total moment of inertia considering the additional mass added by the rockets is $I_{\\text{total}} = I_{\\text{satellite}} + 4 \\times m_{\\text{rocket}} \\times R^2$, where $m_{\\text{rocket}}$ is the mass of each rocket. Substituting the given values, we have $I_{\\text{total}} = 28800 + 4 \\times 250 \\times (4.0)^2 = 28800 + 16000 = 44800 \\, \\text{kg} \\cdot \\text{m}^2$. Now, we can find the torque using $\\tau = I_{\\text{total}} \\alpha$, giving $\\tau = 44800 \\times \\frac{16\\pi}{4500} = \\frac{28672}{225} \\pi \\, \\text{N} \\cdot \\text{m}$. Finally, the force required from each rocket is $F = \\frac{\\tau}{R} = \\frac{\\frac{28672}{225} \\pi}{4.0} = 100 \\, \\text{N}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A centrifuge rotor has a moment of inertia of $3.25\\times 10^{-2} \\, \\unit{kg\\cdot m^2}$. How much energy is required to bring it from rest to 8750 rpm.",
+    "problem_images": [],
+    "solution": "To calculate the energy required to bring the centrifuge rotor to 8750 rpm, we first need to convert the final angular velocity to radians per second: $\\omega_{\\text{final}} = 8750 \\times \\frac{2\\pi}{60} = \\frac{875}{6} \\pi \\, \\text{rad/s}$. Now, we can use the formula for rotational kinetic energy: $K = \\frac{1}{2} I \\omega^2$. Substituting the given values, we have $K = \\frac{1}{2} \\times 3.25 \\times 10^{-2} \\times \\left(\\frac{875}{6} \\pi \\right)^2 = 1866 \\, \\text{J}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A solid, uniformly cylindrical pulley of mass $M$ and radius $R$ has two masses $m_1$ and $m_2$ passed over it, with $m_2>m_1$. Find the acceleration of the masses, for (a) $M=0$ and (b) $M\\neq 0$. (Hint: for this part the tension on either side of the string must be different.)",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item When $M=0$, the pulley is effectively a frictionless massless pulley. The tension in the string is the same on both sides. Using Newton's second law, the acceleration of both masses is $a = \\frac{m_2 - m_1}{m_1 + m_2} g$.\n    \\item When $M \\neq 0$, the tension on either side of the pulley must be different. Let the tension from the side with $m_2$ be $T_2$ and the tension from the side with $m_1$ be $T_1$. Then, we have $m_2g-T_2=m_2a$ and $T_1-m_1g=m_1a$. Also, by torque on the pulley, $(T_2-T_1)R=(1/2)MR^2\\alpha=(1/2)MRa$. Solving this system of equations yields $$a=\\frac{m_2g-m_1g}{M/2+m_2+m_1}$$\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A hammer thrower accelerates the hammer (mass = 7.30 kg) from rest within four full turns (revolutions) and releases it at a speed of 26.5 m!s. Assuming a uniform rate of increase in angular velocity and a horizontal circular path of radius 1.20 m, calculate (a) the angular acceleration, (b) the (linear) tangential acceleration, (c) the centripetal acceleration just before release, (d) the net force being exerted on the hammer by the athlete just before release, and (e) the angle of this force with respect to the radius of the circular motion. Ignore gravity.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item The angle $\\theta$ passed through is $8\\pi$. When released, the angular velocity is $\\omega=v/r=26.5/1.2=22.08\\, \\unit{rad/s}$. Then, since $2\\alpha\\theta=\\omega^2$, we have $\\alpha=\\omega^2/2\\theta=22.08^2/(2\\cdot 8\\pi)=9.7\\, \\unit{rad/s^2}$. \n    \\item The tangential acceleration is just $a_t=R\\alpha=1.2\\cdot 9.7=11.64\\, \\unit{m/s^2}.$\n    \\item The centripetal acceleration is $a_r=\\omega^2 R=22.08^2\\cdot 1.2=585\\, \\unit{m/s^2}$. \n    \\item By adding the vectors of acceleration by the pythagorean theorem, net force exerted on the hammer is $F=m\\sqrt{a_t^2+a_r^2}=7.3\\sqrt{11.64^2+585^2}=4271\\, \\unit{N}$.\n    \\item If the angle of the force is $\\theta$, then $\\tan\\theta=a_t/a_r$, so $\\theta=\\tan^{-1}(a_t/a_r)=\\tan^{-1}(11.64/585)=1.14^\\circ$.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A merry-go-round has a mass of 1440 kg and a radius of 7.50 m. How much net work is required to accelerate it from rest to a rotation rate of 1.00 revolution per 7.00 s? Assume it is a solid cylinder.",
+    "problem_images": [],
+    "solution": "The final angular velocity can be calculated using the formula $\\omega = \\frac{2\\pi}{T}$, where $T$ is the period. So, $\\omega = 0.90 \\, \\text{rad/s}$. The work done is given by the final kinetic energy, $W = \\frac{1}{2} I \\omega^2$, where $I$ is the moment of inertia of the merry-go-round. For a solid cylinder, $I = \\frac{1}{2} M R^2$. Substituting the values, $W=\\frac 12(\\frac 12 MR^2)\\omega^2=\\frac 12(\\frac 12 1440\\cdot 7.5^2)0.90^2=16400\\, \\unit{J}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A ball of radius $r$ rolls on the inside of a track of radius $R$. If the ball starts from rest at the vertical edge of the track, what will be its speed when it reaches the lowest point of the track, rolling without slipping?\n    \\begin{center}\n        \\includegraphics[scale=0.3]{ball}\n    \\end{center}",
+    "problem_images": [
+      "AP1_rotdyn Sols/ball.png"
+    ],
+    "solution": "We assume the ball falls a height $R$, so its potential energy is $mgR$. If the velocity is $v$ at the bottom, then the translational kinetic energy is $\\frac 12 mv^2$ and the rotational kinetic energy is $\\frac 12 I\\omega^2=\\frac 12\\frac 25mR^2\\omega^2=\\frac 15mv^2$. Then by conservation of energy, $$\\frac{7}{10}mv^2=mgR\\Rightarrow v=\\sqrt{\\frac{10gR}{7}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A ladder leans against a wall at an angle $\\theta$ to the floor. \n    \\begin{center}\n    \\includegraphics[scale=1]{bleh}\n    \\end{center}\n    There is no friction between the wall and the ladder, but there is friction $\\mu$ between the ladder and the floor. The ladder has length $L$ and mass $m$. The ladder is in static equilibrium.\n    \\begin{anum}\n        \\item Using torque balance, find the normal force between the ladder and wall.\n        \\item Find the minimum $\\mu$ needed for static equilibrium.\n    \\end{anum}",
+    "problem_images": [
+      "AP1_rotdyn Sols/bleh.jpeg"
+    ],
+    "solution": "\\begin{anum}\n        \\item Take the contact point to the ground as our pivot. Then the only forces are the normal force, pointing to the right and the gravitational force, pointing downward from the center of mass. These torques must balance, so $$NL\\sin\\theta = mg\\frac L2\\cos\\theta\\Rightarrow N=\\frac{mg}{2\\tan\\theta}$$\n        \\item By vertical force balance, the normal force from the ground $N_g$ must balance the force of gravity, so $N_g=mg$. The frictional force must then balance the horizontal normal force from the wall, so $N_g\\mu = N$. Thus we solve to get $$\\mu = \\frac{N}{N_g}=\\frac{1}{2\\tan\\theta}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A traffic light hangs from a pole as shown in the figure. The uniform aluminum pole $AB$ is 7.20 m long and has a mass of 12.0 kg. The mass of the traffic light is 21.5 kg. Determine (a) the tension in the horizontal massless cable $CD$, and (b) the vertical and horizontal components of the force exerted by the pivot $A$ on the aluminum pole.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{traffic}\n    \\end{center}",
+    "problem_images": [
+      "AP1_rotdyn Sols/traffic.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item We take the point $A$ as our pivot. Notice that the tension from the string exerts a torque $Tr_\\perp$, and from the diagram $r_\\perp= 3.8\\, \\unit{m}$. The other torques on the pole and light are found via $$12\\cdot 9.8\\frac{7.2}{2}\\cos(37)+21.5\\cdot 9.8\\cdot 7.2\\cos(37)=1550\\, \\unit{mN}$$and they try to counteract the torque from the string, so $$T=\\frac{1550}{3.8}=408\\, \\unit N$$\n        \\item By force balance, the vertical force must balance the gravitational weight of the light and pole, which is $$F_y=12\\cdot 9.8+21.5\\cdot 9.8=328\\, \\unit N$$The horizontal force balances the tension from the string, so $$F_x=408\\, \\unit N$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotdyn Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A 1.80-m-long pole is balanced vertically with its tip on the ground. It starts to fall and its lower end does not slip. What will be the speed of the upper end of the pole just before it hits the ground? [Hint: Use conservation of energy.]",
+    "problem_images": [],
+    "solution": "Notice that since there is no external force in the horizontal direction, the center of mass velocity of the pole is always vertical. When the upper end is about to hit the ground, the pole is essentially pivoted at its other end on the ground, and rotating about that point so that the center of mass is essentially moving vertically downward. In this case, the inertia of the pole is $\\frac 13 mL^2$. By conservation of energy the angular velocity at this moment is $$\\frac{mgL}{2}=\\frac 13 mL^2\\omega^2\\Rightarrow \\omega=\\sqrt{\\frac{3g}{2L}}$$ Then the velocity of the other end is just $$v=\\omega L=\\sqrt{\\frac{3gL}{2}}=\\sqrt{\\frac{3\\cdot 9.8\\cdot 1.8}{2}}=5.14\\, \\unit{m/s}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

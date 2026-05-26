@@ -1,0 +1,37 @@
+---
+layout: default
+title: My Courses
+permalink: /courses/
+---
+
+<link rel="stylesheet" href="/assets/css/courses.css">
+
+<div class="courses-wrap">
+  <h1>My Courses</h1>
+  <p>Welcome back, <strong id="user-email">…</strong>. Choose a course to begin.</p>
+
+  <div class="course-grid">
+    <a class="course-card" href="/courses/ap/">
+      <h2>AP Course Series</h2>
+      <p>Full preparation for AP Physics 1, 2, C: Mechanics, and C: E&amp;M.</p>
+    </a>
+    <a class="course-card" href="/courses/fma/">
+      <h2>F=ma Course Series</h2>
+      <p>Comprehensive training for the F=ma Exam.</p>
+    </a>
+    <a class="course-card" href="/courses/usapho/">
+      <h2>USAPhO Course Series</h2>
+      <p>Advanced problem-solving for the USA Physics Olympiad.</p>
+    </a>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/assets/js/supabase-config.js"></script>
+<script src="/assets/js/auth.js"></script>
+<script>
+  (async function () {
+    const user = await window.cambphysAuth.requireAuth();
+    if (user) document.getElementById("user-email").textContent = user.email;
+  })();
+</script>

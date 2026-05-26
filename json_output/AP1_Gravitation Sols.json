@@ -1,0 +1,171 @@
+[
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Calculate the force of Earth’s gravity on a spacecraft\n2.00 Earth radii above the Earth’s surface if its mass is\n1850 kg.",
+    "problem_images": [],
+    "solution": "Let $m$ be the mass of the spacecraft. Then,\n    $$F = \\frac{GM_\\oplus m}{(3R_\\oplus)^2} = 18,200\\,\\unit N.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "At what distance from the Earth will a spacecraft traveling directly from the Earth to the Moon experience zero net force because the Earth and Moon pull in opposite\ndirections with equal force? You may search up relevant values of the Earth and Moon.",
+    "problem_images": [],
+    "solution": "Let $d$ be the distance between the earth and the moon. For the force to balance, we need\n    $$\\frac{GM_E}{r^2} = \\frac{GM_m}{(d-r)^2} \\implies \\frac{r}{d-r} = \\sqrt{\\frac{M_E}{M_m}}.$$\n    So, $r = d \\frac{\\sqrt{M_E/M_m}}{1 + \\sqrt{M_E/M_m}} = 3.46\\times 10^8 \\, \\unit m.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A hypothetical planet has a radius 2.0 times that of\nEarth, but has the same mass. What is the acceleration due\nto gravity near its surface?",
+    "problem_images": [],
+    "solution": "We have that acceleration is $g = \\frac{GM}{R^2}$, so if mass stays the same but radius doubles, the acceleration goes down by a factor of 4, so $a = g/4 = 2.45 \\, \\unit{m/s}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Calculate the acceleration due to gravity on the Moon,\nwhich has radius $1.74 \\times 10^6 \\, \\unit m$ and mass $7.35 \\times 10^{22} \\,\\unit{kg}$. How does it compare to $g$?",
+    "problem_images": [],
+    "solution": "Applying $g_m = \\frac{GM_m}{R^2} = 1.6\\,\\unit{m/s^2}$. This is around 6 times smaller than acceleraiton on earth.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Calculate the speed of a satellite moving in a stable\ncircular orbit about the Earth at a height of 4800 km.",
+    "problem_images": [],
+    "solution": "We can use centripetal accleration to write\n    $$\\frac{GM}{(R_\\oplus + h)^2} = \\frac{v^2}{R_\\oplus + h} \\implies v = \\sqrt{\\frac{GM}{R_\\oplus + h}} = 5970\\,\\unit{m/s}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Calculate the period of a satellite orbiting the Moon,\n95 km above the Moon’s surface. Ignore effects of the\nEarth. The radius of the Moon is 1740 km.",
+    "problem_images": [],
+    "solution": "We can use Kepler's third law (as derived in class) to write\n    $$T = \\sqrt{\\frac{4\\pi^2 a^3}{GM_m}} = 7000\\,\\unit s.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "How far above the Earth’s surface will the acceleration of\ngravity be half what it is at the surface?",
+    "problem_images": [],
+    "solution": "Acceleration goes as $1/r^2$, so we need $r' = \\sqrt 2 R_\\oplus$, which is a distance $(\\sqrt 2 - 1)R_\\oplus = 2.6\\times 10^6 \\, \\unit m$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A certain neutron star has five times the mass of our\nSun packed into a sphere about 10 km in radius. Estimate\nthe surface gravity on this monster.",
+    "problem_images": [],
+    "solution": "We have $$a = \\frac{GM}{R^2} = G\\frac{5 \\times 2 \\times 10^{30}}{10000^2} = 6.67\\times 10^{12}\\,\\unit{m/s}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "During an Apollo lunar landing mission, the command\nmodule continued to orbit the Moon at an altitude of about\n100 km. How long did it take to go around the Moon once?",
+    "problem_images": [],
+    "solution": "We have from Kepler's third law,\n    $$T = \\sqrt{\\frac{4\\pi^2 a^3}{GM_m}} = 7100\\,\\unit s.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Two equal-mass stars maintain a constant distance apart\nof $8.0 \\times 10^{11}$ m and revolve about a point midway between\nthem at a rate of one revolution every 12.6 yr. (a) Why\ndon’t the two stars crash into one another due to the\ngravitational force between them? (b) What must be the\nmass of each star?",
+    "problem_images": [],
+    "solution": "\\item They have sufficient velocities such that as they are pulled towards each other it results in curving of their trajectories but not so much that they crash into each other.\n    \\item We can apply Kepler's third law, which tells us \n    $$M_{\\text{tot}} = 2M = \\frac{4\\pi^2 a^3}{GT}.$$\n    Plugging in the numbers, we get $M = 3.8\\times 10^{38}\\,\\unit{kg}$.",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "An asteroid of mass $m$ is in a circular orbit of radius $r$\naround the Sun with a speed $v$. It has an impact with another asteroid of mass $M$ and is kicked into a new circular orbit with a speed of $1.5 v$.What is the radius of the new orbit in terms of $r$?",
+    "problem_images": [],
+    "solution": "We have from one of the earlier problems that $v = \\sqrt{\\frac{GM}{r}},$ so if $v$ increases by $1.5$, $r$ must decrease by $1.5^2$, so $r_{\\text{new}} = r/2.25$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A Ferris wheel 22.0 m in diameter rotates once every\n12.5 s. What is the ratio of a person’s apparent\nweight to her real weight at (a) the top, and (b) the bottom?",
+    "problem_images": [],
+    "solution": "\\item At the top, the normal force is\n    $$N = mg - m\\omega^2r,$$\n    so the ratio is $1 - \\frac{\\omega^2r}{g} = 0.72$.\n    \\item We have that the the normal force at the bottom is $$N = mg + m\\omega^2 r,$$\n    so the ratio is $1 + \\frac{\\omega^2 r}{g} = 1.28$.",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A satellite of mass 5500 kg orbits the Earth and has a period\nof 6600 s. Determine (a) the radius of its circular orbit,\n(b) the magnitude of the Earth’s gravitational force on the\nsatellite, and (c) the altitude of the satellite.",
+    "problem_images": [],
+    "solution": "For the radius, we can use Kepler's third law, giving us \n    $$r = 7.6\\times 10^6 \\, \\unit m.$$\n    Then, just using Newton's universal law of gravitation,\n    $$F = \\frac{GMm}{r^2} = 37900\\,\\unit N.$$\n    The altitude is just $r - R_\\oplus = 1.2\\times 10^6 \\, \\unit m$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A science-fiction tale describes an artificial “planet” in the\nform of a band completely encircling a sun, as shown below. The\ninhabitants live on the inside surface (where it is always\nnoon). Imagine that this sun is exactly like our own, that\nthe distance to the band is the same as the Earth–Sun\ndistance (to make the climate livable), and that the ring\nrotates quickly enough to produce an apparent gravity of $g$\nas on Earth. What will be the period of revolution, this\nplanet’s year, in Earth days?\n\\begin{center}\n    \\includegraphics[width=5cm]{wiajd;lf.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_Gravitation Sols/wiajd;lf.png"
+    ],
+    "solution": "For the effective gravity to be correct, we need $\\omega^2 R = g$, so $$T^2 = \\frac{4\\pi^2 R}{g},$$\n    where $R$ is 1 AU. Plugging in the numbers, we get $T = 22.5\\,\\unit{days}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Gravitation Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "$F=ma$",
+    "problem": "A satellite is following an elliptical orbit around the Earth. Its engines are capable of providing a one-time\nimpulse of a fixed magnitude. In order to maximize the energy of the satellite, the impulse should be\n\\begin{center}\n\\includegraphics[width = 0.5\\textwidth]{oweinw}\n\\end{center}\n\\begin{enumerate}[label=(\\Alph*)]\n    \\item directed along the satellite’s velocity and applied when the satellite is in its perigee.\n    \\item directed along the satellite’s velocity and applied when the satellite is in apogee.\n    \\item directed toward the Earth and applied when the satellite is in perigee.\n    \\item directed toward the Earth and applied when the satellite is in apogee.\n    \\item directed away from the Earth and applied when the satellite is in apogee.\n    \\end{enumerate}",
+    "problem_images": [
+      "AP1_Gravitation Sols/oweinw.png"
+    ],
+    "solution": "Suppose the satellite is moving with velocity $v$. If we add a perpendicular boost, then by the pythagorean theorem, the new energy is $$KE = \\frac 12 m (v^2 + v_\\perp^2).$$\n    However, if it is parallel, then $$KE = \\frac 12 m (v+\\Delta v)^2 = \\frac 12 m (v^2 + 2v\\Delta v + \\Delta v^2).$$\n    So, not only do we see that this is better, we see that it scales up with higher $v$. Thus, we want the satellite in perigee, giving choice \\textbf A.",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

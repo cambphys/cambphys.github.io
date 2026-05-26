@@ -1,0 +1,243 @@
+[
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "What force is needed to accelerate a sled (mass = 55 kg) at 1.4 m/s$^2$ on horizontal frictionless ice?",
+    "problem_images": [],
+    "solution": "The force is $F=ma=55\\cdot 1.4=77\\, \\unit{N}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "How much tension must a rope withstand if it is used to accelerate a 1210-kg car horizontally along a frictionless surface at 1.20 m/s$^2$?",
+    "problem_images": [],
+    "solution": "The force is $T=ma=1210\\cdot 1.2=1452\\, \\unit N$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "What average force is required to stop a 950-kg car in 8.0 s if the car is traveling at 95 km/h?",
+    "problem_images": [],
+    "solution": "First, let's convert 95 km/h to m/s by dividing by 3.6: 26.4 m/s. We can find the acceleration by $a=\\Delta v/\\Delta t=26.4/8=3.30 \\, \\unit{m/s^2}$. Thus, the force is $F=ma=950\\cdot 3.30=3135\\, \\unit N$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "According to a simplified model of a mammalian heart, at each pulse approximately 20 g of blood is accelerated from 0.25 m/s to 0.35 m/s during a period of 0.10 s. What is the magnitude of the force exerted by the heart muscle?",
+    "problem_images": [],
+    "solution": "The acceleration of the blood is $a=\\Delta v/\\Delta t=(0.35-0.25)/0.1=1\\, \\unit{m/s^2}.$ The force is then $F=ma=0.02\\cdot 1=0.02\\, \\unit N$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A woman stands on a bathroom scale in a motionless elevator. When the elevator begins to move, the scale briefly reads only 0.75 of her regular weight. Calculate the acceleration of the elevator, and find the direction of acceleration.",
+    "problem_images": [],
+    "solution": "Let the woman have mass $m$. Initially, the normal force exerted upward by the scale is exactly $mg$, because the woman is not accelerating. When the elevator starts accelerating, then the normal force becomes $0.75mg$, since her apparent weight has decreased by that amount. Taking the direction downward to be positive, the net force on the woman is now $F=mg-N=0.25 mg$, so her acceleration is $a=F/m=0.25 g$ in the downward direction.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "The cable supporting a 2125-kg elevator has a maximum strength of 21750 N. What maximum upward acceleration can it give the elevator without breaking?",
+    "problem_images": [],
+    "solution": "Let the tension be $T$. Then, the net force on the elevator is $F=T-mg=21750-2125\\cdot 9.8=925\\, \\unit N$. The acceleration is then $a=F/m=925/2125=0.44\\, \\unit{m/s^2}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Arlene is to walk across a ``high wire\" strung horizontally between two buildings 10.0 m apart. The sag in the rope when she is at the midpoint is 10.0$^\\circ$, as shown in the diagram. If her mass is 50.0 kg, what is the tension in the rope at this point?\n\\begin{center}\n    \\includegraphics[scale=0.2]{rope}\n\\end{center}",
+    "problem_images": [
+      "AP1_NewtonsLaws Sols/rope.png"
+    ],
+    "solution": "The tension in the rope pulls at two points upward with a combined strength of $2T\\sin(10^\\circ)$. This balances her graviational force, so $$2T\\sin(10^\\circ)=mg\\Rightarrow T=\\frac{mg}{2\\sin(10^\\circ)}=1411\\, \\unit N$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 20.0-kg box rests on a table. (a) What is the weight of the box and the normal force acting on it? (b) A 10.0-kg box is placed on top of the 20.0-kg box, as shown in the figure. Determine the normal force that the table exerts on the 20.0-kg box and the normal force that the 20.0-kg box exerts on the 10.0-kg box.\n    \\begin{center}\n    \\includegraphics[scale=0.25]{boxes}\n\\end{center}",
+    "problem_images": [
+      "AP1_NewtonsLaws Sols/boxes.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item The weight of the box is just $F_g=mg=20\\cdot 9.8=196\\, \\unit N$, and the normal force is the exact same.\n        \\item Think of the two boxes as one big box of mass 30 kg. Thus the normal force between the table and the two boxes is just $N=30\\cdot 9.8=294\\, \\unit N$. The normal force the 20 kg box exerts on the 10 kg box is just the force needed to support the weight of the 10 kg, which is $N=10\\cdot 9.8=98\\, \\unit N$.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 75-kg petty thief wants to escape from a third-story jail window. Unfortunately, a makeshift rope made of sheets tied together can support a mass of only 58 kg. How might the thief use this “rope” to escape? Give a quantitative answer.",
+    "problem_images": [],
+    "solution": "The idea is that the thief will use the rope to support himself so that instead of falling at $g$, he falls at a smaller acceleration. That is, the thief only pulls just as hard on the rope so that it won't break. The force the rope can support is $F=58g$, and the weight of the thief is $75g$. Thus, the net force on the thief is $F=17g$, so his acceleration is $a=F/m=17g/75 = 2.22 \\, \\unit{m/s^2}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "At the instant a race began, a 65-kg sprinter exerted a force of 720 N on the starting block at a 22° angle with respect to the ground. (a) What was the horizontal acceleration of the sprinter? (b) If the force was exerted for 0.32 s, with what speed did the sprinter leave the starting block?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item By Newton's Third Law, the starting block exerts a force 720 N on the sprinter. The horizontal component of this force is $F_x=720\\cos(22^\\circ)=668\\, \\unit N$ so the horizontal acceleration is just $a_x=F_x/m=10.3\\, \\unit{m/s^2}$. \n        \\item We have $\\Delta v=a\\Delta t=10.3\\cdot 0.32=3.30 \\unit{m/s}$. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A person has a reasonable chance of surviving an auto- mobile crash if the deceleration is no more than 30 $g$’s. Calculate the force on a 65-kg person accelerating at this rate. What distance is traveled if brought to rest at this rate from 95 km/h?",
+    "problem_images": [],
+    "solution": "The force is $F=ma=75\\cdot 30\\cdot 9.8=22000\\, \\unit N$. The velocity is initially $95/3.6=26.4\\, \\unit{m/s}$. The distance traveled is then $d=v^2/2a=26.4^2/(2\\cdot 30\\cdot 9.8)=1.18\\, \\unit m$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A box weighing 77.0 N rests on a table. A rope tied to the box runs vertically upward over a pulley and a weight is hung from the other end. Determine the force that the table exerts on the box if the weight hanging on the other side of the pulley weighs (a) 30.0 N, (b) 60.0 N, and (c) 90.0 N.\n    \\begin{center}\n        \\includegraphics[scale=0.25]{boxpulley}\n    \\end{center}",
+    "problem_images": [
+      "AP1_NewtonsLaws Sols/boxpulley.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item The tension must balance the weight of the smaller mass, so in this case it is $T=30\\, \\unit N$. The normal force acting on the box is found via $N=mg-T=77-30=47\\, \\unit N$.\n        \\item In this case, $T=60 \\unit N$, and $N=mg-T=17\\, \\unit N$.\n        \\item In this case, $T=90 \\unit N$, and $N=mg-T=-13 \\, \\unit N$. We appear to have a problem, though, because the normal force can only ``push\" and not \"pull\"! This means the box will lose contact with the table, so the normal force is in fact 0. This does make sense because now the weight is heavier than the box. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A train locomotive is pulling two cars of the same mass behind it in the figure below. Determine the ratio of the tension in the coupling (think of it as a cord) between the locomotive and the first car ($F_{T1}$), to that between the first car and the second car ($F_{T2}$), for any nonzero acceleration of the train.\n    \\begin{center}\n    \\includegraphics[scale=0.3]{train}\n    \\end{center}",
+    "problem_images": [
+      "AP1_NewtonsLaws Sols/train.png"
+    ],
+    "solution": "Let the acceleration be $a$, and the individual masses of the cars to be $m$. Note that $F_{T2}$ is the only force pulling on car 2, so $F_{T2}=ma$. Now, $F_{T1}$ pulls both cars forward at $a$, so $F_{T1}=2ma$. Thus, if we take the ratio then $F_{T1}/F_{T2}=2$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Two snowcats in Antarctica are towing a housing unit north, as shown in the figure. The sum of the forces $\\vec F_A$ and $\\vec F_B$ exerted on the unit by the horizontal cables is north, parallel to the line L, and FA=4500N. Determine $F_B$ and the magnitude of $\\vec F_A+\\vec F_B$.\n    \\begin{center}\n    \\includegraphics[scale=0.3]{anta}\n    \\end{center}",
+    "problem_images": [
+      "AP1_NewtonsLaws Sols/anta.png"
+    ],
+    "solution": "Notice that the force in the $x$ direction (from this bird's eye view) must balance, which gives us $F_A\\sin(48^\\circ)=F_B\\sin(32^\\circ)$. Solving for $F_B$ yields $F_B=6300\\, \\unit N$. Now, since the net force is directly north, we just add the northern components of the forces. Thus $$|\\vec F_A+\\vec F_B|=F_A\\cos(48^\\circ)+F_B\\cos(32^\\circ)=8360\\, \\unit N$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A 27-kg chandelier hangs from a ceiling on a vertical 4.0-m-long wire. (a) What horizontal force would be necessary to displace its position 0.15 m to one side? (b) What will be the tension in the wire?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item If the string is displaced by a distance 0.15 m horizontally, then it will make an angle $\\theta = \\sin^{-1}(0.15/4)=2.15^\\circ$ to the vertical. Let the tension then be $T$. By balancing forces in the vertical direction, $T\\cos\\theta=mg$, so $T=mg/\\cos\\theta$. The horizontal force must balance the horizontal tension force, so $F=T\\sin\\theta=mg\\tan\\theta=9.93\\, \\unit N$. \n        \\item From the previous part we know that $T=mg/\\cos\\theta=265\\, \\unit N.$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A 10 kg mass and a 15 kg mass are placed on the same string and strung over a pulley. (a) What is the acceleration of the masses? (b) What is the tension in the string?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Treating the masses as one big block, their combined mass is 25 kg. The gravitational force pulls on the heavier mass in one direction and the lighter mass in the other, so the net force acting on the masses is $15g-10g=5g$. The acceleration is then $a=F/m=5g/25=g/5=1.96\\, \\unit{m/s^2}$. \n        \\item Doing force balance on the 15 kg box, $15g-T=15a$ so plugging in $a$ from above yields $T=15g-15a=117.6\\, \\unit N$.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A window washer pulls herself upward using the bucket–pulley apparatus shown in the figure. (a) How hard must she pull down- ward to raise herself slowly at constant speed? (b) If she increases this force by 15\\%, what will her acceleration be? The mass of the person plus the bucket is 72 kg.\n    \\begin{center}\n    \\includegraphics[scale=0.3]{pulley}\n\\end{center}",
+    "problem_images": [
+      "AP1_NewtonsLaws Sols/pulley.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item Notice that as the girl grabs the rope, the rope will now have two spots to pull upward on the girl-bucket system. Thus, if the girl-bucket mass is $m$, then $2T=mg$ for the net force to be a constant (so that her speed is constant). Note that by Newton's third law, the girl will be pulling on the rope with force $T$, so she fill pull with force $F=T=mg/2=353\\, \\unit N$. \n        \\item If she increases her pulling force, the tension increases by this proportion, so now the net force pulling upward on the girl-bucket system is $2T\\cdot 1.15$. Note that $2T=mg$, so the net upward force is now $1.15 mg$. The downward force is still $mg$, so the acceleration is $a=F/m=(1.15mg-mg)/m=0.15g=1.47\\, \\unit{m/s^2}$. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "The figure below shows a block (mass $m_A$) on a smooth horizontal surface, connected by a thin cord that passes over a pulley to a second block $m_B$, which hangs vertically. (a) Draw a free body diagram for each block, showing the force of gravity on each, the force (tension) exerted by the cord, and any normal force. (b) Apply Newton’s second law to find formulas for the acceleration of the system and for the tension in the cord. Ignore friction and the masses of the pulley and cord.\n    \\begin{center}\n    \\includegraphics[scale=0.3]{bix}\n    \\end{center}",
+    "problem_images": [
+      "AP1_NewtonsLaws Sols/bix.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item The free body diagram is as drawn: \\begin{center}\n            \\includegraphics[scale=0.3]{freebe}\n        \\end{center}\n        \\item If we consider the system as one big block, the net force acting on it is just $m_Bg$, so $a=m_Bg/(m_A+m_B)$. If we look at the force balance on $m_A$, it follows that the tension exclusively provides this acceleration, so $T=m_Aa=m_Am_Bg/(m_A+m_B)$. \n    \\end{anum}",
+    "solution_images": [
+      "AP1_NewtonsLaws Sols/freebe.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "$F=ma$",
+    "problem": "A block of mass $m$ is attached to a massless string. The string is passed over a massless pulley\nand the end of the string is fixed in place. The horizontal part of the string has length $L.$ Now a\nsmall mass $m$ is hung from the horizontal part of the string, and the system comes to equilibrium.\n(Diagram not necessarily to scale.)\n\n\\begin{center}\n    \\includegraphics[width=0.6\\textwidth]{2020fmap9.png}\n\\end{center}\n\\begin{anum}\n    \\item Neglecting friction everywhere, what is the tension at the end of the string?\n    \\item During the process, how much has the right block been raised by?\n\\end{anum}",
+    "problem_images": [
+      "AP1_NewtonsLaws Sols/2020fmap9.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item By balancing forces on the right block, we get $mg$.\n    \\item Now balancing forces on the center block, if we let $\\theta$ be the angle that the string makes with the horizontal, we get $2T\\sin\\theta = mg \\implies \\sin\\theta = 1/2$. Thus, the new length of the string left of the pulley is $L/\\cos \\theta$, so the block rises by $L/\\cos \\theta - L \\approx 0.15L$.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_NewtonsLaws Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A box of mass $m$ is held up in the air by two strings, one of length $l_1$ and the other of length $l_2$. The strings make a right angle to one another at their connection point to the box, and the strings are both anchored to the ceiling. \n    \\begin{anum}\n        \\item Find the tensions $T_1$ and $T_2$ in the strings.\n        \\item If the string of length $l_1$ is cut, what is the instantaneous acceleration of the box? \n        \\item Find the relationship between $l_1$ and $l_2$ such that $a=0$ after the string of length $l_1$ is cut. \n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Using right triangle properties, we have the following:\n    \\begin{center}\n        \\includegraphics[width=7cm]{strings.png}\n    \\end{center}\n    This tells us $\\alpha = \\arctan (l_1 / l_2)$. Now, since the two tensions must cancel out horizontally, $T_2/T_1 = \\tan \\alpha$. And the two tensions make a right triangle with gravity,\n    \\begin{center}\n        \\includegraphics[width=4cm]{forces_strings.png}\n    \\end{center}\n    so $T_2 = mg \\sin \\alpha$ and $T_1 = mg\\cos \\alpha$, which in terms of $l_1,l_2$ are $T_1 = \\frac{mg l_2}{\\sqrt{l_1^2+l_2^2}}$, $T_2 = \\frac{mg l_1}{\\sqrt{l_1^2+l_2^2}}.$\n    \\item Using the right triangle above, this just leaves a perpendicular component to string two, so $mg \\cos \\alpha$ is left, which gives an acceleration of $\\boxed{g\\cos \\alpha = g\\frac{l_2}{\\sqrt{l_1^2 + l_2^2}}}$.\n    \\item We must have $\\alpha = 0$, so $l_2/l_1 \\rightarrow 0$.\n    \\end{anum}",
+    "solution_images": [
+      "AP1_NewtonsLaws Sols/strings.png",
+      "AP1_NewtonsLaws Sols/forces_strings.png"
+    ],
+    "solution_type": "sol"
+  }
+]

@@ -1,0 +1,74 @@
+---
+layout: default
+title: Sign Up
+permalink: /signup/
+---
+
+<style>
+  .auth-wrap { max-width: 420px; margin: 3rem auto; padding: 2rem;
+    border: 1px solid #ddd; border-radius: 8px; }
+  .auth-wrap h1 { margin-top: 0; }
+  .auth-wrap label { display: block; margin-top: 1rem; font-weight: 600; }
+  .auth-wrap input { width: 100%; padding: 0.6rem; margin-top: 0.25rem;
+    border: 1px solid #ccc; border-radius: 4px; font-size: 1rem;
+    box-sizing: border-box; }
+  .auth-wrap button { margin-top: 1.5rem; width: 100%; padding: 0.75rem;
+    background: #2f5d8c; color: white; border: 0; border-radius: 4px;
+    font-size: 1rem; cursor: pointer; }
+  .auth-wrap button:hover { background: #244a70; }
+  .auth-msg { margin-top: 1rem; min-height: 1.2rem; }
+  .auth-msg.error { color: #b00; }
+  .auth-msg.ok { color: #060; }
+  .auth-alt { margin-top: 1rem; text-align: center; font-size: 0.9rem; }
+</style>
+
+<div class="auth-wrap">
+  <h1>Create Account</h1>
+  <form id="signup-form">
+    <label for="email">Email</label>
+    <input id="email" type="email" autocomplete="email" required>
+
+    <label for="password">Password</label>
+    <input id="password" type="password" autocomplete="new-password"
+           minlength="6" required>
+
+    <button type="submit" id="signup-btn">Sign Up</button>
+  </form>
+  <div class="auth-msg" id="msg"></div>
+  <div class="auth-alt">
+    Already have an account? <a href="/login/">Log in</a>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/assets/js/supabase-config.js"></script>
+<script src="/assets/js/auth.js"></script>
+<script>
+  document.getElementById("signup-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById("signup-btn");
+    const msg = document.getElementById("msg");
+    btn.disabled = true; btn.textContent = "Creating...";
+    msg.className = "auth-msg"; msg.textContent = "";
+
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+    const { data, error } = await window.cambphysAuth.signUp(email, password);
+
+    if (error) {
+      msg.className = "auth-msg error";
+      msg.textContent = error.message;
+      btn.disabled = false; btn.textContent = "Sign Up";
+      return;
+    }
+    if (data.session) {
+      msg.className = "auth-msg ok";
+      msg.textContent = "Account created. Redirecting...";
+      window.location.href = "/courses/";
+    } else {
+      msg.className = "auth-msg ok";
+      msg.textContent = "Account created — check your email to confirm, then log in.";
+      btn.disabled = false; btn.textContent = "Sign Up";
+    }
+  });
+</script>
