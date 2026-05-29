@@ -1,0 +1,181 @@
+[
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Wang",
+    "problem": "A string of linear mass density $\\mu$ and length $L$ is hung vertically from a wall. A mass $m$ is attached to its bottom end, $m \\gg \\mu L$. If a traveling\npulse of a small width, that bulges rightwards, is made at the top of the\nstring and moves towards the bottom end, how does the width of the pulse\nchange qualitatively as it progresses? In what direction does the string move\ntowards? Finally, assuming that the string remains reasonably vertical and\nstationary (possibly because $m$ is large), determine the time required for the\npart of the pulse that began at the top, to reach mass $m$.",
+    "problem_images": [],
+    "solution": null,
+    "solution_images": [],
+    "solution_type": null
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "\\label{pr:essential}\n    Solve for the general wavefunction $\\psi (x,t)$ for the following initial conditions:\n    \\begin{anum}\n        \\item $\\psi(x,0) = y(x)$ and $\\dot \\psi(x,0) = 0$.\n        \\item $\\psi(x,0) = 0$, and $\\dot \\psi(x,0) = v(x)$.\n        \\item $\\psi(x,0) = y(x)$ and $\\dot \\psi (x,0) = v(x)$.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\item Using the general solution to the wave equation,\n    \\begin{align*}\n        f(x) + g(x) &= y(x),\\\\\n        vf(x) - vg(x) &= 0.\n    \\end{align*}\n    Thus, $f(x) = g(x)$, which means $f(x) = \\frac 12 y(x)$. Thus,\n    $$\\psi(x,t) = \\frac 12 y(x+vt) + \\frac 12 y(x-vt).$$\n    \\item We repeat the same strategy,\n    \\begin{align*}\n        f(x) + g(x) &= 0,\\\\\n        vf(x) - vg(x) &= v(x).\n    \\end{align*}\n    So, $f(x) = -g(x)$, which substituted into the second equation gives $f(x) = \\frac{1}{2v}v(x)$. So, $$\\psi(x,t) = \\frac{1}{2v}v(x + vt) - \\frac{1}{2v}v(x-vt).$$\n    \\item Now we can simply take a superposition of the first two, giving\n    $$\\psi(x,t) = \\frac 12 y(x+vt) + \\frac 12 y(x-vt) + \\frac{1}{2v}v(x + vt) - \\frac{1}{2v}v(x-vt).$$",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A string of density $\\rho$, tension $T$, and length $L$. The string's ends are free to move on frictionless vertical rods. Write down the boundary conditions and from there, determine the standing normal modes and frequencies.\n    \\begin{center}\n        \\includegraphics[width=7.5cm]{loose-ends.png}\n    \\end{center}",
+    "problem_images": [
+      "Waves I Sols/loose-ends.png"
+    ],
+    "solution": "We must have that the slope at the ends is equal to $0$,\n    $$\\frac{\\partial}{\\partial x}\\psi(0,t) = 0, \\frac{\\partial}{\\partial x}\\psi(L,t) = 0.$$\n    So, we need\n    $$kL = n\\pi \\implies k = \\frac{n\\pi}{L}.$$\n    So, the frequency of normal modes are $\\omega = ck = \\frac{cn\\pi}{L}$. The actual normal modes are gonna be standing waves with\n    $$f(x) = \\cos(kx) = \\cos(n\\pi x/L).$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Consider a string of mass density $\\rho$ and tension $T$. A wave pulse given by $\\psi(x,t)$ travels through it.\n    \\begin{anum}\n        \\item Compute the kinetic and potential energy density of the string as a function of $x$ and $t$. \n        \\item Compute the densities for the standard traveling sinusoidal wave $A \\cos (kx - \\omega t)$ and a general traveling wave $\\psi = f(x-vt)$.\n        \\item Find an expression for the power flowing across the point $x = x_0$ as a function of time for the wave $\\psi = A \\cos (kx - \\omega t)$.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\item The kinetic energy of a given point is given by its speed, $\\dot \\psi^2$. So, the KE density is\n    $$KE = \\frac 12 \\rho \\dot \\psi ^2 (x,t).$$\n    Now, for the potential energy density, we need to look at how much the string between $x$ and $x+dx$ is stretched. Using the pythagorean theorem,\n    $$PE \\, dx = T\\left(\\sqrt{dx^2 + \\left(\\frac{\\partial \\psi}{\\partial x}dx\\right)^2} - dx\\right) = (Tdx) \\left(1 + \\frac 12 \\left(\\frac{\\partial \\psi}{\\partial x}\\right)^2 - 1\\right) = \\frac 12 T \\psi'^2(x,t)\\, dx,$$\n    giving us the PE density.\n    \\item For the general case, we have\n    $$KE = \\frac 12 \\rho v^2 f(x-vt)^2, PE = \\frac 12 T f(x-vt)^2.$$\n    And for a string wave, $v^2 = T/\\rho$, so we see that the KE and PE densities are the same. For the cosine wave, $f(x) = A\\cos(kx)$, so\n    $$KE = \\frac 12 \\rho v^2 A^2 \\cos^2(kx - \\omega t), PE = \\frac 12 T A^2 \\cos^2(kx - \\omega t).$$",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Using ideas from problem \\ref{pr:essential}, sketch the time evolution of the following transverse string waves with drawn initial positions which are released from rest. Make sure to include a picture before and after the wave pulses reflect off of the walls. Let $v$ be the wave speed of the string.\n    \\begin{anum}%include hard and soft wall reflections\n        \\item Draw the general progression along with specific plots at times $t= \\frac{L}{4v}$ and $t = \\frac{L}{v}$.\n        \\begin{center}\n            \\includegraphics[width=7.5cm]{wave_1.png}\n        \\end{center}\n        \\item Draw the general progression along with specific plots at times $t= \\frac{L}{4v}$ and $t = \\frac{L}{v}$.\n        \\begin{center}\n            \\includegraphics[width=7.5cm]{wave_2.png}\n        \\end{center}\n    \\end{anum}",
+    "problem_images": [
+      "Waves I Sols/wave_1.png",
+      "Waves I Sols/wave_2.png"
+    ],
+    "solution": "The idea here is that these are composed of two waveforms of half the height moving in opposite directions at speed $v$. So, at time $t = L/4v$, both of the two would've shifted by a distance $L/4$. Meanwhile, at time $L/v$, the waves travel a distance $L$, which means hitting the walls and coming back to the center, but with a $\\pi$ shift. Thus, the second case leads to just a flipped version of the wave for both (a) and (b). The plots are drawn below.\n    \\begin{center}\n        \\includegraphics[width=13cm]{rect-sol.png}\n        \\includegraphics[width=13cm]{triangle-sol.png}\n    \\end{center}",
+    "solution_images": [
+      "Waves I Sols/rect-sol.png",
+      "Waves I Sols/triangle-sol.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "MIT",
+    "problem": "Consider two strings with mass density $\\mu_1 = \\mu$ and $\\mu_2 = \\mu / 2$ and tensions $T_1 = T$ and $T_2 = T /2$\nconnected by a massless ring at $x = 0$. The ring can move along a frictionless rod. String 1 extends to the left, far beyond $x = -L$, and string 2 is attached to a fixed point on the wall at $x = L$. Initially a triangular pulse of width $L/4$ is moving along string 1 from left to right. At $t=0$ the front\nedge of the triangle is at $x = -7L/8$ as shown below.\n\\begin{center}\n    \\includegraphics[width=7.5cm]{traveling_triangle.png}\n\\end{center}\n\\begin{anum}\n    \\item Write wave equations on both sides of the ring and specify the boundary conditions at $x=0$.\n    \\item Do you expect reflected waves at $x = 0$ and at $x = L$? Will the reflected wave have the same or the opposite sign than the incoming wave at $x = 0$ and at $x = L$?\n    \\item Assume that the incoming pulse is of the form $f_1(x,t) = f_1(x/v_1 - t)$. Find the functional form of the transmitted $g(x,t)$ and reflected $f_2(x,t)$ pulses at $x = 0$ and $x = L$. Consider only times $t \\le 2L \\sqrt{\\frac \\mu T}$.\n    \\item Make a sketch of string deformations at $t = L \\sqrt{\\frac \\mu T}$ and $t = 2L\\sqrt{\\frac\\mu T}$.\n\\end{anum}",
+    "problem_images": [
+      "Waves I Sols/traveling_triangle.png"
+    ],
+    "solution": "\\item The wave equation on both sides is the same as $\\sqrt{T/\\mu}$ is the same on both sides,\n    $$\\frac{\\partial^2 y}{\\partial x^2} = \\frac{\\mu}{T}\\frac{\\partial^2 y}{\\partial t^2}.$$\n    The boundary condition is no force on the ring, so\n    $$T\\left.\\frac{\\partial y}{\\partial x}\\right|_{x=0^-} = \\frac T2 \\left. \\frac{\\partial y}{\\partial x}\\right|_{x=0^+}.$$\n    \\item The right wall is a normal hard wall, so we expect a reflection, and one of opposite sign. For the center point, the right side has lower impedance, so we expect that it reflects with the same phase.\n    \\item We write down the boundary condition using these waves,\n    $$\\frac{1}{v_1}f_1(x/v_1 - t) -\\frac{1}{v_1}g(-x/v_1 - t) = \\frac 12 \\frac{1}{v_2}f_2(x/v_2 - t).$$\n    Cancelling $v_1 = v_2$ and plugging in $x= 0$, we get\n    $$f_1(-t) - g(-t) = \\frac 12 f_2(-t).$$\n    Further, by continuity,\n    $$f_1(-t) + g(-t) = f_2(-t),$$\n    so $$2f_1(-t) = \\frac 32 f_2(-t) \\implies f_2(t) = \\frac 43 f_1(t).$$\n    Putting that back in, we get $g(-t) = \\frac 13 f_1(-t)$, so\n    $$g(x,t) = \\frac 13 f_1(-x/v_1 - t), f_2(x,t) = \\frac 43 f_1(x/v_1 - t).$$\n    At $x=L$ it is simple as the point is fixed, so $$f_2 = 0, g(x,t) = - f_1(-x/v_1 - t).$$\n    \\item The first time point is when it has travelled a distance $L$, so that the pulse is halfway into the pole. The second time is when the reflected has returned fully and when the transmitted has passed the wall. The green corresponds to $t = 2L\\sqrt{\\mu/T}$ and the blue corresponds to $t= L\\sqrt{\\mu/T}$.\n    \\begin{center}\n        \\includegraphics[width=7.5cm]{waves_travel.png}\n    \\end{center}",
+    "solution_images": [
+      "Waves I Sols/waves_travel.png"
+    ],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "\\href{https://www.aapt.org/physicsteam/upload/2022-USAPhO-Exam.pdf#page=6}{USAPhO 2022/A3}, a problem that explains an everyday physical phenomenon!",
+    "problem_images": [],
+    "solution": "\\officialsol{https://aapt.org/physicsteam/upload/2022-USAPhO-solutions.pdf}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Optical fibers are used to transmit information much faster than standard electric cables. They operate on the basis of total internal reflection, consisting of a core of index of refraction $n_1$ and a cladding of index of refraction $n_2 < n_1$. What is the maximum angle $\\theta$ that light can be incident on the setup below such that the beam is contained within the core for the entire length?\n    \\begin{center}\n        \\includegraphics[width=10cm]{optic_fiber.png}\n    \\end{center}",
+    "problem_images": [
+      "Waves I Sols/optic_fiber.png"
+    ],
+    "solution": "Suppose the ray enters the core with an angle of incidence $\\phi$. Then, we find the critical angle at the core and cladding boundary,\n    $$n_1 \\sin(90 - \\phi) = n_2 \\sin(90^\\circ) = n_2 \\implies \\phi = \\cos^{-1}(n_2/n_1).$$\n    Now, we apply snell's law on the other boundary,\n    $$\\sin \\theta = n_1 \\sin (\\phi) = n_1 \\frac{\\sqrt{n_1^2 - n_2^2}}{n_1} = \\sqrt{n_1^2 - n_2^2},$$\n    giving $\\theta = \\boxed{\\sin^{-1}\\left(\\sqrt{n_1^2 - n_2^2}\\right)}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "\\href{https://ipho.olimpicos.net/pdf/IPhO_1984_Q1.pdf}{IPhO 1984/T1}, another physical phenomenon!",
+    "problem_images": [],
+    "solution": "\\officialsol{https://ipho.olimpicos.net/pdf/IPhO_1984_S4.pdf}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "\\href{https://olympiads.hbcse.tifr.res.in/wp-content/uploads/2020/02/INPHO2020-Questions-en.pdf}{INPhO 2020/4}, a tricky graphical doppler effect problem.",
+    "problem_images": [],
+    "solution": "\\officialsol{https://olympiads.hbcse.tifr.res.in/wp-content/uploads/2020/03/INPHO2020-Solutions-20200220.pdf}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "\\href{https://www.aapt.org/physicsteam/2016/upload/E3-2-3.pdf}{USAPhO 2016/A1}, another tricky graphical doppler effect problem.",
+    "problem_images": [],
+    "solution": "\\officialsol{https://aapt.org/physicsteam/upload/USAPhO-2016-Solutions.pdf}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Wang",
+    "problem": "A car travels at speed $v$ in the lab frame along horizontal ground and emits\nwaves of speed $u$ in the lab frame at frequency $f$. If the car is receding from\na stationary vertical wall (in a direction normal to the wall), determine the\nfrequency of the reflected waves that are received by the car.",
+    "problem_images": [],
+    "solution": "First, the frequency of the waves is redshifted in the lab frame,\n    $$f' = \\frac{u}{u + v}f.$$\n    Then, after this reflects, the car becomes the observer, and there is a second doppler effect, leading to\n    $$f'' = \\frac{u-v}{u}\\frac{u}{u+v}f = \\frac{u-v}{u+v}f.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "\\href{https://eupho.ee/wp-content/uploads/2020/07/EuPhO17_theory.pdf}{EuPhO 2017/T1}",
+    "problem_images": [],
+    "solution": "\\officialsol{https://eupho.ee/wp-content/uploads/2020/07/EuPhO17_theory_solution_marking.pdf}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "USAPhO Practice",
+    "problem_tag": "USAPhO 2008/A4",
+    "problem": "A tape recorder playing a single tone of frequency $f_0$ is dropped from rest at a height $h$. You stand directly\nunderneath the tape recorder and measure the frequency observed as a function of time. Here $t = 0$ s is the time at which the tape recorder was dropped.\n\\begin{center}\n    \\begin{tabular}{c|c}\n        $t$ (s) & $f$ (Hz) \\\\ \\hline\n        2.0 & 581\\\\\n        4.0 & 619\\\\\n        6.0 & 665\\\\\n        8.0 & 723\\\\\n        10.0 & 801\n    \\end{tabular}\n\\end{center}\nThe acceleration due to gravity is $g=9.80\\,\\unit{m/s^2}$ and the speed of sound in air is $v_{\\text{snd}} = 340\\,\\unit{m/s}$. Ignore air resistance. You might need to use the Doppler shift formula for co-linear motion of sources and observers in still air,\n$$f = f_0 \\frac{v_{\\text{snd}} \\pm v_{\\text{obs}}}{v_{\\text{snd}} \\pm v_{\\text{src}}}.$$\nwhere $f_0$ is the emitted frequency as determined by the source, $f$ is the frequency as detected by the observer,\nand $v_{\\text{snd}}$, $v_{\\text{src}}$, and $v_{\\text{obs}}$ are the speed of sound in air, the speed of the source, and the speed of the observer. The positive and negative signs are dependent upon the relative directions of the motions of the source and the observer.\n\\begin{anum}\n    \\item Determine the frequency measured on the ground at time $t$, in terms of $f_0$, $g$, $h$, and $v_{\\text{snd}}$. Consider only the case where the falling tape recorder doesn’t exceed the speed of sound $v_{\\text{snd}}$.\n    \\item Verify graphically that your result is consistent with the provided data.\n    \\item What (numerically) is the frequency played by the tape recorder?\n    \\item From what height $h$ was the tape recorder dropped?\n\\end{anum}",
+    "problem_images": [],
+    "solution": "\\officialsol{https://aapt.org/Common/upload/USAPhO-2008-Solutions_rev-4012021.pdf}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Waves I Sols",
+    "section": "Problem Set",
+    "subsection": "USAPhO Practice",
+    "problem_tag": null,
+    "problem": "Consider a tube filled with air of average density $\\rho_0$ and adiabatic factor $\\gamma$, cross-sectional area $A$, and average pressure $P_0$. In this problem, we calculate the speed of sound within this tube. Let $\\rho(x), v(x), P(x)$ be the density, velocity, and pressure distributions across the tube. Assume that all processes are adiabatic, $v^2 \\ll P/\\rho$, and all fluctuations in $\\rho,v,P$ are much smaller than their average magnitude.\n    \\begin{anum}\n        \\item Write down a differential equation relating $\\rho(x)$ and $P(x)$.\n        \\item Consider a parcel of air between $x$ and $x+dx$. Now, write down a differential equation involving $v$ and $\\rho$ only, using Newton's second law. \\textit{Hint:} some of the derivatives may be with respect to time, and others may be with respect to position.\n        \\item Write down a second differential equation involving $v$ and $\\rho$ only by using continuity.\n        \\item Finish by reducing your differential equations to a wave equation in one of the variables,\n        $$\\frac{\\partial^2 (?)}{\\partial x^2} = \\frac 1{c^2} \\frac{\\partial^2 (?)}{\\partial t^2}.$$\n        and read off the speed of sound $c$. Is $c^2 \\ll P/\\rho$? If not, are our assumptions at the start of the problem valid?\n        \\item At the start of the problem we made the assumption that $v \\ll P/ \\rho$. Where does the derivation breakdown if this was not true?\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\item Because the processes are adiabatic, we can write down the adiabatic invariant. We have $V \\propto \\frac{1}{\\rho}$, so\n    $$PV^\\gamma \\propto P\\rho^{-\\gamma} = \\text{const.}$$\n    Thus, differentiating, we get\n    $$\\frac{dP}{P} - \\gamma \\frac{d\\rho}{\\rho} = 0.$$\n    \\item We consider the pressure on both sides,\n    $$F = A\\Delta P = A\\frac{\\partial P}{\\partial x} dx.$$\n    We can equate this to\n    $$ma = \\rho A dx \\frac{\\partial v}{\\partial t} = A \\frac{\\partial P}{\\partial x} dx.$$\n    So, our differential eqn is\n    $$\\rho \\frac{\\partial v}{\\partial t} = \\frac{\\partial P}{\\partial x}.$$\n    \\item We must have that the change in density within a given region is equal to the amount of ``stuff'' that flows in. The amount of stuff that flows in can be calculated from the difference in velocities from the left and right sides of the box. So,\n    $$A dx \\frac{\\partial \\rho}{\\partial t} = \\rho A \\frac{\\partial v}{\\partial x} dx \\implies \\pdv{\\rho}{t} = \\rho \\pdv{v}{x}.$$\n    \\item We can write \n    \\begin{align*}\n        \\pdv[2]{\\rho}{t} &= \\rho \\pdv{v}{t}{x},\\\\\n        &= \\pdv{x}\\pdv{P}{x},\\\\\n        &= \\frac{\\gamma P}{\\rho} \\pdv[2]{\\rho}{x}.\n    \\end{align*}\n    Thus, we get that $c= \\sqrt{\\gamma P/\\rho}$. It is on the order $\\sqrt{P/\\rho}$, but this is not a problem because the speed of the wave is different from the speed of the particles in the wave.\n    \\item The $F=ma$ equation breaks down. We assume that we're essentially working with the same set of mass when we take the partial derivative with respect to $v$. However, with a sufficiently fast speed, the set of particles that you're calculating the force on changes in the time $dt$, and you have to account for that change. Furthermore, if it gets fast enough and break the sound barrier, pressure and density are not even well-defined due to shock waves.",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  }
+]

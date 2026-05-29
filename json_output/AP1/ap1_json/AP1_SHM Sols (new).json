@@ -1,0 +1,202 @@
+[
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "If a particle undergoes SHM with amplitude 0.21 m, what is the total distance it travels in one period?",
+    "problem_images": [],
+    "solution": "We swing back and forth for a distance $4\\cdot 0.21=0.84\\, \\unit{m}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "An elastic cord is 61 cm long when a weight of 75 N hangs from it but is 85 cm long when a weight of 210 N hangs from it. What is the ``spring\" constant k of this elastic cord?",
+    "problem_images": [],
+    "solution": "Let the rest length be $l$. Then, by $F=kx$, we have $75=k(0.61-l)$ and $210 = k(0.85-l)$. Then, $k=(210-75)/(0.85-0.61)=562.5\\, \\unit{N/m}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A fisherman’s scale stretches 3.6 cm when a 2.4-kg fish hangs from it. (a) What is the spring stiffness constant and (b) what will be the amplitude and frequency of oscillation if the fish is pulled down 2.1 cm more and released so that it oscillates up and down?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item We have $k=F/x=2.4\\cdot 9.8/0.036=653\\, \\unit{N/m}$. \n        \\item The new equilibrium position is that at which the fish is stretched. The amplitude of oscillation is then 2.1 cm, and the oscillation frequency is $\\omega=\\sqrt{k/m}=16.5\\, \\unit{rad/s}$.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 1.65-kg mass stretches a vertical spring 0.215 m. If the spring is stretched an additional 0.130 m and released, how long does it take to reach the (new) equilibrium position again?",
+    "problem_images": [],
+    "solution": "The force exerted by the $1.65 \\, \\si{\\kilo\\gram}$ mass when the spring is stretched by $0.215 \\, \\si{\\meter}$ is $F = mg =  = 16.17 \\, \\si{\\newton}$. So, $k \\approx \\frac{16.17 \\, \\si{\\newton}}{0.215 \\, \\si{\\meter}} \\approx 75.14 \\, \\si{\\newton\\per\\meter}$. The period of oscillation is $T = 2\\pi \\sqrt{\\frac{m}{k}} = 2\\pi \\sqrt{\\frac{1.65}{75.14}} \\approx 0.931 \\, \\si{\\second}$. It takes a quarter of the period to reach the new equilibrium position, so the time we're looking at is $t=T/4=0.233\\, \\unit{s}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "It takes a force of 91.0 N to compress the spring of a toy popgun 0.175 m to ``load\" a 0.160-kg ball. With what speed will the ball leave the gun if fired horizontally?",
+    "problem_images": [],
+    "solution": "The spring constant can be found via $k=F/x=91/0.175=520$. Then, we have the kinetic energy equal to the potential energy stored in the spring, so $$\\frac 12 mv^2=\\frac 12 kx^2\\Rightarrow v=x\\sqrt{\\frac km}=0.175\\sqrt{\\frac{520}{0.16}}=9.97\\, \\unit{m/s}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A mass resting on a horizontal, frictionless surface is attached to one end of a spring; the other end is fixed to a wall. It takes 3.6 J of work to compress the spring by 0.13 m. If the spring is compressed, and the mass is released from rest, it experiences a maximum acceleration of 12 m/s$^2$. Find the value of (a) the spring constant and (b) the mass.",
+    "problem_images": [],
+    "solution": "\\begin{anum} \\item The work becomes the potential energy of the spring, so $$W=\\frac 12 kx^2\\Rightarrow k=\\frac{2W}{x^2}=\\frac{2\\cdot 3.6}{0.13^2}=426\\, \\unit{N/m}$$\n    \\item The force exerted at maximum compression is then $F=kx$. This induces an acceleration $a$, so $ma=kx\\Rightarrow m=kx/a=426\\cdot 0.13/12=4.6\\, \\unit{kg}.$ \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A pendulum has a period of 1.85 s on Earth. What is its period on Mars, where the acceleration of gravity is about 0.37 that on Earth?",
+    "problem_images": [],
+    "solution": "On the Earth, the pendulum has period $T=2\\pi \\sqrt{l/g_E}$ where $g_E$ is the gravity on Earth. Then, on Mars it will have a period $$T'=2\\pi\\sqrt{\\frac{l}{0.37 g_E}}=\\frac{T}{\\sqrt{0.37}}=\\frac{1.85}{\\sqrt{0.37}}=3.04\\, \\unit s$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "How long must a simple pendulum be if it is to make exactly one swing per second? (That is, one complete oscillation takes exactly 2.0 s.)",
+    "problem_images": [],
+    "solution": "We have $$T=2\\pi\\sqrt{\\frac{L}{g}}\\Rightarrow L=\\frac{T^2}{4\\pi^2}g=\\frac{2^2}{4\\pi^2}\\cdot9.8=1\\, \\unit{m}$$ since the period should be double the time of one swing.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "What is the period of a simple pendulum 47 cm long (a) on the Earth, and (b) when it is in a freely falling elevator?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item We have the period as $$T=2\\pi\\sqrt{\\frac{0.47}{9.8}}=1.38\\, \\unit{s}$$\n        \\item In a freely falling elevator, the pendulum becomes weightless (think about the tension in the string if the bob is free falling -- it has to be 0!). Thus effectively $g=0$, so the period is infinite (there are no oscillations at all).\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Your grandfather clock’s pendulum has a length of 0.9930 m. If the clock runs slow and loses 21 s per day, how should you adjust the length of the pendulum?",
+    "problem_images": [],
+    "solution": "We cannot simply plug in $g$, etc to our formula because rounding errors will be larger than the actual answer. Instead, note that $f\\propto 1/\\sqrt{L}$, which means $L\\propto 1/f^2$. In a day, there are 86400 seconds, but we know the clock does only 86379 swings. Thus the ratio of frequencies is $f_0/f=86400/86379$ (where $f_0$ is the correct frequency). But notice that we have the ideal length of the pendulum to be $L_0$, where $$L_0=L\\frac{f^2}{f_0^2}=0.9930\\cdot\\frac{86379^2}{86400^2}=0.9925$$Thus we shorten the length by $0.5$ mm.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A mass $m$ at the end of a spring oscillates with a frequency of 0.83 Hz. When an additional 780-g mass is added to $m$, the frequency is 0.60 Hz. What is the value of $m$?",
+    "problem_images": [],
+    "solution": "Using the formula, we have:\n    \\[ f_1 = \\frac{1}{2\\pi} \\sqrt{\\frac{k}{m}} \\qquad f_2 = \\frac{1}{2\\pi} \\sqrt{\\frac{k}{m + 0.780}} \\]\n\n    Dividing the two equations gives:\n    \\[ \\frac{f_1}{f_2} = \\sqrt{\\frac{m + 0.780}{m}} \\]\n    So $$m=\\frac{0.78}{\\frac{f_1^2}{f_2^2}-1}=\\frac{0.78}{\\frac{0.83^2}{0.60^2}-1}=0.853\\, \\unit{kg}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "If one oscillation has 3.0 times the energy of a second one of equal frequency and mass, what is the ratio of their amplitudes?",
+    "problem_images": [],
+    "solution": "Since the energy is $\\frac 12 kA^2$, if one oscillation has 3.0 times the energy, its amplitude is $\\sqrt{3}$ times as great.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A balsa wood block of mass 52 g floats on a lake, bobbing up and down at a frequency of 3.0 Hz. (a) What is the value of the effective spring constant of the water? (b) A partially filled water bottle of mass 0.28 kg and almost the same size and shape of the balsa block is tossed into the water. At what frequency would you expect the bottle to bob up and down? Assume SHM.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item The bobbing of the balsa wood block can be treated as SHM with an effective spring constant $k$ representing the restoring force provided by the buoyancy force of the water. The frequency of the motion is given as $f = 3.0$ Hz. We have $f = \\frac{1}{2\\pi}\\sqrt{\\frac{k}{m}}$, where $m$ is the mass of the block, we can solve for $k$. Rearranging the formula gives:\n    \\[ k = \\left(2\\pi f\\right)^2 \\times m \\]\n    Plugging in the values $f = 3.0$ Hz and $m = 52\\,\\text{g} = 0.052\\,\\text{kg}$, we find:\n    \\[ k = (2\\pi \\times 3.0)^2 \\times 0.052 \\approx 18.48\\, \\unit{N/m}. \\]\n        \\item When the water bottle is tossed into the water, it displaces a similar volume of water, so the effective $k$ remains approximately the same. The frequency then is \n    \\[\n    f = \\frac{1}{2\\pi} \\sqrt{\\frac{k}{m}} = \\frac{1}{2\\pi} \\sqrt{\\frac{18.48}{0.28}} \\approx 1.29\\,\\text{Hz}.\n    \\]\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "At what displacement of a SHO is the energy half kinetic and half potential?",
+    "problem_images": [],
+    "solution": "Half of the total energy is in potential form $\\frac 12 kx^2$ and half is in kinetic form. Since the total energy is $\\frac 12 kA^2$, we have $\\frac12 kx^2 = \\frac12 \\cdot \\frac12 kA^2$, giving $x=\\frac{A}{\\sqrt 2}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A block of mass $m$ is supported by two identical parallel vertical springs, each with spring stiffness constant $k$. What will be the frequency of vertical oscillation?\n    \\begin{center}\n        \\includegraphics[scale=0.2]{kay}\n    \\end{center}",
+    "problem_images": [
+      "AP1_SHM Sols (new)/kay.png"
+    ],
+    "solution": "Each spring provides a restoring force, so the total force is $F=-2kx$. Hence for small displacements the effective spring constant is $2k$, and we have $$\\omega = \\sqrt{\\frac{2k}{m}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A simple pendulum oscillates with an amplitude of 10.0$^\\circ$. What fraction of the time does it spend between $5.0^\\circ$ and $-5.0^\\circ$? Assume SHM.",
+    "problem_images": [],
+    "solution": "In SHM, the fraction of time spent within half the amplitude (i.e.\\ between $A/2$ and $-A/2$) is $1/3$. A quick way to see this is to note that $|x| \\le A/2$ corresponds to $|\\cos(\\theta)| \\le 1/2$, which occupies $2\\pi/3$ of the full $2\\pi$ cycle.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A clock pendulum oscillates at a frequency of 2.5 Hz. At $t = 0$, it is released from rest starting at an angle of 12$^\\circ$ to the vertical. Ignoring friction, what will be the position (angle in radians) of the pendulum at (a) $t = 0.25$ s, (b) $t = 1.60$ s, and (c) $t = 500$ s?",
+    "problem_images": [],
+    "solution": "First, convert the amplitude to radians: $12^\\circ = 12\\pi/180 \\approx 0.21\\, \\text{rad}$. Since it is released from rest at maximum displacement, we can write \n    \\[\n    \\theta(t) = 0.21 \\,\\cos\\bigl(2\\pi(2.5)\\,t \\bigr).\n    \\]\n    (a) For $t = 0.25\\,\\text{s}$, $\\omega t = 2\\pi(2.5)\\times 0.25 = 2\\pi \\times 0.625 = 1.25\\pi$. Then\n    \\[\n    \\cos(1.25\\pi) = \\cos\\left(\\frac{5\\pi}{4}\\right) = -\\frac{\\sqrt{2}}{2} \\approx -0.707,\n    \\]\n    so $\\theta(0.25) \\approx 0.21 \\times (-0.707) = -0.148\\,\\text{rad}.$\n\n    (b) For $t = 1.60\\,\\text{s}$, $\\omega t = 2\\pi(2.5)\\times 1.6 = 2\\pi \\times 4 = 8\\pi$, so\n    \\[\n    \\cos(8\\pi) = 1,\\quad \\theta(1.60) = 0.21\\,\\text{rad}.\n    \\]\n\n    (c) For $t = 500\\,\\text{s}$, $\\omega t = 2\\pi(2.5)\\times 500 = 2500\\pi$. Since $2500\\pi$ is an even multiple of $\\pi$, $\\cos(2500\\pi) = 1$. Hence\n    \\[\n    \\theta(500) = 0.21\\,\\text{rad}.\n    \\]",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_SHM Sols (new)",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "$F=ma$",
+    "problem": "A pendulum of length $L$ oscillates inside a box. A person picks up the box and gently shakes it horizontally with frequency $\\omega$ and a fixed amplitude for a fixed time. The final amplitude can be maximized if $\\omega$ satisfies \\begin{enumerate}[label = (\\Alph*)]\n\\item $\\omega=\\sqrt{g/L}$\n\\item $\\omega=2\\sqrt{g/L}$\n\\item $\\omega=(1/2)\\sqrt{g/L}$\n\\item There will be no effect on the amplitude for any value of $\\omega$.\n\\item None of the above.\n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "We want to shake the box at the natural (resonant) frequency of the pendulum, which is $\\sqrt{\\tfrac{g}{L}}$. Thus the answer is (A).",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

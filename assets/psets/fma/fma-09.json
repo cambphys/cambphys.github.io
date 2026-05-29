@@ -1,0 +1,274 @@
+[
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A solid ball of mass $m$ and radius $r$ is rolling without slipping at a speed $v$. Find the total kinetic energy $K$ of the ball. Also, find the angular momentum $L$ of the ball about the point of contact with the ground.",
+    "problem_images": [],
+    "solution": "To illustrate both ways to find the kinetic energy, I first use the composition of rotational and translational kinetic energy. $$K=\\frac12 mv^2+\\frac12I_0\\omega^2$$For a ball, $I_0=2mr^2/5$ about the center of mass. Since the ball is rolling without slipping, $\\omega=v/r$. Then, $$K=\\frac12mv^2+\\frac12\\frac25mr^2\\omega^2=\\boxed{\\frac{7}{10}mv^2}$$The alternative method is to use the instantaneous axis. The point of contact with the ground is stationary during the motion, so the instantaneous axis is that point. By the parallel axis theorem, $I'=I_0+mr^2=7mr^2/5$. Then, $$K=\\frac12I'\\omega^2=\\frac12\\frac75mr^2\\frac{v^2}{r^2}=\\boxed{\\frac{7}{10}mv^2}$$\n    To find the angular momentum, we just use $$L=mvr_\\perp+I_0\\omega=mvr+\\frac25mr^2\\omega=\\boxed{\\frac75mvr}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A figure skater spinning with speed 5 rad/s pulls her hands in and reduces her moment of inertia to 2/3 of what it was previously. What’s her final rotational speed?",
+    "problem_images": [],
+    "solution": "Because there is no external torque, angular momentum is conserved. Let her initial moment of inertia be $I$. Then, equating the initial and final angular momenta yields $$I\\cdot(5\\,\\unit{rad/s})=\\frac23I\\omega'\\Rightarrow \\omega'=\\boxed{7.5 \\, \\unit{rad/s}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "$F=ma$",
+    "problem": "As shown in the figure, a ping-pong ball with mass $m$ with initial horizontal velocity $v$ and angular velocity $\\omega$ comes into contact with the ground. Friction is not negligible, so both the velocity and angular velocity of the ping-pong ball changes. What is the critical velocity $v_c$ such that the ping-pong will stop and remain stopped? Treat the ping-pong ball as a hollow sphere.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{fma1}\n    \\end{center}\n    \\begin{enumerate}[label = (\\Alph*)]\n\\item $v=\\frac23R\\omega$\n\\item $v=\\frac25R\\omega$\n\\item $v=R\\omega$\n\\item $v=\\frac35R\\omega$\n\\item $v=\\frac53R\\omega$\n\\end{enumerate}",
+    "problem_images": [
+      "Rotation_II Sols/fma1.png"
+    ],
+    "solution": "Notice that gravity, normal force, and friction all act through the contact point with the ground. Thus, angular momentum is conserved about the contact point with the ground. If the ball eventually stops and remains stopped, this means its total angular momentum must be 0. As a result, in looking at the initial condition (and paying attention to clockwise vs counter-clockwise directions), $$mvr-\\frac23mr^2\\omega=0\\Rightarrow v=\\frac23R\\omega$$So the answer is <strong>(A)</strong>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A uniform rod is pivoted at one end and held horizontal. The rod is then released, and it swings back and forth in the vertical plane without loss of energy. What is the maximum angular velocity $\\omega$ obtained by the rod during the motion?",
+    "problem_images": [],
+    "solution": "By conservation of energy, the maximum kinetic energy (and thus angular velocity) is obtained at the bottom of the motion. The inertia of a rod pivoted at one end is $I=mL^2/3$. The COM moves downward by a distance $L/2$, so by conservation of energy $$mg\\frac L2=\\frac12\\frac13mL^2\\omega^2\\Rightarrow \\omega=\\boxed{\\sqrt{\\frac{3g}{L}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "$F=ma$",
+    "problem": "A thin rod has a nonuniform density. It is mounted on an axle passing perpendicular to it, through its center of mass, as shown, and is then rotated about the axle.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{fma2}\n    \\end{center}\n    The axle divides the rod into two parts, one on each side of it. Which of the following must be true, no matter how the mass in the rod is distributed?\n    \\begin{enumerate}[label = (\\Alph*)]\n\\item The two parts have the same mass.\n\\item The magnitudes of the momenta of the two parts are equal.\n\\item The magnitudes of the angular momenta of the two parts, about the center of mass, are equal.\n\\item The kinetic energies of the two parts are equal.\n\\item At least two of the above are true.\n\\end{enumerate}",
+    "problem_images": [
+      "Rotation_II Sols/fma2.png"
+    ],
+    "solution": "The COM is determined by the quantity $\\sum m_ix_i$, since it is the weighted average of the distances of pieces of mass. Thus if we set the COM to be at the origin, the sums on both sides of the COM must be equal: $$\\sum_{\\text{left}} m_ix_i=\\sum_{\\text{right}} m_ix_i$$ Notice that for the mass to be the same on both sides, $$\\sum_{\\text{left}} m_i=\\sum_{\\text{right}} m_i$$which can't be true if the first equality is true. For the linear momentum to be the same on both sides, note that the speed of each element is $\\omega x_i$; thus, we require $$\\omega\\sum_{\\text{left}} m_ix_i=\\omega\\sum_{\\text{right}} m_ix_i$$ which is true given the first equality. Angular momentum, on the other hand, is given by $\\sum mx_i^2$, which cannot be true, and similarly for kinetic energy. Thus, only <strong>(B)</strong> must be true.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A uniform rod is initially held perfectly upright on a frictionless floor. The rod is then released, and it tips over and falls to the ground. Find the angular velocity $\\omega$ of the rod right before its free end hits the ground.",
+    "problem_images": [],
+    "solution": "Because the only external forces on the rod are gravity and normal force, and that these forces point in the vertical direction, the velocity of the COM is always vertical. Thus, right before the rod hits the ground, it is essentially horizontal, and so the velocity of the COM (and thus as well as every other point on the rod) is perpendicular to the rod. As a result, the rod moves as if it were pivoted at one end (the point touching the ground), with moment of inertia $I=mL^2/3$. The COM falls a distance $L/2$ during this process, so by conservation of energy $$mg\\frac L2=\\frac12\\frac13mL^2\\omega^2\\Rightarrow \\omega=\\boxed{\\sqrt{\\frac{3g}{L}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Two balls of mass $m$ are connected by a massless rod of length $2l$ and are allowed to spin at angular speed $\\omega$ about an axis drawn through their center of mass and perpendicular to the rod. A motor within the rod then draws in the masses by reducing the length of the rod to $l$ (imagine the rod to work similarly to a selfie stick). How much work was done by the motor in this process?",
+    "problem_images": [],
+    "solution": "There is no external torque about the center of mass of the system, so the angular momentum about the COM is conserved. Thus, after the rod shortens, the angular speed of the contraption is given by $$2ml^2\\omega=2m\\left(\\frac l2\\right)^2\\omega'\\Rightarrow \\omega'=4\\omega$$Thus the increase in kinetic energy of the contraption is $$\\Delta K=\\frac12 2m\\left(\\frac l2\\right)^2\\omega'^2-\\frac122ml^2\\omega^2=3ml^2\\omega^2$$The only input of energy into the system can be supplied by the motor, so this is the amount of work done by the motor. $$W=\\Delta K=\\boxed{3ml^2\\omega^2}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A bullet of mass $m$ is fired horizontally at speed $v$ into a uniformly-dense vertically hanging rod of mass $2m$ and length $l$. It gets embedded into the rod. How far below the top of the rod should the bullet strike the rod in order to minimize the energy dissipated in the collision?",
+    "problem_images": [],
+    "solution": "Let the bullet be fired at a distance $d$ below the axis. By conservation of angular momentum about the axis, $$mvd=\\left(md^2+\\frac23ml^2\\right)\\omega$$So the loss of energy is simply the initial kinetic energy minus the final, so $$\\Delta K=\\frac12 mv^2-\\frac12\\left(md^2+\\frac23ml^2\\right)\\omega^2=\\frac12mv^2\\left(1-\\frac{md^2}{md^2+\\frac23ml^2}\\right)=\\frac12mv^2\\frac{\\frac23ml^2}{md^2+\\frac23ml^2}$$To minimize the loss of energy, we should maximize the denominator; that is, to set $d=\\boxed{l}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A hollow sphere of mass $m$ and radius $r$ is filled entirely with water of a total mass $M$. The sphere is placed on an inclined plane at a height $h$ and begins rolling down without slipping. However, assume that there is no friction between the water and the inside of the sphere so that the movement of the water is purely translational.\n    \\begin{anum}\n        \\item Find the minimum coefficient of friction $\\mu$ needed between the plane and the sphere in order for the sphere to roll without slipping. \n        \\item Find the translational velocity of the sphere $v$ at the bottom of the incline.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Let the friction force be $f$. By force analysis parallel to the plane, $$(m+M)g\\sin\\theta-f=(m+M)a$$And by torque analysis relative to the COM, (since the water does not rotate, we only consider the sphere) $$fr=\\frac23mr^2\\alpha\\Rightarrow f=\\frac23ma$$Solving the system of equations for $f$ yields $$f=\\frac{2m(m+M)g\\sin\\theta}{5m+3M}$$The minimum coefficient of friction is achieved when $f=N\\mu=(m+M)g\\cos\\theta\\mu$, so $$\\mu=\\boxed{\\frac{2m}{5m+3M}\\tan\\theta}$$\n        \\item The total kinetic energy at the bottom of the ramp is given by energy of the sphere plus the energy of the water. The total energy of the sphere is given by $$K_s=\\frac12mv^2+\\frac12\\frac23mr^2\\omega^2=\\frac56mv^2$$and since the energy of the water is purely translational, the total energy is thus $$K=\\frac56mv^2+\\frac12Mv^2$$Equating this to the decrease in potential energy $(m+M)gh$ yields $$v=\\boxed{\\sqrt{\\frac{6(m+M)gh}{5m+3M}}}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "Two particles with mass $m_1$ and $m_2$ are connected by a massless rigid rod of length $L$ and placed on a horizontal frictionless table. At time $t = 0$, the first mass receives an impulse perpendicular to the rod, giving it speed $v$. At this moment, the second mass is at rest. The next time the second mass is at rest is\n    \\begin{enumerate}[label = (\\Alph*)]\n\\item $t=2\\pi L/v$\n\\item $t=\\pi(m_1+m_2)L/m_2v$\n\\item $t=2\\pi m_2L/(m_1+m_2)v$\n\\item $t=2\\pi m_1m_2L/(m_1+m_2)^2v$\n\\item $t=2\\pi m_1L/(m_1+m_2)v$\n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "The velocity of the COM is moving at a speed $u=m_1v/(m_1+m_2)$, and in its rest frame, $m_2$ has this speed. The movement in the COM frame is purely rotation about the COM, so the time until the second mass is at rest in the lab frame is the period of rotation of the object in the COM frame. The distance of $m_2$ from the COM is $d_2=m_1L/(m_1+m_2)$, so $\\omega=u/d_2=v/L$. As a result, the period is $t=2\\pi/\\omega=2\\pi L/v$, answer <strong>(A)</strong>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A uniform solid circular disk of mass $m$ is on a flat, frictionless horizontal table. The center of mass of the disk is at rest and the disk is spinning with angular frequency $\\omega_0$. A stone, modeled as a point object also of mass $m$, is placed on the edge of the disk, with zero initial velocity relative to the table. A rim built into the disk constrains the stone to slide, with friction, along the disk’s edge. After the stone stops sliding with respect to the disk, what is the angular frequency of rotation of the disk and stone together?\n\\begin{enumerate}[label = (\\Alph*)]\n\\item $\\omega_0$\n\\item $2\\omega_0/3$\n\\item $\\omega_0/2$\n\\item $\\omega_0/3$\n\\item $\\omega_0/4$\n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "There is no external torque, so we analyze conservation of angular momentum about the COM. Since the disk and mass both have mass $m$, the COM is located a distance $R/2$ from the center of the disk. The initial angular momentum is the spin angular momentum of the disk, $L_0=mR^2\\omega_0/2$. In the end, the whole contraption rotates about the COM, so that the total angular momentum is  $$L_f=L_{\\text{disk}}+L_{\\text{stone}}=\\left(mv'\\frac{R}{2}+\\frac12mR^2\\omega'\\right)+mv'\\frac{R}{2}=mR^2\\omega'$$by using $v'=\\omega'R/2$, where $v'$ is the translational speed of the disk COM and the stone relative to the overall COM. Equating the angular momenta, $\\omega'=\\omega_0/2$, answer <strong>(C)</strong>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "A superball is a ball that can bounce on the ground without any loss of energy. Let a superball (assumed to be a solid ball with inertia $I=2mr^2/5$) collide with the ground with initial velocity components $v_x$ and $v_y$ and initial rotational speed $\\omega$. $v_x$ is defined as positive for rightward movement and $\\omega$ is positive for counterclockwise rotation. Find the velocity $v_x'$ and angular velocity $\\omega'$ of the ball after a collision with the ground.",
+    "problem_images": [],
+    "solution": "By conservation of angular momentum about the contact point, $$v_x-\\frac25R\\omega=v_x'-\\frac25R\\omega'\\Rightarrow v_x-v_x'=\\frac25(R\\omega-R\\omega')$$By conservation of energy, $$\\frac12mv_x^2+\\frac12\\frac25mR^2\\omega^2=\\frac12m{v_x'}^2+\\frac12\\frac25mR^2{\\omega'}^2\\Rightarrow v_x^2-{v_x'}^2=\\frac25(R^2{\\omega'}^2-R^2\\omega^2)$$Dividing the energy equation by angular momentum, $$v_x+v_x'=-(R\\omega'+R\\omega)$$And solving this equation with conjunction with the angular momentum equation yields \\begin{gather*}\n    \\boxed{v_x'=\\frac17(3v_x-4R\\omega)}\\\\\n    \\boxed{R\\omega'=-\\frac17(10v_x+3R\\omega)}\n\\end{gather*}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "You hold one end of a uniform stick of length $L$. The stick is struck with a hammer. Where should this blow occur so that the end you are holding doesn’t move (immediately after the blow)? In other words, where should the blow occur so that you don’t feel a ``sting\" in your hand? This point is called the <em>center of percussion</em>.",
+    "problem_images": [],
+    "solution": "We want to find the distance $d$ from the holding point so that the velocity of the holding point right after the collision is zero. If the blow occurs with impulse $P$, then the COM velocity of the rod is $u=P/m$. Notice that we need $d>L/2$ for the rod to rotate in the reverse direction so that the overall speed at the holding point is 0. The angular velocity is given by $\\omega=P(d-L/2)/I=12P(d-L/2)/mL^2$. For the overall speed to be 0 at the top, then, we have $$u=\\omega\\frac{L}{2}\\Rightarrow \\frac{P}{m}=\\frac{6P(d-L/2)}{mL}\\Rightarrow d=\\boxed{\\frac23L}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "A (possibly non-uniform) stick of mass $m$ and length $l$ lies on frictionless ice. Its midpoint (which is also its COM) touches a thin pole sticking out of the ice. One end of the stick is struck with a quick blow perpendicular to the stick so that the COM moves away from the pole. What is the minimum value of the stick’s moment of inertia that allows the stick not to hit the pole?\n    \\begin{center}\n        \\includegraphics[scale=0.2]{morin1}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_II Sols/morin1.png"
+    ],
+    "solution": "If $P$ is the impulse applied, let $v=P/m$ be the velocity of the COM and $\\omega=P(l/2)/I$ be the rotational velocity. For the rod to not hit the pole, the COM has to move a distance $l/2$ before the pole rotates $90^\\circ$, or $\\pi/4$ radians. Thus, in the critical case we require \\begin{align*}\n        \\frac{l}{2v}=\\frac{\\pi}{4\\omega}\\Rightarrow I=\\boxed{\\frac{1}{\\pi}ml^2}\n    \\end{align*}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Krotov",
+    "problem": "Two coupled wheels (i.e. light wheels of radius $r$ and mass $m$ fixed to a thin heavy axle of mass $M\\gg m$) roll without slipping at a velocity $v$ perpendicular to the boundary over a rough horizontal plane changing into an inclined plane of slope $\\alpha$. Determine the value of $v$ at which the coupled wheels roll from the horizontal to the inclined plane without losing contact with the surface. \n    \\begin{center}\n        \\includegraphics[scale=0.15]{krotov1}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_II Sols/krotov1.png"
+    ],
+    "solution": "We require the normal force to be nonzero at all points in the motion in order to avoid losing contact. As the wheels roll about the transition point, the rod moves in a circle of radius $r$ (we can consider the wheels to be massless because $M\\gg m$). Let, at some point, the wheels rotate an angle $\\theta$ to the vertical. By balancing the radial forces, the radial gravitational force minus the normal force provides the centripetal force: $$mg\\cos\\theta-N=m\\frac{u^2}{r}$$ where $u$ is the speed of the rod at that moment. Notice that $N$ is minimized when $\\theta$ is maximal, since that minimizes $mg\\cos\\theta$ and maximizes $u=\\sqrt{v^2+2gr(1-\\cos\\theta)}$ (this value found from conservation of energy). Thus, the point where the wheels are most likely to lose contact is when $\\theta=\\alpha$, and the critical velocity is found when $N=0$ at this angle: $$0=mg\\cos\\alpha-m\\frac{u^2}{r}\\Rightarrow v=\\boxed{\\sqrt{gr(3\\cos\\alpha-2)}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Krotov",
+    "problem": "A thin rim of mass $m$ and radius $r$ rolls down an inclined plane of slope $\\alpha$ and winds up a thin ribbon of linear density $\\lambda$ placed along the slope. The rim begins at a height $h$ above the ground. Find the distance $s$ from the foot of the inclined plane to the position where the rim eventually stops. \n    \\begin{center}\n        \\includegraphics[scale=0.2]{krotov2}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_II Sols/krotov2.png"
+    ],
+    "solution": "This is a task not in rotational motion, but in energy conservation! Notice that as the rim picks up the ribbon, there is no relative motion between the rim and the ribbon so all fiction is static; energy is thus conserved. As a result, the original gravitational PE equals the final. Originally, $m$ sits at a height $h+r$, and a mass $\\lambda h/\\sin\\alpha$ of string sits at an average height $h/2$. In the final state, the rim has a mass $m+\\lambda s$, and its center of mass is a distance $r$ above the ground. Equating the potential energies, $$mg(h+r)+\\frac{\\lambda h^2g}{2\\sin\\alpha}=(m+\\lambda s)gr\\Rightarrow s=\\boxed{\\frac{m(h+r)}{r\\lambda}+\\frac{h^2}{2r\\sin\\alpha}-\\frac{m}{\\lambda}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A cannon is built as follows. A massive uniform wheel of mass $M$ and radius $R$ is spinning at a rapid velocity $\\omega$ about its center. Projectiles of mass $m\\ll M$ are dropped onto the wheel's rim at a rate $n$ and obtain the speed of the wheel's rim at that moment. Then, the projectiles are released from the wheel. What is the initial angular deceleration $\\alpha$ of the wheel?\n    \\begin{center}\n        \\includegraphics[scale=0.15]{scratch1}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_II Sols/scratch1.png"
+    ],
+    "solution": "The impulse provided to the projectiles in a small time $\\Delta t$ is equal to $\\Delta p=nm\\omega R\\Delta t$, so the effective force applied to the rim of the wheel is $F=\\Delta p/\\Delta t=nm\\omega R$. The effective torque is thus $\\tau=nm\\omega R^2$, so the deceleration is just $$\\alpha=\\frac{\\tau}{MR^2/2}=\\boxed{\\frac{2nm\\omega}{M}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "In the bicycle wheel example of precession covered in class, what is the tension in the string holding up the wheel? Using this information, find the frequency of precession $\\Omega$ by considering torque about the center of mass of the wheel.",
+    "problem_images": [],
+    "solution": "By force balance in the vertical direction, $T=mg$. By considering torque about the COM, $\\tau = Tl/2=mgl/2$. Then, again we have $$\\Omega=\\frac\\tau L=\\frac{mgl/2}{mr^2}=\\boxed{\\frac{gl}{2\\omega r^2}}$$ which is the same result derived before, which goes to show that the precession frequency is a property of the physical system and doesn't depend on the choice of axis.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "A fixed cone stands on its tip, with its axis in the vertical direction. The half-angle at the vertex is $\\theta$. A small ring of radius $r$ rolls without slipping on the inside surface. Assume that conditions have been set up so that (1) the point of contact between the ring and the cone moves in a circle at height $h$ above the tip, and (2) the plane of the ring is at all times perpendicular to the line joining the point of contact and the tip of the cone. What is the frequency $\\Omega$ of this circular motion? Work in the approximation where $r$ is much smaller than the radius of the circular motion, $h \\tan \\theta$. \n    \\begin{center}\n        \\includegraphics[scale=0.2]{morin2}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_II Sols/morin2.png"
+    ],
+    "solution": "We analyze torque about the COM. First, notice that three forces act on the body: gravity $mg$ through the COM, normal force $N$ from the contact point, and a frictional force $f$ directed either up or down the incline that prevents the ring from slipping into the cone. For now, assume the friction force is directed upward. By force balance in the vertical and horizontal directions, \\begin{gather*}\n        mg=N\\sin\\theta+f\\cos\\theta\n        m\\Omega^2h\\tan\\theta=N\\cos\\theta-f\\sin\\theta\n    \\end{gather*}This system solves as $$f=mg\\cos\\theta-m\\Omega^2h\\tan\\theta\\sin\\theta$$ Notice that by the right hand rule, the vector $L=mr^2\\omega$ points perpendicularly to the coin, and the component that chances (precesses) is $L\\sin\\theta$. Because the coin is not slipping, we can relate $\\omega$ to known quantities by using the velocity $v$ of the COM: $v=\\omega r=\\Omega h\\tan\\theta\\Rightarrow \\omega=\\Omega h\\tan\\theta/r$. Finally, the precession is due to the torque about the COM, which is equal to $\\tau=fr$, so using $\\Omega=\\tau/L\\sin\\theta$, we get $$\\Omega=\\boxed{\\frac{1}{\\tan\\theta}\\sqrt{\\frac{g}{2h}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "Watch <a href=\"https://youtu.be/EY4_GhcLacw?si=8DlykrN_ZvMnyL9p\" target=\"_blank\" rel=\"noopener\">this video</a> by yours truly. Consider a pencil (with 6 sides of length $a$) rolling down an inclined plane of angle $\\theta$. \n    \\begin{anum}\n        \\item The moment of inertia of a pencil about its center is $I=5ma^2/12$. As the pencil rolls down the plane, let the speed of its center of mass be $v_i$ right before one side hits the plane and the speed be $v_f$ right after the collision with the plane. Assuming the pencil does not slip during the motion, what is the ratio $r=v_i/v_f$?\n        \\item Using your answer from a), find the ratio of the kinetic energy of the pencil before each collision with the plane to after each collision with the plane, $K_i/K_f$. \n        \\item In general, after a pencil starts rolling down the plane, its COM speeds $v_f$ after collisions with the plane will reach some terminal velocity $v_c$. Find $v_c$, assuming that such a terminal velocity exists.\n        \\item (Optional) If the plane is not steep enough, the terminal velocity $v_c$ you calculated does not provide enough energy for the pencil's COM to rise up and fall back down for the next collision. Using this idea, find the minimal angle $\\theta$ at which the pencil can roll down the plane. Assume friction is sufficient so that the pencil never slips.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item As the pencil is about to impact the plane mid-roll, the normal impulse of impact from the collision travels through the point of contact. Thus, in this instantaneous moment, angular momentum about that point is conserved. We can see that via angle-chasing the projection of the initial velocity vector of the hexagon's is a distance $a\\cos(60^\\circ)=a/2$ from the impact point; thus, the initial angular momentum is $$L_0=\\frac5{12}\\omega_i+mv_i\\frac{a}{2}=\\frac{11}{12}ma^2\\omega_i$$As the pencil rolls off, the angular momentum is now $$L_f=\\frac5{12}\\omega_f+mv_f\\frac{a}{2}=\\frac{17}{12}ma^2\\omega_f$$\n        As a result, equating these, we get $\\omega_i/\\omega_f=17/11$. Since this is the same ratio of the velocities, $$r=\\frac{v_i}{v_f}=\\boxed{\\frac{17}{11}}$$\n        \\item The kinetic energy is proportional to $v^2$, so $$\\frac{K_i}{K_f}=r^2=\\boxed{\\frac{289}{121}}$$\n        \\item Analyzing what happens between one collision and the next, notice that the pencil will rise off of a collision with kinetic energy $K_f$. It will then rotate until the next collision (and in doing so, its COM decreases in height by a distance $h=a\\sin\\theta$), where it must have kinetic energy $K_i$ so that right after the collision, we repeat the scenario with kinetic energy $K_f$. As a result, it holds that $$K_f+mga\\sin\\theta=K_i=r^2K_f\\Rightarrow K_f=\\frac{mga\\sin\\theta}{r^2-1}$$And since $K_f=mv_c^2/2$, we have $$v_c=\\boxed{\\sqrt{\\frac{2ga\\sin\\theta}{r^2-1}}}$$\n        \\item At the critical case, the pencil's terminal velocity $v_c$ must be sufficient to bring the pencil up to its maximal height after the collision (when its COM is above the point of contact with the plane). By angle chasing, the COM must be able to rise a distance $a\\cos(30^\\circ-\\theta)$. As a result, $v_c^2=2ga\\cos(30^\\circ-\\theta)$. Plugging in $v_c$ from earlier, $$\\cos(30^\\circ-\\theta)=\\frac{\\sin\\theta}{r^2-1}\\Rightarrow \\theta=\\sin^{-1}(1.388\\cos(30^\\circ-\\theta))$$The solution can be found via graphing, or by iteratively calculating $\\theta$ using a scientific calculator. In either case, you should get $\\theta=\\boxed{6.58^\\circ}.$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "EuPhO",
+    "problem": "Three small identical balls (denoted as $A$, $B$, and $C$) of mass $m$ each are connected with two massless rods of length $l$ so that one of the rods connects the balls $A$ and $B$, and the other rod connects the balls $B$ and $C$. The connection at the ball $B$ is hinged, and the angle between the rods can change effortlessly. The system rests in weightlessness so that all the balls lie on one line. The ball $A$ is given instantaneously a velocity perpendicular to the rods. Find the minimal distance $d$ between the balls $A$ and $C$ during the subsequent motion of the system. Any friction is to be neglected.",
+    "problem_images": [],
+    "solution": "The center of mass moves at a speed $v/3$, so let's move into this frame. In this frame, $A$ moves in one direction at $2v/3$ while $B$ and $C$ move in the other at $v/3$. The initial kinetic energy is $$K=\\frac12m\\left(\\frac{4v^2}{9}+\\frac{v^2}{9}+\\frac{v^2}{9}\\right)=\\frac13mv^2$$ and the initial angular momentum about the COM is $$L=m\\frac23vl-(-m\\frac13vl)=mvl$$When $A$ and $C$ are at their minimum distance, they are neither moving further away from each other or closer to one another. This means that the angle at the hinge is momentarily stationary at this moment, and so the entire contraption rotates as a rigid body. Let the distance between $A$ and $C$ be $d$ at this moment such that the masses make a triangle of lengths $l$, $l$, and $d$. We seek to find an expression for the angular momentum in this case. If we let $h=\\sqrt{l^2-(d/2)^2}$ be the median of the triangle to $d$, then it holds that the moment of inertia is $$I=m\\left[\\left(\\frac{2h}{3}\\right)^2+2\\left(\\sqrt{\\left(\\frac{h}{3}\\right)^2+\\left(\\frac{d}{2}\\right)^2}\\right)^2\\right]=m\\frac{2l^2+d^2}{3}$$and so if the angular velocity is $\\omega$ at this moment, we have \\begin{gather*}\nK=\\frac13mv^2=\\frac12I\\omega^2\\\\\nL=mvl=I\\omega\n\\end{gather*}Plugging in $I$ and solving the system, we get $$d=\\boxed{l\\sqrt{\\frac52}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "USAPhO",
+    "problem": "A bead is placed on a horizontal rail, along which it can slide frictionlessly. It is attached to the end of a rigid, massless rod of length $R$. A ball is attached at the other end. Both the bead and the ball have mass $M$. The system is initially stationary, with the ball directly above the bead. The ball is then given an infinitesimal push, parallel to the rail.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{usapho1}\n    \\end{center}\n    Assume that the rod and ball are designed in such a way (not shown explicitly in the diagram) so that they can pass through the rail without hitting it. In other words, the rail only constrains the motion of the bead. \n    \\begin{anum}\n        \\item Derive an expression for the force in the rod when the ball is directly below the bead as shown. \n        \\begin{center}\n            \\includegraphics[scale=0.15]{usapho2}\n        \\end{center}\n        \\item Let $\\theta$ be the angle the rod makes with the vertical, so that the rod begins at $\\theta = 0$. Find the angular velocity $\\omega$ as a function of $\\theta$.\n    \\end{anum}",
+    "problem_images": [
+      "Rotation_II Sols/usapho1.png",
+      "Rotation_II Sols/usapho2.png"
+    ],
+    "solution": "\\begin{anum}\n    \\item This part was sourced from USAPhO 2019, problem B3, part b. For a tricker version of this problem, give a shot at part a <a href=\"https://www.aapt.org/physicsteam/upload/2019_USAPhO.pdf\" target=\"_blank\" rel=\"noopener\">here</a>. By conservation of energy, the total kinetic energy of the system is $2MgR$ at the position shown. Notice that there is no horizontal force on the system, so the total momentum in the $x$ direction must be conserved. As a result, at this particular moment the top mass is moving to the right at some $v$ and the bottom mass is moving to the left at some $v$. Applying conservation of energy, $$2\\frac12Mv^2=2MgR\\Rightarrow v=\\sqrt{2gR}$$The motion of each mass in this frame is quite complicated, so it's helpful to analyze the situation in the rest frame of the top mass. Notice that the top mass is not accelerating at this moment, since the only possible acceleration it could have would be in the horizontal plane (because of the normal force provided by the rail), and no horizontal forces act on this mass at the moment described (this condition is not true for part a of the USAPhO problem). As a result, we can switch into this instantaneous velocity frame without introducing fictitious forces. In this frame, the bottom mass moves in a circle of radius $R$ at speed $2v$, so the tension in the rod is easily found by balancing forces: $$T-Mg=M\\frac{(2v)^2}{R}=8Mg\\Rightarrow T=\\boxed{9Mg}$$\n    \\item The height of the ball is $R \\cos\\theta$, so the released gravitational potential energy is $MgR(1-\\cos\\theta)$. The kinetic energy may be decomposed into rotation about the center of mass and translation of the center of mass; this translation is purely vertical by conservation of momentum. The vertical speed of the center of mass is $(R/2)\\omega \\sin \\theta$, so the kinetic energy is$$\\frac12I_0\\omega^2+\\frac12(2M)v^2=\\frac14MR^2\\omega^2(1+\\sin^2\\theta)$$Equating these two equations and simplifying gives $$\\omega=\\boxed{\\sqrt{\\frac{4g}{R}\\frac{1-\\cos\\theta}{1+\\sin^2\\theta}}}$$\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "PPP",
+    "problem": "(Calculus required). A fire hose of mass $M$ and length $L$ is coiled into a roll of radius $R$ ($R \\ll L$). The hose is sent rolling across level ground with initial speed $v_0$ (angular velocity $v_0/R$), while the free end of the hose is held at a fixed point on the ground. The hose unrolls and becomes straight.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{ppp1}\n    \\end{center}\n    How long does it take for the hose to unroll?",
+    "problem_images": [
+      "Rotation_II Sols/ppp1.png"
+    ],
+    "solution": "First, we determine the speed of the roll as a function of the distance it has covered. The mass of the moving part of the hose after traveling a distance $x$ is $m = M(1 - x/L)$. Its speed $v$ can be determined using the conservation of energy:$$\\frac12Mv_0^2+\\frac12\\left(\\frac12 MR^2\\right)\\left(\\frac{v_0}{R}\\right)^2=\\frac12mv^2+\\frac12\\left(\\frac12mr^2\\right)\\left(\\frac{v}{r}\\right)^2$$The change in potential energy and the small vertical speed acquired as a result of the decrease of the radius of the roll have been neglected. Using the known variation of the mass with distance, the velocity $v$ is found to be given by$$v=\\frac{v_0}{\\sqrt{1-x/L}}$$The total time to unroll is given by $$T=\\int_0^T dt=\\int_0^L\\frac{dx}{v}=\\frac{1}{v_0}\\int_0^L\\sqrt{1-x/L}\\, dx=\\boxed{\\frac{2L}{3v_0}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

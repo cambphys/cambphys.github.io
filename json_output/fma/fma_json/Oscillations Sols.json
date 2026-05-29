@@ -1,0 +1,241 @@
+[
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A spring of constant $k$ and relaxed length $\\ell$ is suspended from the ceiling. A mass $m$ is attached to the spring and released from rest at the spring's relaxed position. Find $z(t)$, the distance between the mass and the ceiling as a function of time.",
+    "problem_images": [],
+    "solution": "The equilibrium position is at a distance $z_0=\\ell+mg/k$ from the ceiling, and the mass oscillates (starting from a local minimum) with amplitude $A=mg/k$. As a result, $$z(t)=\\boxed{\\ell+\\frac{mg}{k}\\left(1-\\cos\\sqrt{\\frac km}t\\right)}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "$F=ma$",
+    "problem": "A pendulum of length $L$ oscillates inside a box. A person picks up the box and gently shakes it horizontally with frequency $\\omega$ and a fixed amplitude for a fixed time. The final amplitude can be maximized if $\\omega$ satisfies \\begin{enumerate}[label = (\\Alph*)]\n\\item $\\omega=\\sqrt{g/L}$\n\\item $\\omega=2\\sqrt{g/L}$\n\\item $\\omega=(1/2)\\sqrt{g/L}$\n\\item There will be no effect on the amplitude for any value of $\\omega$.\n\\item None of the above.\n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "We want to rock the box so that when the mass is moving to the left inside the box, we pull the box to the right, and when the mass is moving to the left inside the box, we pull the box to the left. Thus, we want to set $\\omega$ equal to the natural oscillation frequency of the pendulum, which is \\textbf{(A)} $\\omega=\\sqrt{g/L}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "$F=ma$",
+    "problem": "A point mass $m$ is glued inside a massless hollow rod of length $L$ at an unknown location. When the rod is pivoted at one end, the period of small oscillations is $T$. When the rod is pivoted at the other end, the period of small oscillations is $2T$. How far is the mass from the center?\n\\begin{enumerate}[label = (\\Alph*)]\n\\item $L/8$\n\\item $L/6$\n\\item $L/4$\n\\item $3L/10$\n\\item $2L/5$\n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "We have $T\\propto\\sqrt{\\Delta L}$, where $\\Delta L$ is the distance from the pivot point to the mass. Then the ratio of\ndistances is 4, so the mass is $L/5$ from one of the ends, or \\textbf{(D)} $3L/10$ from the center.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "\\label{prob6}\n    A block of mass $m$ attached to a horizontal spring $k$ is oscillating on a frictionless floor with amplitude $A$. \n    \\begin{anum}\n        \\item Find the period $T$ of one oscillation.\n        \\item Let the equilibrium position be $x=0$. How long does it take the block to travel from $x=A$ to $x=A/2$? (The technique with this type of problem is to model the position of the mass as the projection of a point moving around a circle with angular velocity $\\omega$)\n        \\item How long does it take for the block to travel from equilibrium to a general position $0<x_0<A$ if it's initially moving to the right? \n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item The period is $$T=\\frac{2\\pi}{\\omega}=\\boxed{2\\pi\\sqrt{\\frac mk}}$$\n        \\item Using the hint, the situation is like so: \n        \\begin{center}\n            \\includegraphics[scale=0.2]{sol1}\n        \\end{center}When the block travels from $A$ to $A/2$, we're effectively looking at when the point drawn travels an angle $60^\\circ$ on the circle. Thus, the time it takes is $60^\\circ/360^\\circ=1/6$ of the period, or $$t=\\boxed{\\frac{\\pi}{3}\\sqrt{\\frac mk}}$$\n        \\item In this case, the point on the circle starts out at the angle $270^\\circ$ and travels until the $x$-projection is $x_0$. The angle appended on the circle during this time is $\\sin^{-1}(x_0/A)$, so as a fraction of $2\\pi$ the time is $$t=\\frac{\\sin^{-1}(x_0/A)}{2\\pi}T=\\boxed{\\sin^{-1}(x_0/A)\\sqrt{\\frac mk}}$$\n    \\end{anum}",
+    "solution_images": [
+      "Oscillations Sols/sol1.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A uniform hula hoop is hung from a rod. Let $\\omega_1$ be the frequency of oscillations in the hoop's own plane, and let $\\omega_2$ be the frequency of oscillations in the plane perpendicular to the hoop as shown. Find $\\omega_1/\\omega_2.$\n    \\begin{center}\n        \\includegraphics[scale=0.2]{hula.png}\n    \\end{center}",
+    "problem_images": [
+      "Oscillations Sols/hula.png"
+    ],
+    "solution": "The distance to the center of mass is the same in both cases, so $\\omega_1/\\omega_2=\\sqrt{I_2/I_1}$. By the parallel axis theorem, $I_1=mr^2+mr^2=2mr^2$. By both the perpendicular and parallel axis theorems, $I_2=mr^2/2+mr^2=3mr^2/2$. Thus, $\\omega_1/\\omega_2=\\boxed{\\sqrt{3/4}}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "$F=ma$",
+    "problem": "Three identical masses are connected with identical rigid rods and pivoted at point $A$. If the lowest mass receives a small horizontal push to the left, it oscillates with period $T_1$. If it instead receives a small push into the page, it oscillates with period $T_2$. The ratio $T_1/T_2$ is\n    \\begin{center}\n        \\includegraphics[scale=0.2]{osc1}\n    \\end{center}\n    \\begin{enumerate}[label = (\\Alph*)]\n\\item $1/2$\n\\item $1$\n\\item $\\sqrt3$\n\\item $2\\sqrt2$\n\\item $2\\sqrt5$\n\\end{enumerate}",
+    "problem_images": [
+      "Oscillations Sols/osc1.png"
+    ],
+    "solution": "By the same method as the previous question, $T_1/T_2=\\sqrt{I_1/I_2}.$ Notice $I_1=3ml^2$ and $I_2=ml^2$ so the answer is \\textbf{(D)} $\\sqrt{3}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "I have a box with springs of constant $k_1$ and another box with springs of constant $k_2>k_1$. I can choose two springs from one box and one spring from the other box. Then, I will attach the three springs to a block $m$ with two in series and one in parallel as shown. Let $\\omega_1$ be the greatest frequency of oscillation possible under these circumstances, and $\\omega_2$ be the smallest frequency possible. Find $\\omega_1/\\omega_2.$\n    \\begin{center}\n        \\includegraphics[scale=0.2]{springs}\n    \\end{center}",
+    "problem_images": [
+      "Oscillations Sols/springs.png"
+    ],
+    "solution": "To make things clearer, let $k_2=\\alpha k_1$ with $\\alpha >1$. Clearly, we should choose two springs $k_2$ and one spring $k_1$ to maximize the frequency. If we have two springs $k_2$ on the left, then our total spring constant is $k_1+k_2/2=k_1(1+\\alpha/2)$. If we have one of each on the left, then our total spring constant is $k_2+k_1k_2/(k_1+k_2)=k_1\\alpha(\\alpha+2)/(\\alpha+1)$. To compare the two results, notice that $$\\frac{\\alpha(\\alpha+2)}{\\alpha+1}-\\left(1+\\frac \\alpha 2\\right)=\\frac{(\\alpha+2)(\\alpha-1)}{2(\\alpha+1)}>0$$ so the latter result is greater. By symmetry, the smallest frequency we can make is with two springs of constant $k_1$, with one of each on the left: $k_1+k_1k_2/(k_1+k_2)$. The ratio of the frequencies is proportional to the square root of the ratio of spring constants, so $$\\frac{\\omega_1}{\\omega_2}=\\boxed{\\sqrt{\\frac{k_2(2k_1+k_2)}{k_1(k_1+2k_2)}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A bead attached to a string of length $\\ell=10\\, \\unit{m}$ is released from a very small angle $\\theta_0$ to the vertical. A wall is placed in the path of the bead such that the bead collides elastically with the wall when the string is at an angle $\\theta_0/2$ to the vertical, as shown.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{water}\n    \\end{center}\n    What is the time interval between the bead’s collisions with the wall?\n    \\begin{enumerate}[label = (\\Alph*)]\n\\item $2\\pi/3\\, \\unit{s}$\n\\item $3\\pi/4\\, \\unit{s}$\n\\item $4\\pi/3\\, \\unit{s}$\n\\item $3\\pi/2\\, \\unit{s}$\n\\item $2\\pi\\, \\unit{s}$\n\\end{enumerate}",
+    "problem_images": [
+      "Oscillations Sols/water.png"
+    ],
+    "solution": "The period without the wall is $T_0=2\\pi \\sqrt{\\ell/g}=2\\pi \\, \\unit{s}.$ Notice that the new period is just that of $T_0$ minus two times the time it takes for the ball to travel from $A$ to $A/2$, which we found already in Problem \\ref{prob6}. Thus, $T=T_0(1-2\\cdot(1/6))=(2/3)T_0=4\\pi/3\\, \\unit{s}$, answer \\textbf{(C)}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A uniform ball of mass $m$ and radius $R$ is attached at its top to a spring $k$ to the wall. Find the frequency $\\omega$ of oscillations if the ball rolls without slipping. \n    \\begin{center}\n        \\includegraphics[scale=0.2]{ball}\n    \\end{center}",
+    "problem_images": [
+      "Oscillations Sols/ball.png"
+    ],
+    "solution": "If the ball rolls an angle $\\theta$, then the torque about the contact point to the ground is $\\tau=-2kR^2\\theta$. The moment of inertia of the ball about the contact point, by the parallel axis theorem, is $7mR^2/5$. Thus, the equation of motion is $$-2kR^2\\theta=\\frac{7}{5}mR^2\\ddot\\theta$$from which we have $$\\omega=\\boxed{\\sqrt{\\frac{10k}{7m}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A uniform cylinder with mass $m$ and radius $R$ is placed circular sides up on a flat frictionless table. The edges of the cylinder are attached to the midpoints of two springs of constant $k$ as shown from the top view. The springs are initially at their relaxed length. \\begin{center}\n        \\includegraphics[scale=0.2]{cylinder2}\n    \\end{center}\\begin{anum}\n        \\item The cylinder is translationally displaced a small distance along the directions of the springs. Find the frequency of oscillation.\n        \\item The cylinder is now rotated by a small angle relative to its center of mass while keeping the center of mass fixed. Find the frequency of oscillation.\n    \\end{anum}",
+    "problem_images": [
+      "Oscillations Sols/cylinder2.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item Splitting each spring in half, we decompose each spring into two springs of constant $2k$. There are four of these halves connected in parallel, so the effective spring constant is $8k$. As a result, $$\\omega=\\boxed{\\sqrt{\\frac{8k}{m}}}$$\n        \\item Rotating the cylinder by a small angle $\\theta$, each of the spring halves of constant $2k$ are stretched by $R\\theta$, so the restoring torque is $\\tau=-8kR^2\\theta$. The moment of inertia of the cylinder is $mR^2/2$, so our equation of motion is $$-8kR^2\\theta=\\frac12mR^2\\ddot\\theta$$from which we have $$\\omega=\\boxed{\\sqrt{\\frac{16k}{m}}}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A uniform rod of mass $m$ and length $l$ is put upright on a horizontal floor, which has coefficient of static friction $\\mu$. The top of the rod is connected to a spring $k$ and set into small oscillations with amplitude $\\theta_0$ (the angle between the rod and the vertical). \n        \\begin{center}\n        \\includegraphics[scale=0.2]{rodman}\n    \\end{center}\n    \\begin{anum}\n        \\item What is the necessary relation between $m$, $l$, and $k$ for the rod to be able to oscillate about a stable equilibrium point?\n        \\item Assuming the condition in (a) is satisfied, what is the minimum $\\mu$ needed to prevent the rod from slipping during the motion?\n        \\item Assuming the conditions in (a) and (b) are satisfied, what is the frequency of oscillations $\\omega$?\n    \\end{anum}",
+    "problem_images": [
+      "Oscillations Sols/rodman.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item Displacing the rod by a small angle $\\theta$, the torque due to gravity about the contact point to the ground is equal to $mgl\\theta/2$ while the torque due to the spring is $kl^2\\theta$. For the equilibrium to be stable, the spring torque must be greater than the gravitational torque, which implies that $$\\boxed{kl>\\frac{mg}{2}}$$\n        \\item We will balance forces in the horizontal direction to find the necessary frictional force. First, however, we must find the horizontal acceleration of the rod's center of mass. The maximal acceleration of the rod during the motion is that at the maximum amplitude. At this moment, the net torque on the rod is equal to $$\\tau=kl^2\\theta_0-\\frac{mgl\\theta_0}{2}$$ Since the moment of inertia about the contact point to the ground is $ml^2/3$, we have the angular acceleration $\\alpha$ to be $$\\alpha=\\frac{3\\tau}{ml^2}=3\\theta_0\\left(\\frac{k}{m}-\\frac{g}{2l}\\right)$$which immediately leads to the acceleration of the center of mass as $$a=\\alpha\\frac{l}{2}=\\frac{3\\theta_0}{2}\\left(\\frac{kl}{m}-\\frac{g}{2}\\right)$$Taking a positive frictional force to counteract the force of the spring, the net force that generates this acceleration is $kl\\theta_0-mg\\mu$. Solving for $\\mu$, we get $$\\mu=\\boxed{\\theta_0\\left(\\frac34-\\frac{kl}{2mg}\\right)}$$This is positive if $kl<3mg/2$, and we must switch the sign if $kl>3mg/2$. \n        \\item Using the torque from the previous part, we have $$\\ddot\\theta=-3\\theta_0\\left(\\frac{k}{m}-\\frac{g}{2l}\\right)$$ so the frequency of oscillations is $$\\omega=\\boxed{\\sqrt{3\\left(\\frac km-\\frac{g}{2l}\\right)}}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A U-tube manometer consists of a uniform diameter cylindrical tube that is bent into a U shape. It is originally filled with water that has a density $\\rho_w$. The total length of the column of water is $L$. Ignore surface tension and viscosity. The water is displaced slightly so that one side moves up a distance $x$ and the other side lowers a distance $x$. Find the frequency of oscillation.",
+    "problem_images": [],
+    "solution": "The most intuitive way to do this is with the energy method. Let the cross section of the tube be $A$. When the water is displaced as described, we basically move a parcel of water of volume $Ax$ a distance $x$ upward, so $U=\\rho_w Agx^2=(1/2)2\\rho_wAgx^2$. If the column moves at a speed $\\dot x$, then the total kinetic energy is $K=(1/2)\\rho_w LA\\dot x^2$. As a result, we have $\\kappa = 2\\rho_wAg$ and $\\mu=\\rho_wLA$, so $$\\omega=\\sqrt{\\frac\\kappa \\mu}=\\boxed{\\sqrt{\\frac{2g}{L}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Model an iceberg as a square pyramid of base length $a$ and height $h$ floating in water. The iceberg floats upside down so that it's in a stable equilibrium. Let the density of water be $\\rho$, and the density of ice is $0.9\\rho$. The iceberg is perturbed in the vertical direction and begins oscillating in the water. What is the frequency of oscillations? Ignore the inertia of the water and frictional forces.",
+    "problem_images": [],
+    "solution": "Observe the following diagram:\n    \\begin{center}\n        \\includegraphics[scale=0.2]{pye.png}\n    \\end{center}Let $d$ be the depth of the iceberg under water, and $b=ad/h$ the length of the cross-section square at the water level. By scaling, the volume of the pyramid underwater is related to the whole volume by $V_d/V=d^3/h^3$. Balancing forces with buoyancy, $$\\rho V_d=0.9\\rho V\\Rightarrow \\frac dh=0.9^{1/3}$$As a result, we have $b=0.9^{1/3} a$. Now, if the iceberg is displaced by a distance $x$ downward, then the buoyancy force from the water will increase by $F=-\\rho b^2gx=-0.9^{2/3}\\rho a^2gx$. The equation of motion is thus $$\\frac{0.9\\rho a^2h}{3}\\ddot x=-0.9^{2/3}\\rho a^2gx$$ so that $$\\omega=\\boxed{\\sqrt{\\frac{3g}{0.9^{1/3}h}}}$$",
+    "solution_images": [
+      "Oscillations Sols/pye.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Let's revisit the tunnel-planet problem, but now we won't assume the tunnel passes through the planet's center. Given a planet of mass $M$ and radius $R$ of uniform density, dig a tunnel through the planet that runs a distance $r$ from the center of the planet as shown. Is the motion simple harmonic? If it is, find the time it takes for a mass released from rest at one end of the tunnel to reach the other end. \n    \\begin{center}\n        \\includegraphics[scale=0.2]{planet.png}\n    \\end{center}",
+    "problem_images": [
+      "Oscillations Sols/planet.png"
+    ],
+    "solution": "Observe the following diagram: \n    \\begin{center}\n        \\includegraphics[scale=0.17]{planetsol.png}\n    \\end{center}\n    The total force when the particle is a distance $d$ from the midpoint of the tunnel is equal to $$F=\\frac{GM}{d^2+r^2}\\frac{\\sqrt{(d^2+r^2)^3}}{R^3}=\\frac{GM}{R^3}\\sqrt{d^2+r^2}$$Now, notice that the normal force from the wall of the tunnel will cancel out the vertical component of the force, so we are only concerned with the horizontal component, which can be found via the right triangle: $$F_x=F\\frac{d}{\\sqrt{d^2+r^2}}=\\frac{GM}{R^3}d$$so indeed, the force is proportional to $d$, so the motion is simple harmonic. Here we have $\\omega=\\sqrt{GM/R^3}$, so the time it takes to reach from one end of the tunnel to the other is $$t=\\frac{\\pi}{\\omega}=\\boxed{\\pi\\sqrt{\\frac{R^3}{GM}}}$$",
+    "solution_images": [
+      "Oscillations Sols/planetsol.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "Two identical carts $A$ and $B$ each with mass $m$ are connected via a spring with spring constant $k$. Two additional springs, identical to the first, connect the carts to two fixed points. The carts are free to oscillate under the effect of the springs in one dimensional frictionless motion.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{fma1}\n    \\end{center}\n    Under suitable initial conditions, the two carts will oscillate in phase according to $$x_A(t)=x_0\\sin\\omega_1t=x_B(t)$$ where $x_A$ and $x_B$ are the locations of carts $A$ and $B$ relative to their respective equilibrium positions. Under other suitable initial conditions, the two carts will oscillate exactly out of phase according to$$x_A(t)=x_0\\sin\\omega_2t=-x_B(t)$$Determine the ratio $\\omega_2/\\omega_1.$\n    \\begin{enumerate}[label = (\\Alph*)]\n\\item $\\sqrt3$\n\\item $2$\n\\item $2\\sqrt2$\n\\item $3$\n\\item $5$\n\\end{enumerate}",
+    "problem_images": [
+      "Oscillations Sols/fma1.png"
+    ],
+    "solution": "If the carts oscillate in phase, then the middle spring will not compress, so the carts don't influence each other's motion. Thus, we have $\\omega_1=\\sqrt{k/m}$. If the carts oscillate out of phase, then the middle point of the middle spring will always stay fixed. Thus, if we imagine this point to be instead connected to a wall set in between the two masses, then each mass experiences force from a spring of constant $2k$ (from splitting the middle spring in half) and $k$ (from the other spring). Thus, $\\omega_2=\\sqrt{3k/m}$ so the answer is \\textbf{(A)} $\\sqrt 3$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "Two simple pendulums with mass $m$ and string length $l$ are attached by a spring $k$. \n    \\begin{center}\n        \\includegraphics[scale=0.2]{coupled.png}\n    \\end{center}\n    \\begin{anum}\n        \\item Describe the two normal modes of the system and find their frequencies of oscillation.\n        \\item (Calculus required) The mass on the right is given a speed $v\\ll \\sqrt{gl}$ to the left at $t=0$. Let $\\theta_1(t)$ and $\\theta_2(t)$ describe the angles made by the left and right string, respectively, with respect to time. Find $\\theta_1(t)$ and $\\theta_2(t)$. \n    \\end{anum}",
+    "problem_images": [
+      "Oscillations Sols/coupled.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item The two normal modes are when the masses oscillate perfectly in phase and when they oscillate perfectly out of phase, just like in the previous problem. When the masses oscillate perfectly in phase, we can neglect the influence of the spring so $$\\omega_1=\\boxed{\\sqrt{\\frac gl}}$$When the masses oscillate perfectly out of phase, the restoring torque on each mass (when its string makes an angle $\\theta$ to the vertical) is given by $\\tau=-(mgl\\theta+2kl\\theta)$, and so the equation of motion is $-(mgl\\theta+2kl\\theta)=ml^2\\ddot\\theta$, with $$\\omega_2=\\boxed{\\sqrt{\\frac gl+\\frac{2k}{ml}}}$$\n        \\item The equations of motion of the masses are \\begin{gather*}\n            ml^2\\ddot\\theta_1=-kl(\\theta_1-\\theta_2)-mgl\\theta_1\\\\\n            ml^2\\ddot\\theta_2=-kl(\\theta_2-\\theta_1)-mgl\\theta_2\n        \\end{gather*}Adding the two equations yields $$ml^2(\\ddot\\theta_1+\\ddot\\theta_2)=-mgl(\\theta_1+\\theta_2)$$and subtracting the two equations yields $$ml^2(\\ddot\\theta_1-\\ddot\\theta_2)=-2kl(\\theta_1-\\theta_2)-mgl(\\theta_1-\\theta_2)$$Thus $\\theta_1+\\theta_2$ will exhibit simple harmonic motion with $\\omega_1$ found earlier, and $\\theta_1-\\theta_2$ will exhibit simple harmonic motion with $\\omega_2$ found earlier. Thus, if we have \\begin{gather*} \\theta_1+\\theta_2=A\\cos\\omega_1t+B\\sin\\omega_1t\\\\\n        \\theta_1-\\theta_2=C\\cos\\omega_2t+D\\sin\\omega_2t\n        \\end{gather*}we can use the initial condition $\\theta_1(0),\\theta_2(0)=0$ to find that $A,C=0$, so that $\\theta_1=(1/2)(B\\sin\\omega_1t+D\\sin\\omega_2t)$ and $\\theta_2=(1/2)(B\\sin\\omega_1t-D\\sin\\omega_2t)$. Taking the derivatives and using $\\dot\\theta_1(0)=0$ and $\\dot\\theta_2(0)=v/l$, we have $\\omega_1B+\\omega_2D=0$ and $\\omega_1B-\\omega_2D=2v/l$, which solves as $B=v/l\\omega_1$ and $D=-v/l\\omega_2$. To conclude, \\begin{equation*}\\boxed{\\begin{gathered}\\theta_1(t)=\\frac{v}{2l}\\left(\\frac{\\sin\\omega_1t}{\\omega_1}-\\frac{\\sin\\omega_2t}{\\omega_2}\\right)\\\\\n        \\theta_2(t)=\\frac{v}{2l}\\left(\\frac{\\sin\\omega_1t}{\\omega_1}+\\frac{\\sin\\omega_2t}{\\omega_2}\\right)\\end{gathered}}\\end{equation*}\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "USAPhO",
+    "problem": "A large block of mass $m_b$ is located on a horizontal frictionless surface. A second block of mass $m_t$ is located on top of the first block; the coefficient of friction (both static and kinetic) between the two blocks is given by $\\mu$. All surfaces are horizontal; all motion is effectively one dimensional. A spring with spring constant $k$ is connected to the top block only; the spring obeys Hooke’s Law equally in both extension and compression. Assume that the top block never falls off of the bottom block; you may assume that the bottom block is very, very long. The top block is moved a distance $A$ away from the equilibrium position and then released from rest.\n    \\begin{center}\n        \\includegraphics[scale=0.25]{osc2}\n    \\end{center}\n    \\begin{anum}\n        \\item Depending on the value of $A$, the motion can be divided into two types: motion that experiences no frictional energy losses and motion that does. Find the value $A_c$ that divides the two motion types. Write your answer in terms of any or all of $\\mu$, the acceleration of gravity $g$, the masses $m_t$ and $m_b$, and the spring constant $k$.\n        \\item Consider now the scenario $A\\gg A_c$. In this scenario the amplitude of the oscillation of the top block as measured against the original equilibrium position will change with time. Determine the magnitude of the change in amplitude, $\\Delta A$, after one complete oscillation, as a function of any or all of $A$, $\\mu$, $g$, and the angular frequency of oscillation of the top block $\\omega_t$.\n     \\item Assume still that $A\\gg A_c$. What is the maximum speed of the bottom block during the first complete oscillation cycle of the upper block?\n    \\end{anum}",
+    "problem_images": [
+      "Oscillations Sols/osc2.png"
+    ],
+    "solution": "See official solutions \\href{https://www.aapt.org/Common/upload/USAPhO-2015-Solutions_rev-4012021.pdf}{here}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A block of mass $m$ sits on the ground and a relaxed spring of constant $k$ is attached to the right of it. A person will pull the other end of the spring at a constant speed $v$ to the right. The ground has coefficients of static and kinetic friction $\\mu_s$ and $\\mu_k$, respectively, with $\\mu_s>\\mu_k$. The person begins pulling the spring at time $t=0$. \\begin{anum}\n        \\item At what time will the block first start to move?\n        \\item How long will the block slip for before it stops again? Hint: A change in reference frame will be helpful. \n        \\item How far will the block move during this time? Hint: If $t_2$ is the answer to part (b), you can write your answer to this part using $t_2$ without having solved part (b).\n        \\item How much additional time will pass (after the block stops) before the block starts moving again? Hint: You don't need to have solved part (b) to solve this part.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item The spring force will overcome static friction when the stretch in the spring becomes $x=mg\\mu_s/k$, or in time $$t_1=\\frac{x}{v}=\\boxed{\\frac{mg\\mu_s}{kv}}$$\n        \\item After the block starts slipping, the friction will become kinetic friction until the block stops again. Moving into a constant velocity frame of speed $v$ to the right, the block starts slipping when the spring is stretched $mg\\mu_s/k$ from its relaxed state, at which point in this frame the block has a speed $v$ to the left. Notice that the kinetic friction force is directed to the left in this frame and is constant in time, so that we can relate the situation to a spring in a gravitational field with a shifted equilibrium point. This is illustrated by the diagram below:\n        \\begin{center}\n            \\includegraphics[scale=0.2]{block333}\n        \\end{center}\n        The shifted equilibrium point is a distance $mg\\mu_k/k$ from the relaxed state of the spring, and the block will slip until it reaches a speed $v$ to the left again in this frame (which corresponds to coming back to rest in the lab frame). As a result, it will move along the arrow shown. The amplitude of oscillations in this frame is found by finding the total energy. At $t_1$, the block has speed $v$, and the spring is stretched a distance $mg(\\mu_s-\\mu_k)/k$ from equilibrium. Thus the amplitude is found via $$\\frac12 kA^2=\\frac12 k\\left(\\frac{mg(\\mu_s-\\mu_k)}{k}\\right)^2+\\frac12 mv^2\\Rightarrow A=\\sqrt{\\left(\\frac{mg(\\mu_s-\\mu_k)}{k}\\right)^2+\\frac{mv^2}{k}}$$So in using the same strategy in Problem \\ref{prob6}, the time it takes the block to travel along the path shown by the arrow is a fraction $(2\\pi-2\\sin^{-1}(d/A))/2\\pi$ of the period, where $d$ is the original distance from equilibrium. Thus the time it takes for the block to stop slipping is $$t_2=\\boxed{\\left(2\\pi-2\\sin^{-1}\\frac1{\\sqrt{1+kv^2/mg^2(\\mu_s-\\mu_k)^2}}\\right)\\sqrt{\\frac mk}}$$\n        \\item The person's hand will move a distance $vt_2$ during this time, and the block will also move a distance $2mg(\\mu_s-\\mu_k)/k$ relative to the hand, so the total distance traveled is $$d=\\boxed{vt_2+\\frac{2mg(\\mu_s-\\mu_k)}{k}}$$\n        \\item The time is just $$t_3=\\boxed{\\frac{2mg(\\mu_s-\\mu_k)}{kv}}$$\n    \\end{anum}",
+    "solution_images": [
+      "Oscillations Sols/block333.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Oscillations Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "EuPhO",
+    "problem": "A solid, uniform cylinder of height $h$ and base area $s$ floats in a cylindrical beaker of height $H$ and inner bottom area $S$ filled with a liquid. The ratio between the density of the cylinder and that of the liquid is $\\gamma$. The cylinder is oscillating vertically, so that its axis always coincides with that of the beaker. The amplitude of the liquid level oscillations is $A$. Find the period of the motion $T$. Neglect the viscosity of the liquid.",
+    "problem_images": [],
+    "solution": "See official solutions \\href{https://eupho.ee/wp-content/uploads/2022/05/EuPhO_2022_Solutions.pdf}{here}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "total": 2,
+  "time_limit_seconds": 3600,
+  "problems": [
+    {
+      "num": 1,
+      "problem": "Alice the Mad Scientist, travelling in her flying car at height $h$ above the ground, shoots a beam of\nmuons at the ground. Bob, observing from the ground at distance $R \\gg h$ from Alice’s car, decides\nto check some facts about special relativity. Assume the muons travel extremely close to the speed\nof light in Alice’s frame.\n\\begin{center}\n    \\includegraphics[width=6.5cm]{alicebob-1.png}\n\\end{center}\n\\begin{anum}\n    \\item Alice’s car flies at horizontal speed $v = \\beta c$. Alice shoots her muon beam straight down, in her\nreference frame. Express your answers in terms of $\\beta, h , R$ and fundamental constants.\n\\begin{enumerate}[label=\\roman*.]\n    \\item What is the horizontal velocity of the muons in Bob’s reference frame?\n    \\item What is the vertical velocity of the muons in Bob’s reference frame?\n    \\item How long does it take the muons to reach the ground in Bob’s reference frame?\n\\end{enumerate}\n\nAlice’s velocity $v$ is directed an angle $\\theta$ away from Bob. For the rest of the problem, you may additionally express your answers in terms of $\\theta$.\n\\begin{center}\n    \\includegraphics[width=6.5cm]{alicebob-2.png}\n\\end{center}\n\\item In Bob’s reference frame, how much time is there between when he sees Alice first fire the beam,\nand when he sees the beam first hit the ground? (Hint: remember to account for the travel time\nof light to Bob’s eyes.)\n\\item In this part, suppose that $\\beta = 1/2$. Does there exist a value of $\\theta$ so that the time it takes the\nmuons to hit the ground in Alice’s frame is equal to the time taken according to Bob’s eyes, in\nBob’s frame? If so, find the value of $\\theta$ in degrees. If not, briefly explain why not.\n\\item Suppose Alice is carrying a radio transmitter set to frequency $f$. To what frequency would Bob\nhave to set his radio receiver in order to receive Alice’s transmission?\n\\end{anum}",
+      "solution": "\\officialsol{https://aapt.org/Common2022/upload/2021-USAPhO.pdf}. Also, an old video solution by Evan \\href{https://youtube.com/watch?v=hChVkXBqOHk}{here}.",
+      "problem_images": [
+        "Relativity I Sols/alicebob-1.png",
+        "Relativity I Sols/alicebob-2.png"
+      ],
+      "solution_images": []
+    },
+    {
+      "num": 2,
+      "problem": "\\href{https://aapt.org/physicsteam/2016/upload/E3-2-3.pdf#page=5}{USAPhO 2016/A3} -- print out the answer sheets at the end.",
+      "solution": "\\officialsol{https://aapt.org/physicsteam/2019/upload/USAPhO-2016-Solutions.pdf}",
+      "problem_images": [],
+      "solution_images": []
+    }
+  ]
+}

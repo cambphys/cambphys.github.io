@@ -1,0 +1,21 @@
+<p><div class="note-box" style="border-left:4px solid #2f5d8c;background:#e3edf6;padding:.7em 1em;margin:.9em 0;border-radius:4px;"><div style="font-weight:700;color:#2f5d8c;margin-bottom:.3em;">Idea: Instantaneous axis of rotation</div><div>When we analyze motion of an object consisting of both translational motion of its COM and rotational motion about its COM, it's often helpful to consider the instantaneous axis of rotation. The instantaneous axis is defined such that the velocity vector of each piece of the object is directed perpendicularly to the line drawn from that piece to the instantaneous axis.</div></div>
+Using the instantaneous axis of rotation, we can define the kinetic energy of a rotating object in two ways.
+<div class="note-box" style="border-left:4px solid #7c1fa2;background:#f3e5f7;padding:.7em 1em;margin:.9em 0;border-radius:4px;"><div style="font-weight:700;color:#7c1fa2;margin-bottom:.3em;">Theorem: Rotational energy</div><div>The total kinetic energy of an object with translational COM speed $v$ and interia $I_0$ about its COM is \begin{equation}
+    K=\frac12mv^2+\frac12I_0\omega^2
+\end{equation}
+Alternatively, if the inertia of the object about the instantaneous axis of rotation is $I'$ (use the parallel axis theorem), then \begin{equation}
+    K=\frac12 I'\omega^2
+\end{equation}In this alternate form we don't include the translational term.</div></div>
+<div class="note-box" style="border-left:4px solid #8a6d00;background:#fff3cd;padding:.7em 1em;margin:.9em 0;border-radius:4px;"><div style="font-weight:700;color:#8a6d00;margin-bottom:.3em;">Tip: Angular velocity</div><div>The angular velocity of an object $\omega$ does not depend on the axis chosen!</div></div>
+<div class="note-box" style="border-left:4px solid #1b6b34;background:#e6f4ea;padding:.7em 1em;margin:.9em 0;border-radius:4px;"><div style="font-weight:700;color:#1b6b34;margin-bottom:.3em;">Definition: Angular momentum</div><div>The angular momentum of an object relative to a specified axis is \begin{equation}
+        L=mvr_\perp+I_0\omega
+    \end{equation}where $r_\perp$ is the perpendicular distance between the line of motion of the COM and the axis. Note that angular momentum is actually a vector defined by the right hand rule. In this sense, motion in the clockwise direction should be defined in the opposite sign as motion in the counterclockwise direction. In terms of vectors, we can be more explicit: \begin{equation}
+        \vec{L}=m(\vec{r}\times \vec{v})+I_0\vec{\omega}
+    \end{equation}
+    Like traditional momentum, $L$ is related to torque via \begin{equation}
+        \vec{\tau}=\frac{\Delta \vec{L}}{\Delta t}=\frac{d\vec{L}}{dt}
+    \end{equation}</div></div>
+If we imagine a situation like a person pushing a carousel, for instance, the change in the magnitude of angular momentum is proportional to the torque applied. However, when torque is applied perpendicularly to $L$, it does not change the magnitude of angular momentum but rather its direction (just like how centripetal forces do not change the magnitude of an object's velocity but rather its direction). These cases are called precession. 
+<div class="note-box" style="border-left:4px solid #7c1fa2;background:#f3e5f7;padding:.7em 1em;margin:.9em 0;border-radius:4px;"><div style="font-weight:700;color:#7c1fa2;margin-bottom:.3em;">Theorem: Precession</div><div>An object's angular momentum vector $\vec{L}$ precesses when the torque vector $\vec \tau$ is directed perpendicularly to $\vec L$. The precession frequency $\Omega$ is the frequency at which $\vec L$ rotates: \begin{equation}
+        \Omega=\frac{\tau}{L}
+    \end{equation}</div></div></p>

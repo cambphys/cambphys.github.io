@@ -1,6 +1,7 @@
 // Auth + progress helpers. Depends on window.cambphysSupabase from supabase-config.js.
 (function () {
   const sb = window.cambphysSupabase;
+  const ADMIN_EMAILS = ["cambphys@gmail.com"];
 
   async function signUp(email, password) {
     const { data, error } = await sb.auth.signUp({ email, password });
@@ -66,6 +67,13 @@
     return { data, error };
   }
 
+  // Returns true if the current user is an admin (UI-side hint only;
+  // real authorization is enforced by RLS policies in the database).
+  async function isAdmin() {
+    const user = await currentUser();
+    return !!(user && ADMIN_EMAILS.includes(user.email));
+  }
+
   // Returns true if the current user has been upgraded for this course.
   async function isUpgraded(courseId) {
     const user = await currentUser();
@@ -96,6 +104,7 @@
     getAllProgress,
     saveProgress,
     isUpgraded,
+    isAdmin,
     requireAuth,
   };
 })();

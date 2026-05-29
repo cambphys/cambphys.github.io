@@ -1,0 +1,285 @@
+[
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "A car traveling at 5 m/s begins to slow with a deceleration of 2 $\\unit{m/s^2}$. How long are the skid marks made by the car?",
+    "problem_images": [],
+    "solution": "Applying $v_f^2 = 0 = v_i^2 - 2ax$, we get $x = \\frac{v^2}{2a} = \\boxed{6.25\\,\\unit{m}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "You throw a ball up at 5 m/s. How long does it take for it to come back down?",
+    "problem_images": [],
+    "solution": "By symmetry it should be moving downward at 5 m/s when it gets all the way back down, so applying the definition of acceleration, we get $\\Delta t = \\frac{10 \\, \\unit{m/s}}{9.8\\,\\unit{m/s^2}} = \\boxed{1.0\\,\\unit{s}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "How far up does the ball in the previous problem travel? You could use either a kinematic equation or an average velocity idea.",
+    "problem_images": [],
+    "solution": "We can use an average velocity idea, it goes for $\\Delta t / 2$ at an average upward velocity of $2.5\\,\\unit{m/s}$, or we can use the same equation from problem 2, which gives us $\\Delta y = \\frac{v^2}{2g} = \\boxed{1.3\\,\\unit{m}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "A car originally moving at $7 \\, \\unit{m/s}$ begins accelerating at $3 \\, \\unit{m/s^2}$. How far does it travel in $5 \\,\\unit{s}$?",
+    "problem_images": [],
+    "solution": "This is just plugging into $\\Delta x = v_0 \\Delta t + \\frac 12 a \\Delta t^2 = \\boxed{72.5\\,\\unit m}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "If drops of water are released from rest from a dispenser at equal time intervals $\\tau$, will they collide with the floor at equal time intervals? What if the dispenser was moving upward at a constant speed? What about downward?",
+    "problem_images": [],
+    "solution": "\\fbox{Yes, they will collide at equal time intervals in all cases.} While the distance between the drops grows as they are dropped, the rate at which they impact the floor will always be the same (imagine the drops that hit the floor are ``recycled\" back into the dispenser). The only difference between the cases is that the time intervals are larger if the dispenser was moving upward, and smaller if the dispenser was moving downward. Another way to think about this is that if the rate of collision increased or decreased, we would eventually reach a point where we have either infinite or 0 collisions per second, which is unreasonable.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "In the following $v$ vs $t$ graph, mark the points of maximal a) displacement, b) velocity, c) acceleration, and d) jerk.    \n\\begin{center}\n\\includegraphics[width=7cm]{samplegraph1.png}\n\\end{center}",
+    "problem_images": [
+      "Kin_I Sols/samplegraph1.png"
+    ],
+    "solution": "Since we are looking at a $v$ vs $t$ graph, the displacement is the area under the curve, so it's maximal at the end of the motion. The maximal velocity is clearly the maximal point on the graph. Since acceleration is the slope, the maximal acceleration is found when the slope is maximal. Jerk is slightly more tricky, since it's the change in acceleration over time. Thus, we're looking for the point where \\textit{slope changes the fastest}. We can see that the slope instantaneously changes where the graph is sharp, which indicates a very high jerk. Thus, all the points are plotted as shown.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "A car and a truck are driving towards each other on a road, both at 40 m/s. The car has a maximal deceleration of 5 m/s$^2$ and the truck has a maximal deceleration of 3 m/s$^2$. The car and the truck notice each other at the same time and start braking. What is the minimal distance $d$ between them at this moment to avoid a collision?",
+    "problem_images": [],
+    "solution": "We will use the kinematic formula $v^2=2ad$. The car will stop in a distance $d_1=v^2/2a=40^2/2\\cdot5=160$ m, and likewise the truck stops in a distance $d_2=267$ m. The minimal distance is thus $d=d_1+d_2=\\boxed{427\\, \\unit{m}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A car (again) passes policeman $A$ whose speedometer reads $4 \\, \\unit{m/s}$ and then passes policeman $B$ whose speedometer reads $8 \\, \\unit{m/s}$. If policemen $A$ and $B$ are stationed $20 \\, \\unit{m}$ apart, how much time passed between the car passing policeman $A$ and the car passing policeman $B$?",
+    "problem_images": [],
+    "solution": "We have that the average speed is $\\frac{8+4}{2} = 6\\,\\unit{m/s}$, so the time in between is $\\Delta t = \\Delta x / v = \\boxed{3.3\\,\\unit{s}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "HRK",
+    "problem": "A stone is thrown vertically upward. On its way up it passes point $A$ with speed $v$, and point $B$, $3.00 \\,\\unit{m}$ higher than $A$, with speed $v/2$. Calculate (a) the speed $v$ and (b) the maximum height reached by the stone above point $B$.",
+    "problem_images": [],
+    "solution": "~\n\\begin{anum}\n    \\item We use $(v/2)^2 = v^2 - 2g\\Delta x$ again, which gives us $\\frac{3}{4} v^2 = 2g\\Delta x \\implies v = \\sqrt{\\frac{8}{3} g \\Delta x} = \\boxed{8.9\\,\\unit{m/s}}$.\n    \\item This is equivalent to problem 2, now that we know $v$. We have $h = \\frac{(v/2)^2}{2g} = \\frac{\\Delta x}{3} = \\boxed{1.00 \\, \\unit{m}}$.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Jerk is defined as change in acceleration over time and has dimensions of $[L]/[T]^3$. A car, initially at rest, experiences a jerk of 5 m/s$^3$ for 10 seconds, and then a jerk of $-3$ m/s$^3$ for a time $t$. What is $t$ such that the car eventually returns to rest?",
+    "problem_images": [],
+    "solution": "We haven't dealt with Jerk yet. If you're famililar with calculus, it should be relatively straightforward --- simply integrating. However, if you're not, here's a way to reason through it. Jerk is the rate of change of the rate of change of velocity. We also know that acceleration is the rate of change of the rate of change of position:\n    $$j = \\frac{\\Delta a}{\\Delta t}, a = \\frac{\\Delta v}{\\Delta t}, \\quad a = \\frac{\\Delta v}{\\Delta t}, v = \\frac{\\Delta x}{\\Delta t}.$$\n    These equations are exactly the same, with just the variable names changed! So, we can rewrite our position kinematics equations by making the substitution $j \\leftrightarrow a, a \\leftrightarrow v, v\\leftrightarrow x$ (the deeper reason behind this working is calculus). So, we have $$\\Delta v = a_0 \\Delta t + \\frac{1}{2} j \\Delta t^2.$$ Thus, after the first segment, the car has velocity $\\frac{5 \\cdot 10^2}{2} = 250 \\, \\unit{m/s}$ and acceleration $50 \\, \\unit{m/s^2}$. Now we plug that into the equation we developed again,\n    $$0 - 250 \\, \\unit{m/s} = 50t - \\frac{3}{2} t^2.$$\n    Solving the quadratic, we get $t \\approx \\boxed{37.749 \\, \\unit{s}}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A ball is bouncing vertically between a floor and ceiling, which are both horizontal and separated by 4 m. All collisions are perfectly elastic, and when the ball hits the floor, it has a speed of 12 m/s. How long does a complete up-down cycle take?",
+    "problem_images": [],
+    "solution": "For convenience we'll use $g= 10$ for this problem. We can write $4 = v_0 t - \\frac 12 gt^2 = 12 t - 5 t^2$, so solving the quadratic we get $t = \\frac 25, 2$. The second, larger time would be for if there was no ceiling and it went all the way up and back down. So, it takes $0.4 \\, \\unit s$ to get from bottom to top. This means the complete cycle, by symmetry takes double that, so $\\boxed{0.8 \\, \\unit s}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "A ball is dropped, and then another ball is dropped from the same spot one second later. As time goes on while the balls are falling, the distance between them (ignoring air resistance, as usual):\n    \\begin{enumerate}[label=(\\Alph*)]\n        \\item decreases\n        \\item remains the same\n        \\item increases and approaches a limiting value\n        \\item increases steadily\n    \\end{enumerate}",
+    "problem_images": [],
+    "solution": "The answer is \\textbf{(D)}. At the moment the second ball is released, the first ball effectively has some initial velocity $v_0$ downward while the second ball has $0$ initial velocity. So, $y_1(t) = y_0 + v_0t + \\frac{1}{2}gt^2$ while the second ball has $y_2(t) = \\frac 12 gt^2$, so $y_1-y_2 = y_0 + v_0t$ which steadily increases over time.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "The ball starts at point $A$, turns around at point $B$, and returns to point $A$. Which of the following\nshows the \\textit{speed} of the ball as a function of time?\n\\begin{center}\n\\includegraphics[width=14cm]{2021_fma_1_choices.png}\n\\end{center}",
+    "problem_images": [
+      "Kin_I Sols/2021_fma_1_choices.png"
+    ],
+    "solution": "Notice that this says speed, so it should be positive at all times. That only leaves choices (B) and (C). We haven't learned about inclined planes yet\\footnote{my apologies.} but they have constant acceleration, which means that the $v$ vs. $t$ graph should be a straight line. So, we get \\textbf{(C)}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "Which of the following shows the \\textit{horizontal velocity} of the ball as a function of time?\n    \\begin{center}\n        \\includegraphics[width=14cm]{2021_fma_2_choices.png}\n    \\end{center}",
+    "problem_images": [
+      "Kin_I Sols/2021_fma_2_choices.png"
+    ],
+    "solution": "This time since it is velocity it should change sign. Furthermore, because the transition from straight to slope is smooth and we're looking at only the \\textit{horizontal} velocity, it should dip. This is because the overal velocity should remain the same, but it tilts at an angle, making the horizontal component smaller. This only leaves choice \\textbf{(E)}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "$F=ma$",
+    "problem": "The \\textbf{velocity versus position} plot of a particle is shown below. Which of the following choices is the correct \\textbf{acceleration vs. position} plot of the particle?\n\\begin{center}\n    \\includegraphics[scale = 0.2]{sws}\n    \\includegraphics[width = \\linewidth]{aws}\n\\end{center}",
+    "problem_images": [
+      "Kin_I Sols/sws.png",
+      "Kin_I Sols/aws.png"
+    ],
+    "solution": "Suppose the particle starts at $x = 0$. Then its velocity is zero, meaning it remains at 0, and its acceleration is zero. So the correct acceleration plot must start at $(0,0)$. It remains to determine whether the plot of acceleration vs time curves upward or is a straight line. \\\\\n    Suppose it is a straight line, as shown in choice (C). Then the average force on the particle traveling from some very small value to some $x$ is proportional to $x$. The energy of the particle, which is the average force multiplied by $x$, is then proportional to $x^2$. Because the energy is the square of the velocity, we have $v^2 \\propto x^2$, or simply $v \\propto x$, as desired, so choice \\textbf{(C)} is the one consistent with the shown $v$ vs $x$ plot. \\\\\n    For a calculus-based solution, the velocity is given by $v = kx$ for some $k$. Differentiating both sides with respect to time, we find $a = kv = k^2x$, so again we find that the acceleration is a straight line starting at zero and sloping upward.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kamal",
+    "problem": "Two balls are thrown off a building in opposite horizontal directions with velocities $v_1$ and $v_2$. Find the time $t$ where the balls' velocities are perpendicular to each other and their separation $d$ at that time.",
+    "problem_images": [],
+    "solution": "The horizontal speeds of these balls are constant. $v_y$ of both balls is the same at every moment, $v_y=gt$. Using some trig and visualization, we see that for their velocities to be perpendicular, the time t must satisfy $\\frac{v_{2y}}{v_2}=\\frac{v_1}{v_{1y}}$. $\\frac{gt}{v_2}=\\frac{v_1}{gt}$. Solving for t, we get\n$$t=\\boxed{\\frac{\\sqrt{v_1v_2}}{g}}.$$\nTheir separation d is simple to find, since we know the time and their horizontal velocities are constant.\n$$d=(v_1+v_2)t=\\boxed{\\frac{\\sqrt{v_1v_2}(v_1+v_2)}{g}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "$F=ma$",
+    "problem": "A train starts from city $A$ and stops in city $B$. The distance between the cities is $s$. The train's maximal acceleration is $a_1$ and its maximum deceleration is $a_2$ (in absolute value). What is the shortest time in which the train can travel between $A$ and $B$?\n    \\begin{enumerate}[label=(\\Alph*)]\n        \\item $2\\sqrt{\\frac{s}{a_1+a_2}}$\n        \\item $2\\sqrt{\\frac{s}{\\sqrt{a_1a_2}}}$\n        \\item $\\sqrt{2\\frac{s(a_1+a_2)}{a_1a_2}}$\n        \\item $\\sqrt{\\frac{2sa_2}{a_1(a_1+a_2)}}$\n        \\item $\\sqrt{\\frac{s\\sqrt{a_1a_2}}{(a_1+a_2)^2}}$\n    \\end{enumerate}",
+    "problem_images": [],
+    "solution": "As discussed in the similar lecture problem, we accelerate initially at max and decelerate maximally, meaning $a_1 t_1 = v_{\\text{max}} =  a_2 t_2$, so $t_1:t_2 = a_2:a_1$,=. Thus, if the total travel time is $t$, then using ratios, it accelerates for $\\frac{a_2}{a_1+a_2}t$ and decelerates for $\\frac{a_1}{a_1+a_2}t$. And each segment covers a distance of $\\frac 12 a_i t_i^2$, so\n    $$\\frac 12 a_1 \\left(\\frac{a_2}{a_1+a_2}t\\right)^2 + \\frac 12 a_2 \\left(\\frac{a_1}{a_1+a_2}t\\right)^2 = \\frac 12 \\frac{a_1a_2}{a_1+a_2}t^2 = s.$$\n    So, solving for $t$, we get $t = \\sqrt{2 \\frac{s(a_1+a_2)}{a_1a_2}}$, which corresponds to answer \\textbf{(C)}. If you plug in the numbers for the lecture problem you should get the same answer!",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "The manufacturer of a clock screwed up real bad and placed the minute hand on the edge of the clock face. The minute hand pivots around its hinge at an angular velocity $\\omega$. The radius of the clock face is $r$. Find the speed of the intersection point (red) between the rim of the clock face and the minute hand during the motion as a function of $\\theta$, the angle between the minute hand and the vertical.\n\\begin{center}\n    \\includegraphics[width = 0.25\\linewidth]{clock2}\n\\end{center}",
+    "problem_images": [
+      "Kin_I Sols/clock2.png"
+    ],
+    "solution": "\\begin{center}\n    \\includegraphics[width = 0.25\\linewidth]{clocksol}\n\\end{center}\nNote that the velocity $v$ of the intersection point must be tangent to the circle. This velocity will have a component parallel to the rod and perpendicular to the rod as it moves up the rod and with the rod rotationally. The component of the velocity $u$ perpendicular to the minute hand is equal to $u=\\omega l=2\\omega r\\cos\\theta.$ By angle chasing, we find that the angle between $u$ and $v$ is also $\\theta$. By the right triangle, they must be related by $u=v\\cos\\theta$, so $v=\\boxed{2\\omega r}$. Perhaps surprisingly, it's independent of the angle!\n\nAlternatively, note that if you connect a radius from the center of the circle to the intersection point, then we can create an inscribed angle. Consider the intersection point at two times $t_1$ and $t_2$ where the rod at the two time points is separated by an angle $\\theta$. Then, by the inscribed angle theorem, the two radii are separated by an angle $2\\theta$, and since the intersection point moves along the circle, it means it has angular velocity $2\\omega$, and so we immediately get $2\\omega r$. This explains the independence of angle!",
+    "solution_images": [
+      "Kin_I Sols/clocksol.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "$F=ma$",
+    "problem": "You have 5 different strings with weights tied at various points, all hanging from the ceiling, and reaching down to the floor. The string is released at the top, allowing the weights to fall. Which one will create a regular, uniform beating sound as the weights hit the floor?\n    \\begin{center}\n        \\includegraphics[width=12cm]{2011_fma.png}\n    \\end{center}",
+    "problem_images": [
+      "Kin_I Sols/2011_fma.png"
+    ],
+    "solution": "Let's say that we want to create an interval $\\Delta t$ between the sounds. Then, the $k+1$st mass should land at time $k\\Delta t$. And since it starts from rest, it means the $k+1$st covers a distance of $\\frac 12 g (k\\Delta t)^2 \\propto k^2$. So, the different masses' distances from the bottom should increase quadratically. This is the case for \\textbf{(D)}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "\\label{pr:boat1}\nEvan's boat can move at a speed $u$ in still water. However, today he is in a fast river that flows at a speed $v = 2u$. He starts off a perpendicular distance $r$ from a pier as shown (see figure below). There is a way Evan can power his boat such that he ends up the least distance downstream when he reaches the riverbank. Find this least distance $d$.\n\\begin{center}\n    \\includegraphics[width = 0.4\\linewidth]{boat}\n\\end{center}",
+    "problem_images": [
+      "Kin_I Sols/boat.png"
+    ],
+    "solution": "His net velocity is the sum of the velocities $v$ and $u$, the latter of which Evan can determine the direction. By velocity addition, this looks like this:\n\\begin{center}\n    \\includegraphics[width = 0.3\\linewidth]{vu}\n\\end{center}\nSince we can determine the direction of $u$, the resultant vector $v+u$ can end at any point along the given circle. To minimize the distance we move downstream, we would like $v+u$ to be tangent to the circle like so:\n\\begin{center}\n    \\includegraphics[width = 0.3\\linewidth]{vu2}\n\\end{center}\nAnd since $v = 2u$, our optimal heading is at an angle of $30^\\circ$ to the horizontal. This means the minimum distance we can end up downstream is $$d=\\boxed{\\sqrt3 r}.$$",
+    "solution_images": [
+      "Kin_I Sols/vu.png",
+      "Kin_I Sols/vu2.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "\\label{pr:boat2}\nSuppose Evan isn't as bright as he was in Problem \\ref{pr:boat1} and decides to align his rudder directly toward the pier at all times. Assume here that $v=u$. How far does Evan end up downstream when he reaches the riverbank? Also, which of the following graphs is Evan's correct trajectory? (Challenge problem, optional)\n\n\\begin{center}\n\\includegraphics[width=0.8\\linewidth]{boat_choices.png}\n\\end{center}",
+    "problem_images": [
+      "Kin_I Sols/boat_choices.png"
+    ],
+    "solution": "The key insight into this problem is that Evan is heading at the same velocity toward the pier and to the right at all times. Observe an arbitrary position here. \n\\begin{center}\n\\includegraphics[width = 0.3\\linewidth]{boat4} \n\\end{center}The two components of velocity are indicated: one caused by the river and one caused by Evan's boat. We can see that the rate at which Evan moves toward the pier is identical to the rate he moves to the right; specifically, $u(1+\\cos\\theta)$, where $\\theta$ is the angle between the vectors. Hence, (and here's the important bit), \\textbf{given an arbitrary vertical line placed a distance $r$ downstream, Evan will remain equidistant from that vertical line and the pier at all times, because his component of velocity in those directions is equal at all times.} Sound familiar? This is the definition of a parabola, where the pier is the focus and the line is the directrix. By this parabola, the final distance downstream is $d=r/2$ and the correct multiple choice option is \\textbf{(E)}.",
+    "solution_images": [
+      "Kin_I Sols/boat4.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kalda",
+    "problem": "A car accelerates on a slippery ground\nso that the wheels are always at the limit of slipping (e.g. via using\nan electronic traction control). Such an acceleration would result\nin the velocity vs time graph as given in the figure.\n\\begin{center}\n\\includegraphics[width=0.8\\linewidth]{kaldacar.png}\n\\end{center}\nBecause of a manual gear change, there is time period of\n$\\tau_1 = 0.5$ s during which there is no driving force (so that the\ncar decelerates due to air friction). Except for that period, the\nacceleration follows the law given by the graph. As a result, the\nterminal velocity $v_t = 40$ m/s is reached $\\tau_2 = 1.0$ s later than it\nwould have been reached, if there were no delay caused by the gear\nchange. Upon reaching the terminal velocity, the car continues\nmoving at constant speed. In your calculations, you can assume\nthat the air friction was constant during the gear change period.\n\\begin{anum}\n\\item At which speed the gear was changed? \n\\\n\\item How many meters shorter distance will be covered during the first 100 seconds, as compared to ideal acceleration (i.e.\nwithout the delay due to the gear change)?\n\\end{anum}",
+    "problem_images": [
+      "Kin_I Sols/kaldacar.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item When the driving force stops, the acceleration is reduced by $F_f /m = \\mu g$, i.e. from the slope at the current point of the graph we need to subtract the slope of it at the origin. A close-up sketch of the graph around the period of gear change is given in the figure below. After the gear change, the new graph follows the ideal graph, but is shifted rightwards by $\\tau_2$, this shift is marked also in Fig. Since $2\\tau_1 = \\tau_2$, the ascending and descending slopes in that close-up sketch must be of equal steepness, i.e. $a = \\mu g/2$. So, the gear change takes place at that speed, when the acceleration is twice smaller than at zero-speed. From the graph we can find that $v_0 \\approx \\boxed{25\\, \\unit{m/s}}$.\n                \\begin{center}\n            \\includegraphics[scale=0.3]{kaldasol}\n        \\end{center}\n        \\item The distance difference is the area $S$ between the actual $v(t)$ graph and the ideal one. These graphs coincide for $v < v_0$ and upon achieving the value $v = v_t$. So, the area $S$ is enclosed into the range $v_t > v > v_0$, where the actual graph is, in fact, just the ideal graph, but shifted rightwards by $\\tau_2$. This area has a shape of a narrow curved stripe, the horizontal width of which is at every value of $v$ equal to $\\tau_2$. One can divide this stripe into tiny horizontal layers of height $\\delta$ and width $\\tau_2$. If we sum up the surface areas of these layers, we can bring $\\tau_2$ before the braces; then, the sum of the layer widths goes into the braces and yields $v_t - v_0$. So, the area $S = \\tau_2(v_t-v_0) \\approx \\boxed{15\\, \\unit{m}}$.\n    \\end{anum}",
+    "solution_images": [
+      "Kin_I Sols/kaldasol.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "$F=ma$",
+    "problem": "A stream of sand is dropped out of a helicopter initially moving at a constant speed $v$ to the right. The helicopter suddenly turns and begins moving a constant speed $v$ to the left. Neglecting air resistance on the sand, what is the shape of the stream of sand, as viewed from the ground? The black dot represents the helicopter.\n    \\begin{center}\n\\includegraphics[width=0.95\\linewidth]{18a_171.png}\n\\end{center}",
+    "problem_images": [
+      "Kin_I Sols/18a_171.png"
+    ],
+    "solution": "Consider all the particles of sand that were dropped when the helicopter was moving forward. They all have horizontal velocity component $v$ at all times, and so they must have the same $x$ component. Similarly, all the particles that were dropped while moving backward have horizontal velocity component $-v$, and so they should also have the same $y$ component, but also attached to the helicopter as the helicopter is moving backward at $v$ too. Thus, it should be two vertical lines, choice \\textbf{(D)}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

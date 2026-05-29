@@ -1,0 +1,277 @@
+[
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A massless airplane with 5 massless engines (that all provide the same thrust) is filled with 5 elephants. Unfortunately, the plane is too heavy to lift off. Engineers propose either adding another engine or removing an elephant to solve the issue. Which choice should they make to maximize their chances of a successful liftoff?",
+    "problem_images": [],
+    "solution": "We need to achieve an adequate thrust-to-weight ratio to have liftoff: $T/W$. Let the original ratio be $r$. If we add on engine, our ratio becomes $(6/5)r=1.2r$, and if we remove an elephant, our ratio becomes $(5/4)r=1.25r$. Thus, we should <span style=\"border:1px solid #555;padding:.1em .4em;font-weight:600;\">remove an elephant</span> to maximize the chance of liftoff.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "$F=ma$",
+    "problem": "Two masses are attached with pulleys by a massless rope on an inclined plane as shown. All surfaces are frictionless. If the masses are released from rest, then the inclined plane\n    \\begin{center}\n        \\includegraphics[width=0.3\\textwidth]{fma2017}\n    \\end{center}\n    \\begin{enumerate}[label = (\\Alph*)]\n\\item accelerates to the left if $m_1 < m_2$\n\\item accelerates to the right if $m_1 < m_2$\n\\item accelerates to the left regardless of the masses\n\\item accelerates to the right regardless of the masses\n\\item does not move\n\\end{enumerate}",
+    "problem_images": [
+      "Forces_II Sols/fma2017.png"
+    ],
+    "solution": "If we look at the system as a whole, there is no external force that pushes the system horizontally, so <strong>(E)</strong> the inclined plane will not move.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A block of mass $m$ is placed on top of a plank of mass $M$, which in turn lies on a frictionless surface. A vertical force $F > (M +m)g$ is applied to the plank via a light string tied around it such that the plank begins to rise, carrying the block with it. What is the magnitude of the normal force between the plank and the block, in terms of $F$?",
+    "problem_images": [],
+    "solution": "If we look at the system as a whole, the net force equation is $F-(m+M)g=(m+M)a$, so $a=F/(m+M)-g$. If we look at the block only, then the net force equation on it is $N-mg=ma$. Since the acceleration of the box must equal the acceleration of the system, we have $$N=ma+mg=\\boxed{F\\frac{m}{m+M}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "\\begin{anum}\n    \\item A circular rubber band is placed around a smooth cylinder such that it has tension $T$. What's the normal force between a small segment of this rubber band (let's say it has an arc length of $\\theta$, where $\\theta$ is very small) and the cylinder?\n    \\item The speed of transverse waves in a string is determined by $v_T=\\sqrt{T/\\mu}$, where $T$ is the tension in the string and $\\mu$ is the mass per unit length of the string. A circular ring of string of radius $R$ is spinning around its axis at an angular speed $\\omega$ (such that each point on the ring is moving at a speed $v=\\omega R$). Find the speed of waves in this string. \n\\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item If we analyze the small piece of string, notice that by force balance, we have two components of tension pulling it at each end at an angle $\\theta/2$ to the tangent, resulting in an inward force of $$2T\\sin(\\theta/2)\\approx T\\theta.$$ The normal force must balance this inward force on the string, so $$N=\\boxed{T\\theta}$$\n        \\item The inward tension (equal to what was found in part a) must supply the necessary centripetal acceleration, which is $a=v^2/R=\\omega^2R.$ The small piece of string has a mass $m=\\mu R\\theta$, so we have \\begin{align*}\n            T\\theta=ma=m\\omega^2R=\\mu \\theta\\omega^2R^2\\Rightarrow T=\\mu\\omega^2R^2\n        \\end{align*}and so $$v_T=\\sqrt{\\frac{T}{\\mu}}=\\sqrt{\\omega^2R^2}=\\boxed{\\omega R}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "Two masses with $m_1 > m_2$ along with a mystery mass $M$ are suspended from a pulley contraption as shown. The pulleys are massless. If the system is released from rest and the mystery mass stays still, what is its mass $M$?\n    \\begin{center}\n        \\includegraphics[width=0.3\\textwidth]{pulley3}\n    \\end{center}",
+    "problem_images": [
+      "Forces_II Sols/pulley3.png"
+    ],
+    "solution": "The smaller pulley must have zero net force acting on it. Since the mystery mass stays still, the small pulley stays still -- thus, we can assume that it is fixed in place. Now, the tension in the rope connecting $m_1$ and $m_2$ can be found by the standard Atwood's derivation. The acceleration of $m_1$ is $g(m_1-m_2)/(m_1+m_2),$ which implies that the tension in the string is $$T=m_1g-m_1a_1=\\frac{2m_1m_2}{m_1+m_2}g$$The tension in the other string must then be $2T$ for the net force on the small pulley to be 0, so the large mass has a weight $Mg=2T$. Finally, \\begin{align*}\n        M=\\frac{2T}{g}=\\boxed{\\frac{4m_1m_2}{m_1+m_2}}\n    \\end{align*}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A box of mass $m$ is kept still on a wall by a force $F$ directed at an angle $\\theta$ to the vertical. The coefficient of friction between the wall and the box is $\\mu$. What is the minimum magnitude of $F$? At what angle $\\theta$ will it be impossible to keep the box still no matter how large $F$ is?\n    \\begin{center}\n        \\includegraphics[width=0.2\\textwidth]{blockwall}\n    \\end{center}",
+    "problem_images": [
+      "Forces_II Sols/blockwall.png"
+    ],
+    "solution": "Balancing forces in the $x$ direction, we have $N = F \\sin \\theta$. In the $y$ direction,\nwe have $F\\cos\\theta + f = mg$ (friction points upward). At minimum $F$, $f$ is at its maximum, $f = N\\mu$. Hence we have\n\\begin{align*}\n    F \\cos \\theta + N\\mu &= mg\\\\\nF \\cos \\theta + F\\mu \\sin \\theta &= mg\\\\\nF &=\\boxed{\\frac{mg}{\\cos \\theta + \\mu \\sin \\theta}}\n\\end{align*}\nAt a certain angle (obviously with $\\theta > 90^\\circ$), it will be impossible to keep the box up; this\nis because the (very large) force of friction cannot overcome the (also very large) component\nof $F$ pushing the box downward. For these very large forces, we can effectively neglect the\nweight of the box. At the critical angle, the frictional force $F \\mu \\sin \\theta$ is just enough to balance\nthe vertical component of $F$, which is $F \\cos \\theta$ (this will be negative for $\\theta> 90^\\circ$). Thus we have \\begin{align*}\nF \\mu \\sin \\theta + F \\cos \\theta &= 0\\\\\n\\tan \\theta &=-\\frac 1\\mu\\\\\n\\theta&=\\boxed{\\tan^{-1}\\left(-\\frac 1\\mu\\right)}\n\\end{align*}\nAs expected, this would yield $90^\\circ<\\theta< 180^\\circ$ since $\\mu > 0$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A person of mass $M$ is initially standing next to a box of mass $m$ as shown. The coefficient of friction between the person and the ground is $\\mu\\ll 1$, while the box is on rollers. The person pushes the box to make it move to the right, but the person is not allowed to move from where they are standing. If the person’s arm length is $L$, what is the maximum possible final speed of the box?\n    \\begin{center}\n        \\includegraphics[width=0.2\\textwidth]{blockperson}\n    \\end{center}",
+    "problem_images": [
+      "Forces_II Sols/blockperson.png"
+    ],
+    "solution": "As the person pushes the box with a force $F$, an equal and opposite force pushes them to the left. However, they are not allowed to move, so friction $f$ must counteract $F$. To give the box the maximal speed, the person must push with a maximal force $F$. $F$ cannot exceed the maximum static friction force $Mg\\mu$, since otherwise the person will start slipping. Thus, we maximize $F$ by setting it equal to $Mg\\mu$. The corresponding acceleration for the box is then\n\\begin{align*}\na =\\frac Fm=\\frac{Mg\\mu}{m}.\n\\end{align*}\nThe box is accelerated until it leaves contact with the person’s hands, so it accelerates for a\ndistance $L$. By the kinematic equation $v^2 = 2ad,$ the maximal final velocity is$$\nv =\\sqrt{2aL}=\\boxed{\\sqrt{\\frac{2Mg\\mu L}{m}}}.\n$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "When a block is pushed directly up a rough inclined plane at an initial speed $v$, it travels a distance $l_1$ before coming to rest. If it were pushed down the plane at that speed, it travels a distance $l_2$ before it comes to rest. If the block is pushed sideways along the incline such that it moves perfectly horizontally, what distance $l$ will it travel before coming to rest?",
+    "problem_images": [],
+    "solution": "Let the frictional component of acceleration on the block be $a_f$ (which is $g\\mu\\cos\\theta$), and the gravitational component to be $a_g$ (or $g\\sin\\theta$). If pushed upward, the block experiences an acceleration $a_g+a_f$, and if pushed down experiences an acceleration $a_g-a_f$. If the block is pushed horizontally, it experiences only $a_f$. Then, by kinematics we have \\begin{gather*}\n    v^2=2l_1(a_g+a_f)=2l_2(a_g-a_f)=2la_f\n    \\end{gather*}Solving this system of equations, we get $$l=\\boxed{\\frac{2l_1l_2}{l_1+l_2}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A chain is passed over a frictionless log of radius $r$ and starts slipping off. Find the minimal speed of the chain $v$ such that it loses contact with the log.",
+    "problem_images": [],
+    "solution": "This question isn't well posed -- sorry! We may include a variant on a future homework assignment.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "Consider the Atwood’s machine in the figure below. It consists of three pulleys, a short piece of string connecting one mass to the bottom pulley, and a continuous long piece of string that wraps twice around the bottom side of the bottom pulley, and once around the top side of the top two pulleys. The two masses are $m$ and $2m$. Assume that the parts of the string connecting the pulleys are essentially vertical. Find the accelerations of the masses.\n\\begin{center}\n        \\includegraphics[scale=0.18]{morin2}\n    \\end{center}",
+    "problem_images": [
+      "Forces_II Sols/morin2.png"
+    ],
+    "solution": "Let the tension in the string be $T$. Then, setting positive acceleration as downward, we have \\begin{gather*}\n        ma_1=mg-T\\\\\n        2ma_2=2mg-4T\n    \\end{gather*}The length of the string is constant, so if the position of $m$ is $x_1$ and the position of $2m$ is $x_2$, then $x_1+4x_2=\\text{const}$, leading to $$a_1+4a_2=0$$Solving the system of three equations, we get \\begin{gather*}\n        \\boxed{a_1=\\frac{4g}{9}}\\\\\n        \\boxed{a_2=-\\frac{g}{9}}\n    \\end{gather*}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "Find the accelerations of the masses in the following system of pulleys. \n    \\begin{center}\n        \\includegraphics[scale=0.18]{morin1}\n    \\end{center}",
+    "problem_images": [
+      "Forces_II Sols/morin1.png"
+    ],
+    "solution": "Let the large pulley's acceleration be denoted $a_1$ and the smaller pulley $a_2$. Notice there is one main string that wraps around both masses. If the tension in this string is $T$, the force equations on the pulleys are \\begin{gather*}\n        ma_1=mg-2T\\\\\n        ma_2=mg-T\n    \\end{gather*}The length of the string is equal to $2x_1+x_2$, so $$2a_1+a_2=0$$Solving the system yields \\begin{gather*}\n        \\boxed{a_1=-\\frac g5}\\\\\n        \\boxed{a_2=\\frac{2g}{5}}\n    \\end{gather*}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A V-shaped trough is inclined at an angle $\\alpha$ to the horizontal, with the sides of the trough inclined at an angle $\\theta$. A cube slides down the trough as shown. Find the acceleration of the cube, given that the coefficient of friction is $\\mu$.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{trough.png}\n    \\end{center}",
+    "problem_images": [
+      "Forces_II Sols/trough.png"
+    ],
+    "solution": "Let us first rotate the axes so the trough is flat. Then, we have components of gravity $mg \\cos \\alpha$ pointing downward and $mg \\sin \\alpha$ pointing along the trough. Thus, in the ``side view,\" we have the following diagram:\n    \\begin{center}\n        \\includegraphics[scale=0.2]{sol3}\n    \\end{center}\n    The box cannot sink into the trough, so the vertical forces in this view must balance:\n    \\begin{align*}2N \\cos \\theta = mg \\cos \\alpha \\Rightarrow N =\\frac{mg \\cos \\alpha}{2 \\cos \\theta}\n.\\end{align*}\nThe frictional force pointing opposite the direction of motion is thus\n$$f = 2N\\mu =\\frac{mg\\mu \\cos \\alpha}{\\cos \\theta}$$\nsince it acts at both contact points with the trough. Finally, the net force $F = ma$ pointing\nalong the trough is $mg \\sin \\alpha - f$, so we have\n\\begin{align*}\nma &= mg \\sin \\alpha -\\frac{mg\\mu \\cos \\alpha}{\\cos \\theta}\\\\\n\\Rightarrow a &= \\boxed{g\\left(\\sin \\alpha-\\mu\\frac{\\cos \\alpha}{\\cos \\theta}\\right)}\n\\end{align*}",
+    "solution_images": [
+      "Forces_II Sols/sol3.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Examine the classic box-wedge system where the box has mass $m$ and the wedge has mass $M$ and angle $\\theta$. Find the acceleration of the box in this case.\n    \\begin{center}\n        \\includegraphics[scale=0.15]{wedgebox.png}\n    \\end{center}",
+    "problem_images": [
+      "Forces_II Sols/wedgebox.png"
+    ],
+    "solution": "Intuitively the wedge should move to the left. Let's say its acceleration to the left is $a$. Then, in the rest frame of the wedge, the wedge is fixed while the block gains a component of gravitational force $ma$ to the right. Then, the total force acting on the box pointing down the plane is $mg\\sin\\theta+ma\\cos\\theta$, leading to an acceleration of the box $A'$ (in the wedge frame) equal to \\begin{align*}\n        A'=g\\sin\\theta-a\\cos\\theta\n    \\end{align*}This acceleration vector points parallel to the plane. Now, moving back into the lab frame we must add the $a$ vector of our frame to $A'$ to find $A$, the true acceleration of the box. In other words, $\\vec A=\\vec{a}+\\vec{A}'$. Adding the vectors by first decomposing $A'$ into $x$ and $y$ components and using the Pythagorean thoerem, we get $$A=\\sin\\theta\\sqrt{g^2+a^2}$$Now, we need to find $a$. Notice that the normal force from the box is the only supplier of the acceleration, and its component in the $x$ direction is $N\\sin\\theta$. Thus, $Ma=N\\sin\\theta$. Taking a look at the box again in the accelerating frame, the constraint along the surface of the plane is $N=mg\\cos\\theta-ma\\sin\\theta$. Solving for $a$ with these two equations yields $$a=\\frac{mg\\sin\\theta\\cos\\theta}{M+m\\sin^2\\theta}$$Finally, plugging into $A$ yields $$A=\\boxed{\\frac{g\\sin\\theta}{M+m\\sin^2\\theta}\\sqrt{M^2+m^2\\sin^2\\theta+2Mm\\sin^2\\theta}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A box of mass $m$ is placed on top of two inclined planes, both of angle $\\theta$ and mass $M$. \n    \\begin{center}\n        \\includegraphics[scale=0.15]{box.png}\n    \\end{center}\n\n    \\begin{anum}\n        \\item Neglecting friction everywhere, find the acceleration of the mass $m$.\n        \\item If there is friction $\\mu$ between only the box and planes, find the acceleration of the mass $m$.\n        \\item Assume there is no friction between the box and the planes, but there exists friction $\\mu$ between the planes and the ground. In this case, find the acceleration of the mass $m$. \n    \\end{anum}",
+    "problem_images": [
+      "Forces_II Sols/box.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item Drawing in forces of interaction,\n        \\begin{center}\n            \\includegraphics[scale=0.2]{wedge}\n        \\end{center}\n        Let the box have acceleration $a_1$ and the wedges $a_2$. Then, balancing forces on the box and one of the wedges, we yield two equations:\\begin{gather*}\n            ma_1=mg-2N\\cos\\theta\\\\\n            Ma_2=N\\sin\\theta\n        \\end{gather*}From analyzing the interaction between the box and the wedges, if the box moves down by a small distance $y$, the wedges must move outward by a distance $x=y\\cot\\theta.$ Thus, $$a_2=a_1\\cot\\theta.$$Solving the system of equations yields $$a_1=\\boxed{\\frac{m\\sin^2\\theta g}{m\\sin^2\\theta+2M\\cos^2\\theta}}$$\n        \\item Drawing in the forces on the box, \\begin{center}\n            \\includegraphics[scale=0.15]{wedgesol3.png}\n        \\end{center}\n        The introduction of friction $f=N\\mu$ changes our force equations. Noting that the force vectors are reversed for the wedges by Newton's 3rd law, \\begin{gather*}\n            ma_1=mg-2N\\cos\\theta-2N\\mu\\sin\\theta\\\\\n            Ma_2=N\\sin\\theta-N\\mu\\cos\\theta\n        \\end{gather*}The equation of constraint is the same, so solving the system yields $$a_1=\\boxed{\\frac{mg(\\sin^2\\theta-\\mu\\sin\\theta\\cos\\theta)}{m\\sin^2\\theta+2M\\cos^2\\theta+(2M-m)\\mu\\sin\\theta\\cos\\theta}}$$\n        \\item Drawing in the forces, we now have two types of normal force we must consider.\n        \\begin{center}\n            \\includegraphics[scale=0.15]{bal332}\n        \\end{center}\n        The force equations are now \\begin{gather*}\n            ma_1=mg-2N_1\\cos\\theta\\\\\n            Ma_2=N_1\\sin\\theta-N_2\\mu\n        \\end{gather*}Balancing forces in the vertical direction, $$N_1\\cos\\theta+Mg=N_2$$ The constraint is the same, so solving the system of 4 equations yields $$a=\\boxed{\\frac{mg-\\frac{2Mg\\mu\\cos\\theta}{\\sin\\theta-\\mu\\cos\\theta}}{m+\\frac{2M\\cot\\theta}{\\sin\\theta-\\mu\\cos\\theta}}}$$\n    \\end{anum}",
+    "solution_images": [
+      "Forces_II Sols/wedge.png",
+      "Forces_II Sols/wedgesol3.png",
+      "Forces_II Sols/bal332.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A bob of mass $m$ (in gray) is placed on an inclined plane of mass $M$ and angle $\\theta$. The bob is passed through a pulley and attached to the wall via a string. Find the accelerations of the bob and the plane. \n    \\begin{center}\n        \\includegraphics[scale=0.15]{ballincline.png}\n    \\end{center}",
+    "problem_images": [
+      "Forces_II Sols/ballincline.png"
+    ],
+    "solution": "The wedge is going to accelerate to the left, so let's denote its acceleration as $a$. Let the tension in the string be $T$, and the normal force between the wedge and the ball be $N$. Then, $$Ma=T(1-\\cos\\theta)+N\\sin\\theta$$In the frame of the wedge, the ball obtains an extra component of weight $ma$ to the right. Applying force balance parallel and perpendicular to the plane (with the acceleration of the ball being $A$), \\begin{gather*}\n        mA=mg\\sin\\theta+ma\\cos\\theta-T\\\\\n        N=mg\\cos\\theta-ma\\sin\\theta\n    \\end{gather*}Our final equation can be found via the constraint on the length of the string. If the plane moves a distance $x$ toward the wall, this frees up a length $x$ of string between the pulley and the ball. Relating this to our accelerations, we have $a=A$. Solving, we have $$a=A=\\boxed{\\frac{mg\\sin\\theta}{M+2m(1-\\cos\\theta)}}$$where of course the accelerations have different directions, even though they have the same magnitude.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "PPP",
+    "problem": "A long, heavy, flexible rope with mass $\\rho$ per unit length is stretched by a constant force $F$. A sudden movement causes a circular loop to form at one end of the rope. The loop then runs (rolls) along the rope with speed $c$ as shown in the figure. What is the speed $c$? (Hint: try a change of reference frame)\n    \\begin{center}\n        \\includegraphics[scale=0.18]{loop}\n    \\end{center}",
+    "problem_images": [
+      "Forces_II Sols/loop.png"
+    ],
+    "solution": "Following the hint, let's consider a reference frame that moves at a constant velocity to the right at $c$. In this frame, the shape of the circular loop is fixed while the entire string runs backward along the loop at speed $c$. Let the loop have radius $R$. Analyzing forces on a small piece of string with angular width $\\theta$, (in the same way as solution 6b), $$F\\theta=m\\frac{c^2}{R}=\\rho \\theta c^2\\Rightarrow c=\\boxed{\\sqrt{\\frac{F}{\\rho}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A cylinder of mass $m$ and radius $r$ initially rests on two supports of the same height, initially placed next to each other. One support is stationary, while the other slides from under the cylinder at a constant velocity $v$. Determine the normal force $N$ exerted by the stationary support on the cylinder when the points of contact between the cylinder and the supports are a distance $r\\sqrt2$ apart. <em>Note: The original problem statement supplied a hint that was incorrect and overparameterized the system.</em>\n    \\begin{center}\n        \\includegraphics[scale=0.15]{ballsupport}\n    \\end{center}",
+    "problem_images": [
+      "Forces_II Sols/ballsupport.png"
+    ],
+    "solution": "Notice that as the support moves, the axis of the cylinder moves along a circle of radius $r$ about the point of contact $A$ with the stationary support. Thus, at the given moment the velocity $u$ of the axis moves perpendicularly to the radius drawn to $A$. Since the axis moves in a circle, we have centripetal acceleration in the direction along the radius:\n    \\begin{center}\n        \\includegraphics[scale=0.2]{ballreal}\n    \\end{center}\n    Notice the normal force from the other support is perpendicular to the other forces, so it contributes no net force. Then, balancing forces yields $$m\\frac{u^2}{r}=\\frac{mg}{\\sqrt2}-N$$Since the axis of the cylinder is always halfway between the two supports, it should move at a horizontal velocity $v/2$. This means that $u/\\sqrt2=v/2$, so $u=v/\\sqrt2$. Combining these equations, $$N=\\frac{mg}{\\sqrt2}-m\\frac{u^2}{r}=\\boxed{\\frac{mg}{\\sqrt2}-m\\frac{v^2}{2r}}$$",
+    "solution_images": [
+      "Forces_II Sols/ballreal.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "PPP",
+    "problem": "Find the location of the center of mass (the point at which a centripetal or gravitational force can be assumed to act on) of a uniform semicircular arc of radius $R$.\n\\begin{center}\n        \\includegraphics[width=0.2\\textwidth]{arc}\n    \\end{center}",
+    "problem_images": [
+      "Forces_II Sols/arc.png"
+    ],
+    "solution": "Imagine appending another semicircular arc to make this arc a complete circle. If this arc were to spin at an angular velocity $\\omega$, then we know from solution 6b that the tension in the arc is $T=\\mu\\omega^2R^2,$ where $\\mu$ is the mass per unit length. Then, analyzing forces on solely the semicircle: \\begin{center}\n        \\includegraphics[scale=0.15]{arc2}\n    \\end{center}If the distance from the center of mass to the center of the circle is $d$, we can see that $$2T=m\\omega^2d=\\mu\\pi R\\omega^2d\\Rightarrow d=\\boxed{\\frac{2}{\\pi}R}$$",
+    "solution_images": [
+      "Forces_II Sols/arc2.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "Two balls are placed on a weightless support formed by two smooth inclined planes that both form an angle $\\theta$ with the horizontal. The support can slide without friction along a horizontal plane. The upper ball of mass $m_1$ is released. Determine the condition under which the lower ball of mass $m_2$ starts moving up the support at this moment.\n\\begin{center}\n    \\includegraphics[width=0.25\\textwidth]{climb}\n\\end{center}",
+    "problem_images": [
+      "Forces_II Sols/climb.png"
+    ],
+    "solution": "Since the support is weightless, the net force on it must be 0. This means the mass $m_2$ must rise up the left inclined plane, as to keep the net horizontal force on the support (generated by the normal force between the support and the masses) equal to 0. However, the support may in fact accelerate (the $F=ma$ equation is still valid if $0=0a$ but $a\\neq 0$). Let's assume the support accelerates to the right at $a$. Then, shifting into the rest frame of the support, each mass gains a weight $ma$ towards the left. \\begin{center}\n        \\includegraphics[scale=0.18]{support}\n    \\end{center}Notice the normal forces $N$ have to be equal in magnitude to maintain 0 net force on the support. Balancing forces on the balls perpendicular to each plane, \\begin{gather*}\n        N=m_2g\\cos\\theta+m_2a\\sin\\theta\\\\\n        N=m_1g\\cos\\theta-m_1a\\sin\\theta\n    \\end{gather*}The condition that $m_2$ starts rolling upward is that $m_2a\\cos\\theta > m_2g\\sin\\theta$. Notice we can solve for $a$ using the two force equations from earlier, where $a=(m_1-m_2)g\\cot\\theta/(m_1+m_2).$ Then, the condition we need can be found as $$\\frac{m_1-m_2}{m_1+m_2}>\\tan^2\\theta$$Or alternatively, using trig identities, $$\\boxed{m_2<m_1\\cos2\\theta}$$",
+    "solution_images": [
+      "Forces_II Sols/support.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "PPP",
+    "problem": "    There is a parabolic-shaped bridge across a river of width $d=100$ m. The highest point of the bridge is $h=5$ m above the level of the banks. A car of mass $m=1000$ kg is crossing the bridge at a constant speed of $v=20$ m/s.\n    \\begin{center}\n        \\includegraphics[width=0.4\\textwidth]{car}\n    \\end{center}\n    Find the normal force between the bridge and the car when the car is halfway across the bridge.",
+    "problem_images": [
+      "Forces_II Sols/car.png"
+    ],
+    "solution": "It would be easy to find the normal force if the car were on a circular track, but it's not. However, we are able to find the radius of curvature of the track at the top. Notice that the bridge is in the shape of a parabola, which is the shape of a projectile in gravity. If a projectile were to follow the exact trajectory of the bridge, then we can relate its velocity at the top $u$ to its acceleration $a_\\perp$ to the velocity to find the radius of curvature: $$R=\\frac{u^2}{a_\\perp}$$Notice that the velocity at the top is purely the $x$-direction velocity, so we can relate it to $d$ by $d=ut$, where $t$ is the time in the air. We can also find the time by using the height $h$. We have that $(1/2)g(t/2)^2=h \\Rightarrow t=2\\sqrt{2h/g}.$ Thus, $v=d/t=(d/2)\\sqrt{g/2h}.$ Notice that $a_\\perp$ is just $g$. Thus, $$R=\\frac{u^2}{a_\\perp}=\\frac{d^2}{8h}$$ Now, we can solve the problem as we usually would with a particle on a curved track. The net force equation says that $$mg-N=m\\frac{v^2}{R}\\Rightarrow N=m\\left(g-\\frac{8hv^2}{d^2}\\right)=\\boxed{8200 \\, \\unit{N}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A person hoists one of two loads of equal mass at a constant velocity $v$. Initially, the upper pulley is prevented from rotating by some force. At the moment when the two loads are at the same height $h$, the upper pulley is released. What load hits the floor first, and at what time $t$ does this happen? Assume that the person continues to pull the rope at the same constant velocity $v$. The pulleys and ropes are massless. \n    \\begin{center}\n    \\includegraphics[width=0.22\\textwidth]{person}\n\\end{center}",
+    "problem_images": [
+      "Forces_II Sols/person.png"
+    ],
+    "solution": "The condition of the person pulling on the rope allows the rope to be in tension the entire time. Otherwise, the system is equivalent to having the free end of the rope fixed. Using this, let the tension in the lower string be $T$. Then, the force equations are \\begin{gather*}ma_1=mg-T\\\\\n    ma_2=mg-2T\\end{gather*}\n    And the equation of constraint is $a_1=-a_2$. Solving the system, $a_1=2g/5$, which means the left block accelerates downward and hits the ground first. Since the block initially moves up at speed $v$, we can use the kinematic equation $$h=-vt+\\frac12\\frac{2g}{5}t^2$$which has the solution $$t=\\boxed{\\frac{5v}{2g}+\\sqrt{\\left(\\frac{5v}{2g}\\right)^2+\\frac{5h}{g}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

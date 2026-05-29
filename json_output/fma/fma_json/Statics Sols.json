@@ -1,0 +1,254 @@
+[
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "A uniform rectangular block is in static equilibrium on an inclined plane, and experiences gravity, static friction, and the normal force from the plane. Though gravity acts on the entire volume of the block, for the purposes of torque balance, it is equivalent to a single resultant force acting at the block's center of mass. Similarly, while the normal force acts on the entire bottom surface of the block, its torque is equivalent to a resultant force acting at a single point. Which of the following best shows this point?\n    \\begin{center}\n        \\includegraphics[width=0.4\\textwidth]{fma_normal_bot.jpg}\n    \\end{center}",
+    "problem_images": [
+      "Statics Sols/fma_normal_bot.jpg"
+    ],
+    "solution": "Consider taking torque about the point where the normal force is concentrated. Since it is on the plane, the torque due to both the normal force and the friction force is equal to 0. The only remaining force is the gravitational force. Thus, the moment arm of the gravitational force should be equal to 0, which means the point should lie vertically below the center of mass, and so the answer is \\textbf{B}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "You pull on a block until it tips over (without the corner slipping). Just before it tips over, where is the normal force concentrated? Explain why. What is the magnitude of the force you're pulling with?\n    \\begin{center}\n        \\includegraphics[width=0.4\\textwidth]{tipping.png}\n    \\end{center}",
+    "problem_images": [
+      "Statics Sols/tipping.png"
+    ],
+    "solution": "The normal force will always provide a clockwise torque, so at maximum force, we want to minimize other clockwise-contributing torques, so the normal force will shift to the right. This is also intuitive as it pivots around the right point when it starts to tip.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "You place a square block of side length $s$ on a ramp with an adjustable incline. The coefficient of static friction between the ramp and the block is $\\mu$. Then, you slowly increase the incline from $0$ degrees to $90$. Under what condition does the block slip before it rolls?",
+    "problem_images": [],
+    "solution": "If it doesn't tip, then it slips at angle $\\theta = \\arctan \\mu$. For it to tip, we need the center of mass to be past the bottom corner of the square, so we need\n    $$\\arctan \\mu < 45^\\circ \\implies \\boxed{\\mu < 1}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "Consider the following inverted scissor lift contraption with a mass $mg$ hanging at the bottom. What is the magnitude of the tension in the string connected between the 3rd and 4th intersections?\n    \\begin{center}\n        \\includegraphics[width=5cm]{scissor.png}\n    \\end{center}",
+    "problem_images": [
+      "Statics Sols/scissor.png"
+    ],
+    "solution": "We use virtual work. If the mass in the system shifts down by a distance $dh$, then the work done by the gravity is\n    $$dW_{\\text{grav}} = mg dh,$$\n    and since the string stretches by distance $dh/4$ by symmetry, the work done by the string is $-T (dh/4)$, so\n    $$mg dh - \\frac T4 dh = 0 \\implies \\boxed{T = 4mg}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": "$F=ma$",
+    "problem": "In the mobile below, the two cross beams and the seven supporting strings are all massless. The hanging\n    objects are $M_1$ = 400 g, $M_2$ = 200 g, and $M_4$ = 500 g. What is the value of $M_3$ for the system to be in\n    static equilibrium?\n    \\begin{center}\n        \\includegraphics[width = 0.6\\textwidth]{fma_mobile.png}\n    \\end{center}",
+    "problem_images": [
+      "Statics Sols/fma_mobile.png"
+    ],
+    "solution": "Consider the net torque about the point of attachment of the mobile. This is straightforward to calculate:\n    $$M_2g(0.5) + M_4g(0.4) - M_1g(0.4) - M_3g(0.2) = 0.$$\n    Plugging in the values for $M_1,M_2,M_4$, we get\n    $$M_3 = \\frac{140}{0.2} = \\boxed{700 \\,\\unit{g}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "OPhO",
+    "problem": "A solid cube of uniform density, mass $m$, and sidelength $\\ell$ rests on the ground. A horizontal force $F$ is exerted on the top edge of one\nvertical face of the cube while a rope is strung from pulley to another mass of mass\n$M$. Assuming that the tension in the rope stays roughly the same, how far will the\nnormal force move from the central axis of the block to stop the block from toppling\nover? Assume that there is sufficient friction such that the block does not slip and\nthat the mass on the pulley does not accelerate. Note that $m > M$\n\\begin{center}\n    \\includegraphics[width=5cm]{opho_tip.png}\n\\end{center}\nUnder what condition is it impossible for this setup to be static?",
+    "problem_images": [
+      "Statics Sols/opho_tip.png"
+    ],
+    "solution": "We calculate the net torque about the bottom right corner:\n    $$Mg\\frac{\\ell}{2} + F \\ell - mg \\frac \\ell 2 + Nd = 0,$$\n    where $d$ is the distance of the point of normal force exertion from the bottom right corner. Also note that by vertical force balalnce, $N = mg$, so solving for $d$, we get\n    $$d = \\frac{\\ell}2 - \\frac{F\\ell}{mg} - \\frac{M\\ell}{2m}.$$\n    Thus, the shift is $\\ell/2 - d = \\boxed{\\ell(F/mg + M/2m)}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "The object shown below is made of three rigidly connected, identical rods with uniform density.\n    \\begin{center}\n        \\includegraphics[width=3cm]{back_lambda.png}\n    \\end{center}\n    When it stands upright on a horizontal table, what fraction of its weight rests on the left leg?",
+    "problem_images": [
+      "Statics Sols/back_lambda.png"
+    ],
+    "solution": "Let the horizontal distance between the top and bottom of any rod be $x$, and let each rod have mass $m$. then, the torque about the bottom right point is\n     $$N(2x) - mg\\frac{3x}{2} - 2mg\\frac{x}{2} = 0.$$\n     Solving for $x$, we get\n     $$N = \\frac{5mgx}{4x} = \\frac{5mg}{4}.$$\n     Since the total weight is $3mg$, the fraction is $N/3mg = \\boxed{5/12}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "Two sticks are connected, with hinges, to each other and to a wall. The bottom stick is horizontal and has length $L$, and the sticks make an angle of $\\theta$ with each other, as shown below. If both sticks have the same mass per unit length, $\\rho$, find the horizontal and vertical components\nof the force that the wall exerts on the top hinge\n\\begin{center}\n    \\includegraphics[width=3cm]{triangle_wall.png}\n\\end{center}",
+    "problem_images": [
+      "Statics Sols/triangle_wall.png"
+    ],
+    "solution": "First, consider torque about the bottom left corner. This gives us\n    $$F_xL\\tan \\theta = \\rho L(1+\\sec \\theta)g \\frac{L}{2} \\implies F_x = \\frac{\\rho g L}{2}(\\cot \\theta + \\csc \\theta).$$\n    Then, for vertical, balance torques on just the top stick (only part of the system), and we get\n    $$F_xL\\tan \\theta + \\rho L\\sec \\theta g \\frac L2 = F_y L \\implies F_y = \\frac{\\rho g L}{2}(1 + 2\\sec \\theta).$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Four identical bricks are placed on top of each other at the edge of a table. Is it possible to slide them horizontally across each other in such a way that the projection of the topmost one is completely outside the table? What is the theoretical limit to the displacement of the topmost brick if the number of bricks is arbitrarily increased?",
+    "problem_images": [],
+    "solution": "Let $L$ be the length of a brick. Observe for the first few cases, by calculating the location of the center of mass of each composite system:\n    $$d_1 = L/2, d_2 = \\frac{L}{2} + \\frac L4, d_3 = \\frac L2 + \\frac L4 + \\frac L6.$$\n    It looks like the general case will be\n    $$d_n = \\frac L2 \\left(1 + \\frac 12 + \\cdots + \\frac 1n \\right).$$\n    We now show that this is true. If we have a bunch of bricks stacked on top of each other, sticking out as much as possible as shown below,\n    \\begin{center}\n        \\includegraphics[width=5cm]{bricks.png}\n    \\end{center}\n    Then the center of mass of the top $k$ blocks must still lie on the surface of the $k+1$st block. Thus, in the maximally extended case, the center of mass will like on the edge of the $k+1$st block. So, the center of mass of the $k+1$ blocks will be a distance\n    $$\\frac{km(L/2) + 0\\cdot m}{(k+1)m} = \\frac{k}{k+1}\\frac{L}{2}$$\n    from the center of mass of the $k+1$st block. This means the edge of the $k+1$st block can be a distance $1 - \\frac k{k+1} = \\frac{1}{k+1}$ extended from the block below it, so\n    $$d_{k+1} = d_k + \\frac{1}{k+1},$$\n    showing that our conjecture is true by induction.\n\n    Thus, for 4 blocks we can get over the table as $(1+1/2+1/3+1/4)/2 \\approx 1.04 > 1$. And in the general case, we can extend arbitrarily far as the harmonic series does not converge.",
+    "solution_images": [
+      "Statics Sols/bricks.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Prove that for an object in static equilibrium, torque around any origin being zero implies that there's zero torque about any other origin.",
+    "problem_images": [],
+    "solution": "Suppose that we have a collection of forces $\\mathbf F_i$ being applied at radii $\\mathbf r_i$ from some origin. Then, we have that\n    $$\\tau = \\sum_i \\mathbf r_i \\times \\mathbf F_i = 0.$$\n    Then, about some other origin, $\\mathbf r_0$, we have\n    $$\\tau_{r_0} = \\sum_i (\\mathbf r_i -\\mathbf r_0) \\times \\mathbf F_i = \\sum_i \\mathbf r_i \\times \\mathbf F_i -\\mathf r_0\\sum_i \\mathbf F_i.$$\n    The first term is just $\\tau = 0$ and since we are in static equilibrium the net force is 0, so $\\sum_i \\mathbf F_i = 0$, so\n    $$\\tau_{r_0} = 0 + 0 = 0,$$\n    as desired.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin, modified",
+    "problem": "A frictionless tube lies in the vertical plane and is in the shape of a function that has its endpoints at the same height but is otherwise arbitrary.\nA chain with uniform mass per unit length lies in the tube from end to\nend, as shown below. Use the principle virtual work to show that the setup is static. That is, show that if you move the chain by $dx$, the change in potential energy is order $dx^2$.\n\\begin{center}\n    \\includegraphics[width=3cm]{static_chain.png}\n\\end{center}",
+    "problem_images": [
+      "Statics Sols/static_chain.png"
+    ],
+    "solution": "If we move the chain clockwise by $dx$, then it is equivalent to moving a bit of the chain from the left side and attaching it on the right side. The mass of such a piece is $\\rho dx$. Then, the change in height is $dx \\sin \\theta_l + dx \\sin \\theta_r$ where $\\theta_l$ and $\\theta_r$ are the angles the left and right sides make with the horizontal. Thus, the change in energy is\n    $$dU = (\\rho dx)dx(\\sin \\theta_l + \\sin \\theta_r)g \\sim (dx)^2,$$\n    so the change in energy is order $(dx)^2$, and it is in static equilibrium.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "%     A rope of mass density $\\lambda$ is fixed by its ends on two supports of height $h$, such that the middle of the rope \\textit{almost} touches the ground. Find the tension at the following points on the rope:\n%     \\begin{anum}\n%     \\item the ends of the rope\n%     \\item the middle of the rope\n%     \\item a point on the rope that is $\\frac{h}{2}$ above the ground.\n%     \\end{anum}\n%     \\begin{center}\n%         \\includegraphics[width = 0.6\\textwidth]{catenary.png}\n%     \\end{center}\n%",
+    "problem_images": [
+      "Statics Sols/catenary.png"
+    ],
+    "solution": "\\begin{anum}\n    \\item We use the trick of taking torque about any point, and choose the contact point on the ground which cancels both gravity and friction. Thus, we get that the string's line must intersect the contact point, so $\\theta = \\arccos (r/R)$ by tangent line geometry.\n    \\item The horizontal component of the tension force is\n    $$T \\cos \\theta,$$\n    so we need $T\\cos \\theta \\le \\mu N $. The normal force is\n    $$N = Mg - T\\sin \\theta ,$$\n    so our inequality is\n    $$T\\cos \\theta \\le \\mu Mg - \\mu T \\sin \\theta \\implies T \\le \\frac{\\mu Mg}{\\cos \\theta + \\mu \\sin \\theta}.$$\n    \\item Using part (b), we want to maximize $\\cos \\theta + \\mu \\sin \\theta$. But this is actually the same maximization as in idea 1.4! The angle $\\theta = \\arctan \\mu$ to minimize $T$, pulling perpendicular to the combined force. Thus,\n    $$r/R = \\cos(\\arctan \\mu) = \\frac{1}{\\sqrt{1 + \\mu^2}},$$\n    giving us $\\boxed{r = R/\\sqrt{1+\\mu^2}}.$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Here's an extension of the spool problem that we introduced a couple weeks ago. A spool consists of an axle of radius $r$ and an outside circle of radius $R$ which rolls on the ground. A thread is wrapped around the axle and is pulled with tension $T$ at an angle $\\theta$ with the horizontal.\n    \\begin{anum}\n    \\item Given $R$ and $r$, what should $\\theta$ be so that the spool doesn’t move? Assume that the friction between the spool and the ground is large enough so that the spool doesn’t slip.\n    \\item Given $R$, $r$, and the coefficient of friction $\\mu$ between the spool and the ground, what is the largest value of $T$ for which the spool remains at rest?\n    \\item Given and $R$ and $\\mu$, what should $r$ be so that you can make the spool slip from the static position with as small a $T$ as possible?\n    \\end{anum}\n    \\begin{center}\n        \\includegraphics[width = 0.3\\textwidth]{morin_spool.png}\n    \\end{center}",
+    "problem_images": [
+      "Statics Sols/morin_spool.png"
+    ],
+    "solution": "\\begin{anum}\n    \\item We use the trick of taking torque about any point, and choose the contact point on the ground which cancels both gravity and friction. Thus, we get that the string's line must intersect the contact point, so $\\theta = \\arccos (r/R)$ by tangent line geometry.\n    \\item The horizontal component of the tension force is\n    $$T \\cos \\theta,$$\n    so we need $T\\cos \\theta \\le \\mu N $. The normal force is\n    $$N = Mg - T\\sin \\theta ,$$\n    so our inequality is\n    $$T\\cos \\theta \\le \\mu Mg - \\mu T \\sin \\theta \\implies T \\le \\frac{\\mu Mg}{\\cos \\theta + \\mu \\sin \\theta}.$$\n    \\item Using part (b), we want to maximize $\\cos \\theta + \\mu \\sin \\theta$. But this is actually the same maximization as in idea 1.4! The angle $\\theta = \\arctan \\mu$ to minimize $T$, pulling perpendicular to the combined force. Thus,\n    $$r/R = \\cos(\\arctan \\mu) = \\frac{1}{\\sqrt{1 + \\mu^2}},$$\n    giving us $\\boxed{r = R/\\sqrt{1+\\mu^2}}.$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "The sign shown below consists of two uniform legs attached by a frictionless hinge. The coefficient of friction\nbetween the ground and the legs is $\\mu$. What is the maximum value of $\\theta$ such that the sign will\nnot collapse?\n\\begin{center}\n    \\includegraphics[height=4cm]{hinged_sing.png}\n\\end{center}",
+    "problem_images": [
+      "Statics Sols/hinged_sing.png"
+    ],
+    "solution": "First, note that by symmetry that the normal force at each of the legs should be $mg/2$. Now, take torque about the top corner on just the right stick. We have\n    $$\\frac{mg}{2}\\frac L2 \\sin (\\theta/2) + \\frac{\\mu mg}{2}L\\cos (\\theta/2) = \\frac{mg}{2}L \\sin (\\theta/2).$$\n    So, isolating for $\\mu$ and $\\theta$, we get\n    $$2\\mu = \\tan (\\theta / 2) \\implies \\theta = \\boxed{2\\arctan(2\\mu)}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Kalda",
+    "problem": "A rod with length $l$ is hinged to a ceiling with height\n$h < l$. Underneath, a board is being dragged on the floor. The\nrod is meant to block the movement the board in one direction\nwhile allowing it move in the opposite direction. What condition should be fulfilled for it to do its job? The coefficient of\nfriction is $\\mu_1$ between the board and the rod, and $\\mu_2$ between\nthe board and the floor.\n\\begin{center}\n    \\includegraphics[width=4cm]{doorstop.png}\n\\end{center}",
+    "problem_images": [
+      "Statics Sols/doorstop.png"
+    ],
+    "solution": "When we pull the board right, the force on the rod should be rightward so that it rotates and keeps the interaction tight and unmovable. From idea 1.4, the interaction force points at an angle $\\arctan \\mu_1$ to the vertical. So, for the force to be rightward, we need\n    $$\\arctan \\mu_1 > \\alpha \\implies \\mu_1 > \\tan \\alpha.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kalda",
+    "problem": "On an incline with slope angle $\\alpha$ there lies a cylinder with mass $M$, its axis being horizontal. A small block with mass $m$ is placed inside it. The coefficient of friction between the block and the cylinder is $\\mu$; the incline is nonslippery. What is the maximum slope angle $\\alpha$ for the cylinder to stay at rest? The block is much smaller than the radius of the cylinder.\n\\begin{center}\n        \\includegraphics[width = 0.4\\textwidth]{block_in_block_kalda.jpg}\n    \\end{center}",
+    "problem_images": [
+      "Statics Sols/block_in_block_kalda.jpg"
+    ],
+    "solution": "First, note that for maximum slope, we want the mass $m$ to be as leftward as possible. The most this can be is when the mass $m$ is lying at a point on the circle that is $\\theta = \\arctan \\mu$ from the vertical. Now, with that in mind, we take torque about the contact point of the cylinder and the surface.\n    $$MgR\\sin \\alpha = mg(R\\sin \\theta - R\\sin \\alpha).$$\n    So, rearranging, we get\n    $$(M+m) \\sin \\alpha = \\sin \\theta = m\\frac{\\mu}{\\sqrt{1+\\mu^2}}.$$\n    So, we get $\\alpha = \\boxed{\\arcsin\\left[\\frac{m}{M+m} \\frac{\\mu}{\\sqrt{1+\\mu^2}}\\right]}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A uniform rod of length $2R$ is placed inside a fixed, frictionless hemispherical bowl of radius $R$. In equilibrium, the rod makes an angle $\\theta$ with the horizontal. Assume that the rod and bowl are ideally rigid, but that the lip of the bowl and the end of the rod are both slightly rounded, so that there is a well-defined normal direction at the points they touch. Find $\\theta$.",
+    "problem_images": [],
+    "solution": "There are only 3 forces on this rod. Thus, if we consider torque about the intersection point of two of them, the third must intersect as well, for there to be 0 net torque. Now, we have reduced it to a geometry problem. See the following diagram:\n    \\begin{center}\n        \\includegraphics[width=6cm]{rod_bowl.png}\n    \\end{center}\n    We can calculate the length $BD$ in two ways.\n    \\begin{align*}\n        BD &= BC - DC = 2R\\cos \\theta - R,\\\\\n        BD &= AB \\tan \\theta = 2R \\sin \\theta \\tan \\theta.\n    \\end{align*}\n    Thus, equating the two and simplifying, we get\n    $$2\\cos \\theta - 1 = 2\\frac{\\sin^2\\theta}{\\cos \\theta}.$$\n    This gives us the quadratic\n    $$4\\cos^2 \\theta - \\cos \\theta - 2 = 0,$$\n    so solving we get $\\theta \\approx 32.5^\\circ$.",
+    "solution_images": [
+      "Statics Sols/rod_bowl.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "Consider a massive string of mass density $\\lambda$ fixed at two points a horizontal displacement $L$ from each other. What shape does the string make? \\textit{Hint:} consider forces on small pieces of the string.",
+    "problem_images": [],
+    "solution": "Consider a small segment of the string which spans a distance $dx$ horizontally and makes an angle $\\theta$ with the horizontal. Horizontal forces on this piece give us,\n    \\begin{align*}\n        dT_x &= 0,\\\\\n        dT_y &= gdm = \\lambda \\frac{dx}{\\cos \\theta} g.\n    \\end{align*}\n    So, we can say there is some constant horizontal tension $T_x$. Then,\n    $$T_y = T_x \\frac{dy}{dx}.$$\n    Also, we can write\n    $$\\cos \\theta = \\frac{1}{\\sqrt{1 + (dy/dx)^2}}.$$\n    Plugging these into the second equation, we get\n    $$T_x \\frac{d^2y}{dx^2} = \\lambda g \\sqrt{1 + \\left(\\frac{dy}{dx}\\right)^2}.$$\n    Solving this differential equation, we find that $y(x)$ is a hyperbolic cosine, a caternary.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "This time, instead of a massive string, consider a massive, zero length spring of mass $m$ and total spring constant $k$. The two ends are fixed at points a horizontal displacement $L$ from each other. What shape does the spring make?",
+    "problem_images": [],
+    "solution": "Divide the hanging spring by $x$ coordinate into $N$ pieces of horizontal length $dx$, where $N$ is very large. Then, consider the $i$th piece which has spring constant $k_i$. If the $i$th piece has mass $m_i$, then it makes up $m_i/m$ of the spring, and thus has spring constant\n    $$k_i = \\frac{m}{m_i}k.$$\n    But since the horizontal tension throughout must be the same, we have that for all $i$, the expression $$T_x = k_idx = \\frac{mkdx}{m_i}$$ must be the same, so the $N$ pieces must all have the same mass $m_i = m/N$. Thus, we've shown that infinitesmial slices horizontally all have the same mass and same spring constant. So now, if we consider a point $x$ from the center, all the spring segments from the center to that point have total mass\n    $$m_x = \\frac{mx}{L}.$$\n    Thus, at coordinate $x$ we must have $T_y = m_xg = \\frac{mx}{L}g$. So, we can write\n    $$T_y = \\frac{kL}{dx}dy = \\frac{mx}{L}g \\implies \\frac{dy}{dx} = \\frac{mg}{kL^2}x.$$This is the differential equation for a $\\boxed{\\text{parabola!}}$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Statics Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kleppner \\& Kolenkow",
+    "problem": "A device called a capstan is used aboard ships in order to control\na rope which is under great tension. The rope is wrapped around\na fixed drum, usually for several turns (the drawing shows about a\nthree-quarter turn). The load on the rope pulls it with a force $T_A$,\nand the sailor holds it with a much smaller force $T_B$. Show that\n$T_B = T_Ae^{-\\mu \\theta}$, where $\\mu$ is the coefficient of friction and $\\theta$ is the total angle subtended by the rope on the drum.\n\\begin{center}\n    \\includegraphics[width=3cm]{capstan.png}\n\\end{center}",
+    "problem_images": [
+      "Statics Sols/capstan.png"
+    ],
+    "solution": "Consider a segment $d\\theta$ of the string. Then, considering radial forces on it, we get\n    $$2T(d\\theta/2) = N \\implies N = Td\\theta.$$\n    Thus, the maximal frictional force at that point is $df = \\mu Td \\theta$, and the maximal frictional force is equal to the maximal change in tension, so we can write\n    $$dT = \\mu T d\\theta \\implies \\frac{dT}{T} = \\mu d\\theta.$$\n    Solving the differential equation, we get\n    $$T(\\theta) = T_0 e^{\\mu \\theta},$$\n    and since $T_B < T_A$, we can write $T_A = T_Be^{\\mu \\theta}$, the desired result.",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

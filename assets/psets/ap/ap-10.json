@@ -1,0 +1,175 @@
+[
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 2 kg mass moving at 5 m/s to the right and a 4 kg mass moving at 3 m/s to the left are left with no external forces on them. After a long time, what is the velocity of the center of mass of the system?",
+    "problem_images": [],
+    "solution": "The velocity of the center of mass of the system is calculated using the formula:\n    $$ v_{\\text{CM}} = \\frac{m_1 v_1 + m_2 v_2}{m_1 + m_2} = \\frac{(2\\,\\text{kg})(5\\,\\text{m/s}) + (4\\,\\text{kg})(-3\\,\\text{m/s})}{2\\,\\text{kg} + 4\\,\\text{kg}}. $$\n    This gives the velocity of the center of mass as\n    $$ v_{\\text{CM}} = \\boxed{-\\frac{1}{3}\\,\\text{m/s}}. $$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A billiard ball weighing 0.55 kg is traveling at a speed of 2.2 m/s when it engages in a perfectly elastic collision with another billiard ball of the same mass, which is initially at rest. Determine the speeds of both billiard balls following the collision.",
+    "problem_images": [],
+    "solution": "In a perfectly elastic collision, kinetic energy and momentum are conserved. Since the masses are equal and one ball starts at rest, the velocities are swapped, as discussed in lecturea and the notes above. Thus, the speeds of the billiard balls following the collision are\n    $$ v_{1,\\text{final}} = \\boxed{0\\,\\text{m/s}}, \\quad v_{2,\\text{final}} = \\boxed{2.2\\,\\text{m/s}}. $$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 0.5 kg soccer ball is kicked towards a goal and collides with a 0.3 kg stationary basketball. After the collision, the soccer ball moves at a speed of 2 m/s, while the basketball rolls away at 3 m/s. Calculate the coefficient of restitution for the collision between the two balls.",
+    "problem_images": [],
+    "solution": "To determine the coefficient of restitution between the soccer ball and the basketball, we first calculate the initial velocity of the soccer ball using the conservation of momentum:\n    $$m_{\\text{soccer}} \\cdot v_{\\text{soccer, initial}} = m_{\\text{soccer}} \\cdot v_{\\text{soccer, final}} + m_{\\text{basket}} \\cdot v_{\\text{basket, final}},$$\n    which gives \\( v_{\\text{soccer, initial}} = 3.8\\,\\text{m/s} \\). The coefficient of restitution is then calculated as:\n    $$e = \\frac{v_{\\text{basket, final}} - v_{\\text{soccer, final}}}{v_{\\text{soccer, initial}} - v_{\\text{basket, initial}}} = \\boxed{0.263}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Two billiard balls of equal mass undergo a perfectly\nelastic head-on collision. If one ball’s initial speed was\n2.00 m/s, and the other’s was 3.60 m/s in the opposite\ndirection, what will be their speeds and directions after the collision?",
+    "problem_images": [],
+    "solution": "In the case of the two billiard balls undergoing a perfectly elastic head-on collision, where both balls have equal mass, the velocities are simply exchanged due to the conservation of momentum and kinetic energy:\n    $$v_{1, \\text{final}} = -3.60\\,\\text{m/s}, \\quad v_{2, \\text{final}} = 2.00\\,\\text{m/s}.$$\n    Thus, the first ball moves at \\(-3.60\\,\\text{m/s}\\) and the second at \\(2.00\\,\\text{m/s}\\) after the collision.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 1.5 kg bowling ball moving at 4 m/s comes into contact with a 0.5 kg stationary pin in a bowling alley. Following the impact, the bowling ball slows down to 3 m/s, whereas the pin shoots forward at 5 m/s. Determine the coefficient of restitution for this collision.",
+    "problem_images": [],
+    "solution": "For the bowling ball and pin collision, using the coefficient of restitution equation:\n    $$e = \\frac{v_{\\text{pin, final}} - v_{\\text{bowling, final}}}{v_{\\text{bowling, initial}} - v_{\\text{pin, initial}}} = \\boxed{0.5}.$$\n    This coefficient of restitution indicates how much velocity is conserved in the collision.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A radioactive nucleus at rest decays into a second\nnucleus, an electron, and a neutrino. The electron and\nneutrino are emitted at right angles and have momenta of\n$9.6 \\times 10^{-23}$ kgm/s and $6.2 \\times 10^{-23}$ kgm/s respectively. Determine the magnitude and the direction of the momentum of the second (recoiling) nucleus.",
+    "problem_images": [],
+    "solution": "In the decay problem, the momentum of the recoiling nucleus must conserve the total momentum vector sum of the electron and neutrino, which are at right angles:\n    $$p_{\\text{recoil}} = \\sqrt{p_{\\text{electron}}^2 + p_{\\text{neutrino}}^2} = \\boxed{1.14 \\times 10^{-22}\\,\\text{kgm/s}},$$\n    and the direction with respect to the electron's momentum is calculated as:\n    $$\\theta = \\arctan\\left(\\frac{p_{\\text{neutrino}}}{p_{\\text{electron}}}\\right) \\approx \\boxed{32.86^\\circ}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 0.6\\,kg tennis ball moving at 4\\,m/s collides elastically with a stationary 0.8\\,kg tennis ball. What are the velocities of the two tennis balls following the collision?",
+    "problem_images": [],
+    "solution": "For an elastic collision, we use the conservation of momentum and kinetic energy. It is best to work in the center of mass frame, in which we have\n$$v_{1,i} = \\frac{16}{7}, v_{2,i} = -\\frac{12}{7}.$$\nThus, they reversed, and adding back $v_{\\text{cm}} = \\frac{12}{7}\\,\\unit{m/s}$, we get \nSolving these for the velocities of the tennis balls, we get:\n\\[\nv_{1, \\text{final}} = -\\frac{4}{7}\\,\\text{m/s}, \\quad v_{2, \\text{final}} = \\frac{24}{7}\\,\\text{m/s}.\n\\]",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A ball of mass m makes a head-on elastic collision with a second ball (at rest) and rebounds with a speed equal to 0.450 its original speed. What is the mass of the second ball?",
+    "problem_images": [],
+    "solution": "We know from the problem statement that the rebound speed is 0.450 times the original speed. For an elastic collision where one ball is initially at rest, the final speeds are governed by the masses:\n\\[\nv_{\\text{final, 1}} = \\frac{m_1 - m_2}{m_1 + m_2} v_{\\text{initial, 1}}\n\\]\nSetting this equal to \\(-0.450 v_{\\text{initial, 1}}\\), we find that:\n\\[\nm_2 = 2.64m_1\n\\]\nSo, the mass of the second ball is approximately \\(2.64\\) times the mass of the first.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 1.2\\,kg remote-controlled car traveling at 2\\,m/s on a smooth track hits a stationary 0.9\\,kg remote-controlled car in a perfectly elastic collision. Determine the speeds of both remote-controlled cars after the collision.",
+    "problem_images": [],
+    "solution": "Applying conservation of momentum and kinetic energy, moving into the center of mass frame, we have\n$$v_{1,i}' = \\frac 67, v_{2,i}' = -\\frac 87.$$\nThus, reversing their signs and adding on $v_{\\text{cm}} = \\frac 87$, we get\n$$v_{1,f} = \\frac 27, v_{2,f} = \\frac {16}7.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A 0.280-kg croquet ball makes an elastic head-on\ncollision with a second ball initially at rest. The second\nball moves off with half the original speed of the first ball.\n(a) What is the mass of the second ball? (b) What fraction\nof the original kinetic energy ($\\Delta KE/KE$) gets transferred\nto the second ball?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item Since the collision is elastic, we have that their relative speeds before and after the collisions are the same. Thus, the first ball's final speed must be $-v/2$, where $v$ is the initial velocity. Then, by conservation of momentum,\n$$m_1v = -m_1v/2 + m_2v/2 \\implies \\frac 32 m_1 v = \\frac 12 m_2 v.$$\nThus, $m_2$ is three times the mass of $m_1$, $0.840\\,\\unit{kg}$.\n\\item The final kinetic energy of the second ball is\n$$KE_2 = \\frac 12 (3m_1) (v/2)^2 = \\frac 12 \\frac 34 m_1 v^2,$$\nso $\\frac{\\Delta KE}{KE} = \\frac 34$.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Billiard ball A of mass $m_A = 0.120$ kg moving with\nspeed $v_A = 2.80$ m/s strikes ball B, initially at rest, of\nmass $m_B = 0.140$ kg. As a result of the collision, ball A\nis deflected off at an angle of $30.0^\\circ$ with a speed $v_A' = 2.10$ m/s. (a) Taking the x axis to be the original\ndirection of motion of ball A, write down the equations expressing the conservation of momentum for the components in the x and y directions separately. (b) Solve these equations for the speed, $v_B',$ and angle, $\\theta_B'$, of ball B after\nthe collision. Do not assume the collision is elastic.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item The equations expressing the conservation of momentum in the x and y directions separately are:\n\\begin{equation*}\nm_A v_A = m_A v_{A}' \\cos(30.0^\\circ) + m_B v_{B}' \\cos(\\theta_B')\n\\end{equation*}\n\\begin{equation*}\n0 = m_A v_{A}' \\sin(30.0^\\circ) + m_B v_{B}' \\sin(\\theta_B')\n\\end{equation*}\n\\item To solve these equations for the speed $v_B'$ and angle $\\theta_B'$ of ball B after the collision, we can use the fact that the y-component of the momentum must be zero (since ball A was initially moving only in the x direction and there are no external forces in the y direction). This gives us two equations with two unknowns, which can be solved simultaneously to find $v_B'$ and $\\theta_B'$.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Two bumper cars in an amusement park ride collide elastically as one approaches the other directly from the rear. Car A has a mass of 435 kg and car B 495 kg,\nowing to differences in passenger mass. If car A approaches\nat 4.50 m/s and car B is moving at 3.70 m/s calculate\n(a) their velocities after the collision, and (b) the change in momentum of each.\n\\begin{center}\n    \\includegraphics[width=5cm]{masdfasdfomentum.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_Collisions Sols/masdfasdfomentum.png"
+    ],
+    "solution": "\\begin{anum}\n\\item The best way to calculate this is to move into the center of mass frame, where\n    $$v_A' = 0.426, v_B' = -0.374,$$\n    with $v_{\\text{cm}} = 4.074 \\, \\unit{m/s}$. So, reversing their signs and adding on the center of mass velocity,\n    $$v_{A,f} = 3.65\\,\\unit{m/s},v_{B,f} = 4.45\\,\\unit{m/s}.$$\n    \\item This is simply calculating the change in velocity of each and multiplying by the mass,\n    $$\\Delta p_A = m_A\\Delta v_A = -370\\,\\unit{kgm/s}, \\Delta p_B = m_B \\Delta v_B = 370\\,\\unit{kgm/s}.$$\n    Note that they cancel each other out, as desired.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Two balls, of masses $m_A = m_B$ are suspended as shown below. The lighter ball is pulled away to a $66^\\circ$ angle with the vertical and released. (a) What is the velocity of the lighter ball before impact? (b) What is the velocity of each ball after the elastic collision? (c) What\nwill be the maximum\nheight of each ball after\nthe elastic collision?\n\\begin{center}\n    \\includegraphics[width=5cm]{bruhhh.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_Collisions Sols/bruhhh.png"
+    ],
+    "solution": "\\begin{anum}\n\\item Using conservation of energy, we have\n    $$\\frac 12 mv^2 = mg R (1 - \\cos \\theta) \\implies v = \\sqrt{2gR(1- \\cos \\theta)} = 2.02\\,\\unit{m/s}.$$\n    \\item Because they are equal mass, they will just exchange velocities, so $$v_{A,f} = 0, v_{B,f} = 2.02\\,\\unit{m/s}.$$\n    \\item By symmetry, the B ball will go up to $66^\\circ$, which corresponds to $21\\,\\unit{cm}$ up.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A novice pool player is faced with the corner pocket shot\nshown below. Relative dimensions are also shown.\nShould the player worry that this might be a “scratch shot,”\nin which the cue ball will\nalso fall into a pocket?\nGive details. Assume\nequal-mass balls and an\nelastic collision. Ignore spin. <em>Hint:</em> the challenge problem may be helpful for this problem.\n\\begin{center}\n    \\includegraphics[width=5cm]{sractch.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_Collisions Sols/sractch.png"
+    ],
+    "solution": "From the challenge problem, we know that when equal masses elastically collide they go off at 90 degree angles to one another. Drawing lines from the left pocket to the right pocket, we have that they are similar because the ratio of their legs are both $1:\\sqrt{3}$. Thus, the two lines form a 90 degree angle with each other, meaning that the player <em>should</em> worry about a scratch shot.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Collisions Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A 0.5 kg billiard ball (A) moving at 2 m/s collides perfectly elastically with a stationary 0.5 kg billiard ball (B) and moves off at an angle $\\theta$ above the horizontal while ball B moves off at $\\phi $ below the horizontal. Prove that $\\theta + \\phi = 90^\\circ$.",
+    "problem_images": [],
+    "solution": "By conservation of momentum, the sum of the momentum vectors of the two balls must add to the original momentum vector of the first ball. However, since the masses of the balls are equal, this is equivalent to the final velocity vectors of the two adding to the original velocity vectors. This is shown graphically below.\n\\begin{center}\n    \\includegraphics[width=5cm]{velocity_addition.png}\n\\end{center}\n    Furthermore, by conservation of energy, we have $v_1^2 + v_2^2 = v_i^2$, so by pythagorean's theorem, the two final velocity vectors must form right angles with each other, and we are done.",
+    "solution_images": [
+      "AP1_Collisions Sols/velocity_addition.png"
+    ],
+    "solution_type": "sol"
+  }
+]

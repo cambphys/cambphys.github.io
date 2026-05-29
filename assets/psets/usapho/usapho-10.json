@@ -1,0 +1,196 @@
+[
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "For small temperature differences between an object and its environment, Newton's Law of Cooling applies. The law states that the rate of heat transfer is directly proportional to the temperature difference between the object and its environment: $$\\frac{dQ}{dt}\\propto \\Delta T$$A small cube with heat capacitance $C$ initially at temperature $T_0$ is placed in an atmosphere with temperature $T_a$. The initial rate of heat loss is $P$. Assuming Newton's Law of Cooling applies, find $T(t)$, the temperature of the cube as a function of time.",
+    "problem_images": [],
+    "solution": "Let $P=\\alpha \\Delta T$ for some $\\alpha$. Then, using the initial condition $\\alpha=P/(T_0-T_a)$. Our differential equation for $\\Delta T$ is thus $$\\frac{P}{T_0-T_a}(\\Delta T)=-C\\frac{d}{dt}(\\Delta T)\\Rightarrow \\frac{P}{C(T_0-T_a)}\\int_0^tdt=-\\int_{T_0-T_a}^{\\Delta T}\\frac{d(\\Delta T)}{\\Delta T}$$Taking the integral, we find that $$T(t)=T_a+\\Delta T(t)=\\boxed{T_a+(T_0-T_a)e^{-\\frac{Pt}{C(T_0-T_a)}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A window of thickness $t_1$, heat conductivity $k_1$, and area $A$ is coated by a thin layer of insulation with thickness $t_2$, conductivity $k_2$, and area $A$. If the window-insulation combination were replaced by some material with the same thickness ($t_1+t_2$) and area, what would be the necessary conductivity $k$ of that material so that it transfers heat exactly like the window-insulation combination does?",
+    "problem_images": [],
+    "solution": "The total ``resistance\" of the combination is the window and the insulation connected in series: $$R=\\frac{t_1}{k_1A}+\\frac{t_2}{k_2A}$$ The resistance of the singular material would be $$R=\\frac{t_1+t_2}{kA}$$Equating the two, we get $$k=\\boxed{\\frac{k_1k_2(t_1+t_2)}{k_1t_2+k_2t_1}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A nuclear spherical core of radius $r$ emits power $P$ from radioactive decay. A sphere of insulation of radius $R$ and heat conductivity $k$ surrounds the nuclear core, and the atmospheric temperature outside the core is $T_0$. In the steady-state scenario, what is the temperature of the nuclear core?",
+    "problem_images": [],
+    "solution": "Let $a$ be the distance from the center of the core. There must be no net heat transfer to the insulation in the steady-state scenario, so the temperature difference $dT$ between spherical layers $a$ and $a+da$ is found via the necessary conduction $P$: $$P=-k(4\\pi a^2)\\frac{dT}{da}$$ Thus, integrating yields $$\\int_r^R\\frac{da}{a^2}=-\\frac{4\\pi k}{P}\\int_T^{T_0}dT\\Rightarrow T=\\boxed{T_0+\\frac{P}{4\\pi k}\\left(\\frac1r-\\frac1R\\right)}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Now, an entire sphere of radius $R$ is made of radioactive material so that a power $p$ is emitted per unit volume of the material. The conductivity of the sphere is $k$. If the outside temperature is $T_0$, find the temperature of the center of the sphere.",
+    "problem_images": [],
+    "solution": "The total power generated in the inside of a shell of radius $a$ is equal to $(4/3)\\pi a^3p$. We thus substitute this as $P$ in our diffeq in the previous question: $$\\frac43\\pi a^3p=-k(4\\pi a^2)\\frac{dT}{da}$$Integrating like before, we get $$T=\\boxed{T_0+\\frac{pR^2}{6k}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A sheet of ice with heat conductivity coefficient $k$, latent heat $L$, density $\\rho$, and thickness $h$ initially blankets a lake in the winter. Suddenly, the air temperature above the ice changes to $T=10^\\circ \\, \\unit{C}$ and stays at that constant value.  Find the amount of time it takes for all the ice to melt.",
+    "problem_images": [],
+    "solution": "Let the thickness be $y$ at some point in time. Notice that the interface between the ice and the water under it is always at 0 degrees, so we denote $\\Delta T=10^\\circ \\, \\unit{C}$. Now, for a piece of ice of area $A$, we have $$\\frac{dQ}{dt}=\\frac{L\\, dm}{dt}=\\frac{kA\\Delta T}{y}$$\n    Notice that $dm=\\rho A\\, dy$. Thus, we can integrate: $$\\frac{\\rho L}{k\\Delta T}\\int_0^hy\\, dy=\\int_0^tdt\\Rightarrow t=\\boxed{\\frac{\\rho Lh^2}{2k\\Delta T}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "An infinite blackbody plate at temperature $T_1$ is placed in space parallel to another infinite blackbody plate with temperature $T_2<T_1$. \n    \\begin{anum}\n        \\item Find the net heat transfer per unit area, per unit time between the plates.\n        \\item Find the answer to part (a) if the second plate had emissivity $\\epsilon_2 <1$. \n        \\item Find the answer to part (a) if plate 1 has emissivity $\\epsilon_1<1$, and the second plate has emissivity $\\epsilon_2<1$. \n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item The plate $T_2$ absorbs power per unit area $\\sigma T_1^4$ and radiates power $\\sigma T_2^4$. Thus the net heat transfer rate is $$\\frac PA=\\boxed{\\sigma (T_1^4-T_2^2)}$$\n        \\item Now, only $\\epsilon_2\\sigma T_1^4$ of the energy from the first plate is absorbed by the second (the rest of the energy reflects and is then completely absorbed by the first plate), and the second plate radiates energy $\\epsilon_2\\sigma T_2^4$. Thus the net heat transfer rate is $$\\frac PA=\\boxed{\\epsilon_2\\sigma (T_1^4-T_2^4)}$$\n        \\item Let's analyze what happens to a portion of heat $Q_1=\\epsilon_1\\sigma T_1^4$ emitted from the first plate (this quantity doesn't have units heat, but we're just going to use $Q$ for simplicity). On the first reflection at plate 2, $\\epsilon_2Q_1$ is transmitted and $(1-\\epsilon_2)Q_1$ is reflected. Then, the heat reflects again at plate 1, where $(1-\\epsilon_1)(1-\\epsilon_2)Q_1$ returns to plate 2. Then, $\\epsilon_2(1-\\epsilon_1)(1-\\epsilon_2)Q_1$ is transmitted. After each back-and-forth reflection, the additional transmitted energy reduces by a factor $(1-\\epsilon_1)(1-\\epsilon_2)$. This is a geometric series, which we can evaluate to be $$\\epsilon_2Q_1(1+(1-\\epsilon_1)(1-\\epsilon_2)+(1-\\epsilon_1)^2(1-\\epsilon_2)^2+\\cdots)=\\frac{\\epsilon_2Q_1}{\\epsilon_1+\\epsilon_2-\\epsilon_1\\epsilon_2}$$Thus the net heat transfer from plate 1 toward plate 2 is $\\epsilon_1\\epsilon_2\\sigma T_1^4/(\\epsilon_1+\\epsilon_2-\\epsilon_1\\epsilon_2)$. By symmetry, the heat transfer from plate 2 toward plate 1 is found simply by swapping $T_1$ for $T_2$. Thus, the net heat transfer rate is $$\\frac PA=\\boxed{\\frac{\\epsilon_1\\epsilon_2}{\\epsilon_1+\\epsilon_2-\\epsilon_1\\epsilon_2}\\sigma(T_1^4-T_2^4)}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "PPP",
+    "problem": "A completely black spherical space probe is very far from the solar system. As a result of heating by a nuclear energy source of power $P$ inside the probe, its surface temperature is $T$. The probe is now enclosed within a thin thermal protection shield, which is black on both sides and attached to the probe's surface by a few insulating rods. Find the new surface temperature of the probe. \\begin{center}\n        \\includegraphics[scale=0.2]{probe}\n    \\end{center}",
+    "problem_images": [
+      "Thermo III Sols/probe.png"
+    ],
+    "solution": "Note that the surface of the shield must have temperature $T$, since in equilibrium the total power generated in the probe must still be sent to space. Now, if the temperature of the probe is now $T'$, we have $$P=\\sigma AT'^4-\\sigma AT^4$$since the shell now radiates heat back toward the probe. Note that $P=\\sigma AT^4$, so plugging this in immediately yields $$T'=\\boxed{2^{1/4}T}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "EstPhO",
+    "problem": "Water is being heated in an electric kettle. At a certain moment of time, a piece of ice at temperature $T_0 = 0^\\circ \\, \\unit{C}$ was put into the kettle. The figure below depicts the dependence of the water temperature as a function of time.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{kal3}\n    \\end{center}\n    What was the mass of the ice if the heating power of the kettle $P = 1\\, \\unit{kW}$? The latent heat of melting for ice $L = 335 \\,\\unit{kJ/kg}$, the heat capacitance of water $c = 4.2 \\, \\unit{kJ/kg\\cdot K}$. The room temperature $T_1 = 20^\\circ \\, \\unit{C}$.",
+    "problem_images": [
+      "Thermo III Sols/kal3.png"
+    ],
+    "solution": "The dip in the graph is when the ice is added, which essentially shifts the latter half of the graph to the right due to the extra time needed to heat the ice. Notice that initially, the rate of heat exchange into the water is exactly $P$, but then this decreases due to heat being transferred from the kettle to the atmosphere. Comparing the slope of the line at $t=0$ to that right before the ice is dropped in, we can conclude the net power transferred into the kettle at that moment is about half of that initially, i.e. $P'=500 \\, \\unit{W}$. The ice is dropped at $T=75^\\circ$, and this delays the process by about $\\Delta t=37$ seconds. Thus, $$P'\\Delta t=m(L+cT)\\Rightarrow m=\\boxed{\\frac{P'\\Delta t}{L+cT}=28\\, \\unit{g}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "NBPhO",
+    "problem": "Liquid helium is cooled under low pressure by vaporizing it and pumping the gas away. The heat of vaporization of helium is $\\lambda = 22 \\,\\unit{kJ/kg}$, which you can take to be constant. The specific heat of the liquid $c(T)$ is shown on the graph. What fraction of the liquid helium has to vaporize to cool the remaining liquid from $T_0 = 4.1 \\, \\unit{K}$ to $T_1 = 2.3 \\unit{K}$?\n     \\begin{center}\n         \\includegraphics[scale=0.4]{nbpho}\n     \\end{center}",
+    "problem_images": [
+      "Thermo III Sols/nbpho.png"
+    ],
+    "solution": "See solutions <a href=\"https://www.ioc.ee/~kalda/ipho/es/NBPhO16-sol.pdf\" target=\"_blank\" rel=\"noopener\">here</a> (Problem 7).",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "EstPhO",
+    "problem": "A juice bottle is being pasteurised at temperature $t_1 = 80^\\circ \\, \\unit C$ so that a light cap lies freely on the bottle rim (excess gas can exit freely from the bottle, but outside air cannot come in). Then the cap is tightly fixed so that air can no longer enter and exit from the bottle; the cap is so rigid that its deformation due to excess pressure can be neglected. The bottle is cooled down to the room temperature $t_2 = 20^\\circ\\, \\unit C$. What is the pressure under the bottle cap? Assume that the physical properties of the juice are identical to that of water; the pressure of saturated water vapours is depicted as a function of temperature in a graph. Atmospheric pressure $P_0 = 1.01 \\times  10^5\\, \\unit{Pa}$.\n\\begin{center}\n    \\includegraphics[scale=0.25]{est1}\n\\end{center}",
+    "problem_images": [
+      "Thermo III Sols/est1.png"
+    ],
+    "solution": "Reading the graph, the saturated vapor pressure at $80^\\circ = 50 \\, \\unit{kPa}$ while the saturated vapor pressure at $20^\\circ= 2.4 \\, \\unit{kPa}$. When the cap is open, the total pressure is $101 \\, \\unit{kPa}$, so by Dalton's law the partial pressure from air is $51\\, \\unit{kPa}$. When the temperature is reduced, the partial pressure of the air is reduced via the ideal gas law: $$P_f=(51\\, \\unit{kPa})\\frac{273+20}{273+80}=42.3\\, \\unit{kPa}$$The total pressure is found by adding back in the saturated vapor pressure, so $$P=\\boxed{44.7\\, \\unit{kPa}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A meniscus is the rising of a fluid at its interface with a container. In the figure below, we zoom in on the side view of water in a rectangular container. \\begin{center}\n        \\includegraphics[scale=0.2]{meniscus}\n    \\end{center}\n    For water of density $\\rho$ and surface tension $\\sigma$, what is the height $h$ of its meniscus? Assume at the contact point with the container, the meniscus is perfectly vertical, i.e. it makes an angle $0^\\circ$ to the container surface.",
+    "problem_images": [
+      "Thermo III Sols/meniscus.png"
+    ],
+    "solution": "We balance horizontal forces on the part of the water that is above the surface.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{soel2}\n    \\end{center}For a section of the meniscus a distance $\\ell$ into the page, the force of surface tension pulls to the right with magnitude $\\sigma \\ell$. The pressure in the water is lower than that of the air at an average value $\\rho gh/2$, and this difference in pressure is applied to an area $h\\ell$. Equating the two forces, $$\\sigma \\ell=\\frac{\\rho gh^2\\ell}{2}\\Rightarrow h=\\boxed{\\sqrt{\\frac{2\\sigma}{\\rho g}}}$$",
+    "solution_images": [
+      "Thermo III Sols/soel2.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Two spherical water droplets of radius $r$ are sitting on a table. Water has density $\\rho$ and surface tension $\\sigma$. When the water droplets come in contact, they can jump up above the ground. \n    \\begin{center}\n    \\includegraphics[scale=0.2]{drops}\n\\end{center}\nFind the maximal height $h$ to which the resulting larger drop jumps after the two smaller drops coalesce.",
+    "problem_images": [
+      "Thermo III Sols/drops.png"
+    ],
+    "solution": "The initial potential energy involved with the surface tension is $U_0=\\sigma(8\\pi r^2)$. The radius of the larger drop is $r'=2^{1/3}r$, so the final potential energy involved with the surface tension is $U_f=\\sigma(4\\pi r'^2)=\\sigma (2^{8/3}\\pi r^2)$. This energy is equal to the gravitational potential energy of the larger drop, which is $(8/3)\\rho \\pi r^3gh$. Equating the two and solving yields $$h=\\boxed{\\frac{3\\sigma}{\\rho gr}(1-2^{-1/3})}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "IPhO",
+    "problem": "A bubble of radius $r$ containing a diatomic ideal gas has soap film of thickness $t\\ll r$ and is placed in a vacuum. The soap film has surface tension $\\sigma$ and density $\\rho$. \\begin{anum}\n        \\item Find the molar heat capacity of the gas in the bubble for such a process when the gas is heated so slowly that the bubble remains in a mechanical equilibrium at all times.\n        \\item Find formula for the frequency $\\omega$ of the small radial oscillations of the bubble and evaluate it under the assumption that the heat capacity of the soap film is much greater than the heat capacity of the gas in the bubble. Assume that the thermal equilibrium inside the bubble is reached much faster than the period of oscillations.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "See solutions <a href=\"https://ipho.olimpicos.net/pdf/IPhO_2014_S1.pdf\" target=\"_blank\" rel=\"noopener\">here</a> (Part B).",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "Let some material with heat conductivity $k$ fill up all of space. A small ball $A$ at the origin with radius $r$ is maintained via a power source at temperature $T_1$, and a ball $B$ with radius $r$ at the point $(x,0,0)$ is maintained at a temperature $T_2<T_1$. Let $x\\gg r$. There are no other power sources in space. Find the rate of heat transfer between points $A$ and $B$. Hint: Make an analogy to electricity and use Gauss's law and current density.",
+    "problem_images": [],
+    "solution": "In the electric analogy, ball $A$ has voltage $V_1$ and ball $B$ has voltage $V_2$. Since what only matters is the difference in voltage, the current between the balls is equivalent to if ball $A$ had voltage $\\Delta V/2$ and if ball $B$ had voltage $-\\Delta V/2$ where $\\Delta V=V_1-V_2$. In this new case, we can relate the voltage to the charge on each ball by $$\\frac{\\Delta V}{2}=\\frac{q}{4\\pi\\epsilon_0 r}$$Then, ball $A$ has charge $q$ and ball $B$ has charge $-q$. If we draw a Gaussian surface around ball $A$, then $$\\oint\\mathbf E\\cdot d\\mathbf A=\\frac{q}{\\epsilon_0}=2\\pi r\\Delta V$$The total current coming out of ball $A$ is equal to $$I=\\oint \\mathbf J\\cdot d\\mathbf A=\\sigma\\oint\\mathbf E\\cdot d\\mathbf A=2\\pi \\sigma r\\Delta V$$ Now, converting back to temperature, we have $$\\frac{dQ}{dt}=\\boxed{2\\pi kr(T_1-T_2)}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "NBPhO",
+    "problem": "Suppose that inside a room, the volume of air $V_1 = 20 \\, \\unit{m^3}$ from inside at the temperature $t_1 = 25^\\circ \\, \\unit{C}$ is mixed with the volume of air $V_2 = 10 \\, \\unit{m^3}$ from outside at the temperature $t_2 = 1^\\circ \\, \\unit{C}$. The specific heat of the air at constant pressure $c_p = 1005 \\, \\unit{J/(kg\\cdot K)}$ can be assumed to be constant for the given temperature range; the heat exchange with the medium can be neglected. For the time being, you may neglect the possibility of (partial) condensation of the vapour.\n    \\begin{anum}\n    \\item Prove that the total volume of the air will not change, i.e. that the volume of the mixed air $V = V_1 + V_2$.\n    \\item What is the temperature of the mixed air $T$?\n    \\item The graph below shows the dependence of the saturated vapour density for water as a function of temperature. Before mixing, both the interior and exterior air had relative humidity of $r_0 = 100$\\%. What is the relative humidity $r$ of the mixed air (if it happens to increase then assume that an oversaturated vapour with $r > 100$\\% is formed)? \n    \\begin{center}\n        \\includegraphics[scale=0.3]{nb3}\n    \\end{center}\n    \\item If you happened to obtain $r > 100$\\% then the oversaturated vapour breaks down into a fog which contains tiny water droplets. In that case, what is the mass $m$ of the condensed water (i.e. the total mass of the water droplets)? Air density $\\rho_0 = 1189 \\, \\unit{kg/m^3}$; latent heat of vaporization for water $q = 2500 \\, \\unit{kJ/kg}$.\n    \\end{anum}",
+    "problem_images": [
+      "Thermo III Sols/nb3.png"
+    ],
+    "solution": "See solutions <a href=\"https://www.ioc.ee/~kalda/ipho/es/E_S_2006_sol.pdf\" target=\"_blank\" rel=\"noopener\">here</a> (Problem 1).",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo III Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "IPhO",
+    "problem": "A perfectly black hot surface is kept at a constant temperature $T_h$. There is another perfectly black cold surface which is parallel to the first one, and is kept at a constant temperature $T_l$; there is a vacuum in the space between the plates. In order to reduce the heat flux between the plates, a screen is used, which is made of $N$ parallel thermally insulated perfectly black plates (in the figure, $N = 2$). Such a screen is placed between the hot and cold plates, parallel to them. By which factor $x$ will the heat flux be reduced once a thermal equilibrium is reached? The edge effects caused by the finite size of the plates can be neglected.\n\\begin{center}\n    \\includegraphics[scale=0.2]{ipho1}\n\\end{center}",
+    "problem_images": [
+      "Thermo III Sols/ipho1.png"
+    ],
+    "solution": "The new heat transfer between each plate $P'$ is the same. Let us number the plates from left to right starting at 1. We derived in the previous problem that the net heat transfer between plates $i$ and $i+1$ is $\\sigma(T_i^4-T_{i+1}^4)$. Thus, we have the following system of equations: \\begin{gather*}\n        P' = \\sigma(T_h^4-T_1^4)\\\\\n        P'=\\sigma(T_1^4-T_2^4)\\\\\n        \\vdots\\\\\n        P'=\\sigma(T_N^4-T_l^4)\n    \\end{gather*}Adding the equations together, $$(N+1)P'=\\sigma(T_h^4-T_l^4)$$Note that $P=\\sigma(T_h^4-T_l^4)$ so the factor that the flux is reduced by is $x=\\boxed{N+1}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

@@ -1,0 +1,279 @@
+[
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Projectile motion",
+    "problem_tag": null,
+    "problem": "A ball is thrown into the air. \n    \\begin{anum}\n        \\item Neglecting air resistance, what speed must it be thrown at to reach space? (100 km above the surface of the Earth)\n        \\item Taking air resistance into account, does it take longer for the ball to rise up to its highest point or for the ball to fall back down from its highest point?\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item We simply use $v^2=2gh$, so $v=\\sqrt{2gh}=\\boxed{1400\\, \\unit{m/s}}.$\n            \\item Notice the ball is traveling the same distance in both cases, so what matters is the acceleration of the ball while it's moving. If the acceleration is larger, then the time it takes to travel the distance is less. Since air resistance and gravity both pull down on the object while it's traveling up, but oppose each other while it's traveling down, the acceleration is larger for the former case. Thus, it takes <span style=\"border:1px solid #555;padding:.1em .4em;font-weight:600;\">longer for the ball to fall back down</span>.\n        \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Projectile motion",
+    "problem_tag": null,
+    "problem": "At what angle should a ball be thrown on a horizontal surface so that it has:\n    \\begin{anum}\n        \\item The longest air time?\n        \\item The maximal height?\n        \\item The furthest horizontal distance?\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item We want to dedicate all our speed to the vertical direction, so $\\theta=\\boxed{90^\\circ}$. \n\\item By the same logic as part (a), $\\theta=\\boxed{90^\\circ}$.\n    \\item As derived in lecture, the distance a ball travels when thrown on a horizontal surface is $d=\\frac{v^2\\sin2\\theta}{g}$. The $\\sin$ function is maximized when the argument $2\\theta=90^\\circ$, so $\\theta=\\boxed{45^\\circ}.$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Projectile motion",
+    "problem_tag": null,
+    "problem": "A ball is thrown up in the air at a 60$^\\circ$ angle at a speed $10$ m/s. Find:\n    \\begin{anum}\n        \\item The maximal height $h$ of the ball.\n        \\item The total distance traveled $d$ of the ball.\n        \\item The time in the air $t$ of the ball.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Starting with the vertical direction of motion, we can see that $v_y=v\\sin\\theta=8.66 \\, \\unit{m/s}.$ The maximal height can then be found from $v_y^2=2gh\\Rightarrow h=v_y^2/2g=\\boxed{3.82\\, \\unit{m}}.$\n        \\item Looking at the vertical direction, we can find the amount of time the ball is in the air by $t=\\Delta v/g$. It moves up originally at $+v_y$, and ends up moving down at $-v_y$, so $t=2v_y/g=1.77\\, \\unit{s}.$ Then, the total horizontal distance is $d=v_xt=vt\\cos\\theta=\\boxed{8.85\\, \\unit{m}}.$\n        \\item We already found the time in the air: $t=\\boxed{1.77\\, \\unit{s}}.$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Projectile motion",
+    "problem_tag": null,
+    "problem": "Solve the general case of a ball thrown off a cliff. The cliff has height $h$, the ball is thrown at a speed $v$, and at an angle $\\theta$ above the horizontal. Find the total horizontal distance $d$ the ball travels.",
+    "problem_images": [],
+    "solution": "Analyzing the $y$ direction first, we have an initial speed upward $v_y=v\\sin\\theta$, gravity pulls down at $-g$, and our final height is $-h$ relative to our starting point (we have taken the upward direction to be positive). Then, we have $$-h=v_yt-\\frac12 gt^2\\Rightarrow \\frac12gt^2-v_yt-h=0$$Since we have a quadratic and we want to find $t$, we will use the quadratic formula to find $$t=\\frac{v_y\\pm \\sqrt{v_y^2+2gh}}{g}$$But since $t$ has to be positive and $\\sqrt{v_y^2+2gh}>v_y$, we need to take the solution $$t=\\frac{v_y+ \\sqrt{v_y^2+2gh}}{g}.$$Then, we can find the distance $d$ simply by considering the motion in the $x$ direction, where $d=v_xt=v\\cos\\theta t$. Combining all our info, $$d=v\\cos\\theta\\left(\\frac{v_y+ \\sqrt{v_y^2+2gh}}{g}\\right)=\\boxed{v\\cos\\theta\\left(\\frac{v\\sin\\theta+ \\sqrt{v^2\\sin^2\\theta+2gh}}{g}\\right)}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Projectile motion",
+    "problem_tag": null,
+    "problem": "    Suppose you stand at the bottom of a cliff of height $h$ and a distance $d$ from its base. At what speed $v$ and angle $\\theta$ should you throw the ball so that it hits the top of the cliff moving perfectly horizontally?",
+    "problem_images": [],
+    "solution": "The trajectory of the ball going up is the same as if the ball had been thrown horizontally from the cliff and landing precisely at the distance $d$ from the bottom (imagine time moving in reverse, or if the ball bounces off a perfectly elastic wall just as it reaches the top of the cliff). Then, we can find the speed at the top of the cliff (which is in the $x$ direction), and combining that with information about the $y$ directional speed at the bottom, we can find $v=\\sqrt{v_x^2+v_y^2}$ and $\\theta=\\tan^{-1}(v_y/v_x).$ If we threw the ball at $v_x$ horizontally off the cliff, it takes a time given by $\\frac12 gt^2=h \\Rightarrow t=\\sqrt{\\frac{2h}{g}}$ mandated by the motion in the $y$ direction. Then, we have $d=v_xt=v_x\\sqrt{\\frac{2h}{g}},$ which we can solve for $v_x$ by $v_x=d\\sqrt{\\frac{g}{2h}}$. Notice also we can find the speed $v_y$ at the bottom of the cliff by $v_y^2=2gh\\Rightarrow v_y=\\sqrt{2gh}.$ With this info, we can find $v$ and $\\theta$ via \\begin{gather*}\n        v=\\sqrt{v_x^2+v_y^2}=\\sqrt{\\frac{gd^2}{2h}+2gh}\\\\\n        \\theta=\\tan^{-1}\\frac{v_y}{v_x}=\\boxed{\\tan^{-1}\\frac{2h}{d}}\n    \\end{gather*}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Projectile motion",
+    "problem_tag": null,
+    "problem": "A ball of radius $R$ is sliding very quickly across a smooth surface at speed $v\\gg \\sqrt{gR}$ when it bounces elastically off a small rectangular ledge of height $h\\ll R$. What is the maximal height $H$ to which the ball rises?\n    \\begin{center}\n        \\includegraphics[scale=0.15]{ball.png}\n    \\end{center}",
+    "problem_images": [
+      "Kin_II Sols/ball.png"
+    ],
+    "solution": "By a little bit of geometry, we can see that the radial impact force on the ball is directed at some angle $\\theta$ as shown, to the vertical:\n    \\begin{center}\n        \\includegraphics[width=0.6\\linewidth]{ballsol}\n    \\end{center}If that angle is $\\theta$, then we can see that the situation is equivalent to the ball bouncing off an inclined plane at angle $\\theta$, since the impact force in that case is also directed at an angle $\\theta$ to the vertical. As a result of such a collision, the ball would move upward at an angle of $2\\theta$ to the horizon. Thus, we just need to find the angle $\\theta$, which would allow us to find the vertical speed $v_y$ and subsequently the height $H$. By a little bit of geometry, we have the following diagram:\n    \\begin{center}\n        \\includegraphics[width=0.3\\linewidth]{ballsol2}\n    \\end{center}By the Pythagorean theorem, the missing side of the right triangle has length $\\sqrt{R^2-(R-h)^2}=\\sqrt{2Rh-h^2}=\\sqrt{2Rh},$ where the last approximation was because we know that $h$ is very small compared to $R$. Then, the angle is simply found by $\\sin\\theta=\\sqrt{2Rh}/R=\\sqrt{2h/R}$. Again, since $h\\ll R$, we can use the small angle approximation that $\\sin\\theta=\\theta$, so $\\theta=\\sqrt{2h/R}.$ From earlier, this means the ball equivalently shoots upward at an angle $2\\theta=2\\sqrt{2h/R}$ to the horizontal at speed $v$, so the initial vertical speed is $v_y=v\\sin(2\\theta)=v\\cdot 2\\theta=2v\\sqrt{2h/R}.$ Finally, we use the kinematic equation $v_y^2=2gH$ to find $$H=\\frac{v_y^2}{2g}=\\boxed{\\frac{4v^2h}{gR}}.$$",
+    "solution_images": [
+      "Kin_II Sols/ballsol.png",
+      "Kin_II Sols/ballsol2.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Projectile motion",
+    "problem_tag": null,
+    "problem": "You and your friend stand on opposite sides of a wall, each at a distance $d$ from the base of the wall. The wall has height $h$. What is the minimal speed you will need to throw the ball at in order for your friend to catch it on the other side?",
+    "problem_images": [],
+    "solution": "Note the parabola of the trajectory must be symmetric about the wall in order for both of you to catch it, so the optimal strategy is such that the ball barely grazes over the wall while it moves horizontally above the wall. Thus, notice that the problem is essentially equivalent to problem 6. Thus, our answer is just $$v=\\boxed{\\sqrt{\\frac{gd^2}{2h}+2gh}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Projectile motion",
+    "problem_tag": "USAPhO",
+    "problem": "A ball bounces perfectly elastically between points on two inclined planes at angle $\\theta$ and a distance $D$ apart. The angle between the trajectories at the impact points is $\\phi\\neq 0$, and the speed at the impact points is $v$. Find $\\phi$ in terms of the other variables.\n    \\begin{center}\n        \\includegraphics[scale=0.3]{usapho.png}\n    \\end{center}",
+    "problem_images": [
+      "Kin_II Sols/usapho.png"
+    ],
+    "solution": "Notice that for two trajectories to travel the same distance, they must have the same $\\sin2\\alpha$ factor in the distance formula we have derived again and again: $$D=\\frac{v^2\\sin2\\alpha}{g}$$Notice that the average of these two angles must be $45$ degrees for this to happen, so $\\theta=45^\\circ.$ Then, $$D=\\frac{v^2\\sin(2(45\\pm \\phi/2))}{g}=\\frac{v^2\\sin(90\\pm\\phi)}{g}$$ Since the range of the sin function is restricted to $[-90^\\circ,90^\\circ],$ we choose the value of $\\phi$ that lets the argument in sin be within this range:\\begin{align*}\n        D&=\\frac{v^2\\sin(90-\\phi)}{g}\\\\\n        \\sin^{-1}\\left(\\frac{gD}{v^2}\\right)&=90-\\phi\\\\\n        90-\\sin^{-1}\\left(\\frac{gD}{v^2}\\right)&=\\phi\\\\\n        \\boxed{\\cos^{-1}\\left(\\frac{gD}{v^2}\\right)}&=\\phi\n    \\end{align*}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Olympiad kinematics",
+    "problem_tag": "Kalda",
+    "problem": "Two planes fly at the same height with speeds $v_1 = 800 \\,\\unit{km/h}$ and $v_2 = 600 \\, \\unit{km/h}$, respectively. The planes approach each other; at a certain moment of time, the plane trajectories are perpendicular to each other and both planes are at the distance $a = 20\\,\\unit{km}$ from the intersection points of their trajectories. Find the minimal distance between the planes during\ntheir flight, assuming their velocities will remain constant.\n\\begin{center}\n    \\includegraphics[width=0.3\\linewidth]{planeee.png}\n\\end{center}",
+    "problem_images": [
+      "Kin_II Sols/planeee.png"
+    ],
+    "solution": "Moving into the frame of one plane will help solving the problem. In the frame of the red plane, the blue plane picks up an extra velocity $v_y=-v_2=-600 \\, \\unit{km/h}$ downward, while the red plane remains at rest. In this frame, the blue plane will travel in a straight line as shown:\n    \\begin{center}\n        \\includegraphics[width=0.4\\linewidth]{planesol}\n    \\end{center}\n    By the similar triangle formed, we have $$\\frac{d}{5}=\\frac{800}{1000}\\Rightarrow \\boxed{d=4\\, \\unit{km}}.$$",
+    "solution_images": [
+      "Kin_II Sols/planesol.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Olympiad kinematics",
+    "problem_tag": "Morin",
+    "problem": "For a given initial speed $v_0$, what inclination angle should a ball be thrown so that it travels the maximum distance along a slope upward at an angle $\\beta$ (or sloped downward, if $\\beta$ is negative)?",
+    "problem_images": [],
+    "solution": "The ball is thrown at an angle $\\theta$ from the horizontal (so $\\theta - \\beta$ from the incline). The incline is sloped at $\\beta$, so the equation for the incline is $y=\\tan\\beta x$.\n\nThe path of the ball given in terms of $t$ is $x=(v\\cos\\theta)t$ and $y=(v\\sin \\theta)t - \\frac{1}{2}gt^2$. We solve for $t$ that satisfies $y=\\tan\\beta x$, where the trajectory of the ball intersects the incline. We find that (in addition to $t=0$),\n$$t=\\frac{2v}{g}(\\sin\\theta - \\tan\\beta\\cos\\theta).$$\nPlugging into the equation for $x$, we get\n$$x=\\frac{2v^2}{g}(\\sin\\theta\\cos\\theta - \\tan\\beta\\cos^2\\theta).$$\nNow, we maximize the value for $x$ by finding $\\theta$ where $dx/d\\theta = 0$. Some math and trig subs later, we find that\n$$\\theta=\\boxed{\\frac{1}{2}\\left(\\beta + \\frac{\\pi}{2}\\right)}.$$\nThis is where $\\theta$ bisects the angle between the ground and the direction normal to the incline.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Olympiad kinematics",
+    "problem_tag": null,
+    "problem": "You stand in a valley, looking up at a cliff that rises a height $h$ above you. You stand a distance $d$ from the base of the cliff. What is the minimal speed you need to throw the ball at in order to hit the top of the cliff? (Hint: use the answer to the previous problem)\n    \\begin{center}\n        \\includegraphics[scale=0.15]{cliff}\n    \\end{center}",
+    "problem_images": [
+      "Kin_II Sols/cliff.png"
+    ],
+    "solution": "Imagine drawing a line from your starting point to the ridge of the cliff so that we form an inclined plane of angle $\\beta=\\tan^{-1}(H/d)$. Then, this problem is equivalent to the previous problem. Assuming we throw the ball upward at the optimal angle $\\theta$, we can find the smallest speed necessary. Plugging in $\\theta$ into the expression for $x$ (now $d$) and using double angle identities:\\begin{align*}\n        d&=\\frac{2v^2}{g}\\left(\\frac{\\sin(2\\theta)}{2}-\\tan\\beta\\frac{\\cos2\\theta+1}{2}\\right)\\\\\n        &=\\frac{v^2}{g}(\\sin(\\beta+\\frac{\\pi}{2})-\\tan\\beta(\\cos(\\beta+\\frac{\\pi}{2})+1))\\\\\n        &=\\frac{v^2}{g}(\\cos\\beta+\\tan\\beta\\sin\\beta-\\tan\\beta)\\\\\n        &=\\frac{v^2}{g}\\frac{1-\\sin\\beta}{\\cos\\beta}\n    \\end{align*}and using $\\beta=\\tan^{-1}(H/d),$ and setting $\\sqrt{H^2+d^2}=L$ we can find $v$ in terms of the other lengths: \\begin{align*}\n        v&=\\sqrt{\\frac{gd\\cos\\beta}{1-\\sin\\beta}}\\\\\n        &=\\sqrt{\\frac{gd(d/L)}{1-(H/L)}}\\\\\n        &=\\sqrt{\\frac{gd^2}{L-H}}\\\\\n        &=\\sqrt{\\frac{gd^2}{\\sqrt{H^2+d^2}-H}}\\\\\n        &=\\boxed{\\sqrt{g(\\sqrt{H^2+d^2}+H)}}\n    \\end{align*}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Olympiad kinematics",
+    "problem_tag": "$F=ma$",
+    "problem": "This problem might look a bit familiar! This time use real kinematic techniques to derive the answer you got before. A rod moves freely between the horizontal floor and the slanted wall. When the end in contact with the floor is moving at $v$, what is the speed of the end in contact with the wall?\n\\begin{center}\n    \\includegraphics[width = 0.4 \\linewidth]{17_16.PNG}\n\\end{center}",
+    "problem_images": [
+      "Kin_II Sols/17_16.PNG"
+    ],
+    "solution": "When the end in contact with the floor moves at $v$, we can find the projection of this velocity in the direction of the rod as $v\\cos\\theta$. This must be the projection of the speed of the other end in the direction of the rod. If the speed of the other end is $u$, then the projection (by angle chasing) is $u\\cos(180-\\theta-(180-\\alpha))=u\\cos(\\alpha-\\theta).$ Equating these, we solve for $u$ as $$u=\\boxed{v\\frac{\\cos\\theta}{\\cos(\\alpha-\\theta)}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Olympiad kinematics",
+    "problem_tag": "$F=ma$",
+    "problem": "In the frame of the box, which of the following is a possible path followed by the particle?\n\\begin{center}\n    \\includegraphics[scale=.65]{pbox-1.PNG}\n\\end{center}",
+    "problem_images": [
+      "Kin_II Sols/pbox-1.PNG"
+    ],
+    "solution": "Moving into the frame of the box, every object inside it obtains an extra component of acceleration to the left, which effectively means that ``gravity\" in this frame is tilted to the left. Thus, the path should still be a parabola, but tilted to the right to account for the rotated direction of gravity. Therefore, the answer is <strong>(C)</strong>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Olympiad kinematics",
+    "problem_tag": "$F=ma$",
+    "problem": "If the magnitude of the acceleration of the box is chosen correctly, the launched particle will follow\na path that returns to the point that it was launched. In the frame of the box, which path is\nfollowed by the particle?\n\\begin{center}\n    \\includegraphics[scale=.65]{pbox-2.PNG}\n\\end{center}",
+    "problem_images": [
+      "Kin_II Sols/pbox-2.PNG"
+    ],
+    "solution": "We need the trajectory to be a parabola, so <strong>(A)</strong> is the only possible solution (this one is like throwing the ball ``straight up\" against the tilted direction of gravity.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Olympiad kinematics",
+    "problem_tag": null,
+    "problem": "A closet door is modeled as two identical planks connected by a hinge. One end of the door is fixed while the other slides along a set of rails at a constant speed $v$. At the given moment, the (obtuse) angle at the hinge is $\\theta$. Find the speed $u$ of the hinge.\n\\begin{center}\n    \\includegraphics[width = 0.5\\linewidth]{aoa}\n\\end{center}",
+    "problem_images": [
+      "Kin_II Sols/aoa.png"
+    ],
+    "solution": "Constraints on the left plank demand that the hinge must move at a velocity perpendicular to the plank; the plank cannot stretch nor compress. \n\\begin{center}\n    \\includegraphics[width = 0.8\\linewidth]{closetsol.png}\n\\end{center}\nWe have the angles in the figure shown. The other plank cannot stretch nor compress either, so the parallel component of velocity of its ends must be equal:\n$$u\\cos(\\theta-90) = v \\cos(90-\\theta/2)$$\nWe can do some trig cleanup:\n\\begin{align*}\n    u&=\\frac{v\\sin\\theta/2}{\\sin\\theta}\\\\\n    &=\\boxed{\\frac{v}{2\\cos\\theta/2}}\n\\end{align*}",
+    "solution_images": [
+      "Kin_II Sols/closetsol.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Olympiad kinematics",
+    "problem_tag": null,
+    "problem": "A ball starts at the bottom of a very narrow but very deep well. The well has a width $w$, and a depth $h\\gg w$. It is initially thrown at an angle of 30$^\\circ$ to the horizontal with speed $v$. What must $v$ be so that the ball escapes the well? All collisions with the walls of the well are elastic.\n    \\begin{center}\n        \\includegraphics[scale=0.1]{well}\n    \\end{center}",
+    "problem_images": [
+      "Kin_II Sols/well.png"
+    ],
+    "solution": "In lecture, we showed that the trajectory of the ball is just a repeated reflection of the trajectory it takes if the well was not there. Thus, since we want to find the case where the ball is able to rise up to the top of the well, the problem simply reduces to finding the minimal speed necessary for the ball to rise to a height $h$. Our vertical velocity is $v_y=v\\sin30=0.5v,$ and using $v_y^2=2gh$ we get $v=\\boxed{2\\sqrt{2gh}}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "Four snails sit at the corners of a square $ABCD$ of length $a$. Each snail starts moving toward the one adjacent to it in the clockwise direction at a speed $v$ (i.e. snail $A$ moves toward snail $B$, snail $B$ moves toward snail $C$, etc). Find the time it takes for the snails to meet. Generalize your answer to $N$ snails in a regular $N$-gon of side length $a$.",
+    "problem_images": [],
+    "solution": "Note that the rate at which the distance between the snails decreases is equal to $v$ -- one snail is moving toward the other at speed $v$, while the other is moving perpendicularly to the side in question, thus contributing nothing to the decrease in side length. Therefore, our answer is simply $$t=\\boxed{a/v}$$\n    For a more general case, let the internal angle of the polygon be $\\theta$. Then, while one snail moves toward another, the component of the other snail's motion in the direction of the side between them is equal to $v\\cos\\theta$. We can see this in the diagram shown:\n    \\begin{center}\n        \\includegraphics[scale=0.2]{snailsol}\n    \\end{center}Then, the rate at which the length of the side decreases is $v+v\\cos\\theta$ (note that $\\cos\\theta$ is negative here). We can find $\\theta$ from the standard formula that the total measure of all the angles in an $N$-gon is $180(N-2),$ so the angle $\\theta=180(N-2)/N$. Therefore, the time it takes for the snails to meet is \\begin{align*}\n        t=\\frac{a}{v(1+\\cos\\theta)}=\\boxed{\\frac{a}{v\\left(1+\\cos\\left(\\frac{180(N-2)}{N}\\right)\\right)}}\n    \\end{align*}",
+    "solution_images": [
+      "Kin_II Sols/snailsol.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "    In this problem, we derive the envelope parabola. (Calculus required)\n    \\begin{anum}\n        \\item To start, write down the function $y(x)$ for a projectile launched at velocity $v_0$ at an angle $\\theta$ to the horizontal from $(0,0)$.\n        \\item Now, for a given fixed $x$, maximize $y$ with varying $\\theta$. That is, take the derivative with respect to $\\theta$ to find the $\\theta$ that maximizes in terms of the other variables and plug it back into $y(x)$. You should get a parabola as a function of $x$. This may be a bit messy, but it's helpful to do such derivations at least once in a while --- it's a useful skill, especially on the USAPhO and beyond.\n    \\end{anum}\n    So the set of all possible parabolic trajectories launched from a single point form a parabola themselves! This trick can be used to solve a lot of olympiad problems -- see Kalda for more, or IPhO 2012!",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Looking at the vertical direction, we can write $y$ as a function of $t$ using the standard kinematic equation. The initial speed in the $y$ direction is $v_0\\sin\\theta$, so $$y(t)=(v_0\\sin\\theta)t-\\frac12gt^2$$Note we can also write $x(t)$ as $x(t)=(v_0\\cos\\theta)t$. Solving for $t$ in terms of $x$ and plugging it in for $y(t)$, we can find $y(x)$:$$y(x)=(v_0\\sin\\theta)\\frac{x}{v_0\\cos\\theta}-\\frac12g\n    \\left(\\frac{x}{v_0\\cos\\theta}\\right)^2=\\boxed{x\\tan\\theta-\\frac{gx^2}{2v_0^2}\\sec^2\\theta}$$\n    \\item Taking the derivative with respect to $\\theta$ and setting it to 0, \\begin{align*}\n        0&=x\\sec^2\\theta-\\frac{gx^2}{2v_0^2}(2\\sec\\theta)(\\sec\\theta\\tan\\theta)\\\\\n        0&=x-\\frac{gx^2}{v_0^2}\\tan\\theta\\\\\n        \\tan\\theta&=\\frac{v_0^2}{gx}\n    \\end{align*}\n    We can plug this back into $y(x)$, by using the trigonometric formula $\\tan^2\\theta+1=\\sec^2\\theta$. \\begin{align*}\n        y(x)&=x\\cdot\\frac{v_0^2}{gx}-\\frac{gx^2}{2v_0^2}\\left(1+\\frac{v_0^4}{g^2x^2}\\right)\\\\\n        &=\\frac{v_0^2}{g}-\\frac{gx^2}{2v_0^2}-\\frac{v_0^2}{2g}\\\\\n        &=\\boxed{\\frac{v_0^2}{2g}-\\frac{gx^2}{2v_0^2}}\n    \\end{align*}\n    A sidenote on why we did this: when finding $y(x)$, we found the trajectory of $y$ given some firing angle. By fixing $x$ and maximizing $y$ with respect to $\\theta$, we find the optimal firing angle such that we can hit the greatest $y$ for that value of $x$. By plugging this $\\theta$ back into our equation, we essentially find the greatest possible height for each value $x$, which creates an envelope parabola containing all the possible trajectories. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "An elastic and frictionless ball is thrown up a ramp angled at $\\theta$ to the horizon. If the ball bounces $n$ times before returning to the start point, what angle was the ball thrown at relative to the ramp?",
+    "problem_images": [],
+    "solution": "Let's tilt axes. In the direction normal to the plane, the component of gravity is $g_y=g\\cos\\theta$ and in the direction parallel, $g_x=g\\sin\\theta.$ Let the angle of throw relative to the plane be $\\alpha$, such that the angle to the horizontal is $\\beta = \\alpha + \\theta.$ Let the time $t$ equal the time between bounces. Then, in the normal direction, we must have $$t=\\frac{2v\\sin\\alpha}{g\\cos\\theta},$$ and in the parallel direction, $$nt=\\frac{2v\\cos\\alpha}{g\\sin\\theta}.$$ Dividing through and rearranging, \\begin{align*}\n    \\frac{1}{n}&=\\frac{\\tan\\alpha}{\\tan\\theta}\\\\\n    \\alpha &= \\tan^{-1}\\left(\\frac{\\tan\\theta}{n}\\right)\n\\end{align*}so we have $$\\beta = \\alpha + \\theta=\\boxed{\\tan^{-1}\\left(\\frac{\\tan\\theta}{n}\\right)+\\theta}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "NBPhO 2020",
+    "problem": "The interior of a modern museum is a perfect, right cone with half apex angle $60^\\circ$ (i.e. the walls are slanted by $60^\\circ$ with respect to the vertical). Launched from the center of the cone's base, the minimal speed needed for a projectile to reach the apex (i.e. the highest point of the walls is $v$). What is the minimal speed required to reach the wall of the cone?",
+    "problem_images": [],
+    "solution": "If the distance from the base to the apex is $H$, then\nfrom the kinematic formula, $2gH = v^2.$\nLet the shortest distance from the base to the wall be $h$ and the sought minimal speed $v_1$. From geometry, $h = H \\sin \\theta$, where $\\theta=60^\\circ.$ Letʼs consider a new system of coordinates where the two axes $x$ and $y$ are parallel and perpendicular to the wall, respectively. Gravitational acceleration thus has components $g_x = g\\cos\\theta$ and\n$g_y = g\\sin\\theta.$ It is clear that the motion along\nthe $x$ axis doesnʼt affect whether the projectile hits the wall, because the motions in the two axes are independent. One thus has to set the component of $v_1$ in the $x$ direction to equal 0; the original speed is entirely in the $y$ direction. Then, the problem reduces to hitting a projectile into a conventional ceiling of height $h$ in effective gravity $g\\sin\\theta$. Thus, from energy conservation, $$gh\\sin\\theta = gH \\sin^2\\theta =\\frac{v_1^2}{2}$$ and so $$v_1=v\\sin\\theta = \\boxed{\\frac{\\sqrt 3}{2} v}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "Two identical vertical hoops positioned on the floor are connected by a small ring as shown. The ring is pulled down at a speed $v$. Find the speed $u$ of the hoops in terms of $v$ and $\\theta$. \n\\begin{center}\n    \\includegraphics[width = 0.5\\linewidth]{rings}\n\\end{center}",
+    "problem_images": [
+      "Kin_II Sols/rings.png"
+    ],
+    "solution": "Let's look at the hoop on the left. In the frame of the hoop, the ring gains an additional velocity $u$ to the right while the hoop is stationary. Here, the ring must move along the rim of the hoop, i.e. its velocity must be tangent to the hoop. Thus we can form a right triangle:\n\\begin{center}\n    \\includegraphics[width = 0.3\\linewidth]{ringsol}\n\\end{center}\nSo, $$u=\\boxed{v\\tan\\theta}.$$",
+    "solution_images": [
+      "Kin_II Sols/ringsol.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Kin_II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kalda",
+    "problem": "A hinged structure consists of two links of length\n$2l$. One of its ends is attached to a wall, the other is moving\nat distance $3l$ from the wall at constant vertical velocity $v_0$. Find the acceleration of the hinge connecting the links when \\begin{anum}\n    \\item the link closer to the wall is horizontal.\n    \\item the velocity of the connection point is zero.\n\\end{anum} \n\\begin{center}\n    \\includegraphics[scale=0.2]{kald1}\n\\end{center}",
+    "problem_images": [
+      "Kin_II Sols/kald1.png"
+    ],
+    "solution": "(Diagram from PhODS)\n\\begin{center}\n    \\includegraphics[scale=0.2]{kaldasol}\n\\end{center}\n    \\begin{anum}\n        \\item First, note that because the projections of velocity along the direction of the rod must be equal on both ends, the hinge must move vertically upward at $v$ (notice how this also follows the fact that the left rod can only rotate, and thus the velocity must be perpendicular to its end). Using the definition of centripetal acceleration about the left rod, the horizontal component of the acceleration is $v_0^2/2l$. Then, since the velocity of the joint and the end are equal, there can be no centripetal acceleration about the right rod, so the acceleration component of the hinge parallel to the right rod must be 0, and the actual acceleration must be perpendicular to the right rod. Then, the projection of this acceleration in the direction of the left rod is $a\\cos30^\\circ$, and must equal the acceleration we found earlier: $$\\frac{v_0^2}{2l}=a\\cos30^\\circ\\Rightarrow a=\\boxed{\\frac{v_0^2}{\\sqrt 3l}}$$\n        \\item If we take the frame moving upward at speed $v$, observe that the hinge and the right end of the rod are stationary but the left end of the left rod moves down at speed $v$. This is equivalent to saying that we're moving the left rod instead, and the right rod is anchored to the wall. Thus, we have the exact same set up as before, but at the later time that we desire (the hinge is at rest in this frame). Shifting into a constant velocity frame does not affect accelerations, so the acceleration is the same here: $$a=\\boxed{\\frac{v_0^2}{\\sqrt 3l}}$$\n    \\end{anum}",
+    "solution_images": [
+      "Kin_II Sols/kaldasol.png"
+    ],
+    "solution_type": "sol"
+  }
+]

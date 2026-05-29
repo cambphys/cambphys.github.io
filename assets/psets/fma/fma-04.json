@@ -1,0 +1,240 @@
+[
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "Alice and Bob are both pulling on either side of a rope with a force of 20 newtons. What is the tension in the rope?",
+    "problem_images": [],
+    "solution": "The tension in the rope is 20 newtons. If we analyze the forces on Alice and Bob, since each are pulling with 20 newtons and are remaining in equilibrium, the rope must be pulling on both of them with a tension of 20 newtons.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": "$F=ma$",
+    "problem": "A coin of mass $m$ dropped straight down from the top of a very tall building. As the coin approaches terminal speed, which is true of the net force on the coin?\n\n\\begin{enumerate}[label=(\\Alph*)]\n\\item The net force on the coin is upward\n\\item The net force on the coin is $0$\n\\item The net force on the coin is downward, with a magnitude less than $mg$\n\\item The net force on the coin is downward, with a magnitude equal to $mg$\n\\item The net force on the coin is downward, with a magnitude greater than $mg$\n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "Answer: C. As the coin approaches terminal speed, it will experience a drag force up. However, since it has not yet hit terminal speed, the net force is still downward, but less than $mg$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": "Morin",
+    "problem": "You accelerate the two blocks in the figure below by\npushing on the bottom block with a force of $F$: The top block moves along with the\nbottom block. What force directly causes the top block to accelerate?\n\\begin{center}\n    \\includegraphics[width=5cm]{morin_2_block.png}\n\\end{center}\n\\begin{enumerate}[label=(\\Alph*)]\n\\item The normal force between the blocks\n\\item The friction force between the blocks\n\\item The gravitational force on the top block\n\\item The force you apply to the bottom block\n\\end{enumerate}",
+    "problem_images": [
+      "Forces_I Sols/morin_2_block.png"
+    ],
+    "solution": "Since only the bottom block is being pushed, the only forces that act on the mass $m$ are normal force, gravity, and friction between the blocks. the first two point vertically, so it must be friction which directly causes the top block to accelerate. <strong>B</strong>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "A box of mass $m$ is held up in the air by two strings, one of length $l_1$ and the other of length $l_2$. The strings make a right angle to one another at their connection point to the box, and the strings are both anchored to the ceiling. \n    \\begin{anum}\n        \\item Find the tensions $T_1$ and $T_2$ in the strings.\n        \\item If the string of length $l_1$ is cut, what is the instantaneous acceleration of the box? \n        \\item Find the relationship between $l_1$ and $l_2$ such that $a=0$ after the string of length $l_1$ is cut. \n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item Using right triangle properties, we have the following:\n    \\begin{center}\n        \\includegraphics[width=7cm]{strings.png}\n    \\end{center}\n    This tells us $\\alpha = \\arctan (l_1 / l_2)$. Now, since the two tensions must cancel out horizontally, $T_2/T_1 = \\tan \\alpha$. And the two tensions make a right triangle with gravity,\n    \\begin{center}\n        \\includegraphics[width=4cm]{forces_strings.png}\n    \\end{center}\n    so $T_2 = mg \\sin \\alpha$ and $T_1 = mg\\cos \\alpha$, which in terms of $l_1,l_2$ are $T_1 = \\frac{mg l_2}{\\sqrt{l_1^2+l_2^2}}$, $T_2 = \\frac{mg l_1}{\\sqrt{l_1^2+l_2^2}}.$\n    \\item Using the right triangle above, this just leaves a perpendicular component to string two, so $mg \\cos \\alpha$ is left, which gives an acceleration of $\\boxed{g\\cos \\alpha = g\\frac{l_2}{\\sqrt{l_1^2 + l_2^2}}}$.\n    \\item We must have $\\alpha = 0$, so $l_2/l_1 \\rightarrow 0$.\n    \\end{anum}",
+    "solution_images": [
+      "Forces_I Sols/strings.png",
+      "Forces_I Sols/forces_strings.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": "Morin",
+    "problem": "A bead is arranged to move at a constant velocity around a vertical loop. The net force on the bead is\n\\begin{enumerate}[label = (\\Alph*)]\n\\item largest at the bottom\n\\item largest at the top\n\\item largest at the sides\n\\item the same at all points\n\n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "The bead is always moving at a constant velocity, so it experiences no tangential acceleration and no tangential net force. The radial force keeping the bead moving in a circle is also constant, as the velocity and radius are both constant. Hence, the net force on the bead is constant at all points. <strong>D</strong>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "Alice has mass 50 kg and Amy has mass 50 kg. While they play Tug of War, Alice pulls on the rope with force 25 N while Amy pulls on the rope with a force 20 N. Find:\n    \\begin{anum}\n        \\item The acceleration $a$ of Alice.\n        \\item The minimal coefficient of friction $\\mu$ between their feet and the ground.\n        \\item The tension $T$ in the rope. \n    \\end{anum}",
+    "problem_images": [],
+    "solution": "This problem is broken, sorry!",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "You push three blocks $m_1,m_2,m_3$ with a force $F$ from the left (i.e. pushing on $m_1$ towards the right). What are the interacting normal forces $N_{12}$ and $N_{23}$ in terms of $F$ and the masses?\n    \\begin{center}\n        \\includegraphics[width=6cm]{three_blocks.png}\n    \\end{center}",
+    "problem_images": [
+      "Forces_I Sols/three_blocks.png"
+    ],
+    "solution": "The total acceleration of the masses is $\\frac{F}{m_1+m_2+m_3}$, so the acceleration of each mass is that. Then, analyzing forces on $m_3$,$$N_{23} = m_3a = \\frac{Fm_3}{m_1+m_2+m_3}.$$Similarly, considering the system of the right two blocks, $$N_{12} = \\frac{F(m_2+m_3)}{m_1+m_2+m_3}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "A block of mass $m$ is placed on a wedge of mass $m$, inclined at an angle $\\theta$ to the horizontal.\n\\begin{center}\n    \\includegraphics[scale=0.15]{wedgeblock}\n\\end{center}\nThe coefficients of friction between the block and wedge, and the wedge and ground, are high enough for\nboth the block and the wedge to remain static. What is the magnitude of the friction force of the ground\non the wedge?\n\\begin{enumerate}[label = (\\Alph*)]\n\\item $mg\\sin\\theta$\n\\item $mg\\cos\\theta$\n\\item $mg\\sin\\theta\\cos\\theta$\n\\item $mg\\tan\\theta$\n\\item 0\n\\end{enumerate}",
+    "problem_images": [
+      "Forces_I Sols/wedgeblock.png"
+    ],
+    "solution": "The force from the plane (sum of friction and normal) on the block is equal to $mg$ upward as it cancels out the gravitational force on the block. Thus, by Newton's third law, the force from the block on the plane is $mg$ downward. Thus, there is no horizontal force on the plane, and the magnitude of the frictino force on the wedge from the ground must be <strong>E</strong> $0$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "A box of mass $m$ lies on a horizontal frictionless surface. A rope with a gradually increasing tension force pulls on the block at an angle $\\theta$ above the horizontal, as shown. What is the acceleration of the block when it loses contact with the floor?\n    \\begin{center}\n        \\includegraphics[scale=0.3]{blockfly}\n    \\end{center}",
+    "problem_images": [
+      "Forces_I Sols/blockfly.png"
+    ],
+    "solution": "Analysis of forces in the x and y directions gives\\begin{gather}\n        F_x = T \\cos \\theta\\\\\nF_y = T \\sin \\theta - mg + N\n    \\end{gather}\nThe box loses contact with the floor if $N = 0$. At this moment, $F_y = 0$ since the net force has\njust become large enough to make the box move vertically. Thus,\n$$T =mg / \\sin \\theta.$$\nPlugging this into the equation for $F_x$,\n$$F_x = T \\cos \\theta =mg /\\tan \\theta.$$\nThe net force is purely in the $x$ direction since $F_y = 0$, so $\\sum F = mg/ \\tan \\theta$. By $F = ma$, the\nacceleration of the block is\n$$a =\n\\frac{\\sum F}{m}\n=\ng /\\tan \\theta$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A student steps onto a stationary elevator and stands on a bathroom scale. The elevator then travels from the top of the building to the bottom. The student records the reading on the scale as a function of time.\n    \\begin{center}\n    \\includegraphics[scale=.7]{elevator graph.PNG}\n\\end{center}\n\n    \\begin{anum}\n        \\item At what time(s) does the student have maximum downward velocity?\n        \\item How tall is the building?\n    \\end{anum}",
+    "problem_images": [
+      "Forces_I Sols/elevator graph.PNG"
+    ],
+    "solution": "The choices for this problem were not given, but sometimes it is more instructive to not have choices.\n\n\\begin{enumerate}[label = (\\alph*)]\n    \\item Let us think about what the scale reading means. If the scale reads $M$, then the net force downward on the student is given by $mg - Mg$ since a scale reads the normal force between the two surfaces. \n    \n    We know that initially the elevator is stationary, and thus $80 \\, \\mathrm{kg}$ is the equilibrium reading, and it is the mass of the student. So only when the value $M$ is less than $80 \\, \\mathrm{kg}$ will the student begin accelerating downwards. Thus, the student only accelerates downwards between 2s and 4s, and then remains at 0 net force, until the student accelerates upwards again. So the maximum downward velocity is <strong>between 4 and 22 seconds</strong>.\n    \\item We deduced earlier that the $F=mg-Mg$, so the acceleration downward at any point can be found using the scale reading, since $m = 80 \\, \\mathrm{kg}$. We also know the only points of acceleration are at 2-4s and 22-24s. Also by symmetry, the student comes to rest right after 24s. \n    \n    We can calculate the acceleration as $(20/80)g$ for 2-4s. So the distance covered here is $d_1 = \\tfrac{1}{2}\\cdot \\tfrac{g}{4}\\cdot 2^2 = 5 \\, \\mathrm{m}$. Then for 4-22 secs, it will be at constant velocity of $v =2\\cdot (20/80)g = 5 \\, \\mathrm{m/s}$. So this is $d_2= 18 \\cdot 5 = 90 \\,\\mathrm{m}$. Lastly, for 22-24 seconds, by symmetry $d_3 = 5 \\, \\mathrm{m}$. So the final answer is $\\boxed{100 \\, \\mathrm{m}}$.\n\\end{enumerate}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A particle slides down a rough inclined plane of elevation $\\theta$, fixed in an elevator going up with an acceleration $a_0$. The coefficient of friction between the particle and the plane is $\\mu$. Find the minimum value of $\\mu$ such that the block doesn't slip with respect to the plane (use $\\theta= \\frac{\\pi}{6}$).\n\\begin{center}\n    \n\\end{center}",
+    "problem_images": [],
+    "solution": "Let us draw the forces on the block in the elevator.\n\\begin{center}\n    \n\\end{center}\n\nNow at this point, we can set equations and solve for everything. However, we can employ one really neat trick. We add the vectors of the normal force and frictional force. Let us denote it as $\\vec{F} = \\vec{N} + \\vec{F_f}$. Now consider the direction of this vector. If this block isn't slipping in the elevator, then $\\vec{F}$ must point directly upwards. Why? If it didn't, since gravity is the only other force on the block remaining, there would be a net horizontal force, implying that the block moves on the ramp and slips.\n\nFor $\\vec{F}$ to point directly upwards, since $\\vec{N} \\perp \\vec{F_f}$, $\\tan \\theta = F_f/N$. Note that the minimum value of $\\mu$ implies that the block will be on the verge of slipping, or in other words, $F_f = \\mu N$. So then we have $\\boxed{\\mu = \\tan \\theta = \\sqrt{3}/3}$, and we are done. If you did try to set equations and everything, do not be disappointed or annoyed by this simple solution, because the more bashy method is the natural approach. However, take note of this idea.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A block of mass $m$ is attached to a massless string. The string is passed over a massless pulley\nand the end of the string is fixed in place. The horizontal part of the string has length $L.$ Now a\nsmall mass $m$ is hung from the horizontal part of the string, and the system comes to equilibrium.\n(Diagram not necessarily to scale.)\n\n\\begin{center}\n    \\includegraphics[width=0.6\\textwidth]{2020fmap9.png}\n\\end{center}\n\\begin{anum}\n    \\item Neglecting friction everywhere, what is the tension at the end of the string?\n    \\item During the process, how much has the right block been raised by?\n\\end{anum}\n\\begin{anum}\n    \\item By balancing forces on the right block, we get $mg$.\n    \\item Now balancing forces on the center block, if we let $\\theta$ be the angle that the string makes with the horizontal, we get $2T\\sin\\theta = mg \\implies \\sin\\theta = 1/2$. Thus, the new length of the string left of the pulley is $L/\\cos \\theta$, so the block rises by $L/\\cos \\theta - L \\approx 0.15L$.\n\\end{anum}",
+    "problem_images": [
+      "Forces_I Sols/2020fmap9.png"
+    ],
+    "solution": "Consider an infinitesimal arc of the rubber-band $d\\theta$. In the horizontal plane (the plane perpendicular to the axis of the cylinder), there are three forces on it: tension from the left, tension from the right, and the normal force. Balancing them, we get $$T\\frac{d\\theta}{2} + T\\frac{d\\theta}{2} = N \\implies N = Td \\theta.$$\n    Then, in the vertical plane, there is friction and gravity, so balancing those, $$g(dm) = \\mu T d \\theta.$$ And $dm = m\\frac{d\\theta}{2\\pi}$, so $\\mu = \\frac{mg}{2\\pi T}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A cylinder is placed with its axis vertical, and a rubber band of mass $m$ and tension $T$ is wrapped\nhorizontally around it. What is the minimum coefficient of static friction $\\mu$ between the rubber band and\nthe cylinder such that the band will not slide down the cylinder?",
+    "problem_images": [],
+    "solution": "Consider an infinitesimal arc of the rubber-band $d\\theta$. In the horizontal plane (the plane perpendicular to the axis of the cylinder), there are three forces on it: tension from the left, tension from the right, and the normal force. Balancing them, we get $$T\\frac{d\\theta}{2} + T\\frac{d\\theta}{2} = N \\implies N = Td \\theta.$$\n    Then, in the vertical plane, there is friction and gravity, so balancing those, $$g(dm) = \\mu T d \\theta.$$ And $dm = m\\frac{d\\theta}{2\\pi}$, so $\\mu = \\frac{mg}{2\\pi T}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Two masses with $m_1 > m_2$ are suspended from a pulley contraption as shown. The pulley and the supporting base are massless. If the system is released from rest, what is the normal force $N$ exerted by the ground on the supporting base?\n    \\begin{center}\n        \\includegraphics[scale=0.25]{pulleyblock.png}\n    \\end{center}",
+    "problem_images": [
+      "Forces_I Sols/pulleyblock.png"
+    ],
+    "solution": "We know from class that the acceleration of the masses are $\\frac{m_1 - m_2}{m_1+m_2}g$. So, we can find the tension in the string,\n    $$m_1g - T = \\frac{m_1-m_2}{m_1+m_2}(m_1g) \\implies T = \\frac{2m_1m_2}{m_1+m_2}g.$$Now, balancing forces on the pulley, considering the forces down from the left and right halves of the string, $$T + T = N \\implies N = \\frac{4m_1m_2}{m_1+m_2}g.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A mass $m_1$ is suspended from the ceiling by a thin thread as shown. A different mass $m_2$ is suspended underneath the mass $m_1$ via a stretchable spring. In equilibrium, find the tensions in the thread and the spring. If the thread is cut, what are the instantaneous accelerations $a_1$ and $a_2$ of the respective masses?\n    \\begin{center}\n        \\includegraphics[scale=0.15]{spring}\n    \\end{center}",
+    "problem_images": [
+      "Forces_I Sols/spring.png"
+    ],
+    "solution": "We first analyze the situation right before the string is cut. Analyzing the blocks as a combined entity, we find that the thread must hold up both masses, so it has tension $$T_\\text{thread} = (m_1 + m_2)g.$$ Analyzing the second block by itself, the tension in the spring must support its mass; therefore, $$T_\\text{spring} = m_2g.$$ Now let us analyze the situation after the thread is cut. The tension from the thread disappears, but the spring is still stretched—thus its tension still acts on the blocks. Thus for the first block, we find that a net force $F_1 = m_1g + T_\\text{spring} = m_1g + m_2g $ pulls it down. This equates to\nan acceleration\n$$a_1 =\\frac{F_1}{m_1}= g\\frac{m_1+m_2}{m_1}.$$\n\nFor the second block, a net force $F_2 = m_2g - T_\\text{spring} = m_2g -m_2g = 0$ acts on it. Hence it\nactually as zero acceleration:$$a_2 = 0.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kalda",
+    "problem": "A block rests on an inclined surface with slope angle $\\alpha$. The surface moves with a horizontal acceleration $a$ with a horizontal acceleration $a$. Determine the values of the coefficient of friction $\\mu$ that allows the block to remain still.\n    \\begin{center}\n        \\includegraphics[width=5cm]{kalda_accelerating_plane.png}\n    \\end{center}",
+    "problem_images": [
+      "Forces_I Sols/kalda_accelerating_plane.png"
+    ],
+    "solution": "We need the net force on the block to be equal to $ma$ horizontally. The vectors of $m\\vec{a}$, $m\\vec g$, and the combined normal and friction force $\\vec f$ form a triangle.\n    \\begin{center}\n        \\includegraphics[width=8cm]{bad_diagram.png}\n    \\end{center}\n    Using this, we see that the angle between the $\\vec f$ vector and the normal is $|\\arctan(a/g) - \\alpha|$, so we just need $\\arctan \\mu$ to be greater than this. So, we require $\\mu \\ge \\tan |\\arctan (a/g) - \\alpha|$.",
+    "solution_images": [
+      "Forces_I Sols/bad_diagram.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A particle slides down a smooth inclined plane of elevation $\\theta$, fixed in an elevator going up with an acceleration $a_0$. The base of the incline has a length $L$. Find the time taken by the particle to reach the bottom.\n\\begin{center}\n    \n\\end{center}",
+    "problem_images": [],
+    "solution": "The solution is quite simple if you use an accelerated reference frame and deal with fictitious forces (we'll see this later in the course). However we'll work with the lab frame to show how one would solve these problems in the lab frame.\n\nIf the horizontal acceleration is $a_x$, we have that the upward acceleration is $a_0 - a_x\\tan \\theta$ (You can imagine a still elevator and then add the vertical acceleration). Then we have the following,\n\\begin{align*}\nma_x &=N\\sin\\theta \\\\\nma_y &= ma_0 - ma_x\\tan \\theta = N\\cos \\theta-mg .\n\\end{align*}\nWe can then solve for $N$ in the second equation to obtain $$N = \\tan \\theta(mg + ma_0 - ma_x \\tan \\theta).$$\nSubstituting and solving for $a_x$ gives us $a_x = \\sin \\theta\\cos \\theta( a_0 + g)$. So applying kinematics,\n\\[t = \\boxed{\\sqrt{\\frac{2L}{\\sin \\theta \\cos \\theta (a_0 + g)}}}.\\]",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "PPP",
+    "problem": "In Victor Hugo's novel les Misérables, the main character Jean Valjean, an escaped prisoner, was noted for his ability to climb up the corner formed by the intersection of two vertical perpendicular walls. Find the minimum force with which he had to push on the walls whilst climbing. What is the minimum coefficient of static friction required for him to be able to perform such a feat?",
+    "problem_images": [],
+    "solution": "Drawing a proper diagram is key here, especially because the setup is a bit confusing. Here is a top-down diagram:\n    \\begin{center}\n        \\includegraphics[width=6cm]{les_mis.png}\n    \\end{center}\n    Now, looking at this, we see that the horizontal components of friction exactly cancel out the normal forces. Using this, we can write that at saturation,\n    $$0 = F_y = 2F_{f_y} - mg = 2\\sqrt{(\\mu N)^2 - N^2} - mg.$$\n    We see that for this to be possible we must have $\\boxed{\\mu > 1}$ and then pushing hard enough (large enough $N$) is sufficient. For computing the minimum force on each wall, we first have\n    $$N = \\frac{mg}{2} \\frac{1}{\\sqrt{\\mu^2 - 1}},$$ but for the total force we must sum the friction force and normal force which is bigger by $\\sqrt{1 + \\mu^2}$, so $F_{min} = \\frac{mg}{2} \\sqrt{\\frac{\\mu^2 + 1}{\\mu^2 - 1}}.$",
+    "solution_images": [
+      "Forces_I Sols/les_mis.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Forces_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kalda",
+    "problem": "A block is situated on a slope with angle $\\alpha$, the coefficient of friction between them is $\\mu > \\tan \\alpha$. The slope is rapidly driven back and forth in a way that its velocity vector $u$ is parallel to both the slope and the horizontal and has constant modulus $v$; the direction of $u$ reverses abruptly after each time interval $\\tau$. What will be the average velocity $w$ of the block’s motion? Assume that $g\\tau\\ll v$.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{kaldashiftingplane.png}\n    \\end{center}",
+    "problem_images": [
+      "Forces_I Sols/kaldashiftingplane.png"
+    ],
+    "solution": "By symmetry, on average, $\\vec w$ should point straight downward as it is hit left and right symmetrically. So, suppose the block has velocity $w$ straight down the plane. Then, consider a time interval here the plane is moving with velocity $u$ to the right. Then, in the plane of the frame, the block moves diagonally, and thus the friction force points diagonally:\n    \\begin{center}\n        \\includegraphics[width=8cm]{shifting_vectors.png}\n    \\end{center}\n    Now, the key idea is that for the steady state velocity downward to stay the same, there must be non net vertical forces. So, the two vectors must add as shown above and cancel out vertically. Thus, $$\\frac{1}{\\cos \\alpha} = \\mu \\cot \\theta.$$Then, using trig, we have $w = u\\cot \\alpha = u \\frac{1}{\\sqrt{(\\mu \\cot \\theta)^2 - 1}}.$",
+    "solution_images": [
+      "Forces_I Sols/shifting_vectors.png"
+    ],
+    "solution_type": "sol"
+  }
+]

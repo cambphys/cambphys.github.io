@@ -1,0 +1,226 @@
+[
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A novice skier, starting from rest, slides down an icy frictionless $8.0^\\circ$ incline whose vertical height is 105 m. How fast is she going when she reaches the bottom?",
+    "problem_images": [],
+    "solution": "By conservation of energy, we have\n    $$\\frac 12 mv^2 = mgh \\implies v = \\sqrt{2gh}.$$\n    Plugging in the numbers, we get $v = \\sqrt{2 \\cdot 9.8 \\cdot 105} = \\boxed{45.4\\,\\unit{m/s}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "In the high jump, the kinetic energy of an athlete is\ntransformed into gravitational potential energy without the\naid of a pole. With what minimum speed must the athlete\nleave the ground in order to lift his center of mass 2.10 m\nand cross the bar with a speed of 0.50 m/s?",
+    "problem_images": [],
+    "solution": "Using the conservation of energy principle, the minimum speed required for the athlete to reach a height of 2.10 m with a final speed of 0.50 m/s is found by solving the energy conservation equation $\\frac{1}{2} m v_i^2 = \\frac{1}{2} m v_f^2 + mgh$. This yields $v_i = \\boxed{6.44\\,\\text{m/s}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Two railroad cars, each of mass 66,000 kg, are traveling 85 km/h toward each other. They collide head-on and come\nto rest. How much thermal energy is produced in this\ncollision?",
+    "problem_images": [],
+    "solution": "The thermal energy produced in the collision of two railroad cars, each with mass 66,000 kg moving at 85 km/h towards each other, is calculated from their initial kinetic energies. The total thermal energy is $\\boxed{36,793,981.48\\,\\text{J}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 1.60-m-tall person lifts a 1.65-kg book off the ground\nso it is 2.20 m above the ground. What is the potential\nenergy of the book relative to (a) the ground, and (b) the\ntop of the person’s head? (c) How is the work done by the\nperson related to the answers in parts (a) and (b)?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item The potential energy of the book relative to the ground is $\\boxed{35.57\\,\\text{J}}$.\n    \\item Relative to the top of the person's head, the potential energy is $\\boxed{9.70\\,\\text{J}}$.\n    \\item The work done by the person is equal to the increase in the book's gravitational potential energy, corresponding to part (a) for lifting from the ground and the difference between (a) and (b) for lifting from the person's head to its final height.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 0.48-kg ball is thrown with a speed of 8.8 m/s at an\nupward angle of 36°. (a) What is its speed at its highest point,\nand (b) how high does it go? (Use conservation of energy.)",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item At the highest point, the ball's speed is solely due to its horizontal component, as the vertical component of the velocity becomes zero. The horizontal speed, $v_x$, can be found with $v_x = v \\cos(\\theta)$, where $v = 8.8\\,\\text{m/s}$ is the initial speed and $\\theta = 36^\\circ$ is the launch angle. Calculating this gives $v_x = 8.8 \\cos(36^\\circ) = \\boxed{7.12\\,\\text{m/s}}$.\n    \\item The height reached by the ball is determined by the conservation of energy principle. The initial vertical kinetic energy, $\\frac{1}{2}mv_y^2$, where $v_y = v \\sin(\\theta)$, is converted into gravitational potential energy at the peak, $mgh$. Solving $\\frac{1}{2}mv^2\\sin^2(\\theta) = mgh$ for $h$ gives the maximum height as $\\boxed{1.37\\,\\text{m}}$.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 1200-kg car moving on a horizontal surface has speed $v = 85$ km/h\nwhen it strikes a horizontal coiled spring and\nis brought to rest in a distance of 2.2 m. What is the spring\nstiffness constant of the spring?",
+    "problem_images": [],
+    "solution": "The spring stiffness constant, $k$, is determined by setting the work done by the spring, $\\frac{1}{2} k x^2$, equal to the kinetic energy of the car, $\\frac{1}{2} m v^2$, where $v = 85\\,\\text{km/h}$ is converted to meters per second and $x = 2.2\\,\\text{m}$ is the compression distance. Solving $\\frac{1}{2} k (2.2)^2 = \\frac{1}{2} (1200)(85/3.6)^2$ for $k$ yields $k = \\boxed{138,219.31\\,\\text{N/m}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "What should be the spring constant $k$ of a spring\ndesigned to bring a 1200-kg car to rest from a speed of 95 km/h so that the occupants undergo a maximum acceleration of 4.0 $g$?",
+    "problem_images": [],
+    "solution": "To design a spring that allows a car to decelerate at a maximum of $4.0g$ without exceeding this limit, we use the equation $F_{\\text{max}} = ma_{\\text{max}} = kx$. The maximum deceleration force, given by $ma_{\\text{max}}$, where $a_{\\text{max}} = 4.0g$ and $m = 1200\\,\\text{kg}$, must be equated to the spring force, $kx$. The stopping distance $x$ can be inferred from the work-energy principle, as the work done by the spring equals the car's initial kinetic energy. Solving this system shows that the spring constant needed is $k = \\boxed{5295.92\\,\\text{N/m}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 66-kg skier starts from rest at the top of a 1200-m-\nlong trail which drops a total of 230 m from top to bottom. At the bottom, the skier is moving 11.0 m/s. How much\nenergy was dissipated by friction?",
+    "problem_images": [],
+    "solution": "The energy dissipated by friction is found by comparing the skier's initial potential energy, $PE = mgh$, where $h = 230\\,\\text{m}$, to the final kinetic energy, $KE = \\frac{1}{2}mv^2$, where $v = 11.0\\,\\text{m/s}$. The difference, $PE_{\\text{initial}} - KE_{\\text{final}}$, accounts for the energy dissipated by friction, calculated as $\\boxed{144,771\\,\\text{J}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A projectile is fired at an upward angle of 38.0° from\nthe top of a 135-m-high cliff with a speed of 165 m/s. What\nwill be its speed when it strikes the ground below? (Use\nconservation of energy.)",
+    "problem_images": [],
+    "solution": "The projectile's speed when it strikes the ground is found using conservation of energy. The initial energy, combining kinetic and potential forms, is equal to the final kinetic energy at ground level:\n    $$E_{\\text{initial}} = \\frac{1}{2} m v_0^2 + mg h_0,$$\n    where $v_0 = 165\\,\\text{m/s}$ and $h_0 = 135\\,\\text{m}$. Solving for the final speed $v_f$ gives\n    $$v_f = \\boxed{172.84\\,\\text{m/s}}.$$\n    This result assumes that the only forces doing work are conservative; hence, air resistance is neglected.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 145-g baseball is dropped from a tree 12.0 m above\nthe ground. (a) With what speed would it hit the ground\nif air resistance could be ignored?",
+    "problem_images": [],
+    "solution": "The speed of the baseball hitting the ground, ignoring air resistance, is determined by converting its initial potential energy into kinetic energy:\n    $$v = \\sqrt{2gh},$$\n    with $h = 12.0\\,\\text{m}$. This gives a final speed of\n    $$v = \\boxed{15.34\\,\\text{m/s}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Continuing from the setup of the previous problem, do not ignore air resistance. If it actually hits the ground with a speed of 8.00 m/s, what is the average force of air resistance exerted on it?",
+    "problem_images": [],
+    "solution": "With air resistance, the actual speed is lower, at $8.00\\,\\text{m/s}$. The average force of air resistance is calculated by the difference in kinetic energy divided by the distance:\n    $$F_{\\text{air}} = \\frac{\\Delta KE}{h} = \\frac{\\frac{1}{2} m v_{\\text{without air}}^2 - \\frac{1}{2} m v_{\\text{with air}}^2}{h},$$\n    giving an average force of\n    $$F_{\\text{air}} = \\boxed{1.04\\,\\text{N}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A skier traveling 11.0 m/s reaches the foot of a steady\nupward 19° incline and glides 15 m up along this slope\nbefore coming to rest. What was the average coefficient of\nfriction?",
+    "problem_images": [],
+    "solution": "The average coefficient of friction as the skier glides up the incline is found by equating the work done against friction to the change in kinetic and potential energy. Solving for $\\mu$ gives\n    $$\\mu = \\frac{\\Delta KE + \\Delta PE}{mg\\cos(\\theta)d},$$\n    resulting in a coefficient of\n    $$\\mu = \\boxed{0.779}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A vertical spring (ignore its mass), whose spring constant is 875 N/m is attached to a table and is compressed down by 0.160 m. (a) What upward speed can it give to a\n0.380-kg ball when released? (b) How high above its original\nposition (spring compressed) will the ball fly?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item The speed given to the ball by the spring is found from\n        $$v = \\sqrt{\\frac{k x^2}{m}},$$\n        with $v = \\boxed{7.68\\,\\text{m/s}}$.\n        \\item The height above its original position the ball will reach is calculated by converting all the kinetic energy back into potential energy, giving\n        $$h = \\frac{k x^2}{2mg},$$\n        resulting in $h = \\boxed{3.00\\,\\text{m}}$ above the original position.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Jane, looking for Tarzan, is running at top speed (5.0 m/s)\nand grabs a vine hanging vertically from a tall\ntree in the jungle. How high can she swing upward? Does\nthe length of the vine affect your answer?",
+    "problem_images": [],
+    "solution": "Since Jane swings upward, her kinetic energy at the point of grabbing the vine is converted to potential energy at the highest point of the swing. At the highest point of her swing, all kinetic energy is converted into potential energy, and she momentarily stops, so her kinetic energy is zero.\n\nThe kinetic energy when she grabs the vine is:\n\\[ KE_{\\text{initial}} = \\frac{1}{2} m v^2 \\]\n\nThe potential energy at the highest point of her swing is:\n\\[ PE_{\\text{final}} = mgh \\]\n\nSetting \\( KE_{\\text{initial}} = PE_{\\text{final}} \\), we get:\n\\[ \\frac{1}{2} v^2 = gh \\]\n\nSolving for \\( h \\) (height she can swing upwards),\n\\[ h = \\frac{v^2}{2g} \\]\nwhere \\( v = 5.0\\,\\text{m/s} \\) and \\( g = 9.81\\,\\text{m/s}^2 \\).\n\nThis calculation gives:\n\\[ h = \\boxed{1.27\\,\\text{m}}. \\]\n\nThe length of the vine does not directly affect this calculation, as the energy conversion depends solely on her initial kinetic energy and the gravitational potential energy at the peak of her swing, assuming no energy is lost to air resistance or the vine's flexibility.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A roller-coaster car shown below is pulled up to\npoint 1 where it is released from rest. Assuming no friction,\ncalculate the speed at points 2, 3, and 4.\n\\begin{center}\n    \\includegraphics[width=5cm]{roller_coast.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_ConsEnergy Sols/roller_coast.png"
+    ],
+    "solution": "Using the conservation of mechanical energy, the speed at points 2, 3, and 4 can be calculated from the potential energy at point 1 being converted to kinetic energy at lower points. Assuming no friction, the mechanical energy at the top equals the mechanical energy at the other points:\n\nAt point 2:\n\\[ v_2 = \\sqrt{2g(h_1 - h_2)} = \\sqrt{2 \\times 9.81 \\times (32 - 0)} = \\boxed{25.06\\,\\text{m/s}}. \\]\n\nAt point 3:\n\\[ v_3 = \\sqrt{2g(h_1 - h_3)} = \\sqrt{2 \\times 9.81 \\times (32 - 26)} = \\boxed{10.85\\,\\text{m/s}}. \\]\n\nAt point 4:\n\\[ v_4 = \\sqrt{2g(h_1 - h_4)} = \\sqrt{2 \\times 9.81 \\times (32 - 14)} = \\boxed{18.79\\,\\text{m/s}}. \\]\n\nThis answers the third problem with no consideration of friction.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Suppose the roller-coaster car in the previous problem passes point 1\nwith a speed of 1.30 m/s. If the average force of friction is\nequal to 0.23 of its weight, with what speed will it reach\npoint 2? The distance traveled is 45.0 m.",
+    "problem_images": [],
+    "solution": "Using work-energy principles and the given distance of \\(45.0\\,\\text{m}\\), the speed at point 2 is calculated as follows:\n\\[ v_2 = \\sqrt{2 \\left( \\frac{1}{2} v_1^2 + g h_1 - 0.23 \\cdot g \\cdot d \\right)} \\]\nWith \\( v_1 = 1.30\\,\\text{m/s} \\), \\( g = 9.81\\,\\text{m/s}^2 \\), \\( h_1 = 32\\,\\text{m} \\), and \\( d = 45.0\\,\\text{m} \\), the speed at point 2 is:\n\\[ v_2 = \\boxed{20.65\\,\\text{m/s}}. \\]\nThis accounts for the energy lost to friction over the specified distance.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Early test flights for the space shuttle used a \"glider\"\n(mass of 980 kg including pilot). After a horizontal launch\nat 480 km/h at a height of 3500 m, the glider eventually\nlanded at a speed of 210 km/h. (a) What would its landing\nspeed have been in the absence of air resistance? (b) What\nwas the average force of air resistance exerted on it if it\ncame in at a constant glide angle of 12° to the Earth’s surface?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item In the absence of air resistance, the glider would have converted its potential energy entirely into kinetic energy. The final speed \\( v_{\\text{final}} \\) can be calculated by energy conservation:\n\\[\n\\Delta KE + \\Delta PE = 0 \\implies \\frac{1}{2} m v_{\\text{final}}^2 - \\frac{1}{2} m v_{\\text{initial}}^2 + mg h = 0.\n\\]\nSolving for \\( v_{\\text{final}} \\),\n\\[\nv_{\\text{final}} = \\sqrt{v_{\\text{initial}}^2 + 2gh} = \\sqrt{(133.33\\,\\text{m/s})^2 + 2 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 3500\\,\\text{m}} = 294.02\\,\\text{m/s}.\n\\]\n\\item The average force of air resistance \\( F_{\\text{air}} \\) can be calculated as:\n\\[\nF_{\\text{air}} = \\frac{\\Delta KE}{d},\n\\]\nwhere \\( \\Delta KE = KE_{\\text{initial}} - KE_{\\text{final}} \\), and \\( d \\) is the distance traveled, which can be calculated from the height \\( h \\) and the glide angle \\( \\theta \\):\n\\[\nd = \\frac{h}{\\sin \\theta} = \\frac{3500\\,\\text{m}}{\\sin 12^\\circ}.\n\\]\nThus,\n\\[\nF_{\\text{air}} = \\frac{7043750.00\\,\\text{J}}{d} \\approx 1006.25 \\cdot (\\sqrt{3} \\left( \\frac{1}{4} - \\frac{\\sqrt{5}}{4} \\right) + \\sqrt{\\frac{\\sqrt{5}}{8} + \\frac{5}{8}}).\n\\]\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "An engineer is designing a spring to be placed at the\nbottom of an elevator shaft. If the elevator cable breaks\nwhen the elevator is at a height $h$ above the top of the\nspring, calculate the value that the spring constant $k$ should\nhave so that passengers undergo an acceleration of no more\nthan 5.0 g when brought to rest. Let $M$ be the total mass\nof the elevator and passengers.",
+    "problem_images": [],
+    "solution": "The energy conservation principle implies that the potential energy lost by the falling elevator converts entirely into the elastic potential energy stored in the spring. The equations set up are:\n\\[\nMg(h+x) = \\frac{1}{2} k x^2,\n\\]\nwhere \\( x \\) is the maximum compression of the spring, which also relates to the force by \\( F = kx = Ma \\). Here, \\( a \\) is the deceleration and is limited to \\( 5g \\). Solving for \\( x \\) in terms of \\( k \\),\n\\[\nx = \\frac{Ma}{k},\n\\]\nSubstituting \\( x \\) back into the energy equation, we get:\n$$Mgh = \\frac 12 \\frac{M^2 a^2}{k} - \\frac{M^2 ag}{k}.$$\nSimplifying and solving for \\( k \\),\n$$k = \\frac{M^2a^2/2 - M^2ag}{Mgh} = \\frac{Ma^2/2 - Mag}{gh}.$$\nPlugging in $a = 5g$, we get\n$$k = \\frac{25g^2/2 - 5g^2}{g}\\frac{M}{h} = \\boxed{\\frac{15}{2}\\frac{Mg}{h}}.$$\nThis is the required spring constant to ensure a safe deceleration of no more than \\( 5g \\).",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A cyclist intends to cycle up a 7.50° hill whose vertical\nheight is 125 m. The pedals turn in a circle of diameter\n36.0 cm. Assuming the mass of bicycle plus person is\n75.0 kg, (a) calculate how much work must be done against\ngravity. (b) If each complete revolution of the pedals\nmoves the bike 5.10 m along its path, calculate the average\nforce that must be exerted on the pedals tangent to their\ncircular path. Neglect work done by friction and other\nlosses.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item The work done against gravity while cycling up a hill is:\n\\[\nW = mgh = 75.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 125\\,\\text{m} = 91968.75\\,\\text{J}.\n\\]\n\\item The average force exerted on the pedals, taking into account the actual travel along the slope and pedal mechanics:\n\\[\n\\text{Slope length} = \\frac{125\\,\\text{m}}{\\sin(7.50^\\circ)} \\approx 957.63\\,\\text{m}.\n\\]\nGiven each pedal revolution moves the bike 5.10 m,\n\\[\n\\text{Revolutions} = \\frac{957.63\\,\\text{m}}{5.10\\,\\text{m}} \\approx 187.77.\n\\]\n\\[\nd = 3.1416 \\cdot 0.36\\,\\text{m} \\cdot 187.77 = 213.53\\,\\text{m}.\n\\]\n\\[\nF = \\frac{91968.75\\,\\text{J}}{213.53\\,\\text{m}} \\approx 430.54\\,\\text{N}.\n\\]\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_ConsEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A block of mass $m$ lies on the top of a fixed cylinder of radius $R$. It is given an infinitesimal kick to the right and begins sliding along the outside of the cylinder. At what angle $\\theta$ from the top of the cylinder does the block lose contact?\n    \\begin{center}\n        \\includegraphics[width=4cm]{block_cylinder.png}\n    \\end{center}",
+    "problem_images": [
+      "AP1_ConsEnergy Sols/block_cylinder.png"
+    ],
+    "solution": "Again, we use the idea that just before losing contact, the normal force is equal to $0$. So analyzing forces at the position $\\theta$, with no normal force $$\\frac{mv^2}{R} = mg \\cos \\theta.$$ Similarly, by conservation of energy, $$\\frac 12 mv^2 = mg R - mg R \\cos \\theta.$$ Plugging in the first equation into the second, we get $$\\frac 32 mg R \\cos \\theta = mgR \\implies \\cos \\theta = \\frac 23,$$ so we get $\\boxed{\\theta = \\cos^{-1}(2/3)}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

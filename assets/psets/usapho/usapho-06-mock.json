@@ -1,0 +1,26 @@
+{
+  "total": 2,
+  "time_limit_seconds": 3600,
+  "problems": [
+    {
+      "num": 1,
+      "problem": "See problem statement and answer sheets \\href{https://drive.google.com/file/d/1Ppyd31iieYWaprdalgzkgx8ewSoMahxF/view?usp=sharing}{here} (printable).",
+      "solution": "See solutions \\href{https://aapt.org/physicsteam/2019/upload/USAPhO-2018-Solutions.pdf}{here}.",
+      "problem_images": [],
+      "solution_images": []
+    },
+    {
+      "num": 2,
+      "problem": "An oscilloscope is a machine that can generate different types of oscillating voltage distributions. You'll use these a lot at camp. \n    \\begin{center}  \n        \\includegraphics[scale=0.15]{oscilo}\n    \\end{center}\n    We first analyze what happens when the oscilloscope outputs a sinusoidal wave as shown:\n    \\begin{center}\n        \\includegraphics[scale=0.2]{sin}\n    \\end{center}\n    \\begin{anum}\n        \\item Find the RMS voltage of the sinusoidal wave in terms of $V_0$.\n        \\item The oscilloscope is connected to a series $RC$ circuit. Find the current $I(0)$ at $t=0$. Assume that the sinusoidal curve in the voltage graph above extends infinitely to the left of the graph. \n        \\item Over a very long period of time, find the average power supplied by the oscilloscope to the circuit. \n    \\end{anum}\n    Now we analyze what happens when the oscilloscope outputs a square wave as shown:\n    \\begin{center}\n        \\includegraphics[scale=0.22]{sq}\n    \\end{center}\n    \\begin{anum}\\addtocounter{enumi}{3}\n        \\item Find the RMS voltage of the square wave in terms of $V_0$.\n        \\item The oscilloscope is connected to a series $RC$ circuit, where $RC=t_0$. Assume that at $t=0$, the capacitor carries no charge. Find the current in the circuit immediately after times $t=0$, $t=t_0$, $t=2t_0$, and $t=3t_0$. \n        \\item Over a very long period of time, find the average power supplied by the oscilloscope to the circuit. \n    \\end{anum}",
+      "solution": "\\begin{anum}\n        \\item By the definition of RMS, $$V_{\\text{rms}}=\\sqrt{\\overline{V_0^2\\cos^2\\omega t}}=\\sqrt{\\frac{V_0^2}{2}}=\\boxed{\\frac{V_0}{\\sqrt{2}}}$$\n        \\item Using the phasor method, our diagram is as such: \\begin{center}\n            \\includegraphics[scale=0.2]{triangle}\n        \\end{center}\n        From the right triangle, the amplitude of $I$ is $I_0=\\mathcal E_0/\\sqrt{R^2+(1/\\omega C)^2}$ and the phase angle is $\\varphi=\\tan^{-1}(1/\\omega RC).$ At $t=0$ the voltage $V$ is set along the real axis as shown, so we simply have $$I(0)=I_0\\cos\\varphi=\\boxed{\\frac{\\mathcal E_0R}{R^2+1/\\omega^2C^2}}$$\n        \\item From our definition of power, $$P=\\frac{\\mathcal E_0I_0}{2}\\cos\\varphi=\\boxed{\\frac{\\mathcal E_0^2R}{2(R^2+1/\\omega^2C^2)}}$$\n        \\item The RMS voltage is simply $V_{\\text{rms}}=\\boxed{V_0}$. \n        \\item At time $t=0$, the current is $I_0=V_0/R$ since there is no voltage on the capacitor. Let $r=1/e$. Since the time constant of the circuit is exactly $t_0$, the current will decay to $rI_0$ at $t=t_0$ right before the switch. At this point the capacitor carries voltage $V_0(1-r)$. When the switch happens, the (magnitude of) voltage on the resistor thus jumps to $V_0(2-r)$. The current then decays again exponentially and becomes $I_0r(2-r)$ before the next switch. After the switch, the current becomes $I_0(2-r(2-r)).$ This pattern continues. To summarize, the results are in the following table (remember $I_0=V_0/R$ and $r=1/e$): \\begin{center}\n\\begin{tabular}{|c|c|}\n\\hline\n$t$ & $I$ \\\\\n\\hline \n0 & $I_0$\\\\\n$t_0$ & $I_0(2-r)$\\\\\n$2t_0$ & $I_0(2-r(2-r))$\\\\\n$3t_0$ & $I_0(2-r(2-r(2-r)))$\\\\\n\\hline\n\\end{tabular}\n\\end{center}\n    \\item It's clear to see that eventually the magnitude of current (its value measured immediately after each switch) stabilizes. Let this asymptotic value be $xI_0$. Then, it holds that $$2-rx=x\\Rightarrow x=\\frac{2}{1+r}$$ Now, the average power is the average power dissipated in the resistor. The total energy lost between two switches in the long-term equilibrium is found via $$E=\\int_0^{RC}(xI_0e^{-t/RC})^2R\\, dt=\\left(\\frac{2}{1+r}\\right)^2I_0^2R\\int_0^{RC}e^{-2t/RC}\\, dt=\\frac{2(1-r)}{1+r}I_0^2R^2C$$ and dividing through by $t_0=RC$, the average power is thus $$P=\\frac{2(1-r)}{1+r}\\frac{V_0^2}{R}=\\boxed{\\frac{2(e-1)}{e+1}\\frac{V_0^2}{R}}$$\n    \\end{anum}",
+      "problem_images": [
+        "AC_Circuits Sols/oscilo.jpeg",
+        "AC_Circuits Sols/sin.png",
+        "AC_Circuits Sols/sq.png"
+      ],
+      "solution_images": [
+        "AC_Circuits Sols/triangle.png"
+      ]
+    }
+  ]
+}

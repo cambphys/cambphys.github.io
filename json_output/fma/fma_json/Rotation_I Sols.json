@@ -1,0 +1,259 @@
+[
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "A wheel rotating at $180\\,\\unit{rpm}$ begins decelerating at $5 \\,\\unit{rpm/s}$ until rest. How many rotations does it make? Be careful with units here!",
+    "problem_images": [],
+    "solution": "We can note that it takes $180/5 = 36 \\,\\unit{s}$ for it to get to rest. So, it makes\n    $$90\\cdot \\frac{36}{60} = 54\\,\\unit{rotations}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "Suppose darker region's indicate higher densities. Assuming each of the following cylinders are placed on the same incline plane and roll without slipping, rank the time it takes for each of them to reach the bottom from lowest to highest.\n    \\begin{center}\n        \\includegraphics[width=0.5\\textwidth]{cylinderes.png}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_I Sols/cylinderes.png"
+    ],
+    "solution": "As we derived in class, the acceleration is proportional to $(1+\\beta)^{-1}$, so the shortest time will be the one with the smallest $\\beta$. To do this, we can intuitively think about the average $r^2$ of the mass, as the larger the average $r^2$ is, the larger the $\\beta$ is. So, clearly (c) is the largest, (b) is the smallest, (a) and (e) are equal, and (d) is between (a) and (c). So, $\\boxed{\\mathrm{(b)<(a)=(e)<(d)<(c)}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "You are trying to stop a spinning wheel by pressing on its edge. The wheel is a uniform disk of mass $M$ and radius $R$, with coefficient of friction $\\mu$ with your hand. If it's currently spinning at $5 \\,\\unit{rad/s}$, what is the minimum normal force you have to exert to stop it within $5 \\, \\unit{s}$?",
+    "problem_images": [],
+    "solution": "This is simply a direct application of $\\tau = I\\alpha$. We have\n    $$(\\mu N)R = \\tau = \\frac{MR^2}{2} \\alpha = \\frac{MR^2}{2}(1\\,\\unit{rad/s^2} \\implies N = \\frac{MR}{2\\mu}.$$\n    Note that the units look incorrect, but this is just because we've absorbed a $1\\,\\unit{rad/s^2}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "A rigid ball of radius $R$ is rolling without slipping along the rib of a right-angle chute, as shown in the figure. Which of the point(s) of the ball have the maximum speed?\n    \\begin{center}\n        \\includegraphics[width=8cm]{chute.png}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_I Sols/chute.png"
+    ],
+    "solution": "The instantaneous axis / center of rotation is going to be the line through the points $A$ and $B$ as the rolling without slipping condition ensures that their velocities are $0$. Thus, point $\\boxed{Q}$ has the maximum speed.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "What is the minimum coefficient of static friction necessary for a solid sphere to roll without slipping down a plane inclined at $\\theta$?",
+    "problem_images": [],
+    "solution": "As we derived from class, the acceleration of the sphere is\n    $$a = \\frac{g \\sin \\theta}{1 + 2/5} = \\frac 57 g\\sin \\theta,$$\n    so by $F=ma$, the force of friction is\n    $$F_f = mg\\sin \\theta - \\frac 57 mg \\sin \\theta = \\frac 27 mg \\sin \\theta,$$\n    so $\\mu \\ge F_f/mg\\cos \\theta = \\boxed{\\frac 27 \\tan \\theta}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": "$F=ma$",
+    "problem": "A wheel of radius $R$ is rolling without slipping with angular velocity $\\omega$.\n    \\begin{center}\n        \\includegraphics[width=7cm]{fma_rolll_speed.png}\n    \\end{center}\n    For point $A$ on the wheel at an angle $\\theta$ with respect to the vertical, shown in the figure, what is the magnitude of its velocity with respect to the ground?",
+    "problem_images": [
+      "Rotation_I Sols/fma_rolll_speed.png"
+    ],
+    "solution": "We can use the fact that the bottom of the wheel is the instantaneous center of rotation. So, since the distance of the bottom of the wheel from point $A$ is $2R\\sin (\\theta / 2)$, so the speed is $v = \\boxed{2\\omega R \\sin (\\theta / 2)}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": "HRK",
+    "problem": "Wheel $A$ of radius $r_A = 10.0\\,\\unit{cm}$ is coupled by a belt $B$ to wheel $C$ of radius $r_C = 25.0\\,\\unit{cm}$ as shown. Wheel $A$ increases its angular speed from rest at a uniform rate of $1.60 \\,\\unit{rad/s^2}$. Determine the time for wheel $C$ to reach a rotational speed of $100\\,\\unit{rev/min}$, assuming the belt does not slip.\n    \\begin{center}\n        \\includegraphics[width=6cm]{hrk_belt.png}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_I Sols/hrk_belt.png"
+    ],
+    "solution": "Because the linear speed of the belt is the same, we have that\n    $$\\omega_A r_A = \\omega_C r_C \\implies \\omega_A = \\omega_C \\frac{r_C}{r_A}.$$Thus, when wheel $C$ reaches 100 rev/min, wheel $A$ reaches $(10.47 \\, \\unit{rad/s})r_C/r_A = 26.18\\,\\unit{rad/s}$. So, we have $t = (26.18)/(1.60\\,\\unit{rad/s^2}) = \\boxed{16.4\\,\\unit s}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Consider the apparatus below, where the wheel plus axle roll down the string which remains vertical. If the wheel has mass $M$, radius $R$, and the axle is massless with radius $r$, find the acceleration of the wheel plus axle system.\n    \\begin{center}\n        \\includegraphics[width=4cm]{maxwell_wheel_better.png}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_I Sols/maxwell_wheel_better.png"
+    ],
+    "solution": "Consider force and torque on the wheel-and-axle. We have\n    \\begin{align*}\n        Ma &= Mg - T,\\\\\n        \\frac 12 MR^2 \\alpha &= Tr.\n    \\end{align*}\n    Then, plugging in rolling without slipping, $a = \\alpha r$, and adding the two equations, we get\n    $$\\left(1 + \\frac{R^2}{2r^2}\\right) Ma = Mg \\implies a = \\boxed{\\frac{2r^2}{2r^2+R^2} g}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Let's prove the parallel axis theorem. Consider a collection of $n$ masses $m_1,\\ldots, m_n$ at positions $\\mathbf r_1,\\ldots,\\mathbf r_n$ from the center of mass. Assume that all the masses lie in a plane and that the all the axes that we discuss in this problem are perpendicular to that plane.\n    \\begin{anum}\n        \\item First, write down the moment of inertia about an axis perpendicular to the center of mass as a sum over masses.\n        \\item Now, consider an axis shifted by $\\mathbf r_0$ with respect to the center of mass. Then, using the distributive property of the dot product, simplify this to recover the parallel axis theorem. \\textit{Hint:} remember that $|\\mathbf r|^2 = \\mathbf r \\cdot \\mathbf r$.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item By definition, we have\n    $$I = \\sum_i m_i |\\mathbf r_i|^2.$$\n    \\item By definition again, we have\n    \\begin{align*}\n    I_{\\mathbf r_0} = \\sum_i m_i |\\mathbf r_i - \\mathbf r_0|^2 &= \\sum_i m_i (\\mathbf r_i - \\mathbf r_0) \\cdot  (\\mathbf r_i - \\mathbf r_0)\\\\\n    &= \\sum_i m_i (|\\mathbf r_i|^2 - 2 \\mathbf r_i \\cdot \\mathbf r_0 + |\\mathbf r_0|^2)\n    &= I_{\\text{CM}} - 2 \\mathbf r_0 \\cdot \\sum_i m_i \\mathbf r_i + |\\mathbf r_0|^2 \\sum_i m_i.\n    \\end{align*}\n    Now, note that since we placed the origin at the center of mass, $\\sum_i m_i \\mathbf r_i = 0$ by definition (from last week), so the second term disappears, and we are left with\n    $$I = I_{\\text{CM}} + |\\mathbf r_0|^2 \\sum_i m_i = I_{\\text{CM}} + Md^2,$$\n    as desired.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "The moment of inertia of a uniform equilateral triangle with mass $m$ and side length $a$ about an axis through one of its sides and parallel to that side is $(1/8)ma^2$. What is the moment of inertia of a uniform regular hexagon of mass $M$ and side length $a$ about an axis through two opposite vertices?",
+    "problem_images": [],
+    "solution": "A regular hexagon is composed of $4$ triangles in the orientation given in the problem, and then two additional triangles which have different orientations (axis through a vertex). First, by parallel axis theorem,\n    $$I_{CM} = \\frac 18 ma^2 - m (a/2\\sqrt 3)^2 = \\frac {1}{24} ma^2.$$\n    Then, the $I$ with the axis through the vertex is\n    $$I_{v}  = \\frac 1{24} ma^2 + m(a/\\sqrt 3)^2 = \\frac{3}{8}ma^2.$$\n    So, the total moment of inertia is\n    $$I = \\left(\\frac{4}{8} + \\frac{6}{8}\\right)\\frac{ma^2}{6} = \\boxed{\\frac{5}{24}ma^2}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A spherical shell of mass $M$ is filled with friction-less ideal water with mass $m$. What is the acceleration of this object down a plane angled at $\\theta$ with respect to the horizon? Assume that the water is irrotational and essentially just translates down the plane.",
+    "problem_images": [],
+    "solution": "The standard procedure of torque about the center of mass works here (the only difference is that the mass of the water doesn't add to the moment of inertia as it doesn't rotate). So,\n\\begin{align*}\n    (M+m)a = (M+m)g\\sin \\theta - F_f,\\\\\n    \\frac{2}{3} MR^2(a/R) = F_f R.\n\\end{align*}\nAdding the two equations,\n$$(m + \\frac{5}{3}M)a = (M + m) g \\sin \\theta,$$\nso $a = \\frac{M+m}{m+5M/3}g\\sin \\theta$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "In all previous problem sets, we've considered pulleys as \\textit{massless}. Now that we've learned about torque and moment of inertia, we can now treat a pulley with mass. Consider the classic Atwood's machine, which has masses $m_2 > m_1$ and a pulley which is a uniform disk of mass $m_p$ and radius $r$. Find the acceleration of the masses.\n    \\begin{center}\n        \\includegraphics[width=6cm]{massive_atwood.png}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_I Sols/massive_atwood.png"
+    ],
+    "solution": "Let the tension on the left side of the pulley be $T_1$ and the tension on the right side of the pulley be $T_2$. Then, we can write the following force and torque equations:\n    \\begin{align*}\n        m_2a &= m_2g - T_2,\\\\\n        m_1a &= T_1 - m_1g,\\\\\n        \\frac{1}{2} m_p r^2 \\alpha &= (T_2 - T_1)r.\n    \\end{align*}\n    Then, writing the rolling without slipping condition, $\\alpha = a/r$, and adding the three equations, we get\n    $$(m_1+m_2 + m_p/2)a = (m_2 - m_1)g \\implies a = \\boxed{\\frac{m_2 - m_1}{m_1 + m_2 + m_p/2}a}.$$\n    Note that this looks like the pulley carries an effective mass $\\beta m$ and we have all the masses along a line. This is the sort of idea used in generalized coordinates in lagrangian mechanics.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "In lecture, we found the moment of inertia of a fractal pattern. Here's another one! Find the moment of inertia of a sierpinski triangle with total mass $m$ and side length $l$ about the axis through its center.\n    \\begin{center}\n        \\includegraphics[width=6cm]{sierpinski_morin.png}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_I Sols/sierpinski_morin.png"
+    ],
+    "solution": "We proceed as we did in lecture. We can write down the moment of inertia as a sum of the moment of inertias of the three triangles. Note that the mass of each one is a third and the length scale is a half, so using the parallel axis theorem,\n    $$I = 3\\left(\\frac{1}{12}I + (m/3)(l\\sqrt{3}/6)^2\\right) = \\frac{I}{4} + \\frac{ml^2}{12}.$$\n    So, solving, we get $I = ml^2/9$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Krotov",
+    "problem": "A light rod with length 3l is attached to the ceiling by two strings with equal lengths. Two balls with masses m and M are fixed to the rod, the distance between them and their distances from the ends of the rod are all equal to l. Find the tension in the second string right after the first has been cut.\n    \\begin{center}\n        \\includegraphics[width=6cm]{krotov_falling rod.png}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_I Sols/krotov_falling rod.png"
+    ],
+    "solution": "We proceed similarly to the problem in lecture. We have about the left end-point,\n    $$\\tau = mgl + 2Mgl = I\\alpha.$$\n    And $I = ml^2 + 4Ml^2$. Thus,\n    $$\\alpha = \\frac{mg + 2Mg}{ml + 4Ml}.$$\n    Then, we can write $F=ma$,\n    $$(M+m)g - T_2 = (M+m)\\alpha r_{\\text{cm}} = (M+m)\\frac{m+2M}{m + 4M}\\frac{g}{l} \\frac{ml + 2Ml}{m+M}.$$\n    Rearranging for $T_2$, we get\n    $$T_2 = (M+ m)g - \\frac{(m+2M)^2}{m+4M}g = \\boxed{\\frac{Mm}{m+4M}g}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A uniform sphere of mass $m$ and radius $r$ is initially sliding with $0$ angular velocity and translational velocity $v_0$. If the ground has coefficient of kinetic friction $\\mu$ and sufficient static friction, how long does it take for the sphere to begin rolling without slipping?",
+    "problem_images": [],
+    "solution": "If it is slipping, we can first write\n    $$ma = -\\mu mg \\implies a = -\\mu g.$$\n    Then, using force and torque,\n    $$\\tau = \\mu mg r = I\\alpha \\implies \\alpha = \\frac{\\mu mgr}{\\frac{2}{5} mr^2} = \\frac{5\\mu g}{2r}.$$\n    So, as a function of time,\n    \\begin{align*}\n        v(t) &= v_0  - \\mu g t,\\\\\n        \\omega(t) &= \\frac{5\\mu g}{2r}t.\n    \\end{align*}\n    So, it stops slipping when $v(t) = \\omega(t)r$, meaning\n    $$v_0 - \\mu g t = \\frac{5\\mu g}{2}t \\implies v_0 = \\frac{7}{2}\\mu g t \\implies t = \\boxed{\\frac{2v_0}{7\\mu g}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kalda",
+    "problem": "A rigid lump has been squeezed between two plates, one of which is moving at velocity $v_1$ and the other at $v_2$. At the given moment, velocities are horizontal and the contact points of the lump and plates are aligned. In the figure, mark all points of the lump with velocity modulus equal to $v_1$ or $v_2$.\n\\begin{center}\n    \\includegraphics[width=5cm]{kalda_plate_lump.png}\n\\end{center}",
+    "problem_images": [
+      "Rotation_I Sols/kalda_plate_lump.png"
+    ],
+    "solution": "We use the idea of instantaneous center of rotation. Rotation means perpednicular velocities from the lines from the center. Thus, the center must lie on the dashed line. Specifically, it will lie in a ratio $\\frac{v_1}{v_1+v_2}L$ from the top if $L$ is the distance between the plates. Then, the points on the lump with the same velocity are:\n    \\begin{itemize}\n        \\item For $v_1$: a circle of radius $\\frac{v_1}{v_1+v_2}L$ centered at ${v_1}{v_1+v_2}L$ from the top.\n        \\item For $v_2$: a circle of radius $\\frac{v_2}{v_1+v_2}L$ centered at ${v_1}{v_1+v_2}L$ from the top.\n    \\end{itemize}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "You have a spool of yarn, which has mass $M$, outer radius $R$ and inner radius $r$. You pull some of its yarn with tension $T$ horizontally. What is the spool's acceleration (both magnitude and direction)? Assume that the spool does not slip w.r.t. to the ground. What if you pull vertically (both magnitude and direction)?\n    \\begin{center}\n        \\includegraphics[width=9cm]{spool.png}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_I Sols/spool.png"
+    ],
+    "solution": "We can write down force and torque for the spool. \n    \\begin{align*}\n        ma &= T - F_f,\\\\\n        \\frac{MR^2}{2}I \\alpha &= F_fR - Tr.\n    \\end{align*}\n    We can write $\\alpha R = a$, so, dividing out $R$ and adding,\n    $$(m + M/2)a = T (1 - r/R) \\implies a = T\\frac{1 - r/R}{m + M/2}.$$\n    This is to the right. Then, for the vertical case, we have\n    \\begin{align*}\n        ma &= -F_f,\\\\\n        \\frac{MR^2}{2} I \\alpha & = F_f R - Tr.\n    \\end{align*}\n    Using $\\alpha R = a$ again, we get \n    $$(m + M/2)a = -Tr/R \\implies a = - \\frac{Tr/R}{m + M/2}.$$\n    This is to the left!\n\n    Here's something to note. Try taking torque about the bottom point -- the instantaneous center of rotation, for both cases:\n    \\begin{align*}\n    \\tau &= T(R -r) = I \\alpha = (MR^2/2 + Mr^2) \\alpha,\\\\\n    \\tau &= Tr = I \\alpha = (MR^2/2 + Mr^2)\\alpha.\n    \\end{align*}\n    These equations give the answer much quicker! This idea of taking torque about a non-conventional point and the general spool problem will be explored during the statics week.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kalda",
+    "problem": "Consider two rings with radius $r$ as depicted in the figure: the blue ring is at rest, and the yellow ring rotates around the point $O$ (which is one of the intersection points of the two rings) with a constant angular speed $\\omega$. Find the minimal and maximal speeds $v_{\\text{min}}$ and $v_{\\text{max}}$ of the other intersection point of the two rings.\n    \\begin{center}\n        \\includegraphics[width=6cm]{kalda_spin_rings.png}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_I Sols/kalda_spin_rings.png"
+    ],
+    "solution": "The trick here is to take the rotating reference frame, much like in the kinematics week. in the frame rotating at $\\omega/2$ counterclockwise, the two rings rotate into each other symmetrically at $\\omega/2$ each. Then, with a little bit of geometry, letting $\\theta$ be the angle of the intersecting arcs, the point moves straight up at\n    $$v_y = \\frac{d}{d\\theta}(2r \\sin (\\theta / 2) ) \\frac{d\\theta}{dt} = r \\cos (\\theta / 2) \\omega.$$\n    Then, the speed in the original frame is\n    $$\\sqrt{v_y^2 + ((\\omega/2)  2r \\sin (\\theta / 2))^2} = \\omega r \\sqrt{\\sin^2 (\\theta / 2) + \\cos^2 (\\theta / 2)} = \\omega r.$$\n    So, $v_{\\text{min}} = v_{\\text{max}} = \\omega r.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "Find the moment of inertia of a uniform square about an axis perpendicular to its center. There are two ways to do this: integration and splitting the square into four smaller squares and using scaling laws + parallel axis theorem. Now, with no additional work, find the moment of inertia of a uniform square through one of its diagonals.",
+    "problem_images": [],
+    "solution": "We'll show the slick method. By scaling law, the moment of inertia of a smaller square is $$I_s = \\frac{1}{4}\\left(\\frac 12\\right)^2 I = I/16.$$ And by parallel axis theorem, about a corner the moment of inertia of a small square is $$I_{s,v} = I/16 + \\frac{m}{4} \\left(\\frac{a}{2\\sqrt 2}\\right)^2 = \\frac{I}{16} + \\frac{ma^2}{32}.$$\n    Thus,\n    $$I = 4I_{s,v} = \\frac{I}{4} + \\frac{ma^2}{8} \\implies I = \\frac{ma^2}{6}.$$By the perpendicular axis theorem, for one of its diagonals, we have $$I = I_d + I_{d'} = 2I_d \\imples I_d = \\frac{ma^2}{12}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kleppner-Kolenkow",
+    "problem": "A heavy uniform bar of mass $M$ rests on top of two identical rollers that are continuously turned rapidly in opposite directions, as shown. The centers of the rollers are a distance $2l$ apart. The coefficient of friction between the bar and the roller surfaces is $\\mu$, a constant independent of the relative speed of the two surfaces. Initially the bar is held at rest with its center at distance $x_0$ from the midpoint of the rollers. At time $t = 0$ it is released. Find the subsequent motion of the bar.\n    \\begin{center}\n        \\includegraphics[width=7cm]{rollers.png}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_I Sols/rollers.png"
+    ],
+    "solution": "By torque balance on the bar, we that the normal forces are\n    $$2l N_r = mg (l+x_0) \\implies N_r = mg\\frac{l+x_0}{2l},$$\n    and $$N_l = mg\\frac{l - x_0}{2l}.$$ Thus, the net horizontal force on the bar is $$F = ma = -\\mu N_r + \\mu N_l = -\\mu \\frac{2x_0}{2l}mg = -\\mu mgx_0/l.$$\n    This is the equation form for an oscillation (which we'll learn later). So, the bar will oscillate about the middle point.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Rotation_I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "$F=ma$",
+    "problem": "A smooth ring of radius $R$ and mass $m$ lies on a frictionless surface. A point mass, also of mass $m$, is placed just inside the ring and given a speed $v$ tangent to the inner surface of the ring. How long does it take for the point mass to return to its initial position relative to the ring? \\textit{Hint:} a good reference frame is extremely helpful here.\n    \\begin{center}\n        \\includegraphics[width=5cm]{fma_ball_ring.png}\n    \\end{center}",
+    "problem_images": [
+      "Rotation_I Sols/fma_ball_ring.png"
+    ],
+    "solution": "Consider the reference frame moving at $v/2$ tot he right. Then, the ball is moving to the right at $v/2$ and the ring is moving to the left at $v/2$. Then, since the center of mass, which is halfway between the ball and the center of the ring, must stay still, the motion of the ball and ring will be the two orbiting the center of mass with velocity $v/2$ in this frame.\n\n    Now, for the ball to return to the smae position relative to the ring, it just needs to return to the top as the ring will not rotate (it's smooth so no torque on it). Thus, the time is simply\n    $$t = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{(v/2)/(r/2)} = \\boxed{\\frac{2\\pi r}{v}},$$ which is the naive answer if you thought the ring was fixed, funnily enough.",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

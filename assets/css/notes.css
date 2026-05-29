@@ -1,0 +1,61 @@
+/* Wide display math + tables overflow horizontally inside their block. */
+mjx-container[display="true"] {
+  display: block !important;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+#notes-body table { display: block; max-width: 100%; overflow-x: auto; }
+
+/* Lecture notes page */
+.notes-wrap { max-width: 820px; margin: 1.5rem auto 3rem; padding: 0 1.25rem; }
+
+.notes-topbar {
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  padding-bottom: .75rem; border-bottom: 1px solid #ddd; margin-bottom: 1.25rem;
+}
+a.notes-back,
+a.notes-back:link,
+a.notes-back:visited,
+a.notes-back:hover,
+a.notes-back:active,
+a.notes-back:focus {
+  display: inline-block;
+  padding: .35rem .7rem;
+  font-size: .85rem;
+  font-weight: 500;
+  background: #e5e7eb;
+  color: #333;
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none !important;
+  line-height: 1.2;
+}
+a.notes-back:hover { background: #d1d5db; }
+.notes-title { margin: 0; font-size: 1.4rem; flex: 1; text-align: center; }
+
+.readings-box {
+  background: #f6f8fa; border-left: 4px solid #2f5d8c;
+  padding: .75rem 1.25rem; border-radius: 4px; margin-bottom: 1.5rem;
+}
+.readings-box h3 { margin: 0 0 .35rem; font-size: 1rem; color: #2f5d8c; }
+.readings-box ul { margin: 0; padding-left: 1.2rem; }
+.readings-box li { margin: .2rem 0; }
+
+#notes-body { line-height: 1.65; }
+#notes-body h1, #notes-body h2, #notes-body h3 { margin-top: 1.25rem; }
+#notes-body p { margin: .6em 0; }
+#notes-body ul, #notes-body ol { margin: .5em 0 .5em 1.5em; }
+
+#notes-body img {
+  max-width: 100%; height: auto; display: block;
+  margin: .75em auto; border: 1px solid #eee; border-radius: 4px;
+}
+
+/* Boxes from custom envs (defn, theorem, idea, tip, warning, remark) come
+   pre-styled with inline border-left/background colors from the generator. */
+#notes-body .note-box {
+  line-height: 1.55;
+}
+#notes-body .note-box p { margin: .35em 0; }
+#notes-body .note-box ul, #notes-body .note-box ol { margin: .35em 0 .35em 1.5em; }

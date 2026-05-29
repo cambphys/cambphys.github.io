@@ -1,0 +1,102 @@
+---
+layout: default
+title: Admin
+permalink: /admin/
+sitemap: false
+---
+
+<style>
+  .admin-wrap { max-width: 960px; margin: 2rem auto; padding: 0 1.5rem; }
+  .admin-wrap h1 { margin-top: 0; }
+  .filter-bar { display: flex; gap: 1rem; align-items: center;
+    margin: 1rem 0 1.5rem; flex-wrap: wrap; }
+  .filter-bar label { font-weight: 500; }
+  .req-card { border: 1px solid #ddd; border-radius: 8px; padding: 1.25rem;
+    margin-bottom: 1rem; background: #fff; }
+  .req-head { display: flex; justify-content: space-between;
+    align-items: flex-start; gap: 1rem; margin-bottom: .75rem; }
+  .req-head h3 { margin: 0; }
+  .req-sub { font-size: .85rem; color: #666; margin-top: .15rem; }
+  .course-tag { display: inline-block; margin-left: .5rem; padding: .1rem .5rem;
+    background: #2f5d8c; color: #fff; border-radius: 4px; font-size: .7rem;
+    vertical-align: middle; }
+  .badge { display: inline-block; padding: .2rem .6rem; border-radius: 4px;
+    font-size: .8rem; font-weight: 600; white-space: nowrap; }
+  .badge.ok      { background: #e6f4ea; color: #1b6b34; }
+  .badge.rej     { background: #fde7e9; color: #b00020; }
+  .badge.pending { background: #fff3cd; color: #8a6d00; }
+  .req-grid { display: grid; gap: .35rem .75rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: .75rem 0; font-size: .92rem; }
+  .req-proof { margin: .75rem 0 .5rem; font-size: .92rem; }
+  .req-actions { display: flex; gap: .5rem; margin-top: .75rem; }
+  .btn-approve, .btn-reject, .btn-undo, .btn-delete {
+    padding: .55rem 1rem; border: 0; border-radius: 4px;
+    font-weight: 600; cursor: pointer;
+  }
+  .btn-approve { background: #1b6b34; color: #fff; }
+  .btn-approve:hover:not(:disabled) { background: #155227; }
+  .btn-reject  { background: #b00020; color: #fff; }
+  .btn-reject:hover:not(:disabled)  { background: #8c0019; }
+  .btn-undo    { background: #e5e7eb; color: #333; }
+  .btn-undo:hover:not(:disabled)    { background: #d1d5db; }
+  .btn-delete  { background: #fff; color: #b00020; border: 1px solid #b00020; margin-left: auto; }
+  .btn-delete:hover:not(:disabled)  { background: #fde7e9; }
+  .btn-approve:disabled, .btn-reject:disabled, .btn-undo:disabled, .btn-delete:disabled {
+    background: #999; color: #fff; cursor: not-allowed; border-color: #999;
+  }
+  .muted { color: #777; font-style: italic; }
+  #unauthorized { display: none; padding: 2rem; background: #fde7e9;
+    border-radius: 6px; color: #b00020; }
+</style>
+
+<div class="admin-wrap">
+  <h1>Admin — Upgrade Requests</h1>
+
+  <div id="unauthorized">
+    <strong>Not authorized.</strong> This page is restricted to administrators.
+  </div>
+
+  <div id="admin-ui" style="display:none;">
+    <div class="filter-bar">
+      <label><input type="radio" name="filter" value="pending" checked> Pending</label>
+      <label><input type="radio" name="filter" value="approved"> Approved</label>
+      <label><input type="radio" name="filter" value="rejected"> Rejected</label>
+      <label><input type="radio" name="filter" value="all"> All</label>
+      <button type="button" id="refresh-btn" style="margin-left:auto;
+        padding:.45rem .85rem; background:#2f5d8c; color:#fff; border:0;
+        border-radius:4px; cursor:pointer;">Refresh</button>
+    </div>
+    <div id="req-list"><p class="muted">Loading…</p></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/assets/js/supabase-config.js"></script>
+<script src="/assets/js/auth.js"></script>
+<script src="/assets/js/admin.js"></script>
+<script>
+  (async function () {
+    try {
+      const user = await window.cambphysAuth.requireAuth();
+      if (!user) return;
+      if (!(await window.cambphysAuth.isAdmin())) {
+        document.getElementById("unauthorized").style.display = "block";
+        return;
+      }
+      document.getElementById("admin-ui").style.display = "block";
+      await window.cambphysAdmin.refresh();
+
+      document.querySelectorAll('input[name="filter"]').forEach(r =>
+        r.addEventListener("change", () => window.cambphysAdmin.refresh())
+      );
+      document.getElementById("refresh-btn").addEventListener("click",
+        () => window.cambphysAdmin.refresh());
+    } catch (e) {
+      console.error("admin init failed:", e);
+      document.getElementById("unauthorized").innerHTML =
+        '<strong>Error loading admin page:</strong> ' + (e.message || e);
+      document.getElementById("unauthorized").style.display = "block";
+    }
+  })();
+</script>

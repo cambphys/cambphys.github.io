@@ -1,0 +1,134 @@
+[
+  {
+    "problem_set": "Modern Physics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Use the WKB approximation to find the quantization condition for a particle in a box.",
+    "problem_images": [],
+    "solution": "Since for a particle in a box there is no potential within the box, we have $p = \\sqrt{2mE}$. Thus, \n    $$\\oint p\\, dx = \\boxed{2L\\sqrt{2mE} = nh}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Modern Physics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "An atom of mass $m$ with velocity $v$ travels toward a photon of frequency $\\omega$. The atom absorbs are re-emits the photon in the opposite direction. What is the new velocity of the mass?",
+    "problem_images": [],
+    "solution": "In the frame of the atom, the photon is blue shifted. Then, as it emits it, the photon gets further blue shifted. So, the final frequency of the photon is\n    $$\\omega' = \\frac{1 + v/c}{1-v/c}\\omega.$$\n    Thus, by conservation of momentum,\n    $$mv - \\frac{\\hbar \\omega}{c} = mv' + \\frac{\\hbar \\omega'}{c}.$$\n    So, solving for $v'$, we get\n    $$v' = v - \\frac{\\hbar\\omega}{c}\\frac{2}{1-v/c}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Modern Physics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "<a href=\"https://aapt.org/physicsteam/2015/upload/E3-2-5.pdf#page=3\" target=\"_blank\" rel=\"noopener\">USAPhO 2015/A1</a>.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://aapt.org/physicsteam/upload/USAPhO-2015-Solutions.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Modern Physics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "<a href=\"https://aapt.org/physicsteam/2019/upload/USAPhO-2018.pdf#page=8\" target=\"_blank\" rel=\"noopener\">USAPhO 2018/B2</a>",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://aapt.org/physicsteam/upload/USAPhO-2018-Solutions.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Modern Physics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Electrons are either spin up or spin down in the $z$-direction, but before they are measured, they can be in a superposition of the two states. Because those two states are opposites, we can actually think of them as an orthogonal basis of a 2 dimensional vector space. Thus the quantum state representing the spin of any electron can be written as\n    $$\\ket{\\psi} = c_0 \\binom 10 + c_1 \\binom 01,$$\n    where $c_0,c_1 \\in \\mathbb C$, and $|c_0|^2 + |c_1|^2 = 1$. The fact that they sum to $1$ suggest that $|c_0|^2$ is the probability that it is $\\langle 1,0\\rangle$ (spin up) and $|c_1|^2$ is the probability that it is $\\langle 0,1\\rangle$ (spin down). But there are more bases than spin up and down in the $z$-direction. We can also have spin up and down in the $x$ direction:\n    $$\\ket{x+} = \\frac{1}{\\sqrt{2}}\\binom 11, \\ket{x-} = \\frac{1}{\\sqrt{2}} \\binom{1}{-1}.$$\n    \\begin{anum}\n        \\item Suppose you prepare a quantum state $\\ket \\psi = \\ket{x+}$. You then measure its spin in the $z$-direction. What is the probability that it is spin up?\n        \\item Now suppose you prepare a quantum state $\\ket \\psi = \\langle 1,0\\rangle$. You then measure it in the $x$-direction. What is the probability that it is spin up in the $x$ direction?\n        \\item You then put your spin up electron under some sort of magnetic field such that it begins evolving through time. This magnetic field is such that when an electron is in the state $\\ket{x+}$, it has energy $+g$ and when it is in the state $\\ket{x-}$, it has energy $-g$. What is the average energy of a $\\ket{z+}$ electron?\n        \\item After solving the schrodinger equation, you find that as a function of time,\n        $$\\ket{\\psi(t)} = \\begin{pmatrix}\\cos \\left(\\frac{gt}{2\\hbar}\\right) \\\\ \\sin \\left(\\frac{gt}{2\\hbar}\\right)\\end{pmatrix}.$$\n        Show that this is consistent with Heisenberg's uncertainty principle by estimating $\\Delta E$ and $\\Delta t$.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item We can write $\\ket{x+}$ as a linear combination of $z$ states,\n    $$\\ket{x+} = \\frac{1}{\\sqrt 2} \\ket{z+} + \\frac{1}{\\sqrt 2}\\ket{z-},$$\n    so the probability that it is spin up is $\\boxed{1/2}$ because it is an equal combination of the two.\n    \\item We do the same strategy as in the previous part,\n    $$\\langle 1,0\\rangle = \\frac{1}{\\sqrt 2}\\ket{x+} + \\frac{1}{\\sqrt 2}\\ket{x-}.$$\n    \\item As discussed in part (a) the $\\ket{z+}$ state is an equal superposition of $\\ket{x+}$ and $\\ket{x-}$, so\n    $$E_{\\text{avg}} = \\frac 12 (+g) + \\frac 12 (-g) = 0.$$\n    \\item The time for the state to return to the same state is  period $T = \\frac{2\\pi}{g/2\\hbar} \\sim \\frac{\\hbar}{g}$. Now, the energy goes from $+g$ to $-g$, so $\\Delta E \\sim g$, so $$\\Delta E \\Delta t \\sim g \\cdot \\frac{\\hbar}{g} \\sim \\hbar,$$\n    consistent with Heisenberg's uncertainty principle.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Modern Physics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "<a href=\"https://ipho.olimpicos.net/pdf/IPhO_2006_Q1.pdf\" target=\"_blank\" rel=\"noopener\">IPhO 2006/T1</a>.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://ipho.olimpicos.net/pdf/IPhO_2006_S1.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Modern Physics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "<a href=\"https://ipho.olimpicos.net/pdf/IPhO_2009_Q2.pdf\" target=\"_blank\" rel=\"noopener\">IPhO 2009/T2</a>",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://ipho.olimpicos.net/pdf/IPhO_2009_S2.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Modern Physics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "<a href=\"https://olympiads.hbcse.tifr.res.in/wp-content/uploads/2020/02/INPHO2020-Questions-en.pdf\" target=\"_blank\" rel=\"noopener\">INPhO 2020/3</a>. This question looks simple, but be careful.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://olympiads.hbcse.tifr.res.in/wp-content/uploads/2020/03/INPHO2020-Solutions-20200220.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Modern Physics Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "<a href=\"https://aapt.org/Common2022/upload/2021-USAPhO_plus.pdf#page=5\" target=\"_blank\" rel=\"noopener\">USAPhO+ 2021/T2</a>",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://aapt.org/Common2022/upload/2021-USAPhO_plus_Solutions_v2.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Modern Physics Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "<a href=\"https://aapt.org/Common2022/upload/2021-USAPhO_plus.pdf#page=8\" target=\"_blank\" rel=\"noopener\">USAPhO+ 2021/T3</a>",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://aapt.org/Common2022/upload/2021-USAPhO_plus_Solutions_v2.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Modern Physics Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "<a href=\"https://apho.olimpicos.net/pdf/APhO_2016_Q3.pdf\" target=\"_blank\" rel=\"noopener\">APhO 2016/T3</a>.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://apho.olimpicos.net/pdf/APhO_2016_S3.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Modern Physics Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "<a href=\"https://aapt.org/physicsteam/upload/2022_Theory_TST.pdf#page=5\" target=\"_blank\" rel=\"noopener\">US Physics Team 2022 TST Q3</a>, a problem on gravitational waves.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://aapt.org/physicsteam/upload/2022_Theory_TST_Solutions.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

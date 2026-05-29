@@ -1,0 +1,76 @@
+---
+layout: default
+title: Problem Set
+permalink: /pset/
+---
+
+<link rel="stylesheet" href="/assets/css/pset.css">
+
+<script>
+  // Configure MathJax BEFORE loading the library.
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      macros: {
+        unit: ["\\,\\mathrm{#1}", 1],
+        pdv:  ["\\frac{\\partial #1}{\\partial #2}", 2],
+      },
+    },
+    options: {
+      renderActions: { addMenu: [] },
+    },
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script" async></script>
+
+<div class="pset-wrap">
+  <div class="pset-topbar">
+    <a class="pset-back" href="/courses/ap/">← Back to AP Course</a>
+    <span class="pset-title" id="pset-title">…</span>
+    <button type="button" id="jump-toggle" class="pset-mini compact" title="Jump to a specific problem">☰ Problems</button>
+  </div>
+
+  <div class="pset-actionbar">
+    <button type="button" id="prev-btn"      class="pset-mini">← Prev</button>
+    <button type="button" id="bookmark-btn"  class="pset-mini" title="Bookmark this question">☆ Bookmark</button>
+    <button type="button" id="complete-btn"  class="pset-mini" title="Mark this problem as completed">○ Mark Complete</button>
+    <button type="button" id="next-btn"      class="pset-mini primary">Next →</button>
+  </div>
+
+  <!-- The stage is a positioning context so the jump drawer can slide
+       in from its left edge instead of from the page edge. -->
+  <div class="pset-stage-wrap">
+    <div class="pset-drawer" id="pset-drawer" aria-hidden="true">
+      <div class="pset-drawer-head">
+        <strong>Problems</strong>
+        <button type="button" id="jump-close" class="pset-drawer-close" aria-label="Close">×</button>
+      </div>
+      <ol class="pset-drawer-list" id="pset-drawer-list"></ol>
+    </div>
+    <div class="pset-stage" id="pset-stage">
+      <p class="pset-loading">Loading problem set…</p>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/assets/js/supabase-config.js"></script>
+<script src="/assets/js/auth.js"></script>
+<script src="/assets/js/courses.js"></script>
+<script src="/assets/js/pset.js"></script>
+<script>
+  (async function () {
+    try {
+      const user = await window.cambphysAuth.requireAuth();
+      if (!user) return;
+      await window.cambphysPset.init();
+    } catch (e) {
+      console.error("pset init failed:", e);
+      document.getElementById("pset-stage").innerHTML =
+        '<p class="pset-loading">Could not start the slideshow: ' + (e.message || e) + '</p>';
+    }
+  })();
+</script>

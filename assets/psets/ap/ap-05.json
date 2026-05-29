@@ -1,0 +1,188 @@
+[
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A jet plane traveling $1890 \\,\\unit{km/h}$ ($525\\,\\unit{m/s}$) pulls out of\na dive by moving in an arc of radius $5.20\\,\\unit {km}$. What is the\nplane’s acceleration in $g$’s?",
+    "problem_images": [],
+    "solution": "The acceleration is $a_c = v^2/r = (525)^2/(5200) = 5.4$ $g$'s.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "What is the magnitude of the acceleration of a speck\nof clay on the edge of a potter’s wheel turning at 45 rpm\n(revolutions per minute) if the wheel’s diameter is 35 cm?",
+    "problem_images": [],
+    "solution": "It is $v^2/R = (2\\pi R / T)^2 /R = \\frac{4\\pi^2 R}{T^2} = 5.18$ m/$\\mathrm {s^2}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "How many revolutions per minute would a 25-m-\ndiameter Ferris wheel need to make for the passengers to feel “weightless” at the topmost point?",
+    "problem_images": [],
+    "solution": "The normal force should be 0, so we need $$\\frac{v^2}{r} = g \\implies v = \\sqrt{rg}.$$\n    So, revolutions per minute is $\\frac{v}{2\\pi r} = \\frac{1}{2 \\pi} \\sqrt{\\frac{g}{r}} = 0.14 \\, \\unit{rps} = 8.46\\,\\unit{rpm}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A proposed space station consists of a circular tube that\nwill rotate about its center\n(like a tubular bicycle tire). The circle formed by\nthe tube has a diameter of 1.1 km. What must be the rotation speed (revolutions per day) if an effect nearly equal to gravity at the surface of the\nEarth (say, 0.90 $g$) is to be felt?\n\\begin{center}\n    \\includegraphics[width=4cm]{spin_ship.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_CircularMotion Sols/spin_ship.png"
+    ],
+    "solution": "We repeat the calculation from the previous part, plugging in $0.90 g$ instead, giving us $0.0202 \\, \\unit{rps} =1700\\,\\unit{rpd} $.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Tarzan plans to cross a gorge by swinging in an arc\nfrom a hanging vine (Fig. 5–42).\nIf his arms are capable of\nexerting a force of 1150 N on\nthe vine, what is the maximum\nspeed he can tolerate at the\nlowest point of his swing? His\nmass is 78 kg and the vine is\n4.7 m long.\n\\begin{center}\n    \\includegraphics[height=5cm]{tarzan.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_CircularMotion Sols/tarzan.png"
+    ],
+    "solution": "We consider force balance at the bottom of the swing:\n    $$T - mg = \\frac{mv^2}{r},$$\n    which gives us \n    $$v = \\sqrt{r(T/m - g)} = 4.82\\,\\unit{m/s}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "At what minimum speed\nmust a roller coaster be traveling so that passengers upside down at the top of the circle do not fall out? Assume a radius of\ncurvature of 8.6 m.",
+    "problem_images": [],
+    "solution": "Since the normal force will be 0 at the limit,\n    $$mv^2/r = mg \\implies v = \\sqrt{rg} = 9.18\\,\\unit{m/s}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A pilot performs an evasive maneuver by diving vertically at 270 m/s. If he can withstand an acceleration of 8.0 g’s without blacking out, at what altitude must he begin\nto pull his plane out of the dive to avoid crashing into the sea?",
+    "problem_images": [],
+    "solution": "This problem is ill-defined, ignore it.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 975-kg sports car (including driver) crosses the rounded top of a hill (radius = $88.0$ m) at $18.0\\,\\unit{m/s}$. Determine (a) the normal force exerted by the road on the car, (b) the normal force exerted by the car on the 62.0-kg driver, and (c) the car speed at which the normal force on the driver equals zero.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item We have by force balance,\n    $$mg - N = \\frac{mv^2}{r} \\implies N = mg - \\frac{mv^2}{r} = 5970\\,\\unit N.$$\n    \\item We have by force balance,\n    $$mg - N = \\frac{mv^2}{r} \\implies N = mg - \\frac{mv^2}{r} = 380\\,\\unit N.$$\n    \\item We need $mg = mv^2/r \\implies v = \\sqrt{rg} = 40\\,\\unit{m/s}.$\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Two blocks, with masses $m_A$ and $m_B$ are connected\nto each other and to a central post by thin rods as\nshown below. The blocks revolve about the post at the\nsame frequency $f$ (revolutions per second) on a frictionless\nhorizontal surface at distances $r_A$ and $r_B$ from the post.\nDerive an algebraic expression for the tension in each\nrod.\n\\begin{center}\n    \\includegraphics[width=5cm]{spin_block.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_CircularMotion Sols/spin_block.png"
+    ],
+    "solution": "We have that the velocity of the masses are $2\\pi r_Af$ and $2\\pi r_B f$, so the tension in the outer rod by considering mass $B$ is\n    $$T_B = \\frac{m_B (2\\pi r_B f)^2}{r_B} = 4\\pi^2 m_B f^2 r_B.$$\n    Then, now considering force balance on $m_A$,\n    $$T_A - T_B = 4 \\pi^2 m_A f^2 r_A \\implies T_1 = (4\\pi^2f^2)(m_Br_B + m_A r_A).$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "If a curve with a radius of 95 m is properly banked\nfor a car traveling 65 km/h, how much larger must be the coefficient of\nstatic friction for a car not to skid when traveling at 95 km/h?",
+    "problem_images": [],
+    "solution": "This problem is actually quite hard! Don't worry if you didn't solve it.\n    We consider a 2-D cross section of the setup. The acceleration must point horizontally, so\n    $$mg \\tan \\theta = \\frac{mv^2}{r} \\implies \\tan \\theta = \\frac{v^2}{rg}.$$\n     Then, for the faster speed, we must have\n     $$\\vec N + \\vec F_f + m \\vec g = \\frac{mv_2^2}{r}.$$\n     Thus, the angle that $(\\vec N + \\vec F_f )$ makes with the vertical is $\\tan^{-1}(v_2^2/rg)$. Thus, the angle that this makes with the normal is\n     $$\\theta' = \\tan^{-1}\\left(\\frac{v_2^2}{rg}\\right)-\\tan^{-1}\\left(\\frac{v^2}{rg}\\right).$$\n     So, the ratio between the frictional and normal force is given by, plugging in the numbers\n     $$\\mu = \\tan \\theta' = 0.32.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A flat puck (mass $M$) is revolved in a circle on a frictionless\nair hockey table top, and is held in this orbit by a massless cord\nwhich is connected to a dangling mass (mass $m$) through a\ncentral hole as shown below. Show that the speed of\nthe puck is given by $v = \\sqrt{mgR/M}$.\n\\begin{center}\n    \\includegraphics[width=5cm]{table_rolling.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_CircularMotion Sols/table_rolling.png"
+    ],
+    "solution": "The tension in the cord will be $mg$, so we have $$\\frac{Mv^2}{R} = mg \\implies v=\\sqrt{mgR/M}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A train traveling at a constant speed rounds a curve of\nradius 215 m. A lamp suspended from the ceiling swings\nout to an angle of 16.5° throughout the curve. What is the\nspeed of the train?",
+    "problem_images": [],
+    "solution": "We have by force balance, since the vertical component of tension must cancel with gravity,\n    $$\\frac{mv^2}{R} = mg \\tan (16.5^\\circ) \\implies v= \\sqrt{gR \\tan (16.5^\\circ)} = 46.2 \\, \\unit{m/s}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "On an ice rink two skaters of equal mass grab hands and\nspin in a mutual circle once every 2.5 s. If we assume their\narms are each 0.80 m long and their individual masses are\n55.0 kg, how hard are they pulling on one another?",
+    "problem_images": [],
+    "solution": "The speed of the skaters is $2\\pi r / T = 2.01 \\, \\unit{m/s}$, so $T = mv^2/r = 275 \\, \\unit N$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A coin is placed 13.0 cm from the axis of a rotating turntable of variable speed. When the speed of the turntable is slowly increased, the coin remains fixed on the turntable until a rate of 38.0 rpm (revolutions per minute) is reached, at which point the coin slides off. What is the coefficient of static friction between the coin and the turntable?",
+    "problem_images": [],
+    "solution": "Let the coefficient of friction be $\\mu$. Then, by force balance\n    $$\\mu m g = \\frac{mv^2}{r} \\implies \\mu = \\frac{v^2}{rg}.$$\n    Thus, plugging in the numbers, $\\mu = \\frac{v^2}{rg} = 0.21\\,\\unit{m/s}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A device for training astronauts and jet fighter pilots is\ndesigned to move the trainee in a horizontal circle of\nradius 11.0 m. If the force felt by the trainee is 7.45 times\nher own weight, how fast is she revolving? Express your answer in both m/s and rev/s.",
+    "problem_images": [],
+    "solution": "We have $v^2/r = 7.45g$, so $v = 28.3\\,\\unit{m/s}$. In rev per seconds $0.41 \\, \\unit{rev/s}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_CircularMotion Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "$F=ma$",
+    "problem": "Four identical rods, each of mass $m$ and length $2d$, are joined together to form a square. The square is then spun around its center, as shown in the figure, at an angular frequency of $\\omega$. What is the magnitude of the force that the joints between the rods (at the corners of the square) must bear?\n    \\begin{center}\n        \\includegraphics[width=5cm]{spin_square.png}\n    \\end{center}",
+    "problem_images": [
+      "AP1_CircularMotion Sols/spin_square.png"
+    ],
+    "solution": "By symmetry, the force at the joints should point tangential to the circle of rotations. Let $F$ be the force between the joints between the rods. Then, taking the perpendicular components of these forces, we get\n    $$2F/\\sqrt 2 = m \\omega^2 d \\implies F = m\\omega^2 d / \\sqrt 2.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

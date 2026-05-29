@@ -49,12 +49,50 @@
 }
 .lesson .lesson-title { flex: 1; font-weight: 500; }
 .lesson .lock-icon { color: #8a6d00; }
+.lesson .done-icon { color: #1b6b34; font-weight: 700; font-size: 1.1em; }
+.lesson.completed .lesson-title { color: #1b6b34; }
+.lesson-body .resource.disabled {
+  opacity: .5; pointer-events: none;
+}
+
+/* Course-level "extra" tile (e.g. Practice F=ma Exam) — sized like a lesson
+   row but flat blue so it stands out as an end-of-course action. */
+.lesson-extra {
+  display: flex; align-items: center; gap: .75rem;
+  padding: .85rem 1rem;
+  border: 1px solid #2f5d8c;
+  background: #f1f6fb;
+  border-radius: 6px;
+  text-decoration: none; color: inherit;
+}
+.lesson-extra:hover {
+  background: #e3edf6;
+  text-decoration: none; color: inherit;
+}
+.lesson-extra .lesson-extra-icon {
+  height: 1.5rem; width: auto; flex-shrink: 0;
+}
+.lesson-extra .lesson-title { color: #2f5d8c; font-weight: 600; }
+.lesson-extra.locked {
+  border-color: #ccc; background: #f8f8f8;
+}
+.lesson-extra.locked .lesson-num,
+.lesson-extra.locked .lesson-title { color: #555; }
 .lesson.locked > summary { color: #888; }
 .lesson.locked > summary:hover { background: #fff8e1; }
 
 .lesson-body {
-  display: flex; flex-wrap: wrap; gap: .5rem;
   padding: 0 1rem 1rem;
+}
+.lesson-readings {
+  margin-bottom: .75rem;
+  font-size: .9rem;
+  color: #555;
+}
+.lesson-readings:empty { display: none; }
+.lesson-readings .readings-label { font-weight: 700; color: #2f5d8c; }
+.lesson-resources {
+  display: flex; flex-wrap: wrap; gap: .5rem;
 }
 .lesson-body .resource {
   flex: 1 1 auto; min-width: 140px; text-align: center;
@@ -78,9 +116,15 @@
   box-shadow: 0 8px 32px rgba(0,0,0,.2);
 }
 .cp-modal h2 { margin-top: 0; color: #b00; }
-.cp-modal-close {
-  margin-top: 1rem; padding: .6rem 1.2rem;
-  background: #2f5d8c; color: #fff; border: 0; border-radius: 4px;
-  cursor: pointer; font-size: 1rem;
+.cp-modal-actions {
+  display: flex; gap: .75rem; margin-top: 1.25rem;
+  justify-content: flex-end; flex-wrap: wrap;
 }
-.cp-modal-close:hover { background: #244a70; }
+.cp-btn-primary, .cp-btn-secondary {
+  display: inline-block; padding: .6rem 1.2rem; border-radius: 4px;
+  cursor: pointer; font-size: 1rem; border: 0; text-decoration: none;
+}
+.cp-btn-primary { background: #2f5d8c; color: #fff; }
+.cp-btn-primary:hover { background: #244a70; text-decoration: none; color: #fff; }
+.cp-btn-secondary { background: #e5e7eb; color: #333; }
+.cp-btn-secondary:hover { background: #d1d5db; }

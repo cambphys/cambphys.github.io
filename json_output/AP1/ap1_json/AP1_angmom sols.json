@@ -1,0 +1,170 @@
+[
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "The Leaning Tower of Pisa is 55 m tall and about 7.7 m radius. The top is 4.5 m off-center. How much farther can it lean before the tower has to fall?",
+    "problem_images": [],
+    "solution": "Once the center of mass tips past the bottom base of the tower, it will tip. If the center of mass is past 7.7 m off center, then the top will be two times that; 15.4 m off center. Thus the tower can lean 11.1 m extra at the top before it tips.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A uniform steel beam has a mass of 940 kg. On it is resting half of an identical beam. What is the vertical support force at each end?\n    \\begin{center}\n        \\includegraphics[scale=0.2]{beams}\n    \\end{center}",
+    "problem_images": [
+      "AP1_angmom sols/beams.png"
+    ],
+    "solution": "For the force on the left, we can do torque balance about the right beam. Here we have $$F_L\\ell =Mg\\frac{\\ell}{2}+\\frac 12 Mg\\frac{3\\ell}{4}\\Rightarrow F_L=\\frac 78 Mg$$For the force on the right, we can do torque balance about the left beam. Here we have $$F_R\\ell =Mg\\frac{\\ell}{2}+\\frac 12 Mg\\frac{\\ell}{4}\\Rightarrow F_L=\\frac 58 Mg$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Calculate $F_A$ and $F_B$ for the beam shown. The downward forces represent the weights of machinery on the beam. Assume the beam is uniform and has a mass of 280 kg.\n    \\begin{center}\n        \\includegraphics[scale=0.25]{beams!}\n    \\end{center}",
+    "problem_images": [
+      "AP1_angmom sols/beams!.png"
+    ],
+    "solution": "For the force on the left, we can do torque balance about the right beam. Here we have $$F_A\\cdot 10=4300\\cdot 8+3100\\cdot 4+2200\\cdot 1+280\\cdot 9.8\\cdot 5\\Rightarrow F_L=6272\\, \\unit N$$\n    For the force on the right, we can do torque balance about the left beam. Here we have $$F_B\\cdot 10=4300\\cdot 2+3100\\cdot 6+2200\\cdot 9+280\\cdot 9.8\\cdot 5\\Rightarrow F_R=6072\\, \\unit N$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A person stands, hands at his side, on a platform that is rotating at a rate of 0.90 rev/s. If he raises his arms to a horizontal position, the speed of rotation decreases to 0.60 rev/s. (a) Why? (b) By what factor has his moment of inertia changed?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Angular momentum is conserved, but his moment of inertia increases, so his angular velocity decreases. \n        \\item The factor of change is $0.9/0.6=1.5$ times greater.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "(a) What is the angular momentum of a figure skater spinning at 3.0 rev/s with arms in close to her body, assuming her to be a uniform cylinder with a height of 1.5 m, a radius of 15 cm, and a mass of 48 kg? (b) How much torque is required to slow her to a stop in 4.0 s, assuming she does not move her arms?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Note that the angular velocity, in radians per second, is $3\\cdot 2\\pi$. We have $$L=I\\omega=\\frac 12 MR^2\\omega=\\frac 12 \\cdot 48\\cdot 0.15^2\\cdot 3\\cdot 2\\pi =10.18\\, \\unit{kg \\cdot m^2/s}$$\n        \\item Using $\\tau = \\Delta L/\\Delta t$, we have $\\tau=10.18/4=2.55\\, \\unit{N\\cdot m}$.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A potter’s wheel is rotating around a vertical axis through its center at a frequency of 1.5 rev/s. The wheel can be considered a uniform disk of mass 5.0 kg and diameter 0.40 m. The potter then throws a 2.6-kg chunk of clay, approximately shaped as a flat disk of radius 7.0 cm, onto the center of the rotating wheel. What is the frequency of the wheel after the clay sticks to it? Ignore friction.",
+    "problem_images": [],
+    "solution": "Let the initial and final frequencies be $f$ and $f'$. The angular momentum is conserved, so we have $$\\frac 12 MR^2f=\\left(\\frac 12 MR^2+\\frac12 mr^2\\right)f'$$ so rearranging yields $$f'=\\frac{MR^2}{MR^2+mr^2}f=\\frac{5\\cdot 0.2^2}{5\\cdot 0.2^2+2.6\\cdot 0.07^2}1.5=1.41\\, \\unit{rev/s}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "What is the mass of the diver in the figure if she exerts a torque of 1800 mN on the board, relative to the left (A) support post?\n    \\begin{center}\n        \\includegraphics[scale=0.25]{DIVE}\n    \\end{center}",
+    "problem_images": [
+      "AP1_angmom sols/DIVE.png"
+    ],
+    "solution": "We have $mg\\cdot 4=1800$ so $m=1800/(4\\cdot 9.8)=46\\, \\unit {kg}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Calculate the forces $F_A$ and $F_B$ that the supports exert on the diving board of the previous problem when a 52-kg person stands at its tip. (a) Ignore the weight of the board. (b) Now take into account the board’s mass of 28 kg. Assume the board is uniform.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item To find $F_A$ we balance torques about the $B$ beam. Here we have $$46\\cdot 9.8\\cdot 3=F_A\\cdot 1\\Rightarrow F_A=1352\\, \\unit N$$ and this force pulls downward. To find $F_B$ we balance torques about the $A$ beam so $$46\\cdot 9.8\\cdot 4=F_B\\cdot 1\\Rightarrow F_B=1803\\, \\unit N$$ and this force pushes upward.\n        \\item To find $F_A$ we balance torques about the $B$ beam. Here we have $$46\\cdot 9.8\\cdot 3+28\\cdot 9.8\\cdot 1=F_A\\cdot 1\\Rightarrow F_A=1627\\, \\unit N$$ and this force pulls downward. To find $F_B$ we balance torques about the $A$ beam so $$46\\cdot 9.8\\cdot 4+28\\cdot 9.8\\cdot 2=F_B\\cdot 1\\Rightarrow F_B=2352\\, \\unit N$$ and this force pushes upward.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "What is the angular momentum of a 0.270-kg ball revolving on the end of a thin string in a circle of radius 1.35 m at an angular speed of 10.4 rad/s?",
+    "problem_images": [],
+    "solution": "We have $$L=I\\omega=\\frac 25MR^2\\omega=\\frac 25\\cdot 0.27\\cdot 1.35^2\\cdot 10.4^2=21.29\\, \\unit{kg\\cdot m^2/s}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Find the tension in the two wires supporting the traffic light shown.\n    \\begin{center}\n        \\includegraphics[scale=0.25]{trafec}\n    \\end{center}",
+    "problem_images": [
+      "AP1_angmom sols/trafec.png"
+    ],
+    "solution": "Let the tension in the left wire be $T_1$ and in the right $T_2$. By force balance in the $x$ and $y$ directions, $$T_1\\sin(53)+T_2\\sin(37)=33\\cdot 9.8\\qquad T_1\\cos(53)=T_2\\cos(37)$$and solving the system we get $$T_1=258\\, \\unit N\\qquad T_2=195\\, \\unit N$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Two wires run from the top of a pole 2.6 m tall that supports a volleyball net. The two wires are anchored to the ground 2.0 m apart, and each is 2.0 m from the pole. The tension in each wire is 115 N. What is the tension in the net, assumed horizontal and attached at the top of the pole?\n    \\begin{center}\n        \\includegraphics[scale=0.25]{voleibol}\n    \\end{center}",
+    "problem_images": [
+      "AP1_angmom sols/voleibol.png"
+    ],
+    "solution": "We only need to find the horizontal tension exerted by the ropes, because that is the component balanced out by the net (the pole will balance out the vertical forces). By some similar triangles and trig, the force is just $$T=2\\cdot 115\\cdot \\frac{2}{\\sqrt{2^2+2.6^2}}\\cdot \\cos(30)=121.4\\, \\unit N$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A uniform disk turns at 3.3 rev/s around a frictionless central axis. A nonrotating rod, of the same mass as the disk and length equal to the disk’s diameter, is dropped onto the freely spinning disk. They then turn together around the axis with their centers superposed. What is the angular frequency in rev/s of the combination?\n\\begin{center}\n        \\includegraphics[scale=0.25]{wrink}\n    \\end{center}",
+    "problem_images": [
+      "AP1_angmom sols/wrink.png"
+    ],
+    "solution": "Let the masses of the objects be $M$. By conservation of angular momentum, $$\\frac 12 MR^2f=\\left(\\frac 12 MR^2+\\frac 1{12}M(2R)^2\\right)f'\\Rightarrow f'=\\frac{1/2}{1/2+1/3}f=1.98\\, \\unit{rev/s}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "An asteroid of mass $1.0 \\times 10^5$ kg, traveling at a speed of 35 km/s relative to the Earth, hits the Earth at the equator tangentially, in the direction of Earth’s rotation, and is embedded there. Use angular momentum to estimate the percent change in the angular speed of the Earth as a result of the collision. (You can search up the radius and mass of the Earth and assume it is a uniform sphere.)",
+    "problem_images": [],
+    "solution": "A day is 24 hours, which is 86400 seconds. The frequency of revolution is then $f=1/86400=1.16\\times 10^{-5}\\, \\unit{rev/s}$, and the angular velocity is $\\omega_0 = 2\\pi f=7.29\\times 10^{-5}\\, \\unit{rad/s}$. The moment of inertia of the Earth, using $M=5.97\\times 10^{26}\\, \\unit{kg}$ and $R=6.37\\times 10^{6} \\, \\unit{m}$, is then $I_E=(2/5)MR^2=(2/5)\\cdot 5.97\\times 10^{26}\\cdot (6.37\\times 10^{6})^2=9.69\\times 10^{39}\\, \\unit{kg\\cdot m^2}.$ The initial angular momentum of the asteroid is $mvR=1.0\\times 10^5\\cdot 35000\\cdot 6.37\\times 10^{6}=2.23\\times 10^{16}\\, \\unit{kg \\cdot m^2/s}$. The difference in angular velocity this additional momentum imparts on the Earth (we can neglect the inertia of the embedded asteroid because it is so small) is $L/I_E=2.23\\times 10^{16}/9.69\\times 10^{39}=2.30\\times 10^{-24}\\, \\unit{rad/s}$ which is a fraction $2.30\\times 10^{-24}/7.29\\times 10^{-5}=3.16\\times 10^{-20}$ of the original angular velocity. This is such a small amount!",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_angmom sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "Four bricks are to be stacked at the edge of a table, each brick overhanging the one below it, so that the top brick extends as far as possible beyond the edge of the table. (a) To achieve this, show that successive bricks must extend no more than (starting at the top) 1/2, 1/4, 1/6, and 1/8 of their length beyond the one below. (b) Is the top brick completely beyond the base? (c) Determine a general formula for the maximum total distance spanned by $n$ bricks if they are to remain stable. (Hint: build the stack from the top, and find the maximum distance to the left to which you can place each subsequent block.) (d) A builder wants to construct a corbeled arch based on the principle of stability discussed in (a) and (c) above. What minimum number of bricks, each 0.30 m long and uniform, is needed if the arch is to span 1.0 m?\n\\begin{center}\n    \\includegraphics[scale=0.2]{arch}\n\\end{center}",
+    "problem_images": [
+      "AP1_angmom sols/arch.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item At the top, notice that we can place the top block such that its CM does not extend beyond the ledge of the second block, which is 1/2 the length. For the the third block, note that the new CM of the first and second blocks cannot extend beyond the edge of the third block. The CM is indeed now a distance 1/4 away. The same logic can be applied to the other blocks. \n        \\item Note that the right end of the top block is a distance $1/2+1/4+1/6+1/8=1.04$ of a length beyond the edge of the table, so yes it does extend beyond the base of the table.\n        \\item Let each block have mass $M$ and length $L$. Notice that if there are $n-1$ existing blocks, I can place another block below then so long as the COM of these blocks is covered by the ``ledge\" of the next block. Thus, I can displace the next block at a maximal distance of $$\\Delta L=\\frac{L}{2}\\frac{M}{M(n-1)+M}=\\frac{L}{2}\\frac{1}{n}$$ further out from the rest of the stack. Adding these lengths up, we effectively have the distance $$d=\\frac{L}{2}\\sum_{i=1}^{n}\\frac{1}{i}$$\n        \\item As in the figure we want the second block to extend a distance 0.5 m, so the entire stack extends a distance $d=0.65$ m. Testing some values of $n$ for our stack with $L=0.3$, we need $n$ at least 43. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

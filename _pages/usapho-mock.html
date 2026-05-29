@@ -1,0 +1,46 @@
+---
+layout: default
+title: USAPhO Mock
+permalink: /usapho-mock/
+---
+
+<link rel="stylesheet" href="/assets/css/practice-exam.css">
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      macros: {
+        unit: ["\\,\\mathrm{#1}", 1],
+        pdv:  ["\\frac{\\partial #1}{\\partial #2}", 2],
+      },
+    },
+    options: { renderActions: { addMenu: [] } },
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script" async></script>
+
+<div class="exam-wrap" id="exam-root">
+  <div id="exam-stage">Loading…</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/assets/js/supabase-config.js"></script>
+<script src="/assets/js/auth.js"></script>
+<script src="/assets/js/courses.js"></script>
+<script src="/assets/js/usapho-mock.js"></script>
+<script>
+  (async function () {
+    try {
+      const user = await window.cambphysAuth.requireAuth();
+      if (!user) return;
+      await window.cambphysUsaphoMock.init();
+    } catch (e) {
+      console.error(e);
+      document.getElementById("exam-stage").innerHTML =
+        '<p>Could not start the mock: ' + (e.message || e) + '</p>';
+    }
+  })();
+</script>

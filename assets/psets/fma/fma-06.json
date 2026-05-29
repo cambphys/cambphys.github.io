@@ -1,0 +1,240 @@
+[
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "You swing a mass $m$ in a circle of radius $r$ such that it moves at constant velocity $v$. How much work do you do over time $\\Delta t$?",
+    "problem_images": [],
+    "solution": "Because the force is perpendicular to the velocity, the work done is 0.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "Suppose the force of air friction of a plane is proportional to $v^2,$ the square of the speed of the plane. If the power output of a plane is doubled, what factor is the maximum speed of the plane multiplied by?",
+    "problem_images": [],
+    "solution": "Because $P = Fv$, we have $P \\propto v^3$, so $\\boxed 2^{1/3}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "At height $h_1$ from the ground, a basketball of mass $m$ is falling with velocity $v_1$, and at a later time, the basketball is falling with velocity $v_2$ at height $h_2$ from the ground. Find the change in kinetic energy of the basketball in two ways:\n    \\begin{anum}\n        \\item Explicitly calculate the kinetic energy at each time-point.\n        \\item Use conservation of energy. Do your results agree?\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item It's $\\frac 12 mv_1^2$ and $\\frac 12 mv_2^2$, so $\\frac{1}{2} m (v_2^2 - v_1^2)$.\n    \\item By conservation of energy, $\\Delta K = - \\Delta U = mg(h_1 - h_2)$. This does agree, we can use our kinematics equation to write $v_2^2 = v_1^2 + 2g(h_1 - h_2)$, which if we substitute gives us $\\Delta K = m\\cdot \\frac 12 \\left(v_2^2 - v_1^2\\right)$, which agrees.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "Alice and Bob play tug of war, with a heavy mass (such that it doesn't lift off the ground) in between their two ropes as shown below. Alice pulls with force $F$ perfectly horizontally, while Bob, pulls at an angle $\\theta$ above the horizontal. Eventually, the block moves horizontally at constant velocity $v$. \n    \\begin{center}\n        \\includegraphics[width=8cm]{tug_of_war.png}\n    \\end{center}\n    \\begin{anum}\n        \\item What is Alice's rate of work (power)? What about Bob's?\n        \\item How does Bob's power vary with $\\theta$? Can you explain this result simply?\n    \\end{anum}",
+    "problem_images": [
+      "Energy Sols/tug_of_war.png"
+    ],
+    "solution": "\\begin{anum}\n    \\item From the definition of power, Alice's power is $P_A = -Fv$. For Bob, we have $P_B = \\mathbf F \\cdot \\mathbf v = vF_x$. and by balancing forces on the mass, $F_x = F$, so $P_B = Fv$.\n    \\item It does not vary with $\\theta$. We can explain this by conservation of energy. The block has the same velocity, so the net work done on it must be 0, and so $P_A + P_B = 0$, so $P_B = -P_A = -(-Fv)$.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": "$F=ma$",
+    "problem": "\\begin{anum}\nA car is driving against the wind at a constant speed $v_0$ relative to the ground. The wind direction is always opposite to the car’s velocity, but its speed fluctuates about an average speed of $v$ relative to the ground. The air drag force is $Av_{\\text{rel}}^2$, where $A$ is a constant and $v_{\\text{rel}}$ is the relative speed between the car and the wind. What is the average rate $P$ of energy dissipation due to the air resistance?\n    \\begin{anum}\n        \\item $\\overline P = Av0(v0 + v)^2$\n        \\item $\\overline P > Av_0(v_0+v)^2$\n        \\item $\\overline P < Av_0(v_0+v)^2$\n        \\item Both (B) and (C) are possible depending on how v fluctuates.\n        \\item Both (A) and (C) are possible depending on how v fluctuates.\n    \\end{anum}\n\\end{anum}",
+    "problem_images": [],
+    "solution": "If the true velocity of the car is $v + \\delta v$, we have $$\\overline P = A(v_0 + v + \\delta v)^2 v_0 = Av_0 ((v_0+v)^2 + \\delta v^2 + 2\\delta v (v_0 + v)).$$ Now if we average this over $\\delta v$, since it can be positive or negative, the third term goes the 0, while the second term is positive, so $\\overline P > Av_0 (v_0+v)^2$, which is <strong>B</strong>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "Here's a preview of gravity. We'll learn later, that the potential energy for a mass $m$ a distance $r$ away from a mass $M$ is given by $$U(r) = -\\frac{GMm}{r}.$$ Analyze the stable equilibria. You should find that there are none. If so, how are there stable orbits? The answer to this question will be covered in a later week.",
+    "problem_images": [],
+    "solution": "The graph has no local minima. There can be stable orbits because when an object is in orbit, it doesn't exist within the 1-D potential as a function of radius $r$, it moves in a circle. It turns out, an effective potential with a local minima <em>can</em> be found, but this will be covered later.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A ball is launched straight toward the ground from height $h$. When it bounces off the ground, it loses half of its kinetic energy. It reaches a maximum height of $2h$ before falling back to the ground again. What was the initial speed of the ball?",
+    "problem_images": [],
+    "solution": "We have that the initial energy is $E_0 = \\frac 12 mv_0^2 + mgh$, which by conservation is equal to the kinetic energy when it hits the ground. Thus, after it loses half of its kinetic energy, the ball has energy $E_1 = \\frac 12 E_0$. Then, by conservation of energy $E_1 = 2mgh$, so $2mgh = \\frac 12 E_0 = \\frac 14 mv_0^2 + \\frac 12 mgh$. Solving for $v_0$, we get $v_0^2 = 6gh \\implies \\boxed{v_0 = \\sqrt{6gh}}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A car of mass $m$ has an engine that delivers a constant power $P$. It drives up a plane inclined at $\\theta$. The coefficient of static friction is $\\mu_s > \\tan \\theta$. What is the maximum velocity $v$ it can achieve?",
+    "problem_images": [],
+    "solution": "At max velocity, acceleration is zero, so $F_{\\text{net}} = 0.$ In the rotated frame where the plane is horizontal, the only forces on the car in the $x$ direction are friction and the horizontal component of gravity. Therefore, \n\\[F_{\\text{net}} = f_s - mg\\sin \\theta = 0.\\]\n\nTherefore, since $P=f_s v,$ we have $\\boxed{v_{max} = \\frac P{mg\\sin\\theta}}$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Kleppner-Kolenkow",
+    "problem": "A commonly used potential energy function to describe the interaction between two atoms is the Lennard-Jones potential, given by\n    $$U = \\epsilon \\left[\\left(\\frac{r_0}{r}\\right)^{12} - \\left(\\frac{r_0}{r}\\right)^{6}\\right].$$\n    \\begin{anum}\n        \\item Find the position of the potential minimum and its value.\n        \\item Near the minimum the atoms execute simple harmonic motion. Find the frequency of oscillation.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item Taking the derivative, we have $$\\frac{dU}{dr} = \\epsilon \\left[ -12\\frac{r_0^{12}}{r^{13}} - 6 \\frac{r_0^6}{r^7} \\right] = 0.$$ Solving, we get $$\\left(\\frac{r}{r_0}\\right)^6 = 2 \\implies \\boxed{r_{eq} = 2^{1/6}r_0}.$$ Plugging that in, $U_{eq} = \\boxed{-\\epsilon / 4}.$\n    \\item Sorry about this part, we haven't covered oscillations yet. Here's the solution for those interested:\n    \n    We know that $$F = -\\frac{dU}{dr} = \\epsilon \\left [12 \\frac{r_0^{12}}{r^{13}} + 6 \\frac{r_0^6}{r^7} \\right].$$ Then, we plug in $r = r_{eq} + \\delta r$, and we get $$F = \\epsilon \\left[\\frac{3}{2^{1/6}r_0}\\left(\\frac{1}{1 + \\delta r/ r_{eq}}\\right)^{13} - \\frac{3}{2^{1/6}r_0}\\left(\\frac{1}{1 + \\delta r/ r_{eq}}\\right)^{7}\\right].$$\n Then, using the binomial expansion, we get that $$F \\approx \\frac{3\\epsilon}{2^{1/6}r_0} \\left[(7-13)\\frac{\\delta r}{r_{eq}} \\right] = -\\frac{18\\epsilon}{r_{eq}^2} \\delta r.$$ So, the frequnecy of oscillations is $\\omega = \\sqrt{\\frac{18\\epsilon}{\\mu r_{eq}^2}}.$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "You pull a block of mass $m$ along the ground with a rope, which is angled at $\\theta$ to the horizontal, at constant velocity $v$. If the coefficient of friction between the mass and the ground is $\\mu$, how much power are you exerting? How does this vary with $\\theta$? <em>Hint:</em> this problem isn't the same as the Alice and Bob problem from earlier.\n    \\begin{center}\n        \\includegraphics[width=5cm]{FRIC_PULL.png}\n    \\end{center}",
+    "problem_images": [
+      "Energy Sols/FRIC_PULL.png"
+    ],
+    "solution": "We have that the horizontal component of the force is equal to the friction, so $$F_x = \\mu N = \\mu (mg - F \\sin \\theta) = \\mu (mg - F_x \\tan \\theta ).$$ So, solving for $F_x$, we get $$F_x = \\frac{\\mu mg}{1 + \\mu \\tan \\theta}.$$ Thus, the power is $P = F_xv = \\boxed{\\frac{\\mu mg v}{1 +\\mu \\tan \\theta}}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A car has an engine which delivers a constant power. It accelerates from rest at time $t=0$, and at $t=t_0$ its acceleration is $a_0$. What is its acceleration at $t = 2t_0$? Ignore energy loss due to friction.\n    \\begin{enumerate}[label=(\\Alph*)]\n        \\item $\\frac{1}{2}a_0$\n        \\item $\\frac{1}{\\sqrt{2}}a_0$\n        \\item $a_0$\n        \\item $\\sqrt{2}a_0$\n        \\item $2a_0$\n    \\end{enumerate}",
+    "problem_images": [],
+    "solution": "We have from the work energy theorem that $\\frac 12 mv^2 = Pt$, so $v =\\sqrt{2Pt/m}$. And because power is constant, we must have that $va$ is constant, so $$a \\propto 1/v \\propto 1/\\sqrt{t},$$ from which we get $a(2t_0) = a_0/\\sqrt{2}$, \\textbf B.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "    The classic roller-coaster. Suppose you have a roller-coaster loop of radius $R$ as shown below. What is the minimum starting height $h$ of the car such that it never loses contact on the loop? Neglect friction everywhere on the path.\n    \\begin{center}\n        \\includegraphics[width=5cm]{roller_bruh.png}\n    \\end{center}",
+    "problem_images": [
+      "Energy Sols/roller_bruh.png"
+    ],
+    "solution": "On the verge of losing contact, the cart should experience 0 normal force at the top of the loop. Thus, at the top of the loop, by centripetal acceleration, we have $$\\frac{mv^2}{R} = mg \\implies mv^2 = mgR.$$ Then, by conservation of energy, we have $$\\Delta K = - \\Delta U \\implies \\frac 12 mv^2 = mgh - mg(2R).$$ Plugging in our centripetal acceleration equation, we get $mgh = 2mgR + \\frac 12 mgR \\implies \\boxed{h=5R/2}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A block of mass $m$ lies on the top of a fixed cylinder of radius $R$. It is given an infinitesimal kick to the right and begins sliding along the outside of the cylinder. At what angle $\\theta$ from the top of the cylinder does the block lose contact?\n    \\begin{center}\n        \\includegraphics[width=4cm]{block_cylinder.png}\n    \\end{center}",
+    "problem_images": [
+      "Energy Sols/block_cylinder.png"
+    ],
+    "solution": "Again, we use the idea that just before losing contact, the normal force is equal to $0$. So analyzing forces at the position $\\theta$, with no normal force $$\\frac{mv^2}{R} = mg \\cos \\theta.$$ Similarly, by conservation of energy, $$\\frac 12 mv^2 = mg R - mg R \\cos \\theta.$$ Plugging in the first equation into the second, we get $$\\frac 32 mg R \\cos \\theta = mgR \\implies \\cos \\theta = \\frac 23,$$ so we get $\\boxed{\\theta = \\cos^{-1}(2/3)}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Kleppner-Kolenkow",
+    "problem": "The block shown in the drawing is acted on by a spring with spring\nconstant $k$ and a weak friction force of constant magnitude $f$. The block is pulled distance $x_0$ from equilibrium and released. It oscillates many times and eventually comes to rest. Find the number of cycles $n$ the mass oscillates before coming to rest.\n\\begin{center}\n    \\includegraphics[width=5cm]{kk_58.png}\n\\end{center}",
+    "problem_images": [
+      "Energy Sols/kk_58.png"
+    ],
+    "solution": "By the work-energy theorem, in one cycle, since the spring does no net work, we have $$\\Delta K = -4Af,$$ where $A$ is the amplitude of oscillation. And because $U = \\frac{1}{2} kA^2 = K$, we have $$\\Delta U \\approx 2 \\cdot \\frac 12 k A \\Delta A = \\Delta K = -4Af.$$ Thus, in one cycle, we have $\\Delta A = -4f/k$, so the number of oscillations is just $n = x_0 / (-\\Delta A) = \\boxed{kx_0/4f}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "$F=ma$",
+    "problem": "A cylindrical bucket of negligible mass has radius $R$ and height $h$, and is open at the top. It is submerged in water of density $\\rho$, with its top a distance $H$ below the surface. How much work is needed to pull the bucket slowly up so that its bottom is just above the lake surface?\n    \\begin{center}\n        \\includegraphics[width=4cm]{fma_bucket.png}\n    \\end{center}\n    <em>Hint:</em> this might look like you need to know fluid statics, but if you think about it it a bit, you can reduce the problem to a simple conservation of energy problem.",
+    "problem_images": [
+      "Energy Sols/fma_bucket.png"
+    ],
+    "solution": "The solution to this problem isn't complicated, just tricky. The work needed is equal to the total change in energy of the system, which is just the change in gravitational potential energy here, as nothing is moving and no other forces are present. Since the bucket is massless, the change in potential energy just corresponds to the amount of additional water above the surface and how much it had to be raised. We can think of all the water in the bucket to be coming from the infinitesimally thin top layer of the lake as every other height in the lake has water everywhere. The bucket is an average height $h/2$ above the surface, so $$\\Delta U = M_w \\frac{gh}{2} = (\\rho \\pi R^2 h) \\frac{h}{2} = \\boxed{\\rho \\pi R^2 h^2/2}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "This time, a block of mass $m$ is dropped from a height $H$ above another block of mass $m$, which is connected to a spring of spring constant $k$. What is the maximum compression of the spring with respect to its original position? Note that the original position is slightly compressed from rest length already because of the mass $m$.",
+    "problem_images": [],
+    "solution": "You can ignore this problem as it has momentum content, sorry!",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kalda",
+    "problem": "A light wire is bent into a right angle and a heavy ball is attached to the bend. The wire is placed onto supports with height difference h and horizontal distance a. Find the position of the wire in its equilibrium. Express the position as the angle between the bisector of the right angle and the vertical. Neglect any friction between the wire and the supports; the supports have little grooves keeping all motion in the plane of the wire and the figure.\n    \\begin{center}\n        \\includegraphics[width=5cm]{kalda_m_8.png}\n    \\end{center}",
+    "problem_images": [
+      "Energy Sols/kalda_m_8.png"
+    ],
+    "solution": "We know that the equilibrium point is a local maximum or minimum. And because of the setup above having the mass downward facing and the possible configurations, only a local minimum is possible. Now, the key trick here is that the wires make 90 degree angles, and so the possible locations of the mass form a circle, with a diameter between the two corners as shown below:\n    \\begin{center}\n        \\includegraphics[width=6cm]{kalda_8_sol.png}\n    \\end{center}\n    Now, the minimum gravitational potential energy is just the bottom of the semicircle. All that's left to do now is angle chasing. The tilt of the semicircle is equal to the blue arc length highlighted above, and that's equal to the angle between the horizontal and the diameter. Thus, we compute $2\\alpha = \\arctan (h/a)$, so $\\alpha = \\boxed{\\frac 12 \\arctan(h/a)}$.",
+    "solution_images": [
+      "Energy Sols/kalda_8_sol.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "USAPhO",
+    "problem": "Here's an extension of problem Problem 12 that is a bit mathy, but good practice for higher olympiads.\n\n    A uniform solid spherical ball starts from rest on a loop-the-loop track. It rolls without slipping along the track. However, it does not have enough speed to make it to the top of the loop. From what height h would the ball need to start in order to land at point $P$ directly underneath the top of the loop? Express your answer in terms of $R$, the radius of the loop. Assume that the radius of the ball is very small compared to the radius of the loop, and that there are no energy losses due to friction.\n    \\begin{center}\n        \\includegraphics[width=7cm]{usapho_2016_B1.png}\n    \\end{center}",
+    "problem_images": [
+      "Energy Sols/usapho_2016_B1.png"
+    ],
+    "solution": "See the official solutions <a href=\"https://www.aapt.org/physicsteam/2019/upload/USAPhO-2016-Solutions.pdf\" target=\"_blank\" rel=\"noopener\">here</a>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "We discussed the hill analogy for analyzing potential energy graphs $U(x)$. However, note that $U(x)$ only considers one dimension. What if you had a 2D hill in real life? Would the motion of an object on it match the motion of an object on a 1-D potential $U(x)$ with the same shape?\n\n    More formally, suppose you slide a bead along a wire which has shape $y(x) = U(x)/(mg)$. Calculate the horizontal acceleration $\\ddot x$ and show that it is <em>not</em> equal to $-U'(x)/m$.",
+    "problem_images": [],
+    "solution": "We can write down forces in the x and y directions. We have\n    \\begin{align*}\n        m\\ddot y &= N_x/y' - mg,\\\\\n        m \\ddot x &= -N_x.\n    \\end{align*}\n    Thus, isolating $\\ddot x$, we get $\\ddot x = -N_x / m = \\frac{y'(x)}{m}(-mg - \\ddot y) = -\\frac{U'(x)}{m} - \\frac{U'(x) \\ddot y}{m^2g}.$ Thus, at any point where there is non-zero y acceleration, the horizontal force is not equal to the value predicted by the analogy.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Energy Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "Consider a <em>block</em> (cannot be treated as a point mass) of mass $m$ which is pulled a distance $d$, at constant velocity $v$, on a floor with coefficient of kinetic friction $\\mu$.\n    \\begin{anum}\n        \\item How much work does the rope do?\n        \\item How much work does friction do? <em>Hint:</em> this part is <em>extremely</em> subtle. You won't be able to come up with an exact quantity, but you should be able to come up with an inequality.\n        \\item Can you explain the inequality you found in part (b) by considering the microscopic workings of friction?\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item This is simply $W = Fd = \\boxed{\\mu mg d}.$\n    \\item We have that the net work done on the block is $W_r + W_f$. And the net change in energy of the block (since it is not a point mass) is $$\\frac{1}{2} m(v^2 - v^2) + \\Delta K_{int},$$ where $K_{int}$ represents internal vibrations and any other kinetic energies associated with the inner parts of a non-point mass. Furthermore, because friction releases heat, the block will heat up a non-zero amount, so $\\Delta K_{int} \\ge 0$. Thus, we have $$W_{net} = \\mu mg d + W_f = \\Delta K = \\Delta K_{int} \\ge 0.$$ Thus, $\\boxed{W_f \\ge - \\mu mg d}$,\n    \\item The basic idea is that the point of contact of the force of friction does not move the full distance $d$ because it's these microscopic pieces of the ground and block rubbing, which means the ground and the block aren't necessarily in contact for the full distance $d$. It's explained in further detail in <a href=\"https://brucesherwood.net/wp-content/uploads/2017/06/Friction1984.pdf\" target=\"_blank\" rel=\"noopener\">this paper</a>.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

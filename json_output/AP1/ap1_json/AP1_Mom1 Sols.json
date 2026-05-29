@@ -1,0 +1,265 @@
+[
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "What is the magnitude of the momentum of a 28 g sparrow flying with a speed of 8.4 m/s?",
+    "problem_images": [],
+    "solution": "We have $p=mv=0.028\\cdot 8.4=0.319\\, \\unit{kg\\cdot m/s}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A constant friction force of 25 N acts on a 65-kg skier for 15 s on level snow. What is the skier’s change in velocity?",
+    "problem_images": [],
+    "solution": "The impulse provided is $I=F\\Delta t=375\\, \\unit{N\\cdot s}$ and this is equal to the change in momentum $\\Delta p$. The change in velocity is then $\\Delta v=\\Delta p/m=5.77\\, \\unit{m/s}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 110-kg tackler moving at 2.5 m/s meets head-on (and holds on to) an 82-kg halfback moving at 5.0 m/s. What will be their mutual speed immediately after the collision?",
+    "problem_images": [],
+    "solution": "By the inelastic collision formula (making sure to make one of the velocities negative), $$v=\\frac{m_1v_2+m_2v_2}{m_1+m_2}=\\frac{110\\cdot 2.5-82\\cdot 5}{110+80}=-0.71\\, \\unit{m/s}$$ So in fact their mutual velocity is in the direction that the halfback was initially moving in. For the purposes of the speed though, we just take the magnitude, which is $0.71\\, \\unit{m/s}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "(a) A child in a boat throws a 5.30-kg package out horizontally with a speed of 10.0 m/s relative to the ground. Calculate the velocity of the boat immediately after, assuming it was initially at rest. The mass of the child is 24.0 kg and the mass of the boat is 35.0 kg. (b) What is the answer if the package was thrown with a speed 10 m/s relative to the boat?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item The total momentum is 0, since momentum is conserved. Thus the momentum of the box must exactly cancel the momentum of the child/boat after the box is thrown. The momentum of the box is $5.3\\cdot 10=53\\, \\unit{kg\\cdot m/s}$. This equals $(24+35)v$ where $v$ is the velocity of the child/boat. Solving, we get $v=53/(24+35)=0.90\\, \\unit{m/s}.$\n        \\item Let the magnitude of the box's velocity with respect to the ground be $v$. Then by the same logic as part (a), the magnitude of the boat's velocity would be $v(5.3/59)=0.09v$. The relative speed is then $v+0.09v=1.09v=10,$ which solves as $v=9.17\\, \\unit{m/s}$. Then the boat's velocity is just $0.09v=0.09\\cdot 9.17=0.83\\, \\unit{m/s}$. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Two people, one of mass 85 kg and the other of mass 55 kg, sit in a rowboat of mass 58 kg. With the boat initially at rest, the two people, who have been sitting at opposite ends of the boat, 3.0 m apart from each other, now exchange seats. How far and in what direction will the boat move?",
+    "problem_images": [],
+    "solution": "Let us find the distance of the front of the boat from the COM in both cases, since the COM will always be fixed. Set the origin to be the front of the boat, where the 85 kg person originally is. Then the COM is originally a distance $$d_0=\\frac{85\\cdot 0 + 58\\cdot 1.5+55\\cdot 3}{85+58+55}=1.27\\, \\unit m$$ from the front of the boat and in the end it is a distance $$d_f=\\frac{85\\cdot 3 + 58\\cdot 1.5+55\\cdot 0}{85+58+55}=1.73\\, \\unit m$$\n    So the boat must move 0.46 m in the direction of where the 85 kg person originally is.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A huge balloon and its gondola, of mass $M$, are in the air and stationary with respect to the ground. A passenger, of mass $m$, then climbs out and slides down a rope with speed $v$, measured with respect to the balloon. With what speed and direction (relative to Earth) does the balloon then move? What happens if the passenger stops?",
+    "problem_images": [],
+    "solution": "Let positive velocity be downward. This is just conservation of momentum. Since the original momentum is 0, the momentum of the passenger must equal the momentum of the balloon, so the speed $u$ of the balloon is given by $$Mu+m(v+u)=0\\Rightarrow u=-\\frac{mv}{M+m}$$ The balloon moves upward. If the passenger stops, by conservation of momentum the balloon must also stop.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "An atomic nucleus initially moving at 320 m/s emits an alpha particle in the direction of its velocity, and the remaining nucleus slows to 280 m/s. If the alpha particle has a mass of 4.0 u and the original nucleus has a mass of 222 u, what speed does the alpha particle have when it is emitted?",
+    "problem_images": [],
+    "solution": "By conservation of momentum, we have $$320\\cdot 222=280\\cdot 218 + 4v\\Rightarrow v=2500\\, \\unit{m/s}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 0.145-kg baseball pitched horizontally at 27.0 m!s strikes a bat and pops straight up to a height of 31.5 m. If the contact time between bat and ball is 2.5 ms, calculate the average force between the ball and bat during contact.",
+    "problem_images": [],
+    "solution": "If the change in $x$ momentum is $\\Delta p_x$ and the change in $y$ momentum is $\\Delta p_y$, then the overall change in momentum of the baseball is $\\Delta p=\\sqrt{(\\Delta p_x)^2+(\\Delta p_y)^2}$ by the Pythagorean theorem. Notice that $\\Delta p_x=0.145\\cdot 27=3.915\\, \\unit{kg\\cdot m/s}$ (we ignore sign because we're squaring them anyway). We can find the initial $y$ velocity after contact by kinematics, because $v_y^2=2gh\\Rightarrow v_y=\\sqrt{2gh}=24.85\\, \\unit{m/s}$. Then, the change in $y$ momentum is $\\Delta p_y=0.145\\cdot 24.85=3.6\\, \\unit{kg\\cdot m/s}$. Finally, we have $\\Delta p=\\sqrt{3.915^2+3.6^2}=5.32\\, \\unit{kg\\cdot m/s}$. By Newton's Second law, we finally have $$F=\\frac{\\Delta p}{\\Delta t}=\\frac{5.32}{0.0025}=2128\\, \\unit{N}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 0.145-kg baseball pitched at 31.0 m/s is hit on a horizontal line drive straight back at the pitcher at 46.0 m/s. If the contact time between bat and ball is 5 ms, calculate the force (assumed to be constant) between the ball and bat.",
+    "problem_images": [],
+    "solution": "The change in momentum is $\\Delta p=0.145\\cdot (31-(-46))=11.17\\, \\unit{kg\\cdot m/s}$. The force is then $F=\\Delta p/\\Delta t=11.17/0.005=2230\\, \\unit{N}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A golf ball of mass 0.045 kg is hit off the tee at a speed of 38 m!s. The golf club was in contact with the ball for 3.5 ms. Find (a) the impulse imparted to the golf ball, and (b) the average force exerted on the ball by the golf club.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item The change in momentum of the golf ball is the impulse. The initial momentum is zero, so the change in momentum (equivalently the impulse) is just $p=0.045\\cdot 38=1.71\\, \\unit{kg\\cdot m/s}$. \n        \\item The average force is just $F=\\Delta p/\\Delta t=1.71/0.0035=489\\, \\unit{N}.$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 725-kg two-stage rocket is traveling at a speed of $6.60\\times 10^3$ m/s away from Earth when a predesigned explosion separates the rocket into two sections of equal mass that then move with a speed of $2.80 \\times 10^3$ m/s relative to each other along the original line of motion. (a) What is the speed and direction of each section (relative to Earth) after the explosion? (b) How much energy was supplied by the explosion? Hint: What is the change in kinetic energy as a result of the explosion?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Let the final speed of the faster section be $v$, so the final speed of the slower section is just $v-2800.$ Then by conservation of momentum, $$725\\cdot 6600=\\frac{725}{2}\\cdot v+\\frac{725}{2}\\cdot (v-2800)\\Rightarrow v=8000\\, \\unit{m/s}$$so the speed of the slower part will be $8000-2800=5200\\, \\unit{m/s}$. Since they are both positive, the halves travel in the same initial direction as the complete rocket. \n        \\item The initial kinetic energy is $$K_0=\\frac12\\cdot 725\\cdot 6600^2=1.58\\times 10^{10}\\, \\unit{J}$$ and the final kinetic energy is $$K_f=\\frac12\\cdot \\frac{725}{2}\\cdot 8000^2+\\frac12\\cdot \\frac{725}{2}\\cdot 5200^2=1.65\\times 10^{10}\\, \\unit{J}$$By conservation of energy, the additional energy in the final state is the energy supplied by the explosion, so $$E=K_f-K_0=7\\times 10^8\\, \\unit{J}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A 52-kg woman and a 72-kg man stand 10.0 m apart on nearly frictionless ice. (a) How far from the woman is their CM? (b) If each holds one end of a rope, and the man pulls on the rope so that he moves 2.5 m, how far from the woman will he be now? (c) How far will the man have moved when he collides with the woman?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Using the woman as the origin, the distance is $$d=\\frac{52\\cdot 0+72\\cdot 10}{52+72}=5.81\\, \\unit m$$\n        \\item The rope ensures that there is no net force on the woman-man system because of Newton's Third Law. Thus their CM won't move. Hence the distance the woman moves is just $2.5\\cdot 72/52=3.46\\, \\unit m.$\n        \\item The man will have moved the distance to the CM, since they collide at the CM. If the woman was 5.81 m away from the CM this means the man was 4.19 m away, so that's the distance he moves.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "The masses of the Earth and Moon are $5.98 \\times 10^{24}$ kg and $7.35 \\times 10^{22}$ kg, respectively, and their centers are separated by $3.84 \\times  10^8$ m. (a) Where is the CM of the Earth–Moon system located? (b) What can you say about the motion of the Earth–Moon system about the Sun, and of the Earth and Moon separately about the Sun?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item We take the distance of the CM from the Earth, so we set the Earth as the origin. In this case $$d=\\frac{5.98 \\times 10^{24}\\cdot 0 + 7.35 \\times 10^{22}\\cdot 3.84 \\times  10^8}{5.98 \\times 10^{24}+7.35 \\times 10^{22}}=4.66\\times 10^6 \\, \\unit m$$\n        \\item The Earth-Moon CM orbits around the Sun in a perfect ellipse, and the Earth and Moon rotate about this CM, so the Earth and Moon individually do not follow perfect ellipses but rather a rippled ellipse around the sun. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A 0.25-kg skeet (clay target) is fired at an angle of 28$^\\circ$ to the horizontal with a speed of 25 m/s. When it reaches the maximum height, $h$, it is hit from below by a 15-g pellet traveling vertically upward at a speed of 230 m/s. The pellet is embedded in the skeet. (a) How much higher, $\\Delta h$, does the skeet go up? (b) How much extra distance, $\\Delta x$, does the skeet travel because of the collision?\n    \\begin{center}\n        \\includegraphics[scale=0.25]{pellet}\n    \\end{center}",
+    "problem_images": [
+      "AP1_Mom1 Sols/pellet.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item We first use conservation of momentum in the inelastic collision to find the speed immediately after being hit. This is $$v=\\frac{0.25\\cdot 0+0.015\\cdot 230}{0.25+0.015}=13\\, \\unit{m/s}$$By kinematics, the pellet then rises an additional $$\\Delta h = \\frac{v^2}{2g}=\\frac{13^2}{2\\cdot 9.8}=8.62\\, \\unit m$$\n        \\item Note that the horizontal speed of the skeet is always $25\\cdot \\cos(28)=22.07\\, \\unit{m/s}$. The extra distance $\\Delta x$ is equal to the extra time the skeet ends up in the air, times this horizontal speed. In the initial case the skeet just falls vertically from an initial vertical speed of 0, so we have $$h=\\frac 12gt_1^2\\Rightarrow t_1=\\sqrt{\\frac{2h}{g}}$$But now we need $h$, and we can find this via $h=v_y^2/2g=25^2\\sin^2(28)/(2\\cdot 9.8)=7.03\\, \\unit m.$ So in the case where the skeet doesn't get hit it would move for an extra time $$t_1=\\sqrt{\\frac{2h}{g}}=\\sqrt{\\frac{2\\cdot 7.03}{9.8}}=1.2\\, \\unit s$$In the case where it does get hit, we have an initial velocity of 13 m/s upward, so by kinematics $$7.03=-13t_2+4.9t_2^2\\Rightarrow t_2=3.11\\, \\unit s$$ by the quadratic formula (we take the positive root because time has to be positive). Then the extra distance is $\\Delta x = v_x(t_2-t_1)=22.07(3.11-1.2)=42\\, \\unit m.$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A tennis ball of mass $m = 0.060$ kg and speed $v = 28$ m/s strikes a wall at a 45$^\\circ$ angle and rebounds with the same speed at 45$^\\circ$. What is the impulse (magnitude and direction) given to the ball?\n    \\begin{center}\n        \\includegraphics[scale=0.2]{thing}\n    \\end{center}",
+    "problem_images": [
+      "AP1_Mom1 Sols/thing.png"
+    ],
+    "solution": "The vertical component of velocity is unchanged, so there is no change in the vertical momentum. However, the horizontal velocity flips; initially, it is $28\\sin(45)=19.8\\, \\unit{m/s}$, and later it is $-19.8\\, \\unit{m/s}$ (defining the positive direction as rightward). Thus the change in momentum imparted to the ball is $p=0.06(19.8-(-19.8))=2.38\\, \\unit{kg\\cdot m/s}$. This is equal to the impulse given to the ball, by definition. The impulse is applied by normal force, which points to the left.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Rain is falling at the rate of 2.5 cm/h and accumulates in a pan. If the raindrops hit at 8.0 m/s, estimate the force on the bottom of a $1.0\\, \\unit{m^2}$ pan due to the impacting rain which we assume does not bounce. Water has a mass of $1.00 \\times 10^3$ kg per $\\unit{m^3}$.",
+    "problem_images": [],
+    "solution": "We have $F=\\Delta p/\\Delta t$. In time $\\Delta t$, there is some amount of water that hits the pan and stops, resulting in a change in momentum of the water. Thus the pan exerts a force on the water, and the water exerts a force on the pan by Newton's Third Law. We first convert everything to SI units (meters and seconds), so the rate at which water accumulates is $(0.025 \\, \\text{m})/(3600\\, \\unit{s})=6.94\\times 10^{-6}\\, \\unit{m/s}$. In time $\\Delta t$, the volume of water that hits the pan is $(1 \\, \\unit{m^2})\\cdot (6.94\\times 10^{-6}\\, \\unit{m/s})\\Delta t$, so the mass that hits the pan is $(1\\times 10^3\\, \\unit{kg/m^3})(1 \\, \\unit{m^2})\\cdot (6.94\\times 10^{-6}\\, \\unit{m/s})\\Delta t$. The change in momentum is then $$\\Delta p=(1\\times 10^3\\, \\unit{kg/m^3})(1 \\, \\unit{m^2})\\cdot (6.94\\times 10^{-6}\\, \\unit{m/s})\\cdot(8\\, \\unit{m/s})\\Delta t=0.0555\\Delta t$$Thus the force is just $\\Delta p/\\Delta t=0.0555\\, \\unit N$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "With what impulse does a 0.50-kg newspaper have to be thrown to give it a velocity of 3.0 m/s?",
+    "problem_images": [],
+    "solution": "The impulse equals the momentum, which is $I=p=0.5\\cdot 3=1.5\\, \\unit{kg\\cdot m/s}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A tennis ball of mass 1 kg is moving at speed $-1$ m/s when it is hit by a racket with the following force as a function of time. Estimate the final speed of the tennis ball. \n    \\begin{center}\n        \\includegraphics[scale=0.2]{thing2}\n    \\end{center}",
+    "problem_images": [
+      "AP1_Mom1 Sols/thing2.png"
+    ],
+    "solution": "Since $I=F\\Delta t$, the impulse is effectively the area under the curve. We can estimate the area (by counting the squares) to be around $5\\, \\unit{N\\cdot s}$. Then the change in speed of the ball is just $5$ m/s, so the final speed is 4 m/s.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "An internal explosion breaks an object, initially at rest, into two pieces, one of which has 1.5 times the mass of the other. If 5500 J is released in the explosion, how much kinetic energy does each piece acquire?",
+    "problem_images": [],
+    "solution": "Let the mass of the smaller piece be $m$, so the other mass is $1.5m$. Note that the explosion has to conserve momentum, so the momentum of the smaller half has to equal the momentum of the larger half. Let the velocity of the smaller piece be $v$, so by conservation of momentum the other mass has speed $u$ given by $mv=1.5mu\\Rightarrow u=0.67v$. We can thus find the total kinetic energy in terms of $m$ and $v$, which is $$5500=\\frac12 mv^2+\\frac12(1.5m)(0.67v)^2=\\frac 12mv^2+\\frac 23\\cdot \\frac12 mv^2=\\frac 53 \\cdot \\frac 12mv^2$$Since the kinetic energy of the smaller piece is exactly $(1/2)mv^2$, the kinetic energy of that piece is just $5500\\cdot (3/5)=3300\\, \\unit{J}$. Then the larger half has $2200\\, \\unit{J}$ of energy.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Car A hits car B (initially at rest and of equal mass) from behind while going 38 m/s. Immediately after the collision, car B moves forward at 15 m/s and car A is at rest. What fraction of the initial kinetic energy is lost in the collision",
+    "problem_images": [],
+    "solution": "Let the mass of the cars be $m$. The kinetic energy before the collision is $(1/2)m\\cdot 38^2$, and the kinetic energy after is $(1/2)m\\cdot 15^2$. The kinetic energy lost is $(1/2)m(38^2-15^2)$, so the fraction is $$\\frac{(1/2)m(38^2-15^2)}{(1/2)m\\cdot 38^2}=0.844$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A pendulum consists of a block $M$ hanging at the bottom end of a massless rod of length l, which has a frictionless pivot at its top end. A mass $m$, moving at speed $v$, hits the block $M$ and gets embedded in the block. What is the minimum $v$ so that the entire system can move through a half-circle as shown, and swing back around?\n    \\begin{center}\n        \\includegraphics[scale=0.2]{thing3}\n    \\end{center}",
+    "problem_images": [
+      "AP1_Mom1 Sols/thing3.png"
+    ],
+    "solution": "We analyze the situation in pieces. First, the collision should be analyzed via momentum, and then the swinging should be analyzed via conservation of energy. Since the bullet is embedded, the collision is inelastic, so the speed of the system right after the collision is found as $$u=\\frac{mv}{M+m}$$ By conservation of energy, we can also find $u$ via $$\\frac 12(M+m)u^2=(M+m)g(2l)\\Rightarrow u=2\\sqrt{gl}$$Plugging this in, we get $$v=\\frac{2(M+m)}{m}\\sqrt{gl}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A bullet of mass $m = 0.0010$ kg embeds itself in a wooden block with mass $M = 0.999$ kg, which then compresses a spring ($k = 140$ N/m) by a distance $x = 0.050$ m before coming to rest. The coefficient of kinetic friction between the block and table is $\\mu = 0.50$. (a) What is the initial velocity (assumed horizontal) of the bullet? (b) What fraction of the bullet’s initial kinetic energy is dissipated (in damage to the wooden block, rising temperature, etc.) in the collision between the bullet and the block?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item By conservation of energy, the initial kinetic energy of the block-bullet system can be found via $$\\frac 12(M+m)v^2=\\frac 12 kx^2+(M+m)g\\mu x\\Rightarrow v= 0.917\\, \\unit{m/s}$$This is after the collision, so the initial speed $u$ of the bullet is found as $$v=\\frac{mu}{M+m}\\Rightarrow u=\\frac{M+m}{m}v=917\\, \\unit{m/s}$$\n    \\item The initial kinetic energy is $(1/2)mu^2=420\\, \\unit{J}$ and the final kinetic energy is $(1/2)(M+m)v^2=0.42\\, \\unit{J}$. The fraction of the energy lost is then $(420-0.42)/420=0.999$. \n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Mom1 Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A plank of mass $M$ and length $L$ is placed on a frictionless table, and a small block of mass $m$ is placed on the plank. The coefficient of friction between the block and the plank is $\\mu$. Initially, the block is at the left end of the plank as shown but it suddenly gains a velocity $v_0$ to the right. What must $v_0$ be so that after a long time, the block will be at the right end of the plank?\n    \\begin{center}\n        \\includegraphics[scale=0.2]{blockmove}\n    \\end{center}\n    There is a quick solution by using conservation of momentum.",
+    "problem_images": [
+      "AP1_Mom1 Sols/blockmove.png"
+    ],
+    "solution": "By conservation of momentum, the blocks must end up moving together at a speed $v = mv_0/(M + m)$. Their combined energy is therefore less, and the lost energy is equal to the work done by friction, $W_f = mg\\mu L$. Hence,\\begin{align*}\n        mg\\mu L&=\\frac12mv_0^2-\\frac12(M+m)\\left(\\frac{mv_0}{M+m}\\right)^2\\\\\n        mg\\mu L&=\\frac12mv_0^2-\\frac12\\frac{m^2}{M+m}v_0^2\\\\\n        mg\\mu L&=\\frac12mv_0^2\\left(1-\\frac{m}{M+m}\\right)\\\\\n        L&=\\frac{v_0^2}{2g\\mu}\\frac{M}{M+m}\\\\\n        \\Rightarrow v_0&=\\boxed{\\sqrt{2g\\mu L\\frac{M+m}{M}}}\n    \\end{align*}",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

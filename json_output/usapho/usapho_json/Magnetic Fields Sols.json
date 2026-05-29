@@ -1,0 +1,202 @@
+[
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Find the magnetic field at the point shown if a current $I$ runs through the wire. The two lines go off to infinity in their respective directions. \\begin{center}\n        \\includegraphics[scale=0.2]{m333}\n    \\end{center}",
+    "problem_images": [
+      "Magnetic Fields Sols/m333.png"
+    ],
+    "solution": "The contributions from the two infinite sections add up to one infinite wire, so their component is $\\mu_0I/2\\pi r$. By the Biot-Savart law, the quarter-ring contributes $\\mu_0I/8r$. Thus the total field is $$B=\\boxed{\\frac{\\mu_0I}{r}\\left(\\frac{1}{2\\pi}+\\frac18\\right)}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A charge $q$ is moving at speed $\\mathbf v=v_0\\hat{\\mathbf x}$ through the origin. At the point $(x,y)$, what is the direction and magnitude of the magnetic field $\\mathbf B$?",
+    "problem_images": [],
+    "solution": "Note $I\\, dl=(q/dt)dl=q(dl/dt)=qv.$ Thus, by the Biot-Savart law, $$\\mathbf B=\\frac{\\mu_0q v_0\\hat{\\mathbf x}\\times \\hat{\\mathbf r}}{4\\pi r^2}=\\frac{\\mu_0q v_0\\sin\\theta}{4\\pi (x^2+y^2)}\\hat{\\mathbf z}=\\boxed{\\frac{\\mu_0q v_0y}{4\\pi (x^2+y^2)^{3/2}}\\hat{\\mathbf z}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "IPhO",
+    "problem": "Try Problem 2 from IPhO 1999 \\href{https://s3.eu-central-1.amazonaws.com/physprob.com/files/ipho/1999_Italy_p2.pdf}{here}. A relatively easier question involving both Biot-Savart and Ampere's!",
+    "problem_images": [],
+    "solution": "See solutions \\href{https://s3.eu-central-1.amazonaws.com/physprob.com/files/ipho/1999_Italy_p2Sol.pdf}{here}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A magician places an infinite wire a distance $d$ above the ground, and miraculously it floats in mid-air! The wire carries current $I$ and has linear mass density $\\lambda$. The magician's trick is that he buried another infinite wire right under the ground, right beneath and parallel to the first wire. What is the direction and magnitude of the current $I'$ in the buried wire?",
+    "problem_images": [],
+    "solution": "The magnetic field due to the buried current at the location of the other current is $B=\\mu_0I'/2\\pi d$. The force on the wire per unit length, which must be repelling, is then $F/L=IB=\\mu_0II'/2\\pi d$. This must balance the force per unit length of gravity, which is $\\lambda g$. As a result, equating and solving yields $$I'=\\boxed{\\frac{2\\pi\\lambda dg}{\\mu_0I}}$$For the force to be repelling, $I'$ must be directed in the \\fbox{opposite direction} of $I.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Two identical rings of radius $r$, with their axes aligned, carry current $I$ in the same direction. Their centers are separated by a distance $R$.\n    \\begin{anum}\n        \\item If $r\\gg R$, find the force between the rings.\n        \\item If $r\\ll R$, find the force between the rings.\n        \\item Find the necessary separation $R$ such that the magnetic field midway between the rings along their axes is as uniform as possible. \n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item In the limit $r\\gg R$, if we zoom in on a small section of the rings (of length order $R$) the rings will look like parallel infinite wires. The magnetic field at the location of the other is $B=\\mu_0I/2\\pi R$, so the total force between them is $$F=2\\pi rIB=\\boxed{\\frac{\\mu_0I^2r}{R}}$$\n        \\item In the limit $r\\ll R$, the rings act as two dipoles with $m=\\pi r^2I.$ The magnetic field at the position of the other is thus given by $B=\\mu_0m/2\\pi R^3$, and the force is found by $$F=q_m\\, dB=(q_m\\, dR)\\frac{3\\mu_0m}{2\\pi R^4}=\\frac{3\\mu_0m^2}{2\\pi R^4}=\\boxed{\\frac{3\\pi \\mu_0I^2r^4}{2R^4}}$$\n        \\item Let us find the field at a small distance $z$ above the point midway between the wires. By the Biot-Savart Law, this field is given by $$B=\\frac{\\mu_0Ir^2}{2}\\left(\\frac{1}{(r^2+(R/2+z)^2)^{3/2}}+\\frac{1}{(r^2+(R/2-z)^2)^{3/2}}\\right)$$The field is most uniform when we minimize the first derivative, i.e. when the second derivative equals 0. Taking the derivative twice, and evaluating at $z=0$, we get \\begin{align*}\\frac{d^2}{dz^2}\\left(\\frac{1}{(r^2+(R/2+z)^2)^{3/2}}+\\frac{1}{(r^2+(R/2-z)^2)^{3/2}}\\right)\\\\\n        =\\frac{15R^2}{2(r^2+R^2/4)^{7/2}}-\\frac{6}{(r^2+R^2/4)^{5/2}}\\end{align*}Setting equal to 0 and solving, we get $$\\boxed{R=r}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Two long, straight wires, each of length $L$, are positioned with one above the other by a distance $d$. The wires are oriented perpendicularly, and each carries a current $I$. Ignore gravity. \\begin{center}\n        \\includegraphics[scale=0.2]{duck}\n    \\end{center}\n    \\begin{anum}\n        \\item Find the magnitude of the net force $F$ between the wires.\n        \\item Find the magnitude of the net torque $\\tau$ between the wires about their centers. Hint: Feel free to use an integral calculator.\n        \\item Find the answer to part (b) in the case $L\\gg d$. \n    \\end{anum}",
+    "problem_images": [
+      "Magnetic Fields Sols/duck.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item Without loss of generality, let both rods carry current to the right. Analyzing two symmetrically opposite points on the top rod, we can draw the force vectors acting on them: \\begin{center}\n            \\includegraphics[scale=0.2]{sol1}\n        \\end{center}\n        From the diagram, it's clear that the net force $\\boxed{F=0}$. \n        \\item Let the points indicated be a distance $x$ from the center of the top rod. By Biot-Savart, the magnetic field from a finite wire of length $L$ at a distance $r$ away from its center is $$B=\\int_{-\\theta_m}^{\\theta_m} \\frac{\\mu_0}{4\\pi}\\frac{I(r\\, d\\theta/\\cos^2\\theta)\\cos\\theta}{(r/\\cos\\theta)^2}=\\frac{\\mu_0I}{2\\pi r}\\sin\\theta_m=\\frac{\\mu_0I}{2\\pi r\\sqrt{1+(2r/L)^2}}$$Thus the net torque produced at the two points indicated in the diagram above (at an angle $\\theta$ to the line $d$) is equal to $$d\\tau=2IB\\frac{d}{\\cos^2\\theta}d\\theta\\cdot d\\tan\\theta$$ $B$ is found from before, using $r=d/\\cos\\theta$. Integrating this from $0$ to $\\theta_m=\\tan^{-1}(L/2d)$, we get \\begin{align*}\n            \\tau &=2Id^2\\int_0^{\\theta_m}\\frac{B\\sin\\theta}{\\cos^3\\theta}d\\theta\\\\\n            &=2Id^2\\int_0^{\\theta_m}\\frac{\\mu_0I\\cos\\theta}{2\\pi d\\sqrt{1+(2d/L\\cos\\theta)^2}}\\frac{\\sin\\theta}{\\cos^3\\theta}d\\theta\\\\\n            &=\\frac{\\mu_0I^2d}{\\pi}\\int_0^{\\theta_m}\\frac{1}{\\sqrt{1+(2d/L\\cos\\theta)^2}}\\frac{\\sin\\theta}{\\cos^2\\theta}d\\theta\\\\\n            &=\\frac{\\mu_0I^2d}{\\pi L}\\left(\\sqrt{L^2\\sec^2\\theta_m+4d^2}-\\sqrt{L^2+4d^2}\\right)\\\\\n            &=\\boxed{\\frac{\\mu_0I^2d}{\\pi L}\\left(\\sqrt{L^2+4d^2+\\frac{L^4}{4d^2}}-\\sqrt{L^2+4d^2}\\right)}\n        \\end{align*}\n        \\item In the limit $L\\gg d$, we ignore $L^2+4d^2$ in the first square root and we can ignore the second square root, so $$\\tau=\\boxed{\\frac{\\mu_0I^2L}{2\\pi}}$$\n        Notice that the torque diverges as $L\\rightarrow \\infty$. \n    \\end{anum}",
+    "solution_images": [
+      "Magnetic Fields Sols/sol1.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Purcell",
+    "problem": "A very long cylinder with radius $R$ and uniform volume charge density $\\rho$ spins with frequency $\\omega$ around its axis. What is the magnetic field at a point on the axis?",
+    "problem_images": [],
+    "solution": "Imagine the cylinder as a bunch of concentric solenoids, so we know the field outside the cylinder is 0. Drawing an Amperian loop of height $l$ along the axis of the cylinder to the outside, the total charge passing through the loop in time $dt$ is equal to that of a ``pie slice\" of the cylinder with height $l$ and sector angle $\\omega \\,dt$, which comes up to be $dq=\\rho \\omega R^2 l \\, dt$. Thus, by Ampere's law, $$B=\\boxed{\\mu_0\\rho \\omega R^2}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Take a cylindrical wire of overall radius $R$ with a cavity of radius $a$ in it as shown a distance $b$ from its center. The cross section of this wire is shown below.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{ball_ball_light}\n    \\end{center} The wire carries uniform total current $I$. Show that the magnetic field in the cavity is uniform, and find its magnitude.",
+    "problem_images": [
+      "Magnetic Fields Sols/ball_ball_light.png"
+    ],
+    "solution": "Let $\\mathbf r$ be the radius vector to some point in the cavity, where $\\mathbf r=\\mathbf b+\\mathbf r'$ for the vector $\\mathbf r'$ anchored at the center of the cavity. By superposition of current going in one direction and a negative current canceling out the existing current in the cavity, we can find the magnetic field via Ampere's law. The current density can be found as $\\mathbf J=\\mathbf I/(\\pi R^2-\\pi a^2)$, and so $$\\mathbf B=\\frac{\\mu_0}{2}(\\mathbf J\\times \\mathbf r-\\mathbf J\\times \\mathbf r')=\\frac{\\mu_0}{2}\\mathbf J\\times(\\mathbf r-\\mathbf r')=\\frac{\\mu_0}{2}\\mathbf J\\times \\mathbf b=\\frac{\\mu_0\\mathbf I\\times \\mathbf b}{2\\pi (R^2-a^2)}$$Thus the magnetic field is uniform in the cavity (there is no $\\mathbf r$ dependence), with magnitude $$B=\\boxed{\\frac{\\mu_0Ib}{2\\pi(R^2-a^2)}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A uniform ring of current $I$, radius $r$, and mass $m$ is placed in the $xy$ plane with the current clockwise when viewed from above. Its center is placed at the origin. A uniform magnetic field $\\mathbf B=B_0\\hat{\\mathbf z}$ is oriented in space. Assume the ring has a very high resistance, so you can assume the current the ring is always approximately $I$ in the parts below. \\begin{anum}\n        \\item The ring is given a light impulse $\\mathbf P=P\\hat{\\mathbf z}$ at the point $(r,0)$. Assume for now that the ring is held on a pivot along the $y$ axis. Find the necessary condition for the ring to undergo small angle oscillations. \n        \\item Find the frequency of these small angle oscillations. \n        \\item Now, assume that $P$ is no longer small. What is the minimum $P$ such that the ring can flip upside down?\n        \\item Resolve part (c) in the case where there is no pivot.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item For small angle oscillations to occur, $P$ needs to be small enough, i.e. the kinetic energy imparted must be much less than the energy needed to flip the ring over. Viewing the ring as a dipole $m$ with monopoles $q_m$ separated by a distance $l$, the work needed to flip the ring over is $$W=-\\int_0^{\\pi}q_mB_0l\\sin\\theta\\, d\\theta=2mB_0=2\\pi r^2IB_0$$If the ring is pivoted, the impulse provides an angular momentum $L=Pr$, and the moment of inertia of the ring is $mr^2/2$ by the perpendicular axis theorem. Thus the imparted angular velocity $\\omega=2P/mr$, and the kinetic energy is $K=(1/2)(mr^2/2)\\omega^2=P^2/m$. Thus, we require $$\\boxed{P\\ll \\sqrt{2\\pi mr^2IB_0}}$$\n        \\item Again treating the ring as two monopoles, the torque when the ring is oriented a small angle $\\theta$ to $B_0$ is $-\\pi r^2IB_0\\theta$, so the equation of motion is $$-\\pi r^2IB_0\\theta=\\frac{mr^2}{2}\\ddot\\theta$$so $$\\omega=\\boxed{\\sqrt{\\frac{2\\pi IB}{m}}}$$\n        \\item We simply copy the answer from part (a), so $$\\boxed{P=\\sqrt{2\\pi mr^2IB_0}}$$\n        \\item The only thing different about this case is that the ring's center of mass gains a velocity downward, but this velocity is parallel to $\\mathbf B$ so nothing changes about the forces acting on the ring. Thus, we get the same answer from part (c). \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Take a cylindrical solenoid and bend it so that its ends connect. This new, donut-shaped object is called a toroid. \\begin{center}\n        \\includegraphics[scale=0.4]{internet}\n    \\end{center}\n    The toroid shown has current $I$ and $N$ turns. Find the magnetic field strength $B$ at a distance $r$ from the center of the toroid, where the point in question is within the inner section of the toroid.",
+    "problem_images": [
+      "Magnetic Fields Sols/internet.jpeg"
+    ],
+    "solution": "By Ampere's law, $$B=\\boxed{\\frac{\\mu_0NI}{2\\pi r}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "An electron is projected with speed $\\mathbf v(0)=v_0\\hat{\\mathbf x}$ at time $t=0$ in a region of space where $\\mathbf E=-E_0\\hat{\\mathbf y}$ and $\\mathbf B=B_0\\hat{\\mathbf z}$. The electron starts at the origin, and has mass $m$ and charge $-q$. Under these conditions, the electron will undergo periodic motion in space with an average velocity (drift velocity) $\\mathbf u$. \\begin{anum}\n        \\item Find the magnitude and direction of $\\mathbf u$. Hint: Write out $\\mathbf v(t)=\\mathbf u+\\mathbf u'(t)$, where the average value of $\\mathbf u'(t)$ is 0. In what frame of reference does the electron move with speed $\\mathbf u'(t)$?\n        \\item What is the name of the shape of the path the electron makes?\n        \\item For $v_0=3E_0/B_0$, sketch the path of the electron over at least one period.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item We know that the electron will exhibit circular motion if acted on solely by a magnetic field. Thus, if we move into the frame with speed $\\mathbf u$ such that the electric field is directly canceled by the component $\\mathbf u\\times \\mathbf B$ in the Lorentz force, the electron will exhibit circular motion. Thus, $$-E_0\\hat{\\mathbf y}+\\mathbf u\\times B_0\\hat{\\mathbf z}=0\\Rightarrow \\mathbf u=\\boxed{-\\frac{E_0}{B_0}\\hat{\\mathbf x}}$$\n        \\item The path is the superposition of circular motion and constant velocity motion in one direction, i.e. \\fbox{a cycloid}.\n        \\item In the drift velocity frame, we start out with a speed $v'=4E_0/B_0$ in the positive $x$ direction. Thus, in this frame the electron exhibits circular motion with radius $$r=\\frac{mv'}{qB_0}=\\frac{4mE_0}{qB_0^2}$$ The electron deflects up in the positive $y$ direction by the cross product. The period of the motion is $$T=\\frac{2\\pi r}{v'}=\\frac{2\\pi m}{qB_0}$$ Thus, after each period the electron moves a distance $$uT=\\frac{2\\pi mE_0}{qB_0^2}$$ Sketching the resulting cycloid, it should look something like this: \\begin{center}\n            \\includegraphics[scale=0.3]{sol2}\n        \\end{center}\n    \\end{anum}",
+    "solution_images": [
+      "Magnetic Fields Sols/sol2.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Purcell",
+    "problem": "A number of simple facts about the fields of solenoids can be found by using superposition. The idea is that two solenoids of the same diameter, and length $L$, if joined end to end, make a solenoid of length $2L$. Two semi-infinite solenoids butted together make an infinite solenoid, and so on. (A semi-infinite solenoid is one that has one end here and the other infinitely far away.) Try to prove the facts below.\n\\begin{anum}\n    \\item In the finite-length solenoid below, show that the magnetic field on the axis at the point $P_2$ at one end is approximately half the field at the point $P_1$ in the center. (Is it slightly more than half, or slightly less than half?)\n    \\begin{center}\n        \\includegraphics[scale=0.2]{m3}\n    \\end{center}\n    \\item In the semi-infinite solenoid shown below, show that the field line $FGH$, which passes through the very end of the winding, is a straight line from $G$ out to infinity.\n    \\begin{center}\n\\includegraphics[scale=0.4]{m22}\n    \\end{center}\n    \\item The flux of $\\mathbf B$ through the end face of the semi-infinite solenoid above is just half the flux through the coil at a large distance back in the interior.\n    \\item Any field line that is a distance $r_0$ from the axis far back in the interior of the coil exits from the end of the coil at a radius $r = \\sqrt2 r_0$, assuming that $r_0 < (\\text{solenoid radius})/\\sqrt2$.\n\\end{anum}",
+    "problem_images": [
+      "Magnetic Fields Sols/m3.png",
+      "Magnetic Fields Sols/m22.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item Imagine adding a similar solenoid on the left, as shown below. \\begin{center}\n            \\includegraphics[scale=0.2]{sole3}\n        \\end{center}This exactly doubles the field strength at $P_2$. But now the field strengths at $P_2$ and $P_1$ are approximately equal, because both points lie well inside a fairly long solenoid, the field at $P_2$ being slightly stronger. Therefore, the original field at $P_2$ must have been slightly more than half the field at $P_1$. \n        \\item Let’s assume (in search of a contradiction) that there exists a field line that crosses the line $GH$ with a vertical component, as shown in Fig. (a). Imagine flipping the solenoid upside down to obtain the situation in Fig. (b), and then reversing the direction of the current (so that it now has the same direction as in Fig. (a)) to obtain the situation in Fig. (c). Note that the field at the given point on the line $GH$ has a downward component in both figures (a) and (c) (or upward in both, if we had initially drawn it upward).\n        \\begin{center}\n            \\includegraphics[scale=0.35]{sole4}\n        \\end{center}\n        Now join the two semi-infinite solenoids in figures (a) and (c) end to end, thereby creating an infinite solenoid. By superposition, the fields simply add, so we end up with a downward component at the given point along $GH$. But this is a contradiction, because we know that the field of an infinite solenoid is zero outside the solenoid. We conclude that the field due to the semi-infinite solenoid at the given point must have had zero vertical component. In other words, it was horizontal, as we wanted to show.\n        \\item The argument used in part (a), applied to the semi-infinite solenoid, shows that the axial component of the field, at any point on the end face is exactly $B_0/2$, where $B_0$ is the (uniform) field throughout the inside the corresponding infinite solenoid. This is true because adding another semi-infinite solenoid simply doubles the axial field at any point on the end face (see the reasoning in part (b)), and cancels the radial field, resulting in a purely axial field. As far as the flux goes, when calculating the flux through the end face, only the axial field component is involved. Therefore, the flux must be exactly half the interior flux.\n        \\item From the reasoning in part (c), a given flux tube that starts with area $A$ far back in the solenoid must flare out as it approaches the end face, so that its cross section there (where the axial field is half as large as the field far back in the solenoid) has area $2A$ and thus the same amount of flux. (There can be no net flux into or out of the tube, due to Gauss's law for magnetism.) In the special case of an axial tube with circular cross section everywhere, this tells us that $\\pi r_1^2 = 2\\pi r_0^2\\Rightarrow r_1=\\sqrt2r_0$. Of course, this holds only if $r_0 < R/\\sqrt2$, where $R$ is the radius of the solenoid. Otherwise, the field line exits the solenoid before it reaches the end.\n    \\end{anum}",
+    "solution_images": [
+      "Magnetic Fields Sols/sole3.png",
+      "Magnetic Fields Sols/sole4.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Two squares of wire of side length $s$ are placed in the $xy$ plane. Looking from above, each square carries a current $I$ in the clockwise direction. One square is centered at the origin, and the other is placed at the point $(d,0)$ where $d\\gg s$. What is the force of interaction between the two squares?",
+    "problem_images": [],
+    "solution": "Approximating the squares as dipoles, we will find the horizontal force on each monopole within each dipole. \\begin{center}\n        \\includegraphics[scale=0.2]{dipoles}\n    \\end{center}\n    The net horizontal force on the top charge is $$F=\\frac{\\mu_0q_m^2}{4\\pi}\\left(\\frac{1}{d^2}-\\frac{1}{d^2+l^2}\\right)\\approx \\frac{\\mu_0q_m^2l^2}{d^4}$$and the same can be said for the bottom charge. Thus the total force of interaction is $$F=\\frac{2\\mu_0q_m^2l^2}{d^4}=\\boxed{\\frac{2\\mu_0I^2s^4}{d^4}}$$",
+    "solution_images": [
+      "Magnetic Fields Sols/dipoles.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "IPhO",
+    "problem": "Try Problem 2 from IPhO 2000 \\href{https://drive.google.com/file/d/1a01oOTLvB7aFtH0XGqMRH3nkZLtMpJGQ/view?usp=sharing}{here}. Part (c) is excellent practice with experimental physics!",
+    "problem_images": [],
+    "solution": "See solutions \\href{https://s3.eu-central-1.amazonaws.com/physprob.com/files/ipho/2000_UnitedKingdom_p2Sol.pdf}{here}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "USAPhO Practice",
+    "problem_tag": "USAPhO 2021 A3",
+    "problem": "An electron is a particle with charge $-q$, mass $m$, and magnetic moment $\\mu$. In this problem we will explore whether a classical model consistent with these properties can also explain the rest energy $E_0 = mc^2$ of the electron. Let us describe the electron as a thin spherical shell with uniformly distributed charge and radius $R$. Recall that the magnetic moment of a closed, planar loop of current is always equal to the product of the current and the area of the loop. For the electron, a magnetic moment can be created by making the sphere rotate around an axis passing through its center.\n    \\begin{anum}\n        \\item If no point on the sphere’s surface can travel faster than the speed of light (in the frame of the sphere’s center of mass), what is the maximum magnetic moment that the sphere can have? You may use the integral:\n        $$\\int_0^\\pi\\sin^3\\theta\\, d\\theta=\\frac43$$\n        \\item The electron’s magnetic moment is known to be $\\mu = q\\hbar/2m$, where $\\hbar$ is the reduced Planck constant. In this model, what is the minimum possible radius of the electron? Express your answer in terms of $m$ and fundamental constants.\n        \\item Assuming the radius is the value you found in part (b), how much energy is stored in the electric field of the electron? Express your answer in terms of $E_0 = mc^2$ and the fine structure constant, $$\\alpha=\\frac{q^2}{4\\pi\\epsilon_0\\hbar c}\\approx \\frac1{137}$$\n        \\item Roughly estimate the total energy stored in the magnetic field of the electron, in terms of $E_0$ and $\\alpha$. (Hint: one way to do this is to suppose the magnetic field has roughly constant magnitude inside the sphere and is negligible outside of it, then estimate the field inside the sphere.)\n        \\item How does your estimate for the total energy in the electric and magnetic fields compare to $E_0$?\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "See solutions \\href{https://www.aapt.org/Common2022/upload/2021-USAPhO_Solutions_v3.pdf}{here}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Magnetic Fields Sols",
+    "section": "Problem Set",
+    "subsection": "USAPhO Practice",
+    "problem_tag": "Modified from IPhO 1996",
+    "problem": "Let there be two coaxial conducting cylinders with vacuum between them. The radius of the inner cylinder is $a$ and the inner radius of the outer cylinder is $b$, as shown in the figure below. The outer cylinder, called the anode, may be given a positive potential $V$ relative to the inner cylinder. A uniform magnetic field $B$ parallel to the cylinder axis, directed out of the plane of the figure, is also present. Induced charges in the conductors are neglected. Electrons of mass $m$ and charge $-q$ are released at the surface of the inner cylinder.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{ipho2}\n    \\end{center}\n    \\begin{anum}\n        \\item Initially, $B=0$, but the outer cylinder is charged to the potential $V$. Electrons are released from rest from the inner cylinder. What are the velocities of the electrons when they reach the outer cylinder?\n        \\item Now $V = 0$, but now the magnetic field $B$ is present. An electron starts out with an initial velocity $v_0$ in the radial direction. For magnetic fields larger than a critical value $B_c$ the electron will not reach the anode. Determine $B_c$.\n        \\item Now, both $V$ and $B$ are present. The magnetic field will give the electron a non-zero angular momentum $L$ with respect to the cylinder axis. Write down an equation for the rate of change $dL/dt$ of the angular momentum. Show that this equation implies that $$L-kqBr^2$$ is constant during the motion, where $k$ is some number. Here $r$ is the distance from the cylinders' axes. Find $k$.\n        \\item Consider an electron, released from the inner cylinder with negligible velocity, that does not reach the anode, but has a maximal distance from the cylinder axis equal to $r_m$. Determine the speed $v$ at the point where the radial distance is maximal, in terms of $r_m$.\n        \\item For $B$ larger than a critical magnetic field $B_c$, an electron, released with negligible velocity, will not reach the anode. Determine $B_c$.\n    \\end{anum}",
+    "problem_images": [
+      "Magnetic Fields Sols/ipho2.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item By conservation of energy, $$\\frac12mv^2=qV\\Rightarrow v=\\boxed{\\sqrt{\\frac{2qV}{m}}}$$\n        \\item The electrons will move in circles. If the magnetic field strength is too strong, the electron's path will curve back too quickly. The critical case is shown below.\\begin{center}\n            \\includegraphics[scale=0.2]{crucial}\n        \\end{center}\n        The critical radius of the orbit is given by the equation $$r+\\sqrt{r^2+a^2}=b\\Rightarrow r=\\frac{b^2-a^2}{2b}$$\n        And since $r=mv/qB_c$, we solve to get $$B_c=\\boxed{\\frac{2mvb}{q(b^2-a^2)}}$$\n        \\item Notice that the force exerted by the electric field is radial, as well as the magnetic force from the azimuthal component of velocity $(v_\\phi \\hat{\\phi}\\times \\mathbf B)$. Thus, $$\\frac{dL}{dt}=qv_rBr=qBr\\frac{dr}{dt}$$and integrating yields $k=\\boxed{1/2}$. \n        \\item When the radial distance is maximal, the speed is purely in the azimuthal direction, so $L=mvr_m$. The electron is released with initially no velocity, so in using the conserved quantity from part (c) we get $$-\\frac12qBa^2=mvr_m-\\frac12qBr_m^2\\Rightarrow v=\\boxed{\\frac{qB(r_m^2-a^2)}{2mr_m}}$$\n        \\item Since $\\mathbf B$ cannot do any work, the velocity of the electron when it is about to hit the anode is always given by that in part (a). We want to match this velocity to the crucial velocity in part (d) with $r_m=b$. Solving for $B_c$, $$\\sqrt{\\frac{2qV}{m}}=\\frac{qB_c(b^2-a^2)}{2mb}\\Rightarrow B_c=\\boxed{\\frac{2b}{b^2-a^2}\\sqrt{\\frac{2mV}{q}}}$$\n    \\end{anum}",
+    "solution_images": [
+      "Magnetic Fields Sols/crucial.png"
+    ],
+    "solution_type": "sol"
+  }
+]

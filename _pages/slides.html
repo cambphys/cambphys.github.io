@@ -1,0 +1,54 @@
+---
+layout: default
+title: Slideshow
+permalink: /slides/
+---
+
+<link rel="stylesheet" href="/assets/css/slides.css">
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      macros: {
+        unit: ["\\,\\mathrm{#1}", 1],
+        pdv:  ["\\frac{\\partial #1}{\\partial #2}", 2],
+      },
+    },
+    options: { renderActions: { addMenu: [] } },
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script" async></script>
+
+<div class="slides-shell">
+  <div class="slides-topbar">
+    <a class="pset-back" id="slides-back" href="/courses/">← Back to course</a>
+    <span class="slides-title" id="slides-title">…</span>
+    <span class="slides-counter" id="slides-counter"></span>
+  </div>
+
+  <div class="slides-stage" id="slides-stage">
+    <p class="slides-loading">Loading slideshow…</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/assets/js/supabase-config.js"></script>
+<script src="/assets/js/auth.js"></script>
+<script src="/assets/js/courses.js"></script>
+<script src="/assets/js/slides.js"></script>
+<script>
+  (async function () {
+    try {
+      const user = await window.cambphysAuth.requireAuth();
+      if (!user) return;
+      await window.cambphysSlides.init();
+    } catch (e) {
+      console.error("slides init failed:", e);
+      document.getElementById("slides-stage").innerHTML =
+        '<p class="slides-loading">Could not start the slideshow: ' + (e.message || e) + '</p>';
+    }
+  })();
+</script>

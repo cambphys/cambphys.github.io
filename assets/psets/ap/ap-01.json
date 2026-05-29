@@ -1,0 +1,226 @@
+[
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A rolling ball moves from $x_1 = 8.4 \\, \\unit{cm}$ to $x_2 = –4.2 \\,\\unit{cm}$ during the time from $t_1 = 3.0\\, \\unit s$ to $t_2 = 6.1\\, \\unit s$. What is its average velocity over this time interval?",
+    "problem_images": [],
+    "solution": null,
+    "solution_images": [],
+    "solution_type": null
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A person jogs eight complete laps around a 400-m track in a total time of 14.5 min. Calculate (a) the average speed and (b) the average velocity, in m/s.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item The speed is $s=8\\cdot 400/(14.5\\cdot 60)=3.68\\, \\unit{m/s}.$\n        \\item The net displacement after eight laps is 0, so the velocity is $0\\, \\unit{m/s}$. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Two locomotives approach each other on parallel tracks. Each has a speed of 155 km/h with respect to the ground. If they are initially 8.5 km apart, how long will it be before they reach each other?\\begin{center}\n        \\includegraphics[scale=0.2]{trains}\n    \\end{center}",
+    "problem_images": [
+      "AP1_Kinematics1 Sols/trains.png"
+    ],
+    "solution": "The rate at which the locomotives approach each other is the sum of their velocities, which is $155+155=310\\, \\unit{km/h}$. (Another way to see this is to shift into the reference frame of one of the trains. In such a reference frame one train is at rest, and the other approaches it at speed $310\\, \\unit{km/h}$.) Thus, using $v=\\Delta x/\\Delta t$, we can rearrange the equation so that $\\Delta t = \\Delta x/v=8.5/310=0.027\\, \\unit{h}$. For an answer in minutes, we get $\\Delta t=60\\cdot 0.027 = 1.65\\, \\unit{min}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "At highway speeds, a particular automobile is capable of an acceleration of about 1.8 m/s$^2$. At this rate, how long does it take to accelerate from 65 km/h to 120 km/h?",
+    "problem_images": [],
+    "solution": "First, we convert the speeds to units of $\\unit{m/s}$. Note that $1 \\, \\unit{km/h}=1000\\, \\unit{m}/3600 \\, \\unit{s}=(1/3.6) \\, \\unit{m/s}$ (as a general rule, therefore, we can convert from $\\unit{km/h}$ to $\\unit{m/s}$ by dividing by 3.6). Using the definition of acceleration, $a=\\Delta v/\\Delta t$. We seek $\\Delta t$, and are given $a$ and $\\Delta v$. We simply rearrange, so $$\\Delta t= \\frac{\\Delta v}{a}=\\frac{1}{3.6}\\cdot\\frac{120-65}{1.8}=8.49\\, \\unit{s}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A light plane must reach a speed of 35 m/s for takeoff. How long a runway is needed if the (constant) acceleration is 3.0 m/s$^2$?",
+    "problem_images": [],
+    "solution": "We use the equation $v_f^2-v_0^2=2a\\Delta x$. $v_f=35\\, \\unit{m/s}$, $v_0=0$, and $a=3.0 \\, \\unit{m/s^2}$, so we can solve for $\\Delta x$ (the required length of the runway) via $$\\Delta x=\\frac{v_f^2-v_0^2}{2a}=\\frac{35^2-0^2}{2\\cdot 3}=204\\, \\unit{m}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A car slows down uniformly from a speed of 28.0 m/s to rest in 8.00 s. How far did it travel in that time?",
+    "problem_images": [],
+    "solution": "Note that the average velocity during this time is $v=14\\, \\unit{m/s}$. Then, the distance can be found as $\\Delta x = v\\Delta t=14\\cdot 8 = 112\\,\\unit{m}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A space vehicle accelerates uniformly from 85 m/s at $t = 0$ to 162 m/s at $t = 10.0$ s. How far did it move between $t = 2.0$ s and $t = 6.0$ s?",
+    "problem_images": [],
+    "solution": "The acceleration is found as $a=\\Delta v/\\Delta t = (162-85)/10=7.7\\, \\unit{m/s^2}$. We can then find the distance via $\\Delta x = v_0t+\\frac12at^2$, where $v_0$ corresponds to the velocity at $t=2$. The velocity can first be found via $v_0=85 + 2\\cdot 7.7=100.4$. Then, we just plug in values: $$\\Delta x=100.4\\cdot 4+\\frac12\\cdot 7.7\\cdot 4^2=463\\, \\unit{m}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 75-m-long train begins uniform acceleration from rest. The front of the train has a speed of 18 m/s when it passes a railway worker who is standing 180 m from where the front of the train started. What will be the speed of the last car as it passes the worker?",
+    "problem_images": [],
+    "solution": "We can find the acceleration of the train via $v_f^2-v_0^2=2a\\Delta x$ given the first piece of information, so $a=v_f^2/2\\Delta x=18^2/(2\\cdot 180)=0.9\\, \\unit{m/s^2}.$ We use the formula again to find the speed of the last car: $$v_f=\\sqrt{v_0^2+2a\\Delta x}=\\sqrt{18^2+2\\cdot 0.9\\cdot 85}=21.8\\, \\unit{m/s}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "The figure below shows the velocity of a train as a function of time. (a) At what time was its velocity greatest? (b) During what periods, if any, was the velocity constant? (c) During what periods, if any, was the acceleration constant? (d) When was the magnitude of the acceleration greatest?\n    \\begin{center}\n        \\includegraphics[scale=0.2]{graf}\n    \\end{center}",
+    "problem_images": [
+      "AP1_Kinematics1 Sols/graf.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item The graph shows the velocity so at about 48 s the velocity is greatest.\n        \\item The velocity is constant if it doesn't change, i.e. between 90 and 110 s.\n        \\item The acceleration on a $v-t$ graph is the slope, so we are looking for parts of the curve with constant slope, which is approximately from 0 to 40 s.\n        \\item The acceleration is greatest when the slope is the greatest in magnitude, or at around 77 s. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A ball player catches a ball 3.4 s after throwing it vertically upward. With what speed did he throw it, and what height did it reach?",
+    "problem_images": [],
+    "solution": "Setting positive velocity to be upward, let the initial speed be $v$. Then, the final speed is $-v$, so $\\Delta v = 2v$. By the definition of acceleration, $\\Delta v =2v = gt\\Rightarrow v=gt/2=16.7\\, \\unit{m/s}$. The height reached by the ball is then $\\Delta x=v^2/2g=14.2\\, \\unit{m}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A stone is thrown vertically upward with a speed of 24.0 m/s. (a) How fast is it moving when it is at a height of 13.0 m? (b) How much time is required to reach this height? (c) Why are there two answers to (b)?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item The speed of the stone is $v_f=\\sqrt{v_0^2-2g\\Delta x}=\\sqrt{24^2-2\\cdot 9.8\\cdot 13}=17.9\\, \\unit{m/s}$. \n        \\item The stone could either be going up or down, in which case $\\Delta v$ is $24-17.9=6.1\\, \\unit{m/s}$ or $\\Delta v = 24-(-17.9)=41.9\\, \\unit{m/s}$. Thus the time is either $\\Delta t=\\Delta v/g=6.1/9.8=0.62\\, \\unit{s}$ or $41.9/9.8=4.3\\, \\unit{s}.$\n        \\item The reason is described above. You could have also used the equation $\\Delta x = v_0t+\\frac12at^2$ to solve the problem, which would have resulted in two solutions because of the quadratic. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Roger sees water balloons fall past his window. He notices that each balloon strikes the sidewalk 0.83 s after passing his window. Roger’s room is on the third floor, 15 m above the sidewalk. (a) How fast are the balloons trav- eling when they pass Roger’s window? (b) Assuming the balloons are being released from rest, from what floor are they being released? Each floor of the dorm is 5.0 m high.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item We have $$\\Delta x = v_0t+\\frac12gt^2\\Rightarrow v_0=\\frac{\\Delta x -\\frac12gt^2}{t}=\\frac{15-(1/2)\\cdot9.8\\cdot 0.83^2}{0.83}=14\\, \\unit{m/s}$$\n        \\item We have $$v_f^2-v_0^2=2g\\Delta x \\Rightarrow \\Delta x =\\frac{v_f^2}{2g}=\\frac{14^2}{2\\cdot9.8}=10\\, \\unit{m}$$Since each floor is 5 m high the balloons are being released from the 5th floor. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "The acceleration due to gravity on the Moon is about one- sixth what it is on Earth. If an object is thrown vertically upward on the Moon, how many times higher will it go than it would on Earth, assuming the same initial velocity?",
+    "problem_images": [],
+    "solution": "We have $h=v_0^2/2g\\Rightarrow h\\propto 1/g$ (the symbol $\\propto$ indicates proportionality, i.e. if $g$ goes up by a factor of 2 then $h$ will go down by a factor of 2). Thus if $g$ is smaller by $1/6$, $h$ increases by a factor of 6.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Pelicans tuck their wings and free-fall straight down when diving for fish. Suppose a pelican starts its dive from a height of 14.0 m and cannot change its path once com- mitted. If it takes a fish 0.20 s to perform evasive action, at what minimum height must it spot the pelican to escape? Assume the fish is at the surface of the water.",
+    "problem_images": [],
+    "solution": "Imagine running time in reverse, so that the pelican has an initial speed $v$ upward given by the equation $v^2=2gh\\Rightarrow v=\\sqrt{2gh}=16.6\\, \\unit{m/s}$. We seek the height traveled by the pelican in 0.2 seconds in this reversed-time universe. We simply use $$\\Delta x=v_0t-\\frac12gt^2=16.6\\cdot 0.2-\\frac12\\cdot 9.8\\cdot 0.2^2=3.12\\, \\unit{m}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Suppose a car manufacturer tested its cars for front-end collisions by hauling them up on a crane and dropping them from a certain height. (a) Show that the speed just before a car hits the ground, after falling from rest a vertical distance $H$, is given by $\\sqrt{2gH}$. What height corresponds to a collision at (b) 35 km/h? (c) 95 km/h?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item We use $v_f^2-v_0^2=2gH$, which in using using $v_0=0$ we get $v_f=\\sqrt{2gH}$. \n        \\item Solving for $H$ in terms of $v_f$, we get $H=v_f^2/2g$. We first convert the speed to m/s, which is done by dividing the km/h value by 3.6: 9.72 m/s. Plugging in, we have $H=9.72^2/(2\\cdot 9.8)=4.8\\, \\unit{m}.$\n        \\item Doing the same thing for the other speed, $H=26.4^2/(2\\cdot 9.8)=35.5\\, \\unit{m}.$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A baseball is seen to pass upward by a window with a vertical speed of 14 m/s. If the ball was thrown by a person 18 m below on the street, (a) what was its initial speed, (b) what altitude does it reach, (c) when was it thrown, and (d) when does it reach the street again?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item We have $v_f^2-v_0^2=-2gh\\Rightarrow v_0=\\sqrt{v_f^2+2gh}=\\sqrt{14^2+2\\cdot9.8\\cdot 18}=23.4\\, \\unit{m/s}$. \n        \\item Setting $v_f=0$ and using $v_0$ from before, $H=v_0^2/2g=28\\, \\unit m$. \n        \\item Using the definition of acceleration, the ball was thrown $\\Delta t=\\Delta v/g=(23.4-14)/9.8=0.96\\, \\unit{s}$ before it passed the window. \n        \\item The total time in air is $\\Delta t=2v_0/g=4.78\\, \\unit{s}$. Subtracting the answer from part (c) yields the answer to be 3.82 s after the ball passes the window. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A falling stone takes 0.31 s to travel past a window 2.2 m tall. From what height above the top of the window did the stone fall?",
+    "problem_images": [],
+    "solution": "We have $\\Delta x = v_0t+\\frac12gt^2\\Rightarrow v_0=(\\Delta x -\\frac12gt^2)/t=(2.2 -\\frac12\\cdot 9.8\\cdot 0.31^2)/0.31=5.58\\, \\unit{m/s}.$ (This is the speed of the stone when it it passes the top of the window.) Now, we just have $H=v^2/2g=1.59\\, \\unit{m}$ above the window.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A rock is dropped from a sea cliff, and the sound of it striking the ocean is heard 3.4 s later. If the speed of sound is 340 m/s, how high is the cliff?",
+    "problem_images": [],
+    "solution": "Let the height of the cliff be $H$ and the speed of sound $c$. Since the initial velocity is 0, the time it takes to fall is found from $H=\\frac12gt_1^2\\Rightarrow t_1=\\sqrt{2H/g}$. After that, the time it takes for the sound to travel is $t_2=H/c$. Our equation to solve for $H$ is thus (with $t=3.4\\, \\unit s$): $$\\sqrt{\\frac{2H}{g}}+\\frac{H}{c}=t$$ We now solve algebraically: \\begin{align*}\n        \\sqrt{\\frac{2H}{g}}&=t-\\frac Hc\\\\\n        \\frac{2H}{g}&=t^2+\\frac{H^2}{c^2}-\\frac{2Ht}{c}\\\\\n        0&=\\frac{H^2}{c^2}-\\left(\\frac {2t}c+\\frac 2g\\right)H+t^2\\\\\n        0&=H^2-\\left(2ct+\\frac{2c^2}{g}\\right)H+c^2t^2\\\\\n        0&=H^2-25903 H+1336336\\\n    \\end{align*}Solving the quadratic, $H=51.69\\, \\unit m$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "$F=ma$",
+    "problem": "A train starts from city $A$ and stops in city $B$. The distance between the cities is $s$. The train's maximal acceleration is $a_1$ and its maximum deceleration is $a_2$ (in absolute value). What is the shortest time in which the train can travel between $A$ and $B$?\n\\begin{enumerate}[label=(\\Alph*)]\n        \\item $2\\sqrt{\\frac{s}{a_1+a_2}}$\n        \\item $2\\sqrt{\\frac{s}{\\sqrt{a_1a_2}}}$\n        \\item $\\sqrt{2\\frac{s(a_1+a_2)}{a_1a_2}}$\n        \\item $\\sqrt{\\frac{2sa_2}{a_1(a_1+a_2)}}$\n        \\item $\\sqrt{\\frac{s\\sqrt{a_1a_2}}{(a_1+a_2)^2}}$\n    \\end{enumerate}",
+    "problem_images": [],
+    "solution": "We accelerate initially at max and decelerate maximally, meaning $a_1 t_1 = v_{\\text{max}} =  a_2 t_2$. Thus, if the total travel time is $t$, then using ratios, it accelerates for $\\frac{a_2}{a_1+a_2}t$ and decelerates for $\\frac{a_1}{a_1+a_2}t$. And each segment covers a distance of $\\frac 12 a_i t_i^2$, so\n    $$\\frac 12 a_1 \\left(\\frac{a_2}{a_1+a_2}t\\right)^2 + \\frac 12 a_2 \\left(\\frac{a_1}{a_1+a_2}t\\right)^2 = \\frac 12 \\frac{a_1a_2}{a_1+a_2}t^2 = s.$$\n    So, solving for $t$, we get $t = \\sqrt{2 \\frac{s(a_1+a_2)}{a_1a_2}}$, which corresponds to answer <strong>(C)</strong>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_Kinematics1 Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "Jerk is defined as change in acceleration over time and has units of m/s$^3$. A car, initially at rest, experiences a jerk of 5 m/s$^3$ for 10 seconds, and then a jerk of $-3$ m/s$^3$ for a time $t$. What is $t$ such that the car eventually returns to rest?",
+    "problem_images": [],
+    "solution": "Jerk is the rate of change of the rate of change of velocity. We also know that acceleration is the rate of change of the rate of change of position:\n    $$j = \\frac{\\Delta a}{\\Delta t}, a = \\frac{\\Delta v}{\\Delta t}, \\quad a = \\frac{\\Delta v}{\\Delta t}, v = \\frac{\\Delta x}{\\Delta t}.$$\n    These equations are exactly the same, with just the variable names changed! So, we can rewrite our position kinematics equations by making the substitution $j \\leftrightarrow a, a \\leftrightarrow v, v\\leftrightarrow x$ (the deeper reason behind this working is calculus). So, we have $$\\Delta v = a_0 \\Delta t + \\frac{1}{2} j \\Delta t^2.$$ Thus, after the first segment, the car has velocity $\\frac{5 \\cdot 10^2}{2} = 250 \\, \\unit{m/s}$ and acceleration $50 \\, \\unit{m/s^2}$. Now we plug that into the equation we developed again,\n    $$0 - 250 \\, \\unit{m/s} = 50t - \\frac{3}{2} t^2.$$\n    Solving the quadratic, we get $t \\approx 37.7 \\, \\unit{s}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A collection of masses are in space with some collection of velocities. Initially, their total momentum is $P$. After some number of collisions, the masses eventually move away from one another to infinity. Find their final momentum.",
+    "problem_images": [],
+    "solution": "Momentum is conserved, since there are no external forces. So the final momentum is $P'=\\boxed{P}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A bowling ball moving at speed $v$ collides with a stationary ping-pong ball. If the collision is elastic, what is the final speed of the ping-pong ball?",
+    "problem_images": [],
+    "solution": "In the frame of the bowling ball, the ping-pong ball moves toward the bowling ball at speed $v$ and bounces right off at speed $v$, since the bowling ball is much heavier than the ping-pong ball (so it acts like a wall). Moving back into the lab frame, the final speed of the ping-pong ball is $v_f=v+v=\\boxed{2v}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A car $m$ and a truck $M$ have the same kinetic energy. What is the ratio of their momenta, $p_m/p_M$?",
+    "problem_images": [],
+    "solution": "Since $p=mv$, we can write the kinetic energy as $$K=\\frac12mv^2=\\frac12m\\left(\\frac{p}{m}\\right)^2=\\frac{p^2}{2m}$$and so we have $$\\frac{p_m^2}{m}=\\frac{p_M^2}{M}\\Rightarrow \\frac{p_m}{p_M}=\\boxed{\\sqrt{\\frac{m}{M}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A box of mass $m_1$ initially moving at speed $v_1$ collides perfectly inelastically with a box of mass $m_2$ moving at speed $v_2$ (i.e. they stick).\n    \\begin{anum}\n        \\item If one box initially moves in the negative $x$-direction and the other moves in the positive $x$-direction, find their final speed. \n        \\item If one box initially moves in the $y$-direction and the other moves in the $x$-direction, find their final speed.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Let box 1 move in the positive direction and box 2 move in the negative direction. If the boxes stick together, they have the same final velocity $v$ after the collision. By conservation of momentum, $$m_1v_1-m_2v_2=(m_1+m_2)v\\Rightarrow v=\\boxed{\\frac{m_1v_1-m_2v_2}{m_1+m_2}}$$\n        \\item If the boxes move perpendicularly, the total momentum will be found by adding their vectors via the Pythagorean theorem: $$p=\\sqrt{p_x^2+p_y^2}=\\sqrt{(m_1v_1)^2+(m_2v_2)^2}$$Again, since the boxes stick together, they have the same velocity after the collision. So, $$v=\\frac{p}{m_1+m_2}=\\boxed{\\frac{\\sqrt{(m_1v_1)^2+(m_2v_2)^2}}{m_1+m_2}}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A ball of mass $m$ is dropped from a height $h_i$ above the ground and makes an inelastic collision with the ground such that it rebounds to a height $h_f$. Find the impulse exerted by the ground on the ball. Also, what's the impulse exerted by the ball on the ground?",
+    "problem_images": [],
+    "solution": "Setting the downward direction to be positive, the velocity just before the ball hits the ground is equal to $v_1 = \\sqrt{2gh_1}$ by either kinematics or energy. Right after, the velocity is $v_2 = -\\sqrt{2gh_2}$ (negative because it now goes up). The change in momentum is equal to the impulse, i.e. $$I=\\Delta p = m(v_1 - v_2) = \\boxed{m(\\sqrt{2gh_1} +\\sqrt{2gh_2})}.$$By Newton's third law, the impulse exerted by the ball on the ground is just the negative of this.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "Morin",
+    "problem": "A pool ball with initial speed $v$ is aimed right between two other pool balls as shown. If the two right balls leave the (elastic) collision with equal speeds, find the final velocities of all three balls.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{pool}\n    \\end{center}",
+    "problem_images": [
+      "Momentum Sols/pool.png"
+    ],
+    "solution": "Since the impulse to the two right balls comes from the normal force, their final velocities must be directed in the direction of the normal force at the moment of contact. Thus, the two right balls scatter each at an angle $30^\\circ$ to the horizontal. Let their speeds be $w$ and the speed of the left ball to be $u$ after the collision (let the rightward direction be positive). By conservation of momentum in the $x$-direction, $$mv=mu+2mw\\cos(30^\\circ)$$and by conservation of energy, $$\\frac 12 mv^2=\\frac12 mu^2+2\\cdot\\frac12mw^2$$Solving the system yields \\begin{gather*}\n        u=\\boxed{-\\frac 15 v}\\\\\n        w=\\boxed{\\frac{2\\sqrt 3}{5}v}\n    \\end{gather*}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "$F=ma$",
+    "problem": "A mass $3M$ moving at a speed $v$ collides with a mass $M$ moving directly toward it, also with a speed $v$. If the collision is elastic, the total kinetic energy after the collision is $K_e$. If the two masses stick together, the total kinetic energy after the collision is $K_s$. What is the ratio $K_e/K_s$?\n    \\begin{enumerate}[label = (\\Alph*)]\n\\item $1/2$\n\\item $1$\n\\item $\\sqrt 2$\n\\item $2$\n\\item $4$\n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "If the collision is elastic, the total kinetic energy is still the same as before, so $$K_e=\\frac 12 (3M)v^2+\\frac12 Mv^2=2Mv^2$$If the collision is inelastic, the final speed of the masses is found via conservation of momentum, i.e. $$3Mv-Mv=(3M+M)v'\\Rightarrow v'=\\frac v2$$And so $$K_s=\\frac 12(4M)v'^2=Mv^2$$and $K_e/K_2=2$, answer choice \\textbf{(D)}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "$F=ma$",
+    "problem": "Three boxes $A$, $B$, and $C$ lie along a straight line on a horizontal frictionless surface, as shown. Box $A$ is initially moving to the right with speed $v$ while the other two boxes are initially at rest. If all collisions are elastic, and the masses of the boxes can be chosen freely, which of the following is closest to the maximum possible final speed of box $C$?\n    \\begin{center}\n        \\includegraphics[scale=0.2]{fma1}\n    \\end{center}\n    \\begin{enumerate}[label = (\\Alph*)]\n\\item $v$\n\\item $2v$\n\\item $3v$\n\\item $4v$\n\\item $5v$\n\\end{enumerate}",
+    "problem_images": [
+      "Momentum Sols/fma1.png"
+    ],
+    "solution": "We found in lecture that the speed of $B$ after the collision with $A$ is $$v_B=\\frac{2m_A}{m_A+m_B}v$$In order to maximize the fraction, assume $m_A$ is fixed. Then, we want to minimize the denominator, so $m_B\\approx 0$ (i.e. $B$ is much lighter) and thus $v_B=2v$. Doing the same thing with $B$ and $C$, we can double the speed again. Thus, we can double the speed twice, leading to answer choice \\textbf{(D)}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "$F=ma$",
+    "problem": "A ball of radius $R$ and mass $m$ is magically put inside a thin shell of the same mass and radius $2R$. The system is at rest on a horizontal frictionless surface initially. When the ball is, again magically, released inside the shell, it sloshes around in the shell and eventually stops at the bottom of the shell. How far does the shell move from its initial contact point with the surface?\n\\begin{center}\n        \\includegraphics[scale=0.2]{gravy}\n    \\end{center}\n    \\begin{enumerate}[label = (\\Alph*)]\n\\item $R$\n\\item $R/2$\n\\item $R/4$\n\\item $3R/8$\n\\item $R/8$\n\\end{enumerate}",
+    "problem_images": [
+      "Momentum Sols/gravy.png"
+    ],
+    "solution": "The center of mass of the system experiences only a downward gravitational force and not a horizontal force. Thus, its $x$ coordinate stays fixed. At the final position, the ball will be at the bottom of the shell and aligned with the vertical axis of the shell. Thus, the shell must be at the $x$ coordinate of the center of mass when everything comes to rest. At the position shown, the center of mass is a distance $mR/2m=R/2$ from the vertical axis of the shell. Thus, the answer is \\textbf{(B)}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A wooden block of mass $M$ rests on a frictionless surface. A bullet of mass $m$ enters the block horizontally at a speed $v_i$, travels through, and leaves the block at a speed $v_f$. \\begin{anum}\\item Find the speed of the block after the collision. \n\\item Find the energy lost in the collision.\n\\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Let the final speed of the block be $v$. Momentum is conserved, so $$mv_i=Mv+mv_f\\Rightarrow v=\\boxed{\\frac{m}{M}(v_i-v_f)}.$$\n        \\item The initial kinetic energy is $$K_i=\\frac 12mv_i^2.$$The final kinetic energy is $$K_f=\\frac12mv_f^2+\\frac12 Mv^2=\\frac12mv_f^2+\\frac12\\frac{m^2}{M}(v_i-v_f)^2.$$The energy lost is the difference $$K_i-K_f=\\boxed{\\frac12 m\\left(v_i^2-v_f^2-\\frac mM(v_i-v_f)^2\\right)}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "In the situation shown, a small cube $m$ is in the space between a wall and a large block of mass $M \\gg m$. The cube is given an initial velocity $v$ and begins to bounce elastically between the wall and the block, making the block move to the right. After a long time, what is the speed of the block?\n    \\begin{center}\n        \\includegraphics[scale=0.2]{collisions}\n    \\end{center}",
+    "problem_images": [
+      "Momentum Sols/collisions.png"
+    ],
+    "solution": "After a long time, both objects will have stable velocities that do not change, meaning that no more collisions occur. For this to happen, the cube and block will have the same ending velocity $v'$. Since the collisions are elastic, we use conservation of energy:$$\\frac12mv^2=\\frac12(M+m)v'^2\\Rightarrow v'=\\boxed{v\\sqrt{\\frac{m}{M+m}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A string of mass $m$ and length $L$ is initially pulled taught right above a scale as shown. \\begin{center}\n        \\includegraphics[scale=0.2]{string}\n    \\end{center}\n    At time $t=0$, the string is released. The string piles up in a heap on the scale. Find the mass reading on the scale as a function of time $t$.",
+    "problem_images": [
+      "Momentum Sols/string.png"
+    ],
+    "solution": "A point on the string at a height $h$ will fall onto the scale in a time $(1/2)gt^2=h$ by kinematics. Thus, at time $t$, a mass $mh/l=mgt^2/2l$ of the string will be on the scale. However, we must also consider the impulse the string exerts on the scale when an element of the string of length $\\Delta x$ hits the scale and comes to rest. At time $t$, the pieces of the string hitting the scale would have gained a speed $v=gt$. In time $\\Delta t$, a piece of the string with length $v\\Delta t$ and mass $\\Delta m=mv\\Delta t/l$ will experience a change of momentum given by $$\\Delta p=\\Delta mv=\\frac{mv^2\\Delta t}{l}=\\frac{mg^2t^2\\Delta t}{l}$$Rearranging, we can reproduce Newton's second law. $$F=\\frac{\\Delta p}{\\Delta t}=\\frac{mg^2t^2}{l}$$The additional mass the scale detects is then $F/g=mgt^2/l$. Adding this to the mass sitting on the scale we found earlier, the reading on the scale is $$m_{\\text{meas}}=\\frac{mgt^2}{2l}+\\frac{mgt^2}{l}=\\boxed{\\frac{3mgt^2}{2l}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A block of mass $m$ is shot horizontally onto a curved wedge of mass $M$ at velocity $v$. What is the maximum height $h$ reached by the block after it shoots off the vertical segment of the wedge? Assume all surfaces are frictionless and that the wedge does not topple.     \n    \\begin{center}\n        \\includegraphics[scale=0.2]{fma2}\n    \\end{center}",
+    "problem_images": [
+      "Momentum Sols/fma2.png"
+    ],
+    "solution": "Essentially, the difference between the initial kinetic energy and the final kinetic energy of the system is accounted for in the height of the block. The initial kinetic energy of the system is $\\frac12mv^2$. The final horizontal momentum of the system is again $mv$, and the block and wedge have the same horizontal velocity. The final kinetic energy is thus $$\\frac{p^2}{2m_{\\text{tot}}}=\\frac{m^2v^2}{2(M+m)}$$Then, the leftover energy is $$\\Delta E=\\frac{Mmv^2}{2(M+m)}$$so the final height of the block is $$h=\\frac{\\Delta E}{mg}=\\boxed{\\frac{Mv^2}{2(M+m)g}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A person of mass $m_p$ and a dog of mass $m_d$ are standing on a raft of mass $M$ and length $L$ in a lake. The person and dog initially stand on opposite ends of the raft as shown, but both move to the center of the raft. \n    \\begin{anum}\n        \\item How far does the raft move during this process?\n        \\item If the person and the dog both run towards the center at a speed $v$ relative to the raft, how fast does the raft move while the individuals are moving on top of it?\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Because no external force acts on the system, the velocity of the center of mass must be constant. Well, the initial velocity is 0, so the center of mass should remain in the same place! Setting the center of the raft as the origin, the center of mass is located at$$x_{\\text{cm}}=\\frac{m_d(-L/2)+M(0)+m_p(L/2)}{m_d+M+m_p}=\\frac{L}{2}\\frac{m_p-m_d}{m_p+M+m_d}.$$Note that at the end, all the masses are at the same location, so they must all be at the center of mass. Thus the raft moves from its original location at the origin to $x_{\\text{cm}}$ at a distance$$D=x_{\\text{cm}}-0=\\boxed{\\frac{L}{2}\\frac{m_p-m_d}{m_p+M+m_d}}$$\n        \\item It takes the person and dog a time $$t=\\frac{L/2}{v}=\\frac{L}{2v}$$to meet at the center of the raft. From above, the raft moves a distance $D$ in this time. Thus, the raft velocity is $$v_r=\\frac{D}{t}=\\boxed{\\frac{m_p-m_d}{m_p+M+m_d}v}.$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A plank of mass $M$ and length $L$ is placed on a frictionless table, and a small block of mass $m$ is placed on the plank. The coefficient of friction between the block and the plank is $\\mu$. Initially, the block is at the left end of the plank as shown but it suddenly gains a velocity $v_0$ to the right. What must $v_0$ be so that after a long time, the block will be at the right end of the plank?\n    \\begin{center}\n        \\includegraphics[scale=0.2]{blockmove}\n    \\end{center}",
+    "problem_images": [
+      "Momentum Sols/blockmove.png"
+    ],
+    "solution": "By conservation of momentum, the blocks must end up moving together at a speed $v = mv_0/(M + m)$. Their combined energy is therefore less, and the lost energy is equal to the work done by friction, $W_f = mg\\mu L$. Hence,\\begin{align*}\n        mg\\mu L&=\\frac12mv_0^2-\\frac12(M+m)\\left(\\frac{mv_0}{M+m}\\right)^2\\\\\n        mg\\mu L&=\\frac12mv_0^2-\\frac12\\frac{m^2}{M+m}v_0^2\\\\\n        mg\\mu L&=\\frac12mv_0^2\\left(1-\\frac{m}{M+m}\\right)\\\\\n        L&=\\frac{v_0^2}{2g\\mu}\\frac{M}{M+m}\\\\\n        \\Rightarrow v_0&=\\boxed{\\sqrt{2g\\mu L\\frac{M+m}{M}}}\n    \\end{align*}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "In the diagram shown, a block of mass $M$ is attached to a string of length $l$ and raised to an angle $\\theta$ to the vertical. The block is released and swings down, colliding elastically with a stationary bead of mass $m$. If the table is a height h above the ground, what is the distance $D$ from the foot of the table to the landing point of the bead?\n    \\begin{center}\n        \\includegraphics[scale=0.25]{pendulum}\n    \\end{center}",
+    "problem_images": [
+      "Momentum Sols/pendulum.png"
+    ],
+    "solution": "By conservation of energy, the speed of the block right before the collision is $v_0=\\sqrt{2gl(1-\\cos\\theta)}$. Since the speed of the bead is initially at rest, after an elastic collision it gains a speed $$v=\\frac{2M}{M+m}v_0=\\frac{2M}{M+m}\\sqrt{2gl(1-\\cos\\theta)}.$$The rest of it is kinematics. The bead is in the air for a time $t=\\sqrt{2h/g},$ and so it travels a distance $$D=vt=\\boxed{\\frac{4M}{M+m}\\sqrt{hl(1-\\cos\\theta)}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "\\label{balls}\n    A tennis ball of mass $m$ is placed on top of a basketball of mass $M$ and dropped from a height $h$ as shown. All collisions are elastic.\n    \\begin{center}\n        \\includegraphics[scale=0.25]{ballfig.png}\n    \\end{center}\n    If $m\\ll M$, find the maximum height reached by the tennis ball $m$.",
+    "problem_images": [
+      "Momentum Sols/ballfig.png"
+    ],
+    "solution": "After falling the height $h$, both masses are moving downward at a speed $v=\\sqrt{2gh}$. First, the mass $M$ collides with the ground, so for a very small instant $M$ is moving upward at $v$ and $m$ is moving down at $v$. Since $m\\ll M$, we shift into the frame of $M$. In this frame, $M$ is stationary while $m$ moves toward it at speed $2v$. It then bounces up with speed $2v$, since we can imagine $M$ as a heavy wall. Moving back into the lab frame, $m$ ends up moving upward at $3v$. Thus, the maximum height is $$h'=\\frac{(3v)^2}{2g}=\\frac{(3\\sqrt{2gh})^2}{2g}=\\boxed{9h}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "In the situation shown, a block $m_1$ is traveling toward block $m_2$ at a speed $v$. A spring with constant $k$ is attached to the second block. The block $m_1$ sticks to the spring and the combined system moves to the right. \\begin{center}\n        \\includegraphics[scale=0.15]{boxessprings}\n    \\end{center}\\begin{anum}\n        \\item Explain why the spring must have its maximum compression when the blocks are stationary relative to one another.\n        \\item Find the maximum compression of the spring. \n        \\item In the subsequent motion, find the maximum and minimum speeds of $m_2$.\n    \\end{anum}",
+    "problem_images": [
+      "Momentum Sols/boxessprings.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item If the blocks have any relative motion, the spring is changing in length, either increasing or decreasing. Therefore, the blocks must be stationary relative to one another, i.e. having the same velocity, at maximum compression of the spring.\n        \\item The state we are looking for is that in which the blocks have the same velocity. This is exactly the state of an inelastic collision. However, in this case, the energy ``lost\" is not to friction, but is stored in the spring. The lost energy is found by subtracting the kinetic energies $$\\Delta K=\\frac12m_1v^2-\\frac12(m_1+m_2)\\left(\\frac{m_1v}{m_1+m_2}\\right)^2=\\frac12\\frac{m_1m_2v^2}{m_1+m_2}$$Setting this equal to $U = (1/2)kx^2$, we have$$x=\\boxed{v\\sqrt{\\frac{m_1m_2}{k(m_1+m_2)}}}$$\n        \\item The two blocks will begin oscillating on the spring, but the center of mass will always move at a constant velocity. In the frame of the center of mass, the situation right at the beginning of the motion is as shown:\n        \\begin{center}\n            \\includegraphics[scale=0.14]{sol1}\n        \\end{center}\n        The center of mass in this frame is stationary, and the blocks oscillate at maximum speeds $v_{1\\text{cm}}$ and $v_{2\\text{cm}}$, respectively. For the $m_2$ block, therefore, the minimum speed it attains is when it has the maximum speed to the left in the COM frame ($v_{\\text{min}} = v_{\\text{cm}} - v_{2\\text{cm}}$) and the maximum speed it attains is when it has the maximum speed to the right in the COM frame ($v_{\\text{max}} = v_{\\text{cm}} + v_{2\\text{cm}}$). The velocity of the center of mass is given by the traditional formula,\n        $$v_{\\text{cm}}=\\frac{m_1v}{m_1+m_2}.$$This means that $$v_{\\text{2cm}}=|0-v_{\\text{cm}}|=v_{\\text{cm}}$$where we have taken the magnitude. Hence, \\begin{gather*}\n            v_{\\text{min}} = v_{\\text{cm}} - v_{2\\text{cm}} = v_{\\text{cm}} - v_{\\text{cm}} = \\boxed{0}\\\\\n            v_{\\text{max}}=v_{\\text{cm}} + v_{2\\text{cm}}=2v_{\\text{cm}}=\\boxed{\\frac{2m_1v}{m_1+m_2}}\n        \\end{gather*}\n    \\end{anum}",
+    "solution_images": [
+      "Momentum Sols/sol1.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A bowl of mass $M$ and a block of mass $m$ are positioned against a wall as shown. The bowl has a radius $R$, and all surfaces are frictionless. The system is released. Find the maximum speed of the block $m$ in the subsequent motion.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{bowl}\n    \\end{center}",
+    "problem_images": [
+      "Momentum Sols/bowl.png"
+    ],
+    "solution": "Let’s analyze the motion step-by-step. First, the block $m$ slides down to the bottom of the bowl, while the bowl stays put next to the wall (the normal force between the block and bowl is what pushes the bowl forward). At the bottom, by conservation of energy, the block as a speed $v =\\sqrt{2gR}$. As the block starts rising up, the bowl starts moving to the right. After this point, the system loses contact with the wall and both momentum $p = m$v and energy $E = (1/2)mv^2$ are conserved.\\\\\n    \n    It is clear that the maximum speed of the block must be attained when it is moving directly to the left as to oppose the momentum of the bowl (the block and bowl “share” the momentum, so to maximize their individual momenta, we want them to move in opposite directions). If the block ends up moving to the left at speed $v_m$ (a negative value) and the bowl moves to the right at speed $v_M$ at the same time, the conservation equations yield \\begin{gather*}Mv_M - mv_m = mv\\\\\n\\frac12Mv_M^2+\\frac12mv_m^2=\\frac12mv^2\\end{gather*}where $v =\\sqrt{2gR}$ as found earlier. Solving this system gives $$v_m =\\boxed{\\frac{2m}{M + m}\\sqrt{2gR}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A moving ball of mass $M$ initially moving along the $x$-axis collides elastically with a stationary ball of mass $m$. The mass $M$ scatters at an angle $\\theta$ to the $x$-axis. Find the maximum possible value of $\\theta$.",
+    "problem_images": [],
+    "solution": "Moving to the center of mass frame of reference, the center of mass has velocity $$v_{\\text{cm}}=\\frac{Mv}{M+m}$$In this frame, the velocity of $M$ is $$v_M=v-v_{\\text{cm}}=\\frac{mv}{M+m}$$ We know that when $M$ rebounds, it maintains the same velocity $v_M$ but could move at any angle $\\theta$ after the collision. Thus, in this frame, the possible velocity vectors trace out a circle of radius $v_M$. Adding $v_{\\text{cm}}$ back in as a vector, we can see that the possible final velocity vectors is as shown: \\begin{center}\n        \\includegraphics[scale=0.2]{sol2}\n    \\end{center}The maximum deflection is at the tangent as shown, which has an angle $$\\theta=\\boxed{\\sin^{-1}\\frac{m}{M}}.$$",
+    "solution_images": [
+      "Momentum Sols/sol2.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "USAPhO",
+    "problem": "Suppose you drop a block of mass $m$ vertically onto a fixed ramp with angle $\\theta$ with coefficient of static and kinetic friction $\\mu$. The block is dropped in such a way that it does not rotate after colliding with the ramp. Assume the time of the collision is negligible.\n    \\begin{anum}\n        \\item Suppose the block’s speed just before it hits the ramp is $v$ and the block slides down the ramp immediately after impact. What is the speed of the block right after the collision?\n        \\item What is the minimum $\\mu$ such that the speed of the block right after the collision is 0?\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item During the collision, the block receives impulses from the normal force, friction, and gravity. Since the collision is very short, the impulse due to gravity is negligible. Let $p_N$ and $p_F$ be the magnitudes of the impulses from the normal force and friction force. Since the block stays on the ramp after the collision, its final momentum is parallel to the ramp. Then the normal force must completely eliminate the block’s initial momentum perpendicular to the ramp, so $$p_N=mv\\cos\\theta.$$Since the block still moves after the collision, $$p_F=\\mu p_N.$$The block’s initial momentum parallel to the ramp is $mv \\sin \\theta$, so$$mv\\sin\\theta-p_F=mu,$$where $u$ is the final speed of the block. Solving for $u$ gives$$u = \\boxed{v(\\sin \\theta - \\mu \\cos \\theta)}.$$\n        \\item We set $u = 0$ to obtain $\\mu = \\boxed{\\tan \\theta}$.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Momentum Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A bead of mass $m$ is at the top of a hoop of mass $M$ and radius $R$, which is at rest on a frictionless surface. The bead is given a small kick and it starts sliding along the hoop. What is the maximum value for the normal force $N$ acting from the ground during the subsequent motion?\n    \\begin{center}\n        \\includegraphics[scale=0.15]{beadring}\n    \\end{center}",
+    "problem_images": [
+      "Momentum Sols/beadring.png"
+    ],
+    "solution": "The normal force is greatest when the bead is at the bottom of the hoop. Here, the normal force must account for the weights of the two objects in addition to the centripetal acceleration of the bead. The most difficult part of this problem is finding the right value for the centripetal acceleration. Assuming the bead has a speed $v$ to the right at the bottom and the hoop has a speed $V$ to the left (it doesn’t really matter which direction we choose in the end, as long as they are opposite in direction), by conservation of momentum we have$$mv=MV.$$By conservation of energy, the kinetic energies of the bead and hoop equal the potential energy lost by the bead. Hence,$$2mgR=\\frac12mv^2+\\frac12MV^2.$$ Solving these two equations, \\begin{gather*}\n        v=\\sqrt{\\frac{4gRM}{M+m}}\\\\\n        V=\\sqrt{\\frac{4gRm^2}{M(M+m)}}\n    \\end{gather*}The velocity we must use in the centripetal acceleration equation is the relative speed of the two masses, $v + V$. The normal force is \\begin{align*}\n        N&=mg+Mg+ma_{\\text{cent}}\\\\\n        &=mg+Mg+m\\frac{(v+V)^2}{R}\\\\\n        &=mg+Mg+\\frac{m}{R}\\frac{4gR}{M+m}\\left(M+\\frac{m^2}{M}+2m\\right)\\\\\n        &=mg+Mg+4mg\\frac{M+m}{M}\\\\\n        &=\\boxed{\\frac{(4m+M)(m+M)}{M}g}\n    \\end{align*}",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

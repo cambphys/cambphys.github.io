@@ -1,0 +1,186 @@
+[
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": null,
+    "problem": "A heavy disk of radius $R$ is rolling downwards, unwinding two strings in the process. The strings are attached to\nthe ceiling and always remain under tension during the motion.\nWhat was the magnitude of velocity of the disk’s centre when\nits angular velocity was $\\omega$ and the angle between the strings\nwas $\\alpha$?\n    \\begin{center}\n        \\includegraphics[width=5.5cm]{kalda_k44.png}\n    \\end{center}",
+    "problem_images": [
+      "Complex_Systems Sols/kalda_k44.png"
+    ],
+    "solution": "First we use idea 1.2 -- that the velocity of the string unrolling is $\\omega R$. Thus, the velocity of the cylinder projected onto the two strings must be $\\omega R$. Thus, we can draw the following diagram:\n    \\begin{center}\n        \\includegraphics[width=4cm]{rolllyyy].png}\n    \\end{center}\n    Thus, we can see that $v = \\frac{\\omega R}{\\cos \\alpha / 2}$.",
+    "solution_images": [
+      "Complex_Systems Sols/rolllyyy].png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": "EuPhO, extra challenge",
+    "problem": "A massless thread makes N turns around statically fixed cylinder, as shown in the figure. Initially, the free (unwound) ends of the thread are parallel to the axis $X$. Then, a heavy point-like object P is attached to one end of the thread while the other end is pulled with a constant velocity $u$ along $X$. Find the maximum velocity attained by the heavy object.\n\\begin{center}\n    \\includegraphics[width=5.5cm]{disk_eupho.png}\n\\end{center}\nThe thread is inextendable and flexible. Suppose that\nthe turns of the thread are wound tightly to one another\nand are placed practically in the same plane, perpendicular to the cylinder axis. Neglect any friction in the system. Do not consider the force of gravity.",
+    "problem_images": [
+      "Complex_Systems Sols/disk_eupho.png"
+    ],
+    "solution": "Suppose the bead $P$ has some tangential velocity $v$ and some velocity perpendicular to the string $w$. Then, between two instances of time, the bead $P$ will swing out and also slide along the string, while the string gets pulled at a rate $u$ on the other side.\n\n    Now, to relate $u$ to $v$ and $w$, we consider some edge cases. Suppose $w = 0$. Then, since the bead just slides tangentially, we must clearly have $u = v$. Now, with that idea in mind, suppose there is a non-zero $w$ but zero $v$. Then, that means the bead $P$ is just spiraling out on its own, so $u = 0 = v$. So, we could guess $u = v$. More concretely, notice that $u$ is equal to the speed of the <em>string</em> at the contact point on the $P$ side, and since $w$ doesn't affect the speed of the <em>string</em> at the contact point (it affects the speed of the contact point itself), we have that $u = v$.\n\n    Now, to finish, we have to use some ideas from dynamics. Consider two instances of time as the bead $P$ moves:\n\n    Since the string points perpendicular to the initial $w$, we must have that the velocity in that axis is unchanged between these two time stamps by Newton's second law. Thus, we can write\n    $$w = (w+dw)\\cos (d \\theta) - v d \\theta  = w + dw- v d\\theta,$$\n    where $d\\theta$ is the change in angle of the contact point, and dropping second order terms. So, we get that $dw = v d\\theta$. And since the contact point rotates up to $2\\pi N$ radians as it unwinds, we get\n    $$w_f = \\int_0^{w_f}dw = \\int_0^{2\\pi N} v d\\theta = 2\\pi Nv = 2\\pi N u.$$\n    So, the final speed is $\\sqrt{w_f^2 + v^2} = u\\sqrt{4\\pi^2 N^2 + 1}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": "Kalda",
+    "problem": "Light wheels with radius $R$ are attached to a heavy axle. The system rolls along a horizontal surface which suddenly turns into a slope with angle $\\alpha$. For which angles $\\alpha$ will the wheels move without lifting off, i.e. touch the surface at all times? Mass of the wheels can be neglected. The axle is parallel to the boundary between horizontal and sloped surfaces and has velocity $v$.\n    \\begin{center}\n        \\includegraphics[width=5cm]{wheel_on_hill.png}\n    \\end{center}",
+    "problem_images": [
+      "Complex_Systems Sols/wheel_on_hill.png"
+    ],
+    "solution": "The axle is essentially rotating about the corner through a total angle of $\\alpha$. By conservation of energy through that period,\n    $$\\frac 12 mv^2 = \\frac 12 mv_\\alpha^2 - mgR(1 - \\cos \\alpha).$$\n    And at the limit, we'll have $v_\\alpha^2/R = mg \\cos \\alpha$. So, plugging that in, we get\n    $$\\frac 12 mv^2 = \\frac 32 mg R \\cos \\alpha - mgR,$$\n    so the maximum $\\alpha$ is given by\n    $$\\frac 32 mg R \\cos \\alpha = \\frac 12 mv^2 + mgR \\implies \\alpha \\le \\arccos\\left[\\frac 23 + \\frac 13 \\frac{v^2}{gR}\\right].$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": "Kleppner-Kolenkow",
+    "problem": "A mass $m$ is attached to a post of radius $R$ by a string. Initially it is distance $r$ from the center of the post and is moving tangentially with speed $v_0$.\n    \\begin{center}\n        \\includegraphics[width=4cm]{pulling thread.png}\n    \\end{center}\n    \\begin{anum}\n        \\item The string passes through a hole in the center of the\npost at the top. The string is gradually shortened by drawing it\nthrough the hole.\n\\item The string wraps around the outside of the post.\nWhat quantities are conserved in each case? Find the final speed\nof the mass when it hits the post for each case\n    \\end{anum}",
+    "problem_images": [
+      "Complex_Systems Sols/pulling thread.png"
+    ],
+    "solution": "\\begin{anum}\n    \\item In this case, there is no net torque on the bead, so by conservation of angular momentum\n    $$mv_0R = mv_fr \\implies v_f = \\frac{v_0R}{r}.$$\n    \\item This time, conservation of energy holds as there is no energy loss when the string sticks onto the cylinder--all the forces are perpendicular to the string as it rolls onto the rod. Thus, the final speed is simply $v_0$ as there are no other energies involved.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": "Morin",
+    "problem": "A board lies on top of two uniform cylinders that lie on a fixed plane inclined at an angle $\\theta$, as shown below. The board has mass $m$, and each of the cylinders has mass $m/2$. The system is released from rest. If there is no slipping between any of the surfaces, what is the acceleration of the board? Use conservation of energy.\n    \\begin{center}        \\includegraphics[width=5cm]{cylinder_plank.png}\n    \\end{center}",
+    "problem_images": [
+      "Complex_Systems Sols/cylinder_plank.png"
+    ],
+    "solution": "Suppose that the board moves down a distance $d$ along the inclined plane. Then, by rolling without slipping, each of the cylinders move by a distance $d/2$. Lastly, if the board has velocity $v$, then by roling without slipping again, the cylinders have velocity $v/2$ and angular speed $v/2r$. So, we can write down conservation of energy:\n    $$mgd\\sin \\theta + mg\\frac{d}{2}\\sin \\theta = \\frac{1}{2}mv^2 +\\frac 12 m (v/2)^2 + \\frac 12 (mr^2/2)(v/2r)^2.$$\n    Using kinematics, we can write $v^2 = 2ad$, so\n    $$\\frac 32 mg d \\sin \\theta = mad + \\frac14 mad + \\frac 18 mad = \\frac{11}8mad.$$\n    So, dividing, we get $a = \\frac{12}{11} g \\sin \\theta.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": "PPP",
+    "problem": "A long slipway, inclined at an angle $\\alpha$ to the horizontal is fitted with many identical rollers, consecutive ones being a distance $d$ apart. The rollers have horizontal axles and consist of rubber-covered solid steel cylinders each of mass $m$ and radius $r$. Planks of mass $M$, and length much greater than $d$, are released at the top of the slipway. Find the terminal speed $v_{\\text{max}}$ of the planks. Ignore air resistance and friction at the pivots of the rollers.\n    \\begin{center}\n        \\includegraphics[width=6cm]{rollers_ppp.png}\n    \\end{center}",
+    "problem_images": [
+      "Complex_Systems Sols/rollers_ppp.png"
+    ],
+    "solution": "To find the terminal speed, we suppose the mass has a speed $v$ right as it crosses a roller and we analyze the motion until it finishes colliding with the next roller. Now we consider forces on this mass as it rolls down. There is the force of gravity and the forces from the friction on each of the rollers. Now, the tricky part here, is that we have to use momentum instead of energy. Energy is hard to use because there is energy lost to the rollers. Since the block is at terminal speed, the net impulse applied to it between collisions with rolelrs must be equal to $0$. Now, assuming that the block moves at speed $v$, the impulse due to the gravitational force is:\n    $$J_g = Ft = F(d/v) = Mg\\frac{d}{v}\\sin \\theta.$$\n    Now, we calculate the impulse due to the rollers. From the initial state to the final state, all the rollers it was already sitting on are still rotating at angular speed $v/r$, so their angular momentum has no net change, which means there couldn't have been a net linear impulse on the block. Now, the nearest roller reached now has picked up angular speed $v/r$. so the angular impulse applied was\n    $$\\Delta L = \\frac 12 mr^2 (v/r) = \\frac 12 mvr,$$\n    and so using idea 1.1, the net linear impulse applied on the block is $\\Delta L /r = \\frac 12 mv$. So, the total impulse on the block is\n    $$mv - mv = 0 = \\Delta p = Mg \\frac dv \\sin \\theta - \\frac 12 mv,$$\n    which gives us $v = \\sqrt{\\frac{2Mgd \\sin \\theta}{m}}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": "Kalda",
+    "problem": "A cart has two cylindrical wheels connected by a\nweightless horizontal rod using weightless spokes and frictionless axis as shown in the figure. Each of the wheels is made\nof a homogeneous disc of radius $R$, and has a cylidrical hole\nof radius $R/2$ drilled coaxially at the distance $R/3$ from the\ncentre of the wheel. The wheels are turned so that the holes\npoint towards each other, and the cart is put into motion on\na horizontal floor. What is the critical speed $v$ by which the\nwheels start jumping?\n\\begin{center}\n    \\includegraphics[width=6cm]{holy_wheels.png}\n\\end{center}",
+    "problem_images": [
+      "Complex_Systems Sols/holy_wheels.png"
+    ],
+    "solution": "We focus on one wheel. The wheel will start jumping when the normal force between it and the ground is equal to 0. Because the center of mass of the wheels is shifted off, as they rotate the forces must add to a proper centripetal force. When the hole is at the bottom, the centripetal force must be downward, and if it is required to be larger than $mg$, it will jump, as the normal force on the ground has to be $0$. So, we look for when the centripetal acceleration is greater than or equal to $g$. \n    \n    First, we find the center of mass of the wheel. Suppose the original wheel had mass $M$. Then, the piece that was cut out has mass $M/4$. So, the center of mass (using negative mass idea),\n    $$d = \\frac{-(M/4) R/3}{M + (-M/4)} = - \\frac{R}{9}.$$\n    So, the centripetal acceleration is $\\omega^2 d$, where $\\omega = v/R$. Thus, for the critical $v$, we set\n    $$\\omega^2 d = (v/R)^2 d = g \\implies v = R\\sqrt{g/d} = \\boxed{3 \\sqrt{g/R}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": "Morin",
+    "problem": "A solid cylinder of mass $m$ and radius $r$ lies flat on a frictionless horizontal table, with a massless string running halfway around it, as shown below. A mass also of mass m is attached to one end of the string, and you pull on the other end with a force $T$. The circumference of the cylinder is sufficiently rough so that the string does not slip with respect to it. What is the acceleration of the mass $m$ attached to the end of the string?\n    \\begin{center}\n        \\includegraphics[width=5.5cm]{morin850.png}\n    \\end{center}",
+    "problem_images": [
+      "Complex_Systems Sols/morin850.png"
+    ],
+    "solution": "We can write down\n    \\begin{align*}\n        ma_c &= T +T_1,\\\\\n        \\frac{mr^2}{2} \\alpha &= (T-T_1)r,\\\\\n        ma_m &= T_1,\n    \\end{align*}\n    for forces and torque. And then for rolling without slipping, transform into the frame of the cylinder, and we get\n    $$(a_m + a_c) = \\alpha r.$$\n    Now, plugging that relation in and then doubling the middle equation and adding all three, we get\n    $$m(a_c + a_m) + m\\alpha r = 2m\\alpha r = 3T + T_1 - 2 T_1 + T_1 = 3 T.$$\n    Thus, we get $\\alpha = 3T/2mr$. Then, plugging this in and combining a couple equations:\n    \\begin{align*}\n        a_m - a_c &= -\\frac{T}{m},\\\\\n        a_m + a_c &= \\frac{3T}{2m}.\n    \\end{align*}\n    Thus, adding the two, we finally get $\\boxed{a_m = T/4m}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": "Morin",
+    "problem": "A massless string of negligible thickness is wrapped around a uniform cylinder of mass $m$ and radius $r$. The string passes up over a massless pulley and is tied to a block of mass m at its other end, as shown below. The system is released from rest. What are the accelerations of the block and the cylinder? Assume that the string does not slip with respect to the cylinder.\n    \\begin{center}\n        \\includegraphics[width=4cm]{block_cylinder_atwood.png}\n    \\end{center}",
+    "problem_images": [
+      "Complex_Systems Sols/block_cylinder_atwood.png"
+    ],
+    "solution": "We write the force and torque equations:\n    \\begin{align*}\n        ma &= T - mg,\\\\\n        ma_c &= mg - T,\\\\\n        \\frac{mr^2}{2}\\alpha_c &= Tr.\n    \\end{align*}\n    We can also relate by rolling without slipping:\n    $$a = a_c - \\alpha_c r.$$\n    Now, we just need to solve this system of four equations. First, the first two give us $a = -a_c$. Then, plugging that into the last one, we get $\\alpha_c r = 2a_c$, which plugging into the 3rd equation leaves us with:\n    \\begin{align*}\n        ma_c &= mg - T,\\\\\n        ma_c &= T,\n    \\end{align*}\n    so $a_c = g/2$ downward and $a = -g/2$ upward, so $g/2$ downward.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": null,
+    "problem": "Let's resolve a paradox from the Rotation I lecture. A massless stick of length $b$ has one end pivoted on a support and the other end glued perpendicular to the middle of a stick of mass $m$ and length $\\ell$. The two sticks are held in a vertical plane and then released.\n    \\begin{center}\n        \\includegraphics[width=5cm]{paradox_twigs.png}\n    \\end{center}\n    \\begin{anum}\n        \\item Calculate the upwards normal force on the left side of the massless rod.\n        \\item Calculate the downwards normal force on the right side of the massless rod.\n        \\item It appears that there is a net clockwise torque on the massless rod! However, the rod is massless, so this would imply infinite angular acceleration. What's going on here? <em>Hint:</em> consider treating the rod as having non-negligible thickness and analyze the forces on the top and bottom of the rod. \n    \\end{anum}",
+    "problem_images": [
+      "Complex_Systems Sols/paradox_twigs.png"
+    ],
+    "solution": "\\begin{anum}\n    \\item We did this in lecture, $N = mg\\frac{l^2/12b^2}{1+(l^2/12b^2)}$.\n    \\item Because the acceleration of the right massive rod is the same as the whole setup, the normal force is $N = mg\\frac{l^2/12b^2}{1+(l^2/12b^2)}$.\n    \\item Here's what the rod looks like at a microscopic level:\n    \\begin{center}\n        \\includegraphics[width=4cm]{connection_pece.png}\n    \\end{center}\n    It must have at least 2 attachment points! This is because it is not a hinge and the whole system rotates together -- otherwise, the 90 degree angle would not remain 90 degrees. So, there is compression in the top (blue) and tension in the bottom (red), cancelling out the net torque from the vertical forces.\n    \\end{anum}",
+    "solution_images": [
+      "Complex_Systems Sols/connection_pece.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": "BAUPC",
+    "problem": "A small ball is attached to a massless string of length $L$, the other end of which is attached to a very thin pole. The ball is thrown so that it initially travels in a horizontal circle, with the string making an angle $\\theta_0$ with the vertical. As time goes on, the string wraps itself around the pole. Assume that (1) the pole is thin enough so that the length of string in the air decre9ases very slowly, and (2) the pole has enough friction so that the string does not slide on the pole, once it touches it. Show that the ratio of the ball’s final speed (right before it hits the pole) to initial speed is $\\sin \\theta_0$.",
+    "problem_images": [],
+    "solution": "If the string changes by $\\mathrm d \\ell$, then the \"pivot\" of the string goes down by $-\\mathrm d \\ell \\cos \\theta$, and then any change in height after than is $\\mathrm d (\\ell \\cos \\theta) = \\cos \\theta \\mathrm d\\ell - \\ell \\sin \\theta \\mathrm d\\theta.$ So then adding the two changes, the conservation of energy equation is\n\\begin{equation}-mg\\ell \\sin \\theta \\mathrm d\\theta = mv \\mathrm d v.\\end{equation}\nAnd writing $F=ma$ radially, we also have\n$$mg \\tan \\theta = \\frac{mv^2}{\\ell \\sin\\theta}.$$\nSo then substituting this into (1), \n$$-mg \\frac{mv^2}{mg\\tan \\theta} \\mathrm d\\theta = mv \\mathrm d v.$$\nSo now we just integrate, with $\\theta \\to \\pi / 2$ at the end because $\\ell \\to 0$, so\n$$\\int_{\\theta_0}^{\\pi / 2}-\\cot \\theta \\mathrm d \\theta = \\int_{v_i}^{v_f} \\frac 1 v \\mathrm d v \\implies \\ln\\left(\\frac{\\sin \\theta_0}{\\sin \\pi / 2}\\right) = \\ln \\left(\\frac{v_f}{v_i}\\right).$$\nSo then we get the desired answer of $v_f / v_i = \\sin \\theta_0.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": null,
+    "problem": "The classic movable inclined plane. Consider a uniform cylinder of mass $m$ and radius $r$. It is released from rest from the top of an inclined plane of mass $M$ and inclination $\\theta$. Assuming that the cylinder rotates without slipping, find the acceleration of the inclined plane.\n    \\begin{center}\n        \\includegraphics[width=5cm]{moving_inclined.png}\n    \\end{center}",
+    "problem_images": [
+      "Complex_Systems Sols/moving_inclined.png"
+    ],
+    "solution": "By conservation of angular momentum, we have \n    $$mR^2\\theta - m(R-h)^2 \\theta = (MR^2/2)\\alpha.$$\n    Using the binomial approximation,\n    $$2mRh = \\frac{MR^2}{2}\\alpha \\implies \\alpha = \\theta\\frac{4mh}{MR}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": "USAPhO",
+    "problem": "A disk of uniform mass density, mass $M$, and radius $R$ sits at rest on a frictionless floor. The disk is attached to the floor by a frictionless pivot at its center, which keeps the center of the disk in place, but allows the disk to rotate freely. An ant of mass $m \\ll M$ is initially standing on the edge of the disk; you may give your answers to leading order in $m/M$. . The ant walks an angular displacement $\\theta$ along the edge of the disk. Then it walks radially inward by a distance $h \\ll R$, tangentially through an angular displacement $-\\theta$, then back to its starting point on the disk. Assume the ant walks with constant speed $v$.\n\\begin{center}\n        \\includegraphics[width=6cm]{21usaphoB1a.png}\n    \\end{center}\n    Through what net angle does the disk rotate throughout this process, to leading order in $h/R$?",
+    "problem_images": [
+      "Complex_Systems Sols/21usaphoB1a.png"
+    ],
+    "solution": "By conservation of angular momentum, we have \n    $$mR^2\\theta - m(R-h)^2 \\theta = (MR^2/2)\\alpha.$$\n    Using the binomial approximation,\n    $$2mRh = \\frac{MR^2}{2}\\alpha \\implies \\alpha = \\theta\\frac{4mh}{MR}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Complex_Systems Sols",
+    "section": "Problem Set",
+    "subsection": null,
+    "problem_tag": "USAPhO",
+    "problem": "Consider the same setup as in the previous problem, but now the ant walks with speed $v$ along a circle of radius $r$, tangent to its starting point.\n    \\begin{center}\n        \\includegraphics[width=6cm]{21usaphoB1b.png}\n    \\end{center}\n    Through what net angle does the disk rotate?",
+    "problem_images": [
+      "Complex_Systems Sols/21usaphoB1b.png"
+    ],
+    "solution": "Let $C$ be the curve that the ant moves on. Then the integrated moment of inertia weighted angular displacement is\n    $$\\int_C md^2 \\, d\\theta = \\frac{MR^2}{2} \\alpha,$$\n    where the curve is some function $d(\\theta)$. But notice that $d^2d\\theta$ is simply twice the polar area <span class=\"footnote\">[noticing this is pretty tricky!]</span>, and so\n    $$\\int_C md^2\\,d\\theta = 2m(\\text{Area Circle} = 2m\\pi r^2 = \\frac{MR^2}{2}\\alpha.$$\n    Thus, $\\alpha = \\boxed{\\theta\\frac{4\\pi mr^2}{MR^2}}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

@@ -1,0 +1,264 @@
+[
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "Imagine you're drinking water out of a cup through a straw. What is the maximum theoretical length of the straw that allows you to suck the water up, even if you had a vacuum pump?",
+    "problem_images": [],
+    "solution": "The largest possible pressure differential you can make is $P_0$, so this equals $\\rho_wgh$. Thus $h=P_0/\\rho_wg=\\boxed{10.3 \\, \\unit{m}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A cup is filled on one half with a fluid of density $\\rho_1$, and on the other half with a fluid of density $\\rho_2>\\rho_1$ as shown. Is the fluid stable in this position, or will it move? If it moves, how should it move? Assume the fluids do not mix.\n     \\begin{center}\n         \\includegraphics[scale=0.17]{cup}\n     \\end{center}",
+    "problem_images": [
+      "Fluids Sols/cup.png"
+    ],
+    "solution": "The fluid is \\fbox{not stable}, because the greater density on the right means a greater pressure existing on the right, leading fluid parcels along the interface to move toward the left. After a long time, all the heavier fluid will end up on the bottom as to minimize the gravitational potential energy on the system.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "\\label{bub}\n    Imagine enclosing the surface $S$ in Theorem \\ref{tip1} with a portion of area $A$ along the bottom to make a closed shell. Now, fill the shell with a fluid with pressure $P$. By using Newton's laws in the $z$ direction, explain why the total force in the $z$ direction on the surface $S$ has magnitude $PA$.",
+    "problem_images": [],
+    "solution": "By Newton's third law, the total force exerted by the gas on the shell must be 0, so the shell cannot move. We can easily see that the force the gas exerts on the bottom of area $A$ is $PA.$ As a result, for the total force to be 0 on the entire shell, the force the gas exerts on the surface $S$ must also be $\\boxed{PA}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A meniscus, which results from surface tension, is when water rises slightly at the contact point to a container as shown along a curved surface. If the atmospheric pressure is $P_0$, what is the pressure in the water at points $A$, $B$, and $C$? Hint: At an interface between two mediums, the pressure is only the same on both sides of the interface if the interface has no curvature. \n    \\begin{center}\n         \\includegraphics[scale=0.15]{men}\n     \\end{center}",
+    "problem_images": [
+      "Fluids Sols/men.png"
+    ],
+    "solution": "Using the hint, we know that since $B$ is on the interface of the water and air on a flat surface, the pressure is $\\boxed{P_B=P_0}$ there. The pressures at $A$ and $C$ follow easily with $\\boxed{P_A=P_0-\\rho gh}$ and $\\boxed{P_C=P_0+\\rho gH}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "As an extension of the previous problem, let a sphere of water have radius $r$ and surface tension $\\gamma$. The force of surface tension is found as $\\gamma \\ell$, where $\\ell$ is the length of the interface between two mediums. Find the pressure in the sphere as a function of $r$, $\\gamma$, and $P_0$. Hint: Split the sphere in half and use force balance.",
+    "problem_images": [],
+    "solution": "If we split the sphere in half, we consider the forces along the symmetry axis of the sphere. The net force due to pressure on the sphere is due to that acting on its hemispherical surface. There are two components to this -- the outward pressure from the water and the inward pressure from the air. Using Theorem \\ref{tip1}, the net force is simply the pressure differential times the area of the projection of the hemisphere onto a flat surface, which is just a circle of radius $r$. Hence, the net force due to pressure is $(P-P_0)\\pi r^2$. This net force is balanced by the force of surface tension, which acts along the circumference of the circular base of the sphere: $2\\pi r\\gamma$. Equating these two forces, we get $$(P-P_0)\\pi r^2=2\\pi r\\gamma\\Rightarrow P=\\boxed{P_0+\\frac{2\\gamma}{r}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "Let's say you have a scale with some fixed relative uncertainty $\\sigma$. Approximate the value of $\\sigma$ such that if you measure your weight in the atmosphere versus in a vacuum, you'll be able to resolve the difference in weight using the scale. In other words, what is the minimum $\\sigma$ to be able to say the difference in your measurements is statistically significant?",
+    "problem_images": [],
+    "solution": "Since the human body is made mostly of water, we approximate your body density to be about 1000 times greater than air. Then, if your mass is $m$, your weighted as measured in a vacuum differs from your weight in air by an amount $(\\rho_a/\\rho_w)m\\approx 0.001m$. The relative error must then be half of the factor $\\rho_a/\\rho_w$ for us to resolve the two measurements, so $\\sigma\\approx \\boxed{0.0005}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "$F=ma$",
+    "problem": "A U-tube manometer consists of a uniform diameter cylindrical tube that is bent into a U shape. It is originally filled with water. The total length of the column of water is $L$. Ignore surface tension and viscosity. Oil with a density half that of water is added to one side of the tube until the total length of oil is equal to the total length of water. Determine the equilibrium height difference between the two sides.\n    \\begin{enumerate}[label = (\\Alph*)]\n\\item $L$\n\\item $L/2$\n\\item $L/3$\n\\item $3L/4$\n\\item $L/4$\n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "Let the length of water on the side of the tube with pure water be $h$ after the oil is added. The pressures at the bottom of each section of the tube must be the same so that the fluid parcels feel no force acting on them. This means that $$\\rho gh=\\frac\\rho 2gL+\\rho g(L-h)$$which solves to yield $h=3L/4$. The height of fluid in the other side is then $L+L-h=5L/4$, so the difference in height is $\\textbf{(B)}$ $L/2$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "An aluminum ball of density $\\rho$ and volume $V$ sinks in water of density $\\rho_w$. \\begin{anum}\n        \\item If the aluminum ball falls a distance $h$, what is the change in gravitational potential energy of the system?\n        \\item Imagine you don't know anything about buoyancy. Using part (a), find the net force acting on the aluminum ball as it sinks. \n        \\item Use your result from (b) to derive the buoyancy force $F_B$ on the aluminum ball. \n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item As the ball moves down, it moves into the location of a sphere of water at its final position. The sphere of water then moves up to fill in the ball's initial position. The movement of the ball downward results in a decrease $-\\rho Vgh$ of potential energy, and the movement of the water upward results in an increase $\\rho_w Vgh$ of potential energy. The net change in potential energy is $$\\Delta U=\\boxed{\\rho_wVgh-\\rho Vgh}$$\n        \\item The work done by the net force on the ball when it sinks a distance $h$ is equal to $Fh$, which equals the negative of the change in potential energy. Setting $-Fh=\\Delta U$ yields $$F=\\boxed{\\rho Vg-\\rho_wVg}$$\n        \\item The gravitational force is $\\rho Vg$, so the buoyancy force is the other component of the force equation, $F_B=\\boxed{\\rho_wVg}$.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "We define the \\textit{momentum density} $\\rho_p$ of a fluid to be the momentum per unit volume of a fluid. For a fluid of density $\\rho$ and a speed $v$ at some point, find $\\rho_p$.",
+    "problem_images": [],
+    "solution": "We have $$\\rho_p=\\frac{mv}{V}=\\boxed{\\rho v}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "Water with pressure $P_1$ is flowing through a pipe of cross-sectional area $A_1$ at a speed $v_1$ before the pipe narrows into a cross-sectional area $A_2$ without loss of energy. Find the new pressure of the water $P_2$.",
+    "problem_images": [],
+    "solution": "By Bernoulli's law, $$P_1+\\frac12\\rho v_1^2=P_2+\\frac12\\rho v_2^2$$By continuity, $v_2=(A_1/A_2)v_1$. Combining both equations, we get $$P_2=\\boxed{P_1+\\frac12\\rho v_1^2\\left(1-\\frac{A_1^2}{A_2^2}\\right)}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "A hose with gauge pressure $P$, cross sectional area $A$, and water velocity $v$ is fed into a sprinkler that narrows the stream into a cross-sectional area $S$ as it spits out the water into the air. \\begin{anum}\\item  Find the change in the kinetic energy per unit volume of the water between when it is in the hose and when it is just released into the air by the sprinkler.\n    \\item Find the work done by external forces per unit volume of the water between the same two points discussed in part (a).\n    \\item Find the energy lost to frictional forces per unit volume of water. \n    \\item What must $P$ be so that the energy lost in part (c) equals 0? You'll see that this matches Bernoulli's law.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item By mass continuity, the speed $u$ of the water when it exits the sprinkler is $u=(A/S)v$. Per unit volume, the change in energy is thus $$\\Delta K=\\frac12\\rho u^2-\\frac12\\rho v^2=\\boxed{\\frac12\\rho v^2\\left(\\frac{A^2}{S^2}-1\\right)}$$\n    \\item The work comes from the gauge pressure $P$. The force produced by any pressure is $PA$, so the work produced by the pressure is $W=PA\\Delta x=P\\Delta V$. Thus, per unit volume the work done is simply $$W=\\boxed{P}$$\n    \\item The work from part (b) contributes to both energy loss and the increase in kinetic energy of the fluid, so $$E_{\\text{lost}}=W-\\Delta K=\\boxed{P-\\frac12\\rho v^2\\left(\\frac{A^2}{S^2}-1\\right)}$$\n    \\item For teh energy lost to equal 0, we require $$P=\\boxed{\\frac12\\rho v^2\\left(\\frac{A^2}{S^2}-1\\right)}$$which upon some rearranging matches the form of Bernoulli's law: $$P+\\frac12 \\rho v^2=\\frac12\\rho u^2$$\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A classic paradox in fluid statics is descrbibed as follows. I fill three cups with the same base area $A$ with the same volume $V$ of water. The water has density $\\rho$. The walls of the three cups are slanted at different angles, however, so that the water levels in each cup end up being different.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{wearofi}\n    \\end{center}\n       The three cups are weighed on scales. Alice says they should have the same weight, since they contain the same amount of water. However, Bob argues that since the heights of the water levels in each cup are different, their pressures at the base are different. This should result in a larger force on the bottom of the middle cup than the one on the right, leading to different scale readings. Who is right, and what is wrong with the other person's argument?",
+    "problem_images": [
+      "Fluids Sols/wearofi.png"
+    ],
+    "solution": "\\fbox{Alice is correct}. The issue with Bob's logic is that he forgot the force that the water exerts on the walls of the cup. If the walls are not slanted, the force exerted on the walls is perfectly horizontal. If the walls are slanted inward like in the middle cup, the water exerts an upward force on the cup that perfectly balances out the increased downward force on the base of the cup. If the walls are slanted outward like in the right cup, the water exerts an additional downward force along with the force on the base. As a result, the total force exerted on the scale by the cup is the same in all cases.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A car is turning left along a circular track of radius $r$ at a constant speed $v$. A cylindrical beaker is placed vertically inside the car. The beaker has a small hole on its right side. If the water's highest point in the beaker is a height $h$ above the hole, at what instantaneous speed does the water escape the hole, from a passenger's perspective?",
+    "problem_images": [],
+    "solution": "As the car accelerates, we consider it as an accelerated frame of reference, where gravity now gains a component $a=v^2/r$ to the right as shown: \\begin{center}\n        \\includegraphics[scale=0.2]{water}\n    \\end{center}\n    Now, $g'=\\sqrt{g^2+a^2}$ by the Pythagorean theorem. Everything we know about fluids still holds in this new frame with the adjusted $g'$, so we simply need to find the new height $h'$ of the opening under the water surface. By similar triangles, it holds that $h'=(g/g')h$. Then, the speed of the water coming out is just $$u=\\sqrt{2g'h'}=\\boxed{\\sqrt{2gh}}$$",
+    "solution_images": [
+      "Fluids Sols/water.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "Water with total mass $M$ is poured into a cup of cross-sectional area $A$. A block of mass $m$, whose density is half that of water, is tied to a thin string. The string is attached to the bottom of the cup, and the block floats in the water as shown. The atmospheric pressure is $P_{\\text{atm}}$. What is the total pressure force that the water exerts on the bottom of the cup?\n\\begin{center}\n    \\includegraphics[scale=0.2]{string}\n\\end{center}\n\\begin{enumerate}[label = (\\Alph*)]\n\\item $Mg$\n\\item $(M+m)g$\n\\item $P_{\\text{atm}}A+Mg$\n\\item $P_{\\text{atm}}A+(M+m)g$\n\\item $P_{\\text{atm}}A+(M+2m)g$\n\\end{enumerate}",
+    "problem_images": [
+      "Fluids Sols/string.png"
+    ],
+    "solution": "The pressure force only depends on the height of the water, so it would equal the weight of the water in the container if we replaced the block with water. The block is half as dense as water, so the total mass of water would be $(M+2m)g$. We still need to include the force from the atmosphere, so we get \\textbf{(E)} $P_{\\text{atm}}A+(M+2m)g$. \\\\\n\n    We can also find the answer from force balance. The net force acting on the bottom of the container is $P_{\\text{atm}}A+(M+m)g$. The tension in the string keeps the block in equilibrium, and exerts a force $mg$ downward on the block to balance the buoyant force of $2mg$. This tension thus creates an upward force of $mg$ ont he base of the container. Since the total force equals the tension plus the pressure force, we again get \\textbf{(E)} $P_{\\text{atm}}A+(M+2m)g$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "We've seen this problem before, but now solve it using your knowledge of fluids. A cylindrical bucket of negligible mass has radius $R$ and height $h$, and is open at the top. It is submerged in water of density $\\rho$, with its top a distance $H$ below the surface. How much work is needed to pull the bucket slowly up so that its bottom is just above the lake surface?\n    \\begin{center}\n        \\includegraphics[scale=0.2]{bucket}\n    \\end{center}\n    \\begin{enumerate}[label = (\\Alph*)]\n\\item $\\rho g\\pi R^2h(H-h)$\n\\item $\\rho g\\pi R^2h^2$\n\\item $\\rho g\\pi R^2(H-h)^2$\n\\item $\\rho g\\pi R^2h^2/2$\n\\item $\\rho g\\pi R^2h(H-h)/2$\n\\end{enumerate}",
+    "problem_images": [
+      "Fluids Sols/bucket.png"
+    ],
+    "solution": "Because of buoyancy, the net force on the bucket while it's fully submerged is 0. As the bucket begins to rise out of the water, the force linearly increases until the entire bucket is out of the water, at which point the force is $F=\\rho g\\pi R^2h$. The average force exerted on the bucket during this process is thus $\\bar F=\\rho g\\pi R^2h/2$, and the total work is then $\\bar Fh=\\rho g\\pi R^2h^2/2$, answer choice \\textbf{(D)}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A triangular trough has faces that are equilateral triangles of side length $a$ and a length $L$. A farmer cuts the trough in half and tapes the halves together as shown. If the trough is now filled with fluid of density $\\rho$, find the total horizontal force $F$ exerted by the tape between the two halves. \n       \\begin{center}\n           \\includegraphics[scale=0.17]{tough2}\n       \\end{center}",
+    "problem_images": [
+      "Fluids Sols/tough2.png"
+    ],
+    "solution": "The total weight of the water is $$F_g=\\rho La^2g\\frac{\\sqrt 3}{4}$$This weight is due to the vertical component of pressure acting on each half of the trough, so we conclude that the vertical component of force acting on each half of the trough is $F_y=F_g/2$. Since the pressure force is directed perpendicular to the faces of the trough, the horizontal component force acting on each half of the trough is related to the vertical force by $F_y/F_x=\\tan (30^\\circ)$. As a result, $$F_x=\\frac{F_y}{\\tan(30^\\circ)}=\\frac{F_g\\sqrt3}{2}=\\boxed{\\frac{3}{8}\\rho La^2g}$$By force balance, this force is exactly equal to the force exerted by the tape.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A boat of mass $M$, rim height $H$, base area $A$, and negligible volume is placed in a lake with water of density $\\rho$ as shown. \n    \\begin{center}\n        \\includegraphics[scale=0.15]{boat}\n    \\end{center}\n    A hole is poked in the bottom of the boat with cross sectional area $S$ and water starts flowing in. Assume the boat sinks very slowly.\n    \\begin{anum}\n        \\item Find the initial speed $v_0$ of the water flowing into the boat.\n        \\item What volume of water is in the boat when it is about to capsize?\n        \\item Find the amount of time it takes the boat to sink.\n    \\end{anum}",
+    "problem_images": [
+      "Fluids Sols/boat.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item By force balance the depth of the boat's base $h$ underwater must displace a mass of water equal to $M$, so we have $M=\\rho Ah$. By Bernoulli's law, $$v_0=\\sqrt{2gh}=\\boxed{\\sqrt{\\frac{2gM}{\\rho A}}}$$\n        \\item The weight of water displaced by the ``air\" portion of the boat must always stay the same to balance the force of the boat (note that the water in the boat feels no effective force, since its weight is equal to the water it displaces), so when the boat is about to capsize it's filled with a height $H-h$ of water. Thus, $$V=A(H-h)=\\boxed{AH-\\frac M\\rho}.$$\n        \\item Notice that the difference in pressure between just outside the hole and just inside will always be $\\rho g(H-h)$, so by Bernoulli's law the velocity of water flow into the boat is always $v=\\sqrt{2g(H-h)}$. The rate of volume increase of water in the boat is thus $vS$, so using the result from (b) the time it takes for the boat to sink is $$t=\\frac{V}{vS}=\\frac{A(H-h)}{S\\sqrt{2g(H-h)}}=\\boxed{\\frac{A}{S}\\sqrt{\\frac{H-M/A\\rho}{2g}}}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "NBPhO",
+    "problem": "A box of volume $V$ contains gas molecules with mass $m$ and number density $n$ (i.e. there are $n$ molecules per unit volume) at a very low temperature (this means the gas particles are nearly completely still relative to the box). The box originally moves with a constant speed $v$, and suddenly stops. Find the pressure $P$ on the front face of the box as soon as the box stops moving.",
+    "problem_images": [],
+    "solution": "Let $A$ be the area of the front face of the box. When the box stops moving, the gas molecules keep moving with speed $v$. In a small period of time $\\Delta t$, there will be $N=nAv\\Delta t$ molecules colliding with the wall. Each of these molecules will exert an impulse $\\Delta p=2mv$ as they bounce off elastically. The total impulse is thus $N\\Delta p$, and the force on the front face will be $$F=\\frac{N\\Delta p}{\\Delta t}=\\frac{2nmAv^2\\Delta t}{\\Delta t}=2nmAv^2$$The pressure is then $$P=\\frac{F}{A}=\\boxed{2nmv^2}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Kalda",
+    "problem": "A hemispherical container is placed upside down on a smooth horizontal surface. Through a small hole at the bottom of the container, water is then poured in. Exactly when the container gets full, water starts leaking from between the table and the edge of the container. Find the mass $M$ of the container if water has density $\\rho$ and radius of the hemisphere is $R$.\n    \\begin{center}\n           \\includegraphics[scale=0.17]{kalda}\n       \\end{center}",
+    "problem_images": [
+      "Fluids Sols/kalda.png"
+    ],
+    "solution": "When the container is full, the water level is at a height $R$ so the pressure along the bottom of the container is $P=\\rho gR$. The total force exerted by the water on the ground is thus $F=P\\pi R^2=\\pi \\rho gR^3$. By Newton's third law, this must be the total normal force exerted upward on the system by the ground. For the container to just begin lifting up at this point, the normal force must equal the combined mass of the water and the container. As a result, $$\\pi \\rho gR^3=\\frac23\\pi\\rho gR^3+M\\Rightarrow M=\\boxed{\\frac13\\pi\\rho gR^3}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A cylindrical cup of cross-section area $A$ is filled up with water to a height $h$. A cylindrical weight of mass $m$ with cross-section area $A$ that fits exactly in the cup is placed horizontally on top of the water. No water can leak out, so the weight stays on top of the water regardless of its mass. \\begin{anum}\n        \\item Find the increase in pressure $\\Delta P$ at all points in the water. \n        \\item For most of our discussion on fluids, we've assumed the fluids are incompressible. However, water of an initial volume $V_0$ does compress by a small amount when experiencing an external pressure $\\Delta P$, by an amount $\\Delta V$ given by a constant known as the bulk modulus $B$: $$\\Delta V=-\\frac{B}{V_0}\\Delta P$$\n        When the weight $m$ is placed on top of the water, the water level will not decrease if we assume the water is incompressible. However, taking compressibility into account, find the decrease $\\Delta h$ in the water level as a function of $A$, $h$, $m$, and $B$. \n        \\item Now assume the weight is dropped from a height $H$ directly above the water level. Assume still that the water is compressible. When the weight lands on the water, it is slowed to a stop by the water. What is the largest decrease in water level $\\Delta h$ over the course of the motion? Neglect frictional forces.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item By force balance, the new pressure at the top of the water level should support the weight of the weight. Let this new pressure be $P_0+\\Delta P$. By force balance on the weight, $$(P_0+\\Delta P-P_0)A=mg\\Rightarrow \\Delta P=\\boxed{\\frac{mg}{A}}$$\n        \\item Because of the increase in pressure $\\Delta P$, the water's volume decreases and so the water level decreases. We use the formula stated in the problem to find the change in the volume: $$\\Delta V=-\\frac{B}{V_0}\\Delta P=-\\frac{Bmg}{A^2h}$$Then, since $\\Delta V=A\\Delta h$, we conclude that $$\\Delta h=\\boxed{-\\frac{Bmg}{A^3h}}$$\n        \\item Notice that $\\Delta h$ is linearly proportional to $mg$, which is identical to what would happen if the mass were suspended from a spring. We thus consider the water as a spring, with effective spring constant equal to $k_{eq}=-mg/\\Delta h=A^3h/B$. Then, when the weight is dropped, the initial gravitational potential energy eventually becomes the ``spring energy\" of the water. The initial potential energy is about equal to $mgH$, since the compression of the water is very small. We therefore set $$\\frac12 k_{eq}(\\Delta h)^2=mgH\\Rightarrow \\Delta h=\\boxed{\\sqrt{\\frac{2BmgH}{A^3h}}}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "PPP",
+    "problem": "An open-topped vertical tube of diameter $D$ is filled with water up to a height $h$. The narrow bottom-end of the tube, of diameter $d$, is closed by a stop as shown in the figure.\n    \\begin{center}\n        \\includegraphics[scale=0.2]{spill}\n    \\end{center}\n    When the stop is removed, the water starts flowing out through the bottom orifice with approximate speed $v= \\sqrt{2gh}$, by Bernoulli's law. However, this speed is reached by the liquid only after a certain time $\\tau$. Ignore viscous effects. \\begin{anum}\n        \\item What is the acceleration $a$ of the lowest layer of water at the moment when the stop is removed? \n        \\item Obtain an estimate of the order of magnitude of $\\tau$.\n    \\end{anum}",
+    "problem_images": [
+      "Fluids Sols/spill.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item After the stop is removed, in a small time $\\Delta t$ let the lowest layer of water fall a distance $\\Delta x$ to obtain a speed $\\Delta v$. Then, $a$ can be found via the kinematic equation $a=(\\Delta v)^2/2\\Delta x$. If the lowest layer falls a distance $\\Delta x$, we've essentially removed a thin layer of water of volume $\\Delta V=\\pi d^2\\Delta x/4$ from the top and moved it to the bottom. The change in potential energy of the system because of this movement is thus $$\\Delta U=\\rho \\Delta Vgh=\\frac{\\pi}{4}\\rho ghd^2\\Delta x$$This potential energy equals the increase in kinetic energy of the water. By mass continuity, most of the water will be moving at a speed $\\Delta v(d^2/D^2)$, and so we consider this as the bulk of the kinetic energy: $$\\Delta K=\\frac12 \\frac\\pi 4\\rho D^2h(\\Delta v)^2\\frac{d^4}{D^4}=\\frac12 \\frac\\pi 4\\rho h(\\Delta v)^2\\frac{d^4}{D^2}$$Equating this to $\\Delta U$, we get $$\\frac{\\pi}{4}\\rho ghd^2\\Delta x=\\frac12 \\frac\\pi 4\\rho h(\\Delta v)^2\\frac{d^4}{D^2}\\Rightarrow a=\\frac{(\\Delta v)^2}{2\\Delta x}=\\boxed{g\\frac{D^2}{d^2}}$$\n        \\item This acceleration is large if $D\\gg d$, so we approximate $$\\tau=\\frac{\\sqrt{2gh}}{a}=\\boxed{\\frac{d^2\\sqrt{2gh}}{gD^2}}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fluids Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kalda",
+    "problem": "If a beam with square cross-section and very low density is placed in water, it will sit in the water with one pair of its long opposite faces horizontal. This orientation, however, becomes unstable as we increase its density. Find the critical density when this transition occurs, in terms of the density of water $\\rho$.",
+    "problem_images": [],
+    "solution": "See solution 15 at \\href{https://physoly.tech/static/files/KaldaMech-121.pdf}{this link}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

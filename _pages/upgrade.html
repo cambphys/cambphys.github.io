@@ -1,0 +1,169 @@
+---
+layout: default
+title: Upgrade
+permalink: /upgrade/
+---
+
+<link rel="stylesheet" href="/assets/css/courses.css">
+
+<style>
+  .upgrade-wrap { max-width: 640px; margin: 2.5rem auto; padding: 0 1.5rem; }
+  .upgrade-wrap h1 { margin-top: 0; }
+  .upgrade-wrap fieldset { border: 1px solid #ddd; border-radius: 6px;
+    padding: 1rem 1.25rem; margin: 1.25rem 0; }
+  .upgrade-wrap legend { font-weight: 700; padding: 0 .5rem; }
+  .upgrade-wrap label { display: block; margin-top: .9rem; font-weight: 600; }
+  .upgrade-wrap label.inline { display: inline-flex; align-items: center;
+    gap: .4rem; font-weight: 400; margin-top: .25rem; margin-right: 1rem; }
+  .upgrade-wrap input[type="text"],
+  .upgrade-wrap input[type="email"],
+  .upgrade-wrap input[type="file"] {
+    width: 100%; padding: .55rem; margin-top: .25rem;
+    border: 1px solid #ccc; border-radius: 4px; font-size: 1rem;
+    box-sizing: border-box;
+  }
+  .grade-row, .ref-row { display: flex; flex-wrap: wrap; gap: .25rem .5rem;
+    margin-top: .4rem; }
+  .payment-info {
+    background: #f6f8fa; border-left: 4px solid #2f5d8c;
+    padding: 1rem 1.25rem; border-radius: 4px; margin: 1.5rem 0 1rem;
+  }
+  .payment-info strong { color: #2f5d8c; }
+  .important-note {
+    background: #fff3cd; border-left: 4px solid #e0a800;
+    padding: 1rem 1.25rem; border-radius: 4px; margin: 1rem 0;
+    font-size: .95rem;
+  }
+  .submit-btn {
+    margin-top: 1.5rem; width: 100%; padding: .85rem;
+    background: #2f5d8c; color: #fff; border: 0; border-radius: 4px;
+    font-size: 1.05rem; font-weight: 600; cursor: pointer;
+  }
+  .submit-btn:hover:not(:disabled) { background: #244a70; }
+  .submit-btn:disabled { background: #999; cursor: not-allowed; }
+  .auth-msg { margin-top: 1rem; min-height: 1.2rem; }
+  .auth-msg.error { color: #b00; }
+  .auth-msg.ok { color: #060; }
+  #thanks { display: none; padding: 2rem; background: #e6f4ea;
+    border-radius: 6px; text-align: center; }
+  #thanks h2 { margin-top: 0; color: #1b6b34; }
+</style>
+
+<div class="upgrade-wrap">
+  <p><a href="/courses/">← All Courses</a></p>
+  <h1>Upgrade — <span id="course-name">…</span></h1>
+
+  <div id="thanks">
+    <h2>Thank you!</h2>
+    <p>Your upgrade request has been submitted. Your account will receive access
+       to all course material within 1 business day.</p>
+    <p>Please email <a href="mailto:cambphys@gmail.com">cambphys@gmail.com</a>
+       if confirmation is not received.</p>
+  </div>
+
+  <form id="upgrade-form">
+    <input type="hidden" name="course_id" id="course_id">
+
+    <fieldset>
+      <legend>Parent Information</legend>
+      <label for="parent_email">Parent Email (this is where payment info will be sent)</label>
+      <input type="email" id="parent_email" name="parent_email" required>
+
+      <label for="parent_name">Parent Name</label>
+      <input type="text" id="parent_name" name="parent_name" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Student Information</legend>
+      <label for="student_email">Student Email</label>
+      <input type="email" id="student_email" name="student_email" required>
+
+      <label for="student_first_name">Student First Name</label>
+      <input type="text" id="student_first_name" name="student_first_name" required>
+
+      <label for="student_last_name">Student Last Name</label>
+      <input type="text" id="student_last_name" name="student_last_name" required>
+
+      <label>Student Grade</label>
+      <div class="grade-row">
+        <label class="inline"><input type="radio" name="grade" value="8" required> 8th</label>
+        <label class="inline"><input type="radio" name="grade" value="9"> 9th</label>
+        <label class="inline"><input type="radio" name="grade" value="10"> 10th</label>
+        <label class="inline"><input type="radio" name="grade" value="11"> 11th</label>
+        <label class="inline"><input type="radio" name="grade" value="12"> 12th</label>
+        <label class="inline"><input type="radio" name="grade" value="other"> Other:</label>
+        <input type="text" name="grade_other" placeholder="(specify)" style="width: 12ch; margin-top: 0;">
+      </div>
+
+      <label for="state">Current state of residence (abbreviated, i.e. CA)</label>
+      <input type="text" id="state" name="state" maxlength="2" required style="width: 6ch;">
+    </fieldset>
+
+    <fieldset>
+      <legend>Where did you hear about this course? (Select all that apply)</legend>
+      <div class="ref-row" style="flex-direction: column;">
+        <label class="inline"><input type="checkbox" name="referral" value="Gmail mailing list"> Gmail mailing list</label>
+        <label class="inline"><input type="checkbox" name="referral" value="Family/friends"> Family/friends</label>
+        <label class="inline"><input type="checkbox" name="referral" value="WeChat"> WeChat</label>
+        <label class="inline"><input type="checkbox" name="referral" value="Discord"> Discord</label>
+        <label class="inline"><input type="checkbox" name="referral" value="AoPS"> AoPS</label>
+        <label class="inline"><input type="checkbox" name="referral" value="Instagram/Facebook"> Instagram/Facebook</label>
+        <label class="inline" style="align-items: center;">
+          <input type="checkbox" name="referral" value="Other"> Other:
+          <input type="text" name="referral_other" placeholder="(specify)" style="margin-left: .5rem; flex: 1; margin-top: 0;">
+        </label>
+      </div>
+    </fieldset>
+
+    <div class="payment-info">
+      Payment for all 16 lessons in the course is <strong>$640</strong>.<br>
+      Payment options: <strong>Zelle: cambphys@gmail.com</strong> (name listed should be <strong>Baoyun Shen</strong>)
+    </div>
+
+    <div class="important-note">
+      <strong>IMPORTANT:</strong> Take a screenshot with your proof of payment and upload it below.
+      Your account will receive access to all course material within 1 business day.
+      Please email <a href="mailto:cambphys@gmail.com">cambphys@gmail.com</a> if confirmation is not received.
+    </div>
+
+    <label for="proof">Proof of payment with student name in the memo for identification (screenshot, image file)</label>
+    <input type="file" id="proof" name="proof" accept="image/*" required>
+
+    <button type="submit" class="submit-btn" id="submit-btn">Submit Upgrade Request</button>
+    <div class="auth-msg" id="msg"></div>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/assets/js/supabase-config.js"></script>
+<script src="/assets/js/auth.js"></script>
+<script src="/assets/js/upgrade-form.js"></script>
+<script>
+  (async function () {
+    const user = await window.cambphysAuth.requireAuth();
+    if (!user) return;
+
+    const courseId = window.cambphysUpgradeForm.getCourseIdFromUrl();
+    if (!courseId) {
+      document.querySelector(".upgrade-wrap").innerHTML =
+        '<p><a href="/courses/">← All Courses</a></p>' +
+        '<h1>Pick a course first</h1><p>Please visit a course page and click Upgrade.</p>';
+      return;
+    }
+    const titles = { ap: "AP Course Series", fma: "F=ma Course Series", usapho: "USAPhO Course Series" };
+    document.getElementById("course-name").textContent = titles[courseId];
+    document.getElementById("course_id").value = courseId;
+
+    // Prefill student email with logged-in user's email
+    document.getElementById("student_email").value = user.email;
+  })();
+
+  document.getElementById("upgrade-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    await window.cambphysUpgradeForm.submitForm(
+      e.target,
+      document.getElementById("msg"),
+      document.getElementById("submit-btn")
+    );
+  });
+</script>

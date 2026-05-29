@@ -1,0 +1,199 @@
+[
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Express the following angles in radians: (a) $45.0^\\circ$, (b) $60.0^\\circ$, (c) $90.0^\\circ$, (d) $360.0^\\circ$, and (e) $445^\\circ$. Give as fractions of $\\pi$.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item For $45.0^\\circ$, the angle in radians is $\\frac{\\pi}{4} \\approx 0.7854$.\n\\item For $60.0^\\circ$, the angle in radians is $\\frac{\\pi}{3} \\approx 1.0472$.\n\\item For $90.0^\\circ$, the angle in radians is $\\frac{\\pi}{2} \\approx 1.5708$.\n\\item For $360.0^\\circ$, the angle in radians is $2\\pi \\approx 6.2832$.\n\\item For $445^\\circ$, the angle in radians is $\\frac{445}{180} \\pi \\approx 7.7667$.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "The Sun subtends an angle of about $0.5^\\circ$ to us on Earth, 150 million km away. Estimate the radius of the Sun.",
+    "problem_images": [],
+    "solution": "Using the small angle approximation, $\\theta \\approx \\frac{r}{d}$, where $r$ is the radius of the Sun and $d = 150 \\times 10^6$ km is the distance from Earth to the Sun. The angle $\\theta = 0.5^\\circ$ in radians is $\\frac{\\pi}{360}$. Therefore, the radius of the Sun is calculated as follows:\n    \\[\n    r = d \\cdot \\theta = 150 \\times 10^6 \\text{ km} \\cdot \\frac{\\pi}{360} \\approx 1,309,000 \\text{ km}.\n    \\]",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "The blades in a blender rotate at a rate of 6500 rpm.\nWhen the motor is turned off during operation, the blades\nslow to rest in 4.0 s. What is the angular acceleration as the\nblades slow down?",
+    "problem_images": [],
+    "solution": "The initial angular velocity of the blades is\n    \\[\n    \\omega_{\\text{initial}} = 6500 \\, \\text{rpm} \\times \\frac{2\\pi \\, \\text{rad}}{60 \\, \\text{s}} \\approx 680.68 \\, \\text{rad/s}.\n    \\]\n    The blades slow to rest in $4.0$ seconds, so the final angular velocity, $\\omega_{\\text{final}}$, is $0 \\, \\text{rad/s}$. The angular acceleration, $\\alpha$, is calculated as:\n    \\[\n    \\alpha = \\frac{\\omega_{\\text{final}} - \\omega_{\\text{initial}}}{\\Delta t} = \\frac{0 - 680.68 \\, \\text{rad/s}}{4.0 \\, \\text{s}} \\approx -170.17 \\, \\text{rad/s}^2.\n    \\]",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A wheel starts from rest and has a constant angular acceleration of 4 radians per second squared. After 5 seconds, calculate the angular velocity of the wheel. Also, determine the total angle in radians through which the wheel has turned during this time.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item The angular velocity of the wheel after 5 seconds is calculated using the angular acceleration $\\alpha = 4 \\, \\text{rad/s}^2$:\n    \\[\n    \\omega = \\alpha \\cdot t = 4 \\, \\text{rad/s}^2 \\cdot 5 \\, \\text{s} = 20 \\, \\text{rad/s}.\n    \\]\n    \\item The total angle $\\theta$ in radians through which the wheel has turned is given by the formula for the angle turned under constant angular acceleration:\n    \\[\n    \\theta = \\frac{1}{2} \\alpha t^2 = \\frac{1}{2} \\cdot 4 \\, \\text{rad/s}^2 \\cdot (5 \\, \\text{s})^2 = 50 \\, \\text{rad}.\n    \\]\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A spinning disk has an initial angular velocity of 10 radians per second and a constant angular deceleration of 2 radians per second squared. Calculate the time it will take for the disk to come to a complete stop. If the disk has a radius of 0.5 meters, find the linear distance traveled by a point on the rim of the disk until it stops.",
+    "problem_images": [],
+    "solution": "The time for the disk to stop can be found using the equation:\n\\[\n\\omega = \\omega_0 + \\alpha t,\n\\]\nwhere \\(\\omega_0 = 10 \\, \\text{rad/s}\\) and \\(\\alpha = -2 \\, \\text{rad/s}^2\\). Setting \\(\\omega = 0\\),\n\\[\nt = \\frac{-\\omega_0}{\\alpha} = 5 \\, \\text{s}.\n\\]\nThe angular displacement \\(\\theta\\) by the time it stops is given by:\n\\[\n\\theta = \\omega_0 t + \\frac{1}{2} \\alpha t^2 = 25 \\, \\text{rad}.\n\\]\nThe linear distance \\(s\\) traveled by a point on the rim is \\(\\theta r\\),\n\\[\ns = \\theta r = 12.5 \\, \\text{m}.\n\\]\nThus, the solutions are:\n\\[\nt = \\boxed{5 \\, \\text{s}}, \\quad s = \\boxed{12.5 \\, \\text{m}}.\n\\]",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A ferris wheel with a radius of 10 meters rotates at a constant speed making one complete revolution every 2 minutes. Calculate the angular velocity of the ferris wheel in radians per second. Then, determine the linear velocity of a passenger at the edge of the ferris wheel.",
+    "problem_images": [],
+    "solution": "The angular velocity \\(\\omega\\) of the Ferris wheel is calculated by:\n\\[\n\\omega = \\frac{2\\pi}{T},\n\\]\nwhere \\(T = 120 \\, \\text{s}\\). Thus,\n\\[\n\\omega = 0.0524 \\, \\text{rad/s}.\n\\]\nThe linear velocity \\(v\\) of a passenger at the edge is:\n\\[\nv = \\omega r = 0.524 \\, \\text{m/s}.\n\\]\nTherefore, the solutions are:\n\\[\n\\omega = \\boxed{0.0524 \\, \\text{rad/s}}, \\quad v = \\boxed{0.524 \\, \\text{m/s}}.\n\\]",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A hoop is rolling without slipping on a horizontal surface and has an initial speed of 1 meter per second. If it has a constant angular acceleration of 0.5 radians per second squared, calculate its angular velocity after 4 seconds. Assume the radius of the hoop is 0.3 meters, and determine the linear velocity of the hoop at this time.",
+    "problem_images": [],
+    "solution": "The angular velocity \\(\\omega\\) after \\(t = 4 \\, \\text{s}\\) is:\n\\[\n\\omega = \\alpha t = 2 \\, \\text{rad/s}.\n\\]\nThe linear velocity \\(v\\) of the hoop is:\n\\[\nv = r\\omega = 0.6 \\, \\text{m/s}.\n\\]\nTherefore, the solutions are:\n\\[\n\\omega = \\boxed{2 \\, \\text{rad/s}}, \\quad v = \\boxed{0.6 \\, \\text{m/s}}.\n\\]",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "What is the linear speed, due to the Earth’s rotation,\nof a point (a) on the equator, (b) on the Arctic Circle\n(latitude $66.5^\\circ$ N), and (c) at a latitude of $42.0^\\circ$ N?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item The linear speed \\(v\\) at the equator is \\(463.31 \\, \\text{m/s}\\).\n\\item At the Arctic Circle, the speed is \\(184.75 \\, \\text{m/s}\\).\n\\item At a latitude of \\(42.0^\\circ\\) N, the speed is \\(344.31 \\, \\text{m/s}\\).\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A rotating merry-go-round makes one complete revolution in 4.0 s. (a) What is the linear speed of a child seated 1.2 m from the center? (b) What is her acceleration (give components)? Don't think too hard about part b.",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item The linear speed of the child is \\(1.885 \\, \\text{m/s}\\).\n\\item The centripetal acceleration is \\(2.961 \\, \\text{m/s}^2\\).\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A turntable of radius $R_1$ is turned by a circular rubber\nroller of radius $R_2$ in contact with it at their outer edges.\nWhat is the ratio of their angular velocities, $\\omega_1 / \\omega_2$?",
+    "problem_images": [],
+    "solution": "The ratio of the angular velocities \\(\\omega_1 / \\omega_2\\) when the turntable and rubber roller are in contact at their edges is:\n\\[\n\\frac{\\omega_1}{\\omega_2} = \\frac{R_2}{R_1}.\n\\]\nThis relationship arises because the linear velocities at the contact point must be equal, leading to:\n\\[\nR_1 \\omega_1 = R_2 \\omega_2.\n\\]\nTherefore, the solution is:\n\\[\n\\frac{\\omega_1}{\\omega_2} = \\boxed{\\frac{R_2}{R_1}}.\n\\]",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A car is traveling around a circular track with a constant speed of 20 meters per second. The radius of the track is 50 meters. (a) Calculate the angular velocity of the car in radians per second. (b) If the car continues at this speed, how long will it take to complete one full lap around the track?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item The angular velocity $\\omega$ of the car can be calculated using the formula $\\omega = \\frac{v}{r}$, where $v$ is the speed of the car and $r$ is the radius of the circular track. Substituting the given values, $\\omega = \\frac{20,\\text{m/s}}{50,\\text{m}} = 0.4\\,\\text{rad/s}$. Thus, the angular velocity of the car is \\boxed{0.4\\,\\text{rad/s}}.\n\n\\item To find the time it takes to complete one full lap around the track, we use the circumference of the circle, which is given by $2\\pi r$. The time to complete one lap, $t$, is then calculated as $t = \\frac{\\text{circumference}}{v}$ where $v$ is the speed of the car. Substituting the values, $t = \\frac{2\\pi \\times 50,\\text{m}}{20,\\text{m/s}} \\approx 15.71,\\text{s}$. Hence, it takes approximately \\boxed{15.71,\\text{s}} to complete one lap.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A large spool of rope rolls on the ground with the end of\nthe rope lying on the top edge of the spool. A person grabs\nthe end of the rope and walks a distance $\\ell$, holding onto it, as shown below. The spool rolls behind the person\nwithout slipping. What length of rope unwinds\nfrom the spool? How far\ndoes the spool’s center of\nmass move?\n\\begin{center}\n    \\includegraphics[width=5cm]{spoollll.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_rotkin Sols/spoollll.png"
+    ],
+    "solution": "Suppose the person walks with velocity $v$. Then, the string has linear speed $v$, which from rolling without slipping is equal to\n    $$v = 2\\omega R.$$\n    So, if this motion happens over time $t$, the amount that unwinds is $\\omega R t$, which is related to $\\ell$ by\n    $$vt = 2\\omega Rt \\implies \\ell = 2 x \\implies x = \\boxed{\\frac \\ell 2}.$$\n    The amount that the COM is also given by $\\omega R t$, so the distance of the COM is $\\boxed{\\ell / 2}$ as well.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": "HRK",
+    "problem": "Wheel $A$ of radius $r_A = 10.0\\,\\unit{cm}$ is coupled by a belt $B$ to wheel $C$ of radius $r_C = 25.0\\,\\unit{cm}$ as shown. Wheel $A$ increases its angular speed from rest at a uniform rate of $1.60 \\,\\unit{rad/s^2}$. Determine the time for wheel $C$ to reach a rotational speed of $100\\,\\unit{rev/min}$, assuming the belt does not slip.\n    \\begin{center}\n        \\includegraphics[width=6cm]{hrk_belt.png}\n    \\end{center}",
+    "problem_images": [
+      "AP1_rotkin Sols/hrk_belt.png"
+    ],
+    "solution": "Given that wheel \\( A \\) has an angular acceleration \\( \\alpha_A = 1.60\\,\\text{rad/s}^2 \\) and wheel \\( C \\) has to reach an angular speed of \\( 100\\,\\text{rev/min} \\), we first convert the angular speed to radians per second using the conversion \\( 1\\,\\text{rev} = 2\\pi\\,\\text{rad} \\) and \\( 1\\,\\text{min} = 60\\,\\text{s} \\), resulting in an angular speed for wheel \\( C \\) of \\( \\omega_{C_{\\text{final}}} = 100 \\times \\frac{2\\pi}{60}\\,\\text{rad/s} \\).\n\nSince the belt does not slip, the linear speed at the edge of both wheels must be the same, so \\( v_A = r_A\\omega_A \\) and \\( v_C = r_C\\omega_C \\), where \\( \\omega_A \\) and \\( \\omega_C \\) are the angular velocities of wheels \\( A \\) and \\( C \\), respectively. Consequently, \\( \\omega_A r_A = \\omega_C r_C \\).\n\nGiven that \\( \\omega_A = \\alpha_A t \\) because wheel \\( A \\) starts from rest, we can substitute \\( \\omega_A \\) in the previous equation and get \\( \\alpha_A t r_A = \\omega_C r_C \\). We can solve for time \\( t \\) when wheel \\( C \\) reaches its final angular velocity \\( \\omega_{C_{\\text{final}}} \\):\n\n\\[\nt = \\frac{\\omega_{C_{\\text{final}}} r_C}{\\alpha_A r_A}.\n\\]\n\nSubstituting the values, we get \\( t = \\frac{10.47\\,\\text{rad/s} \\times 0.25\\,\\text{m}}{1.60\\,\\text{rad/s}^2 \\times 0.10\\,\\text{m}} \\approx 16.36\\,\\text{s} \\).\n\nThus, the time for wheel \\( C \\) to reach a rotational speed of \\( 100\\,\\text{rev/min} \\) is \\boxed{16.36\\,\\text{s}}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A cyclist accelerates from rest at a rate of $1.00\\,\\unit{m/s^2}.$ How\nfast will a point at the top of the rim of the tire (diameter of 68.0 cm) be moving after 2.25 s? [Hint: At\nany moment, the lowest point on the tire is in contact with\nthe ground and is at rest—see below]\n\\begin{center}\n    \\includegraphics[width=5cm]{whell_bicycle.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_rotkin Sols/whell_bicycle.png"
+    ],
+    "solution": "We have from rolling without slipping that the top of the wheel is always moving at twice the speed of the center of the tire. Thus, after 2.25 s, we have\n    $$v_{\\text{top}} = 2 \\cdot 1.00 \\cdot 2.25 = \\boxed{4.50\\,\\unit{m/s}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Let us treat a helicopter rotor blade as a long thin\nrod, as shown below. If each of the three rotor\nhelicopter blades is 3.75 m long and has a mass of 135 kg,\ncalculate the moment of inertia of the three rotor blades\nabout the axis of rotation.\n\\begin{center}\n    \\includegraphics[width=5cm]{rotorr.png}\n\\end{center}",
+    "problem_images": [
+      "AP1_rotkin Sols/rotorr.png"
+    ],
+    "solution": "We simply add up the moment of inertias of each of the rods,\n    $$I_{\\text{tot}} = 3I = 3\\cdot \\frac 13 m \\ell^2 = m \\ell^2.$$\n    Plugging in the numbers, $I = (135\\,\\unit{kg})(3.75\\,\\unit{m})^2 = \\boxed{1900\\,\\unit{kg m^2}}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": "$F=ma$",
+    "problem": "A system of cylinders and plates is set up as shown. The cylinders all have radius $r$, and roll without slipping to the right with angular velocity $\\omega$. What is the speed of the top plate?\n    \\begin{center}\n        \\includegraphics[width=5cm]{fma_stack_roll.png}\n    \\end{center}",
+    "problem_images": [
+      "AP1_rotkin Sols/fma_stack_roll.png"
+    ],
+    "solution": "As with the earlier problems, because the top of the wheels move at $v_{\\text{cm}} + \\omega r = 2\\omega r$ when rolling without slipping, this effect gets multiplied across all the stacks (simply take the frame of each of the plates as you compute up the stack), thus the speed of the top plate is $3 \\times 2\\omega r = \\boxed{6\\omega r}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_rotkin Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "If you roll a quarter around another quarter, how many times does the quarter spin by the time it gets back to its original position? This is the subject of a \"viral\" video from one of those <a href=\"https://www.youtube.com/watch?v=kN3AOMrnEUs\" target=\"_blank\" rel=\"noopener\">clickbait youtubers</a>.",
+    "problem_images": [],
+    "solution": "Suppose you roll one of the quarters an angle $\\theta$ around the stationary quarter. Then, by rolling without slipping the quarter that you're moving must rotate $\\theta$ relative to the \"surface\" that it is moving on. But since the normal to the surface rotates an angle $\\theta$ in this movement, the actual angle w.r.t. to the vertical that the quarter you are moving actually turns through is $2\\theta$. Thus, the quarter spins <strong>twice</strong> by the time it gets back to its original position!",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

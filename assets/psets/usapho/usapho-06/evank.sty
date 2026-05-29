@@ -1,0 +1,265 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{evank}[ur mom]
+
+%Special thanks to Evan Chen for inspiring the design of many of the theorem boxes
+
+%External packages
+\RequirePackage[inline]{asymptote}
+\RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{thmtools}
+\RequirePackage{amssymb}
+\RequirePackage[letterpaper, margin=2.5cm]{geometry}
+\RequirePackage{fancyhdr}
+\RequirePackage[usenames,svgnames,dvipsnames,table]{xcolor}
+\RequirePackage{marginnote}
+\RequirePackage{changepage}
+\RequirePackage{tikz}
+\RequirePackage{enumerate}
+\RequirePackage{enumitem}
+\RequirePackage{hyperref}
+\RequirePackage{physics}
+\RequirePackage{fontawesome}
+\RequirePackage[makeroom]{cancel}
+
+
+
+\providecommand{\mytitle}{\@title}
+\providecommand{\theauthor}{\@author}
+\providecommand{\thedate}{\@date}
+
+%colors
+\definecolor{medium-gray}{gray}{0.9}
+\definecolor{section-red}{RGB}{184, 35, 35}
+
+%heading
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\mytitle}
+\rhead{\theauthor}
+\cfoot{\thepage}
+
+%page setup
+\setlength{\parindent}{0.25in}
+\setlength{\parskip}{0.6em}
+
+\RequirePackage{titlesec}
+\titleformat{\section}{\LARGE\bfseries\sffamily}{\textcolor{section-red}{\thesection}}{0.6em}{}
+
+\titlespacing{\section}{0pt}{1.5ex plus .1ex minus .2ex}{0.5pc}
+
+\titleformat{\subsection}{\Large\bfseries\sffamily}{\textcolor{section-red}{\thesubsection}}{0.6em}{}
+
+\titlespacing{\subsection}{0pt}{1.5ex plus .1ex minus .2ex}{0.5pc}
+
+\titleformat{\subsubsection}{\large\bfseries\sffamily}{\textcolor{section-red}{\thesubsubsection}}{0.6em}{}
+
+\titlespacing{\subsection}{0pt}{1.5ex plus .1ex minus .2ex}{0.5pc}
+
+%Links:
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan, 
+    urlcolor=magenta,
+    }
+    
+%Simple commands
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\highlight}[1]{\textcolor{Blue}{\textbf{#1}}}
+\newcommand{\unit}[1]{\mathrm{#1}}
+\newcommand{\bv}[1]{\mathbf{#1}}
+\newcommand{\pll}{\parallel}
+\newcommand{\sepline}{\begin{center}\rule{14cm}{0.4pt}\end{center}\vspace{3mm}}
+\newcommand{\todo}{\textcolor{section-red}{\textbf{(TODO)}}}
+
+%overriding physics commands
+\renewcommand{\grad}{\nabla}
+\renewcommand{\div}{\nabla \cdot}
+\newcommand{\divt}{\mathrm{\div\,}}
+\renewcommand{\curl}{\nabla \times}
+\newcommand{\curlt}{\mathrm{\curl\,}}
+\newcommand{\lap}{\nabla^2}
+\renewcommand{\laplacian}{\nabla^2}
+
+%random useful things
+\newcommand{\origin}{\mathcal O}
+
+    
+%Theorem stuff
+\RequirePackage[framemethod=TikZ]{mdframed}
+\mdfdefinestyle{greenbox}{
+    linewidth=1pt,
+	skipabove=12pt,
+	innerbottommargin=8pt,
+	innertopmargin=6pt,
+	skipbelow=2pt,
+	nobreak=true,
+	backgroundcolor=ForestGreen!7,
+	linecolor=OliveGreen,
+	nobreak=true,
+}
+\mdfdefinestyle{leftbluebox}{%
+	skipabove=12pt,
+	linewidth=3pt,
+	rightline=false,
+	leftline=true,
+	topline=false,
+	innerbottommargin=8pt,
+	innertopmargin=6pt,
+	bottomline=false,
+	linecolor=	RoyalBlue,
+	backgroundcolor=CornflowerBlue!5,
+	nobreak=true,
+}
+\mdfdefinestyle{thmbluebox}{%
+	skipabove=12pt,
+	linewidth=1pt,
+	innerbottommargin=8pt,
+	innertopmargin=6pt,
+	roundcorner=7pt,
+	linecolor=	RoyalBlue,
+	backgroundcolor=CornflowerBlue!5,
+	nobreak=true,
+}
+
+\mdfdefinestyle{thmpurplebox}{%
+	skipabove=12pt,
+	linewidth=1pt,
+	innerbottommargin=8pt,
+	innertopmargin=6pt,
+	roundcorner=7pt,
+	linecolor=	RoyalPurple,
+	backgroundcolor=CornflowerBlue!5,
+	nobreak=true,
+}
+
+\usetikzlibrary{calc}
+\tikzset{
+ideasymbol/.style={
+rectangle, draw=Dandelion,line width=1pt,
+fill=Goldenrod!5,scale=1,
+overlay}}
+
+\mdfdefinestyle{yellowbox}{%
+	skipabove=12pt,
+	skipbelow=12pt,
+	linewidth=1pt,
+	innerbottommargin=8pt,
+	innertopmargin=6pt,
+	innerleftmargin=12pt,
+	linecolor=	Dandelion,
+	backgroundcolor=Goldenrod!5,
+	nobreak=true,
+singleextra={\path let \p1=(P), \p2=(O) in ($(\x2,0)+0.8*(0,\y1)$)
+node[ideasymbol] {\color{Dandelion}\Large\faLightbulbO };},%
+}
+
+\tikzset{
+warningsymbol/.style={
+rectangle, draw=BrickRed,line width=1pt,
+fill=BurntOrange!5,scale=1,
+overlay}}
+
+\mdfdefinestyle{redbox}{%
+	skipabove=12pt,
+	skipbelow=12pt,
+	linewidth=1pt,
+	innerbottommargin=8pt,
+	innertopmargin=6pt,
+	innerleftmargin=12pt,
+	linecolor=	BrickRed,
+	backgroundcolor=BurntOrange!5,
+	nobreak=true,
+singleextra={\path let \p1=(P), \p2=(O) in ($(\x2,0)+0.8*(0,\y1)$)
+node[warningsymbol] {\color{BrickRed}\faWarning };},%
+}
+
+\mdfdefinestyle{leftblackbox}{%
+	skipabove=12pt,
+	linewidth=3pt,
+	rightline=false,
+	leftline=true,
+	topline=false,
+	innerbottommargin=8pt,
+	innertopmargin=6pt,
+	bottomline=false,
+	linecolor=	Black,
+	backgroundcolor=Black!5,
+}
+
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily,
+	mdframed={style=greenbox},
+	headpunct={.\ },
+	postheadspace={0pt}
+]{thmgreenbox}
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily,
+	headpunct={.\ },
+	postheadspace={0pt}
+]{simplesol}
+\declaretheoremstyle[
+    headfont=\bfseries,
+    headpunct={.\ },
+    postheadspace={0pt}
+]{justtitle}
+\declaretheoremstyle[
+    headfont = \color{RoyalBlue}\bfseries\sffamily,
+    mdframed={style=leftbluebox},
+    headpunct={:\ },
+    postheadspace={0pt}
+]{leftbluebox}
+\declaretheoremstyle[
+    headfont = \bfseries\sffamily,
+    mdframed={style=leftblackbox},
+    headpunct={:\ },
+    postheadspace={0pt}
+]{leftblackbox}
+\declaretheoremstyle[
+    headfont = \color{RoyalBlue}\bfseries\sffamily,
+    mdframed={style=thmbluebox},
+    headpunct={\\ },
+    postheadspace={0pt}
+]{thmbluebox}
+\declaretheoremstyle[
+    headfont = \color{RoyalPurple}\bfseries\sffamily,
+    mdframed={style=thmpurplebox},
+    headpunct={\\ },
+    postheadspace={0pt}
+]{thmpurplebox}
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily,
+    mdframed={style=yellowbox},
+    headpunct={\\ },
+    postheadspace={0pt}
+]{yellowbox}
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily,
+    mdframed={style=redbox},
+    headpunct={\\ },
+    postheadspace={0pt}
+]{redbox}
+		
+\declaretheorem[style=thmgreenbox,name=POTD,numbered=yes]{potd}
+\declaretheorem[style=thmgreenbox,name=Example,numbered=yes,numberwithin=section]{ex}
+\declaretheorem[style=thmgreenbox,name=Problem,numbered=yes]{probemph}
+
+\declaretheorem[style=justtitle, name=Problem,numbered=yes]{prob}
+\declaretheorem[style=leftbluebox,name=Claim,numbered=no]{claim}
+\declaretheorem[style=leftblackbox,name=Remark,numbered=no]{remark}
+\declaretheorem[style=thmbluebox,name=Idea,sibling=ex]{idea}
+\declaretheorem[style=thmbluebox,name=Theorem,sibling=ex]{theorem}
+\declaretheorem[style=thmpurplebox,name=Fact,sibling=ex]{fact}
+\declaretheorem[style=thmpurplebox,name=Definition,sibling=ex]{defn}
+\declaretheorem[style=yellowbox,name=Tip!,numbered=no]{tip}
+\declaretheorem[style=redbox,name=Warning!,numbered=no]{warning}
+\newenvironment{sol}{\vspace{-0.5em}\noindent\textbf{\textsf{Solution.}}\setlength{\parindent}{0in}}{\hfill\qedsymbol\setlength{\parindent}{0.25in} }
+\declaretheorem[name=Lemma,numbered=yes,numberwithin=section]{lem}
+
+%numbered environments
+\newenvironment{alphasol}{\textbf{\textsf{Solution.}}$~$\begin{enumerate}[label=(\alph*)]}{\end{enumerate}}
+\newenvironment{anum}{\begin{enumerate}[label=(\alph*)]}{\end{enumerate}}
+\newenvironment{banum}{\begin{enumerate}[label=\textbf{(\alph*)}]}{\end{enumerate}}
+\newenvironment{choices}{\begin{enumerate}[label=(\Alph*)]}{\end{enumerate}}

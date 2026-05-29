@@ -1,0 +1,140 @@
+[
+  {
+    "problem_set": "Relativity I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "In class, we briefly discussed the invariant interval $s^2 = (ct)^2 - x^2$. When can this quantity be less than $0$? When can this quantity be greater than $0$? What can this quantity say about the relative locations of the two events on a minkowski diagram?",
+    "problem_images": [],
+    "solution": "This quantity can be less than 0 if the distance between two events is greater than $ct$, which means that they could not be traversed by one object -- it indicates a spacelike separation in any frame. When it is greater than $0$, it means the separation in distance is not as great and can be traversed by a single object -- it is timelike separation.\n\n    If it is timelike, the segment formed by the two events forms an angle greater than $45^\\circ$ above the horizontal, and if it is spacelike, the segment formed by the two events forms an angle less than $45^\\circ$ above the horizontal.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Relativity I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "Two bombs lie on a train platform, a distance $L$ apart. As a train passes\nby at speed $v$, the bombs explode simultaneously (in the platform frame)\nand leave marks on the train. Due to the length contraction of the train,\nwe know that the marks on the train are a distance $\\gamma L$ apart when viewed\nin the train’s frame, because this distance is what is length-contracted\ndown to the given distance $L$ in the platform frame.\nHow would someone on the train quantitatively explain why the marks\nare a distance $\\gamma L$ apart, considering that the bombs are a distance of only\n$L/\\gamma$ apart in the train frame?",
+    "problem_images": [],
+    "solution": "This is explained by the loss of simultaneity. Though the bombs explode simultaneously in the reference frame of the platform, they do not in the reference frame of the train.\n\nSince the bombs explode simultaneously in the platform frame, we can imagine a light beam that starts from the center of the two bombs and explode when the light reaches them. In the reference frame of the train, the light reaches the front (closer to the front of the train) bomb first, since the ``gap closing\" speed is $c+v$ and $c-v$ for the other one. So the first bomb explodes, and then the second bomb explodes after $\\Delta t = \\dfrac{L/2\\gamma}{c-v}-\\dfrac{L/2\\gamma}{c+v}$. So in the reference frame of the train the distance between the two marks is\n$$L/\\gamma + v\\Delta t = L/\\gamma + v\\cdot \\dfrac{vL/\\gamma}{c^2-v^2} = \\dfrac{L}{\\gamma}\\left(1+\\dfrac{v^2}{c^2 - v^2}\\right)=\\dfrac{L}{\\gamma}\\gamma^2 = L\\gamma,$$\nconsistent with the platform frame.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Relativity I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "Cookie dough (chocolate chip, of course) lies on a conveyor belt that\nmoves at speed v. A circular stamp stamps out cookies as the dough\nrushes by beneath it. When you buy these cookies in a store, what shape\nare they? That is, are they squashed in the direction of the belt, stretched\nin that direction, or circular?",
+    "problem_images": [],
+    "solution": "The stamping is simultaneous in the lab frame, so this is the best frame to view it in. In this frame, the length contracted cookie fits in the stamp, which means that the real cookie is stretched in the direction of the belt.\n\n    In the frame of the belt, the stamp does not come down simultaneously -- the back of it coming down first -- so it leads to a stretched stamping.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Relativity I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Suppose a source approaches you with speed $v$, emitting pulses of light at a frequency $f$ in its own frame. What is the frequency $f'$ at which these pulses reach you? This is the relativistic doppler effect.",
+    "problem_images": [],
+    "solution": "The frequency $f$ means that there is a gap of $\\Delta t = 1/f$ in the frame of the source. By time dilation, this results in a difference in time $\\Delta t' = \\gamma / f$ in your frame / the frame of the observer. But in our frame, the source continues moving, decreasing the space between the pulses. So, the space between the pulses in our frame is\n    $$\\Delta x = (c - v) \\Delta t' = \\gamma (c-v)/f.$$\n    So, the perceived frequency on our end will be\n    $$f' = \\frac{c}{\\Delta x} = \\frac{c}{\\gamma (c-v)} f = \\sqrt{\\frac{1+\\beta}{1-\\beta}}f.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Relativity I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Two balls move with speed $v$ along a line toward two people standing\nalong the same line. The proper distance between the balls is $\\gamma L$, and\nthe proper distance between the people is $L$. Due to length contraction,\nthe people measure the distance between the balls to be $L$, so the balls\npass the people simultaneously (as measured by the people), as shown below. Assume that the people’s clocks both read zero at this time.\nIf the people catch the balls, then the resulting proper distance between\nthe balls becomes $L$, which is shorter than the initial proper distance of\n$\\gamma L$. Your task: By working in the frame in which the balls are initially at\nrest, explain how the proper distance between the balls decreases from\n$\\gamma L$ to $L$. Do this in the following way\n\\begin{center}\n    \\includegraphics[width=5cm]{ball_pass.png}\n\\end{center}\n\\begin{anum}\n    \\item Draw the beginning and ending pictures for the process. Indicate\nthe readings on both clocks in the two pictures, and label all\nrelevant lengths.\n\\item Using the distances labeled in your pictures, how far do the people\ntravel? Using the times labeled in your pictures, how far do the\npeople travel? Show that these two methods give the same result.\n\\item Explain in words how the proper distance between the balls\ndecreases from $\\gamma L$ to $L$.\n\\end{anum}",
+    "problem_images": [
+      "Relativity I Sols/ball_pass.png"
+    ],
+    "solution": "\\begin{anum}\n\\item In the frame of the balls, the people are moving to the right with speed $v$. Furthermore, the rear clock is going to be ahead by $\\Delta t = Lv/c^2$.\n    \\item After the rear person catches his ball first, the person in front goes a further distance of\n    $$\\Delta x = \\gamma L - L/\\gamma = \\gamma L \\left(1 - (1-v^2/c^2)\\right) = \\frac{\\gamma Lv^2}{c^2}.$$\n    By the clock, the front person goes further by\n    $$\\Delta x = \\frac{\\gamma Lv}{c^2}v,$$\n    which is the same.\n    \\item The explanation is again loss of simultaneity! The rear person catches a ball first and brings it closer to the othe ball before the person in front catches their ball.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Relativity I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Consider the Minkowski diagram below. In frame $S$, the hyperbola $c^2t^2 - x^2 = 1$ is drawn. Also drawn are the axes of frame $S'$,\nwhich moves past $S$ with speed $v$. Use the invariance of the interval\n$s^2 = c^2t^2 - x^2$ to derive the ratio of the unit sizes on the $ct'$ and $ct$ axes.\n\\begin{center}\n    \\includegraphics[width=4cm]{minkkkk.png}\n\\end{center}",
+    "problem_images": [
+      "Relativity I Sols/minkkkk.png"
+    ],
+    "solution": "By the invariant interval, the hyperbola must intersect both $ct = 1$ and $ct' = 1$. So, we can find the ratio of the unit sizes by simply finding the distances to the two intersection points. The $ct$ intersection point is of course just distance $1$. For $ct'$, we have $x = \\beta (ct)$, so plugging into the hyperbola,\n    $$\\sqrt{1 - \\beta^2}(ct) = 1,$$\n    so thet total distance is\n    $$\\sqrt{(ct)^2 + x^2} = \\sqrt{1+\\beta^2} ct = \\sqrt{\\frac{1+\\beta^2}{1-\\beta^2}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Relativity I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "<a href=\"https://aapt.org/Common/upload/2020_USAPhO.pdf#page=5\" target=\"_blank\" rel=\"noopener\">USAPhO 2020/A3</a>.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://aapt.org/Common/upload/2020_USAPhO_solutions.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Relativity I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "Two spaceships float in space and are at rest relative to each other. They\nare connected by a string. The string is strong, but it cannot withstand an arbitrary amount of stretching. At a given instant, the\nspaceships simultaneously (with respect to their initial inertial frame)\nstart accelerating in the same direction (along the line between them)\nwith the same constant proper acceleration. In other words, assume\nthey bought identical engines from the same store, and they put them\non the same setting. Will the string eventually break?\n\\begin{center}\n    \\includegraphics[width=5cm]{bellsparadox.png}\n\\end{center}",
+    "problem_images": [
+      "Relativity I Sols/bellsparadox.png"
+    ],
+    "solution": "In the lab frame, their motion is symmetric, so they stay the same distance apart. However, that means that by length contraction, their distance in their own frames is increasing over time, and so this tells us that it breaks.\n\n    How can we explain this in the frame of the rockets where it appears that the other rocket should stay still with respect to the other? They should both always be accelerating at the same time within the lab frame. However, if two events are simultaneous in the lab frame, by rear clock ahead, it must have happened earlier on the right side, and so the ship in front is accelerating slightly before the ship on the left, leading to the rope breaking.\n\n    <a href=\"https://www.youtube.com/watch?v=asW78vToNLQ\" target=\"_blank\" rel=\"noopener\">Here</a> is a video explanation.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Relativity I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "In class, we derived velocity as a function of <em>proper</em> time for an object with constant proper acceleration. This time, we find it as a function of lab time.\n    \\begin{anum}\n        \\item By using the velocity addition formula, what is the acceleration in the lab frame as a function of time?\n        \\item Integrate your result from part (a) to find the object's velocity as a function of time.\n        \\item Lastly, integrate once more to get the object's position as a function of time. What does it look like on a minkowski diagram?\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item In the lab frame, we have by the velocity additino formula,\n    $$v(t+dt) = \\frac{v + a dt/\\gamma}{1 +v adt/\\gamma c^2} \\approx v +\\frac{adt}{\\gamma} (1-\\beta^2) = v + \\frac{a dt}{\\gamma ^3}. $$\n    Thus, we have $\\frac{dv}{dt} = \\frac{adt}{\\gamma^3}.$ \n    \\item We can readily solve this differential equation,\n    $$a t=  \\int_0^v \\gamma ^3 \\, dv = \\int_0^v \\frac{1}{(1-\\beta^2)^{3/2}} \\, dv = \\frac{v}{\\sqrt{1 - \\beta^2}}.$$\n    Now, we can solve for $v$ in terms of $at$,  $$v(t) = \\frac{at}{\\sqrt{1 + (at/c)^2}}.$$\n    \\item Integrating $v(t)$ from $0$ to $t$, we get\n    $$x(t) = \\frac{c^2}{a}\\left(\\sqrt{1 + \\left(\\frac{at}{c}\\right)^2} - 1\\right)$$\n    This is a hyperbola whose slope approaches the speed of light!\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Relativity I Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Suppose you have an object moving with 2-D velocity $\\langle u_x',u_y'\n    \\rangle$ in frame $S'$, and frame $S'$ moves at velocity $\\langle v,0\\rangle$ with respect to frame $S$. What is the velocity of the object with respect to frame $S$? Follow a similar procedure from before to derive transverse velocity transformations.",
+    "problem_images": [],
+    "solution": "The $y$ displacement in both frames should be the same,\n    $$\\Delta y = u_y'\\Delta t'.$$\n    By Lorentz transformations,\n    $$\\Delta t = \\gamma \\beta \\Delta x' / c + \\gamma  \\Delta t'.$$\n    In $S'$ we have $\\Delta x' = u_x' \\Delta t'$, so\n    $$\\frac{\\Delta y}{\\Delta t} = \\frac{u_y'}{\\gamma \\beta u_x'/c + \\gamma }= \\boxed{\\frac{u_y'/\\gamma}{1 + \\frac{v}{c^2}}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Relativity I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "<a href=\"https://apho.olimpicos.net/pdf/APhO_2013_Q2.pdf\" target=\"_blank\" rel=\"noopener\">APhO 2013/T2</a>, a long relativistic kinematics question.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://apho.olimpicos.net/pdf/APhO_2013_S2.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Relativity I Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "<a href=\"https://drive.google.com/file/d/1HBcRaNfGWOYGUf1aMkmCK21Y77eAEU4i/view?usp=sharing\" target=\"_blank\" rel=\"noopener\">IOAA 2022/T13</a>. This problem makes reference to energy and momentum at the start, but it can be done with just the <a href=\"https://en.wikipedia.org/wiki/Relativistic_Doppler_effect\" target=\"_blank\" rel=\"noopener\">relativistic doppler effect</a>. You can find a generalized version of the doppler effect that we derived earlier in the pset.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://drive.google.com/file/d/1i3oIgC4eyskJXH9GdNj5VQacB8AXgxs2/view?usp=drive_link\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

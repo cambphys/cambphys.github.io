@@ -1,0 +1,212 @@
+[
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Practice with Coulomb and Gauss!\n    \\begin{anum}\n        \\item Find the electric field due to a ring of radius $R$ and total charge $Q$ a distance $z$ above its center along its axis.\n        \\item Find the electric field above and below an infinite flat sheet of charge of surface density $\\sigma$ (charge per unit area). \n        \\item Find the electric field a distance $r$ away from an infinitely long wire with charge per unit length $\\lambda$. \n        \\item Find the electric field a distance $r$ directly above a hole of radius $r$ within an infinite flat sheet of charge with surface density $\\sigma$, as shown below.\n        \\begin{center}\n            \\includegraphics[scale=0.2]{ηολε}\n        \\end{center}\n        \\item Find the electric field above an infinite half-sheet of charge of surface density $\\sigma$ (side view -- assume the sheet extends infinitely in and out of the page as well as to the right). \n        \\begin{center}\n            \\includegraphics[scale=0.2]{ηαλω}\n        \\end{center}\n        \\item (Optional) Find the electric field at a point on the symmetry axis of a hemispherical shell of radius $R$ and charge density $\\sigma$, at position $z$ relative to the center, for any $z$ value.\n    \\end{anum}",
+    "problem_images": [
+      "Electrostatics Sols/ηολε.png",
+      "Electrostatics Sols/ηαλω.png"
+    ],
+    "solution": "\\begin{anum}\n\\item All the charges are a distance $\\sqrt{R^2 + z^2}$ away, and we want to extract the vertical components of their electric fields. By trig, this is $\\frac{z}{\\sqrt{R^2 + z^2}}$, so the total electric field is\n    $$E = \\frac{kQ}{R^2 + z^2}\\frac{z}{\\sqrt{R^2+z^2}}.$$\n    \\item We use Gauss's law in a cylinder that intersects the sheet of charge. If the cylinder has cross-section area $A$, then it incloses charge $\\sigma A$. The net flux is symmetric out both of the faces of the cylinder, so we have $$2EA=\\frac{\\sigma A}{\\epsilon_0}\\Longrightarrow E=\\frac{\\sigma}{2\\epsilon_0}$$\n    \\item Here we use Gauss's law in a cylinder of radius $r$ and length $L$ coaxial with the wire. The charge enclosed is $\\lambda L$, and the flux is through the lateral face of the cylinder across a surface area $2\\pi rL$. Thus, $$E\\cdot 2\\pi rL = \\frac{\\lambda L}{\\epsilon_0}\\Longrightarrow E = \\frac{\\lambda}{2\\pi \\epsilon_0 r}$$\n    \\item Let us imagine the infinite sheet as composed of many thin circular rings of increasing radius. To make things easier, let us denote the location of each ring via the angle $\\theta$ with respect to the vertical; for example, the closest ring, which has radius $r$, will have $\\theta = \\pi/4$. The furthest ring, which is infinitely far away, has $\\theta = \\pi/2$. \n\n    As a function of $\\theta$ and $d\\theta$, let us find the contribution of each ring. \n    \\begin{center}\n        \\includegraphics[scale=0.3]{ringthing}\n    \\end{center}\n    In the diagram below, we can see that the ring that corresponds to angles $\\theta$ to $\\theta + d\\theta$ has a thickness $(r/\\cos^2\\theta)d\\theta$, so it has a total charge $$dQ=\\sigma \\cdot 2\\pi r\\tan\\theta \\cdot \\frac{r}{\\cos^2\\theta}d\\theta=2\\pi \\sigma r^2 \\frac{\\sin\\theta}{\\cos^3\\theta}d\\theta$$\n    Using the result from part (a), the contribution to the electric field can be integrated for all rings: \\begin{align*}\n        E = \\int_{\\pi/4}^{\\pi/2} \\frac{dQ\\cos\\theta}{4\\pi\\epsilon_0(r/\\cos\\theta)^2}= \\int_{\\pi/4}^{\\pi/2}\\frac{\\sigma\\sin\\theta}{2\\pi\\epsilon_0}d\\theta=\\frac{\\sigma}{2\\sqrt 2\\pi\\epsilon_0}\n    \\end{align*}\n    \\item We can think of the plane as a bunch of wires parallel to each other. Again parameterizing with $\\theta$, the linear charge density for the wire at angle $\\theta$ can be thought to be $$\\lambda = \\sigma \\cdot \\frac{r}{\\cos^2\\theta}d\\theta$$Clearly the total electric field will be at an angle, so let us integrate the vertical components and horizontal components separately. First, in the vertical direction, we have $$E_y=\\int_0^{\\pi/2}  \\frac{\\lambda}{2\\pi\\epsilon_0(r/\\cos\\theta)}\\cos\\theta=\\int_0^{\\pi/2}\\frac{\\sigma}{2\\pi\\epsilon_0}d\\theta = \\frac{\\sigma}{4\\epsilon_0}$$ As expected, this is just half of $\\sigma/2\\epsilon_0$, which would be the vertical component if the other half of the infinite plane was also there. For the horizontal component, we have $$E_x=\\int_0^{\\pi/2}\\frac{\\lambda}{2\\pi\\epsilon_0(r/\\cos\\theta)}\\sin\\theta = \\int_0^{\\pi/2}\\frac{\\sigma}{2\\pi\\epsilon_0}\\tan\\theta \\, d\\theta = \\infty$$ So the field diverges. This also makes sense because we're integrating many wires of charge, whose field tails off as $1/r$. The integral of $1/r$ diverges, of course.\n    \\item This one is extremely messy. We use polar coordinates. Consider a slice of the hemisphere that is $\\theta$ down from the top. The total charge on it is $\\sigma (2\\pi R^2 \\sin \\theta \\, d\\theta)$. The distance away from the center of the ring is $R\\cos \\theta - z$. Thus, using our previous result, the z contribution to the electric field from this ring is\n    $$dE_z = -\\frac{\\sigma (2\\pi R^2 \\sin \\theta\\, d\\theta)}{4\\pi \\epsilon_0 r^2} \\frac{R\\cos \\theta - z}{r},$$\n    where $r = \\sqrt{(R\\cos \\theta - z)^2 + (R\\sin \\theta)^2}.$ Integrating this (best way is to use an integration table or some computational help), we get\n    $$E(z) = \\begin{cases}\n        \\frac{\\sigma R^2}{2\\epsilon_0 z^2}\\left(\\frac{1}{\\sqrt{1+z^2/R^2}}-1\\right) & z < R\\\\ \\frac{\\sigma R^2}{2\\epsilon_0 z^2}\\left(\\frac{1}{\\sqrt{1+z^2/R^2}}+ 1\\right) & z >R.\n    \\end{cases}$$\n\\end{anum}",
+    "solution_images": [
+      "Electrostatics Sols/ringthing.png"
+    ],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Purcell",
+    "problem": "$~$\n    Suppose you have a point charge $q$, located a distance $r$ from the origin. Using a physical argument (not integration), show that the average electric field over a sphere centered at the origin and with radius $R$ is\n    \\begin{anum}\n        \\item Zero, when $r < R$,\n        \\item and $\\frac{q}{4\\pi \\epsilon_0 r^2}$ when $r > R$.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item The average electric field mathematically over the sphere is\n    $$\\mathbf E_{\\text{avg}} = \\frac{1}{SA}\\int_{\\text{sphere}} \\mathbf E\\,  dA.$$\n    Now, suppose we multiply by $\\sigma / \\sigma$, such that the expression is\n    $$\\mathbf E_{\\text{avg}} = \\frac{1}{\\sigma SA} \\int_{\\text{sphere}} \\mathbf E\\, (\\sigma dA).$$\n    Notice that if we physically have a sphere of radius $R$ and charge density $\\sigma$, then this expression is precisely the net force on this sphere divided by its total charge. Thus, if we have a charge $q$ inside the sphere, by shell theorem and Newton's third law, there is no force on the sphere, and thus the expression is ${0}$.\n    \\item Similarly this time, by the other shell theorem, the net force on the sphere, if it has total charge $Q$ is given by\n    $$F = \\frac{kQq}{r^2}.$$\n    Then, plugging that into our expression from above,\n    $$\\mathbf E_{\\text{avg}} = \\frac{1}{Q} F = \\frac 1Q \\frac{kQq}{r^2} = \\frac{q}{4\\pi \\epsilon_0 r^2},$$\n    as desired.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "In a sphere of uniformly distributed charge of radius $R$ and charge density $\\rho$, we cut out a sphere of radius $a$ a distance $b$ from the center. What is the electric field inside this sphere?\n    \\begin{center}\n        \\includegraphics[width=5cm]{ball_ball_light.png}\n    \\end{center}",
+    "problem_images": [
+      "Electrostatics Sols/ball_ball_light.png"
+    ],
+    "solution": "Consider the electric field as a superposition of that from a uniform sphere and a negatively charged sphere of radius $b$. As we derived in class, the field due to a sphere of charge density $\\rho$ is given by\n    $$\\mathbf E = \\frac{\\rho \\mathbf r}{3\\epsilon_0}.$$\n    So, if we have a superposition of spheres, the field is\n    $$\\mathbf E = \\mathbf E_\\rho + \\mathbf E_{-\\rho} = \\frac{\\rho \\mathbf r}{3\\epsilon_0} +\\frac{(-\\rho) \\mathbf r_{\\text{inside}}}{3\\epsilon_0} = \\frac{\\rho}{3\\epsilon_0}(\\mathbf r - \\mathbf r_{\\text{inside}}).$$\n    But for any point within the \"$a$\" sphere, the vector $\\mathbf r - \\mathbf r_{\\text{inside}}$ is the vector $\\mathbf b$ to the center of the smaller sphere. So, the electric field inside anywhere in the sphere is the constant $\\mathbf E = \\frac{\\rho \\mathbf b}{3\\epsilon_0}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Consider two spheres of radii $R$ and charge densities of $\\pm \\rho$. They are placed a distance $d < 2R$ apart from each other such that they have overlap of 0 charge density as shown below. What is the electric field in this region?\n    \\begin{center}\n        \\includegraphics[width=5cm]{two_spheres.png}\n    \\end{center}",
+    "problem_images": [
+      "Electrostatics Sols/two_spheres.png"
+    ],
+    "solution": "Using the ideas from the previous problem, the electric field is\n    $$\\mathbf E = \\mathbf E_{\\rho} + \\mathbf E_{-\\rho} = \\frac{\\rho \\mathbf r_+}{3\\epsilon_0}-\\frac{\\rho \\mathbf r_-}{3\\epsilon_0}.$$\n    But $\\mathbf r_+ - \\mathbf r_-$ is just the vector between the centers, $\\mathbf d$. Thus, the field in that region is just $\\mathbf E = \\frac{\\rho \\mathbf d}{3\\epsilon_0}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "In this problem we do some dipole calculations.\n    \\begin{anum}\n        \\item To begin, we find the field from a dipole of charges $\\pm q$ separated by a distance $d$ at a point $P$ which is a distance $r$ along the axis. Write your answer in terms of $r$, $p = qd$, and fundamental constants.\n        \\begin{center}\n            \\includegraphics[width=7cm]{dipole.png}\n        \\end{center}\n        \\item Now, suppose we take two of those dipoles and stack them as shown below. What is the field now at point $P$? This configuration is known as a quadrupole, whose field goes as $\\sim 1/r^4$. <em>Hint:</em> Be careful to consider all necessary higher order terms when approximating.\n        \\begin{center}\n            \\includegraphics[width=8.5cm]{quadrupole.png}\n        \\end{center}\n        To be clear, this setup is a two $-q$ charges on the outside and then a charge of $2q$ in the center.\n        \\item If you stack two opposing quadrupoles, you get an octopole. Can you make a conjecture about how the field from an octopole scales as $r$? This series of expansions motivates the <a href=\"https://en.wikipedia.org/wiki/Multipole_expansion\" target=\"_blank\" rel=\"noopener\">multipole expansion</a>.\n    \\end{anum}",
+    "problem_images": [
+      "Electrostatics Sols/dipole.png",
+      "Electrostatics Sols/quadrupole.png"
+    ],
+    "solution": "\\begin{anum}\n\\item We simply use Coulomb's law to write down\n    $$E = \\frac{kq}{(r-d/2)^2} - \\frac{kq}{(r+d/2)^2}.$$\n    Using the binomial approximation,\n    $$E = \\frac{kq}{r^2}\\left[\\left(1+ \\frac d r\\right) - \\left(1 - \\frac d r\\right)\\right] = \\frac{kq}{r^2} \\frac{2d}{r} = \\frac{2kp}{r^3}.$$\n    \\item If you directly calculate coulomb's law from each of the four charges, you should find that the first order terms also cancel. However, if we use our result from the previous problem, we can write\n    $$E = \\frac{2kp}{(r+d/2)^3} - \\frac{2kp}{(r-d/2)^3} = \\frac{2kp}{r^3} \\left[\\left(1 +\\frac{3d}{2r}\\right) - \\left(1 -\\frac{3d}{2r}\\right)\\right] = \\frac{6kpd}{r^4}.$$\n    \\item We can guess that it goes as $\\sim 1/r^5$ based on the trend from the previous two problems.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Purcell",
+    "problem": "A half-infinite line has linear charge density $\\lambda$. Find the electric\nfield at a point that is “even” with the end, a distance $\\ell$ from it, as\nshown below. You should find that the field always points up\nat a $45^\\circ$ angle, independent of $\\ell$.\n\\begin{center}\n    \\includegraphics[width=5cm]{purcell_half_line.png}\n\\end{center}",
+    "problem_images": [
+      "Electrostatics Sols/purcell_half_line.png"
+    ],
+    "solution": "Consider superposing the configuration in the problem with an infinite line of charge of charge density $-\\lambda$. The field due to this infinite line would point straight down from the point, with a magnitude of $E = \\frac{\\lambda}{2\\pi \\epsilon_0 \\ell}$ from Gauss's law. But the superposition of the two produces a half-infinite line of charge density $-\\lambda$, so the field should just be the horizontal reflection of the field due to the current line. Thus, by vector geometry,\n    $$2E_y = E_{\\text{full line}} = \\frac{\\lambda}{2\\pi\\epsilon_0 \\ell}.$$\n    So, now we just need to find the horizontal component of the electric field. There is no neat trick to do this, we simply integrate along the half infinite line. Consider paramaterizing by $\\theta$ from the vertical axis as we did in problem 1. Then, for each $d\\theta$, the amount of charge is\n    $$dq = \\lambda d(\\ell \\tan \\theta) = \\lambda \\ell \\sec^2 \\theta d\\theta.$$\n    And the distance away is $\\ell /\\cos \\theta$, so the horizontal component is\n    $$d E_x = \\frac{kdq}{(\\ell / \\cos \\theta)^2}\\sin \\theta = \\frac{k\\lambda}{\\ell}\\sin \\theta d\\theta.$$\n    So, integrating over the line,\n    $$E_x = \\int_0^{\\pi /2} \\frac{k\\lambda}{\\ell}\\sin \\theta d\\theta = \\frac{k\\lambda}{\\ell} = \\frac{\\lambda}{4\\pi \\epsilon_0 \\ell}.$$\n    Thus,\n    $$E_x = E_y = \\frac{\\lambda}{4\\pi \\epsilon_0 \\ell}.$$\n    So, the electric field is of total magnitude $\\frac{\\sqrt{2}\\lambda}{4\\pi \\epsilon_0 \\ell}$, and points $45^\\circ$ up from the horizontal.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Prove that if you have a configuration of static charges, none of the charges can be in stable equilibrium. This is known as <a href=\"https://en.wikipedia.org/wiki/Earnshaw%27s_theorem\" target=\"_blank\" rel=\"noopener\">Earnshaw's Theorem</a>. <em>Hint:</em> consider one charge and what the field lines must look like around it if it was in a stable equilibrium.",
+    "problem_images": [],
+    "solution": "Suppose for the sake of contradiction that charge $q_i$ was in a stable equilibrium. Without loss of generality, assume that it is positive. Then, because it is in stable equilibrium, the field created with the absence of this charge $q_i$ (the field from all the other charges) must point inward in all directions. However, consider a gaussian surface at the location of where $q_i$ is in the configuration without $q_i$. Because all the field lines point inward here, there is a nonzero flux. However, because $q_i$ is gone, there should be 0 flux, which is a contradiction. Thus, none of the charges can be in a stable equilibrium.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Purcell",
+    "problem": "Find the flux through the circle shown below.\n    \\begin{center}\n        \\includegraphics[width=6cm]{circle_disk.png}\n    \\end{center}",
+    "problem_images": [
+      "Electrostatics Sols/circle_disk.png"
+    ],
+    "solution": "We push out the disk into the a sphere with radius $\\ell / \\cos \\theta$. Now it is clear that the flux through this disk is equal to the fraction of the sphere that its projected spherical cap takes up. This is a cap with angle $\\theta$, so we can find the <a href=\"https://en.wikipedia.org/wiki/Solid_angle#Cone,_spherical_cap,_hemisphere\" target=\"_blank\" rel=\"noopener\">solid angle of the spherical cap</a>,\n    $$\\Omega = \\int_0^{2\\pi} \\int_0^\\theta \\sin \\theta \\, d\\theta d\\phi = 2\\pi (1-\\cos \\theta).$$\n    So, the fraction of the total sphere is $\\frac{\\Omega}{4\\pi}$, and since the total flux is $q/\\epsilon_0$ by Gauss's law, the flux through this disks is\n    $$\\Phi = \\frac{\\Omega}{4\\pi} \\frac{q}{\\epsilon_0} = \\frac{q(1-\\cos \\theta)}{2\\epsilon_0}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "You have two disks of charge density $\\pm \\sigma$ attached by a rod at the center. A point charge $q$ is placed as shown below, a distance $\\ell$ away from the smaller disk. What is the net force on the two-disk contraption? How does it depend on the distance between the two plates, $d$?\n    \\begin{center}\n        \\includegraphics[width=6cm]{two_disk.png}\n    \\end{center}",
+    "problem_images": [
+      "Electrostatics Sols/two_disk.png"
+    ],
+    "solution": "Similar to the problem that was covered in lecture, note that the force on a plane of charge is given by\n    $$F = \\int_S \\mathbf E \\cdot (\\sigma d\\mathbf A) = \\sigma \\int_S \\mathbf E \\cdot d\\mathbf A = \\sigma \\Phi_E.$$\n    Now, notice that the frustum created by the two disks has 0 total flux through it as it contains no charges. Furthermore, because the field lines due to the $+q$ charge point parallel to the lateral faces of the frustum, the only flux is through the disks, so\n    $$\\Phi_\\sigma = \\Phi_{-\\sigma},$$\n    which means that the net force is\n    $$F = \\sigma \\Phi_\\sigma - \\sigma \\Phi_{-\\sigma} = 0.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Purcell",
+    "problem": "The figure below shows a spherical shell of charge, of radius $a$ and surface density $\\sigma$, from which a small circular piece of radius $b \\ll a$\nhas been removed. What is the direction and magnitude of the field\nat the midpoint of the aperture?\n\n\\begin{center}\n    \\includegraphics[width=6cm]{hole_shell.png}\n\\end{center}",
+    "problem_images": [
+      "Electrostatics Sols/hole_shell.png"
+    ],
+    "solution": "Suppose that the electric field is $E$ at that point without the circular piece. Then, if we place the circular piece back on to that same place, the magnitude of the force will be\n    $$F = Eq = \\sigma E \\pi b^2.$$\n    But we also know from force on a layer of charge that\n    $$F = \\sigma \\pi b^2 \\frac 12 (E_1 + E_2).$$\n    When the piece is back in the sphere it is a normal spherical shell. Thus, the field inside is $0$, and by Gauss's law with a pillbox at the surface, the field just outside is $\\sigma /\\epsilon_0$. So,\n    $$\\sigma E \\pi B^2 = \\sigma \\pi b^2 \\frac 12 (0 + \\sigma / \\epsilon_0).$$\n    Thus, ${E = \\sigma / 2\\epsilon_0}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Purcell",
+    "problem": "The two strips of charge shown below have width $b$,\ninfinite height, and negligible thickness (in the direction perpendicular to the page). Their charge densities per unit area are\n$\\pm \\sigma$. \n\\begin{center}\n    \\includegraphics[width=5cm]{two_strips.png}\n\\end{center}\n\\begin{anum}\n    \\item Find the magnitude of the electric field due to one of the\nstrips, a distance $x$ away from it (in the plane of the page).\n    \\item Show that the force (per unit height) between the two strips\nequals $\\sigma^2b(\\ln 2)/\\pi \\epsilon_0$. Note that this result is finite, even though\nyou will find that the field due to a strip diverges as you get\nclose to it.\n\\end{anum}",
+    "problem_images": [
+      "Electrostatics Sols/two_strips.png"
+    ],
+    "solution": "\\begin{anum}\n\\item The infinite strips are made up of infinite lines of charge, so we can integrate the field due to an infinite line of charge,\n    $$E = \\int_x^{x+b} \\frac{(\\sigma dx)}{2\\pi \\epsilon_0 x} = \\frac{\\sigma}{2\\pi \\epsilon_0} \\ln \\left(\\frac{x+b}{x}\\right).$$\n    \\item This time we integrate our known expression for the electric field to add up the forces on the other strip of charge. We have that\n    $$F = \\int_0^b E(x)\\sigma \\, dx = \\int_0^b \\frac{\\sigma^2}{2\\pi \\epsilon_0} \\ln \\left(\\frac{x+b}{x}\\right)\\, dx = \\frac{\\sigma^2}{2\\pi \\epsilon_0} \\int_0^b \\ln (x+b) - \\ln (x) \\, dx.$$\n    Now, using the integral for $\\ln x$, which is $x \\ln x - x$, we compute\n    $$F = \\frac{\\sigma^2}{2\\pi \\epsilon_0} \\left(2b \\ln 2b - b \\ln b - b \\ln b \\right) = \\frac{\\sigma^2 b}{2\\pi \\epsilon_0} \\ln 2.$$\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Consider a dipole in space. \\begin{center}\n        \\includegraphics[width=0.5\\linewidth]{dipolecirc.png}\n    \\end{center}\n    Find the radial component of the dipole field along a small circle of radius $\\delta\\ll r$ around $P$, in two ways:\n        \\begin{anum}\n        \\item Use Coulomb's law to find the electric field from each charge in the dipole.\n        \\item Create a thin cylinder of radius $\\delta$ along the circle. Find the flux through each circular face of the circle, and use Gauss's law to find the radial field.\n    \\end{anum}",
+    "problem_images": [
+      "Electrostatics Sols/dipolecirc.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item To good approximation, the distance from the charges to the circle is $r\\pm d/2$, meaning we neglect $\\delta$. Applying Coulomb's law in the radial direction gives \\begin{align*}E_r&=\\frac{q}{4\\pi \\epsilon_0(r-d/2)^2}\\frac{\\delta}{r-d/2}-\\frac{q}{4\\pi\\epsilon_0(r+d/2)^2}\\frac{\\delta}{r+d/2}\\\\\n        &=\\frac{q\\delta}{4\\pi\\epsilon_0}\\left[\\frac{1}{(r-d/2)^3}-\\frac 1{(r+d/2)^3}\\right]=\\frac{3p\\delta}{4\\pi\\epsilon_0 r^4} \\end{align*}We can evaluate the part in the brackets via the first-order Taylor expansion or by treating the quantity as a derivative, i.e. $\\frac d{dr}r^{-3}=-3dr/r^4$ where in this case $dr\\equiv d$. \n        \\item Using the solution to the previous problem on dipoles, the field at $P$ is $$E=\\frac{p}{2\\pi\\epsilon_0 r^3}$$Let us have a cylinder of small width $dr$. Then the difference in flux through the circular faces is $\\pi \\delta ^2 \\, dE$ where $dE$ is the difference in field strength at distance $r$ and $r+dr$. By a Taylor expansion or alternatively taking the derivative of the electric field, we have $$\\pi \\delta^2 \\, dE=\\pi\\delta^2 \\frac d{dr}\\frac{p}{2\\pi\\epsilon_0r^3}=\\frac{3p\\delta^2}{2\\epsilon_0r^4}$$This must be precisely the flux through the sides of the cylinder, which is equal to $E_r\\cdot 2\\pi \\delta \\, dr$. Equating the two quantities yields $$E_r\\cdot 2\\pi \\delta \\, dr=\\frac{3p\\delta^2}{2\\epsilon_0r^4}\\Longrightarrow E_r=\\frac{3p\\delta}{4\\pi\\epsilon_0 r^4}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Kalda",
+    "problem": "A thin planar electrode has a small circular opening of radius $a$. There is a uniform electric field $E_1$ one one side of the electrode and a uniform electric field $E_2$ on the other side.\n    \\begin{center}\n    \\includegraphics[width=0.5\\linewidth]{kalda1.png}\n\\end{center}A beam of electrons is passed through the circular opening at a distance $z_1$ from the electrode and refocuses on the other side at a distance $z_2$ from the electrode. Assume that particle energy $eU_0 \\gg eE_1z_1, eE_2z_2$ and $a\\ll z_1, z_2$. Show that under these conditions the ``lens formula\" $$\\frac{1}{z_1} + \\frac 1{z_2} = \\frac{E_1-E_2}{4U_0}$$ holds. <em>Hint:</em> use Gauss's law to approximate the radial electric field in the circular opening.",
+    "problem_images": [
+      "Electrostatics Sols/kalda1.png"
+    ],
+    "solution": "Let there exist a thin Gaussian cylinder of width $\\delta$ and radius $r<a$ at the opening. If we assume the electric field through the faces are $E_1$ and $E_2$, we can assume the radial electric field is only significant when electrons pass along this cylinder. From the analysis before, we can find the radial electric field as a function of $r$ by arguing that the total flux through the cylinder surfaces is zero: $$2\\pi r\\delta  E_r+\\pi r^2 E_2=\\pi r^2E_1\\Longrightarrow E_r=\\frac{r(E_1-E_2)}{2\\delta}$$While the electrons (which we assign charge $e$ and mass $m$) travel through the cylinder, we can approximate the total impulse they experience with $$\\Delta p = F\\Delta t = eE_r\\frac{\\delta}{v}=\\frac{er(E_1-E_2)}{2v}$$ The electrons that intersect the plane at $r$ have radial velocity $(r/z_1)v$ outward before going through the plane, and radial velocity $(r/z_2)v$ inward after going through the plane (this is required for the beam of electrons to converge to a single point). This change in velocity must have been supplied by the impulse. With this information, we have $$\\Delta p =\\frac{er(E_1-E_2)}{2v}= m\\left(\\frac{rv}{z_1}+\\frac{rv}{z_2}\\right)\\Longrightarrow \\frac{1}{z_1}+\\frac{1}{z_2}=\\frac{e(E_1-E_2)}{2mv^2}$$If the particle energy is $eU_0=mv^2/2$, we can make a quick substitution to arrive at the desired answer.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "Consider the setup from Problem 1Problem 1. Let us place a particle of mass $m$ and charge $q$ a small distance right above the center of the hole. What is the period of small oscillations of the particle? Assume that the particle is charged oppositely as $\\sigma$.",
+    "problem_images": [],
+    "solution": "Let us take the setup from 1Problem 1, and instead of being placed $r$ above the plane we place the particle a distance $z\\ll r$ above the plane. This means we replace $\\pi/4$ in the integral from that problem with a general $\\phi=\\cos^{-1}(z/r)$ that is very close to $\\pi/2$. The force on the particle will be $$F=qE=q\\int_\\phi^{\\pi/2}\\frac{\\sigma\\sin\\theta}{2\\pi\\epsilon_0}d\\theta=\\frac{q\\sigma}{2\\pi\\epsilon_0}\\cos\\phi = \\frac{q\\sigma z}{2\\pi\\epsilon_0r}$$It follows immediately from $F=m\\ddot z$ that we have the frequency of oscillation $\\omega = \\sqrt{q\\sigma / 2\\pi\\epsilon_0 mr}$ and so $$T=\\frac{2\\pi}{\\omega}=(2\\pi)^{3/2}\\sqrt{\\frac{\\epsilon_0mr}{q\\sigma}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "IdPhO",
+    "problem": "A narrow straight channel passes through the center of a solid, fixed cube with side length $a$. The cube is uniformly charged and the charge density is $\\rho$. The total length of the channel is $L$. In the channel, we place a small particle of mass $m$ and charge $q$. Find the period of small oscillations of the particle near the center. The gravitational interaction of the particle and the cube can be neglected. The cube and the particle are oppositely charged. \\begin{center}\n        \\includegraphics[scale=0.2]{idpho}\n    \\end{center}",
+    "problem_images": [
+      "Electrostatics Sols/idpho.png"
+    ],
+    "solution": "Let us move the particle a small distance $(x,y,z)$ in the channel. Once this move happens, the particle can be thought of being in the exact center of a smaller rectangular prism of side lengths $a-2x,a-2y,a-2z$, with three slabs of width $2x,2y,2z$ on the sides. \n\\begin{center}\n    \\includegraphics[width=0.5\\linewidth]{idphosol.png}\n\\end{center}The particle experiences no force from the prism, since it is in the exact center. In class we found the force that is exerted by a square of side length $a$, surface charge density $\\sigma$, on a particle $q$ a distance $a/2$ away is $q\\sigma/6\\epsilon_0$. Since $(x,y,z)$ are small, we can think of the slabs of width $2x,2y,2z$ as being effective thin sheets with surface charge densities $2\\rho x,2\\rho y,2\\rho z$. We can neglect the small pieces of overlap between the slabs because they have charge of higher orders of $(x,y,z)$, which we can neglect. Thus the force on the particle is $$F=\\left(\\frac{q\\rho x}{3\\epsilon_0}, \\frac{q\\rho y}{3\\epsilon_0}, \\frac{q\\rho z}{3\\epsilon_0}\\right)$$ and using $F=m\\ddot r$ this leads us to a frequency of oscillation $$\\omega =\\sqrt{ \\frac{q\\rho}{3\\epsilon_0 m}}\\Longrightarrow T=\\frac{2\\pi}{\\omega}=2\\pi\\sqrt{ \\frac{3\\epsilon_0 m}{q\\rho}}$$",
+    "solution_images": [
+      "Electrostatics Sols/idphosol.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Electrostatics Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "MPPP",
+    "problem": "Two insulating hemispherical shells (e.g. the two halves of a pingpong ball) are placed very close to each other with their centres almost coincident, as shown in figure a). Both of them are uniformly charged, one with total electric\ncharge $Q$, and the other with total charge $q$. \n\\begin{center}\n    \\includegraphics[width=8cm]{two_hemispheres.png}\n\\end{center}\n\n\\begin{anum}\n    \\item What is the magnitude of the net electric force exerted by the two bodies on each other?\n    \\item What about if the radius of one of the hemispherical shells is only one-half that of the other, as shown in figure b)?\n\\end{anum}",
+    "problem_images": [
+      "Electrostatics Sols/two_hemispheres.png"
+    ],
+    "solution": "\\begin{anum}\n\\item First, consider the case where $Q = q$. Using the force on a layer of charge idea, we have\n    $$F/A = \\frac{Q}{2\\pi R^2}\\cdot \\frac 12 \\left(0 + \\frac{k(2Q)}{R^2}\\right).$$\n    Then, using the pressure idea, the net force on the hemisphere is\n    $$F = (\\pi R^2)\\frac{2kQ^2}{4\\pi R^4}.$$\n    Thus, the average electric field due to the left hemisphere of charge $Q$ is\n    $$E_{\\text{avg}} = \\frac{F}{Q} = \\frac{kQ}{2R^2}.$$\n    So, the force on the hemisphere of chrage $q$ is $q E_{\\text{avg}} = {\\frac{kQq}{2R^2}}.$\n    \\item This one requires quite a bit of ingenuity!\n    \\begin{center}\n        \\includegraphics[width=8.5cm]{mppp_trickyy.png}\n    \\end{center}\n    We follow the transformations in the figure above. First, the force on the small shell is unchanged by adding a large sphere of $-2Q$. This then transforms to the figure in (c). We can change the sign of the charges which only changes the direction. Lastly, flipping and superposing this with part (a), we get (f), which shows that the force on having a full shell of $2q$ is in fact just double that of one. By shell theorem, we can scale this down to part (g), from where we have the exact problem from lecture,\n    $$F = \\frac{kq}{R^2}\\frac{Q}{2\\pi R^2} \\times (\\pi R^2) = \\frac{kQq}{2R^2}.$$\n\\end{anum}",
+    "solution_images": [
+      "Electrostatics Sols/mppp_trickyy.png"
+    ],
+    "solution_type": "alphasol"
+  }
+]

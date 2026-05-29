@@ -7,25 +7,110 @@
     usapho: { title: "USAPhO Course Series", short: "USAPhO" },
   };
 
-  // Build 16 placeholder lessons per course. Replace title/links later.
+  // Per-course lesson titles. Each entry's index (1-based) is the lesson number.
+  // `has_pset: true` means a JSON problem set exists at /assets/psets/<course>/<id>.json.
+  const LESSON_TITLES = {
+    ap: [
+      "1D Kinematics",
+      "2D Kinematics",
+      "Newton's Laws",
+      "Applications of Newton's Laws",
+      "Circular Motion",
+      "Gravitation",
+      "Work and Kinetic Energy",
+      "Conservation of Energy",
+      "Impulse and Momentum",
+      "Collisions",
+      "Simple Harmonic Motion",
+      "Rotational Kinematics",
+      "Rotational Dynamics",
+      "Angular Momentum",
+      "Fluids",
+      "Review",
+    ],
+    fma: [
+      "Problem Solving",
+      "Kinematics 1",
+      "Kinematics 2",
+      "Forces 1",
+      "Forces 2",
+      "Energy",
+      "Momentum",
+      "Rotation 1",
+      "Rotation 2",
+      "Complex Systems",
+      "Statics",
+      "Fluids",
+      "Gravitation",
+      "Fictitious Forces",
+      "Oscillations",
+      "Review",
+    ],
+    usapho: [
+      "Electrostatics",
+      "Conductors",
+      "DC Circuits",
+      "Magnetic Fields",
+      "Induction",
+      "AC Circuits",
+      "EM Waves",
+      "Thermodynamics 1",
+      "Thermodynamics 2",
+      "Thermodynamics 3",
+      "Relativistic Kinematics",
+      "Relativistic Dynamics",
+      "Waves 1",
+      "Waves 2",
+      "Modern Physics",
+      "Review",
+    ],
+  };
+
+  // Lessons with a JSON pset available. Keyed by lesson id.
+  const HAS_PSET = new Set([
+    "ap-01","ap-02","ap-03","ap-04","ap-05","ap-06","ap-07","ap-08",
+    "ap-09","ap-10","ap-11","ap-12","ap-13","ap-14","ap-15",
+    "fma-01","fma-02","fma-03","fma-04","fma-05","fma-06","fma-07","fma-08",
+    "fma-09","fma-10","fma-11","fma-12","fma-13","fma-14","fma-15",
+    "usapho-01","usapho-02","usapho-03","usapho-04","usapho-05","usapho-06",
+    "usapho-07","usapho-08","usapho-09","usapho-10","usapho-11","usapho-12",
+    "usapho-13","usapho-14","usapho-15",
+  ]);
+  // Lessons with lecture notes available (same set as HAS_PSET for now).
+  const HAS_NOTES = new Set(HAS_PSET);
+  // Lessons that have a JSON slideshow file alongside them.
+  const HAS_SLIDES = new Set([
+    "fma-01","fma-02","fma-03","fma-04","fma-05","fma-06","fma-07","fma-08",
+    "fma-09","fma-10","fma-11","fma-12","fma-13","fma-14","fma-15","fma-16",
+  ]);
+
   function buildLessons(courseId) {
+    const titles = LESSON_TITLES[courseId];
     const lessons = [];
     for (let i = 1; i <= 16; i++) {
       const n = String(i).padStart(2, "0");
+      const id = `${courseId}-${n}`;
       lessons.push({
-        id: `${courseId}-${n}`,
+        id,
         number: i,
-        title: `Lesson ${i}`,
-        video:     "#",   // YouTube embed URL
-        slideshow: "#",   // Google Slides / PDF link
-        notes:     "#",   // PDF or page link
-        pset:      "#",   // PDF link
+        title: titles ? (titles[i - 1] || `Lesson ${i}`) : `Lesson ${i}`,
+        video:     "#",
+        slideshow: "#",
+        notes:     "#",
+        psetUrl:   HAS_PSET.has(id) ? `/pset/?lesson=${id}` : "#",
+        hasPset:   HAS_PSET.has(id),
+        notesUrl:  HAS_NOTES.has(id) ? `/notes/?lesson=${id}` : "#",
+        hasNotes:  HAS_NOTES.has(id),
+        slidesUrl: HAS_SLIDES.has(id) ? `/slides/?lesson=${id}` : "#",
+        hasSlides: HAS_SLIDES.has(id),
+        mockUrl:   courseId === "usapho" && HAS_PSET.has(id) ? `/usapho-mock/?lesson=${id}` : "#",
+        hasMock:   courseId === "usapho" && HAS_PSET.has(id),
       });
     }
     return lessons;
   }
 
-  window.cambphysCourses = { COURSES, buildLessons, renderCourse };
+  window.cambphysCourses = { COURSES, LESSON_TITLES, buildLessons, renderCourse };
 
   // ---- Rendering -----------------------------------------------------------
 
@@ -38,6 +123,10 @@
 
     const upgraded = await window.cambphysAuth.isUpgraded(courseId);
     const lessons = buildLessons(courseId);
+
+    // Pull all progress rows once and index by lesson_id for fast lookup.
+    const allProgress = await window.cambphysAuth.getAllProgress();
+    const progressById = Object.fromEntries(allProgress.map(r => [r.lesson_id, r]));
 
     const header = document.createElement("div");
     header.className = "course-header";
@@ -53,38 +142,100 @@
     const list = document.createElement("div");
     list.className = "lesson-list";
 
+    // Extra non-lesson "course-level" items appended after the lessons.
+    // Right now this is just the F=ma practice exam.
+    const extras = [];
+    if (courseId === "fma") {
+      extras.push({
+        id: "fma-practice-exam",
+        title: "Practice F=ma Exam",
+        url: "/practice-exam/",
+        hint: "Timed 75-minute mock exam (25 multiple-choice problems). Retake anytime.",
+        kind: "exam",
+      });
+    }
+
     for (const lesson of lessons) {
       const locked = !upgraded && lesson.number > 1;
+      const prog = progressById[lesson.id];
+      const completed = !!(prog && prog.completed);
 
       const det = document.createElement("details");
-      det.className = "lesson" + (locked ? " locked" : "");
+      det.className = "lesson" + (locked ? " locked" : "") + (completed ? " completed" : "");
       det.innerHTML = `
         <summary>
           <span class="lesson-num">${String(lesson.number).padStart(2, "0")}</span>
           <span class="lesson-title">${lesson.title}</span>
+          ${completed ? '<span class="done-icon" title="Problem set complete">✓</span>' : ""}
           ${locked ? '<span class="lock-icon" aria-label="locked">🔒</span>' : ""}
         </summary>
         <div class="lesson-body">
-          <a href="${lesson.video}"     class="resource">▶ Video</a>
-          <a href="${lesson.slideshow}" class="resource">▥ Slideshow</a>
-          <a href="${lesson.notes}"     class="resource">≡ Notes</a>
-          <a href="${lesson.pset}"      class="resource">✎ Problem Set</a>
+          <div class="lesson-readings" data-lesson="${lesson.id}"></div>
+          <div class="lesson-resources">
+            <a href="${lesson.video}"     class="resource">▶ Video</a>
+            <a href="${lesson.slidesUrl}" class="resource ${lesson.hasSlides ? '' : 'disabled'}">▥ Slideshow</a>
+            <a href="${lesson.notesUrl}"  class="resource ${lesson.hasNotes ? '' : 'disabled'}">≡ Notes</a>
+            <a href="${lesson.psetUrl}"   class="resource ${lesson.hasPset  ? '' : 'disabled'}">✎ Problem Set</a>
+            ${courseId === "usapho" ? `<a href="${lesson.mockUrl}" class="resource ${lesson.hasMock ? '' : 'disabled'}">⏱ Mock</a>` : ""}
+          </div>
         </div>`;
 
       if (locked) {
         const summary = det.querySelector("summary");
         summary.addEventListener("click", (e) => {
           e.preventDefault();
-          showUpgradeModal(course.title);
+          showUpgradeModal(course.title, courseId);
         });
       }
       list.appendChild(det);
     }
+    // Append any course-level extras as a row matching the lesson rows.
+    for (const ex of extras) {
+      const locked = !upgraded; // gate extras on full upgrade
+      const tile = document.createElement("a");
+      tile.href = locked ? "#" : ex.url;
+      tile.className = "lesson lesson-extra" + (locked ? " locked" : "");
+      tile.innerHTML = `
+        <img class="lesson-extra-icon" src="/pictures/fmaicon.png" alt="">
+        <span class="lesson-title">${ex.title}</span>
+        ${locked ? '<span class="lock-icon" aria-label="locked">🔒</span>' : ""}`;
+      if (locked) {
+        tile.addEventListener("click", (e) => {
+          e.preventDefault();
+          showUpgradeModal(course.title, courseId);
+        });
+      }
+      list.appendChild(tile);
+    }
+
     mountEl.appendChild(list);
+
+    // After the list is in the DOM, lazy-fetch readings for each unlocked lesson.
+    loadReadings(courseId, lessons, upgraded);
   }
 
-  function showUpgradeModal(courseTitle) {
-    // One modal at a time
+  async function loadReadings(courseId, lessons, upgraded) {
+    for (const lesson of lessons) {
+      if (!upgraded && lesson.number > 1) continue;
+      const el = document.querySelector(`.lesson-readings[data-lesson="${lesson.id}"]`);
+      if (!el) continue;
+      try {
+        const r = await fetch(`/assets/psets/${courseId}/${lesson.id}-readings.json`);
+        if (!r.ok) continue;
+        const data = await r.json();
+        if (data.items && data.items.length) {
+          el.innerHTML = '<span class="readings-label">Readings:</span> '
+            + data.items.map(escapeHtml).join("; ");
+        }
+      } catch (e) { /* ignore — readings are optional */ }
+    }
+  }
+
+  function escapeHtml(s) {
+    return String(s||"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;");
+  }
+
+  function showUpgradeModal(courseTitle, courseId) {
     document.querySelectorAll(".cp-modal-backdrop").forEach(n => n.remove());
 
     const backdrop = document.createElement("div");
@@ -94,8 +245,11 @@
         <h2>Upgrade required</h2>
         <p>This lesson is part of the full <strong>${courseTitle}</strong>.
            You currently have free preview access (Lesson 1 only).</p>
-        <p>To unlock all 16 lessons, please contact us to upgrade your account.</p>
-        <button type="button" class="cp-modal-close">Close</button>
+        <p>Unlock all 16 lessons (video, slideshow, notes, and problem set) for the full course.</p>
+        <div class="cp-modal-actions">
+          <button type="button" class="cp-modal-close cp-btn-secondary">Close</button>
+          <a class="cp-btn-primary" href="/upgrade/?course=${encodeURIComponent(courseId)}">Upgrade Now</a>
+        </div>
       </div>`;
     backdrop.addEventListener("click", (e) => {
       if (e.target === backdrop || e.target.classList.contains("cp-modal-close")) {

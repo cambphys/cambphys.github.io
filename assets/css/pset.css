@@ -1,0 +1,234 @@
+/* Long math equations and wide tables overflow horizontally with their own
+   scrollbar instead of spilling out of the problem box. Applies anywhere
+   MathJax renders display math (mjx-container) or we drop in a <table>. */
+mjx-container[display="true"] {
+  display: block !important;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.pset-problem table, .pset-solution table,
+.result-question table, #notes-body table {
+  display: block; max-width: 100%; overflow-x: auto;
+}
+
+/* Problem-set slideshow */
+.pset-wrap { max-width: 820px; margin: 1.5rem auto 3rem; padding: 0 1.25rem; }
+
+.pset-topbar {
+  position: relative;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: .75rem; border-bottom: 1px solid #ddd; margin-bottom: 1.5rem;
+}
+a.pset-back,
+a.pset-back:link,
+a.pset-back:visited,
+a.pset-back:hover,
+a.pset-back:active,
+a.pset-back:focus {
+  display: inline-block;
+  padding: .35rem .7rem;
+  font-size: .85rem;
+  font-weight: 500;
+  background: #e5e7eb;
+  color: #333;
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none !important;
+  line-height: 1.2;
+}
+a.pset-back:hover { background: #d1d5db; }
+.pset-title {
+  position: absolute;
+  left: 50%; transform: translateX(-50%);
+  font-weight: 700; font-size: 1.1rem;
+  pointer-events: none; white-space: nowrap;
+}
+.pset-progress { color: #555; font-variant-numeric: tabular-nums; }
+
+/* Sticky control bar — sits below the topbar, always visible while scrolling. */
+.pset-controls {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; gap: .5rem; flex-wrap: wrap;
+  background: #fff;
+  padding: .5rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Drawer slides in from the left edge of the problem box (not from the
+   page edge), and is clipped by .pset-stage-wrap's overflow:hidden. */
+.pset-stage-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.pset-drawer {
+  position: absolute; top: 0; right: 0; bottom: 0;
+  width: 220px; max-width: 70%;
+  background: #fff;
+  border-left: 1px solid #ddd;
+  box-shadow: -4px 0 8px rgba(0,0,0,.06);
+  transform: translateX(100%);
+  transition: transform .18s ease-out;
+  z-index: 5;
+  display: flex; flex-direction: column;
+}
+.pset-drawer.open { transform: translateX(0); }
+.pset-drawer-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .85rem 1rem;
+  border-bottom: 1px solid #ddd; font-size: 1.05rem;
+}
+.pset-drawer-close {
+  background: transparent; border: 0; font-size: 1.6rem;
+  line-height: 1; cursor: pointer; color: #555;
+}
+.pset-drawer-close:hover { color: #000; }
+.pset-drawer-legend {
+  display: flex; gap: .65rem; flex-wrap: wrap;
+  padding: .5rem 1rem;
+  font-size: .75rem; color: #555;
+  border-bottom: 1px solid #eee;
+}
+.pset-drawer-legend span { display: inline-flex; align-items: center; gap: .3rem; }
+.pset-drawer-legend .legend-swatch {
+  display: inline-block; width: .7rem; height: .7rem; border-radius: 2px;
+}
+.pset-drawer-legend .sw-concept   { background: #1b6b34; }
+.pset-drawer-legend .sw-exercise  { background: #d4a017; }
+.pset-drawer-legend .sw-challenge { background: #b00020; }
+
+.pset-drawer-list {
+  list-style: none; margin: 0; padding: .5rem 0;
+  overflow-y: auto; flex: 1;
+}
+.pset-drawer-list li { margin: 0; padding: 0; }
+.pset-drawer-list button {
+  width: 100%; text-align: left;
+  display: flex; align-items: center; gap: .75rem;
+  background: transparent; border: 0; cursor: pointer;
+  padding: .5rem 1rem;
+  font-size: .95rem;
+}
+.pset-drawer-list button:hover { background: #f6f8fa; }
+.pset-drawer-list li.current button {
+  background: #e3edf6; font-weight: 700; color: #2f5d8c;
+}
+.pset-drawer-list .drawer-num {
+  min-width: 1.8em; font-variant-numeric: tabular-nums;
+  font-weight: 700; color: #2f5d8c;
+}
+.pset-drawer-list .drawer-bm { color: #8a6d00; }
+.pset-drawer-list .drawer-done { color: #1b6b34; font-weight: 700; margin-left: auto; }
+
+/* Small "bubbly" difficulty pill right after the problem number */
+.pset-drawer-list .drawer-pill {
+  display: inline-block;
+  padding: .05rem .45rem;
+  border-radius: 999px;
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+.pset-drawer-list .drawer-pill.sub-concept   { background: #e6f4ea; color: #1b6b34; }
+.pset-drawer-list .drawer-pill.sub-exercise  { background: #fff3cd; color: #8a6d00; }
+.pset-drawer-list .drawer-pill.sub-challenge { background: #fde7e9; color: #b00020; }
+
+/* Subsection color indicators on the left edge of each drawer row */
+.pset-drawer-list li button {
+  border-left: 4px solid transparent;
+  padding-left: .75rem;
+}
+.pset-drawer-list li.sub-concept   button { border-left-color: #1b6b34; }
+.pset-drawer-list li.sub-exercise  button { border-left-color: #d4a017; }
+.pset-drawer-list li.sub-challenge button { border-left-color: #b00020; }
+
+.pset-stage {
+  min-height: 360px; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;
+  background: #fff;
+}
+.pset-loading { color: #777; font-style: italic; }
+
+.pset-subsection {
+  display: inline-block; margin-bottom: .75rem; padding: .15rem .55rem;
+  background: #eef2f6; color: #2f5d8c; border-radius: 4px;
+  font-size: .8rem; font-weight: 600;
+}
+.pset-subsection.sub-concept   { background: #e6f4ea; color: #1b6b34; }
+.pset-subsection.sub-exercise  { background: #fff3cd; color: #8a6d00; }
+.pset-subsection.sub-challenge { background: #fde7e9; color: #b00020; }
+.pset-q-num { color: #2f5d8c; font-weight: 700; margin-right: .35rem; }
+.pset-problem { font-size: 1.05rem; line-height: 1.6; }
+.pset-problem img, .pset-solution img {
+  max-width: 100%; height: auto; display: block; margin: 1rem auto;
+  border: 1px solid #eee; border-radius: 4px;
+}
+.pset-problem ol.anum, .pset-solution ol.anum { margin-left: 1.5rem; }
+
+.pset-reveal-row { margin-top: 1.25rem; }
+.pset-reveal-btn {
+  padding: .55rem 1rem; background: #f6f8fa; color: #2f5d8c;
+  border: 1px solid #2f5d8c; border-radius: 4px; cursor: pointer;
+  font-weight: 600;
+}
+.pset-reveal-btn:hover { background: #2f5d8c; color: #fff; }
+.pset-solution {
+  margin-top: 1rem; padding: 1rem 1.25rem; background: #f6f8fa;
+  border-left: 4px solid #2f5d8c; border-radius: 4px;
+  font-size: 1rem; line-height: 1.6;
+}
+.pset-solution h4 { margin: 0 0 .5rem; color: #2f5d8c; }
+
+.pset-nav { display: none; }
+
+/* Narrow action bar above the stage box. Buttons stretch evenly to fill
+   the box's width, but stay visually separate via the gap. */
+.pset-actionbar {
+  display: flex; gap: .4rem;
+  margin: .25rem 0 .6rem;
+}
+.pset-mini {
+  flex: 1 1 0;
+  padding: .35rem .7rem;
+  font-size: .85rem;
+  background: #e5e7eb; color: #333;
+  border: 0; border-radius: 4px;
+  cursor: pointer;
+}
+.pset-mini:hover:not(:disabled) { background: #d1d5db; }
+.pset-mini:disabled { opacity: .5; cursor: not-allowed; }
+.pset-mini.primary { background: #2f5d8c; color: #fff; }
+.pset-mini.primary:hover:not(:disabled) { background: #244a70; }
+.pset-mini.bookmarked { background: #fff3cd; color: #8a6d00; }
+.pset-mini.completed  { background: #d3ecdc; color: #1b6b34; }
+/* When used outside the action bar (e.g. ☰ Problems toggle), don't stretch. */
+.pset-mini.compact { flex: 0 0 auto; }
+
+.pset-btn {
+  padding: .65rem 1.2rem; background: #e5e7eb; color: #333;
+  border: 0; border-radius: 4px; cursor: pointer; font-size: 1rem;
+}
+.pset-btn:hover:not(:disabled) { background: #d1d5db; }
+.pset-btn:disabled { opacity: .5; cursor: not-allowed; }
+.pset-btn.primary { background: #2f5d8c; color: #fff; }
+.pset-btn.primary:hover:not(:disabled) { background: #244a70; }
+.pset-btn.bookmarked { background: #fff3cd; color: #8a6d00; }
+
+/* Final slide */
+.pset-final { text-align: center; padding: 2rem 1rem; }
+.pset-final h2 { color: #2f5d8c; margin-top: 0; }
+.pset-final .bookmark-list {
+  text-align: left; max-width: 320px; margin: 1.25rem auto;
+  background: #f6f8fa; padding: .75rem 1rem; border-radius: 6px;
+}
+.pset-final .bookmark-list h4 { margin: 0 0 .5rem; }
+.pset-final .bookmark-list a { display: block; padding: .2rem 0; }
+.pset-mark-done {
+  padding: .85rem 1.75rem; background: #1b6b34; color: #fff;
+  border: 0; border-radius: 4px; font-size: 1.05rem; font-weight: 700;
+  cursor: pointer; margin-top: 1rem;
+}
+.pset-mark-done:hover:not(:disabled) { background: #155227; }
+.pset-mark-done.done { background: #999; }

@@ -1,0 +1,245 @@
+[
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "You swing a mass $m$ in a circle of radius $r$ such that it moves at constant velocity $v$. How much work do you do over time $\\Delta t$?",
+    "problem_images": [],
+    "solution": "Notice that centripetal force is always perpendicular to the velocity so we do zero work.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 75.0-kg firefighter climbs a flight of stairs 28.0 m high. How much work does he do?",
+    "problem_images": [],
+    "solution": "The firefighter must carry his own weight up the stairs, so with each step me must exert a force $F=mg$. Then, the work he does is $W=mgh=20600\\, \\unit J.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "How much work did the movers do (horizontally) pushing a 46.0-kg crate 10.3 m across a rough floor without acceleration, if the effective coefficient of friction was 0.50?",
+    "problem_images": [],
+    "solution": "We need to overcome kinetic friction, so the pushing force is just $F=mg\\mu$. Then the work done is $W=mg\\mu d=46\\cdot 9.8\\cdot 0.5\\cdot 10.3=2321\\, \\unit J$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A lever such as that shown in the figure can be used to lift objects we might not otherwise be able to lift. Show that the ratio of output force, $F_O$, to input force, $F_I$, is related to the lengths $\\ell_O$ and $\\ell_I$ from the pivot by $F_O/F_I=\\ell_I/\\ell_O$. Ignore friction and the mass of the lever, and assume the work output equals the work input.\n    \\begin{center}\n        \\includegraphics[scale=0.25]{lever.png}\n    \\end{center}",
+    "problem_images": [
+      "AP1_WorkEnergy Sols/lever.png"
+    ],
+    "solution": "By similar triangles, the ratio between the distance the man pushes through and the distance the rock moves is $d_I/d_O=\\ell_I/\\ell_O$. The work inputted by the man is $F_Id_I$, and the work outputted is $F_Od_O$. Setting these equal, $$F_Id_I=F_Od_O\\Rightarrow \\frac{F_O}{F_I}=\\frac{d_I}{d_O}=\\frac{\\ell_I}{\\ell_O}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A box of mass 4.0 kg is accelerated from rest by a force across a floor at a rate of 2.0 m/s$^2$ for 7.0 s. Find the net work done on the box.",
+    "problem_images": [],
+    "solution": "We can use the work-energy theorem. The velocity at the end of the acceleration is $v=at$, so the kinetic energy is $K=(1/2)m(at)^2=(1/2)\\cdot 4\\cdot (2\\cdot 7)^2=392\\, \\unit J$. This is precisely the net work done on the box.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "The force on a particle, acting along the $x$ axis, varies as shown in the figure. Determine the work done by this force to move the particle along the $x$ axis: (a) from $x = 0.0$ to $x = 10.0$ m; (b) from $x = 0.0$ to $x = 15.0$ m.\n    \\begin{center}\n        \\includegraphics[scale=0.25]{graf.png}\n    \\end{center}",
+    "problem_images": [
+      "AP1_WorkEnergy Sols/graf.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item The work done is the area under the graph. The area under the graph from $x=0$ to $x=10$ is just $2800 \\, \\unit J$. \n        \\item We have to subtract the area from under the $x$ axis from the area above. The area of the trapezoid below the $x$ axis is $-700\\, \\unit J$ so the total work done from $x=0$ to $x=15$ is $2100\\, \\unit J$. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 17,000-kg jet takes off from an aircraft carrier via a catapult. The gases thrust out from the jet’s engines exert a constant force of 130 kN on the jet; the force exerted on the jet by the catapult is plotted in the figure. Determine the work done on the jet: (a) by the gases expelled by its engines during launch of the jet; and (b) by the catapult during launch of the jet.\n    \\begin{center}\n        \\includegraphics[scale=0.25]{graf2.png}\n    \\end{center}",
+    "problem_images": [
+      "AP1_WorkEnergy Sols/graf2.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item From the graph, we know that the force of 130 kN is applied for a distance 85 m, so the work done by the engines is $W=11050\\, \\unit J$. \n        \\item The catapult does work equal to the area under the graph, which is a trapezoid with area 49500 J. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "(a) If the kinetic energy of a particle is tripled, by what factor has its speed increased? (b) If the speed of a particle is halved, by what factor does its kinetic energy change?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item We have $K=(1/2)mv^2$ so $v\\propto \\sqrt{K}$ (proportional to). Thus if $K$ is tripled $v$ goes up by a factor of $\\sqrt 3.$\n        \\item We have $K\\propto v^2$ so if $v$ is halved $K$ goes down by a factor $1/4$.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "How much work must be done to stop a 925-kg car traveling at 95 km!h?",
+    "problem_images": [],
+    "solution": "First, converting to m/s, we have $95\\, \\unit{km/h}=95/3.6\\, \\unit{m/s}=26.4\\, \\unit{m/s}$. The kinetic energy of the car is thus $K=(1/2)mv^2=644\\, \\unit{kJ}$ and by the work energy theorem this is precisely the work needed to stop the car.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "An 85-g arrow is fired from a bow whose string exerts an average force of 105 N on the arrow over a distance of 75 cm. What is the speed of the arrow as it leaves the bow?",
+    "problem_images": [],
+    "solution": "The work done by the string over this distance is $W=Fd=78.8\\, \\unit J$. By the work-energy theorem this equals $K=(1/2)mv^2$ so $v=\\sqrt{2W/m}=43\\, \\unit{m/s}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "One car has twice the mass of a second car, but only half as much kinetic energy. When both cars increase their speed by 8.0 m/s, they then have the same kinetic energy. What were the original speeds of the two cars?",
+    "problem_images": [],
+    "solution": "Let car 1 have mass $2m$ so car 2 has mass $m$. Let the kinetic energy of car 1 be $K$ so car 2 has kinetic energy $2K$. Then the original speeds of car 1 and 2 are given by $$v_1=\\sqrt{\\frac{2K}{2m}}=\\sqrt{\\frac Km}\\qquad v_2=\\sqrt{\\frac{2(2K)}{m}}=2\\sqrt{\\frac Km}=2v_1$$ The final speeds of the cars are related by $$K_1=K_2\\Rightarrow \\frac12 (2m)v_1'^2=\\frac12 mv_2'^2\\Rightarrow v_2'=v_1'\\sqrt 2\\Rightarrow (v_2+8)=(v_1+8)\\sqrt2$$ Plugging in $v_2=2v_1$, we have $(2v_1+8)=(v_1+8)\\sqrt2\\Rightarrow v_1=5.66\\, \\unit{m/s}$, and so $v_2=11.31\\, \\unit{m/s}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A spring has a spring constant $k$ of 88.0 $\\unit{N/m}$. How much must this spring be compressed to store 45.0 J of potential energy?",
+    "problem_images": [],
+    "solution": "We have $U=(1/2)kx^2$ so $x=\\sqrt{2U/k}=1.01\\, \\unit m$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A 1.60-m-tall person lifts a 1.65-kg book off the ground so it is 2.20 m above the ground. What is the potential energy of the book relative to (a) the ground, and (b) the top of the person’s head? (c) How is the work done by the person related to the answers in parts (a) and (b)?",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item We have $U=1.65\\cdot 9.8\\cdot 2.2=35.6\\, \\unit{J}$. \n        \\item We have $U=1.65\\cdot 9.8\\cdot(2.2-1.6)=9.7\\, \\unit {J}$.\n        \\item The work done by the person is the answer in part (a).\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "Spiderman uses his spider webs to save a runaway train moving about 60 km/h. His web stretches a few city blocks (500 m) before the 104-kg train comes to a stop. Assuming the web acts like a spring, estimate the effective spring constant.",
+    "problem_images": [],
+    "solution": "The work done by the spring is $(1/2)kx^2.$ By the work-energy theorem this equals the change in kinetic energy of the train. Thus $$\\frac12kx^2=\\frac12mv^2\\Rightarrow k=\\frac{mv^2}{x^2}=0.16\\, \\unit{N/m}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A 36.0-kg crate, starting from rest, is pulled across a floor with a constant horizontal force of 225 N. For the first 11.0 m the floor is frictionless, and for the next 10.0 m the coefficient of friction is 0.20. What is the final speed of the crate after being pulled these 21.0 m?",
+    "problem_images": [],
+    "solution": "The total work done by the external force is $225\\cdot 21=4725\\, \\unit J$. The work done by friction will be $-mg\\mu_k d=-36\\cdot9.8\\cdot0.2\\cdot10=-706\\, \\unit J$. The net work done is then $W=4725-706=4019\\, \\unit J$. This equals $(1/2)mv^2$ by the work-energy theorem, so $v=\\sqrt{2W/m}=\\sqrt{2\\cdot 4019/36}=14.9\\, \\unit{m/s}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "How high will a 1.85-kg rock go from the point of release if thrown straight up by someone who does 80.0 J of work on it?",
+    "problem_images": [],
+    "solution": "The total energy inputted equals $mgh$, so $h=U/mg=80/(1.85\\cdot9.8)=4.41\\, \\unit m$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "In a certain library the first shelf is 15.0 cm off the ground, and the remaining four shelves are each spaced 38.0 cm above the previous one. If the average book has a mass of 1.40 kg with a height of 22.0 cm, and an average shelf holds 28 books (standing vertically), how much work is required to fill all the shelves, assuming the books are all laying flat on the floor to start?",
+    "problem_images": [],
+    "solution": "If the shelf is at a height $h$, then the center of mass of the book is at a height $h+11$. Thus the heights of the books are 26 cm, 64 cm, 102 cm, 140 cm. Since we're putting an equal number of books on each shelf, the average height of the books is $(26+64+102+140)/2=81\\, \\unit{cm}$. Then the gravitational potential energy of all the books in the end is $U=4\\cdot 28mgh_{av}=4\\cdot 28\\cdot 1.4\\cdot 9.8\\cdot 81=124\\,\\unit{kJ}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A 380-kg piano slides 2.9 m down a 25$^\\circ$ incline and is kept from accelerating by a man who is pushing back on it parallel to the incline. Determine: (a) the force exerted by the man, (b) the work done on the piano by the man, (c) the work done on the piano by the force of gravity, and (d) the net work done on the piano. Ignore friction.\n        \\begin{center}\n        \\includegraphics[scale=0.25]{pianoman.png}\n    \\end{center}",
+    "problem_images": [
+      "AP1_WorkEnergy Sols/pianoman.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item The force exerted by the man is $F=mg\\sin\\theta=380\\cdot 9.8\\cdot \\sin(25)=1574\\, \\unit N$. \n        \\item The work done on the piano by the man is $W=-Fd=-4564\\, \\unit J$, which is negative since the distance is in the opposite direction as the force.\n        \\item It makes more sense to do part (d) before (c). Notice that the speed of the piano doesn't change, so its kinetic energy doesn't change, and thus no net work is one on it. The work done on the piano by gravity is therefore exactly opposite that of the man: $4564\\, \\unit J$. \n        \\item Zero.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "A mass $m$ is attached to a spring which is held stretched a distance $x$ by a force $F$ and then released. The spring pulls the mass to the left, towards its natural equilibrium length. Assuming there is no friction, determine the speed of the mass $m$ when the spring returns: (a) to its normal length ($x = 0$); (b) to half its original extension ($x/2$).\n        \\begin{center}\n        \\includegraphics[scale=0.25]{spring.png}\n    \\end{center}",
+    "problem_images": [
+      "AP1_WorkEnergy Sols/spring.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item The potential energy change is $(1/2)kx^2$ and this equals the kinetic energy $(1/2)mv^2$, so $v=x\\sqrt{k/m}$. Notice that $k=F/x$, so plugging this in yields $v=\\sqrt{Fx/m}$. \n        \\item The potential energy change here is only $$\\Delta U=\\frac12kx^2-\\frac12k\\left(\\frac x2\\right)^2=\\frac38kx^2=\\frac38 Fx$$ Thus setting this equal to $(1/2)mv^2$ yields $v=\\sqrt{3Fx/4m}$. \n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Problems",
+    "problem_tag": null,
+    "problem": "If it requires 6.0 J of work to stretch a particular spring by 2.0 cm from its equilibrium length, how much more work will be required to stretch it an additional 4.0 cm?",
+    "problem_images": [],
+    "solution": "The spring constant can be found as $k=2U/x^2=2\\cdot 6/0.02^2=30000\\, \\unit{N/m}$. The total energy contained in the spring when stretched 6.0 cm is then $(1/2)kx^2=(1/2)\\cdot 30000\\cdot 0.06^2=54\\, \\unit J$. The additional work is thus $54-6=48\\, \\unit J$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "AP1_WorkEnergy Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "The figure below shows a force field in 2 dimensions (i.e. the force at a given point is given by the vector pointing in that direction). Is this force conservative?\n    \\begin{center}\n        \\includegraphics[scale=1]{vc1.png}\n    \\end{center}",
+    "problem_images": [
+      "AP1_WorkEnergy Sols/vc1.png"
+    ],
+    "solution": "The force is not conservative, since when taking a path from $(1,0)$ to $(-1,0)$ directly along the $x$ axis the force do no work (they are all perpendicular), while if we follow the path along the unit circle then the force will do work. Thus the work done depends on the path taken, which means the force is not conservative.",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

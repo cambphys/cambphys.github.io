@@ -1,0 +1,193 @@
+[
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "Figure out the units of the gravitational constant $G$, knowing that the force of gravity between two objects with masses $m_1$ and $m_2$ separated by a distance $r$ is given by $F = \\frac{Gm_1m_2}{r^2}$.",
+    "problem_images": [],
+    "solution": "After rearranging the equation to $G = \\frac{Fr^2}{m_1m_2}$, all there's left to do is plugging in the units of the individual quantities. This should give you $[G] \\sim \\unit{kg^{-1}m^3s^{-2}}$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "The range of a projectile (which we'll cover in two weeks time) is proportional to $\\sin (k\\theta)$, where $\\theta$ is the launch angle and $k$ is some numerical constant. Determine $k$ using limiting cases and intuition.",
+    "problem_images": [],
+    "solution": "We know that at $\\theta = \\pi/2$ we should get $0$. Thus, we want $k$ to be even. Furthermore, if $k > 2$, then it would cycle to negatives by the time it gets to $\\pi/2$, which is unphysical, so $\\boxed{k = 2}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "Let's say you measure the length of a string using a ruler, and your result is $23.3 \\pm 0.1$ cm. According to Eq. (another problem), will your uncertainty decrease by $\\sqrt {10}$ if you measure the string 10 times? If not, can you think of an experiment where the uncertainty does decrease by $\\sqrt {10}$ with 10 trials?",
+    "problem_images": [],
+    "solution": "No, it will not decrease. This is the idea of <strong>systematic</strong> vs. <strong>statistical</strong> error. Their names are self-descriptive. Statistical goes down over time (law of large numbers), whereas systematic can be things like calibration error in equipments, and these do not decrease over trials.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "Some food for thought.\n    \\begin{anum}\n        \\item Write down the error of the product of $xy$ in terms of $\\delta x, x, \\delta y, y$.\n        \\item Now, setting $x = y$, what is the error in $x^2$. Does it match our formula from class: $\\delta (x^n) = |n| x^{n-1} \\delta x$? If not, what's wrong?\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item From our error analysis rules, $$\\frac{\\delta (xy)}{xy} = \\sqrt{\\left(\\frac{\\delta x}{x}\\right)^2 + \\left(\\frac{\\delta y}{y}\\right)^2}.$$\n    \\item Plugging in $x=y$, we get $\\delta (x^2) = x^2 \\frac{\\sqrt 2 \\delta x}{x} = \\sqrt 2 x \\delta x.$ This does not match! The issue is in independent variables.\n    <div style=\"background:#fff8e1;border-left:4px solid #e0a800;padding:.5em 1em;margin:.5em 0;\"><strong>Independence:</strong> Take care to check whether or not your variables are independent when carrying out error analysis!\n        \n        In part (a), we treat $x$ and $y$ as independent. However, with something like $x^2$, $x$ and $x$ are obviously not independent! The discrepancy intuitively makes sense because if $x$ is shifted positive, then $x$ is also shifted positive, increasing the error of $x^2$, but when they are independent, one could be shifted positive while the other is shifted negative, resulting in a smaller error.</div>\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": "Morin",
+    "problem": "Two massless strings of equal length support a mass $m$ from a ceiling, making a angle of $2\\theta$ between them. Which of the following quantities is the tension (that is, force) $T$ in each string?\n\\begin{enumerate}[label = (\\Alph*)]\n    \\item $\\frac{mg}{2}$\n    \\item $\\frac{mg\\sin\\theta}{2}$\n    \\item $\\frac{mg\\cos \\theta}{2}$\n    \\item $\\frac{mg}{2\\sin\\theta}$\n    \\item $\\frac{mg}{2\\cos \\theta}$\n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "We can look at $\\theta = 0$. In that case the two strings should be directly holding up the mass, so the tension should be $mg/2$. That eliminates choices B and D. Now as $\\theta \\rightarrow \\pi / 2$, we see that choice C goes to 0 which doesn't make sense and choices A remains constant which also doesn't make sense. So, it is <strong>E</strong>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "Assume that the drag force for a fish in water depends only on the typical length scale of the fish $R$, its velocity $v$, and the density of water $\\rho$. A pufferfish is about 10 cm in length and swims at about 5 m/s. How fast does a clown fish, about 1 cm in length, need to swim such that it experiences the same drag force as the pufferfish?\n\\begin{enumerate}[label=(\\Alph*)]\n    \\item 5 m/s\n    \\item 16 m/s\n    \\item 50 m/s\n    \\item 500 m/s\n    \\item 2500 m/s\n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "First, let's write out the relevant units.\n$$\\quad [R] \\sim \\unit{m}, \\quad [v] \\sim \\unit{m/s}, \\quad [\\rho] \\sim \\unit{kg/m^3}, \\quad{F} \\sim \\unit{kgm/s^2}$$\nwhere $F$ is the drag force. \n\nWe can combine $R$, $v$, and $\\rho$ into an expression $R^2v^2\\rho$ that will have the same units as $F$. Hence, we can say $$F \\sim R^2v^2\\rho.$$\n\nSo, to match the force experienced by a puffer fish of length $10$ cm and velocity $5$ m/s, a clown fish of length $1$ cm must swim at a velocity of $50$ m/s, or answer choice <strong>C</strong>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Kepler's Third Law says that the period of a planet's orbit $T$ depends on the gravitational constant $G$, the mass of the star $M$, and the length of the semimajor axis $a$ of the orbit. Derive Kepler's Third Law using dimensional analysis, up to a numerical factor.",
+    "problem_images": [],
+    "solution": "First, we identify the relevant quantities to find period $T$. We have the semi-major axis $a$, the mass of the sun $M$, the gravitational constant $G$, and possibly the mass of the orbiting object $m$. Let's first write out the units of each of these:\n    $$\\quad [T] \\sim \\unit{s}, \\quad [a] \\sim \\unit{m}, \\quad [G] \\sim \\unit{m^3/s^2kg}, \\quad [M,m] \\sim \\unit{kg}.$$\n\n    From here, it is easy to see that we combine these variables into a dimensionless quantity \n    $$ \\cfrac{GMT^2}{a^3} \\propto 1 \\implies T^2 \\propto a^3.$$\n\n    Note that we didn't end up using the mass of the orbiting object. To be clear, we don't know whether we should have used $M$ or $m$ when creating our dimensionless quantity. However, in the end it doesn't matter when proving $T^2 \\propto a^3$. As a challenge, see if you can derive the whole relationship!",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Using your result for Kepler's Third Law, find the relative error $\\delta a/a$ in your measurement of a comet's semimajor axis $a$ given that you measure its orbital period to be $300 \\pm 1$ day, and that its star's mass is $(3.3\\pm 0.1)\\times 10^{30}$ kg.",
+    "problem_images": [],
+    "solution": "Using our rule, $$\\frac{\\delta a}{a} = \\sqrt{\\left(\\frac{\\delta(M^{1/3})}{M^{1/3}}\\right)^2 + \\left(\\frac{\\delta(T^{2/3})}{T^{2/3}}\\right)^2}.$$\n    Applying the power rule as well, $$\\frac{\\delta a}{a} = \\sqrt{\\left(\\frac{1}{3}\\frac{\\delta M}{M}\\right)^2 + \\left(\\frac{2}{3}\\frac{\\delta T}{T}\\right)^2}.$$ Simply plugging in the numbers, we get $\\boxed{\\delta a / a = 1.03 \\%}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A rod moves freely between the horizontal floor and the slanted wall. When the end in contact with the floor is moving at $v$, what is the speed of the end in contact with the wall?\n\\begin{center}\n    \\includegraphics[width = 0.4 \\linewidth]{17_16.PNG}\n\\end{center}\n(A) $v\\dfrac{\\sin \\theta}{\\cos(\\alpha - \\theta)}$ \\quad (B) $v\\dfrac{\\sin (\\alpha - \\theta)}{\\cos(\\alpha + \\theta)}$ \\quad (C) $v\\dfrac{\\cos (\\alpha - \\theta)}{\\sin(\\alpha + \\theta)}$ \\quad (D) $v\\dfrac{\\cos \\theta}{\\cos (\\alpha - \\theta)}$ \\quad (E) $v\\dfrac{\\sin \\theta}{\\cos(\\alpha + \\theta)}$",
+    "problem_images": [
+      "Problem_solving_sol/17_16.PNG"
+    ],
+    "solution": "If we set $\\alpha = 2\\theta$, by symmetry (an isosceles triangle is created), it should be equal to $v$. This only leaves <strong>D</strong>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "When you look at the quantum mechanics of an atom, there are a couple of physical constants that are relevant.\n    \\begin{itemize}\n        \\item $\\hbar$, planck's reduced constant,\n        \\item $e$, the fundamental charge,\n        \\item $k$, Coulomb's constant,\n        \\item and $c$, the speed of light.\n    \\end{itemize}\n    \\begin{anum}\n        \\item Come up with a combination of these four constants that is dimensionless. Your expression, or some power of it <span class=\"footnote\">[Because, of course, if you found a quantity $\\alpha$ that's dimensionless, $\\alpha^x$ is also dimensionless, so you might not have found the fine structure constant.]</span>, is called the <em>fine structure constant</em>. <em>Hint:</em> as is a theme throughout this problem set, using physical intuition about real physics laws should help simplify your work.\n        \\item Let $N$ be the maximum achievable atomic number, limited by relativity. Estimate it using your work in the previous part.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item As before, the first step is always to write out the units of the constants. Probably the most obscure constant here is $\\hbar$, which you will encounter later on in your studies of quantum physics. For now, we will simply state the units.\n    $$\\quad [\\hbar] \\sim \\unit{kgm^2/s}, \\quad [e] \\sim \\unit{e}, \\quad [k] \\sim \\unit{kgm^3/s^2e^2}, \\quad [c] \\sim \\unit{m/s}.$$\n    Note we use $e$ to represent a unit of charge and also the fundamental charge. These can be combined into a dimensionless quantity $\\frac{ke^2}{\\hbar c}$. The simplest way to get to this is that we know that $$U = \\frac{ke^2}{r}, E = \\frac{hc}{\\lambda},$$\n    and so we see that $\\frac{ke^2}{hc}\\frac{\\lambda}{r}$ would be a dimensionless quantity. Since $\\lambda / r$ is dimensionless, we can simply take the left fraction, giving $\\alpha = \\tfrac{ke^2}{\\hbar c}$.\n    \n    You may search up the numerical values of these constants online. Plugging the values into our dimensionless expressions, we get a value of roughly $\\boxed{0.0073 \\approx 1/137}$. That's the fine structure constant for you!\n    \\item Any power of $\\alpha \\approx 1/137$ is going to be dimensionless. We know that $N$ must be dimensionless and we also expect it to be $\\sim 10^2$ from basic chemistry. Thus, we can guess $1/\\alpha \\approx \\boxed{137}$.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "Consider the line described by $ax + by + c = 0$. Which of the following expressions is the distance from this line to the point $(x_0, y_0)$?\n    \\begin{enumerate}[label=(\\Alph*)]\n    \\item $\\frac{bx_0+ay_0+c}{\\sqrt{a^2+b^2}}$\n    \\item $\\frac{ax_0+by_0+c}{\\sqrt{a^2+b^2}}$\n    \\item $\\frac{ax_0+by_0}{\\sqrt{a^2+b^2}}$\n    \\item $\\frac{ax_0+by_0+c}{\\sqrt{a^2+b^2+c^2}}$\n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "First, we know that $c$ must be in the expression as that changes the line. This eliminates (C). Now, set $a = 0$. Then, the closest distance is  $y_0 +c/b$ as it's a straight line. This only leaves <strong>B</strong>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "Alice and Bob are working on a lab report. Alice measures the period of a pendulum to be $1.013 \\pm 0.008 \\; \\text{s}$, while Bob independently measures the period to be $0.997 \\pm 0.016 \\; \\text{s}$. Alice and Bob can combine their measurements in several ways.\n\\begin{enumerate}\n    \\item Keep Alice's result and ignore Bob's\n    \\item Average Alice's and Bob's results\n    \\item Perform a weighted average of Alice's and Bob's results, with Alice's result weighted 4 times more than Bob's\n\n\\end{enumerate}\nHow are the uncertainties of these results related?\n\n\\begin{enumerate}[label=(\\Alph*)]\n    \\item Method 1 has the lowest uncertainty, and method 2 has the highest\n    \\item Method 3 has the lowest uncertainty, and method 2 has the highest\n    \\item Method 2 has the lowest uncertainty, and method 1 has the highest\n    \\item Method 3 has the lowest uncertainty, and method 1 has the highest\n    \\item Method 1 has the lowest uncertainty, and method 3 has the highest. \n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "Let's first list out what each of the options want for our result $R$. Let $A$ be Alice's result and $B$ be Bob's result. \n\\begin{enumerate}\n\\item $R$ = $A$\n\\item $R$ = $\\frac{A+B}{2}$\n\\item $R$ = $\\frac{4A + B}{5}$\n\\end{enumerate}\n\nNote that, if some result $x$ has absolute uncertainty $\\delta x$, then the result $cx$ for some constant $c$ will have absolute uncertainty $c\\delta x$. You may use rule 3 from the lecture to prove this. Using this insight, along with the addition rule (rule 1), we can solve for the absolute uncertainties in each of these cases. \n\\begin{enumerate}\n\\item $\\delta R$ = $\\delta A$\n\\item $\\delta R$ = $\\frac{\\sqrt{\\delta A^2 + \\delta B^2}}{2} = \\frac{\\sqrt{\\delta A^2 + \\delta (2A)^2}}{2} = \\frac{\\sqrt{5}}{2}\\delta A$\n\\item $R$ = $\\frac{sqrt{\\delta(4A)^2 + \\delta B^2}}{5} = \\frac{\\sqrt{16\\delta A^2 + 4\\delta A^2}}{5} = \\frac{2}{\\sqrt{5}}\\delta A$\n\n\n\\end{enumerate}\nFrom here, we see that method 3 gives the lowest uncertainty, and method 2 gives the highest uncertainty. The reason why method 3 gives lower uncertainty compared to method 1 despite including Bob's higher uncertainty is because more measurements will always help reduce uncertainty; higher uncertainty measurements simply have to be taken with less importance (as we see here, Bob's measurement is 1/4 as important as Alice's when calculating the final result).",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A mass is attached to one end of a rigid rod, while the other end of the rod is attached to a fixed horizontal axle. Initially the mass hangs at the end of the rod and the rod is vertical. The mass is given an initial kinetic energy $K$. If $K$ is very small, the mass behaves like a pendulum, performing small-angle oscillations with period $T_0$. As $K$ is increased, the period of the motion for the mass\n\\begin{enumerate}[label=(\\Alph*)]\n    \\item remains the same.\n    \\item increases, approaching a finite constant.\n    \\item decreases, approaching a finite non-zero constant.\n    \\item decreases, approaching zero.\n    \\item initially increases, then decreases.\n\\end{enumerate}",
+    "problem_images": [],
+    "solution": "Recall that a pendulum makes the assumption that acceleration in the direction of motion is proportional to $\\sin{\\theta} \\sim \\theta$ at small angles. Specifically, the acceleration experienced by the bob of the pendulum equals $g\\sin\\theta$, but we approximate this to just be $g\\theta$ to derive the formula for an ideal pendulum $T = 2\\pi\\sqrt{l/g}$. At larger angles however, $\\theta$ outgrows $\\sin{\\theta}$, meaning $g\\theta$ is over estimating the acceleration and our ideal formula is predicting the pendulum to be swinging faster than it actually is. Really, as amplitude increases, the period of a pendulum will actually increase. <br>\n    Now, what if we keep on increasing the initial kinetic energy $K$? We figured out that as amplitude increases, oscillations will take longer. But, if $K$ goes to infinity, the pendulum will start to go in circles! And as $K$ gets bigger, the pendulum will go around in circles even faster. So, its period will decrease. Hence, the correct answer is <strong>E</strong>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "You're at the IPhO. You've just taken $n$ measurements with value $x_i$ and uncertainty $\\delta x_i$. What's the best weighted average you can take here to minimize your uncertainty?",
+    "problem_images": [],
+    "solution": "If we weight each with $\\alpha_i$, we want to minimize $$\\sum_i (\\alpha_i \\delta x_i)^2.$$\n    You can minimize this either through <a href=\"https://en.wikipedia.org/wiki/Lagrange_multiplier\" target=\"_blank\" rel=\"noopener\">Lagrange multipliers</a>, or through math olympiad inequalities, and in any case, you will find $$\\alpha_i \\propto 1/\\delta x_i^2$$ as the optimal weighting to reduce the quadrature error.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "You have $N$ weights and you want to find their average weight. Your scale reads with an uncertainty of $\\delta w$. What's the minimum error you can get in the average weight $\\overline w$? <em>Hint:</em> the first procedure you think of to measure their average weight is probably not the most optimal.",
+    "problem_images": [],
+    "solution": "It's a bit hard to think of, but the most optimal way to measure this average is to measure all $N$ weights at once because the scale reads with a fixed uncertainty. Thus, when dividing by $N$ for the average, the error goes dwon by $1/N$, which is the best possible here (better than $1/\\sqrt N$ for typical average).",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "$F=ma$",
+    "problem": "A water hose is at ground level against the base of a large wall. By aiming the hose at some angle, and squirting water at a speed $v$, one wets a region on the wall, as shown below. If the speed of the water is doubled, what is the new region that can be wetted? Ignore the effect of water splashing beyond the point of contact. In the answer choices, the dotted line marks the initial wetted region.\n\\begin{center}\n    \\includegraphics[width=\\linewidth]{19b_13.PNG}\n\\end{center}",
+    "problem_images": [
+      "Problem_solving_sol/19b_13.PNG"
+    ],
+    "solution": "Note how little information the problem gives us! The only pertinent variables are $v$, $\\theta$, and $g$. The only way to combine these three variables to get units of distance is $\\frac{v^2}{g}$. Therefore, when we double the velocity, both the vertical and horizontal distances must be proportional nothing other than $v^2$. Hence, answer choice D is the correct answer.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Problem_solving_sol",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "IPhO, but don't be scared!",
+    "problem": "Stefan Boltzmann's law states that the power same dimensions as force times velocity) per area radiated by a blackbody with temperature $T$ is given by $P=\\sigma T^4$. It turns out that $\\sigma$ can be written in terms of other fundamental constants and a dimensionless prefactor. Your answer should be a combination of some or all of the following: $\\hbar,c,G,k_B$. <em>Hint:</em> This is physics! Use some physical intuition to simplify your work at the start.",
+    "problem_images": [],
+    "solution": "First, there is one uneccessary constant in the mix, $G$! Stars are held together by gravity, for sure, but the process of radiation has nothing to do with gravity (a plain old hot rock on the ground radiates heat as well). Thus, we only have to work with $\\hbar,  c, k_B$. We know that $k_BT$ gives units of energy, so $$[k_B^4 T^4 ] \\sim J^4.$$ We also know that $[\\hbar c ] \\sim J m$, so, $$\\left [ \\frac{k_B^4 T^4}{(\\hbar c)^3}\\right ] \\sim \\frac{J}{m^3}.$$ We want $J/m^2s$, so we just we just multiply by a $c$, and we get $$\\left[\\frac{k_B^4 T^4}{\\hbar^3 c^2}\\right] \\sim \\frac{J}{m^2 s},$$ so we can say $\\boxed{\\sigma \\sim \\frac{k_B^4}{\\hbar^3c^2}}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

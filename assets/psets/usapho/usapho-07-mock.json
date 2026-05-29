@@ -1,0 +1,22 @@
+{
+  "total": 2,
+  "time_limit_seconds": 3600,
+  "problems": [
+    {
+      "num": 1,
+      "problem": "The problem is \\href{https://www.aapt.org/physicsteam/2016/upload/E3-2-3.pdf\\#page=4}{here}.",
+      "solution": "\\officialsol{https://aapt.org/physicsteam/2016/upload/E3-2-3.pdf\\#page=4}",
+      "problem_images": [],
+      "solution_images": []
+    },
+    {
+      "num": 2,
+      "problem": "These three parts can be answered independently.\n    \\begin{anum}\n        \\item One pair of ends of two long, parallel wires are connected by a resistor, $R = 0.25 \\,\\Omega$, and a\nfuse that will break instantaneously if $5$ amperes of current pass through it. The other pair\nof ends are unconnected. A conducting rod of mass m is free to slide along the wires under\nthe influence of gravity. The wires are separated by $30$ cm, and the rod starts out $10$ cm\nfrom the resistor and fuse. The whole system is placed in a uniform, constant magnetic field\nof $B = 1.2\\, \\unit{T}$ as shown in the figure. The resistance of the rod and the wires is negligible.\nWhen the rod is released is falls under the influence of gravity, but never loses contact with\nthe long parallel wires.\n\\begin{center}\n    \\includegraphics[width=6cm]{usapho_2010_b2.png}\n\\end{center}\n\\begin{enumerate}[label=\\roman*.]\n    \\item What is the smallest mass needed to break the fuse?\n    \\item How fast is the mass moving when the fuse breaks?\n\\end{enumerate}\n\\item A fuse is composed of a cylindrical wire with length $L$ and radius $r \\ll L$. The resistivity\n(not resistance!) of the fuse is small, and given by $\\rho_f$. Assume that a uniform current $I$ flows\nthrough the fuse. Write your answers below in terms of $L$, $r$, $\\rho_f$, $I$, and any fundamental constants.\n\\begin{enumerate}[label=\\roman*.]\n    \\item What is the magnitude and direction of the electric field on the surface of the fuse wire?\n    \\item What is the magnitude and direction of the magnetic field on the surface of the fuse\nwire?\n\\item The Poynting vector, $\\vec{\\mathbf S}$ is a measure of the rate of electromagnetic energy flow through\na unit surface area; the vector gives the direction of the energy flow. Since $\\mathbf S = \\frac 1 {\\mu_0} \\mathbf E \\times \\mathbf B$\nwhere $\\mu_0$ is the permeability of free space and and $\\mathbf E$ and $\\mathbf B$ are the electric and magnetic\nfield vectors, find the magnitude and direction of the Poynting vector associated with the current in the fuse wire.\n\\end{enumerate}\n\\item A fuse will break when it reaches its melting point. We know from modern physics that a\nhot object will radiate energy (approximately) according to the black body law $P = \\sigma AT^4$, where $T$ is the temperature in Kelvin, $A$ the surface area, and $\\sigma$ is the Stefan-Boltzmann constant. If $T_f = 500\\,\\unit K$ is the melting point of the metal for the fuse wire, with resistivity $\\rho_f = 120 \\, \\unit{n\\Omega \\cdot m}$, and $I_f = 5\\, \\unit A$ is the desired breaking current, what should be the radius of the wire $r$?\n    \\end{anum}",
+      "solution": "\\officialsol{https://aapt.org/physicsteam/2019/upload/USAPhO-2010-Solutions.pdf\\#page=11}",
+      "problem_images": [
+        "EM Waves Sols/usapho_2010_b2.png"
+      ],
+      "solution_images": []
+    }
+  ]
+}

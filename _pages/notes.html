@@ -1,0 +1,99 @@
+---
+layout: default
+title: Lecture Notes
+permalink: /notes/
+---
+
+<link rel="stylesheet" href="/assets/css/pset.css">
+<link rel="stylesheet" href="/assets/css/notes.css">
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      macros: {
+        unit: ["\\,\\mathrm{#1}", 1],
+        pdv:  ["\\frac{\\partial #1}{\\partial #2}", 2],
+      },
+    },
+    options: { renderActions: { addMenu: [] } },
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script" async></script>
+
+<div class="notes-wrap">
+  <div class="notes-topbar">
+    <a class="notes-back" href="/courses/">← Back</a>
+    <h1 class="notes-title" id="notes-title">…</h1>
+  </div>
+  <div id="notes-readings"></div>
+  <div id="notes-body"><p class="pset-loading">Loading…</p></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/assets/js/supabase-config.js"></script>
+<script src="/assets/js/auth.js"></script>
+<script src="/assets/js/courses.js"></script>
+<script>
+  (async function () {
+    try {
+      const user = await window.cambphysAuth.requireAuth();
+      if (!user) return;
+
+      const params = new URLSearchParams(location.search);
+      const lessonId = params.get("lesson");
+      if (!lessonId || !/^[a-z]+-\d{2}$/.test(lessonId)) {
+        document.getElementById("notes-body").innerHTML = "<p>Bad lesson id.</p>";
+        return;
+      }
+      const courseId = lessonId.split("-")[0];
+
+      // Title + back link
+      const lessons = window.cambphysCourses.buildLessons(courseId);
+      const lesson = lessons.find(l => l.id === lessonId);
+      const courseTitles = { ap: "AP", fma: "F=ma", usapho: "USAPhO" };
+      document.getElementById("notes-title").textContent =
+        (lesson ? lesson.title : lessonId) + " — Notes";
+      const back = document.querySelector(".notes-back");
+      back.href = `/courses/${courseId}/`;
+      back.textContent = "← Back to course";
+
+      // Readings (sidebar at top)
+      try {
+        const r = await fetch(`/assets/psets/${courseId}/${lessonId}-readings.json`);
+        if (r.ok) {
+          const data = await r.json();
+          if (data.items && data.items.length) {
+            document.getElementById("notes-readings").innerHTML =
+              '<div class="readings-box"><h3>Suggested readings</h3><ul>' +
+              data.items.map(s => `<li>${escapeHtml(s)}</li>`).join("") +
+              '</ul></div>';
+          }
+        }
+      } catch (e) { /* readings optional */ }
+
+      // Notes body
+      const body = await fetch(`/assets/psets/${courseId}/${lessonId}-notes.html`);
+      if (!body.ok) {
+        document.getElementById("notes-body").innerHTML =
+          "<p>No lecture notes available for this lesson yet.</p>";
+        return;
+      }
+      const html = await body.text();
+      document.getElementById("notes-body").innerHTML = html;
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([document.getElementById("notes-body")]).catch(()=>{});
+      }
+    } catch (e) {
+      console.error(e);
+      document.getElementById("notes-body").innerHTML =
+        "<p>Error: " + (e.message || e) + "</p>";
+    }
+  })();
+
+  function escapeHtml(s) {
+    return String(s||"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;");
+  }
+</script>

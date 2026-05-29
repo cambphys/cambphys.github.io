@@ -1,0 +1,153 @@
+[
+  {
+    "problem_set": "EM Waves Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Maxwell's equations are a series of equations relating $\\mathbf E$ and $\\mathbf B$ along with their temporal and spatial derivatives. Starting from Maxwell's equations and using <a href=\"https://en.wikipedia.org/wiki/Vector_calculus_identities\" target=\"_blank\" rel=\"noopener\">vector calculus identities</a>, find a partial differential equation involving only one of $\\mathbf E$ or $\\mathbf B$. We haven't properly touched waves yet, but from this differential equation, try to read off the speed of light in terms of fundamental constants. Reading a little bit about the <a href=\"https://en.wikipedia.org/wiki/Wave_equation\" target=\"_blank\" rel=\"noopener\">wave equation</a> might be helpful.",
+    "problem_images": [],
+    "solution": "First, we assume we have no current flowing, reducing the last two equations to the following:\n    \\begin{align*}\n        \\nabla \\times \\mathbf E &= - \\frac{\\partial \\mathbf B}{\\partial t},\\\\\n        \\nabla \\times \\mathbf B &= \\mu_0 \\epsilon_0 \\frac{\\partial \\mathbf E}{\\partial t}.\n    \\end{align*}\n    taking the curl of the first equation and using vector calculus identities, we get\n    $$\\nabla (\\nabla \\cdot \\mathbf E) -\\nabla^2 \\mathbf E = -\\frac{\\partial}{\\partial t}\\mu_0\\epsilon_0\\frac{\\partial \\mathbf E}{\\partial t}.$$\n    By Gauss's law, $\\nabla \\cdot \\mathbf E = -=0$, so we get the equation\n    $$\\nabla^2 \\mathbf E = \\mu_0\\epsilon_0 \\frac{\\partial^2 \\mathbf E}{\\partial t^2}.$$\n    This looks a lot like the wave equation, and we can guess by dimensional analysis that $c = 1/\\sqrt{\\mu_0\\epsilon_0}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "EM Waves Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Consider a traveling sinusoidal plane wave with electric field given by\n    $$\\mathbf E(y,t) = E_0 \\sin \\left(\\frac{2\\pi}{\\lambda}(y + ct)\\right)\\hat{\\mathbf i} + E_0 \\sin \\left(\\frac{2\\pi}{\\lambda}(y + ct)\\right)\\hat{\\mathbf k}.$$\n    \\begin{anum}\n        \\item Determine a vector expression for the associated magnetic field (use Maxwell's equations).\n        \\item Determine a vector expression for the Poynting vector.\n        \\item Now suppose the wave is incident is on a totally absorbing surface of area $A$ that is lying in the $x$-$z$ plane. Determine the time-averaged force on the surface.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item We can take the curl of the electric field, which gives us\n    $$\\nabla \\times \\mathbf E = E_0 \\frac{2\\pi}{\\lambda} \\cos \\left(\\frac{2\\pi}{\\lambda} (y + ct) \\right) \\hat{\\mathbf i} - E_0 \\frac{2\\pi}{\\lambda} \\cos \\left(\\frac{2\\pi}{\\lambda} (y + ct) \\right) \\hat{\\mathbf k}.$$\n    This is equal to the negative partial derivative of $\\mathbf B$, which we can integrate component-wise, giving us\n    $$\\mathbf B(y,t) = -\\frac{E_0}{c}\\sin \\left(\\frac{2\\pi}{\\lambda} (y+ct)\\right)\\hat{\\mathbf i} + \\frac{E_0}{c} \\sin \\left(\\frac{2\\pi}{\\lambda}(y + ct) \\right) \\hat{\\mathbf k}.$$\n    \\item We have that the poynting vector is\n    $$\\frac{\\mathbf E \\times \\mathbf B}{\\mu_0} = \\frac{2E_0^2}{c\\mu_0}\\sin^2 \\left(\\frac{2\\pi}{\\lambda} (y+ct)\\right) \\hat{\\mathbf j}.$$\n    \\item We can use the formula for radiation pressure, which is $P_{\\text{rad}} = \\langle S \\rangle /c.$ Since $\\sin^2$ averages to $1/2$ over a full period, we get the time-averaged force is $F = \\frac{E_0^2}{c^2\\mu_0}A.$\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "EM Waves Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "    <a href=\"https://www.aapt.org/physicsteam/2014/upload/E3-1-7.pdf#page=8\" target=\"_blank\" rel=\"noopener\">2013 USAPhO/B2</a>, a series of several Poynting vector exercises on standard setups.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://aapt.org/physicsteam/2019/upload/USAPhO-2013-Solutions.pdf\\#page=14\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "EM Waves Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Purcell",
+    "problem": "current $I$ flows along a wire toward a point charge, causing the\ncharge to increase with time. Consider a spherical surface $S$ centered at the charge, with a tiny hole where the wire is, as shown below. \n\\begin{center}\n    \\includegraphics[width=5cm]{purcell_glassblo.png}\n\\end{center}\nThe circumference $C$ of this hole is the boundary of the surface $S$. Verify that the integral form of Maxwell’s equation,\n$$\\int_C \\mathbf B \\cdot \\mathrm d \\mathbf s = \\int_S \\left(\\mu_0\\epsilon_0 \\frac{\\partial \\mathbf E}{\\partial t} + \\mu_0 \\mathbf J\\right)\\cdot d\\mathbf a.$$\nis satisfied.",
+    "problem_images": [
+      "EM Waves Sols/purcell_glassblo.png"
+    ],
+    "solution": "There is no enclosed current, so the right hand side is just the electric flux. Because the hole is small, we have\n    $$\\Phi_E \\approx \\frac{Q(t)}{\\epsilon_0}.$$\n    Furthermore, because it is also small, we have that the magnetic field is approximately $\\mu_0 I/2\\pi r$, which gives\n    $$\\int_C \\mathbf \\cdot\\mathrm d \\mathbf s = \\frac{\\mu_0 I}{2\\pi r} (2\\pi r) = \\mu_0 I = \\mu_0 \\epsilon_0 \\frac{dQ(t)/dt}{\\epsilon_0} = \\mu_0 \\epsilon_0 \\frac{d\\Phi_E}{dt},$$\n    as desired.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "EM Waves Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Consider the classical model of an atom. We have a negatively charged electron in a circular orbit about the positively charged proton. However, as we learned in class, because the electron has centripetal acceleration, it will be radiating away energy, given by the Larmor formula.\n    \\begin{anum}\n        \\item Assuming that the electron stays in an approximately circular orbit, determine how long it would take for the electron to spiral in from a radius $R$ to a radius $r$.\n        \\item Compare the velocity of the electron (assuming an orbital radius of 0.5 Å) to the\nspeed of light – will relativistic corrections materially alter your conclusions?\n\\item What happens to the energy of the electron as it approaches the proton?\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n\\item We have that the total energy of the system of the proton and the electron by the virial theorem is\n    $$E = -\\frac{e^2}{8\\pi \\epsilon_0 r}.$$\n    So,\n    $$\\frac{dE}{dt} = \\frac{e^2}{8\\pi \\epsilon_0 r^2}\\frac{dr}{dt}.$$\n    Then, using the Larmor formula, we can write down \n    $$\\frac{dE}{dt} = -\\frac{q^2a^2}{6\\pi \\epsilon_0 c^3} =-\\frac{e^2}{6\\pi\\epsilon_0 c^3} \\left(\\frac{e^2}{4\\pi \\epsilon_0 r^2m_e}\\right)^2 .$$\n    Plugging this in, we get\n    $$-\\frac{e^2}{6\\pi\\epsilon_0 c^3} \\left(\\frac{e^2}{4\\pi \\epsilon_0 r^2m_e}\\right)^2 = \\frac{e^2}{8\\pi\\epsilon_0 r^2}\\frac{dr}{dt} \\implies -\\frac{e^2}{6\\pi\\epsilon_0 c^3}\\frac{e^2}{2\\pi \\epsilon_0m_e^2} = r^2\\frac{dr}{dt} .$$\n    Integrating from $R$ to $r$, we get\n    $$\\frac 13 (r^3 - R^3) = -\\frac{e^2}{6\\pi\\epsilon_0 c^3}\\frac{e^2}{2\\pi \\epsilon_0m_e^2}t,$$\n    which gives $t$ upon division of the factor in front.\n    \\item At an orbital radius $r$, we can find the speed from\n    $$\\frac{v^2}{r} = \\frac{e^2}{4\\pi \\epsilon_0 m_e r^2},$$\n    which gives \n    $$v = \\sqrt{\\frac{e^2}{4\\pi\\epsilon_0 m_e r}} \\approx 2 \\times 10^6 \\,\\unit{m/s}.$$\n    which is only $0.007$ of the speed of light, so we can neglect relativistic contributions.\n    \\item It approaches $-\\infty$. Once it gets close enough other corrections should come into play.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "EM Waves Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "\\begin{anum}\nHere's a fascinating puzzle, first popularized by <a href=\"https://www.youtube.com/watch?v=bHIhgxav9LY\" target=\"_blank\" rel=\"noopener\">Veritasium</a>. Suppose you have a really long circuit as pictured below.\n    \\begin{center}\n        \\includegraphics[height=4cm]{circuit_puzzle.png}\n    \\end{center}\n    How long after the switch is closed does it take for the light bulb to light up?\n    \\begin{anum}\n        \\item 1 year\n        \\item 2 years\n        \\item $1/c$ seconds\n        \\item Other?\n    \\end{anum}\n    Explain your answer.\n\\end{anum}",
+    "problem_images": [
+      "EM Waves Sols/circuit_puzzle.png"
+    ],
+    "solution": "The answer is (C)! Veritasium has two videos dedicated to this question: <a href=\"https://www.youtube.com/watch?v=bHIhgxav9LY\" target=\"_blank\" rel=\"noopener\">https://www.youtube.com/watch?v=bHIhgxav9LY</a> and <a href=\"https://www.youtube.com/watch?v=oI_X2cMHNe0\" target=\"_blank\" rel=\"noopener\">https://www.youtube.com/watch?v=oI_X2cMHNe0</a>. The key here is to think about the poynting vector. The poynting vector represents the transmission of energy through electromagnetic fields, and fields travel at the speed of light. As you examined in problem Problem 3, the poynting vector outside of the wires points away from them and thus toward the light bulb here. The electrons don't actually need to loop around for the light bulb to light up -- the electrons near the light bulb just need to be moved by some electric field, which gets there in $1/c$ seconds.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "EM Waves Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Purcell",
+    "problem": "A half-infinite wire carries current $I$ from negative infinity to the\norigin, where it builds up at a point charge with increasing $q$ (so\n$dq/dt = I$). Consider the circle shown in Fig. 9.12, which has radius $b$ and subtends an angle $2\\theta$ with respect to the charge. Calculate the integral $\\int \\mathbf B\\cdot \\mathrm d s$ around this circle. Do this in two ways.\n\\begin{center}\n    \\includegraphics[width=6cm]{charge_buildiup.png}\n\\end{center}\n\\begin{anum}\n    \\item Use Ampere's Law with the given surface.\n    \\item Use Ampere's Law with a surface which intersects the wire.\n\\end{anum}",
+    "problem_images": [
+      "EM Waves Sols/charge_buildiup.png"
+    ],
+    "solution": "\\begin{anum}\n\\item There is no current through this given surface, only the displacement current. Thus, we have\n    $$\\oint \\mathbf B \\cdot \\mathrm d \\mathbf s = \\mu_0 \\epsilon_0\\frac{d\\Phi_E}{dt}.$$\n    Now, from week 1 electrostatics, we have\n    $$\\Phi_E = \\frac{q(1-\\cos \\theta)}{2\\epsilon_0}.$$\n    So, plugging that in, we have\n    $$B(2\\pi b) = \\mu_0 \\frac{1-\\cos \\theta}{2} \\frac{dq}{dt},$$\n    so dividing, we get\n    $$B = \\frac{\\mu_0 I(1-\\cos \\theta)}{4\\pi b}.$$\n    \\item If we use a surface that intersects the wire, we have that the enclosed current is $I$. Now, for the flux, the total flux through a closed surface is $q/\\epsilon_0$ by gauss's law, so the flux through the back part of the surface completed by the disk is\n    $$\\frac{q}{\\epsilon_0} - \\frac{q(1-\\cos \\theta )}{2} = \\frac{q(1+\\cos \\theta)}{2}.$$\n    So, Ampere's law now reads\n    $$\\oint \\mathbf B \\cdot \\mathrm d \\mathbf s = \\mu_0 I - \\mu_0 \\frac{1+\\cos \\theta}{2} I = \\frac{\\mu_0 I(1-\\cos \\theta)}{4\\pi b},$$\n    which matches up with the previous part.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "EM Waves Sols",
+    "section": "Problem Set",
+    "subsection": "Tricky Non-linear Circuits",
+    "problem_tag": null,
+    "problem": "<a href=\"https://www.ioc.ee/~kalda/ipho/es/NBPhO16-eng.pdf\" target=\"_blank\" rel=\"noopener\">NBPhO 2016, problem 4</a>.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://www.ioc.ee/~kalda/ipho/es/NBPhO16-sol.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "EM Waves Sols",
+    "section": "Problem Set",
+    "subsection": "Tricky Non-linear Circuits",
+    "problem_tag": "NBPhO",
+    "problem": "A Zener\ndiode is connected to a source of alternating current as shown in the figure. The current is sinusoidal $I = I_0 \\cos \\omega t$ with a constant amplitude.\nThe inductance $L$ of the inductor is such that\n$L\\omega I_0 \\gg V_1,V_2$, where $V_1$ and $V_2$ are the breakdown voltages ($V_1 > V_2$). The current-voltage characteristic of the Zener diode is shown in the\nfigure. In the following assume that a very long\ntime has passed since the current source was first\nturned on.\n\\begin{center}\n    \\includegraphics[width=6cm]{zener_nbpho.png}\n\\end{center}\n\\begin{anum}\n    \\item Find the time-averaged current $\\langle I\\rangle$ through the circuit.\n    \\item Find the peak-to-peak amplitude of\nthe current changes $\\Delta I$ in the inductor.\n\\end{anum}",
+    "problem_images": [
+      "EM Waves Sols/zener_nbpho.png"
+    ],
+    "solution": "<p><a href=\"https://www.ioc.ee/~kalda/ipho/es/NBPhO17_sol.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "EM Waves Sols",
+    "section": "Problem Set",
+    "subsection": "Tricky Non-linear Circuits",
+    "problem_tag": null,
+    "problem": "Finish the last two parts of <a href=\"https://www.ioc.ee/~kalda/ipho/es/es2010_eng.pdf\" target=\"_blank\" rel=\"noopener\">EFPhO 2010, problem 9</a> that we started in class.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://www.ioc.ee/~kalda/ipho/es/es2010_sol.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "EM Waves Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "<a href=\"https://ipho.olimpicos.net/pdf/IPhO_1996_Q2.pdf\" target=\"_blank\" rel=\"noopener\">IPhO 1996/T2</a>, a question that references canonical angular momentum.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://ipho.olimpicos.net/pdf/IPhO_1996_S2.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "EM Waves Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "<a href=\"https://www.aapt.org/Common2022/upload/2021-USAPhO_plus.pdf\\#page=8\" target=\"_blank\" rel=\"noopener\">2021 USAPhO+/T3</a>, a question that combines many of our previous weeks together.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://aapt.org/Common2022/upload/2021-USAPhO_plus_Solutions_v2.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "EM Waves Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "<a href=\"https://ipho.olimpicos.net/pdf/IPhO_2016_Q2.pdf\" target=\"_blank\" rel=\"noopener\">IPhO 2016/T2</a>. This problem covers a tricky non-linear circuit element.",
+    "problem_images": [],
+    "solution": "<p><a href=\"https://ipho.olimpicos.net/pdf/IPhO_2016_S2.pdf\" target=\"_blank\" rel=\"noopener\">View official solution ↗</a></p>",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

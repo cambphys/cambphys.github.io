@@ -1,0 +1,230 @@
+[
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "Space explorers have found a planet covered with loose rock on its surface. They want to create a space station in a geostationary orbit around this planet. Is it possible for this to be done, regardless of the planet's rotation speed?",
+    "problem_images": [],
+    "solution": "\\fbox{Yes}. Notice that a planet can only hold itself together if particles on its surface are below the first cosmic speed, i.e. otherwise they will be in orbit and be flung off of the planet. Hence, the maximum possible spin speed of a planet is such that particles at its surface are barely in orbit, thereby making it possible for a satellite to be in geostationary orbit right on the surface.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "$F=ma$",
+    "problem": "Kepler’s Laws state that\\begin{enumerate}[label=(\\alph*)]\n   \\item the orbits of planets are elliptical with one focus at the sun\n    \\item a line connecting the sun and a planet sweeps out equal areas in equal times\n    \\item the square the period of a planet’s orbit is proportional to the cube of its semimajor\naxis\n\\end{enumerate}\nWhich of these three laws would remain true if the force of gravity were proportional to $1/r^3$ rather than $1/r^2$? More than one can be true.",
+    "problem_images": [],
+    "solution": "\\fbox{Only condition (b)}. Note that if the force of gravity were stronger or weaker depending on a given distance, the path of a planet would deviate from an ellipse, so (a) would not hold true. Condition (b) results from conservation of angular momentum, so it will still hold true. Condition (c) is false along the same logic as condition (a).",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "$F=ma$",
+    "problem": "Five astronauts are orbiting Earth in a low circular orbit. They decided to go around the planet following\nthe same orbit, but much faster, to set a new record for orbiting Earth. Four of them thought that they\ncould quickly increase the velocity, then use a jet engine to maintain an orbit of the same shape; in the\nfirst four choices below, the red arrow denotes the direction that fuel will flow out of the jet nozzle. The\nfifth astronaut was skeptical about such a possibility. Who is right? \\\\\n\\includegraphics[width=\\linewidth]{fma1.png}",
+    "problem_images": [
+      "Gravity Sols/fma1.png"
+    ],
+    "solution": "Answer \\textbf{(B)}. If we travel at a faster speed, we will need additional centripetal acceleration provided by thrust directed out toward space.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "Every so often, the ISS must fire its thrusters to avoid falling into the atmosphere. In which way should the thrusters on the ISS point (i.e. direction in which exhaust is fired) as to most effectively increase the maximum height of its orbit?\\begin{enumerate}[label=(\\Alph*)]\n    \\item Toward the Earth\n    \\item Opposite to the Earth\n    \\item In the direction of motion\n    \\item Opposite the direction of motion\n    \\item It depends on the dimensions of the orbit\n    \\end{enumerate}",
+    "problem_images": [],
+    "solution": "Answer \\textbf{(D)}. Since a higher energy correlates with a larger semi-major axis length, we need to maximize our increase in kinetic energy from a given impulse. Thus, our gain in speed should point in the direction of motion, i.e. our thrust should point in the opposite direction.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": "$F=ma$",
+    "problem": "A satellite is following an elliptical orbit around the Earth. Its engines are capable of providing a one-time\nimpulse of a fixed magnitude. In order to maximize the energy of the satellite, the impulse should be\n\\begin{center}\n\\includegraphics[width = 0.5\\textwidth]{oweinw}\n\\end{center}\n\\begin{enumerate}[label=(\\Alph*)]\n    \\item directed along the satellite’s velocity and applied when the satellite is in its perigee.\n    \\item directed along the satellite’s velocity and applied when the satellite is in apogee.\n    \\item directed toward the Earth and applied when the satellite is in perigee.\n    \\item directed toward the Earth and applied when the satellite is in apogee.\n    \\item directed away from the Earth and applied when the satellite is in apogee.\n    \\end{enumerate}",
+    "problem_images": [
+      "Gravity Sols/oweinw.png"
+    ],
+    "solution": "Answer \\textbf{(A)}. From the solution to the previous problem, the thrust should be in the direction of motion, leaving only options (A) and (B) left. Let's say the satellite gains a velocity of $\\Delta v$ when its current velocity is $v$. Then, its gain in kinetic energy is $$\\Delta K =\\frac12 m(v+\\Delta v)^2-\\frac12 mv^2=mv\\Delta v +\\frac12 m\\Delta v^2.$$The gain in kinetic energy is larger with a greater current velocity $v$, so the impulse should be applied when the satellite is moving fastest, i.e. at perigee.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Concept checks",
+    "problem_tag": null,
+    "problem": "\\label{pr7}\n    A satellite in an orbit of radius $r$ about a planet of mass $M$ experiences a drag force equal to $F_d=-cv$, where $c$ is a constant and $v$ is the speed of the satellite. Assume $c$ is small. After one full rotation around the planet, by how much has the satellite's orbit radius changed?",
+    "problem_images": [],
+    "solution": "The drag force is relatively constant in one orbit, since $c$ is small so that $v$ doesn't change significantly. Using the first cosmic speed, we conclude $F_d=-c\\sqrt{GM/r}$. The work done by this force is equal to the force times the circumference of the orbit, so the decrease in energy of the satellite is $$\\Delta E=-2\\pi c\\sqrt{GMr}$$Notice that the total energy is related to the orbital radius by $E=-GMm/r$. Let $\\delta r$ be the small difference in orbital radius. Then, we conclude that $$\\Delta E=-\\frac{GMm}{2(r-\\delta r)}+\\frac{GMm}{2r}=GMm\\left(\\frac{r-\\delta r - r}{2r(r-\\delta r)}\\right)\\approx -\\frac{GMm}{2r^2}\\delta r$$An equivalent analysis can be done via taking the derivative. Relating this to the $\\Delta E$ found earlier, we conclude $$\\delta r=\\boxed{\\frac{4\\pi c}{m}\\sqrt{\\frac{r^5}{GM}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "The supermassive black hole at the center of the Milky Way is called Sagittarius A* with a mass of $8.26\\times 10^{36}$ kg. It takes 230 million years for the solar system to orbit once around the galaxy. \\begin{enumerate}[label=(\\alph*)] \\item Assuming the only other mass in the Milky Way is Sagittarius A*, find the distance of the solar system from the galactic center. \\item Compare your value to the current accepted distance of $2.44\\times 10^{20}$ m. Given the approximation we made, does your value make sense?\\end{enumerate}",
+    "problem_images": [],
+    "solution": "\\begin{enumerate}[label=(\\alph*)] \\item The distance is $$R=\\sqrt[3]{\\frac{GMT^2}{4\\pi^2}}=\\boxed{9.02\\times 10^{18}\\, \\text{m}}$$  \\item \\fbox{Yes}. In the solution above, $R$ increases with $M$. Since we drastically underestimated $M$, we should expect to find a significantly smaller value than reality.\n\\end{enumerate}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A spherical cloud of dust in space has a uniform density $\\rho_0$ and a radius $R_0$. The gravitational\nacceleration of free fall at the surface of the cloud due to the mass of the cloud is $g_0$.\nA process occurs (heat expansion) that causes the cloud to suddenly grow to a radius $2R_0$, while\nmaintaining a uniform (but not constant) density. What is the new gravitational acceleration of free fall at a\npoint $R_0$ away from the center of the cloud?",
+    "problem_images": [],
+    "solution": "The gravity at a given point is only due to the dust contained within a sphere enclosed below that point. Thus, for gas of density $\\rho$ at a distance $R$, the gravitational acceleration is $a=(4/3)\\pi G\\rho R $, i.e. proportional to $\\rho$. If the gas cloud expands to twice the radius, its density must have reduced by a factor of 8. Hence, the new gravitational acceleration is $g=\\boxed{g_0/8}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "The $\\Delta v$ in spaceflight is defined as the magnitude of the change in velocity needed during a particular maneuver in space. \\begin{enumerate}[label=(\\alph*)] \\item What is the $\\Delta v$ needed to escape Earth's gravitational pull from low-Earth orbit? \\item What is the $\\Delta v$ needed to reach Mars from low-Earth orbit? \\end{enumerate}",
+    "problem_images": [],
+    "solution": "\\begin{enumerate}[label=(\\alph*)] \n\\item Using the first and second cosmic speeds, $$\\Delta v=\\sqrt{\\frac{2GM_E}{R_E}}-\\sqrt{\\frac{GM_E}{R_E}}=\\boxed{3.3 \\times 10^3 \\, \\text{m}/\\text{s}}$$\n\\item In Earth's reference frame, we first need to escape Earth's gravitational pull, i.e. the first portion requires a $\\Delta v$ as calculated above. Then, in this frame, we will be at rest far away from the Earth. Now we need to consider the trans-Mars $\\Delta v$. In the solar system's frame, we're cruising at the Earth's orbital speed around the Sun, which we can find by $v_1=\\sqrt{GM_s/r_E}=2.97 \\times 10^4 \\, \\text{m}/\\text{s}$. To reach the orbit of Mars, we need to extend our orbit so that its apogee is tangent to Mars' orbit. This gives us a semi-major axis length of $a=(r_E+r_M)/2=1.89 \\times 10^{11}\\, \\text{m}.$ Using energy, the velocity $v_2$ we must have when leaving the Earth's orbit is $$\\frac12 v_2^2=-\\frac{GM_s}{2a}+\\frac{GM_s}{r_E} \\Rightarrow v_2=3.27\\times 10^4 \\, \\text{m}/\\text{s}.$$ This leaves a $\\Delta v$ for the second maneuver to be $v_2-v_1=3.0 \\times 10^{3} \\, \\text{m}/\\text{s}.$ We add this to the first $\\Delta v$ we calculated to get a total $\\Delta v = \\boxed{6.3\\times 10^3 \\, \\text{m}/\\text{s}}.$\n\\end{enumerate}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Imagine that at a given point in time, the Earth, Mars, and Sun lie on the same line (collinear). How many days will it be before they are all collinear again?",
+    "problem_images": [],
+    "solution": "Let the Earth rotate counterclockwise around the Sun at an angular velocity $\\omega_E$ and Mars counterclockwise at $\\omega_M$. In the frame rotating around with the Earth, Mars moves clockwise at an angular velocity of magnitude $\\omega=\\omega_E-\\omega_M$. The time we desire is $t=\\pi/\\omega.$ By Kepler's Third Law, we can find $\\omega_M=\\omega_E(r_E/r_M)^{3/2}=0.534\\omega_E.$ Plugging this in, $t=6.736/\\omega_E.$ Note one year is $T=2\\pi/\\omega_E=6.283/\\omega_E,$ so $t=1.072 \\, \\text{years}\\, =\\boxed{391\\, \\unit{days}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "If the Sun suddenly doubled in mass, what would be the new perigee and apogee of the Earth's orbit?",
+    "problem_images": [],
+    "solution": "The stronger gravitaitonal pull from the Sun will reduce the semi-major axis of the orbit, which means the perigee will be lowered. The \\fbox{apogee} will remain at $\\boxed{r_E}$. To find the perigee, we can find the total energy and thus smei-major axis length \\begin{align*}\\frac{1}{2}v_0^2-\\frac{G(2M_S)}{r_E}&=-\\frac{G(2M_S)}{2a}\\\\\n\\frac{GM_S}{2r_E}-\\frac{2GM_S}{r_E}&=-\\frac{GM_S}{a}\\\\\n-\\frac{3}{2r_E}&=-\\frac{1}{a}\\\\\n\\frac{2r_E}{3}&=a\\end{align*}The sum of the perigee and apogee distance must equal $2a=4r_E/3,$ so the \\fbox{perigee} distance is $\\boxed{r_E/3}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Imagine a well is dug down to the center of the Earth. A mass $m$ is placed a depth $d$ into the well, or a distance $R=R_E-d$ from the center of the Earth. What is the weight of the object at this point?",
+    "problem_images": [],
+    "solution": "Assuming the Earth is spherical, a fraction $R^3/R_E^3$ of the mass of the Earth is contained below the point in question. So, the weight must be $$F=\\frac{GMm(R^3/R_E^3)}{R^2}=\\boxed{\\frac{GMm}{R_E^3}R}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A spherical planet has a mass density $\\rho(r)=c r^\\alpha$ that only varies on the radius from the planet's center $r$. What should $\\alpha$ be so that the gravitational acceleration due to the planet is constant at all points in a tunnel dug to the planet's center?",
+    "problem_images": [],
+    "solution": "I'll introduce two methods: one that doesn't need calculus and another that uses calculus to get the answer quickly. First, without calculus. If $g$ is the same at all points, then when we compare $g$ at a point at distance $r$ and a point at distance $r+\\delta r$ from the center, we have $$\\frac{M}{r^2}=\\frac{M+4\\pi \\rho r^2}{(r+\\delta r)^2}$$where $M$ is the mass contained in the distance $r$. Cross-multiplying, expanding, and neglecting the $\\delta r^2$ term, we then get $$M(r^2+2r\\delta r)=(M+4\\pi \\rho r^2)r^2\\Rightarrow M=2\\pi \\rho r^3$$Notice that $M/r^2$ is a constant, so $\\rho \\propto 1/r$, and $\\boxed{\\alpha=-1}$. \\\\\n\n    With calculus, notice that $M\\propto r^2$. By integration, $$M=\\int 4\\pi\\rho r^2 \\, dr$$ For $M\\propto r^2$, we need the integrand $\\propto r$, so $\\rho\\propto r^{-1}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "You stand on a planet with radius $R$ made entirely of iron with density $\\rho_1$. The acceleration due to gravity at the surface is $g$. Because of collisions from asteroids made of an unknown metal, the planet's surface is eventually covered a uniform metal layer of density $\\rho_2$ and thickness $\\Delta R \\ll R$. What must $\\rho_2$ be so that the acceleration due to gravity is still $g$?",
+    "problem_images": [],
+    "solution": "Because the distribution of mass is spherically symmetric, we simply consider the total mass underneath the surface in each case. Because $\\Delta R \\ll R$, we can approximate the volume of the metallic layer as $4\\pi R^2 \\Delta R$ and neglect values of order $\\Delta R^2.$ Setting the accelerations due to gravity equal, \\begin{align*}\n\\frac{G}{R^2}\\left(\\frac{4}{3}\\pi R^3 \\rho_1 \\right)&=\\frac{G}{(R+\\Delta R)^2}\\left(\\frac{4}{3}\\pi R^3 \\rho_1 + 4\\pi R^2 \\Delta R \\rho_2 \\right)\\\\\nR\\rho_1 &= \\frac{1}{R^2+2R\\Delta R}(R^3\\rho_1 + 3R^2\\Delta R \\rho_2)\\\\\nR^3\\rho_1 +2R^2 \\Delta R \\rho_1 &=R^3\\rho_1 + 3R^2\\Delta R \\rho_2\\\\\n2\\rho_1&=3\\rho_2\\\\\n\\boxed{\\frac{2}{3}\\rho_1}&=\\rho_2\n\\end{align*}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "On Planet Bong of mass $M$ and radius $R$, the creatures have dug out a spherical cavern of radius $R/2$ as shown. $M$ was the mass of the planet before the cavern was dug. \\begin{center}\n\\includegraphics[width=0.2\\linewidth]{sphere.png}\n    \\end{center}\\begin{enumerate}[label=(\\alph*)] \\item What is the acceleration due to gravity at the top of the cavern? \\item What is the acceleration at the bottom? \\item Someone lost their car keys, which are currently sitting at the bottom of the cavern. How fast must a miner at the bottom of the cavern need to throw the keys upward so that the car owner at the top can catch them?\\end{enumerate}",
+    "problem_images": [
+      "Gravity Sols/sphere.png"
+    ],
+    "solution": "\\begin{enumerate}[label=(\\alph*)] \\item We can imagine the cavern to be made of negative mass superimposed onto the rest of the planet. The acceleration at the top is therefore $$g_1=\\frac{GM}{R^2}-\\frac{G(M/8)}{(R/2)^2}=\\boxed{\\frac{GM}{2R^2}}$$\n\\item At the bottom, we are at the center of the planet so there is no gravitational force from the positive mass sphere. The only acceleration is from the negative mass. $$g_2=\\boxed{\\frac{GM}{2R^2}}$$\n\\item From energy considerations, the change in gravitational potential energy results in the necessary kinetic energy. Note that relative to the negative mass sphere, the keys are at the same point between the top and the bottom of the cavern. Hence, we can ignore its presence. There are many ways to find the change in gravitational potential energy from the top to the bottom, such as integrating the force from the top to bottom. Here we will introduce a trickier way. Notice that at a radius $r$ from the center, the force on an object is proportional to $r^3/r^2=r$ -- the numerator coming from the $r^3$ dependence of mass underneath the point in question, and $r^2$ coming from the gravitational force equation. Thus, the motion is simple harmonic with $\\omega=\\sqrt{GM/R^3}$. Since the necessary amplitude of the motion described here is $A=R$, we find that $$v=A\\omega =R\\omega = \\boxed{\\sqrt{\\frac{GM}{R}}}.$$\n\\end{enumerate}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "PPP",
+    "problem": "Imagine the gravitational force is repulsive in a certain universe. Let square $ABCD$ in this universe have side length $a$. Two masses of mass $M$ are held in place at points $A$ and $C$, while two masses of mass $m \\ll M$ are held in place at points $B$ and $D$. All masses are released. What are the final speeds of all the masses?",
+    "problem_images": [],
+    "solution": "By symmetry, the final speeds of the smaller masses will equal the final speeds of the larger ones. Note that since the smaller masses are so light, they shoot off infinitely far away before the larger masses have significant time to move. As a result, we can assume that when the smaller masses are infinitely far away, the larger masses are roughly where they started. The change in gravitational potential energy between this arrangement and the initial arrangement is $$\\Delta U_1=4\\frac{GMm}{a^2}+\\frac{Gm^2}{2a^2}\\approx 4\\frac{GMm}{a^2}.$$This energy goes into the final kinetic energies of the two smaller masses, so each has a velocity $$2\\cdot \\frac{1}{2}mv_\\text{small}^2=\\frac{4GMm}{a^2}\\Rightarrow \\boxed{v_\\text{small}=2\\sqrt{\\frac{GM}{a^2}}}.$$Then, as the larger masses begin to move apart, their change in gravitational potential energy is simply $\\Delta U_2=GM^2/2a^2$, so each has a final velocity $$2\\cdot \\frac{1}{2}Mv_\\text{large}^2=\\frac{GM^2}{2a^2}\\Rightarrow \\boxed{v_\\text{large}=\\sqrt{\\frac{GM}{2a^2}}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Revisit the situation in Problem \\ref{pr7}, but now let the drag force be $F_d=-cv^\\alpha$, where $\\alpha$ is some number. Assume $c$ stays the same value for the entire atmosphere. \\begin{anum}\n        \\item For what $\\alpha$ does the radius of the orbit decrease by the same amount for every completed orbit?\n        \\item Given $\\alpha$, how many orbits will the satellite complete before it crashes into the Earth's surface? Let the radius of the earth be $R$. \n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Via the same analysis as Problem \\ref{pr7}, $F_d\\propto r^{-\\alpha/2}$ so that $\\Delta E\\propto r^{-\\alpha/2+1}$. Then, $\\delta r\\propto r^{-\\alpha/2 +3}$. For $\\delta r$ to have no dependence on $r$, we thus require $\\boxed{\\alpha=6}$. \n        \\item Given $\\alpha$, it follows that $F_d=-c(GM/r)^3$, so that using the same analysis as before, $\\delta r=4\\pi cG^2M^2/m$, so that the number of orbits $N$ is $$N=\\frac{r-R}{\\delta r}=\\boxed{\\frac{m(r-R)}{4\\pi cG^2M^2}}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "A projectile is launched vertically off of a planet of radius $R$. The object reaches a maximum height $R$ above the surface. Using Kepler's second law, find the time it takes for the object to land back on the ground. Hint: the area of an ellipse with axes $a$ and $b$ is $\\pi ab$.",
+    "problem_images": [],
+    "solution": "We can imagine the orbit to be a stretched ellipse with semimajor axis length $R$, so that by Kepler's Third Law the period is $$T=2\\pi \\sqrt{\\frac{R^3}{GM}}$$ By the Second Law, the projectile sweeps out an area of the orbit proportional to time. Thus, the fraction of the ``orbit\" we are considering with the projectile above the Earth is the same fraction of the area to which it sweeps out. Upon examination, the area it sweeps out is a quarter of the ellipse with a triangle of height $R$ and base area $b$ (we are assuming $b$ to be very small). Thus, the fraction of the area of the whole ellipse is thus $$f=\\frac{Rb/2+\\pi Rb/4}{\\pi Rb}=\\frac{2+\\pi}{4\\pi}$$and so the time in the air is $$t=\\frac{2+\\pi}{4\\pi}T=\\boxed{\\left(1+\\frac{\\pi}{2}\\right)\\sqrt{\\frac{R^3}{GM}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "GPhO",
+    "problem": "An astronaut in geostationary orbit around the Earth wants to hit his own spaceship with a bullet fired from a rifle equipped onto the spaceship. \\begin{enumerate}[label=(\\alph*)]\\item Find the speed of the astronaut in geostationary orbit. \\item  The speed of the bullet leaving the rifle is $u_0$ = 1200 m/s and the bullet’s velocity lies on the orbital plane. Under which angle with respect to the vector pointing towards the center of the Earth does he needs to aim the rifle if he wants to hit the spaceship within the next 40 hours? You don’t need to prove that there is only one suitable shooting angle. \\item The astronaut also tries out another rifle the bullet speed of which can be freely adjusted from zero to the maximal speed $u_m$ = 300 m/s. With this rifle, he aims strictly along the motion of the spaceship. What is the bullet’s smallest possible travel time until hitting the spaceship?\\end{enumerate}",
+    "problem_images": [],
+    "solution": "\\begin{enumerate}[label=(\\alph*)]\\item The geostationary orbit has radius $R=4.21 \\times 10^7$ m, so the geostationary speed is $v=\\sqrt{GM/R}=\\boxed{3100 \\, \\unit{m/s}}$. \\item We can hit the spaceship in an orbital period of 24 hours if we fire the bullet so it has the same speed (in the Earth's frame). Hence, we have the following figure of the necessary velocity vectors:\n\\begin{center}\n\\includegraphics[width = 0.25\\linewidth]{hi}\n\\end{center}From geometry, the angle is $\\theta = \\sin^{-1}(600/3100)=\\boxed{11.2^\\circ}.$\n\\item Essentially, we can freely adjust the orbital period from $T_0=24$ hours up to the maximal given by $u_m$. If we fire it at this speed, our equation for energy is (without the mass of the bullet) $$-\\frac{GM}{2a}=\\frac{1}{2}(v+u_m)^2-\\frac{GM}{R^2}$$Plugging our result for $a$ into $T=2\\pi \\sqrt{a^3/GM} =1.41 T_0$. By inspection, firing so that our period is $T=(4/3)T_0$ leads us to the shortest travel time. In this case, the spaceship will revolve around the Earth 4 times (and the bullet 3 times) for a total time of $t=\\boxed{96 \\,\\unit{hours}}$.\n\\end{enumerate}",
+    "solution_images": [
+      "Gravity Sols/hi.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Gravity Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "NBPhO",
+    "problem": "A comet’s orbit intersects the Earth’s orbit at an angle $\\alpha = 45^\\circ$. The comet’s and the Earth’s orbits lie on the same plane. \\begin{enumerate}[label=(\\alph*)] \\item Find the distance $r_\\text{min}$ of the comet’s perihelion $P$ from the Sun (i.e. its shortest distance). The distance $r_\\text{max}$ of the comet’s aphelion $A$ from the Sun (i.e. its longest distance) can be assumed to be much larger than $r_E$. \\item (Calculus required) For how many days $t$ will the comet’s distance to the Sun be less than $r_E$? \\end{enumerate}",
+    "problem_images": [],
+    "solution": "See solution 2 \\href{https://www.ioc.ee/~kalda/ipho/es/NBPhO17_sol.pdf}{here.}",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

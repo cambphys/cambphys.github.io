@@ -1,0 +1,175 @@
+[
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "You have a container of volume $2V_0$ half-filled with gas of pressure $P_0$ and volume $V_0$, which is constrained by a partition in the middle of the container. Then, the partition is removed such that the gas is allowed to freely expand into the full container of volume $2V_0$. What is the change in entropy of the system? \\textit{Hint:} use the first law of thermodynamics in a useful form.",
+    "problem_images": [],
+    "solution": "Because there is no extra energy introduced into the system, the gas is at the same temperature at the start and end of the process. So, even if this process is a non-reversible and non-isothermal process, we can find the change in entropy by considering an isothermal path between the start and end. Thus, the change in entropy is\n    $$\\int dS = \\int \\frac{p dV}{T} = \\int_{V_0}^{2V_0} \\frac{P_0V_0 dV}{VT} = \\frac{P_0V_0}{T}\\ln(2V_0/V_0).$$\n    And using the ideal gas law, we get $\\Delta S = \\boxed{nR \\ln 2}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "The Otto cycle is the thermodynamic cycle used in a typical car engine and is pictured below.\n    \n    \\begin{center}\n        \\includegraphics[width=6cm]{otto_cycle.png}\n    \\end{center}\n    \\begin{anum}\n        \\item Find the efficiency of the cycle pictured below, which is known as the Otto cycle, in terms of $r = V_1/V_2$.\n        \\item Draw the cycle on a $T$ - $S$ diagram.\n    \\end{anum}",
+    "problem_images": [
+      "Thermo II Sols/otto_cycle.png"
+    ],
+    "solution": "\\item We can find $Q_1$ and $Q_2$ by finding the changes in energy. Let the temperatures be $T_i$. Then, the changes in energy are\n    $$Q_1 = C_v (T_3-T_2),$$\n    and $$Q_2 = C_v (T_4 - T_1).$$\n    But using the adiabats, we have\n    $$T_3V_3^{\\gamma - 1} = T_4V_4^{\\gamma - 1}, T_2V_2^{\\gamma - 1} = T_1V_1^{\\gamma - 1}.$$\n    So, subtracting the equations, we get\n    $$(T_3 - T_2)V_2^{\\gamma - 1} = (T_4 - T_1)V_1^{\\gamma - 1},$$\n    so the ratio of the heats is\n    $$\\frac{Q_2}{Q_1} = (V_2/V_1)^{\\gamma - 1},$$\n    which means the efficiency is $1  - \\frac{Q_2}{Q_1} = \\boxed{1-r^{-(\\gamma - 1)}}.$\n    \\item The answer is pictured below.\n    \\begin{center}\n        \\includegraphics[width=5cm]{otto_ts.png}\n    \\end{center}",
+    "solution_images": [
+      "Thermo II Sols/otto_ts.png"
+    ],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Using the first law of thermodynamics, find the entropy of a system of $n$ moles of monatomic gas as a function of $V$, $T$, and other fundamental constants.",
+    "problem_images": [],
+    "solution": "We can write down from the first law that\n    $$TdS = dU + p dV.$$\n    For a monatomic gas, $dU = \\frac 32 nR dT$, so\n    $$dS = \\frac 32 nR \\frac{dT}{T} + \\frac{p dV}{T}.$$\n    Now, suppose the system is at volume $V_0$ and temperature $T_0$. First we integrate along a constant temperature path and then a constant volume path. On the constant temperature path, using the ideal gas law, we get\n    $$S(V,T_0) = \\int_{V_0}^V \\frac{nR}{V}dV = nR\\ln(V/V_0) + S(V_0,T_0).$$\n    Then, we integrate along the constant volume path. In that case,\n    $$S(V,T) = \\int_{T_0}^T \\frac{3nR}{2}\\frac{dT}{T} = \\boxed{\\frac 32 n R \\ln (T/T_0) + nR \\ln(V/V_0) + S(V_0,T_0)}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "The Boltzmann distribution tells us that the probability distribution for the $i$th component of the velocities of a gas at temperature $T$ is proportional to\n    $$g(v_i) = e^{-mv_i^2/2k_BT}.$$\n    \\begin{anum}\n        \\item Using this, what is the probability that a given particle has velocity between $\\langle v_x, v_y, v_z\\rangle$ and $\\langle v_x + dv_x, v_y + dv_y, v_z + dv_z\\rangle$?\n        \\item Now, from your equation in part (a), find, up to a constant factor, the probability distribution $f(v)$ that a given particle has a \\textit{speed} between $v$ and $v+dv$ by considering all possible triplets $\\langle v_x,v_y,v_z\\rangle$ with total speed $v$. This is the Maxwell-Boltzmann distribution. \\textit{Hint:} consider what the set of particles with speed $v$ look like in $v_x,v_y,v_z$ space.\n        \\item Normalize the probability distribution in part (b) and integrate to find the root mean square velocity. You should recover $KE = \\frac 32 k_BT$ from week 1.\n        \\item We made no assumptions about the particles in this problem! How come we got the $3/2$ factor which is associated with the degrees of freedom of a monatomic gas?\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\item Each of the components of are independent, so the probability that any infinitesimal box in velocity space is occupied is proportional to\n    $$g(v_x)g(v_y)g(v_z) dv_xdv_ydv_z = e^{-m|v|^2/2k_BT} dv_xdv_ydv_z.$$\n    \\item If we consider velocity space, the set of particles with speed $v$ is given by\n    $$v_x^2 + v_y^2 + v_z^2 = v^2,$$\n    which is the surface of a sphere in velocity space. thus, the total volume occupied is proportional to $4\\pi v^2 dv$, so the total probability is proportional to\n    $$(4\\pi v^2 dv)e^{-mv^2/2k_BT}.$$\n    \\item We can integrate to find the normalizing factor first:\n    $$\\int_0^\\infty A (4\\pi v^2)e^{-mv^2/2k_BT}\\, dv = A\\left(\\frac{2\\pi k_B T}{m}\\right)^{3/2},$$\n    so $A = \\left(\\frac{m}{2\\pi k_BT}\\right)^{3/2}.$ So, now we integrate to find the average square velocity (best way is to use an integral table),\n    $$\\langle v^2 \\rangle = \\int_0^\\infty v^2 \\left(\\frac{m}{2\\pi k_BT}\\right)^{3/2} (4\\pi v^2)e^{-mv^2/2k_BT}\\, dv = \\frac{3k_BT}{m},$$\n    so we get $KE = \\frac 12 mv^2 = \\frac 32 k_B T.$\n    \\item This is because the $f/2$ factor from last week accounts for both the translational kinetic energy and the rotational.",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Blundell-Blundell",
+    "problem": "In the Knudsen method of measuring vapour pressure $p$ from a liquid\ncontaining molecules of mass m at temperature $T$, the liquid is placed in\nthe bottom of a container that has a small hole of area $A$ at the top, and the container is placed on top of a scale. The weight $Mg$ of the setup is measured \\textit{over time}. How can you find the vapour pressure from this reading? If you can't get it exactly, an estimate up to a dimensionless constant is good as well.\n\\begin{center}\n    \\includegraphics[width=3.5cm]{knudsen_vapor.png}\n\\end{center}",
+    "problem_images": [
+      "Thermo II Sols/knudsen_vapor.png"
+    ],
+    "solution": "Since it is a small hole, the rate of particles exiting is given by the equation for effusion. Specifically, it is\n    $$\\frac{dN}{dt} = \\frac{pA}{\\sqrt{2\\pi m k_B T}}.$$\n    So, the rate of change of mass on the scale is $$\\frac{dM}{dt} = -\\frac{pA}{\\sqrt{2\\pi mk_BT}}m,$$\n    so we can determine the vapor pressure as\n    $$p = -\\sqrt{\\frac{2\\pi k_BT}{m}}\\frac 1A \\frac{dM}{dt}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "\\href{https://aapt.org/physicsteam/upload/2023-USAPhO-Exam.pdf#page=6}{USAPhO 2023/A3}. This problem has a nice surprise at the end!",
+    "problem_images": [],
+    "solution": "\\officialsol{https://www.aapt.org/physicsteam/2023/upload/2023-USAPhO-solutions.pdf\\#page=10}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A couple problems on particles colliding with walls.\n    \\begin{anum}\n        \\item A particle reflects off of a container wall and continues travelling. What is the average distance $d_1$ it travels before colliding with another particle in terms of the mean free path $\\lambda$?\n        \\item A particle collides with a container wall. What is the average distance $d_2$ between the particle's last collision with another particle and its collision with the container wall in terms of the mean free path $\\lambda$?\n        \\item Now suppose we watch the wall over a long time, and for each particle, we record the length of the path between its collision before the wall and its collision after the wall. What answer do we get? Should we get $d_1 + d_2$? Or should we just get $\\lambda$ as it is just the distance between collisions?\n        \\item (Blundell-Blundell). Show that particles hitting a plane boundary have\ntravelled a distance $2\\lambda / 3$ perpendicular to the plane\nsince their last collision, on average. This one requires a little integration.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\item The average distance for a particle to collide at any given point is just $\\lambda$, by definition.\n    \\item By symmetry, this is again $\\lambda$.\n    \\item As described, the distance that we are measuring is $d_1 + d_2$, so the average is $\\langle d_1 + d_2\\rangle = \\langle d_1 \\rangle + \\langle d_2 \\rangle = 2\\lambda$.\n\n    A way to think about this longer average length intuitively is that if we have a bunch of paths between collisions (consider the box reflected such that reflected paths are straight) the longer ones are more likely to intersect the wall line.",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Physics Cup",
+    "problem": "Estimate the net heat flux density P between two parallel plates at distance $L$ from each other, which are at temperatures $T_1$ and $T_2$, respectively. The space between the plates is filled with a monoatomic gas of number density $n$ and of mass $m$. You may assume the following:\n    \\begin{enumerate}\n        \\item The gas density is so low that the mean free path $\\lambda \\gg L$;\n        \\item $T_1 \\gg T_2$.\n        \\item When gas molecules bounce from the plates, they obtain the temperature of the respective plates (for instance, this will happen if they are absorbed/bound for a short time by the molecules of the plate, and then released back into the space between the plates).\n    \\end{enumerate}",
+    "problem_images": [],
+    "solution": "The velocity of particles going towards the $T_1$ plate is given by $\\langle v_1\\rangle \\sim \\sqrt{k_BT_2/m}$, while the velocity of particles going towards the $T_2$ plate is given by $\\langle v_2 \\rangle \\sim \\sqrt{k_BT_1/m}$. And the change in energy when a particle hits the $T_2$ plate is on the order of $k_BT_1$, and the change in energy in the other direction is also $k_BT_1$. Now as for the actual rate of particles hitting the plates, the slower direction caps the rate of the overall process, which  in this case is $$nA\\langle v_1 \\rangle \\sim n A \\sqrt{k_BT_2/m}.$$\n    So, the overall rate of energy transfer per unit area is\n    $$P \\sim nk_BT_1\\sqrt{\\frac{k_BT_2}{m}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Now, generalize the previous problem to when $\\lambda$ is not much smaller than $L$ and $T_1 - T_2 \\ll T_1,T_2$. You can do this by considering the space in between as $L/\\ell$ parallel plates separated by $\\ell \\sim \\lambda$.",
+    "problem_images": [],
+    "solution": "If we consider $L/\\ell$ parallel plates, then because the heat transfer between each of the plates should be the same, the overall heat transfer is given by\n    $$P \\sim nk_B \\frac{T_1 - T_2}{L/\\ell}\\sqrt{\\frac{k_BT_2}{m}}.$$\n    And, $\\ell \\sim \\frac 1{n\\sigma}$, so \n    $$P \\sim \\frac{k_B \\Delta T}{L\\sigma}\\sqrt{\\frac{k_BT_2}{m}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Kalda",
+    "problem": "In a science fiction novel, the following situation is\ndescribed. There is an emergency on a spaceship, and an astronaut got by an accident to a distance of $L = 100\\,\\unit m$ over a time of $t=150\\, \\unit s$ from the\nspaceship. He has a cup with solidified water (ice) and uses the\nsublimation (evaporation) of ice to return to the spaceship. Estimate, how realistic is this method. You may assume that the\nsublimation takes place at a constant temperature $T = 272\\,\\unit K$,\nby which the pressure of saturated vapours is $P = 550\\, \\unit{Pa}$. Estimate the mass of the water.",
+    "problem_images": [],
+    "solution": "Suppose the mass of the water was $m$. Then, since the characteristic speed of the sublimated gas is $\\sqrt{k_BT/m_{w}}$, we have by conservation of momentum\n    $$m_{\\text{ast}}v \\sim m\\sqrt{\\frac{k_BT}{m_w}}.$$\n    We also have $v \\sim L/t$, so we can solve for the mass of the water as\n    $$m \\sim \\frac{m_{\\text{ast}}L}{t}\\sqrt{\\frac{m_w}{k_BT}}.$$\n    We can estimate $m_{\\text{ast}} = 100 \\, \\unit {kg}$, and plugging in the proper numbers for the rest, we get\n    $$m \\sim 200 \\, \\unit g.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kalda",
+    "problem": "You encountered a tricky heat engine last week. Here's another one. The main components of a car engine\nare: a cylinder, a piston which moves inside it, and a valve for\nletting gases in and out of the cylinder.\n\\begin{center}\n    \\includegraphics[width=7cm]{estpho_engine.png}\n\\end{center}\nThe working cycle of the engine consists of the following stages:\n\\begin{enumerate}[label=\\Roman*.]\n    \\item Gas entry: the piston moves from the rightmost position to\nleft; fresh air comes in through the valve and fills the cylinder.\n\\item Pressure increase: the valve closes, and the piston moves\nback to the rightmost position; the air is compressed adiabatically.\n\\item Work: Fuel is injected into the cylinder, and is ignited. You\nmay assume that the fuel burns instantaneously. Gas starts expanding and pushes the piston to the leftmost position.\n\\item Gas disposal: valve is opened, piston moves to right and\nthe gas is pushed out from the cylinder. The process starts\nperiodically repeating.\n\\end{enumerate}\nNow, (a) depict the entire cycle on a  $p$ -- $V$ diagram, and (b) find the efficiency $\\eta$ in terms of the minimum and maximum volumes $V_{\\text{min}}$ and $V_{\\text{max}}$.",
+    "problem_images": [
+      "Thermo II Sols/estpho_engine.png"
+    ],
+    "solution": "\\item This cycle is actually the Otto cycle! The hardest part is recognizing this. Step II is the first lower adiabat, the start of step III is the isochoric temperature increase, the end of step 3 is the higher adiabat. In step IV, once the valve is exposed to the outside air the pressure decreases down to the starting level. So, the $p$-$V$ diagram is depicted earlier in the PSET.\n    \\item The efficiency is thus $1 - (V_{\\text{min}}/V_{\\text{max}})^{\\gamma - 1}.$",
+    "solution_images": [],
+    "solution_type": "alphasol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "\\href{https://aapt.org/Common/upload/2020_USAPhO.pdf#page=10}{USAPhO 2020/B3}, a tough problem on non-ideal gases.",
+    "problem_images": [],
+    "solution": "\\officialsol{https://aapt.org/Common/upload/2020_USAPhO_solutions.pdf\\#page=18}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "\\href{https://eupho.ee/wp-content/uploads/2020/07/EuPhO17_theory.pdf}{EuPhO 2017/2}, a kinetic theory problem.",
+    "problem_images": [],
+    "solution": "\\officialsol{https://eupho.ee/wp-content/uploads/2020/07/EuPhO17_theory_solution_marking.pdf}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "USAPhO Practice",
+    "problem_tag": "USAPhO 2017/A2",
+    "problem": "Consider two objects with equal heat capacities $C$ and initial temperatures $T_1$ and $T_2$. A Carnot\nengine is run using these objects as its hot and cold reservoirs until they are at equal temperatures.\nAssume that the temperature changes of both the hot and cold reservoirs is very small compared\nto the temperature during any one cycle of the Carnot engine.\n\\begin{anum}\n    \\item Find the final temperature $T_f$ of the two objects, and the total work $W$ done by the engine.\n\\end{anum}\nNow consider three objects with equal and constant heat capacity at initial temperatures\n$T_1 = 100\\,\\unit K$, $T_2 = 300 \\, \\unit K$, and $T_3 = 300\\,\\unit K$. Suppose we wish to raise the temperature of the\nthird object.\n\nTo do this, we could run a Carnot engine between the first and second objects, extracting work\n$W$. This work can then be dissipated as heat to raise the temperature of the third object. Even\nbetter, it can be stored and used to run a Carnot engine between the first and third object in\nreverse, which pumps heat into the third object.\n\nAssume that all work produced by running engines can be stored and used without dissipation.\n\\begin{anum}\n    \\item [(b)] Find the minimum temperature $T_L$ to which the first object can be lowered.\n    \\item [(c)] Find the maximum temperature $T_H$ to which the third object can be raised.\n\\end{anum}",
+    "problem_images": [],
+    "solution": "\\officialsol{https://aapt.org/physicsteam/2019/upload/USAPhO-2017-Solutions.pdf\\#page=4}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Thermo II Sols",
+    "section": "Problem Set",
+    "subsection": "USAPhO Practice",
+    "problem_tag": "USAPhO 2021/B2",
+    "problem": "This question consists of two independent parts.\n    \\begin{anum}\n        \\item It’s winter and you want to keep warm. The temperature is $T_0 = 263\\,\\unit K$ outside and $T_1 = 290 \\,\\unit K$ in your room. You have started a fire, which acts as a hot reservoir at temperature $T_2 = 1800\\,\\unit K$. You want to add a small amount of heat $dQ_1$ to your room. The simplest method would be to extract heat $-dQ_{2,\\text{dump}} = dQ_1$ from the fire and directly transfer it to your room. However, it is possible to heat your room more efficiently. Suppose that you can exchange heat between any pair of reservoirs. You cannot use any external source of work, such as the electrical grid, but the work extracted from running heat engines can be stored and used without dissipation.\n        \\begin{enumerate}[label=\\roman*.]\n            \\item What is the minimum heat extraction $-dQ_{2,\\text{min}}$ required by the laws of thermodynamics to heat up the room by $dQ_1$?\n            \\item Let the ``efficiency gain'' be the ratio $G=  dQ_{2,\\text{dump}}/dQ_{2,\\text{min}}$. Assuming $T_1$ is fixed at $298\\,\\unit K$, make a graph whose axes are $T_0$ and $T_2$, where $T_0$ varies from $230 \\, \\unit K$ to $290 \\, \\unit K$, and $T_2$ varies from $300 \\, \\unit K$ to $2000 \\, \\unit K$. On the graph, sketch curves corresponding to gain $G = 2,5$, and $12$.\n        \\end{enumerate}\n        \\item When the air at the bottom of a container is heated, it becomes less dense than the surrounding\nair and rises. Simultaneously, cooler air falls downward. This process of net upward heat transfer\nis known as convection.\n\nConsider a closed, rectangular box of height $h$ filled with air initially of uniform temperature $T_0$.\nNext, suppose the bottom of the box is heated so that the air there instantly reaches temperature\n$T_0 +\\Delta T$. The hot parcel of air at the bottom rises upward until it hits the top of the box, where\nits temperature is instantly reduced to $T_0$.\n\nYou may neglect any heat transfer and friction between the parcel of air and the surrounding air,\nand assume that the temperature difference is not too large. In addition, you may assume the\nheight $h$ is small enough so that the pressure $P_0$ and density $\\rho_0$ of the surrounding air are very\nnearly constant throughout the container. More precisely, assume that $\\rho_0gh/P_0 \\ll \\Delta T /T_0 \\ll 1$.\nExpress your answers in terms of $P_0$, $g$, $h$, $\\Delta T$, and $T_0$.\n\\begin{enumerate}[label=\\roman*.]\n    \\item As a parcel of air moves upward, it accelerates. Find a rough estimate for the average speed\n$v_0$ during its upward motion.\n\\item In the steady state, warm parcels of air are continuously moving upward from the bottom, and\ncold parcels of air are continuously moving downward from the top. Find a rough estimate\nfor the net rate of upward energy transfer per area.\n\\end{enumerate}\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\officialsol{https://aapt.org/Common2022/upload/2021-USAPhO_Solutions_v3.pdf\\#page=15}",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

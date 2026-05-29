@@ -1,0 +1,233 @@
+[
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "Suppose you are on a circular spaceship of radius $R$ isolated in space. At what angular velocity should the spaceship spin in order to simulate gravity on Earth?",
+    "problem_images": [],
+    "solution": "This is simply applying the definition of centrifugal acceleration,\n    $$\\omega^2 R = g,$$\n    so we choose $\\omega = \\boxed{\\sqrt{g/R}}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "\\label{pr:car}\n    You hang a mass $m$ from the ceiling of your car, and you find that it sits at an angle $\\theta$ from the vertical as your car accelerates at $a$. Find $\\theta$ in terms of $a$ and the gravitational acceleration $g$.\n    \\begin{center}\n        \\includegraphics[width=4cm]{car_accelerate.png}\n    \\end{center}",
+    "problem_images": [
+      "Fictitious Sols/car_accelerate.png"
+    ],
+    "solution": "Working in the frame of the car, because of the translational fictitious force, the effective gravity is the sum of $\\vec a$ and $\\vec g$, so the angle is given by\n    $$\\tan \\theta = \\frac ag,$$\n    so $\\theta = \\boxed{\\tan^{-1} a/g}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": "$F=ma$",
+    "problem": "A cylindrical space station produces ‘artificial gravity’ by rotating with angular frequency $\\omega$. Consider working in the reference frame rotating with the space station. In this frame, an astronaut is initially at rest standing on the floor, facing in the direction that the space station is rotating. The astronaut jumps up vertically relative to the floor of the space station, with an initial speed less than that of the speed of the floor. Just after leaving the floor, the motion of the astronaut, relative to the space station floor,\n    \\begin{center}\n        \\includegraphics[width=5cm]{fma_spin_spaceship.png}\n    \\end{center}\n    \\begin{anum}\n        \\item always has a component of acceleration directed toward the floor, and they land at the same point they jumped from.\n        \\item always has a component of acceleration directed toward the floor, and they land in front of the point they jumped from.\n\\item always has a component of acceleration directed toward the floor, and they land behind the\npoint they jumped from.\n\\item has a component of acceleration directed away from the floor, and they land behind the point\nthey jumped from.\n\\item  has a zero acceleration relative to the floor, and the astronaut never reaches the floor again.\n    \\end{anum}",
+    "problem_images": [
+      "Fictitious Sols/fma_spin_spaceship.png"
+    ],
+    "solution": "The answer is $\\mathbf B$. Working in the rotating frame, there are two fictitious forces, the coriolis force and the centrifugal force. The centrifugal force is responsible for a component of acceleration towards the floor. As for coriolis, if we do the cross product, using the right hand rule we see that the acceleration is toward the direction of rotation, and thus they land in front.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Concept Checks",
+    "problem_tag": null,
+    "problem": "Assume that the Earth is a perfect sphere. Find the effective force of gravity, including the error due to the centrifugal force at:\n    \\begin{anum}\n        \\item the Equator.\n        \\item the North Pole.\n        \\item at latitude $45^\\circ$.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item To start, the angular velocity of the earth is $\\omega = \\frac{2\\pi}{24\\,\\unit{hr}} \\approx 7.29 \\times 10^{-5} \\, \\unit{rad/s}$. At the equator, the centrifugal force points parallel to the gravitational acceleration, so the effective force of gravity is\n    $$g - \\omega^2 R_{\\oplus} \\approx 9.78\\,\\unit{m/s^2}.$$\n    \\item The centrifugal force has magnitude 0 here, so there is no deviation! $g_{\\text{eff}} = g$!\n    \\item Here we have to make a triangle because the centrifugal force makes a $45^\\circ$ angle with gravity and has magnitude $\\omega^2 R_{\\oplus} /\\sqrt 2$. So, using the law of cosines,\n    $$g_{\\text{eff}}^2 = g^2 + (\\omega^2 R_{\\oplus}/\\sqrt 2)^2 - 2g(\\omega^2 R_{\\oplus}/\\sqrt 2)\\cos 45^\\circ.$$\n    Plugging in the numbers and calculating, we get $g_{\\text{eff}} = 9.79\\,\\unit{m/s^2}$.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "You might've heard that toilet bowls flush in different directions in different hemispheres because of the coriolis force. Is this realistic? Perform an order of magnitude estimate for the coriolis force on a droplet of mass $m$ that's being flushed. Then, estimate the amount of deflection on the mass as it travels down a typical-size toilet bowl.",
+    "problem_images": [],
+    "solution": "The magnitude of the coriolis force is of order $2m\\omega v$, where $\\omega$ is the angular velocity of the earth. Thus, the acceleration is of magnitude\n    $$ma = 2m\\omega v \\implies a \\sim \\omega v.$$\n    Say the toilet bowl is of radius $r$ and that it takes a time $t$ for a water droplet to traverse it. Then, the coriolis acceleration is of magnitude $a \\sim \\omega r/t$ and the deflection is approximately\n    $$\\Delta x \\sim at^2 \\sim \\omega r t.$$\n    The following are estimates for the three terms:\n    $$\\omega \\approx 7 \\times 10^{-5} \\, \\unit{rad/s}, r \\approx 0.3 \\, \\unit{m}, t \\approx 0.5 \\, \\unit{s}.$$\n    So, the deflection is around $\\Delta x = \\omega r t = 10^{-5}\\, \\unit {m} \\ll r$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "Alice and Bethany stand side by side on the Earth’s equator. If Alice jumps directly upward, in her frame of reference, to a small height $h$ much less than the radius of the Earth, she will land a distance $D$ to the west of Bethany. If Alice had instead jumped to a height $2h$, how far to the west of Bethany would she land? Neglect air resistance.",
+    "problem_images": [],
+    "solution": "First, the vertical velocity dominates, so we have\n    $$\\frac 12 gt^2 \\approx h.$$\n    Thus, the time to fall $t$ is proportional to $\\sqrt h$. Thus, the vertical velocity is proportional to $gt \\propto \\sqrt h$. The horizontal acceleration is due to coriolis, so\n    $$a_{h} \\propto v \\omega \\propto \\sqrt{h}.$$\n    And so the horizontal displacement is\n    $$\\Delta x \\propto a_h t^2 \\propto \\sqrt{h}\\times \\sqrt{h}^2 \\propto h^{3/2}.$$\n    So, the new distance is $\\boxed{2^{3/2}D}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Find the angular frequency of a conical pendulum of length $\\ell$, mass $m$, and angle to vertical $\\theta$ by using the rotating frame.\n    \\begin{center}\n        \\includegraphics[width=4cm]{conical_penddd.png}\n    \\end{center}",
+    "problem_images": [
+      "Fictitious Sols/conical_penddd.png"
+    ],
+    "solution": "Working in the rotating frame, we see that there is an outward centrifugal force of magnitude $\\omega^2 l\\sin \\theta$ and gravity. This is exactly the same as problem 4, the string must point along the effective gravity, so\n    $$\\tan \\theta = \\frac{\\omega^2 l \\sin \\theta}{g} \\implies \\omega^2 = \\frac{g\\tan \\theta}{l\\sin \\theta} \\implies \\omega = \\boxed{\\sqrt{\\frac{g}{l\\cos \\theta}}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "A child in a circular, rotating space station tosses a ball in such a way so that once the station has rotated\nthrough one half rotation, the child catches the ball. From the child’s point of view, which plot shows\nthe trajectory of the ball? The child is at the bottom of the space station in the diagrams below, but\nonly the initial location of the ball is shown.\n    \\includegraphics[width=8cm]{ball_spaceship_toss.png}",
+    "problem_images": [
+      "Fictitious Sols/ball_spaceship_toss.png"
+    ],
+    "solution": "First, it must be C, D or B because the child catches the ball. Now, it is actually easier to think about the situation from the lab frame. In the lab frame, the ball simply travels straight across the circle, which means it has some upward velocity. So, in the child's frame who is rotating, the ball has both a horizontal and vertical component of velocity when it leaves the child, and the only choice that satisfies this is $\\mathbf C$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Kleppner-Kolenkow, modified",
+    "problem": "A truck at rest has one door fully open, as shown. The truck accelerates forward at constant rate $A$, and the door begins to swing shut. The door is uniform and solid, has total mass $M$, height $h$, and width $w$. Neglect air resistance.\n    \\begin{center}\n        \\includegraphics[width=6cm]{car_door_closing.png}\n    \\end{center}\n    \\begin{anum}\n        \\item Find the instantaneous angular velocity of the door about its hinges when it has swung through $90^\\circ$.\n        \\item Now this time instead of the door starting fully open, assume that the door is only slightly ajar when it starts accelerating, making an angle $\\theta \\ll 1$ with the car. How long does it take for the door to close?\n    \\end{anum}",
+    "problem_images": [
+      "Fictitious Sols/car_door_closing.png"
+    ],
+    "solution": "\\begin{anum}\n    \\item In the accelerating frame, we have an effective gravity which points left with magnitude $A$. Thus, we can use conservation of energy to solve this first part. We have\n    $$MA\\frac{w}{2} = \\frac 12 I \\omega^2.$$\n    And $I$ for the rectangle here is $I = \\frac 13 M w^2$, so\n    $$MA\\frac w2 = \\frac 16 Mw^2 \\omega^2 \\implies \\omega = \\sqrt{\\frac{3A}{w}}.$$\n    \\item This time, we still use the idea of effective gravity. In that view, this is just a pendulum! It's a physical pendulum with moment of inertia $I$ found in part (a) with its center of mass a distance $w/2$ from the pivot point. The period of such a pendulum is\n    $$T = 2\\pi \\sqrt{\\frac{I}{mgd}}.$$\n    The door swinging shut is a quarter of the period, so our answer is $\\boxed{\\frac{\\pi}{2}\\sqrt{\\frac{I}{mgd}}}.$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Here's a problem from forces! Solve it with fictitious forces this time. A particle slides down a smooth inclined plane of elevation $\\theta$, fixed in an elevator going up with an acceleration $a_0$. The base of the incline has a length $L$. Find the time taken by the particle to reach the bottom.\n    \\begin{center}\n    \\begin{asy}\n    size(0,4cm);\n    draw((0,0)--(5,0)--(5,6)--(0,6)--cycle);\n    draw((0,0)--(5,2.5));\n    filldraw((2.26,1.13)--(3.06,1.53)--(2.66,2.33)--(1.86,1.93)--cycle,gray);\n    draw((6,4.5)--(6,6),EndArrow);\n    label(\"$a_0$\",(6,5.3),E);\n    \\end{asy}\n\\end{center}",
+    "problem_images": [],
+    "solution": "In the accelerating frame, there is an effective gravity of $g + a_0$, and the problem is just a normal inclined plane problem. So, time is\n    $$\\frac 12 (g+a_0)\\sin \\theta t^2 = \\frac{L}{\\cos \\theta} \\implies t = \\sqrt{\\frac{2L}{(g+a_0)\\sin \\theta \\cos \\theta}}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A classic test of a good driver is whether or not a passenger's mug of water spills. Collin drives in a circle of radius $R$ while Evan holds a mug of radius $r$ and height $h$ filled up $f = 3/4$ of the way up with water.\n    \\begin{center}\n        \\includegraphics[width=4cm]{mug_spin.png}\n    \\end{center}\n    \\begin{anum}\n        \\item  What is the maximum speed $v_{\\text{max}}$ that Collin can drive at before the water spills?\n        \\item At this maximum speed, what is the pressure at the ``outer-bottom corner'' (the part of the mug that is furthest from the center of the circle that Collin is driving on)? \n        \\item What is the pressure at the ``inner-bottom corner''?\n        \\item Does $P = \\rho g h$ from our fluids lecture still hold?\n        \n    \\end{anum}",
+    "problem_images": [
+      "Fictitious Sols/mug_spin.png"
+    ],
+    "solution": "\\begin{anum}\n    \\item We want to find the maximum angle that the water can be at before it spills. Let the height of the triangle air section when the water is tilted be $h_a$. Then, the total volume of water in the cup is\n    $$V = \\pi r^2 h - \\frac 12 \\pi r^2 h_a = \\pi r^2 (h - h_a/2).$$\n    And since $V = f\\pi r^2 h$, we have $$fh = h - \\frac{h_a}{2} \\implies h_a = 2(1-f)h.$$\n    So, with this we can figure out the angle of effective gravity -- it'll be perpendicular to the surface of the water. The angle that the water makes with the horizontal is\n    $$\\tan \\theta = \\frac{h_a}{2r} .$$\n    And the angle comes from the ratio of the centrifugal force to the gravitational force, so\n    $$\\frac{v^2/R}{g} = \\frac{h_a}{2r} \\implies \\frac{v^2}{Rg} = \\frac{(1-f)h}{r}.$$\n    Thus, we see that $v = \\boxed{\\sqrt{(1-f)Rgh/r}}$.\n    \\item In the rotating frame, consider a point that is a distance $d$ vertically from the surface of the water. Then, its orthogonal distance from the surface of the water is given by\n    $$d' = d\\cos \\theta .$$\n    Thus, by hydrostatic equilibrium, the pressure at this point would be\n    $$P = \\rho g_{\\text{eff}} d' = \\rho \\frac{g}{\\cos \\theta} d \\cos \\theta  = \\rho g d,$$\n    so it turns out that we can just use our typical $\\rho gh$! Thus, the answer is just $\\boxed{P_0 + \\rho gh}$.\n    \\item Using the result from the previous part, it is $P = P_0 + \\rho g (h - h_a) = \\boxed{P_0+\\rho g (2f - 1)h}$.\n    \\item Yes, as we said in part (b).\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "$F=ma$",
+    "problem": "Consider the set-up from the previous problem. Suppose now that we puncture a hole in the ``outer-bottom corner'' of the mug. With what speed does the water exit the hole?",
+    "problem_images": [],
+    "solution": "We found that the pressure was $\\rho g h$ in the previous problem. Thus, using our result from the fluid's lecture, the speed is just $v = \\boxed{\\sqrt{2gh}}.$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Morin",
+    "problem": "A hoop of radius $R$ is made to rotate at constant angular speed $\\omega$ around\na diameter, as shown below. A small bug of mass $m$ walks at\nconstant angular speed $\\Omega$ around the hoop. Let $N$ be the total force that the hoop applies to the bug when the bug is at the angle $\\theta$ shown, and\nlet $N_\\perp$ be the component of $N$ that is perpendicular to the plane of the\nhoop. Find $N_\\perp$ in two ways (ignore gravity in this problem):\n\\begin{center}\n    \\includegraphics[width=5cm]{bug_walk.png}\n\\end{center}\n\\begin{anum}\n    \\item Work in the lab frame: At the angle $\\theta$, find the rate of change of the bug’s angular momentum around the rotation axis, and then consider the torque on the bug.\n    \\item Work in the rotating frame of the hoop: At the angle $\\theta$, find the\nrelevant fictitious force, and then take it from there.\n\\end{anum}",
+    "problem_images": [
+      "Fictitious Sols/bug_walk.png"
+    ],
+    "solution": "\\begin{anum}\n    \\item If $r$ is the bug's distance from the axis, the angular momentum is\n    $$L = m(\\omega r)r = m\\omega r^2.$$\n    The bug's distance from the axis in terms of $\\theta$ is $r = R \\sin \\theta$, so\n    $$\\frac{dL}{dt} = 2m\\omega r \\frac{dr}{dt} = 2m\\omega (R\\sin \\theta) (R \\cos \\theta)\\Omega.$$\n    And in terms of forces, the torque is\n    $$\\tau = N_\\perp R\\sin \\theta = \\frac{dL}{dt} = 2m\\omega (R\\sin \\theta) (R \\cos \\theta)\\Omega.$$\n    Thus, we see that $N_\\perp = \\boxed{2m\\omega \\Omega R\\cos \\theta}$.\n    \\item In the rotating frame, the only other force that can act perpendicular to the plane of the hoop is the coriolis force. The coriolis force has magnitude\n    $$F_{\\text{cor}} = |2m\\omega \\times v| = 2m\\omega v \\cos \\theta = 2m \\omega \\Omega R\\cos \\theta,$$\n    which the normal force must balance, so we find $N_\\perp = \\boxed{2m\\omega \\Omega R \\cos \\theta}$ again.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "In this problem we analyze the Roche limit. Consider a small mass of density $\\rho_o$, and radius $r$ orbiting a distance $d$ from the center of a planet of density $\\rho_p$ and radius $R \\gg r$. Assume that the mass is tidally locked. Working in the rotating frame with the mass, find the distance $d$ at which the mass breaks apart.",
+    "problem_images": [],
+    "solution": "In the rotating frame, consider some small point mass $m$ at the outer radius of the rock/small mass that's orbiting the planet. There are three forces on it: the gravitational force from the planet, the gravitational force from the rock, and the centrifugal force. We can balance those three forces:\n    $$\\left(\\frac{GM_pm}{d^2} - \\frac{2GM_pm}{d^3}r\\right) + \\frac{GM_rm}{r^2} = m\\omega^2 (d+r).$$\n    We have from circular motion that\n    $$m\\omega^2d = \\frac{GM_pm}{d^2},$$\n    so plugging that in, we get\n    $$-\\frac{2GM_pm}{d^3}r + \\frac{GM_rm}{r^2} = \\frac{GM_pm}{d^3}r.$$\n    Thus, solving for $d$, we get\n    $$d^3 = \\frac{3M_p}{M_r/r^3} = R^3 \\frac{3M_p/R^3}{M_r/r^3} = R^3\\frac{3\\rho_p}{\\rho_o},$$\n    giving us the roche limit, $d = \\boxed{R\\left(\\frac{3\\rho_p}{\\rho_o}\\right)^{1/3}}$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Morin",
+    "problem": "For what angle $\\theta$ (down from the north pole) is the angle between $g_{\\text{eff}}$ and $g$ maximum? \\textit{Hint:} there is a way to do this with little calculation by geometry.",
+    "problem_images": [],
+    "solution": "Notice that at a latitude $\\theta$, the centrifugal acceleration has magnitude\n    $$a_c=  \\omega^2 R_{\\oplus} \\cos \\theta.$$\n    Furthermore, at a latitude $\\theta$, the centrifugal acceleration makes an angle $\\theta$ with the gravitational acceleration. Thus, the set of possible $g_{\\text{eff}}$ look like this:\n\n    The maximum possible angle is when these two are tangent. The circle has radius $\\omega^2 R_{\\oplus} /2$, while the distance to the center is $g - \\omega^2 R_{\\oplus} / 2$, so the maximum angle is when it is tangent, which makes an angle\n    $$\\phi = \\arcsin \\left(\\frac{\\omega^2 R_\\oplus / 2}{g - \\omega^2 R_\\oplus /2}\\right).$$\n    Since it is a right triangle here, the latitude is\n    $$\\theta = 90 - \\phi = \\boxed{\\arccos \\left(\\frac{\\omega^2 R_\\oplus / 2}{g - \\omega^2 R_\\oplus /2}\\right)}.$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "HRK",
+    "problem": "A vertical cylindrical vessel with radius $R$ is rotating\naround its axis with the angular velocity $\\omega$. Show that the shape of the surface of the water is a paraboloid, $y = kr^2$, and determine the constant $k$ in terms of $\\omega, R,$ and $g$. Some calculus may be required.\n\\begin{center}\n    \\includegraphics[width=5cm]{water_paraboloid.png}\n\\end{center}",
+    "problem_images": [
+      "Fictitious Sols/water_paraboloid.png"
+    ],
+    "solution": "In the rotating frame, the gravitational field is an effective $$\\mathbf g_{\\text{eff}} = -g\\hat y + \\omega^2 r \\hat r.$$\n    In the static case, the surface of the water is an equipotential, so if we start from the center and traverse along $r$ and then traverse up along $y$ to get to the surface, our net change in pressure should be $0$. We have\n    $$\\frac{dP}{dr} = \\rho \\omega^2 r, \\frac{dP}{dy} = -\\rho g,$$\n    off of the field. Thus, the pressure at the surface a distance $r$ away is\n    $$P_0 + \\int_0^r \\rho \\omega^2 r \\, dr - \\rho g y = P_0 + \\frac 12 \\rho \\omega^2 r^2 - \\rho g y = P_0.$$\n    Thus, we get that $\\frac 12 \\rho \\omega^2 r^2 = \\rho g y$. Thus, we have the form\n    $$y = \\frac{\\omega^2}{2g} r^2,$$\n    as desired, with $k = \\omega^2/2g$.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Kalda",
+    "problem": "A cylinder with radius $R$ spins around its axis with an\nangular speed $\\omega$. On its inner surface there lies a small block;\nthe coefficient of friction between the block and the inner surface of the cylinder is $\\mu$. Find the values of $\\omega$ for which the\nblock does not slip (stays still with respect to the cylinder).\nConsider the cases where\n\\begin{center}\n    \\includegraphics[width=6cm]{spinning_block.png}\n\\end{center}\n\\begin{anum}\n    \\item the axis of the cylinder is horizontal\n    \\item the axis is inclined by angle $\\alpha$ with respect to the horizon.\n\\end{anum}",
+    "problem_images": [
+      "Fictitious Sols/spinning_block.png"
+    ],
+    "solution": "\\begin{anum}\n    \\item Consider the rotating frame. Below we have three effective forces: the gravitational force, the centrifugal force, and the combined friction and normal force.\n    \\begin{center}\n        \\includegraphics[width=6cm]{spinning_a.jpeg}\n    \\end{center}\n    We see that as long as the circle lies within the black lines the block can be in static equilibrium. Thus, the condition is that\n    $$\\sin^{-1} \\frac{\\omega^2 R}{g} < \\tan^{-1} \\mu,$$\n    so we see that $\\omega < \\sqrt{\\frac{g}{R} \\frac{\\mu}{\\sqrt{1+\\mu^2}}}.$\n    \\item This is the same question, except the range of reachable angles on the green circle stops at $\\alpha$ to the vertical, so if the $\\arctan \\mu$ angle is large enough, it will not be the limiting case. The limit is where\n    $$\\arctan \\mu + \\alpha = 90,$$\n    so if $\\mu < \\cot \\alpha$ \\underline{we get the answer in part (a)}. Otherwise, if $\\mu > \\cot \\alpha$, then the first contact point is when the contact point is at the border of the arc, at $\\alpha$. Thus, using law of sines, we get\n    $$\\frac{m\\omega^2R}{\\sin(\\arctan \\mu + \\alpha)} = \\frac{mg}{\\sin(\\arctan \\mu)} \\implies \\omega < \\sqrt{\\frac{g}{R}\\frac{\\sin(\\arctan \\mu + \\alpha)}{\\sin \\arctan \\mu}}.$$\n    \\end{anum}",
+    "solution_images": [
+      "Fictitious Sols/spinning_a.jpeg"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "USAPhO, Classical",
+    "problem": "Consider a simple pendulum of length $\\ell$.\n    \\begin{center}\n        \\includegraphics[width=4cm]{focault_pendulum.png}\n    \\end{center}\n    \\begin{anum}\n        \\item What is the period of the pendulum $\\omega$?\n        \\item Now, view the pendulum in a frame rotating at $\\Omega \\ll \\omega$. How long does it take for the pendulum to begin oscillating in its original plane? \\textit{Hint:} don't use fictitious forces\n        \\item Now, can you explain the result in part (b) using fictitious forces?\n    \\end{anum}",
+    "problem_images": [
+      "Fictitious Sols/focault_pendulum.png"
+    ],
+    "solution": "\\begin{anum}\n    \\item This is simply $\\sqrt{g/l}$.\n    \\item In the lab frame, the pendulum only oscillates in a single plane. Thus, in the rotating frame, this plane simply rotates at a rate of $\\omega$, and it only needs to rotate by $\\pi$ to return to the original plane, so we get $\\boxed{\\pi/\\Omega}$.\n    \\item Solving this exactly is a little tough, but we can make some estimations. In the rotating frame, as the mass swings, it experiences a perpendicular coriolis force which rotates its plane of oscillation. The coriolis force has magnitude\n    $$2m\\Omega v(t),$$\n    so the angular acceleration of the mass is approximately\n    $$\\alpha (t) = 2\\Omega v(t) / r(t) = \\frac{2\\Omega(\\omega x_0 \\sin \\omega t)}{x_0 \\cos \\omega t} = 2\\Omega \\omega \\tan \\omega t.$$\n    So, over a period, it pick up an average velocity of around\n    $$\\omega' \\sim \\Omega \\omega \\times \\frac{1}{\\omega} \\sim \\Omega.$$\n    Thus, it'll take order $1/\\omega' \\sim 1/\\Omega$ to rotate back to the original plane.\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Fictitious Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "Bonus",
+    "problem": "Try the first long question on \\href{https://usaaao.files.wordpress.com/2022/03/usaaao_second_exam_2022_problems.pdf#page=4}{this exam}, titled ``The Curious Orbit of James Webb''. This is a USAPhO level and style problem.",
+    "problem_images": [],
+    "solution": "See the official solutions \\href{https://usaaao.files.wordpress.com/2022/03/usaaao_second_exam_2022_solutions.pdf#page=11}{here}.",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

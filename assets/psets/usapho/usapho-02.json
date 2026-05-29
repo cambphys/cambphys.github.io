@@ -1,0 +1,155 @@
+[
+  {
+    "problem_set": "Conductors Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A dipole with moment $p=qd$ is oriented in the $xy$ plane with the charge $+q$ at the point $(0,d/2)$ and the charge $-q$ at the point $(0,-d/2)$. \\begin{anum}\n        \\item Find the potential $\\phi(x,y)$ in space as a function of $x$ and $y$ with $x,y\\gg d$.\n        \\item Use your answer from part (a) to find the electric field $\\mathbf E(x,y)$ as a function of $x$ and $y$.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Using the definition of potential, \\begin{align*}\\phi(x,y)&=\\frac{q}{4\\pi\\epsilon_0}\\left(\\frac{1}{\\sqrt{x^2+\\left(y-\\frac d2\\right)^2}}-\\frac{1}{\\sqrt{x^2+\\left(y+\\frac d2\\right)^2}}\\right)\\\\\n        &\\approx\\frac{q}{4\\pi\\epsilon_0}\\left(\\frac{1}{\\sqrt{x^2+y^2-yd}}-\\frac{1}{\\sqrt{x^2+y^2+yd}}\\right)\\\\\n        &\\approx\\frac{qdy}{4\\pi\\epsilon_0(x^2+y^2)^{3/2}}\\\\\n        &\\approx \\boxed{\\frac{py}{4\\pi\\epsilon_0(x^2+y^2)^{3/2}}}\\end{align*}\n        \\item Taking the derivatives, $$\\mathbf{E}(x,y)=\\left(-\\frac{d\\phi}{dx},-\\frac{d\\phi}{dy}\\right)=\\boxed{\\left(\\frac{pxy}{4\\pi\\epsilon_0(x^2+y^2)^{5/2}},\\frac{p(2y^2-x^2)}{4\\pi\\epsilon_0(x^2+y^2)^{5/2}}\\right)}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Conductors Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "    Suppose we have a thin, uniformly charged spherical shell of radius $R$ and total charge $Q$. We will find the electrostatic pressure $P$ on the walls of the shell in two ways.\\begin{anum}\n        \\item First, using only concepts introduced last week (Coulomb's law, electric fields, Gauss's law, etc), find the pressure from evaluating the force acting on a small piece of the shell $dA$.\n        \\item Now, find the electric potential energy associated with the shell $U$. Now, suppose somehow the radius of the shell increases to $R+dR$ so that the electric potential energy changes by some $dU$. Find this change in energy, and relate it to the work done by the outward electrostatic pressure $P$ when the radius increased by $dR$. Use this equation to then solve for $P$, and verify that it is consistent with your earlier result. This is called the method of virtual work, and is in general a very a useful trick in olympiad physics for finding the magnitude of forces using energy.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n    \\item The electric field right outside the sphere is $Q/4\\pi\\epsilon_0R^2$, and right inside it is 0. Thus the force on a small piece $dA$ is found as $$dF=\\frac{Q\\, dA}{4\\pi R^2}\\frac{E_{\\text{out}}+E_{\\text{in}}}{2}=\\frac{Q^2}{32\\pi^2 \\epsilon_0R^4}dA$$so the pressure is $$P=\\frac{dF}{dA}=\\boxed{\\frac{Q^2}{32\\pi^2 \\epsilon_0R^4}}$$\n    \\item In class, we found the potential energy to be $$U=\\frac{Q^2}{8\\pi \\epsilon_0R}$$If the radius increases by $dR$, then we take the derivative to find the corresponding increase in $U$:$$dU=-\\frac{Q^2}{8\\pi \\epsilon_0R^2}dR$$The work done by the pressure if the radius increases by $dR$ is $4\\pi R^2P\\, dR$, and this equals to $-dU$. as a result, $$4\\pi R^2P\\, dR=\\frac{Q^2}{8\\pi \\epsilon_0R^2}dR\\Rightarrow P=\\boxed{\\frac{Q^2}{32\\pi^2\\epsilon_0R^4}}$$which agrees with the result from before.\n\\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Conductors Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Kalda",
+    "problem": "$N$ identical droplets of mercury are charged to the same potential $\\phi_0$. Determine the potential of a large drop of mercury when the $N$ smaller droplets coalesce (assume all the droplets are spherical).",
+    "problem_images": [],
+    "solution": "Let the radii of the starting droplets be $r_0$, so that the radius of the final droplet is $r_0\\sqrt[3]{N}$. Since the potential is related to the charge $q$ on each droplet as $\\phi_0=q/4\\pi\\epsilon_0r_0$, the total charge is $Nq=4N\\phi_0\\pi\\epsilon_0r_0$. Then the final potential is $$\\phi=\\frac{4N\\phi_0\\pi\\epsilon_0r_0}{4\\pi\\epsilon_0r_0\\sqrt[3]{N}}=\\boxed{\\phi_0N^{2/3}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Conductors Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Two conducting spheres at a very far distance from one another have charge $Q$, but one has radius $r$ and the other has radius $R>r$. The spheres are then connected by a wire (which means they are then forced to have the same potential). After this is done, what is the difference in the charges on the spheres?",
+    "problem_images": [],
+    "solution": "Let $Q_1$ and $Q_2$ be the final charges. Since the spheres are very far from each other, we neglect their electrostatic interaction. The potential on each ball is $\\sim q/r$, so after the wire is connected we have $Q_1/R=Q_2/r$. Note also $Q_1+Q_2=2Q$. Solving the system, $$\\Delta Q=|Q_1-Q_2|=\\boxed{\\frac{2Q(R-r)}{R+r}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Conductors Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Purcell",
+    "problem": "The shaded regions in the figure below represent two neutral concentric conducting spherical shells. The white regions represent vacuum. Two point charges $q$ are located as shown; the interior one is off-center. \\begin{center}\n    \\includegraphics[scale=0.2]{morin3}\n\\end{center}\\begin{anum}\n    \\item Draw a reasonably accurate picture of the field lines everywhere, and indicate the various charge densities. What quantities are spherically symmetric? (There are two possible cases for what your picture can look like, depending on how close the exterior point charge is. Take your pick.)\n    \\item Repeat the above tasks in the case where the two shells are connected by a wire, so that they are at the same potential.\n\\end{anum}",
+    "problem_images": [
+      "Conductors Sols/morin3.png"
+    ],
+    "solution": "\\begin{anum}\n        \\item The charge distributions and field lines are shown (roughly) in the figure below.\n        \\begin{center}\n            \\includegraphics[scale=0.25]{sol1.png}\n        \\end{center} \n        Let the four surfaces be labeled 1, 2, 3, 4, starting from the innermost one. There is charge $-q$ on surface 1. This is true because the field is zero inside the metal of the conductor, so a spherical Gaussian surface drawn inside the metal of the inner conductor has no flux, so the net charge enclosed in the sphere must be zero. The negative surface charge density on surface 1 is higher near the off-center point charge. Since the inner conductor is neutral, a charge $+q$ must reside on surface 2. This surface charge density is spherically symmetric, because it feels no field from the charges inside (or outside) of it, due to the zero field inside the metal of the conductors. By the same Gauss’s-law reasoning, there must be a charge $-q$ on surface 3, because there is zero field inside the metal of the outer conductor. This surface charge density is spherically symmetric. A charge $+q$ is left for surface 4. This surface charge density is actually negative near the outer charge $q$ if that charge is located close enough to the shells. But in any case the total charge on surface 4 is $+q$. Between the shells, the field is spherically symmetric, consistent with the spherically symmetric charge densities on surfaces 2 and 3.\n        \\item The shells are now at the same potential, so the field between them must be zero. Therefore, the only difference from the scenario in part (a) is that we just need to erase the field between the shells and erase the charges on surfaces 2 and 3. The charges on surfaces 1 and 4 aren’t affected by this change, because the surfaces 2 and 3 together produced zero field everywhere except between them. Basically, when we connect the shells, the charges on surfaces 2 and 3 simply neutralize each other.\n    \\end{anum}",
+    "solution_images": [
+      "Conductors Sols/sol1.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Conductors Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "Given a point charge $q$ a distance $a$ above an infinite conducting plane, find the surface charge density $\\sigma$ on the plane as a function of $r$, the horizontal distance between a point on the plane and the charge $q$.",
+    "problem_images": [],
+    "solution": "We know that the electric field is equivalent to that generated by an image $-q$ on the other side. Given the magnitude of $E$ at some point on the plane, we can find $\\sigma$ via $\\sigma = -\\epsilon_0E$ (note that $E$ points into the plane, so $\\sigma$ is negative). Notice that because of the image, the electric field at the given point is double the vertical component of the charge $q$. We have $$\\sigma(r)=-2\\epsilon_0E_z=\\boxed{-\\frac{qa}{2\\pi(a^2+r^2)^{3/2}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Conductors Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": "Purcell",
+    "problem": "Suppose we have a point charge held a distance $a$ above an infinite conducting plane. If you follow a field line that starts out from the point charge in a horizontal direction, that is, parallel to the plane, where does it meet the surface of the conductor? Hint: Use Gauss's law and your answer to the previous problem.",
+    "problem_images": [],
+    "solution": "We use the Gaussian surface in the following diagram, where a hemisphere is drawn right outside the charge $Q$ and the side of the surface is drawn along the field line. \n    \\begin{center}\n        \\includegraphics[scale=0.2]{no}\n    \\end{center}\n    The total flux through the surface is equal to the charge enclosed along the plane. Notice that there is no flux out the bottom of the conductor, so the only flux comes from the charge $Q$. The flux into the surface is $Q/2\\epsilon_0$, so the total charge enclosed should be $-Q/2$. Using $\\sigma$ from earlier, we integrate to the necessary horizontal distance $r$ from the line drawn from $Q$ to the plane until we get $-Q/2$. As a result, $$-\\frac{Q}{2}=\\int_0^r\\sigma (2\\pi r)\\, dr=\\int_0^r -\\frac{Qar}{(a^2+r^2)^{3/2}}dr=-Q\\left(1-\\frac{a}{\\sqrt{a^2+r^2}}\\right)$$ Thus, $$\\frac{a}{\\sqrt{a^2+r^2}}=\\frac12\\Rightarrow r=\\boxed{a\\sqrt{3}}$$",
+    "solution_images": [
+      "Conductors Sols/no.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Conductors Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A point charge of charge $q$ and mass $m$ is released from rest a distance $a$ above an infinite conducting plane. How long will it take for the charge to collide with the plane? Ignore gravity.",
+    "problem_images": [],
+    "solution": "When the charge is a distance $r$ above the plane, the force on the charge is $q^2/4\\pi\\epsilon_0(2r)^2$ by the image charge, so its acceleration is $a=q^2/16\\pi\\epsilon_0mr^2$. We can compare this situation to a gravitational situation. If a mass $m$ is released a distance $a$ from a star, its acceleration at a distance $r$ away is given by $a=GM/r^2$. We can thus compare the two situations with the equivalence $q^2/16\\pi\\epsilon_0m\\equiv GM$. In the gravtiational case, we can easily solve this problem with Kepler's Third law (we covered this problem in Week 13 of the $F=ma$ Course Series). We can take the orbit to be a highly eccentric ellipse of semimajor axis $a/2$, and we take half the period so that $$t=\\pi\\sqrt{\\frac{a^3}{8GM}}=\\pi\\sqrt{\\frac{a^3}{8GM}}\\equiv \\boxed{\\pi\\sqrt{\\frac{2a^3\\pi\\epsilon_0m}{q^2}}}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Conductors Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A hollow metal cube has side length $a$. A charge $q$ is placed inside the cube so that it is a distance $d\\ll a$ from each of the faces of the cube. Find the force of interaction between the cube and the charge.",
+    "problem_images": [],
+    "solution": "We can assume the faces of the cube to be near infinite planes, so we can build a system of image charges that represents the system. If we consider the image across the bottom face, both the original charge and the image need their own images across one of the side faces, and then those four charges need their images across the last face. The arrangement of charge is thus as shown, with hollow circles representing negative charge: \\begin{center}\n\\includegraphics[scale=0.2]{mine}\n\\end{center}We will consider the contributions of force from the different types of pointss: \\begin{itemize}\n    \\item Three charges $-Q$ at a distance $2d$ make an angle $\\cos^{-1}(1/\\sqrt 3)$ with the direction toward the origin. This follows from the fact that the diagonal of the cube has length $3(2d)$. We therefore have (ignoring the $4\\pi\\epsilon_0$), $$F_1=3\\frac{Q^2}{(2d)^2}\\cdot\\frac{1}{\\sqrt3}=\\frac{\\sqrt{3}Q^2}{4d^2}$$This force is directed toward the corner of the cube.\n    \\item Three charges $Q$ at a distance $2\\sqrt 2d$ make an angle $\\cos^{-1}(\\sqrt2/\\sqrt3)$ with the direction toward the origin. So$$F_2=3\\frac{Q^2}{(2\\sqrt2d)^2}\\cdot\\frac{\\sqrt2}{\\sqrt3}=\\frac{\\sqrt3Q^2}{4\\sqrt2d^2}$$This force is directed away from the corner.\n    \\item One charge $-Q$ at a distance $2\\sqrt3d$ is located in line with the origin. So $$F_3=\\frac{Q^2}{(2\\sqrt3d)^2}=\\frac{Q^2}{12d^2}$$This force is directed toward the corner.\n\\end{itemize}\nAdding all the forces together and bringing back the $4\\pi\\epsilon_0$, we get $$F=\\frac{1}{4\\pi\\epsilon_0}\\left(\\frac{\\sqrt3}{4}-\\frac{\\sqrt3}{4\\sqrt2}+\\frac{1}{12}\\right)\\frac{Q^2}{d^2}\\approx \\boxed{0.210\\frac{Q^2}{4\\pi\\epsilon_0d^2}}$$",
+    "solution_images": [
+      "Conductors Sols/mine.png"
+    ],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Conductors Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "In this problem we will find the potential energy of a solid ball of uniform charge $Q$ and radius $R$ in two ways.\n    \\begin{anum}\n        \\item Integrate the electric field energy density $\\epsilon_0E^2/2$ for all points in space.\n        \\item If we have a ball of charge of radius $r<R$ and charge density equal to the final ball, we can find the work it takes to bring in a thin layer of charge (like a layer of an onion) to cover the ball and increase its radius to $r+dr$. Find the total work necessary to create the entire ball.\n    \\end{anum}",
+    "problem_images": [],
+    "solution": "\\begin{anum}\n        \\item Inside the ball, $E$ can be found via the shell theorem, so $$E_{\\text{in}}=\\frac{Q(r^3/R^3)}{4\\pi\\epsilon_0r^2}=\\frac{Qr}{4\\pi\\epsilon_0R^3}$$Outside, $E$ is simply $$E_{\\text{out}}=\\frac{Q}{4\\pi\\epsilon_0r^2}$$So we integrate: $$U=\\frac12\\epsilon_0\\left(\\int_0^R\\left(\\frac{Qr}{4\\pi\\epsilon_0R^3}\\right)^2(4\\pi r^2)dr+\\int_R^\\infty\\left(\\frac{Q}{4\\pi\\epsilon_0r^2}\\right)^2(4\\pi r^2)dr\\right)=\\boxed{\\frac{3Q^2}{20\\pi\\epsilon_0R}}$$\n        \\item The potential at the surface of the ball when the radius is $r$ is $\\phi=Q(r^3/R^3)/4\\pi\\epsilon_0r.$ The work $dU$ needed to add in charge to increase the radius by $dr$ is thus $\\phi \\, dq=\\phi Q(4\\pi r^2\\, dr)/(4\\pi R^3/3)$. Integrating, $$U=\\int_0^R\\frac{Qr^2}{4\\pi\\epsilon_0R^3}\\cdot\\frac{Q\\cdot4\\pi r^2dr}{4\\pi R^3/3}=\\int_0^R\\frac{3Q^2r^4}{4\\pi\\epsilon_0R^6}dr=\\boxed{\\frac{3Q^2}{20\\pi\\epsilon_0R}}$$\n    \\end{anum}",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Conductors Sols",
+    "section": "Problem Set",
+    "subsection": "Exercises",
+    "problem_tag": null,
+    "problem": "A solid sphere of uniform charge $q$ and radius $r$ is surrounded by a spherical, neutral dielectric shell of thickness $t$ and relative resistivity $\\kappa$ so that the resulting object is a sphere of radius $R=r+t$. Find the surface charge density $\\sigma$ on the surface of the dielectric.",
+    "problem_images": [],
+    "solution": "The electric field at a distance $d$ from the center of the sphere within the dielectric is $E=q/4\\pi\\kappa \\epsilon_0d^2$. Thus by Gauss's law, the charge enclosed is $q/\\kappa$, so the charge on the inner surface of the dielectric is $q(1/\\kappa)-q.$ The dielectric is neutral, so on the outer surface the charge is the opposite: $q-q(1\\kappa)$. We divide by the total area to find $\\sigma:$ $$\\sigma=\\boxed{\\frac{q}{4\\pi R^2}\\left(1-\\frac1\\kappa\\right)}$$",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Conductors Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": null,
+    "problem": "Try Problem 1, Parts 1-4 of APhO 2013 <a href=\"https://apho.olimpicos.net/pdf/APhO_2013_Q1.pdf\" target=\"_blank\" rel=\"noopener\">here</a>.",
+    "problem_images": [],
+    "solution": "See solutions <a href=\"https://apho.olimpicos.net/pdf/APhO_2013_S1.pdf\" target=\"_blank\" rel=\"noopener\">here</a>.",
+    "solution_images": [],
+    "solution_type": "sol"
+  },
+  {
+    "problem_set": "Conductors Sols",
+    "section": "Problem Set",
+    "subsection": "Challenge Problems",
+    "problem_tag": "MPPP",
+    "problem": "A solid metal sphere of radius $R$ is divided into two parts by a planar cut, made in such a way that the outer surface of the smaller part of the sphere has surface area $\\pi R^2$. The cut surfaces are coated with a negligibly thin insulating layer, and the two parts are put together again so that the original shape of the sphere is restored. Initially the sphere is electrically neutral. \n    \\begin{center}\n        \\includegraphics[scale=0.2]{mppp1}\n    \\end{center}\n    The smaller part of the sphere is now given a small positive electric charge $+Q$, while the larger part of the sphere remains neutral. Describe the charge distribution throughout the sphere.",
+    "problem_images": [
+      "Conductors Sols/mppp1.png"
+    ],
+    "solution": "If we look first at the interface between the two parts, the surface charge densities on the two faces must be exactly opposite one another, because otherwise in the vicinity of those two faces there would exist an electric field within one of the parts of the sphere. Thus, we let two faces carry charges of magnitude $q$. Let $q$ be positive on the left face and negative on the right face, so that the rest of the left part of the sphere has charge $Q-q$ and the rest of the right part of the sphere has charge $q$. Now, when considering the sphere as a whole, note that macroscopically the two charges $\\pm q$ on the faces cancel out, so we are just left with a normal conducting sphere. By symmetry, the outer faces of the sphere must therefore have the same charge density. As a result, since the surface area of the left part is $\\pi R^2$, we have $$\\frac{Q-q}{\\pi R^2}=\\frac{q}{3\\pi R^2}\\Rightarrow q=\\frac34Q$$\n        Thus charge $Q/4$ belongs on the outer surface of the left side with $3Q/4$ on the inner face, while charge $-3Q/4$ lies on the inner face of the right side with $3Q/4$ spread out on its outer surface.",
+    "solution_images": [],
+    "solution_type": "sol"
+  }
+]

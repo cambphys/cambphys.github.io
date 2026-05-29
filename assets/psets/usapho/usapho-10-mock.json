@@ -1,0 +1,22 @@
+{
+  "total": 2,
+  "time_limit_seconds": 3600,
+  "problems": [
+    {
+      "num": 1,
+      "problem": "In this problem, we will investigate a simple thermodynamic model for the conversion of solar energy into wind. Consider a planet of radius $R$, and assume that it rotates so that the same side always faces the Sun. The bright side facing the Sun has a constant uniform temperature $T_1$, while the dark side has a constant uniform temperature $T_2$. The orbit radius of the planet is $R_0$, the Sun has temperature $T_s$, and the radius of the Sun is $R_s$. Assume that outer space has zero temperature, and treat all objects as ideal blackbodies.\n    \\begin{anum}\n        \\item Find the solar power $P$ received by the bright side of the planet.\n    \\end{anum}\n    In order to keep both $T_1$ and $T_2$ constant, heat must be continually transferred from the bright side to the dark side. By viewing the two hemispheres as the two reservoirs of a reversible heat engine, work can be performed from this temperature difference, which appears in the form of wind power. For simplicity, we assume all of this power is immediately captured and stored by windmills.\n    \\begin{anum}\\addtocounter{enumi}{1}\n        \\item The equilibrium temperature ratio $T_2/T_1$ depends on the heat transfer rate between the hemispheres. Find the minimum and maximum possible values of $T_2/T_1$. In each case, what is the wind power $P_w$ produced?\n        \\item Find the wind power $P_w$ in terms of $P$ and the temperature ratio $T_2/T_1$.\n        \\item Estimate the maximum possible value of $P_w$ as a fraction of $P$, to one significant figure. Briefly explain how you obtained this estimate.\n    \\end{anum}",
+      "solution": "See solutions \\href{https://aapt.org/Common/upload/USAPhO-2019-Solutions_rev-4012021.pdf}{here}.",
+      "problem_images": [],
+      "solution_images": []
+    },
+    {
+      "num": 2,
+      "problem": "In this problem we will look at the phase diagram of water (see graphs below). The first figure shows the phase diagram in a region close to the triple point [($s$) – solid, ($l$) – liquid, ($g$) – gas], while the second figure shows the melting curve. When two phases $\\alpha$ and $\\beta$ are in equilibrium, the phase transition curve follows the law of Clausius–Clapeyron:$$\\frac{dp}{dT}=\\frac1T\\frac{H_\\beta-H_\\alpha}{V_\\beta-V_\\alpha}$$where $H_\\alpha$ is the specific enthalpy (enthalpy per mass) of phase $\\alpha$, and $V_\\alpha$ is the specific volume (volume per mass).  \\begin{center}\n         \\includegraphics[width=\\linewidth]{nb1}\n     \\end{center}\\begin{anum}\n         \\item Using $V_g\\gg V_l$, find an expression for the liquid-gas transition curve $p(T)$ in terms of the latent heat of evaporation $\\Delta H_{l g} \\equiv H_l - H_g$, the pressure $p_0$ at any reference point along the curve, the gas constant $R$ and the molar mass $\\mu$.\n         \\item Approximate the Earth as a system of a homogeneous atmosphere, consisting of air and water vapor, in equilibrium with a sea of liquid water. If the atmospheric temperature rises by $3^\\circ \\, \\unit C$, by what percentage does the water vapor pressure rise? (The current temperature of the Earth is $15^\\circ \\, \\unit C$.) You may need the values $R = 8.314\\, \\unit{J\\cdot mol^{-1}\\cdot K^{-1}}$ and $\\mu = 18.015\\, \\unit{g\\cdot mol^{-1}}$.\n         \\item Use reasonable approximations and calculate $V_l - V_s$, the difference in specific volume between liquid water and ice, at atmospheric pressure.\n     \\end{anum}",
+      "solution": "See solutions \\href{https://nbpho.ee/wp-content/uploads/2020/05/NBPhO-2020-solutions-grading.pdf}{here} (Problem 1).",
+      "problem_images": [
+        "Thermo III Sols/nb1.png"
+      ],
+      "solution_images": []
+    }
+  ]
+}
