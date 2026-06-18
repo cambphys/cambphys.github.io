@@ -78,10 +78,25 @@
   ]);
   // Lessons with lecture notes available (same set as HAS_PSET for now).
   const HAS_NOTES = new Set(HAS_PSET);
-  // Lessons that have a JSON slideshow file alongside them.
-  const HAS_SLIDES = new Set([
+  // Lessons that have a video manifest at /assets/psets/<course>/<id>-video.json
+  const HAS_VIDEO = new Set([
+    "ap-01","ap-02","ap-03","ap-04","ap-05","ap-06","ap-07","ap-08",
+    "ap-09","ap-10","ap-11","ap-12","ap-13","ap-14","ap-15","ap-16",
     "fma-01","fma-02","fma-03","fma-04","fma-05","fma-06","fma-07","fma-08",
     "fma-09","fma-10","fma-11","fma-12","fma-13","fma-14","fma-15","fma-16",
+    "usapho-01","usapho-02","usapho-03","usapho-04","usapho-05","usapho-06",
+    "usapho-07","usapho-08","usapho-09","usapho-10","usapho-11","usapho-12",
+    "usapho-13","usapho-14","usapho-15","usapho-16",
+  ]);
+  // Lessons that have a JSON slideshow file alongside them.
+  const HAS_SLIDES = new Set([
+    "ap-01","ap-02","ap-03","ap-04","ap-05","ap-06","ap-07","ap-08",
+    "ap-09","ap-10","ap-11","ap-12","ap-13","ap-14","ap-15","ap-16",
+    "fma-01","fma-02","fma-03","fma-04","fma-05","fma-06","fma-07","fma-08",
+    "fma-09","fma-10","fma-11","fma-12","fma-13","fma-14","fma-15","fma-16",
+    "usapho-01","usapho-02","usapho-03","usapho-04","usapho-05","usapho-06",
+    "usapho-07","usapho-08","usapho-09","usapho-10","usapho-11","usapho-12",
+    "usapho-13","usapho-14","usapho-15",
   ]);
 
   function buildLessons(courseId) {
@@ -94,7 +109,8 @@
         id,
         number: i,
         title: titles ? (titles[i - 1] || `Lesson ${i}`) : `Lesson ${i}`,
-        video:     "#",
+        video:     HAS_VIDEO.has(id) ? `/video/?lesson=${id}` : "#",
+        hasVideo:  HAS_VIDEO.has(id),
         slideshow: "#",
         notes:     "#",
         psetUrl:   HAS_PSET.has(id) ? `/pset/?lesson=${id}` : "#",
@@ -172,7 +188,7 @@
         <div class="lesson-body">
           <div class="lesson-readings" data-lesson="${lesson.id}"></div>
           <div class="lesson-resources">
-            <a href="${lesson.video}"     class="resource">▶ Video</a>
+            <a href="${lesson.video}"     class="resource ${lesson.hasVideo ? '' : 'disabled'}">▶ Video</a>
             <a href="${lesson.slidesUrl}" class="resource ${lesson.hasSlides ? '' : 'disabled'}">▥ Slideshow</a>
             <a href="${lesson.notesUrl}"  class="resource ${lesson.hasNotes ? '' : 'disabled'}">≡ Notes</a>
             <a href="${lesson.psetUrl}"   class="resource ${lesson.hasPset  ? '' : 'disabled'}">✎ Problem Set</a>

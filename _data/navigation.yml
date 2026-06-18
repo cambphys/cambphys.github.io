@@ -1,11 +1,14 @@
 # main links
 main:
-  - title: "AP Course Series"
-    url: /ap/
-  - title: "F=ma Course Series"
-    url: /fma/
-  - title: "USAPhO Course Series"
-    url: /usapho/
+  - title: "Courses Info"
+    url: "#"
+    children:
+      - title: "AP Course Series"
+        url: /ap/
+      - title: "F=ma Course Series"
+        url: /fma/
+      - title: "USAPhO Course Series"
+        url: /usapho/
   - title: "My Courses"
     url: /courses/
   - title: "Log In"

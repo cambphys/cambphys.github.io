@@ -1,0 +1,38 @@
+---
+layout: default
+title: Video
+permalink: /video/
+---
+
+<link rel="stylesheet" href="/assets/css/slides.css">
+
+<div class="slides-shell">
+  <div class="slides-topbar">
+    <a class="pset-back" id="video-back" href="/courses/">← Back to course</a>
+    <span class="slides-title" id="video-title">…</span>
+    <span class="slides-counter"></span>
+  </div>
+
+  <div class="slides-stage" id="video-stage">
+    <p class="slides-loading">Loading video…</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/assets/js/supabase-config.js"></script>
+<script src="/assets/js/auth.js"></script>
+<script src="/assets/js/courses.js"></script>
+<script src="/assets/js/video.js"></script>
+<script>
+  (async function () {
+    try {
+      const user = await window.cambphysAuth.requireAuth();
+      if (!user) return;
+      await window.cambphysVideo.init();
+    } catch (e) {
+      console.error("video init failed:", e);
+      document.getElementById("video-stage").innerHTML =
+        '<p class="slides-loading">Could not load the video: ' + (e.message || e) + '</p>';
+    }
+  })();
+</script>

@@ -1,0 +1,47 @@
+/* Custom nav overrides: keep all top-level links visible (no hamburger collapse
+   on desktop) and style the "Course Info" dropdown. */
+
+/* Force visible-links to never collapse — JS may still mark items, but we
+   override display so they always show. */
+#site-nav.greedy-nav .visible-links { flex: 1 1 auto; overflow: visible; }
+#site-nav.greedy-nav .visible-links > li,
+#site-nav.greedy-nav .visible-links > li.masthead__menu-item { display: inline-block; }
+
+/* On desktop, hide the hamburger toggle and hidden-links — show everything.
+   On mobile (<768px), let the theme's greedy-nav collapse to hamburger as usual. */
+@media (min-width: 768px) {
+  #site-nav.greedy-nav .greedy-nav__toggle,
+  #site-nav.greedy-nav .hidden-links { display: none !important; }
+}
+
+/* Dropdown */
+.masthead__menu-item.has-dropdown { position: relative; }
+.masthead__menu-item.has-dropdown .dropdown-toggle { cursor: pointer; }
+.masthead__menu-item.has-dropdown .dropdown-menu {
+  position: absolute; top: 100%; left: 0;
+  margin: 0; padding: .25rem 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  list-style: none;
+  min-width: 200px;
+  opacity: 0; visibility: hidden;
+  transform: translateY(4px);
+  transition: opacity .12s ease, transform .12s ease;
+  z-index: 50;
+}
+.masthead__menu-item.has-dropdown:hover .dropdown-menu,
+.masthead__menu-item.has-dropdown:focus-within .dropdown-menu,
+.masthead__menu-item.has-dropdown.open .dropdown-menu {
+  opacity: 1; visibility: visible; transform: translateY(0);
+}
+.masthead__menu-item.has-dropdown .dropdown-menu li { margin: 0; }
+.masthead__menu-item.has-dropdown .dropdown-menu a {
+  display: block; padding: .5rem 1rem;
+  color: #333; text-decoration: none;
+  font-size: .95rem; white-space: nowrap;
+}
+.masthead__menu-item.has-dropdown .dropdown-menu a:hover {
+  background: #f3f4f6; color: #2f5d8c;
+}

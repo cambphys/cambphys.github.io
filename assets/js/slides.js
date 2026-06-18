@@ -40,6 +40,17 @@
 
   function stage() { return document.getElementById("slides-stage"); }
 
+  async function addWatermark(container) {
+    try {
+      const u = await window.cambphysAuth.currentUser();
+      if (!u || !u.email) return;
+      const wm = document.createElement("div");
+      wm.className = "cp-watermark";
+      wm.textContent = u.email;
+      container.appendChild(wm);
+    } catch (e) { /* non-critical */ }
+  }
+
   function render() {
     const slide = data.slides[currentIndex];
     document.getElementById("slides-counter").textContent =
@@ -67,6 +78,7 @@
     parts.push(`</div>`);
 
     stage().innerHTML = parts.join("");
+    addWatermark(stage());
 
     if (window.MathJax && window.MathJax.typesetPromise) {
       window.MathJax.typesetPromise([stage()]).catch(() => {});

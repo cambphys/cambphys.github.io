@@ -13,13 +13,24 @@
         </a>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a
-                href="{{ link.url | relative_url }}"
-                {% if link.description %} title="{{ link.description }}"{% endif %}
-                {% if link.target %} target="{{ link.target }}"{% endif %}
-              >{{ link.title }}</a>
-            </li>
+            {%- if link.children -%}
+              <li class="masthead__menu-item has-dropdown">
+                <a href="#" class="dropdown-toggle" onclick="event.preventDefault();this.parentNode.classList.toggle('open');">{{ link.title }}</a>
+                <ul class="dropdown-menu">
+                  {%- for child in link.children -%}
+                    <li><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
+                  {%- endfor -%}
+                </ul>
+              </li>
+            {%- else -%}
+              <li class="masthead__menu-item">
+                <a
+                  href="{{ link.url | relative_url }}"
+                  {% if link.description %} title="{{ link.description }}"{% endif %}
+                  {% if link.target %} target="{{ link.target }}"{% endif %}
+                >{{ link.title }}</a>
+              </li>
+            {%- endif -%}
           {%- endfor -%}
         </ul>
         {% if site.search == true %}

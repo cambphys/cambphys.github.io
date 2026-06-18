@@ -2,6 +2,51 @@
 .courses-wrap { max-width: 960px; margin: 2.5rem auto; padding: 0 1.5rem; }
 .courses-wrap h1 { margin-top: 0; }
 
+/* Subtle "Report an error" link near the bottom of the landing page. */
+.report-link-row { margin-top: 3rem; text-align: right; }
+.report-link-row a {
+  font-size: .85rem; color: #888; text-decoration: none;
+  border-bottom: 1px dotted #bbb;
+}
+.report-link-row a:hover { color: #2f5d8c; border-bottom-color: #2f5d8c; }
+
+/* Report modal */
+.report-modal-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.45);
+  display: flex; align-items: center; justify-content: center; z-index: 1000;
+  padding: 1rem;
+}
+.report-modal-backdrop[hidden] { display: none; }
+.report-modal {
+  background: #fff; border-radius: 8px; padding: 1.75rem 1.75rem 1.5rem;
+  max-width: 540px; width: 100%; max-height: 90vh; overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+.report-modal h2 { margin: 0 0 .5rem; }
+.report-help { color: #555; font-size: .9rem; margin: 0 0 1rem; }
+.report-modal label {
+  display: block; font-weight: 600; font-size: .9rem;
+  margin: .85rem 0 .25rem;
+}
+.report-modal input, .report-modal select, .report-modal textarea {
+  width: 100%; padding: .5rem .6rem; border: 1px solid #ccc; border-radius: 4px;
+  font-size: 1rem; font-family: inherit; box-sizing: border-box;
+}
+.report-modal textarea { resize: vertical; }
+.report-actions { display: flex; gap: .5rem; justify-content: flex-end; margin-top: 1.25rem; }
+.report-btn {
+  padding: .5rem 1rem; border: 0; border-radius: 4px; font-size: .95rem;
+  cursor: pointer;
+}
+.report-btn.primary { background: #2f5d8c; color: #fff; }
+.report-btn.primary:hover:not(:disabled) { background: #244a70; }
+.report-btn.primary:disabled { opacity: .6; cursor: not-allowed; }
+.report-btn.secondary { background: #e5e7eb; color: #333; }
+.report-btn.secondary:hover { background: #d1d5db; }
+.report-msg { margin-top: .75rem; min-height: 1.2em; font-size: .9rem; }
+.report-msg.error { color: #b00; }
+.report-msg.ok { color: #060; }
+
 /* Landing page cards */
 .course-grid {
   display: grid; gap: 1.5rem; margin-top: 2rem;

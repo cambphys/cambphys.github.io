@@ -24,6 +24,42 @@ permalink: /courses/
       <p>Advanced problem-solving for the USA Physics Olympiad.</p>
     </a>
   </div>
+
+  <div class="report-link-row">
+    <a href="#" id="report-error-link">Report an error</a>
+  </div>
+</div>
+
+<div class="report-modal-backdrop" id="report-modal" hidden>
+  <div class="report-modal" role="dialog" aria-modal="true">
+    <h2>Report an error</h2>
+    <p class="report-help">Please be specific about where the issue is (course, lesson, problem number, etc.) so we can find and fix it quickly.</p>
+    <form id="report-form">
+      <label for="report-email">Your email</label>
+      <input id="report-email" type="email" required>
+
+      <label for="report-category">Category</label>
+      <select id="report-category" required>
+        <option value="">Select…</option>
+        <option>Problem error</option>
+        <option>Typo or unclear wording</option>
+        <option>Broken video/image/interactive</option>
+        <option>Accessibility issue</option>
+        <option>Progress/account issue</option>
+        <option>Other</option>
+      </select>
+
+      <label for="report-description">Description</label>
+      <textarea id="report-description" rows="8" required
+        placeholder="e.g. F=ma Lesson 3, Problem 7: solution says 12 m/s but should be 1.2 m/s"></textarea>
+
+      <div class="report-actions">
+        <button type="button" id="report-cancel" class="report-btn secondary">Cancel</button>
+        <button type="submit" id="report-submit" class="report-btn primary">Submit</button>
+      </div>
+      <div class="report-msg" id="report-msg"></div>
+    </form>
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -32,6 +68,45 @@ permalink: /courses/
 <script>
   (async function () {
     const user = await window.cambphysAuth.requireAuth();
-    if (user) document.getElementById("user-email").textContent = user.email;
+    if (user) {
+      document.getElementById("user-email").textContent = user.email;
+      document.getElementById("report-email").value = user.email;
+    }
   })();
+
+  // Report-an-error modal
+  const modal = document.getElementById("report-modal");
+  const openModal = (e) => { e.preventDefault(); modal.hidden = false; };
+  const closeModal = () => { modal.hidden = true;
+    document.getElementById("report-msg").textContent = ""; };
+  document.getElementById("report-error-link").addEventListener("click", openModal);
+  document.getElementById("report-cancel").addEventListener("click", closeModal);
+  modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
+
+  document.getElementById("report-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById("report-submit");
+    const msg = document.getElementById("report-msg");
+    btn.disabled = true; msg.className = "report-msg"; msg.textContent = "Submitting…";
+    const user = await window.cambphysAuth.currentUser();
+    const payload = {
+      user_id: user ? user.id : null,
+      email: document.getElementById("report-email").value.trim(),
+      category: document.getElementById("report-category").value,
+      description: document.getElementById("report-description").value.trim(),
+    };
+    const { error } = await window.cambphysSupabase
+      .from("error_reports").insert(payload);
+    if (error) {
+      msg.className = "report-msg error";
+      msg.textContent = "Could not submit: " + error.message;
+      btn.disabled = false;
+    } else {
+      msg.className = "report-msg ok";
+      msg.textContent = "Thanks — report submitted.";
+      document.getElementById("report-form").reset();
+      document.getElementById("report-email").value = user ? user.email : "";
+      setTimeout(() => { closeModal(); btn.disabled = false; }, 1200);
+    }
+  });
 </script>

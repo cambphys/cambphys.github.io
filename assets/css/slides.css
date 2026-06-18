@@ -24,10 +24,12 @@
   display: flex; flex-direction: column;
   position: relative; overflow: hidden;
 }
-.slides-stage:has(.slide-embed) { padding: 0; }
-.slide-embed { position: absolute; inset: 0; }
-.slide-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
-/* Cover Drive's toolbar buttons on the left/right edges of the PDF viewer. */
+.slides-stage:has(.slide-embed),
+.slides-stage:has(.video-embed) { padding: 0; }
+.slide-embed, .video-embed { position: absolute; inset: 0; }
+.slide-embed iframe, .video-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* Slideshow (PDF) embeds: cover both side toolbars with full-height bars. */
 .slide-embed::before,
 .slide-embed::after {
   content: "";
@@ -39,6 +41,40 @@
 }
 .slide-embed::before { left: 0; }
 .slide-embed::after  { right: 0; }
+
+/* Video embeds: small white square in the top-right with the logo on top,
+   so it blends in rather than looking like a black redaction. */
+.video-corner-cover {
+  position: absolute;
+  top: 0; right: 0;
+  width: 64px; height: 64px;
+  background: #fff;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 2;
+}
+.video-corner-cover img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+/* Per-user watermark — faint email tag in the top-right corner of slide/video
+   stages so leaked recordings are traceable. Subtle but legible. */
+.cp-watermark {
+  position: absolute;
+  top: 8px;
+  right: 76px;
+  font-size: 11px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: rgba(0, 0, 0, 0.28);
+  background: rgba(255, 255, 255, 0.35);
+  padding: 2px 6px;
+  border-radius: 3px;
+  pointer-events: none;
+  user-select: none;
+  z-index: 3;
+  letter-spacing: .02em;
+}
 
 /* Inline figure embedded into a text slide. */
 .slide-image {
