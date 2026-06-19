@@ -165,8 +165,40 @@
       extras.push({
         id: "fma-practice-exam",
         title: "Practice F=ma Exam",
-        url: "/practice-exam/",
-        hint: "Timed 75-minute mock exam (25 multiple-choice problems). Retake anytime.",
+        url: "/practice-exam/?exam=fma",
+        icon: "/pictures/fmaicon.png",
+        kind: "exam",
+      });
+    }
+    if (courseId === "ap") {
+      extras.push({
+        id: "ap-practice-mc",
+        title: "Practice AP1 Exam — Multiple Choice",
+        url: "/practice-exam/?exam=ap-mc",
+        icon: "/pictures/apicon.png",
+        kind: "exam",
+      });
+      extras.push({
+        id: "ap-practice-frq",
+        title: "Practice AP1 Exam — Free Response",
+        url: "/practice-exam/?exam=ap-frq",
+        icon: "/pictures/apicon.png",
+        kind: "exam",
+      });
+    }
+    if (courseId === "usapho") {
+      extras.push({
+        id: "usapho-practice-a",
+        title: "Mock USAPhO Exam — Part A",
+        url: "/practice-exam/?exam=usapho-a",
+        icon: "/pictures/usaphoicon.png",
+        kind: "exam",
+      });
+      extras.push({
+        id: "usapho-practice-b",
+        title: "Mock USAPhO Exam — Part B",
+        url: "/practice-exam/?exam=usapho-b",
+        icon: "/pictures/usaphoicon.png",
         kind: "exam",
       });
     }
@@ -212,7 +244,7 @@
       tile.href = locked ? "#" : ex.url;
       tile.className = "lesson lesson-extra" + (locked ? " locked" : "");
       tile.innerHTML = `
-        <img class="lesson-extra-icon" src="/pictures/fmaicon.png" alt="">
+        <img class="lesson-extra-icon" src="${ex.icon || '/pictures/fmaicon.png'}" alt="">
         <span class="lesson-title">${ex.title}</span>
         ${locked ? '<span class="lock-icon" aria-label="locked">🔒</span>' : ""}`;
       if (locked) {

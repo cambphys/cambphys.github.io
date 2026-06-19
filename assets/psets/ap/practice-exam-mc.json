@@ -1,0 +1,662 @@
+{
+  "title": "Mock AP Physics 1 Exam \u2014 Multiple Choice",
+  "course": "AP Course Series",
+  "total": 50,
+  "time_limit_seconds": 5400,
+  "problems": [
+    {
+      "num": 1,
+      "preamble": "",
+      "problem": "A body moving in the positive $x$ direction passes the origin at time $t = 0$. Between $t = 0$ and $t = 1$ second, the body has a constant speed of 24 meters per second. At $t = 1$ second, the body is given a constant acceleration of $6\\,\\mathrm{m/s^2}$ in the negative $x$ direction. The position $x$ of the body at $t = 11$ seconds is",
+      "choices": [
+        "$+99$ m",
+        "$+36$ m",
+        "$-36$ m",
+        "$-99$ m"
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 2,
+      "preamble": "",
+      "problem": "A diver initially moving horizontally with speed $v$ dives off the edge of a vertical cliff and lands in the water a distance $d$ from the base of the cliff. How far from the base of the cliff would the diver have landed if the diver initially had been moving horizontally with speed $2v$?",
+      "choices": [
+        "$d$",
+        "$d\\sqrt{2}$",
+        "$2d$",
+        "$4d$"
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 3,
+      "preamble": "",
+      "problem": "A projectile is thrown directly upward to a maximum height $h$. It is in the air for time $t$. If the projectile was thrown up to a height $3h$, what would be the amount of time for which the projectile is in the air?",
+      "choices": [
+        "$t$",
+        "$t\\sqrt{3}$",
+        "$3t$",
+        "$9t$"
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 4,
+      "preamble": "<p><strong>The following information applies to problems 4 and 5.</strong> At time $t = 0$, car X traveling with speed $v_0$ passes car Y which is just starting to move. Both cars then travel on two parallel lanes of the same straight road. The graphs of speed $v$ versus time $t$ for both cars are shown below.</p><div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/pic1.png\" alt=\"\" style=\"max-width:60%;height:auto;\"></div>",
+      "problem": "Which of the following is true at time $t = 20$ seconds?",
+      "choices": [
+        "Car Y is behind car X.",
+        "Car Y is passing car X.",
+        "Car Y is in front of car X.",
+        "Car X is accelerating faster than car Y."
+      ],
+      "correct": 0,
+      "solution": ""
+    },
+    {
+      "num": 5,
+      "preamble": "",
+      "problem": "From time $t = 0$ to time $t = 40$ seconds, the areas under both curves are equal. Therefore, which of the following is true at time $t = 40$ seconds?",
+      "choices": [
+        "Car Y is behind car X.",
+        "Car Y is passing car X.",
+        "Car Y is in front of car X.",
+        "Car X is accelerating faster than car Y."
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 6,
+      "preamble": "",
+      "problem": "The velocity of a projectile at launch has a horizontal component $v_h$ and a vertical component $v_v$. Air resistance is negligible. When the projectile is at the highest point of its trajectory, which of the following shows the vertical and horizontal components of its velocity and the vertical component of its acceleration?",
+      "choices": [
+        "Vert vel: $v_v$, Hor vel: $v_h$, vert acc: $0$",
+        "Vert vel: $0$, Hor vel: $v_h$, vert acc: $0$",
+        "Vert vel: $0$, Hor vel: $0$, vert acc: $g$",
+        "Vert vel: $0$, Hor vel: $v_h$, vert acc: $g$"
+      ],
+      "correct": 3,
+      "solution": ""
+    },
+    {
+      "num": 7,
+      "preamble": "",
+      "problem": "A target T lies flat on the ground 3 m from the side of a building that is 10 m tall, as shown below. A student rolls a ball off the horizontal roof of the building in the direction of the target. Air resistance is negligible. The horizontal speed with which the ball must leave the roof if it is to strike the target is most nearly<div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/Screenshot%202024-05-13%20at%203.30.54%20AM.png\" alt=\"\" style=\"max-width:30%;height:auto;\"></div>",
+      "choices": [
+        "$3/10$ m/s",
+        "$\\sqrt{2}$ m/s",
+        "$\\dfrac{3}{\\sqrt{2}}$ m/s",
+        "$3$ m/s"
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 8,
+      "preamble": "",
+      "problem": "An object is thrown with a fixed initial speed $v_0$ at various angles $\\alpha$ relative to the horizon. At some constant height $h$ above the launch point the speed $v$ of the object is measured as a function of the initial angle $\\alpha$. Which of the following best describes the dependence of $v$ on $\\alpha$? (Assume that the height $h$ is achieved, and assume that there is no air resistance.)",
+      "choices": [
+        "$v$ will increase monotonically with $\\alpha$.",
+        "$v$ will increase to some critical value $v_{\\text{max}}$ and then decrease.",
+        "$v$ will remain constant, independent of $\\alpha$.",
+        "$v$ will decrease to some critical value $v_{\\text{min}}$ and then increase."
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 9,
+      "preamble": "",
+      "problem": "A ball of mass $m$ is suspended from a ceiling via two strings of unequal length, with the length of string 1 longer than string 2. The magnitudes of the tensions $T_1$ and $T_2$ in the strings must satisfy which of the following relations?",
+      "choices": [
+        "$T_1 = T_2$",
+        "$T_1 > T_2$",
+        "$T_1 < T_2$",
+        "$T_1 + T_2 = mg$"
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 10,
+      "preamble": "",
+      "problem": "A block of weight $W$ is pulled along a horizontal surface at constant speed $v$ by a force $F$, which acts at an angle of $\\theta$ with the horizontal, as shown below. The normal force exerted on the block by the surface has magnitude<div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/asdf.png\" alt=\"\" style=\"max-width:45%;height:auto;\"></div>",
+      "choices": [
+        "greater than $W$",
+        "greater than zero but less than $W$",
+        "equal to $W$",
+        "zero"
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 11,
+      "preamble": "",
+      "problem": "A uniform rope of weight 50 N hangs from a hook. A box of weight 100 N hangs from the rope. What is the tension in the rope?",
+      "choices": [
+        "75 N throughout the rope",
+        "100 N throughout the rope",
+        "150 N throughout the rope",
+        "It varies from 100 N at the bottom of the rope to 150 N at the top."
+      ],
+      "correct": 3,
+      "solution": ""
+    },
+    {
+      "num": 12,
+      "preamble": "",
+      "problem": "When an object of weight $W$ is suspended from the center of a massless string as shown above, the tension at any point in the string is<div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/two_split.png\" alt=\"\" style=\"max-width:25%;height:auto;\"></div>",
+      "choices": [
+        "$2W\\cos\\theta$",
+        "$\\tfrac{1}{2}W\\cos\\theta$",
+        "$W/(2\\cos\\theta)$",
+        "$W/\\cos\\theta$"
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 13,
+      "preamble": "",
+      "problem": "<strong>Multiple correct:</strong> Three forces act on an object. If the object is moving to the right in translational equilibrium, which of the following must be true? Select two answers.",
+      "choices": [
+        "The vector sum of the three forces must equal zero.",
+        "All three forces must be parallel.",
+        "The magnitudes of the three forces must be equal.",
+        "The object must be moving at a constant speed."
+      ],
+      "correct": [
+        0,
+        3
+      ],
+      "multi_correct": true,
+      "solution": ""
+    },
+    {
+      "num": 14,
+      "preamble": "",
+      "problem": "For which of the following motions of an object must the acceleration always be zero?",
+      "choices": [
+        "Any motion in a straight line",
+        "Simple harmonic motion",
+        "Any motion at constant speed",
+        "Any single object in motion with constant momentum"
+      ],
+      "correct": 3,
+      "solution": ""
+    },
+    {
+      "num": 15,
+      "preamble": "<p><strong>The following information applies to problems 15 and 16.</strong> A horizontal, uniform board of weight 125 N and length 4 m is supported by vertical chains at each end. A person weighing 500 N is hanging from the board. The tension in the right chain is 250 N.</p>",
+      "problem": "What is the tension in the left chain?",
+      "choices": [
+        "125 N",
+        "250 N",
+        "375 N",
+        "625 N"
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 16,
+      "preamble": "",
+      "problem": "Which of the following describes where the person is hanging?",
+      "choices": [
+        "Between the chains, but closer to the left-hand chain",
+        "Between the chains, but closer to the right-hand chain",
+        "Right in the middle of the board",
+        "Directly below one of the chains"
+      ],
+      "correct": 0,
+      "solution": ""
+    },
+    {
+      "num": 17,
+      "preamble": "",
+      "problem": "Two people are pulling on the ends of a rope. Each person pulls with a force of 100 N. The tension in the rope is:",
+      "choices": [
+        "0 N",
+        "50 N",
+        "100 N",
+        "200 N"
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 18,
+      "preamble": "",
+      "problem": "Two identical blocks of weight $W$ are placed one on top of the other as shown in the diagram above. The upper block is tied to the wall. The lower block is pulled to the right with a force $F$. The coefficient of static friction between all surfaces in contact is $\\mu$. What is the largest force $F$ that can be exerted before the lower block starts to slip?<div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/stacked.png\" alt=\"\" style=\"max-width:25%;height:auto;\"></div>",
+      "choices": [
+        "$\\mu W$",
+        "$2\\mu W$",
+        "$3\\mu W$",
+        "$\\dfrac{3\\mu W}{2}$"
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 19,
+      "preamble": "",
+      "problem": "A child has a toy tied to the end of a string and whirls the toy at constant speed in a horizontal circular path of radius $R$. The toy completes each revolution of its motion in a time period $T$. What is the magnitude of the acceleration of the toy?",
+      "choices": [
+        "Zero",
+        "$\\dfrac{4\\pi^2 R}{T^2}$",
+        "$\\dfrac{\\pi R}{T^2}$",
+        "$g$"
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 20,
+      "preamble": "",
+      "problem": "An object shown in the accompanying figure moves in uniform circular motion. Which arrow best depicts the net force acting on the object at the instant shown?<div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/circlhge.png\" alt=\"\" style=\"max-width:35%;height:auto;\"></div>",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 21,
+      "preamble": "",
+      "problem": "A 5-meter uniform plank of mass 100 kilograms rests on the top of a building with 2 meters extended over the edge as shown. How far can a 50-kilogram person venture past the edge of the building on the plank before the plank just begins to tip?<div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/agaspodfj.png\" alt=\"\" style=\"max-width:45%;height:auto;\"></div>",
+      "choices": [
+        "0.5 m",
+        "1 m",
+        "1.5 m",
+        "2 m"
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 22,
+      "preamble": "",
+      "problem": "A uniform meterstick of mass 0.20 kg is pivoted at the 40 cm mark. Where should one hang a mass of 0.50 kg to balance the stick?",
+      "choices": [
+        "16 cm",
+        "36 cm",
+        "44 cm",
+        "46 cm"
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 23,
+      "preamble": "",
+      "problem": "For the wheel-and-axle system shown, which of the following expresses the condition required for the system to be in static equilibrium?<div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/adfoqwe.png\" alt=\"\" style=\"max-width:25%;height:auto;\"></div>",
+      "choices": [
+        "$m_1 = m_2$",
+        "$am_1 = bm_2$",
+        "$am_2 = bm_1$",
+        "$a^2 m_1 = b^2 m_2$"
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 24,
+      "preamble": "",
+      "problem": "A wheel of radius $R$ and negligible mass is mounted on a horizontal frictionless axle so that the wheel is in a vertical plane. Three small objects having masses $m$, $M$, and $2M$, respectively, are mounted on the rim of the wheel, as shown. If the system is in static equilibrium, what is the value of $m$ in terms of $M$?<div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/wheelie.png\" alt=\"\" style=\"max-width:25%;height:auto;\"></div>",
+      "choices": [
+        "$M/2$",
+        "$M$",
+        "$3M/2$",
+        "$5M/2$"
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 25,
+      "preamble": "",
+      "problem": "A square piece of plywood on a horizontal tabletop is subjected to the two horizontal forces shown. Where should a third force of magnitude 5 newtons be applied to put the piece of plywood into equilibrium?<div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/aoeijqoi.png\" alt=\"\" style=\"max-width:15%;height:auto;\"></div><div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/asfojqwe.png\" alt=\"\" style=\"max-width:75%;height:auto;\"></div>",
+      "choices": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "correct": 0,
+      "solution": ""
+    },
+    {
+      "num": 26,
+      "preamble": "",
+      "problem": "In which of the following diagrams is the torque about point O equal in magnitude to the torque about point X in the diagram? (All forces lie in the plane of the paper.)<div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/asdfqeqwege.png\" alt=\"\" style=\"max-width:25%;height:auto;\"></div><div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/32qwkel.png\" alt=\"\" style=\"max-width:50%;height:auto;\"></div>",
+      "choices": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 27,
+      "preamble": "",
+      "problem": "A mass $m$ attached to a horizontal massless spring with spring constant $k$, is set into simple harmonic motion. Its maximum displacement from its equilibrium position is $A$. What is the mass's speed as it passes through its equilibrium position?<div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/spring1.png\" alt=\"\" style=\"max-width:25%;height:auto;\"></div>",
+      "choices": [
+        "0",
+        "$A\\sqrt{\\dfrac{k}{m}}$",
+        "$A\\sqrt{\\dfrac{m}{k}}$",
+        "$\\dfrac{1}{A}\\sqrt{\\dfrac{k}{m}}$"
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 28,
+      "preamble": "",
+      "problem": "A force $F$ at an angle $\\theta$ above the horizontal is used to pull a heavy suitcase of weight $mg$ a distance $d$ along a level floor at constant velocity. The coefficient of friction between the floor and the suitcase is $\\mu$. The work done by the frictional force is:",
+      "choices": [
+        "$-Fd\\cos\\theta$",
+        "$-\\mu Fd\\cos\\theta$",
+        "$-\\mu mgd$",
+        "$-\\mu mgd\\cos\\theta$"
+      ],
+      "correct": 0,
+      "solution": ""
+    },
+    {
+      "num": 29,
+      "preamble": "",
+      "problem": "A 2 kg ball is attached to a 0.80 m string and whirled in a horizontal circle at a constant speed of 6 m/s. The work done on the ball during each revolution is:",
+      "choices": [
+        "90 J",
+        "72 J",
+        "16 J",
+        "zero"
+      ],
+      "correct": 3,
+      "solution": ""
+    },
+    {
+      "num": 30,
+      "preamble": "",
+      "problem": "A pendulum bob of mass $m$ on a cord of length $L$ is pulled sideways until the cord makes an angle $\\theta$ with the vertical as shown in the figure to the right. The change in potential energy of the bob during the displacement is:<div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/pend.png\" alt=\"\" style=\"max-width:25%;height:auto;\"></div>",
+      "choices": [
+        "$mgL(1-\\cos\\theta)$",
+        "$mgL(1-\\sin\\theta)$",
+        "$mgL\\sin\\theta$",
+        "$mgL\\cos\\theta$"
+      ],
+      "correct": 0,
+      "solution": ""
+    },
+    {
+      "num": 31,
+      "preamble": "",
+      "problem": "A ball is thrown vertically upwards with a velocity $v$ and an initial kinetic energy $E_k$. When half way to the top of its flight, it has a velocity and kinetic energy respectively of",
+      "choices": [
+        "$\\dfrac{v}{2} : \\dfrac{E_k}{2}$",
+        "$\\dfrac{v}{\\sqrt{2}} : \\dfrac{E_k}{2}$",
+        "$\\dfrac{v}{4} : \\dfrac{E_k}{2}$",
+        "$\\dfrac{v}{2} : \\dfrac{E_k}{\\sqrt{2}}$"
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 32,
+      "preamble": "",
+      "problem": "A rock is dropped from the top of a tall tower. Half a second later another rock, twice as massive as the first, is dropped. Ignoring air resistance,",
+      "choices": [
+        "The distance between the rocks increases while both are falling.",
+        "The acceleration is greater for the more massive rock.",
+        "They strike the ground more than half a second apart.",
+        "They strike the ground with the same kinetic energy."
+      ],
+      "correct": 0,
+      "solution": ""
+    },
+    {
+      "num": 33,
+      "preamble": "",
+      "problem": "Which of the following is true for a system consisting of a mass oscillating on the end of an ideal spring?",
+      "choices": [
+        "The kinetic and potential energies are equal to each other at all times.",
+        "The maximum potential energy is achieved when the mass passes through its equilibrium position.",
+        "The maximum kinetic energy and maximum potential energy are equal, but occur at different times.",
+        "The maximum kinetic energy occurs at maximum displacement of the mass from its equilibrium position."
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 34,
+      "preamble": "",
+      "problem": "A block of mass $M$ on a horizontal surface is connected to the end of a massless spring of spring constant $k$. The block is pulled a distance $x$ from equilibrium and when released from rest, the block moves toward equilibrium. What coefficient of kinetic friction between the surface and the block would allow the block to return to equilibrium and stop?",
+      "choices": [
+        "$\\dfrac{kx^2}{2Mg}$",
+        "$\\dfrac{kx}{Mg}$",
+        "$\\dfrac{kx}{2Mg}$",
+        "$\\dfrac{Mg}{2kx}$"
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 35,
+      "preamble": "",
+      "problem": "An object is dropped from rest from a certain height. Air resistance is negligible. After falling a distance $d$, the object's kinetic energy is proportional to which of the following?",
+      "choices": [
+        "$\\dfrac{1}{d^2}$",
+        "$\\dfrac{1}{d}$",
+        "$\\sqrt{d}$",
+        "$d$"
+      ],
+      "correct": 3,
+      "solution": ""
+    },
+    {
+      "num": 36,
+      "preamble": "",
+      "problem": "An object is projected vertically upward from ground level. It rises to a maximum height $H$. If air resistance is negligible, which of the following must be true for the object when it is at a height $H/2$?",
+      "choices": [
+        "Its speed is half of its initial speed.",
+        "Its kinetic energy is half of its initial kinetic energy.",
+        "Its potential energy is half of its initial potential energy.",
+        "Its total mechanical energy is half of its initial value."
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 37,
+      "preamble": "",
+      "problem": "A car of mass $m$, traveling at speed $v$, stops in time $t$ when maximum braking force is applied. Assuming the braking force is independent of mass, what time would be required to stop a car of mass $2m$ traveling at speed $v$?",
+      "choices": [
+        "$\\tfrac{1}{2}t$",
+        "$t$",
+        "$\\sqrt{2}\\,t$",
+        "$2t$"
+      ],
+      "correct": 3,
+      "solution": ""
+    },
+    {
+      "num": 38,
+      "preamble": "",
+      "problem": "A block of mass $M$ is initially at rest on a frictionless floor. The block, attached to a massless spring with spring constant $k$, is initially at its equilibrium position. An arrow with mass $m$ and velocity $v$ is shot into the block. The arrow sticks in the block. What is the maximum compression of the spring?",
+      "choices": [
+        "$v\\sqrt{\\dfrac{m}{k}}$",
+        "$v\\sqrt{\\dfrac{m+M}{k}}$",
+        "$\\dfrac{(m+M)v}{\\sqrt{mk}}$",
+        "$\\dfrac{mv}{\\sqrt{(m+M)k}}$"
+      ],
+      "correct": 3,
+      "solution": ""
+    },
+    {
+      "num": 39,
+      "preamble": "",
+      "problem": "Two objects, P and Q, have the same momentum. Q can have more kinetic energy than P if it has:",
+      "choices": [
+        "More mass than P",
+        "The same mass as P",
+        "More speed than P",
+        "The same speed as P"
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 40,
+      "preamble": "",
+      "problem": "A spring is compressed between two objects with unequal masses, $m$ and $M$, and held together. The objects are initially at rest on a horizontal frictionless surface. When released, which of the following is true?",
+      "choices": [
+        "The total final kinetic energy is zero.",
+        "The two objects have equal kinetic energy.",
+        "The speed of one object is equal to the speed of the other.",
+        "The total final momentum of the two objects is zero."
+      ],
+      "correct": 3,
+      "solution": ""
+    },
+    {
+      "num": 41,
+      "preamble": "",
+      "problem": "Two football players with mass 75 kg and 100 kg run directly toward each other with speeds of 6 m/s and 8 m/s respectively. If they grab each other as they collide, the combined speed of the two players just after the collision would be:",
+      "choices": [
+        "2 m/s",
+        "3.4 m/s",
+        "4.6 m/s",
+        "7.1 m/s"
+      ],
+      "correct": 0,
+      "solution": ""
+    },
+    {
+      "num": 42,
+      "preamble": "",
+      "problem": "A uniform stick has length $L$. The moment of inertia about the center of the stick is $I_0$. A particle of mass $M$ is attached to one end of the stick. The moment of inertia of the combined system about the center of the stick is",
+      "choices": [
+        "$I_0 + \\tfrac{1}{4}ML^2$",
+        "$I_0 - \\tfrac{1}{2}ML^2$",
+        "$I_0 + \\tfrac{3}{4}ML^2$",
+        "$I_0 + ML^2$"
+      ],
+      "correct": 0,
+      "solution": ""
+    },
+    {
+      "num": 43,
+      "preamble": "<p><strong>The following information applies to problems 43 and 44.</strong> A uniform rod of length $L$ is initially held horizontal and pivoted at one end on a wall.</p>",
+      "problem": "If the rod is dropped from rest, what is its angular acceleration?",
+      "choices": [
+        "$g/L$",
+        "$3g/2L$",
+        "$3g/L$",
+        "$6g/L$"
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 44,
+      "preamble": "",
+      "problem": "What is the linear acceleration of the other end of the rod?",
+      "choices": [
+        "$g$",
+        "$3g/2$",
+        "$3g$",
+        "$6g$"
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 45,
+      "preamble": "",
+      "problem": "The acceleration due to gravity on a planet is 5 times that of another planet, where the planets have the same radius. How many times greater is the mass of the heavier planet than the smaller one?",
+      "choices": [
+        "$\\sqrt{5}$",
+        "$5$",
+        "$10$",
+        "$25$"
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 46,
+      "preamble": "",
+      "problem": "A satellite moves in a stable circular orbit with speed $v_0$ at a distance $R$ from the center of a planet. For this satellite to move in a stable circular orbit a distance $2R$ from the center of the planet, the speed of the satellite must be",
+      "choices": [
+        "$\\dfrac{v_0}{2}$",
+        "$\\dfrac{v_0}{\\sqrt{2}}$",
+        "$\\sqrt{2}\\,v_0$",
+        "$2v_0$"
+      ],
+      "correct": 1,
+      "solution": ""
+    },
+    {
+      "num": 47,
+      "preamble": "",
+      "problem": "If $F_1$ is the magnitude of the force exerted by the Earth on a satellite in orbit about the Earth and $F_2$ is the magnitude of the force exerted by the satellite on the Earth, then which of the following is true?",
+      "choices": [
+        "$F_1$ is much greater than $F_2$.",
+        "$F_1$ is slightly greater than $F_2$.",
+        "$F_1$ is equal to $F_2$.",
+        "$F_2$ is slightly greater than $F_1$."
+      ],
+      "correct": 2,
+      "solution": ""
+    },
+    {
+      "num": 48,
+      "preamble": "<p><strong>The following information applies to problems 48 and 49.</strong> Two stars orbit their common center of mass as shown in the diagram below. The masses of the two stars are $3M$ and $M$. The distance between the stars is $d$.</p><div style=\"text-align:center\"><img src=\"/assets/psets/ap/practice-exam/asdifu.png\" alt=\"\" style=\"max-width:30%;height:auto;\"></div>",
+      "problem": "What is the value of the gravitational potential energy of the two-star system?",
+      "choices": [
+        "$-\\dfrac{GM^2}{d}$",
+        "$\\dfrac{3GM^2}{d}$",
+        "$-\\dfrac{GM^2}{d^2}$",
+        "$-\\dfrac{3GM^2}{d}$"
+      ],
+      "correct": 3,
+      "solution": ""
+    },
+    {
+      "num": 49,
+      "preamble": "",
+      "problem": "Determine the period of orbit for the star of mass $3M$.",
+      "choices": [
+        "$\\pi\\sqrt{\\dfrac{d^3}{GM}}$",
+        "$\\pi\\sqrt{\\dfrac{d^3}{3GM}}$",
+        "$2\\pi\\sqrt{\\dfrac{d^3}{GM}}$",
+        "$\\dfrac{\\pi}{4}\\sqrt{\\dfrac{d^3}{GM}}$"
+      ],
+      "correct": 0,
+      "solution": ""
+    },
+    {
+      "num": 50,
+      "preamble": "",
+      "problem": "A mass $m$ is attached to a spring with a spring constant $k$. If the mass is set into simple harmonic motion by a displacement $d$ from its equilibrium position, what would be the speed, $v$, of the mass when it returns to the equilibrium position?",
+      "choices": [
+        "$v = \\sqrt{\\dfrac{md}{k}}$",
+        "$v = \\sqrt{\\dfrac{kd}{m}}$",
+        "$v = \\sqrt{\\dfrac{kd}{mg}}$",
+        "$v = d\\sqrt{\\dfrac{k}{m}}$"
+      ],
+      "correct": 3,
+      "solution": ""
+    }
+  ]
+}

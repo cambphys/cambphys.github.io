@@ -237,6 +237,8 @@ table {
       padding-left: 200px; /* Padding around the container */
       padding-right: 200px;
     }
+    .table-container { display: flex; justify-content: center; }
+    .table-container > table { max-width: 760px; }
 
     table {
       width: 100%; /* Table takes full width of its container */
@@ -257,11 +259,9 @@ table {
     .col-1 {
       width: 15%; /* 1 out of 10 units */
     }
-    .col-2 {
-      width: 40%; /* 4 out of 10 units */
+    .col-2 { width: 45%; /* 4 out of 10 units */
     }
-    .col-3 {
-      width: 45%; /* 5 out of 10 units */
+    .col-3 { width: 55%; /* 5 out of 10 units */
     }
     @media (max-width: 768px) {
       .container {
@@ -349,13 +349,11 @@ table {
         <h2>
             AP Course Series
           </h2>
-          <p>Our beginner level course prepares students to earn 5s on the AP Physics 1 exam and serves as preparation for our F=ma Course Series. One session per year is offered in the
-            <span style="font-weight: bold">Spring</span>.</p>
+          <p>Our beginner level course prepares students to earn 5s on the AP Physics 1 exam and serves as preparation for our F=ma Course Series.</p>
         </div>
     </div>
     <div class="button-row">
-      <h3 style="padding-right: 10px">Spring 2025 registration:</h3>
-      <div class="enroll-now-button">Closed</div>
+      
     </div>
   
     <div class="full-width-divider" style="margin-top: 50px;"></div>
@@ -371,7 +369,7 @@ table {
           <img src="{{ site.baseurl }}/pictures/clock.png" alt="Icon 2" class="box-icon">
         </div>
         </div>
-        <p class="box-description">16 weeks (1/12/25 - 4/27/25)<br>Sundays, 2:00 - 3:00 pm EST<br>Lectures are recorded</p>
+        <p class="box-description">16 weeks of 1 hour lecture videos</p>
       </div>
 
         <div class="box">
@@ -394,130 +392,79 @@ table {
     
       </div>
 
-      <h2 class="centered-heading">
-        Learn More
-      </h2>
-  
-      <div class="box-row">
-        <div class="box">
-          <div class="box-header" style="padding-bottom: 10px">
-            <div class="box-icon">
-              <img src="{{ site.baseurl }}/pictures/check.png" alt="Icon 2">
-            </div>
-          </div>
-          <a href="https://drive.google.com/file/d/1dEm0LwBteGg-zyIX9XkzEEOgaqKtErhL/view?usp=sharing" class="more-info-button" target="_blank"><span>Spring 2025 Syllabus</span></a>
-        </div>
-  
-          <div class="box">
-            <div class="box-header"  style="padding-bottom: 10px">
-              <div class="box-icon">
-                <img src="{{ site.baseurl }}/pictures/pencil.png" alt="Icon 2">
-              </div>
-              </div>
-              <a href="https://drive.google.com/file/d/1Wm4Gn2tDP59dJKW5EmKXkcKZmHiwoBAW/view?usp=sharing" class="more-info-button" target="_blank"><span>Sample Homework</span></a>
-          </div>
-  
-          <div class="box">
-            <div class="box-header"  style="padding-bottom: 10px">
-              <div class="box-icon">
-                <img src="{{ site.baseurl }}/pictures/vid.png" alt="Icon 2">
-              </div>
-              </div>
-              <a href="https://youtu.be/O9RsuvDZbJk" class="more-info-button" target="_blank"><span>Sample Lecture</span></a>
-          </div>
-      
-        </div>
-
         <h2 class="centered-heading" style="padding-top: 40px">
-          Course Schedule Spring 2025
+          Course Contents
         </h2>  
         <div class="table-container">
     <table>
       <thead>
         <tr>
-          <th class="col-1">Lecture Date</th>
           <th class="col-2">Subject</th>
           <th class="col-3">Description</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="col-1">1/12</td>
           <td class="col-2">1D Kinematics</td>
           <td class="col-3">Distance, velocity, acceleration</td>
         </tr>
         <tr>
-          <td class="col-1">1/19</td>
           <td class="col-2">2D Kinematics</td>
           <td class="col-3">Projectile motion</td>
         </tr>
         <tr>
-          <td class="col-1">1/26</td>
           <td class="col-2">Newton's Laws</td>
           <td class="col-3">Basic forces, free body diagrams</td>
         </tr>
         <tr>
-          <td class="col-1">2/2</td>
           <td class="col-2">Applications of Newton's Laws</td>
           <td class="col-3">Friction, tension, complex systems</td>
         </tr>
         <tr>
-          <td class="col-1">2/9</td>
           <td class="col-2">Circular Motion</td>
           <td class="col-3">Centripetal acceleration and force</td>
         </tr>
         <tr>
-          <td class="col-1">2/16</td>
           <td class="col-2">Graviation</td>
           <td class="col-3">Weight, vector fields, Newton's law</td>
         </tr>
         <tr>
-          <td class="col-1">2/23</td>
           <td class="col-2">Work and Kinetic Energy</td>
           <td class="col-3">Work-energy theorem and derivations</td>
         </tr>
         <tr>
-          <td class="col-1">3/2</td>
           <td class="col-2">Conservation of Energy</td>
           <td class="col-3">Solving systems with potential energy</td>
         </tr>
         <tr>
-          <td class="col-1">3/9</td>
           <td class="col-2">Impulse and Momentum</td>
           <td class="col-3">Definitions, Newton's second law</td>
         </tr>
         <tr>
-          <td class="col-1">3/16</td>
           <td class="col-2">Collisions</td>
           <td class="col-3">Elastic and inelastic collisions, multibody problems</td>
         </tr>
         <tr>
-          <td class="col-1">3/23</td>
           <td class="col-2">Simple Harmonic Motion</td>
           <td class="col-3">Spring systems and pendulums</td>
         </tr>
         <tr>
-          <td class="col-1">3/30</td>
           <td class="col-2">Rotational Kinematics</td>
           <td class="col-3">Moment of inertia, derivations</td>
         </tr>
         <tr>
-          <td class="col-1">4/6</td>
           <td class="col-2">Rotational Dynamics</td>
           <td class="col-3">Torque, conservation of energy</td>
         </tr>
         <tr>
-          <td class="col-1">4/13</td>
           <td class="col-2">Angular Momentum</td>
           <td class="col-3">Vector form of torque, collisions</td>
         </tr>
         <tr>
-          <td class="col-1">4/20</td>
           <td class="col-2">Fluids</td>
           <td class="col-3">Pressure, buoyancy, fluid dynamics</td>
         </tr>
         <tr>
-          <td class="col-1">4/27</td>
           <td class="col-2">Review</td>
           <td class="col-3">Includes practice AP Physics 1 exam</td>
         </tr>

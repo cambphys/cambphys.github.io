@@ -242,6 +242,8 @@ permalink: /fma/
         padding-left: 200px; /* Padding around the container */
         padding-right: 200px;
       }
+    .table-container { display: flex; justify-content: center; }
+    .table-container > table { max-width: 760px; }
 
       table {
         width: 100%; /* Table takes full width of its container */
@@ -263,11 +265,9 @@ permalink: /fma/
       .col-1 {
         width: 15%; /* 1 out of 10 units */
       }
-      .col-2 {
-        width: 40%; /* 4 out of 10 units */
+      .col-2 { width: 45%; /* 4 out of 10 units */
       }
-      .col-3 {
-        width: 45%; /* 5 out of 10 units */
+      .col-3 { width: 55%; /* 5 out of 10 units */
       }
       @media (max-width: 768px) {
         .container {
@@ -347,15 +347,11 @@ permalink: /fma/
           <p>
             Our rigorous F=ma preparation course helps students solidify their
             foundations while simultaneously challenging them with USAPhO-level
-            mechanics problems. One session per year is offered in the
-            <span style="font-weight: bold">Fall</span>.
+            mechanics problems.
           </p>
         </div>
       </div>
-      <div class="button-row">
-        <h3 style="padding-right: 10px;">Email cambphys@gmail.com for late registration</h3> 
-       <!--<div class="enroll-now-button">Closed</div>-->
-      </div>
+      
       <div class="full-width-divider" style="margin-top: 50px"></div>
 
       <h2 class="centered-heading">Course Information</h2>
@@ -372,8 +368,7 @@ permalink: /fma/
             </div>
           </div>
           <p class="box-description">
-            16 weeks (09/14/25 - 01/18/26)<br />Sundays, 2:00 - 3:00 pm EST<br />Lectures
-            are recorded
+            16 weeks of 1 hour lecture videos
           </p>
         </div>
 
@@ -406,52 +401,6 @@ permalink: /fma/
         </div>
       </div>
 
-      <h2 class="centered-heading">Learn More</h2>
-
-      <div class="box-row">
-        <div class="box">
-          <div class="box-header" style="padding-bottom: 10px">
-            <div class="box-icon">
-              <img src="{{ site.baseurl }}/pictures/check.png" alt="Icon 2" />
-            </div>
-          </div>
-          <a
-            href="https://drive.google.com/file/d/1W7SWKy9VCQzIJHuCS5eP5WQQE3KsHvGL/view?usp=sharing"
-            class="more-info-button"
-            target="_blank"
-            ><span>Fall 2025 Syllabus</span></a
-          >
-        </div>
-
-        <div class="box">
-          <div class="box-header" style="padding-bottom: 10px">
-            <div class="box-icon">
-              <img src="{{ site.baseurl }}/pictures/pencil.png" alt="Icon 2" />
-            </div>
-          </div>
-          <a
-            href="https://drive.google.com/file/d/1jmvxGPvE-MQvjXd_SOUDwUPvY4quzH9P/view?usp=sharing"
-            class="more-info-button"
-            target="_blank"
-            ><span>Sample Homework</span></a
-          >
-        </div>
-
-        <div class="box">
-          <div class="box-header" style="padding-bottom: 10px">
-            <div class="box-icon">
-              <img src="{{ site.baseurl }}/pictures/vid.png" alt="Icon 2" />
-            </div>
-          </div>
-          <a
-            href="https://youtu.be/KN_l71_JuKc?si=O3GVYqKTOZY1E6MK"
-            class="more-info-button"
-            target="_blank"
-            ><span>Sample Lecture</span></a
-          >
-        </div>
-      </div>
-
       <h2 class="centered-heading" style="padding-top: 40px">
         Course Schedule Fall 2025
       </h2>
@@ -459,91 +408,74 @@ permalink: /fma/
         <table>
           <thead>
             <tr>
-              <th class="col-1">Lecture Date</th>
               <th class="col-2">Subject</th>
               <th class="col-3">Description</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="col-1">09/14/25</td>
               <td class="col-2">Problem Solving</td>
               <td class="col-3">Dimensional and uncertainty analysis</td>
             </tr>
             <tr>
-              <td class="col-1">09/21/25</td>
               <td class="col-2">Kinematics I</td>
               <td class="col-3">1D and 2D motion</td>
             </tr>
             <tr>
-              <td class="col-1">09/28/25</td>
               <td class="col-2">Kinematics II</td>
               <td class="col-3">Projectiles, constraints, apparatuses</td>
             </tr>
             <tr>
-              <td class="col-1">10/05/25</td>
               <td class="col-2">Forces I</td>
               <td class="col-3">Newton's laws and circular motion</td>
             </tr>
             <tr>
-              <td class="col-1">10/12/25</td>
               <td class="col-2">Forces II</td>
               <td class="col-3">Constraints, pulleys, apparatuses</td>
             </tr>
             <tr>
-              <td class="col-1">10/19/25</td>
               <td class="col-2">Energy</td>
               <td class="col-3">Work–energy theorem, conservation laws</td>
             </tr>
             <tr>
-              <td class="col-1">10/26/25</td>
               <td class="col-2">Momentum</td>
               <td class="col-3">Conservation laws, collisions</td>
             </tr>
             <tr>
-              <td class="col-1">11/02/25</td>
               <td class="col-2">Rotation I</td>
               <td class="col-3">Kinematics and moment of inertia</td>
             </tr>
             <tr>
-              <td class="col-1">11/09/25</td>
               <td class="col-2">Rotation II</td>
               <td class="col-3">Rotational energy and momentum</td>
             </tr>
             <tr>
-              <td class="col-1">11/16/25</td>
               <td class="col-2">Complex Systems</td>
               <td class="col-3">Olympiad tricks and rotational apparatuses</td>
             </tr>
             <tr>
-              <td class="col-1">11/23/25</td>
               <td class="col-2">Statics</td>
               <td class="col-3">Conditions of equilibrium</td>
             </tr>
             <!-- Break: no session on 11/30/25 (Thanksgiving week) -->
             <tr>
-              <td class="col-1">12/07/25</td>
               <td class="col-2">Fluids</td>
               <td class="col-3">Static and dynamic fluids</td>
             </tr>
             <tr>
-              <td class="col-1">12/14/25</td>
               <td class="col-2">Gravitation</td>
               <td class="col-3">Newton's law and Kepler's laws</td>
             </tr>
             <!-- Break: no sessions on 12/21/25 & 12/28/25 (holiday) -->
             <tr>
-              <td class="col-1">01/04/26</td>
               <td class="col-2">Fictitious Forces</td>
               <td class="col-3">Centrifugal, Coriolis, azimuthal forces</td>
             </tr>
             <tr>
-              <td class="col-1">01/11/26</td>
               <td class="col-2">Oscillations</td>
               <td class="col-3">Simple harmonic and coupled systems</td>
             </tr>
             <tr>
-              <td class="col-1">01/18/26</td>
               <td class="col-2">Review</td>
               <td class="col-3">Includes practice F=ma exam</td>
             </tr>

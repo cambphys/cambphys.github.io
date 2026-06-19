@@ -240,6 +240,8 @@ table {
       padding-left: 200px; /* Padding around the container */
       padding-right: 200px;
     }
+    .table-container { display: flex; justify-content: center; }
+    .table-container > table { max-width: 760px; }
 
     table {
       width: 100%; /* Table takes full width of its container */
@@ -260,11 +262,9 @@ table {
     .col-1 {
       width: 15%; /* 1 out of 10 units */
     }
-    .col-2 {
-      width: 40%; /* 4 out of 10 units */
+    .col-2 { width: 45%; /* 4 out of 10 units */
     }
-    .col-3 {
-      width: 45%; /* 5 out of 10 units */
+    .col-3 { width: 55%; /* 5 out of 10 units */
     }
     @media (max-width: 768px) {
       .container {
@@ -340,11 +340,11 @@ table {
         <h2>
             USAPhO Course Series
           </h2>
-          <p>Our advanced course prepares students to earn gold medals in the USAPhO. To date, six of our students have earned gold medals, with three qualifying for the US Physics Team. One session is offered per year in the <span style="font-weight: bold">Winter</span>. </p>
+          <p>Our advanced course prepares students to earn gold medals in the USAPhO. To date, six of our students have earned gold medals, with three qualifying for the US Physics Team.</p>
         </div>
     </div>
     <div class="button-row">
-      <h3 style="padding-right: 6px;">Email cambphys@gmail.com for late registration</h3> 
+      
       <!--<a
         href="https://docs.google.com/forms/d/e/1FAIpQLSftyLSe5IbUNtdZHvaxA-DBaJzy8FB1ZYTYsGMWBT0m6YA88g/viewform?usp=dialog"
         class="enroll-now-button"
@@ -364,7 +364,7 @@ table {
           <img src="{{ site.baseurl }}/pictures/clock.png" alt="Icon 2" class="box-icon">
         </div>
         </div>
-        <p class="box-description">16 weeks (11/16/25 - 3/22/26)<br>Sundays, 3:30 - 5:00 pm EST<br>Lectures are recorded</p>
+        <p class="box-description">16 weeks of 1.5 hour lecture videos</p>
       </div>
 
         <div class="box">
@@ -387,130 +387,79 @@ table {
     
       </div>
 
-      <h2 class="centered-heading">
-        Learn More
-      </h2>
-  
-      <div class="box-row">
-        <div class="box">
-          <div class="box-header" style="padding-bottom: 10px">
-            <div class="box-icon">
-              <img src="{{ site.baseurl }}/pictures/check.png" alt="Icon 2">
-            </div>
-          </div>
-          <a href="https://drive.google.com/file/d/1zX8Sgj4M66Iw7Z0PlZ_GUJu8U9KocY80/view?usp=sharing" class="more-info-button" target="_blank"><span>Winter 2026 Syllabus</span></a>
-        </div>
-  
-          <div class="box">
-            <div class="box-header"  style="padding-bottom: 10px">
-              <div class="box-icon">
-                <img src="{{ site.baseurl }}/pictures/pencil.png" alt="Icon 2">
-              </div>
-              </div>
-              <a href="https://drive.google.com/file/d/1PqjUTkh4UkcFBmmOMgTZYVnmcRz0eqUM/view?usp=sharing" class="more-info-button" target="_blank"><span>Sample Homework</span></a>
-          </div>
-  
-          <div class="box">
-            <div class="box-header"  style="padding-bottom: 10px">
-              <div class="box-icon">
-                <img src="{{ site.baseurl }}/pictures/vid.png" alt="Icon 2">
-              </div>
-              </div>
-              <a href="https://youtu.be/yaPpx8bNfgc" class="more-info-button" target="_blank"><span>Sample Lecture</span></a>
-          </div>
-      
-        </div>
-
         <h2 class="centered-heading" style="padding-top: 40px">
-          Course Schedule Winter 2025
+          Course Contents
         </h2>  
         <div class="table-container">
     <table>
       <thead>
         <tr>
-          <th class="col-1">Lecture Date</th>
           <th class="col-2">Subject</th>
           <th class="col-3">Description</th>
         </tr>
       </thead>
       <tbody>
   <tr>
-    <td class="col-1">11/16/25</td>
     <td class="col-2">Electrostatics</td>
     <td class="col-3">Coulomb's law, Gauss's law, dipoles</td>
   </tr>
   <tr>
-    <td class="col-1">11/30/25</td>
     <td class="col-2">Conductors</td>
     <td class="col-3">Potential, image charges, dielectrics</td>
   </tr>
   <tr>
-    <td class="col-1">12/07/25</td>
     <td class="col-2">DC Circuits</td>
     <td class="col-3">Capacitors, resistors, olympiad tricks</td>
   </tr>
   <tr>
-    <td class="col-1">12/14/25</td>
     <td class="col-2">Magnetic Fields</td>
     <td class="col-3">Biot-Savart, Ampere's law, dipoles</td>
   </tr>
   <tr>
-    <td class="col-1">01/04/26</td>
     <td class="col-2">Induction</td>
     <td class="col-3">Lenz's law, Faraday's law, inductance</td>
   </tr>
   <tr>
-    <td class="col-1">01/11/26</td>
     <td class="col-2">AC Circuits</td>
     <td class="col-3">Impedance, driven oscillators, phasors</td>
   </tr>
   <tr>
-    <td class="col-1">01/18/26</td>
     <td class="col-2">EM Waves</td>
     <td class="col-3">Nonlinear circuits, Ampere-Maxwell, Poynting vector</td>
   </tr>
   <tr>
-    <td class="col-1">01/25/26</td>
     <td class="col-2">Thermo I</td>
     <td class="col-3">Ideal gases, work, heat capacitance</td>
   </tr>
   <tr>
-    <td class="col-1">02/01/26</td>
     <td class="col-2">Thermo II</td>
     <td class="col-3">Fluid flows, kinetic theory, entropy</td>
   </tr>
   <tr>
-    <td class="col-1">02/08/26</td>
     <td class="col-2">Thermo III</td>
     <td class="col-3">Conduction, Stefan-Boltzmann, phase transitions</td>
   </tr>
   <tr>
-    <td class="col-1">02/15/26</td>
     <td class="col-2">Relativistic Kinematics</td>
     <td class="col-3">Elementary effects, velocity addition, Doppler effect</td>
   </tr>
   <tr>
-    <td class="col-1">02/22/26</td>
     <td class="col-2">Relativistic Dynamics</td>
     <td class="col-3">Energy, momentum, force, four vectors</td>
   </tr>
   <tr>
-    <td class="col-1">03/01/26</td>
     <td class="col-2">Waves I</td>
     <td class="col-3">Wave equation, standing waves, refraction</td>
   </tr>
   <tr>
-    <td class="col-1">03/08/26</td>
     <td class="col-2">Waves II</td>
     <td class="col-3">Mirrors and lenses, interference, diffraction</td>
   </tr>
   <tr>
-    <td class="col-1">03/15/26</td>
     <td class="col-2">Modern Physics</td>
     <td class="col-3">DeBroglie relations, uncertainty principle, nuclear</td>
   </tr>
   <tr>
-    <td class="col-1">03/22/26</td>
     <td class="col-2">Review</td>
     <td class="col-3">Run-through of practice USAPhO exam</td>
   </tr>

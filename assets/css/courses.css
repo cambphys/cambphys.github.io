@@ -1,4 +1,11 @@
 /* Courses landing + per-course pages */
+/* Light blue background applied site-wide on any page that loads courses.css.
+   Keep the masthead (logo + nav) white with a thin divider so it stays legible. */
+body { background: #eaf2fb; }
+.masthead,
+.masthead .greedy-nav { background: #fff; }
+.masthead { border-bottom: 1px solid #d7e2ee; }
+
 .courses-wrap { max-width: 960px; margin: 2.5rem auto; padding: 0 1.5rem; }
 .courses-wrap h1 { margin-top: 0; }
 
