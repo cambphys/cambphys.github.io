@@ -283,3 +283,7 @@ body:has(.exam-wrap) { background: #fff !important; }
 .exam-confirm-cancel:hover { background: #d1d5db; }
 .exam-confirm-ok { background: #2f5d8c; color: #fff; }
 .exam-confirm-ok:hover { background: #244a70; }
+
+/* Back-to-course link on the rules (begin) screen — lets users escape on
+   tablets/iPads without having to start the exam first. */
+.rules-back { display: inline-block; margin-bottom: 1.25rem; }

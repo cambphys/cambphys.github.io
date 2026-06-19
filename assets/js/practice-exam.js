@@ -135,6 +135,7 @@
         <li>When the timer reaches <strong>00:00</strong>, the exam ends automatically.</li>`;
     STAGE().innerHTML = `
       <div class="exam-rules">
+        <a class="pset-back rules-back" href="${cfg.back}">← Back to course</a>
         <h1>${cfg.title}</h1>
         <ul>${ruleItems}</ul>
         <p>The timer will begin the moment you press <strong>Begin Now</strong>.</p>
@@ -199,7 +200,7 @@
       <div class="exam-topbar">
         <h2>${cfg.title}</h2>
         <span class="exam-timer" id="exam-timer">--:--</span>
-        <button type="button" class="pset-mini compact" id="jump-toggle" title="Jump to a specific problem">☰ Problems</button>
+        <button type="button" class="pset-mini compact" id="jump-toggle" title="Jump to a specific problem">☰ Problem Viewer</button>
         <button type="button" class="exit-btn" id="exit-btn">Exit Exam</button>
       </div>
       <aside class="exam-drawer" id="exam-drawer">

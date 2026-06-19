@@ -77,7 +77,7 @@
   function render() {
     const total = problems.length;
     const onFinalSlide = currentIndex === total;
-    document.getElementById("jump-toggle").textContent = "☰ Problems";
+    document.getElementById("jump-toggle").textContent = "☰ Problem Viewer";
 
     if (onFinalSlide) {
       renderFinalSlide();
