@@ -190,8 +190,8 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
+  - docs # ignore Minimal Mistakes /docs
+  - test # ignore Minimal Mistakes /test
   - "*.gemspec"
   - json_output
   - db
